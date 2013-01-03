@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1252" ?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+<SCHEDULED>
+ <SSRSYLO>
+  <SSRSYLO_TERM_CODE>202410</SSRSYLO_TERM_CODE>
+  <SSRSYLO_CRN>20001</SSRSYLO_CRN>
+  <DELETE>YES</DELETE>
+ </SSRSYLO>
+ <SSRSYRM>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  <SSRSYRM_TERM_CODE>202410</SSRSYRM_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  <SSRSYRM_CRN>20001</SSRSYRM_CRN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  <DELETE>YES</DELETE>
+ </SSRSYRM>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+ <SSRSYTR>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  <SSRSYTR_TERM_CODE>202410</SSRSYTR_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  <SSRSYTR_CRN>20001</SSRSYTR_CRN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  <DELETE>YES</DELETE>
+ </SSRSYTR>
+  <SSRSYLN>
+  <SSRSYLN_TERM_CODE>202410</SSRSYLN_TERM_CODE>
+  <SSRSYLN_CRN>20001</SSRSYLN_CRN>
+  <DELETE>YES</DELETE>
+ </SSRSYLN>
+</SCHEDULED>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<AREAGROUPATTACHMENTRULEBASEDATA>
+ <SMBAGRL>
+  <SMBAGRL_KEY_RULE>RULEONE</SMBAGRL_KEY_RULE>
+  <SMBAGRL_DESC>Rule 1 Deep Rule</SMBAGRL_DESC>
+  <SMBAGRL_AREA>HRZNREGPQG</SMBAGRL_AREA>
+  <SMBAGRL_TERM_CODE_EFF>201410</SMBAGRL_TERM_CODE_EFF>
+  <SMBAGRL_ACTIVITY_DATE>01/01/2010</SMBAGRL_ACTIVITY_DATE>
+  <SMBAGRL_REQ_NUMB_COND>1</SMBAGRL_REQ_NUMB_COND>
+  <SMBAGRL_SURROGATE_ID></SMBAGRL_SURROGATE_ID>
+  <SMBAGRL_VERSION></SMBAGRL_VERSION>
+  <SMBAGRL_USER_ID>GRAILS</SMBAGRL_USER_ID>
+  <SMBAGRL_DATA_ORIGIN>GRAILS</SMBAGRL_DATA_ORIGIN>
+  <SMBAGRL_VPDI_CODE></SMBAGRL_VPDI_CODE>
+ </SMBAGRL>
+ <SMBAGRL>
+  <SMBAGRL_KEY_RULE>RULETWO</SMBAGRL_KEY_RULE>
+  <SMBAGRL_DESC>Deep Rule two to one</SMBAGRL_DESC>
+  <SMBAGRL_AREA>HRZNREGPQG</SMBAGRL_AREA>
+  <SMBAGRL_TERM_CODE_EFF>201410</SMBAGRL_TERM_CODE_EFF>
+  <SMBAGRL_ACTIVITY_DATE>01/01/2010</SMBAGRL_ACTIVITY_DATE>
+  <SMBAGRL_REQ_NUMB_COND>1</SMBAGRL_REQ_NUMB_COND>
+  <SMBAGRL_SURROGATE_ID></SMBAGRL_SURROGATE_ID>
+  <SMBAGRL_VERSION></SMBAGRL_VERSION>
+  <SMBAGRL_USER_ID>GRAILS</SMBAGRL_USER_ID>
+  <SMBAGRL_DATA_ORIGIN>GRAILS</SMBAGRL_DATA_ORIGIN>
+  <SMBAGRL_VPDI_CODE></SMBAGRL_VPDI_CODE>
+ </SMBAGRL>
+</AREAGROUPATTACHMENTRULEBASEDATA>

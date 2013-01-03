@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<AREAGROUPATTACHMENTRULEDATA>
+ <SMRAGRL>
+  <SMRAGRL_KEY_RULE>RULEONE</SMRAGRL_KEY_RULE>
+  <SMRAGRL_AREA>HRZNREGPQG</SMRAGRL_AREA>
+  <SMRAGRL_TERM_CODE_EFF>201410</SMRAGRL_TERM_CODE_EFF>
+  <SMRAGRL_SEQNO>1</SMRAGRL_SEQNO>
+  <SMRAGRL_ACTIVITY_DATE>01/01/2010</SMRAGRL_ACTIVITY_DATE>
+  <SMRAGRL_CRSE_REUSE_IND>N</SMRAGRL_CRSE_REUSE_IND>
+  <SMRAGRL_ATTR_REUSE_IND>N</SMRAGRL_ATTR_REUSE_IND>
+  <SMRAGRL_SET></SMRAGRL_SET>
+  <SMRAGRL_SUBSET></SMRAGRL_SUBSET>
+  <SMRAGRL_GROUP></SMRAGRL_GROUP>
+  <SMRAGRL_RULE>RULETWO</SMRAGRL_RULE>
+  <SMRAGRL_YEAR_RULE></SMRAGRL_YEAR_RULE>
+  <SMRAGRL_WITHIN_IND>N</SMRAGRL_WITHIN_IND>
+  <SMRAGRL_SURROGATE_ID></SMRAGRL_SURROGATE_ID>
+  <SMRAGRL_VERSION></SMRAGRL_VERSION>
+  <SMRAGRL_USER_ID>GRAILS</SMRAGRL_USER_ID>
+  <SMRAGRL_DATA_ORIGIN>GRAILS</SMRAGRL_DATA_ORIGIN>
+  <SMRAGRL_VPDI_CODE></SMRAGRL_VPDI_CODE>
+ </SMRAGRL>
+ <SMRAGRL>
+  <SMRAGRL_KEY_RULE>RULETWO</SMRAGRL_KEY_RULE>
+  <SMRAGRL_AREA>HRZNREGPQG</SMRAGRL_AREA>
+  <SMRAGRL_TERM_CODE_EFF>201410</SMRAGRL_TERM_CODE_EFF>
+  <SMRAGRL_SEQNO>2</SMRAGRL_SEQNO>
+  <SMRAGRL_ACTIVITY_DATE>01/01/2010</SMRAGRL_ACTIVITY_DATE>
+  <SMRAGRL_CRSE_REUSE_IND>B</SMRAGRL_CRSE_REUSE_IND>
+  <SMRAGRL_ATTR_REUSE_IND>B</SMRAGRL_ATTR_REUSE_IND>
+  <SMRAGRL_SET></SMRAGRL_SET>
+  <SMRAGRL_SUBSET></SMRAGRL_SUBSET>
+  <SMRAGRL_GROUP>DEEPRULE2</SMRAGRL_GROUP>
+  <SMRAGRL_RULE></SMRAGRL_RULE>
+  <SMRAGRL_YEAR_RULE></SMRAGRL_YEAR_RULE>
+  <SMRAGRL_WITHIN_IND>N</SMRAGRL_WITHIN_IND>
+  <SMRAGRL_SURROGATE_ID></SMRAGRL_SURROGATE_ID>
+  <SMRAGRL_VERSION></SMRAGRL_VERSION>
+  <SMRAGRL_USER_ID>GRAILS</SMRAGRL_USER_ID>
+  <SMRAGRL_DATA_ORIGIN>GRAILS</SMRAGRL_DATA_ORIGIN>
+  <SMRAGRL_VPDI_CODE></SMRAGRL_VPDI_CODE>
+ </SMRAGRL>
+</AREAGROUPATTACHMENTRULEDATA>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<EVENT>
+    <GERSUBJ>
+        <GERSUBJ_EVNT_CRN>ES003</GERSUBJ_EVNT_CRN>
+        <GERSUBJ_FUNC_CODE>EMEET</GERSUBJ_FUNC_CODE>
+        <GERSUBJ_GRP_SEQ_NO></GERSUBJ_GRP_SEQ_NO>
+        <GERSUBJ_SUBJ_CODE></GERSUBJ_SUBJ_CODE>
+        <DELETE>YES</DELETE>
+    </GERSUBJ>
+    <GERFCOM>
+        <GERFCOM_EVNT_CRN>ES003</GERFCOM_EVNT_CRN>
+        <GERFCOM_FUNC_CODE>EMEET</GERFCOM_FUNC_CODE>
+        <GERFCOM_GRP_SEQ_NO></GERFCOM_GRP_SEQ_NO>
+        <DELETE>YES</DELETE>
+    </GERFCOM>
+    <GERSUBJ>
+        <GERSUBJ_EVNT_CRN>ES001</GERSUBJ_EVNT_CRN>
+        <GERSUBJ_FUNC_CODE>EMEET</GERSUBJ_FUNC_CODE>
+        <GERSUBJ_GRP_SEQ_NO></GERSUBJ_GRP_SEQ_NO>
+        <GERSUBJ_SUBJ_CODE></GERSUBJ_SUBJ_CODE>
+        <DELETE>YES</DELETE>
+    </GERSUBJ>
+    <GERFCOM>
+        <GERFCOM_EVNT_CRN>ES001</GERFCOM_EVNT_CRN>
+        <GERFCOM_FUNC_CODE>EMEET</GERFCOM_FUNC_CODE>
+        <GERFCOM_GRP_SEQ_NO></GERFCOM_GRP_SEQ_NO>
+        <DELETE>YES</DELETE>
+    </GERFCOM>
+</EVENT>

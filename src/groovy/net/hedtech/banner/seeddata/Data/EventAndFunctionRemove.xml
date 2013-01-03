@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<EVENT>
+    <GERMENU>
+        <GERMENU_EVNT_CRN>ES010</GERMENU_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GERMENU>
+    <GERFCOR>
+        <GERFCOR_EVNT_CRN>ES010</GERFCOR_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GERFCOR>
+    <GERFCON>
+        <GERFCON_EVNT_CRN>ES010</GERFCON_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GERFCON>
+    <GERFFEE>
+        <GERFFEE_EVNT_CRN>ES010</GERFFEE_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GERFFEE>
+    <GERFEXP>
+        <GERFEXP_EVNT_CRN>ES010</GERFEXP_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GERFEXP>
+    <GERFREV>
+        <GERFREV_EVNT_CRN>ES010</GERFREV_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GERFREV>
+    <SSRMEET>
+        <SSRMEET_TERM_CODE>EVENT</SSRMEET_TERM_CODE>
+        <SSRMEET_CRN>ES010</SSRMEET_CRN>
+        <DELETE>YES</DELETE>
+    </SSRMEET>
+    <GEBFUNC>
+        <GEBFUNC_EVNT_CRN>ES010</GEBFUNC_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GEBFUNC>
+    <SLBEVNT>
+        <SLBEVNT_CRN>ES010</SLBEVNT_CRN>
+        <DELETE>YES</DELETE>
+    </SLBEVNT>
+    <SSRMEET>
+        <SSRMEET_TERM_CODE>EVENT</SSRMEET_TERM_CODE>
+        <SSRMEET_CRN>SSB20</SSRMEET_CRN>
+        <DELETE>YES</DELETE>
+    </SSRMEET>
+    <GEBFUNC>
+        <GEBFUNC_EVNT_CRN>SSB20</GEBFUNC_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GEBFUNC>
+    <SLBEVNT>
+        <SLBEVNT_CRN>SSB20</SLBEVNT_CRN>
+        <DELETE>YES</DELETE>
+    </SLBEVNT>
+    <SSRMEET>
+        <SSRMEET_TERM_CODE>EVENT</SSRMEET_TERM_CODE>
+        <SSRMEET_CRN>SSB21</SSRMEET_CRN>
+        <DELETE>YES</DELETE>
+    </SSRMEET>
+    <GEBFUNC>
+        <GEBFUNC_EVNT_CRN>SSB21</GEBFUNC_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GEBFUNC>
+    <SLBEVNT>
+        <SLBEVNT_CRN>SSB21</SLBEVNT_CRN>
+        <DELETE>YES</DELETE>
+    </SLBEVNT>
+    <SSRMEET>
+        <SSRMEET_TERM_CODE>EVENT</SSRMEET_TERM_CODE>
+        <SSRMEET_CRN>SSB22</SSRMEET_CRN>
+        <DELETE>YES</DELETE>
+    </SSRMEET>
+    <GEBFUNC>
+        <GEBFUNC_EVNT_CRN>SSB22</GEBFUNC_EVNT_CRN>
+        <DELETE>YES</DELETE>
+    </GEBFUNC>
+    <SLBEVNT>
+        <SLBEVNT_CRN>SSB22</SLBEVNT_CRN>
+        <DELETE>YES</DELETE>
+    </SLBEVNT>
+</EVENT>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<SCHEDULED>
+    <SSBDFEE>
+        <SSBDFEE_TERM_CODE>203520</SSBDFEE_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSBDFEE>
+    <SSBDFEE>
+        <SSBDFEE_TERM_CODE>202520</SSBDFEE_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSBDFEE>
+</SCHEDULED>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CATALOG>
+    <SCRSPRT>
+        <SCRSPRT_SUBJ_CODE>FRSC</SCRSPRT_SUBJ_CODE>
+        <DELETE>YES</DELETE>
+    </SCRSPRT>
+
+    <SCRSRDF>
+        <SCRSRDF_SUBJ_CODE>FRSC</SCRSRDF_SUBJ_CODE>
+        <DELETE>YES</DELETE>
+    </SCRSRDF>
+
+</CATALOG>

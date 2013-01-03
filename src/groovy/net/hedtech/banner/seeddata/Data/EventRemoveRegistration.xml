@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<EVENT>
+    <GERFGST>
+        <GERFGST_EVNT_CRN>ES003</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EMEET</GERFGST_FUNC_CODE>
+        <GERFGST_PIDM></GERFGST_PIDM>
+        <GERFGST_GUEST_PIDM></GERFGST_GUEST_PIDM>
+        <GERFGST_GIDM></GERFGST_GIDM>
+        <GERFGST_GUEST_GIDM></GERFGST_GUEST_GIDM>
+        <DELETE>YES</DELETE>
+    </GERFGST>
+    <GERATTD>
+        <GERATTD_EVNT_CRN>ES003</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EMEET</GERATTD_FUNC_CODE>
+        <GERATTD_PIDM></GERATTD_PIDM>
+        <GERATTD_GIDM></GERATTD_GIDM>
+        <DELETE>YES</DELETE>
+    </GERATTD>
+    <GERFGST>
+        <GERFGST_EVNT_CRN>ES003</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EDNR</GERFGST_FUNC_CODE>
+        <GERFGST_PIDM></GERFGST_PIDM>
+        <GERFGST_GUEST_PIDM></GERFGST_GUEST_PIDM>
+        <GERFGST_GIDM></GERFGST_GIDM>
+        <GERFGST_GUEST_GIDM></GERFGST_GUEST_GIDM>
+        <DELETE>YES</DELETE>
+    </GERFGST>
+    <GERATTD>
+        <GERATTD_EVNT_CRN>ES003</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EDNR</GERATTD_FUNC_CODE>
+        <GERATTD_PIDM></GERATTD_PIDM>
+        <GERATTD_GIDM></GERATTD_GIDM>
+        <DELETE>YES</DELETE>
+    </GERATTD>
+    <GERFGST>
+        <GERFGST_EVNT_CRN>ES001</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EMEET</GERFGST_FUNC_CODE>
+        <GERFGST_PIDM></GERFGST_PIDM>
+        <GERFGST_GUEST_PIDM></GERFGST_GUEST_PIDM>
+        <GERFGST_GIDM></GERFGST_GIDM>
+        <GERFGST_GUEST_GIDM></GERFGST_GUEST_GIDM>
+        <DELETE>YES</DELETE>
+    </GERFGST>
+    <GERATTD>
+        <GERATTD_EVNT_CRN>ES001</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EMEET</GERATTD_FUNC_CODE>
+        <GERATTD_PIDM></GERATTD_PIDM>
+        <GERATTD_GIDM></GERATTD_GIDM>
+        <DELETE>YES</DELETE>
+    </GERATTD>
+    <GERFGST>
+        <GERFGST_EVNT_CRN>ES001</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EDNR</GERFGST_FUNC_CODE>
+        <GERFGST_PIDM></GERFGST_PIDM>
+        <GERFGST_GUEST_PIDM></GERFGST_GUEST_PIDM>
+        <GERFGST_GIDM></GERFGST_GIDM>
+        <GERFGST_GUEST_GIDM></GERFGST_GUEST_GIDM>
+        <DELETE>YES</DELETE>
+    </GERFGST>
+    <GERATTD>
+        <GERATTD_EVNT_CRN>ES001</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EDNR</GERATTD_FUNC_CODE>
+        <GERATTD_PIDM></GERATTD_PIDM>
+        <GERATTD_GIDM></GERATTD_GIDM>
+        <DELETE>YES</DELETE>
+    </GERATTD>
+    <GERFGST>
+        <GERFGST_EVNT_CRN>ES001</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EBRK</GERFGST_FUNC_CODE>
+        <GERFGST_PIDM></GERFGST_PIDM>
+        <GERFGST_GUEST_PIDM></GERFGST_GUEST_PIDM>
+        <GERFGST_GIDM></GERFGST_GIDM>
+        <GERFGST_GUEST_GIDM></GERFGST_GUEST_GIDM>
+        <DELETE>YES</DELETE>
+    </GERFGST>
+    <GERATTD>
+        <GERATTD_EVNT_CRN>ES001</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EBRK</GERATTD_FUNC_CODE>
+        <GERATTD_PIDM></GERATTD_PIDM>
+        <GERATTD_GIDM></GERATTD_GIDM>
+        <DELETE>YES</DELETE>
+    </GERATTD>
+    <GERMENU>
+        <GERMENU_EVNT_CRN>ES003</GERMENU_EVNT_CRN>
+        <GERMENU_FUNC_CODE>EMEET</GERMENU_FUNC_CODE>
+        <GERMENU_MENU_CODE>OPEN_BAR</GERMENU_MENU_CODE>
+        <GERMENU_USER_ID>GRAILS</GERMENU_USER_ID>
+        <GERMENU_DATA_ORIGIN>GRAILS</GERMENU_DATA_ORIGIN>
+        <GERMENU_ACTIVITY_DATE>01-JAN-10</GERMENU_ACTIVITY_DATE>
+    </GERMENU>
+    <GERMENU>
+        <GERMENU_EVNT_CRN>ES003</GERMENU_EVNT_CRN>
+        <GERMENU_FUNC_CODE>EDNR</GERMENU_FUNC_CODE>
+        <GERMENU_MENU_CODE>OPEN_BAR</GERMENU_MENU_CODE>
+        <GERMENU_USER_ID>GRAILS</GERMENU_USER_ID>
+        <GERMENU_DATA_ORIGIN>GRAILS</GERMENU_DATA_ORIGIN>
+        <GERMENU_ACTIVITY_DATE>01-JAN-10</GERMENU_ACTIVITY_DATE>
+    </GERMENU>
+</EVENT>

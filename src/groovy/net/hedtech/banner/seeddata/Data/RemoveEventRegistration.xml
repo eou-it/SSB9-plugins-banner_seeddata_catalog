@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<Events>
+  <!-- Begin Nonpidm user/SSB04: sselenium1@ssb.com; no guests -->
+    <!-- Delete GERATTD (Attendee = GV_GERATTD; deletes are not allowed on this view) -->
+    <!-- Note: Temp Workaround Here -->
+    <!-- USER_ID is specified here instead of GERATTD_USER_ID to prevent the       -->
+    <!-- seeddata delete from substituting connectInfo.userID (i.e., GRAILS) for   -->
+    <!-- for the GERATTD_USER_ID value.  The value specified here, however, is     -->
+    <!-- ignored.                                                                  -->
+    <!-- Delete GV_GPBPRXY (ProxyAccessCredentialInformation) -->
+    <GV_GPBPRXY>
+        <GPBPRXY_EMAIL_ADDRESS>sselenium1@ssb.com</GPBPRXY_EMAIL_ADDRESS>
+        <GPBPRXY_LAST_NAME>Selenium</GPBPRXY_LAST_NAME>
+        <GPBPRXY_FIRST_NAME>Sally</GPBPRXY_FIRST_NAME>
+        <DELETE>YES</DELETE>
+    </GV_GPBPRXY>
+    <!-- Delete GENIDEN (NonBannerPersonIdentificationName) -->
+    <GENIDEN>
+        <GENIDEN_EMAIL_ADDRESS>sselenium1@ssb.com</GENIDEN_EMAIL_ADDRESS>
+        <DELETE>YES</DELETE>
+    </GENIDEN>
+  <!-- End Nonpidm user/SSB04: sselenium1@ssb.com -->
+  <!--                                                            -->
+  <!-- Begin Pidm user/SSB04: ESSREG02; remove guests only -->
+      <GERATTD>
+          <GERATTD_EVNT_CRN>SSB04</GERATTD_EVNT_CRN>
+          <GERATTD_FUNC_CODE>WELCOME</GERATTD_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERATTD>
+      <GERFGST>
+          <GERFGST_EVNT_CRN>SSB04</GERFGST_EVNT_CRN>
+          <GERFGST_FUNC_CODE>WELCOME</GERFGST_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERFGST>
+  <!-- End Nonpidm user/SSB04: ESSREG02; remove guests only -->
+  <!--                                                            -->
+  <!--                                                            -->
+  <!-- Begin Pidm user/SSB06: ESSREG03; remove registration only -->
+      <GERATTD>
+          <GERATTD_EVNT_CRN>SSB06</GERATTD_EVNT_CRN>
+          <GERATTD_FUNC_CODE>DINER</GERATTD_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERATTD>
+	  <GERFGST>
+          <GERFGST_EVNT_CRN>SSB06</GERFGST_EVNT_CRN>
+          <GERFGST_FUNC_CODE>DINER</GERFGST_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERFGST>
+  <!-- End Nonpidm user/SSB06: ESSREG03; remove registration only -->
+  <!--                                                            -->
+  <!-- Begin Nonpidm user/SSB13: mcfly@ssb.com; no guests -->
+    <!-- Delete GERATTD (Attendee = GV_GERATTD; deletes are not allowed on this view) -->
+    <!-- Note: Temp Workaround Here -->
+    <!-- USER_ID is specified here instead of GERATTD_USER_ID to prevent the       -->
+    <!-- seeddata delete from substituting connectInfo.userID (i.e., GRAILS) for   -->
+    <!-- for the GERATTD_USER_ID value.  The value specified here, however, is     -->
+    <!-- ignored.                                                                  -->
+
+    <!-- Delete GV_GPBPRXY (ProxyAccessCredentialInformation) -->
+    <GV_GPBPRXY>
+        <GPBPRXY_EMAIL_ADDRESS>mcfly@ssb.com</GPBPRXY_EMAIL_ADDRESS>
+        <GPBPRXY_LAST_NAME>McFly</GPBPRXY_LAST_NAME>
+        <GPBPRXY_FIRST_NAME>Marty</GPBPRXY_FIRST_NAME>
+        <DELETE>YES</DELETE>
+    </GV_GPBPRXY>
+    <!-- Delete GENIDEN (NonBannerPersonIdentificationName) -->
+    <GENIDEN>
+        <GENIDEN_EMAIL_ADDRESS>mcfly@ssb.com</GENIDEN_EMAIL_ADDRESS>
+        <DELETE>YES</DELETE>
+    </GENIDEN>
+  <!-- End Nonpidm user/SSB13: mcfly@ssb.com; no guests -->
+  <!--                                                            -->
+  <!-- Begin Pidm user/SSB13: ESSREG03; remove registration only -->
+      <GERATTD>
+          <GERATTD_EVNT_CRN>SSB13</GERATTD_EVNT_CRN>
+          <GERATTD_FUNC_CODE>DINER</GERATTD_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERATTD>
+	  <GERFGST>
+          <GERFGST_EVNT_CRN>SSB13</GERFGST_EVNT_CRN>
+          <GERFGST_FUNC_CODE>DINER</GERFGST_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERFGST>
+  <!-- End Nonpidm user/SSB13: ESSREG03; remove registration only -->
+  <!--                                                            -->
+  <!-- Begin Nonpidm user/SSB14: ap007@ssb.com; with guests -->
+    <!-- Delete GERATTD (Attendee = GV_GERATTD; deletes are not allowed on this view) -->
+    <!-- Note: Temp Workaround Here -->
+    <!-- USER_ID is specified here instead of GERATTD_USER_ID to prevent the       -->
+    <!-- seeddata delete from substituting connectInfo.userID (i.e., GRAILS) for   -->
+    <!-- for the GERATTD_USER_ID value.  The value specified here, however, is     -->
+    <!-- ignored.                                                                  -->
+
+    <!-- Delete GV_GPBPRXY (ProxyAccessCredentialInformation) -->
+    <GV_GPBPRXY>
+        <GPBPRXY_EMAIL_ADDRESS>ap007@ssb.com</GPBPRXY_EMAIL_ADDRESS>
+        <GPBPRXY_LAST_NAME>Powers</GPBPRXY_LAST_NAME>
+        <GPBPRXY_FIRST_NAME>Austin</GPBPRXY_FIRST_NAME>
+        <DELETE>YES</DELETE>
+    </GV_GPBPRXY>
+    <!-- Delete GENIDEN (NonBannerPersonIdentificationName) -->
+    <GENIDEN>
+        <GENIDEN_EMAIL_ADDRESS>ap007@ssb.com</GENIDEN_EMAIL_ADDRESS>
+        <DELETE>YES</DELETE>
+    </GENIDEN>
+  <!-- End Nonpidm user/SSB14: ap007@ssb.com; with guests -->
+  <!--                                                            -->
+  <!-- Begin Pidm user with guests/SSB14 (Invitee = GERATTD) (EventFunctionGuest = GERFGST) -->
+      <GERFGST>
+          <GERFGST_EVNT_CRN>SSB14</GERFGST_EVNT_CRN>
+          <GERFGST_FUNC_CODE>ALUMN</GERFGST_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERFGST>
+      <GERATTD>
+          <GERATTD_EVNT_CRN>SSB14</GERATTD_EVNT_CRN>
+          <GERATTD_FUNC_CODE>ALUMN</GERATTD_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERATTD>
+  <!-- End Pidm user with guests/SSB14 (Invitee = GERATTD) (EventFunctionGuest = GERFGST) -->
+  <!--                                                            -->
+  <!-- Begin Pidm user/SSB15: ESSREG03; remove registration only -->
+      <GERATTD>
+          <GERATTD_EVNT_CRN>SSB15</GERATTD_EVNT_CRN>
+          <GERATTD_FUNC_CODE>DINER</GERATTD_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERATTD>
+	  <GERFGST>
+          <GERFGST_EVNT_CRN>SSB15</GERFGST_EVNT_CRN>
+          <GERFGST_FUNC_CODE>DINER</GERFGST_FUNC_CODE>
+          <DELETE>YES</DELETE>
+      </GERFGST>
+    <!-- End Nonpidm user/SSB15: ESSREG03; remove registration only -->
+</Events>

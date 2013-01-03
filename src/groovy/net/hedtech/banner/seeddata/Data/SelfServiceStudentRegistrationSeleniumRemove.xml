@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+ Copyright 2009-2012 SunGard Higher Education. All Rights Reserved.
+ This copyrighted software contains confidential and proprietary information of 
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited 
+ solely to SunGard Higher Education licensees, and is further subject to the terms 
+ and conditions of one or more written license agreements between SunGard Higher 
+ Education and the licensee in question. SunGard is either a registered trademark or
+ trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher 
+ Education in the U.S.A. and/or other regions and/or countries.
+ ********************************************************************************* -->
+<STUDENTREGISTRATIONDATA>
+    <!-- Remove Holds-->
+    <SPRHOLD>
+         <BANNERID>HOSS001</BANNERID>
+         <SPRHOLD_HLDD_CODE>AD</SPRHOLD_HLDD_CODE>
+         <SPRHOLD_USER>GRAILS_USER</SPRHOLD_USER>
+         <SPRHOLD_FROM_DATE>11-MAR-2010</SPRHOLD_FROM_DATE>
+         <SPRHOLD_TO_DATE>30-MAR-2025</SPRHOLD_TO_DATE>
+         <DELETE>YES</DELETE>
+    </SPRHOLD>
+    <!--  Delete Student/Term with enrollment status that prohibits registration -->
+    <SFBETRM>
+        <BANNERID>HOS00001</BANNERID>
+        <SFBETRM_TERM_CODE>203010</SFBETRM_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SFBETRM>
+    <!--Remove Student/Term with Academic Standing -->
+    <SV_SGBSTDN>
+        <BANNERID>HOS00001</BANNERID>
+        <SGBSTDN_TERM_CODE_EFF>202420</SGBSTDN_TERM_CODE_EFF>
+        <DELETE>YES</DELETE>
+    </SV_SGBSTDN>
+</STUDENTREGISTRATIONDATA>
