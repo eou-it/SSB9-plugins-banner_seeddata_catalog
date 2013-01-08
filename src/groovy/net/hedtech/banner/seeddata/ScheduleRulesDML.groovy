@@ -501,7 +501,7 @@ public class ScheduleRulesDML {
         if (!findY) {
             try {
                 //  parm count is 9
-                String persAPI = "{call  sb_wl_section_ctrl.p_create(?,?,?,?,?,?,?,?,?)}"
+                String persAPI = "{call  sb_wl_section_ctrl.p_create(?,?,?,?,?,?,?,?,?,?)}"
 
                 CallableStatement insertCall = this.connectCall.prepareCall(persAPI)
                 // parm 1 p_term_code      ssbwlsc_term_code VARCHAR2
@@ -522,15 +522,18 @@ public class ScheduleRulesDML {
                 // parm 6 p_user_id      ssbwlsc_user_id VARCHAR2
                 insertCall.setString(6, connectInfo.userID)
                 // parm 7 p_deadline_notify      ssbwlsc_deadline_notify NUMBER
-                if ((this.ssbwlsc_deadline_notify == "") || (this.ssbwlsc_deadline_notify == null) || (!this.ssbwlsc_deadline_notify)) { insertCall.setNull(7, java.sql.Types.INTEGER) }
+                if ((this.ssbwlsc_deadline_notify == "") || (this.ssbwlsc_deadline_notify == null) || (!this.ssbwlsc_deadline_notify)) {
+                    insertCall.setNull(7, java.sql.Types.INTEGER) }
                 else {
                     insertCall.setInt(7, this.ssbwlsc_deadline_notify.toInteger())
                 }
 
                 // parm 8 p_data_origin      SSBWLSC_data_origin VARCHAR2
                 insertCall.setString(8, connectInfo.dataOrigin)
-                // parm 9 p_rowid_out      SSBWLSC_rowid_out VARCHAR2
-                insertCall.registerOutParameter(9, java.sql.Types.ROWID)
+                // parm 9 p_max_resend_hrs
+                insertCall.setNull(9,java.sql.Types.INTEGER)
+                // parm 10 p_rowid_out      SSBWLSC_rowid_out VARCHAR2
+                insertCall.registerOutParameter(10, java.sql.Types.ROWID)
                 if (connectInfo.debugThis) { println "Insert into SSBWLSC ${this.ssrclbd_crn} ${this.ssrclbd_term_code}" }
                 try {
                     insertCall.executeUpdate()
