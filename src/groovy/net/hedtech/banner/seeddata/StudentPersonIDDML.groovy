@@ -164,7 +164,7 @@ public class StudentPersonIDDML {
         }
 
         String selectTerms = """select sfrstcr_term_code from sfrstcr where sfrstcr_pidm = ? group by sfrstcr_term_code"""
-        def terms =  conn.rows(selectTerms, [connectInfo.saveStudentPidm])
+        def terms = conn.rows(selectTerms, [connectInfo.saveStudentPidm])
 
         deleteData("TBRACCD", "delete TBRACCD where  	TBRACCD_pidm = ?  ")
         deleteData("SPRHOLD", "delete SPRHOLD where  	SPRHOLD_pidm = ?  ")
@@ -281,7 +281,7 @@ public class StudentPersonIDDML {
         AND ssbsect_term_code = ?"""
 
 
-          try {
+        try {
             terms.each {
                 updateTermData("SSBSECT", enrlCnt, it.sfrstcr_term_code)
                 updateTermData("SSBSECT", enrlCnt2, it.sfrstcr_term_code)
@@ -291,6 +291,9 @@ public class StudentPersonIDDML {
             if (connectInfo.showErrors) {
                 println "Problem executing enrollment count update ${connectInfo.saveStudentPidm} from StudentPersonIDDML.groovy: $e.message"
             }
+        }
+        if (connectInfo.saveThis) {
+            conn.execute "{ call gb_common.p_commit() }"
         }
     }
 
