@@ -257,7 +257,7 @@ public class StudentPersonIDDML {
         // reset enrollment counts
         def enrlCnt = """UPDATE ssbsect
         SET (ssbsect_enrl, ssbsect_tot_credit_hrs) =
-          (SELECT NVL(COUNT(sfrstcr_crn),0),
+         (SELECT NVL(COUNT(sfrstcr_crn),0),
                NVL(SUM(sfrstcr_credit_hr),0)
            FROM stvrsts, sfrstcr
            WHERE sfrstcr_crn = ssbsect_crn
@@ -265,14 +265,6 @@ public class StudentPersonIDDML {
            AND NVL(sfrstcr_error_flag,'N') <> 'F'
            AND sfrstcr_rsts_code = stvrsts_code
            AND stvrsts_incl_sect_enrl = 'Y')
-          WHERE ssbsect_enrl <>
-           (SELECT NVL(COUNT(sfrstcr_crn),0)
-             FROM stvrsts, sfrstcr
-             WHERE sfrstcr_term_code = ssbsect_term_code
-              AND sfrstcr_crn = ssbsect_crn
-              AND NVL(sfrstcr_error_flag,'N') <> 'F'
-              AND sfrstcr_rsts_code = stvrsts_code
-              AND stvrsts_incl_sect_enrl = 'Y')
            AND ssbsect_term_code = ?
      """
         def enrlCnt2 = """ UPDATE ssbsect
@@ -280,10 +272,13 @@ public class StudentPersonIDDML {
         WHERE ssbsect_seats_avail <> (ssbsect_max_enrl - ssbsect_enrl)
         AND ssbsect_term_code = ?"""
 
-
+        if (connectInfo.saveThis) {
+            conn.execute "{ call gb_common.p_commit() }"
+        }
         try {
             terms.each {
                 updateTermData("SSBSECT", enrlCnt, it.sfrstcr_term_code)
+                conn.execute "{ call gb_common.p_commit() }"
                 updateTermData("SSBSECT", enrlCnt2, it.sfrstcr_term_code)
             }
         }
