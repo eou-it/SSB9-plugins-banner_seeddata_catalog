@@ -163,7 +163,7 @@ public class StudentPersonIDDML {
             }
         }
 
-        String selectTerms = """select sfrstcr_term_code from sfrstcr where sfrstcr_pidm = ? group by sfrstcr_term_code"""
+        String selectTerms = """select sfrstcr_term_code, sfrstcr_crn from sfrstcr where sfrstcr_pidm = ? group by sfrstcr_term_code, sfrstcr_crn"""
         def terms = conn.rows(selectTerms, [connectInfo.saveStudentPidm])
 
         deleteData("TBRACCD", "delete TBRACCD where  	TBRACCD_pidm = ?  ")
@@ -266,20 +266,21 @@ public class StudentPersonIDDML {
            AND sfrstcr_rsts_code = stvrsts_code
            AND stvrsts_incl_sect_enrl = 'Y')
            where ssbsect_term_code = ?
+           and ssbsect_crn = ?
      """
         def enrlCnt2 = """ UPDATE ssbsect
         SET ssbsect_seats_avail =  (ssbsect_max_enrl - ssbsect_enrl)
         WHERE ssbsect_seats_avail <> (ssbsect_max_enrl - ssbsect_enrl)
-        AND ssbsect_term_code = ?"""
+        AND ssbsect_term_code = ? and ssbsect_crn = ?"""
 
         if (connectInfo.saveThis) {
             conn.execute "{ call gb_common.p_commit() }"
         }
         try {
             terms.each {
-                updateTermData("SSBSECT", enrlCnt, it.sfrstcr_term_code)
+                updateTermData("SSBSECT", enrlCnt, it.sfrstcr_term_code, it.sfrstcr_crn)
                 conn.execute "{ call gb_common.p_commit() }"
-                updateTermData("SSBSECT", enrlCnt2, it.sfrstcr_term_code)
+                updateTermData("SSBSECT", enrlCnt2, it.sfrstcr_term_code, it.sfrstcr_crn)
             }
         }
         catch (Exception e) {
@@ -305,19 +306,17 @@ public class StudentPersonIDDML {
                 println "${sql}"
             }
         }
-
     }
 
 
-    private def updateTermData(String tableName, String sql, String term) {
+    private def updateTermData(String tableName, String sql, String term, String crn) {
         try {
-
-            int delRows = conn.executeUpdate(sql, [term])
-            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
+            int delRows = conn.executeUpdate(sql, [term, crn])
+            connectInfo.tableUpdate(tableName, 0, 0, delRows, 0, 0)
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Problem executing delete for person ${connectInfo.saveStudentPidm} from StudentPersonIDDML.groovy: $e.message"
+                println "Problem executing update term data ${connectInfo.saveStudentPidm} ${term} ${crn} from StudentPersonIDDML.groovy: $e.message"
                 println "${sql}"
             }
         }

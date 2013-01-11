@@ -78,7 +78,7 @@ public class InputData {
             'sde': ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
             'generalstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantData.xml',
-            '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml' ],
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
             'registration-rule': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationManagementControl.xml'],
             'selfserviceuser': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceUserData.xml'],
             'schedule-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleSelenium.xml'],
@@ -124,7 +124,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_203020.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeedSelenium_204010.xml'],
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
-                                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
             'ssbgeneralstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
             'attr': ['src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingAdminRuleSetupSeed.xml',
                     'src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingStudentAttendanceSeed8001.xml'],
@@ -238,16 +238,16 @@ public class InputData {
             'study-path-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumRulesControlStudyPathOnSelenium.xml'],
             'subject-web-registration-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/SubjectWebRegistrationOffSelenium.xml'],
             'subject-web-registration-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/SubjectWebRegistrationOnSelenium.xml'],
-            'term-study-path-on':  ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlStudyPathOnSelenium.xml'],
+            'term-study-path-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlStudyPathOnSelenium.xml'],
             'term-study-path-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlStudyPathOffSelenium.xml'],
             'term-control-seed': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlSeedSelenium.xml'],
-            'term-lcdesc-on-lsdesc-on':   ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOnLSDescOnSelenium.xml'],
-            'term-lcdesc-on-lsdesc-off':  ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOnLSDescOffSelenium.xml'],
-            'term-lcdesc-off-lsdesc-on':  ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOffLSDescOnSelenium.xml'],
+            'term-lcdesc-on-lsdesc-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOnLSDescOnSelenium.xml'],
+            'term-lcdesc-on-lsdesc-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOnLSDescOffSelenium.xml'],
+            'term-lcdesc-off-lsdesc-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOffLSDescOnSelenium.xml'],
             'term-lcdesc-off-lsdesc-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCDescOffLSDescOffSelenium.xml'],
-            'term-lctitle-on-lstitle-on':   ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOnLSTitleOnSelenium.xml'],
-            'term-lctitle-on-lstitle-off':  ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOnLSTitleOffSelenium.xml'],
-            'term-lctitle-off-lstitle-on':  ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOffLSTitleOnSelenium.xml'],
+            'term-lctitle-on-lstitle-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOnLSTitleOnSelenium.xml'],
+            'term-lctitle-on-lstitle-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOnLSTitleOffSelenium.xml'],
+            'term-lctitle-off-lstitle-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOffLSTitleOnSelenium.xml'],
             'term-lctitle-off-lstitle-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/TermControlLCTitleOffLSTitleOffSelenium.xml'],
             'crosswalk-webmancont-off': ['/src/groovy/net/hedtech/banner/seeddata/Data/CrosswalkWebUseManagementControlsOffSelenium.xml'],
             'crosswalk-webmancont-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/CrosswalkWebUseManagementControlsOnSelenium.xml'],
@@ -255,10 +255,11 @@ public class InputData {
             'keyword-seed-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceSearchByKeywordSeleniumRemove.xml'],
             'block-registration': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'block-registration-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistrationRemove.xml'],
-            'overall-page-config-seed':['/src/groovy/net/hedtech/banner/seeddata/Data/OverallPageConfigurationSelenium.xml'],
-            'overall-page-config-seed-remove':['/src/groovy/net/hedtech/banner/seeddata/Data/OverallPageConfigurationSeleniumRemove.xml'],
-			'student-centric-period-selenium':['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriodSeleniumRemove.xml']
+            'overall-page-config-seed': ['/src/groovy/net/hedtech/banner/seeddata/Data/OverallPageConfigurationSelenium.xml'],
+            'overall-page-config-seed-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/OverallPageConfigurationSeleniumRemove.xml'],
+            'student-centric-period-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriodSeleniumRemove.xml']
     ]
+
 
     def validateTable(Sql conn) {
         String ownerSql = """select owner from all_tables where table_name = ?"""
@@ -278,6 +279,7 @@ public class InputData {
      * Sets the current year, month, and day input data.
      * This is used to populate the activity date
      * */
+
     def setCurrentDate() {
         def cal = Calendar.instance
         yyyy = cal.get(Calendar.YEAR)
@@ -289,6 +291,7 @@ public class InputData {
     /**
      * Prompts the user via the command line for input data needed in order to load seed data.
      * */
+
     public def promptUserForInputData(args) {
         setCurrentDate()
         if (prompts) {
@@ -384,6 +387,7 @@ public class InputData {
     /**
      * Maintains counts for processed tables.
      * */
+
     def tableUpdate(inTableName, long inReadCnt, long inInsertCnt, long inUpdateCnt, long inErrorCnt, long inDeleteCnt) {
 
         if (!(inReadCnt == 0 && inInsertCnt == 0 && inUpdateCnt == 0 && inErrorCnt == 0 && inDeleteCnt == 0)) {
@@ -428,11 +432,11 @@ public class InputData {
 
         tableCnts.each { tab ->
             println "Total for Table: ${tab.tableName} " +
-                    " \tRead: ${tab.readCnt.toString().padLeft(4, ' ')} " +
-                    " \tInsert: ${tab.insertCnt.toString().padLeft(4, ' ')} " +
-                    " \tUpdate: ${tab.updateCnt.toString().padLeft(4, ' ')} " +
-                    " \tDeletes: ${tab.deleteCnt.toString().padLeft(4, ' ')} " +
-                    " \tErrors: ${tab.errorCnt.toString().padLeft(4, ' ')} "
+                            " \tRead: ${tab.readCnt.toString().padLeft(4, ' ')} " +
+                            " \tInsert: ${tab.insertCnt.toString().padLeft(4, ' ')} " +
+                            " \tUpdate: ${tab.updateCnt.toString().padLeft(4, ' ')} " +
+                            " \tDeletes: ${tab.deleteCnt.toString().padLeft(4, ' ')} " +
+                            " \tErrors: ${tab.errorCnt.toString().padLeft(4, ' ')} "
 
             tableCnt++
             readTot += tab.readCnt
@@ -443,11 +447,11 @@ public class InputData {
         }
 
         println "\nTotal Tables: ${tableCnt.toString().padLeft(4, ' ')} " +
-                " \t\tRead: ${readTot.toString().padLeft(4, ' ')} " +
-                " \tInsert: ${insertTot.toString().padLeft(4, ' ')} " +
-                " \tUpdate: ${updateTot.toString().padLeft(4, ' ')} " +
-                " \tDeletes: ${deleteTot.toString().padLeft(4, ' ')} " +
-                " \tErrors: ${errorTot.toString().padLeft(4, ' ')} "
+                        " \t\tRead: ${readTot.toString().padLeft(4, ' ')} " +
+                        " \tInsert: ${insertTot.toString().padLeft(4, ' ')} " +
+                        " \tUpdate: ${updateTot.toString().padLeft(4, ' ')} " +
+                        " \tDeletes: ${deleteTot.toString().padLeft(4, ' ')} " +
+                        " \tErrors: ${errorTot.toString().padLeft(4, ' ')} "
     }
 
 
