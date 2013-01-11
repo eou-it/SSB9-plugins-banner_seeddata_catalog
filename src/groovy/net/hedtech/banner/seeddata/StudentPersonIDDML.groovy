@@ -265,7 +265,7 @@ public class StudentPersonIDDML {
            AND NVL(sfrstcr_error_flag,'N') <> 'F'
            AND sfrstcr_rsts_code = stvrsts_code
            AND stvrsts_incl_sect_enrl = 'Y')
-           AND ssbsect_term_code = ?
+           where ssbsect_term_code = ?
      """
         def enrlCnt2 = """ UPDATE ssbsect
         SET ssbsect_seats_avail =  (ssbsect_max_enrl - ssbsect_enrl)
