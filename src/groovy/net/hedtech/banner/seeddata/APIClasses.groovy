@@ -75,6 +75,8 @@ public class APIClasses {
             'SSBSECT_DELETE': 'net.hedtech.banner.seeddata.ScheduleTermDeleteDML',
             'CATALOG_DELETE': 'net.hedtech.banner.seeddata.CatalogDeleteDML' ,
             'SORATMT' : 'net.hedtech.banner.seeddata.SoratmtDML' ,
+            'SFRBRDB': 'net.hedtech.banner.seeddata.RegistrationGroupRuleDetailDML',
+            'SFRBRDH': 'net.hedtech.banner.seeddata.RegistrationGroupRuleDML',
             'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML'
 
     ]
