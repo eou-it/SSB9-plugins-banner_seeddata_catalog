@@ -89,8 +89,7 @@ public class ScheduleTermDeleteDML {
 
     def processDelete() {
 
-
-        String schDel = ""
+         String schDel = ""
         schDel = """DELETE FROM ssrmeet  WHERE ssrmeet_term_code = ? AND ssrmeet_crn = ? """
         def tableName = "SSRMEET"
         deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
@@ -290,6 +289,9 @@ public class ScheduleTermDeleteDML {
 
     def processTermDeletes() {
         def tableName = "SSBACRL"
+        deleteTermData(tableName, this.ssbsect_term_code)
+
+        tableName = "SFRMHRS"
         deleteTermData(tableName, this.ssbsect_term_code)
 
         tableName = "SORRTRM"
