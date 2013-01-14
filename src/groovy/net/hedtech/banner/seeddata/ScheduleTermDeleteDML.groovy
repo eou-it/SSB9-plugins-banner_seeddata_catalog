@@ -89,206 +89,162 @@ public class ScheduleTermDeleteDML {
 
     def processDelete() {
 
-         String schDel = ""
-        schDel = """DELETE FROM ssrmeet  WHERE ssrmeet_term_code = ? AND ssrmeet_crn = ? """
         def tableName = "SSRMEET"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM sirasgn WHERE sirasgn_term_code = ? AND sirasgn_crn = ?"""
+        tableName = "SFRBKOP"
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
+
         tableName = "SIRASGN"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrlink   WHERE ssrlink_term_code = ? AND ssrlink_crn = ?"""
         tableName = "SSRLINK"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM sfrwlnt   WHERE sfrwlnt_term_code = ? AND sfrwlnt_crn = ?"""
         tableName = "SFRWLNT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-
-        schDel = """DELETE  FROM ssrcorq WHERE ssrcorq_term_code = ?  AND ssrcorq_crn = ?"""
         tableName = "SSRCORQ"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-
-        schDel = """DELETE  FROM ssrfees WHERE ssrfees_term_code = ? AND ssrfees_crn = ?"""
         tableName = "SSRFEES"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-
-        schDel = """DELETE FROM SSRRATT  WHERE ssrratt_term_code = ? AND ssrratt_crn = ?"""
         tableName = "SSRRATT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
-
-
-        schDel = """DELETE FROM SSRRCHR   WHERE ssrrchr_term_code = ? AND ssrrchr_crn = ?"""
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
         tableName = "SSRRCHR"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-
-        schDel = """DELETE FROM SSRRDEP   WHERE ssrrdep_term_code = ? AND ssrrdep_crn = ?"""
         tableName = "SSRRDEP"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM SSBWLSC   WHERE ssbwlsc_term_code = ? AND ssbwlsc_crn = ?"""
         tableName = "SSBWLSC"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrcol  WHERE ssrrcol_term_code = ? AND ssrrcol_crn = ?"""
         tableName = "SSRRCOL"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrdeg  WHERE ssrrdeg_term_code = ? AND ssrrdeg_crn = ?"""
         tableName = "SSRRDEG"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrprg WHERE ssrrprg_term_code = ? AND ssrrprg_crn = ?"""
         tableName = "SSRRPRG"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssrrare  WHERE ssrrare_term_code = ? AND ssrrare_crn = ?"""
         tableName = "SSRRARE"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrcmp WHERE ssrrcmp_term_code = ? AND ssrrcmp_crn = ?"""
         tableName = "SSRRCMP"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrmaj WHERE ssrrmaj_term_code = ? AND ssrrmaj_crn = ?"""
         tableName = "SSRRMAJ"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrcls   WHERE ssrrcls_term_code = ?  AND ssrrcls_crn = ?"""
         tableName = "SSRRCLS"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrrlvl WHERE ssrrlvl_term_code = ? AND ssrrlvl_crn = ?"""
         tableName = "SSRRLVL"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrresv WHERE ssrresv_term_code = ? AND ssrresv_crn = ?"""
         tableName = "SSRRESV"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssrattr  WHERE ssrattr_term_code = ? AND ssrattr_crn = ?"""
         tableName = "SSRATTR"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssrxlst  WHERE ssrxlst_term_code = ? AND ssrxlst_crn = ?"""
         tableName = "SSRXLST"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssrblck  WHERE ssrblck_term_code = ? AND ssrblck_crn = ?"""
         tableName = "SSRBLCK"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrsccd  WHERE ssrsccd_term_code = ? AND ssrsccd_crn = ?"""
         tableName = "SSRSCCD"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssbovrr  WHERE ssbovrr_term_code = ? AND ssbovrr_crn = ?"""
         tableName = "SSBOVRR"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssrrtst WHERE ssrrtst_term_code = ? AND ssrrtst_crn = ?"""
         tableName = "SSRRTST"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssreval  WHERE ssreval_term_code = ? AND ssreval_crn = ?"""
         tableName = "SSREVAL"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssrsprt  WHERE ssrsprt_term_code = ? AND ssrsprt_crn = ?"""
         tableName = "SSRSPRT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrmprt   WHERE ssrmprt_term_code = ? AND ssrmprt_crn = ?"""
         tableName = "SSRMPRT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrsrdf WHERE ssrsrdf_term_code = ? AND ssrsrdf_crn = ?"""
         tableName = "SSRSRDF"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssrmrdf WHERE ssrmrdf_term_code = ? AND ssrmrdf_crn = ?"""
         tableName = "SSRMRDF"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssbssec WHERE ssbssec_term_code = ?   AND ssbssec_crn = ?"""
         tableName = "SSBSSEC"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssbfsec  WHERE ssbfsec_term_code = ?  AND ssbfsec_crn = ?"""
         tableName = "SSRFSEC"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE    FROM ssrrsts  WHERE ssrrsts_term_code = ? AND ssrrsts_crn = ?"""
         tableName = "SSRRSTS"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE    FROM ssrextn  WHERE ssrextn_term_code = ? AND ssrextn_crn = ?"""
         tableName = "SSREXTN"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssrrfnd  WHERE ssrrfnd_term_code = ? AND ssrrfnd_crn = ?"""
         tableName = "SSRRFND"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssbdesc WHERE ssbdesc_term_code = ? AND ssbdesc_crn = ?"""
         tableName = "SSBDESC"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssrtext WHERE ssrtext_term_code = ? AND ssrtext_crn = ?"""
         tableName = "SSRTEXT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrsyln   WHERE ssrsyln_term_code = ? AND ssrsyln_crn = ?"""
         tableName = "SSRSYLN"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssrsylo WHERE ssrsylo_term_code = ? AND ssrsylo_crn = ?"""
         tableName = "SSRSYLO"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE   FROM ssrsyrm   WHERE ssrsyrm_term_code = ? AND ssrsyrm_crn = ?"""
         tableName = "SSRSYRM"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM ssrsytr   WHERE ssrsytr_term_code = ? AND ssrsytr_crn = ?"""
         tableName = "SSRSYTR"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE  FROM shrgcom  WHERE shrgcom_term_code = ? AND shrgcom_crn = ?"""
         tableName = "SHRGCOM"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM shrscom  WHERE shrscom_term_code = ? AND shrscom_crn = ?"""
         tableName = "SHRSCOM"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssrclbd  WHERE ssrclbd_term_code = ? AND ssrclbd_crn = ? """
         tableName = "SSRCLBD"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM sfrwlnt  WHERE sfrwlnt_term_code = ? AND sfrwlnt_crn = ?"""
         tableName = "SFRWLNT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM sfrstcr  WHERE sfrstcr_term_code = ? AND sfrstcr_crn = ?"""
         tableName = "SFRSTCR"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        schDel = """DELETE FROM ssbsect  WHERE ssbsect_term_code = ? AND ssbsect_crn = ? """
         tableName = "SSBSECT"
-        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn, schDel)
+        deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
     }
 
 
     def processTermDeletes() {
+
         def tableName = "SSBACRL"
+        deleteTermData(tableName, this.ssbsect_term_code)
+
+        tableName = "SFBBLCD"
+        deleteTermData(tableName, this.ssbsect_term_code)
+
+        tableName = "SFRPABC"
         deleteTermData(tableName, this.ssbsect_term_code)
 
         tableName = "SFRMHRS"
@@ -329,10 +285,11 @@ public class ScheduleTermDeleteDML {
     }
 
 
-    private def deleteData(String tableName, term, crn, String sql) {
+    private def deleteData(String tableName, term, crn) {
+        def schDel = """DELETE FROM ${tableName}  WHERE ${tableName}_term_code = ? and ${tableName}_crn = ? """
         try {
 
-            int delRows = conn.executeUpdate(sql, [term, crn])
+            int delRows = conn.executeUpdate(schDel, [term, crn])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
         catch (Exception e) {

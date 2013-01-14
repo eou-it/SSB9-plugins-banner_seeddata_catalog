@@ -95,7 +95,6 @@ public class StudentPersonIDDML {
 
     def deleteData() {
 
-
         String selectSql = """select srbrecr_term_code, srbrecr_admin_seqno   from srbrecr where srbrecr_pidm = ?
                order by 1,2"""
         try {
@@ -184,6 +183,8 @@ public class StudentPersonIDDML {
         deleteData("SFRENSP", "delete SFRENSP where  	SFRENSP_pidm = ?  ")
         deleteData("SFBETRM", "delete SFBETRM where  	SFBETRM_pidm = ?  ")
         deleteData("SFTRGAM", "delete SFTRGAM where  	SFTRGAM_pidm = ?  ")
+        if (doesTableExist("SFRBLPA")) deleteData("SFRBLPA", "delete SFRBLPA where  	SFRBLPA_pidm = ?  ")
+        if (doesTableExist("SFRBSEL")) deleteData("SFRBSEL", "delete SFRBSEL where  	SFRBSEL_pidm = ?  ")
         deleteData("SFRENRL", "delete SFRENRL where  	SFRENRL_pidm = ?  ")
         deleteData("SFRSRPO", "delete SFRSRPO where  	SFRSRPO_pidm = ?  ")
         deleteData("SFRTHST", "delete SFRTHST where  	SFRTHST_pidm = ?  ")
