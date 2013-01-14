@@ -185,7 +185,7 @@ public class ScheduleTermDeleteDML {
         tableName = "SSBSSEC"
         deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
-        tableName = "SSRFSEC"
+        tableName = "SSBFSEC"
         deleteData(tableName, this.ssbsect_term_code, this.ssbsect_crn)
 
         tableName = "SSRRSTS"
