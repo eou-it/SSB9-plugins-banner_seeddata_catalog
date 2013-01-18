@@ -166,6 +166,7 @@ public class StudentPersonIDDML {
         def terms = conn.rows(selectTerms, [connectInfo.saveStudentPidm])
 
         deleteData("TBRACCD", "delete TBRACCD where  	TBRACCD_pidm = ?  ")
+        deleteData("SGRSATT", "delete SGRSATT where  	SGRSATT_pidm = ?  ")
         deleteData("SPRHOLD", "delete SPRHOLD where  	SPRHOLD_pidm = ?  ")
         deleteData("SPRAPIN", "delete SPRAPIN where  	SPRAPIN_pidm = ?  ")
         deleteData("SFRBTCH", "delete SFRBTCH where  	SFRBTCH_pidm = ?  ")
