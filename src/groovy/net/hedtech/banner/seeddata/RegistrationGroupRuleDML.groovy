@@ -193,12 +193,18 @@ class RegistrationGroupRuleDML {
                     }
                 }
             } else {
-                def insertSQL = """insert into SFRBRDH (SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE_INIT,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
+                //In case of insert generate the rule seq number
+                def getRuleSeqSQL = """ SELECT NVL(MAX(SFRBRDH_SEQ_NUM),0) + 1 AS ruleSeqNum FROM SFRBRDH """
+
+                def insertSQL = """insert into SFRBRDH (SFRBRDH_SEQ_NUM,SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE_INIT,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
                                                                         SFRBRDH_DEPT_CODE,SFRBRDH_MAJR_CODE,SFRBRDH_CAMP_CODE,SFRBRDH_LEVL_CODE,SFRBRDH_PROG_CODE,
                                                                         SFRBRDH_DEGC_CODE,SFRBRDH_ATTS_CODE,SFRBRDH_MANDATORY_IND,SFRBRDH_BLOCK_RESTRICTION_IND,SFRBRDH_STATUS_IND,
-                                                                        SFRBRDH_ACTIVITY_DATE,SFRBRDH_USER_ID,SFRBRDH_DATA_ORIGIN) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+                                                                        SFRBRDH_ACTIVITY_DATE,SFRBRDH_USER_ID,SFRBRDH_DATA_ORIGIN) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
                 try {
-                    conn.executeUpdate(insertSQL, [this.rulePriority, this.termCodeInit, this.classCode, this.college, this.dept, this.majr, this.camp, this.levl, this.prog,
+                    conn.eachRow(getRuleSeqSQL) {trow ->
+                        ruleSeqNum = trow.ruleSeqNum
+                    }
+                    conn.executeUpdate(insertSQL, [this.ruleSeqNum, this.rulePriority, this.termCodeInit, this.classCode, this.college, this.dept, this.majr, this.camp, this.levl, this.prog,
                             this.degc, this.atts, this.mandInd, this.blockReg, this.status, this.activityDate, this.userid, this.dataOrigin])
                     connectInfo.tableUpdate("SFRBRDH", 0, 1, 0, 0, 0)
                 }
