@@ -22,7 +22,7 @@ class RegistrationGroupRuleDML {
 
     def ruleSeqNum
     def blockCode
-    def termCodeInit
+    def termCodeEff
     def blockAssignInd
     def courseRestriction
     def classCode
@@ -77,7 +77,7 @@ class RegistrationGroupRuleDML {
 
     def parseXmlData() {
         def rule = new XmlParser().parseText(xmlData)
-        this.termCodeInit = rule.SFRBRDH_TERM_CODE_INIT.text()
+        this.termCodeEff = rule.SFRBRDH_TERM_CODE_EFF.text()
         this.classCode = rule.SFRBRDH_CLAS_CODE.text()
         this.rulePriority = rule.SFRBRDH_PRIORITY.text()
         this.mandInd = rule.SFRBRDH_MANDATORY_IND.text()
@@ -89,7 +89,7 @@ class RegistrationGroupRuleDML {
         this.camp = rule.SFRBRDH_CAMP_CODE.text()
         this.degc = rule.SFRBRDH_DEGC_CODE.text()
         this.levl = rule.SFRBRDH_LEVL_CODE.text()
-        this.prog = rule.SFRBRDH_PROG_CODE.text()
+        this.prog = rule.SFRBRDH_PROGRAM.text()
         this.atts = rule.SFRBRDH_ATTS_CODE.text()
         this.userid = rule.SFRBRDH_USER_ID.text()
         this.dataOrigin = rule.SFRBRDH_DATA_ORIGIN.text()
@@ -99,8 +99,8 @@ class RegistrationGroupRuleDML {
 
     def insertRuleData() {
         this.update = false
-        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE_INIT = ? """
-        def params = [this.rulePriority, this.termCodeInit]
+        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE_EFF = ? """
+        def params = [this.rulePriority, this.termCodeEff]
 
         if (this.classCode) {
             ruleSql += """ and SFRBRDH_CLAS_CODE = ?"""
@@ -144,11 +144,11 @@ class RegistrationGroupRuleDML {
             ruleSql += """ and SFRBRDH_LEVL_CODE is null"""
         }
         if (this.prog) {
-            ruleSql += """ and SFRBRDH_PROG_CODE = ?"""
+            ruleSql += """ and SFRBRDH_PROGRAM = ?"""
             params.add(this.prog)
         }
         else {
-            ruleSql += """ and SFRBRDH_PROG_CODE is null"""
+            ruleSql += """ and SFRBRDH_PROGRAM is null"""
         }
         if (this.degc) {
             ruleSql += """ and SFRBRDH_DEGC_CODE = ?"""
@@ -178,33 +178,36 @@ class RegistrationGroupRuleDML {
                 this.update = true
             }
             if (this.update) {
-                def blockUpdatesql = """update SFRBRDH set SFRBRDH_PRIORITY = ?,SFRBRDH_TERM_CODE_INIT = ?,SFRBRDH_CLAS_CODE = ?,SFRBRDH_COLL_CODE = ?,
-                                                        SFRBRDH_DEPT_CODE = ? ,SFRBRDH_MAJR_CODE = ?,SFRBRDH_CAMP_CODE = ? ,SFRBRDH_LEVL_CODE = ?,SFRBRDH_PROG_CODE = ?,
+                def blockUpdatesql = """update SFRBRDH set SFRBRDH_PRIORITY = ?,SFRBRDH_TERM_CODE_EFF = ?,SFRBRDH_CLAS_CODE = ?,SFRBRDH_COLL_CODE = ?,
+                                                        SFRBRDH_DEPT_CODE = ? ,SFRBRDH_MAJR_CODE = ?,SFRBRDH_CAMP_CODE = ? ,SFRBRDH_LEVL_CODE = ?,SFRBRDH_PROGRAM = ?,
                                                         SFRBRDH_DEGC_CODE = ? ,SFRBRDH_ATTS_CODE =? where SFRBRDH_SEQ_NUM =?"""
+                if (connectInfo.debugThis) println blockUpdatesql
                 try {
-                    conn.executeUpdate(blockUpdatesql, [this.rulePriority, this.termCodeInit, this.classCode, this.college, this.dept, this.majr, this.camp, this.levl, this.prog, this.degc, this.atts, this.ruleSeqNum])
+                    conn.executeUpdate(blockUpdatesql, [this.rulePriority, this.termCodeEff, this.classCode, this.college, this.dept, this.majr, this.camp, this.levl, this.prog, this.degc, this.atts, this.ruleSeqNum])
                     connectInfo.tableUpdate("SFRBRDH", 0, 0, 1, 0, 0)
                 }
                 catch (Exception e) {
                     connectInfo.tableUpdate("SFRBRDH", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Update SFRBRDH ${this.ruleSeqNum}}"
-                        println "Problem executing insert for table SFRBRDH from RegistrationGroupRuleDML.groovy: $e.message"
+                        println "Problem executing update for table SFRBRDH from RegistrationGroupRuleDML.groovy: $e.message"
                     }
                 }
             } else {
                 //In case of insert generate the rule seq number
                 def getRuleSeqSQL = """ SELECT NVL(MAX(SFRBRDH_SEQ_NUM),0) + 1 AS ruleSeqNum FROM SFRBRDH """
 
-                def insertSQL = """insert into SFRBRDH (SFRBRDH_SEQ_NUM,SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE_INIT,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
-                                                                        SFRBRDH_DEPT_CODE,SFRBRDH_MAJR_CODE,SFRBRDH_CAMP_CODE,SFRBRDH_LEVL_CODE,SFRBRDH_PROG_CODE,
+                def insertSQL = """insert into SFRBRDH (SFRBRDH_SEQ_NUM,SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE_EFF,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
+                                                                        SFRBRDH_DEPT_CODE,SFRBRDH_MAJR_CODE,SFRBRDH_CAMP_CODE,SFRBRDH_LEVL_CODE,SFRBRDH_PROGRAM,
                                                                         SFRBRDH_DEGC_CODE,SFRBRDH_ATTS_CODE,SFRBRDH_MANDATORY_IND,SFRBRDH_BLOCK_RESTRICTION_IND,SFRBRDH_STATUS_IND,
                                                                         SFRBRDH_ACTIVITY_DATE,SFRBRDH_USER_ID,SFRBRDH_DATA_ORIGIN) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+                if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.eachRow(getRuleSeqSQL) {trow ->
                         ruleSeqNum = trow.ruleSeqNum
                     }
-                    conn.executeUpdate(insertSQL, [this.ruleSeqNum, this.rulePriority, this.termCodeInit, this.classCode, this.college, this.dept, this.majr, this.camp, this.levl, this.prog,
+                    if (connectInfo.debugThis) println "Rule created with sequence ${ruleSeqNum}"
+                    conn.executeUpdate(insertSQL, [this.ruleSeqNum, this.rulePriority, this.termCodeEff, this.classCode, this.college, this.dept, this.majr, this.camp, this.levl, this.prog,
                             this.degc, this.atts, this.mandInd, this.blockReg, this.status, this.activityDate, this.userid, this.dataOrigin])
                     connectInfo.tableUpdate("SFRBRDH", 0, 1, 0, 0, 0)
                 }

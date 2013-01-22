@@ -75,10 +75,10 @@ class RegistrationGroupRuleDetailDML {
     def parseXmlData() {
         def rule = new XmlParser().parseText(xmlData)
         this.blockCode = rule.SFRBRDB_BLCK_CODE.text()
-        this.termCodeInit = rule.SFRBRDB_BRDH_TERM_CODE_INIT.text()
+        this.termCodeInit = rule.SFRBRDB_TERM_CODE_EFF.text()
         this.blockAssignInd = rule.SFRBRDB_ASSIGN_IND.text()
         this.courseRestriction = rule.SFRBRDB_COURSE_RESTRICTION.text()
-        this.classCode = rule.SFRBRDB_BRDH_CLAS_CODE.text()
+        this.classCode = rule.SFRBRDB_CLAS_CODE.text()
         this.rulePriority = rule.PRIORITY.text()
         this.college = rule.COLL_CODE.text()
         this.dept = rule.DEPT_CODE.text()
@@ -86,7 +86,7 @@ class RegistrationGroupRuleDetailDML {
         this.camp = rule.CAMP_CODE.text()
         this.degc = rule.DEGC_CODE.text()
         this.levl = rule.LEVL_CODE.text()
-        this.prog = rule.PROG_CODE.text()
+        this.prog = rule.PROGRAM.text()
         this.atts = rule.ATTS_CODE.text()
         this.userid = rule.SFRBRDB_USER_ID.text()
         this.dataOrigin = rule.SFRBRDB_DATA_ORIGIN.text()
@@ -95,7 +95,7 @@ class RegistrationGroupRuleDetailDML {
 
 
     def insertRuleDetailData() {
-        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE_INIT = ? """
+        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE_EFF = ? """
         def params = [this.rulePriority, this.termCodeInit]
 
         if (this.classCode) {
@@ -140,11 +140,11 @@ class RegistrationGroupRuleDetailDML {
             ruleSql += """ and SFRBRDH_LEVL_CODE is null"""
         }
         if (this.prog) {
-            ruleSql += """ and SFRBRDH_PROG_CODE = ?"""
+            ruleSql += """ and SFRBRDH_PROGRAM = ?"""
             params.add(this.prog)
         }
         else {
-            ruleSql += """ and SFRBRDH_PROG_CODE is null"""
+            ruleSql += """ and SFRBRDH_PROGRAM is null"""
         }
         if (this.degc) {
             ruleSql += """ and SFRBRDH_DEGC_CODE = ?"""
@@ -160,7 +160,7 @@ class RegistrationGroupRuleDetailDML {
         else {
             ruleSql += """ and SFRBRDH_ATTS_CODE is null"""
         }
-
+        if (connectInfo.debugThis) println ruleSql
         this.conn.eachRow(ruleSql, params)
                 {
                     trow ->
@@ -172,14 +172,15 @@ class RegistrationGroupRuleDetailDML {
             //Check whether it is a create or update
             if (this.ruleSeqNum) {
                 String blockExistsSQL = """select 1 as blockCount from sfrbrdb  where SFRBRDB_BRDH_SEQ_NUM = ? and SFRBRDB_BLCK_CODE = ? """
+                if (connectInfo.debugThis) println "block rule number ${blockExistsSQL}"
                 this.conn.eachRow(blockExistsSQL, [this.ruleSeqNum, this.blockCode]) {trow ->
                     if (trow.blockCount == 1)
                         this.update = true
                 }
             }
             if (this.update) {
-                def blockUpdatesql = """update SFRBRDB set SFRBRDB_BRDH_TERM_CODE_INIT=?, SFRBRDB_ASSIGN_IND=?,
-                                        SFRBRDB_COURSE_RESTRICTION=?,SFRBRDB_BRDH_CLAS_CODE=?,
+                def blockUpdatesql = """update SFRBRDB set SFRBRDB_TERM_CODE_EFF=?, SFRBRDB_ASSIGN_IND=?,
+                                        SFRBRDB_COURSE_RESTRICTION=?,SFRBRDB_CLAS_CODE=?,
                                         SFRBRDB_USER_ID=?,SFRBRDB_DATA_ORIGIN=?,SFRBRDB_ACTIVITY_DATE=? where SFRBRDB_BRDH_SEQ_NUM =? and SFRBRDB_BLCK_CODE=?"""
 
                 try {
@@ -191,12 +192,13 @@ class RegistrationGroupRuleDetailDML {
                     connectInfo.tableUpdate("SFRBRDB", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Update SFRBRDB ${this.blockCode}}"
-                        println "Problem executing insert for table SFRBRDB from RegistrationGroupRuleDetailDML.groovy: $e.message"
+                        println "Problem executing update for table SFRBRDB from RegistrationGroupRuleDetailDML.groovy: $e.message"
                     }
                 }
             } else {
-                def insertSQL = """insert into SFRBRDB (SFRBRDB_BRDH_SEQ_NUM,SFRBRDB_BLCK_CODE,SFRBRDB_BRDH_TERM_CODE_INIT,SFRBRDB_ASSIGN_IND,SFRBRDB_COURSE_RESTRICTION,
-                  SFRBRDB_BRDH_CLAS_CODE,SFRBRDB_USER_ID,SFRBRDB_DATA_ORIGIN,SFRBRDB_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
+                def insertSQL = """insert into SFRBRDB (SFRBRDB_BRDH_SEQ_NUM,SFRBRDB_BLCK_CODE,SFRBRDB_TERM_CODE_EFF,SFRBRDB_ASSIGN_IND,SFRBRDB_COURSE_RESTRICTION,
+                  SFRBRDB_CLAS_CODE,SFRBRDB_USER_ID,SFRBRDB_DATA_ORIGIN,SFRBRDB_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
+                if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.executeUpdate(insertSQL, [this.ruleSeqNum, this.blockCode, this.termCodeInit, this.blockAssignInd, this.courseRestriction,
                             this.classCode, this.userid, this.dataOrigin, this.activityDate])
@@ -206,7 +208,7 @@ class RegistrationGroupRuleDetailDML {
                     connectInfo.tableUpdate("SFRBRDB", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Insert SFRBRDB ${this.blockCode}}"
-                        println "Problem executing insert for table SFRBRDB from RegistrationGroupRuleDetailDML.groovy: $e.message"
+                        println "Problem executing insert  for table SFRBRDB from RegistrationGroupRuleDetailDML.groovy: $e.message"
                     }
                 }
             }
@@ -218,13 +220,14 @@ class RegistrationGroupRuleDetailDML {
 
         deleteData("SFRBRDB", """delete FROM SFRBRDB where SFRBRDB_BRDH_SEQ_NUM = ? and SFRBRDB_BLCK_CODE = ?
                                      """, ruleSeqNum, blockCode)
+
     }
 
 
     private def deleteData(String tableName, String sql, String ruleSeqNUm, String blockCode) {
         try {
             int delRows
-
+            if (connectInfo.debugThis) println sql
             delRows = conn.executeUpdate(sql, [ruleSeqNum, blockCode])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
