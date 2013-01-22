@@ -77,7 +77,8 @@ public class APIClasses {
             'SORATMT' : 'net.hedtech.banner.seeddata.SoratmtDML' ,
             'SFRBRDB': 'net.hedtech.banner.seeddata.RegistrationGroupRuleDetailDML',
             'SFRBRDH': 'net.hedtech.banner.seeddata.RegistrationGroupRuleDML',
-            'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML'
+            'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML'  ,
+            'SFRBSEL' : 'net.hedtech.banner.seeddata.RegistrationSelectedBlockDML'
 
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process

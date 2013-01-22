@@ -91,9 +91,9 @@ class RegistrationGroupRuleDML {
         this.levl = rule.SFRBRDH_LEVL_CODE.text()
         this.prog = rule.SFRBRDH_PROGRAM.text()
         this.atts = rule.SFRBRDH_ATTS_CODE.text()
-        this.userid = rule.SFRBRDH_USER_ID.text()
-        this.dataOrigin = rule.SFRBRDH_DATA_ORIGIN.text()
-        this.activityDate = rule.SFRBRDH_ACTIVITY_DATE.text()
+        this.userid = connectInfo.dataOrigin
+        this.dataOrigin = connectInfo.dataOrigin
+        this.activityDate = "01012010"
     }
 
 
@@ -200,7 +200,7 @@ class RegistrationGroupRuleDML {
                 def insertSQL = """insert into SFRBRDH (SFRBRDH_SEQ_NUM,SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE_EFF,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
                                                                         SFRBRDH_DEPT_CODE,SFRBRDH_MAJR_CODE,SFRBRDH_CAMP_CODE,SFRBRDH_LEVL_CODE,SFRBRDH_PROGRAM,
                                                                         SFRBRDH_DEGC_CODE,SFRBRDH_ATTS_CODE,SFRBRDH_MANDATORY_IND,SFRBRDH_BLOCK_RESTRICTION_IND,SFRBRDH_STATUS_IND,
-                                                                        SFRBRDH_ACTIVITY_DATE,SFRBRDH_USER_ID,SFRBRDH_DATA_ORIGIN) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+                                                                        SFRBRDH_ACTIVITY_DATE,SFRBRDH_USER_ID,SFRBRDH_DATA_ORIGIN) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,to_date(?,'MMDDYYYY'),?,?)"""
                 if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.eachRow(getRuleSeqSQL) {trow ->

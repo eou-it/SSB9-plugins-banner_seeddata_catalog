@@ -88,9 +88,9 @@ class RegistrationGroupRuleDetailDML {
         this.levl = rule.LEVL_CODE.text()
         this.prog = rule.PROGRAM.text()
         this.atts = rule.ATTS_CODE.text()
-        this.userid = rule.SFRBRDB_USER_ID.text()
-        this.dataOrigin = rule.SFRBRDB_DATA_ORIGIN.text()
-        this.activityDate = rule.SFRBRDB_ACTIVITY_DATE.text()
+        this.userid = connectInfo.dataOrigin
+        this.dataOrigin = connectInfo.dataOrigin
+        this.activityDate =  '01012010'
     }
 
 
@@ -181,7 +181,8 @@ class RegistrationGroupRuleDetailDML {
             if (this.update) {
                 def blockUpdatesql = """update SFRBRDB set SFRBRDB_TERM_CODE_EFF=?, SFRBRDB_ASSIGN_IND=?,
                                         SFRBRDB_COURSE_RESTRICTION=?,SFRBRDB_CLAS_CODE=?,
-                                        SFRBRDB_USER_ID=?,SFRBRDB_DATA_ORIGIN=?,SFRBRDB_ACTIVITY_DATE=? where SFRBRDB_BRDH_SEQ_NUM =? and SFRBRDB_BLCK_CODE=?"""
+                                        SFRBRDB_USER_ID=?,SFRBRDB_DATA_ORIGIN=?,SFRBRDB_ACTIVITY_DATE=to_date(?,'MMDDYYYY')
+                                        where SFRBRDB_BRDH_SEQ_NUM =? and SFRBRDB_BLCK_CODE=?"""
 
                 try {
                     conn.executeUpdate(blockUpdatesql, [this.termCodeInit, this.blockAssignInd, this.courseRestriction,
@@ -197,7 +198,7 @@ class RegistrationGroupRuleDetailDML {
                 }
             } else {
                 def insertSQL = """insert into SFRBRDB (SFRBRDB_BRDH_SEQ_NUM,SFRBRDB_BLCK_CODE,SFRBRDB_TERM_CODE_EFF,SFRBRDB_ASSIGN_IND,SFRBRDB_COURSE_RESTRICTION,
-                  SFRBRDB_CLAS_CODE,SFRBRDB_USER_ID,SFRBRDB_DATA_ORIGIN,SFRBRDB_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
+                  SFRBRDB_CLAS_CODE,SFRBRDB_USER_ID,SFRBRDB_DATA_ORIGIN,SFRBRDB_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,to_date(?,'MMDDYYYY'))"""
                 if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.executeUpdate(insertSQL, [this.ruleSeqNum, this.blockCode, this.termCodeInit, this.blockAssignInd, this.courseRestriction,
