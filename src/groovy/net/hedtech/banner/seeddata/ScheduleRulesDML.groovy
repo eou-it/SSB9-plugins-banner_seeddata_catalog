@@ -1,14 +1,14 @@
-/*********************************************************************************
+/** *******************************************************************************
  Copyright 2009-2011 SunGard Higher Education. All Rights Reserved.
- This copyrighted software contains confidential and proprietary information of 
- SunGard Higher Education and its subsidiaries. Any use of this software is limited 
- solely to SunGard Higher Education licensees, and is further subject to the terms 
- and conditions of one or more written license agreements between SunGard Higher 
+ This copyrighted software contains confidential and proprietary information of
+ SunGard Higher Education and its subsidiaries. Any use of this software is limited
+ solely to SunGard Higher Education licensees, and is further subject to the terms
+ and conditions of one or more written license agreements between SunGard Higher
  Education and the licensee in question. SunGard is either a registered trademark or
  trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
- Banner and Luminis are either registered trademarks or trademarks of SunGard Higher 
+ Banner and Luminis are either registered trademarks or trademarks of SunGard Higher
  Education in the U.S.A. and/or other regions and/or countries.
- **********************************************************************************/
+ ********************************************************************************* */
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
@@ -62,6 +62,7 @@ public class ScheduleRulesDML {
     def ssbwlsc_wl_reg_check_ind
     def ssbwlsc_wl_pos_webc_disp_ind
     def ssbwlsc_deadline_notify
+    def ssbwlsc_max_resend_hrs
     def primaryKeyOut = 0
 
     def InputData connectInfo
@@ -134,6 +135,7 @@ public class ScheduleRulesDML {
             this.ssbwlsc_wl_reg_check_ind = schRules.SSBWLSC_WL_REG_CHECK_IND.text()
             this.ssbwlsc_wl_pos_webc_disp_ind = schRules.SSBWLSC_WL_POS_WEBC_DISP_IND.text()
             this.ssbwlsc_deadline_notify = schRules.SSBWLSC_DEADLINE_NOTIFY.text()
+            this.ssbwlsc_max_resend_hrs = schRules.SSBWLSC_MAX_RESEND_HRS.text()
             processSsbwlsc()
         }
     }
@@ -203,7 +205,7 @@ public class ScheduleRulesDML {
                 finally {
                     insertCall.close()
                 }
-               
+
             }
             catch (Exception e) {
                 connectInfo.tableUpdate("SSRRATT", 0, 0, 0, 1, 0)
@@ -523,15 +525,22 @@ public class ScheduleRulesDML {
                 insertCall.setString(6, connectInfo.userID)
                 // parm 7 p_deadline_notify      ssbwlsc_deadline_notify NUMBER
                 if ((this.ssbwlsc_deadline_notify == "") || (this.ssbwlsc_deadline_notify == null) || (!this.ssbwlsc_deadline_notify)) {
-                    insertCall.setNull(7, java.sql.Types.INTEGER) }
+                    insertCall.setNull(7, java.sql.Types.INTEGER)
+                }
                 else {
                     insertCall.setInt(7, this.ssbwlsc_deadline_notify.toInteger())
                 }
 
                 // parm 8 p_data_origin      SSBWLSC_data_origin VARCHAR2
                 insertCall.setString(8, connectInfo.dataOrigin)
-                // parm 9 p_max_resend_hrs
-                insertCall.setNull(9,java.sql.Types.INTEGER)
+
+                // parm 9 p_data_origin      SSBWLSC_MAX_RESEND_HRS NUMBER
+                if ((this.ssbwlsc_max_resend_hrs == "") || (this.ssbwlsc_max_resend_hrs == null) || (!this.ssbwlsc_max_resend_hrs)) {
+                    insertCall.setNull(9, java.sql.Types.INTEGER)
+                }
+                else {
+                    insertCall.setInt(9, this.ssbwlsc_max_resend_hrs.toInteger())
+                }
                 // parm 10 p_rowid_out      SSBWLSC_rowid_out VARCHAR2
                 insertCall.registerOutParameter(10, java.sql.Types.ROWID)
                 if (connectInfo.debugThis) { println "Insert into SSBWLSC ${this.ssrclbd_crn} ${this.ssrclbd_term_code}" }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <SCHEDULED>
     <GUBINST>
-         <GUBINST_FINANCE_INSTALLED>Y</GUBINST_FINANCE_INSTALLED>
+        <GUBINST_FINANCE_INSTALLED>Y</GUBINST_FINANCE_INSTALLED>
     </GUBINST>
     <SSBSECT>
         <SSBSECT_TERM_CODE>202410</SSBSECT_TERM_CODE>
@@ -348,7 +348,7 @@
         <SSBSECT_PREREQ_CHK_METHOD_CDE>B</SSBSECT_PREREQ_CHK_METHOD_CDE>
     </SSBSECT>
     <!--Create a new open learning section with one registered student-->
-        <SOBODTE>
+    <SOBODTE>
         <SOBODTE_TERM_CODE>202410</SOBODTE_TERM_CODE>
         <SOBODTE_INSM_CODE>NT</SOBODTE_INSM_CODE>
         <SOBODTE_REG_START_DATE>01-SEP-10</SOBODTE_REG_START_DATE>
@@ -490,31 +490,31 @@
         <SSBDESC_DATA_ORIGIN>Banner</SSBDESC_DATA_ORIGIN>
         <SSBDESC_VPDI_CODE>INST</SSBDESC_VPDI_CODE>
     </SSBDESC>
-    <SSBSSEC>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        <SSBSSEC_TERM_CODE>202410</SSBSSEC_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-        <SSBSSEC_CRN>20001</SSBSSEC_CRN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-        <SSBSSEC_MID_GRD_DISP_IND>Y</SSBSSEC_MID_GRD_DISP_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-        <SSBSSEC_FIN_GRD_DISP_IND>Y</SSBSSEC_FIN_GRD_DISP_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-        <SSBSSEC_GRD_DETL_DISP_IND>Y</SSBSSEC_GRD_DETL_DISP_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        <SSBSSEC_ACTIVITY_DATE>01-JAN-10</SSBSSEC_ACTIVITY_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        <SSBSSEC_USER_ID>GRAILS</SSBSSEC_USER_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-        <SSBSSEC_SURROGATE_ID>4501</SSBSSEC_SURROGATE_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-        <SSBSSEC_VERSION>0</SSBSSEC_VERSION>                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-        <SSBSSEC_DATA_ORIGIN>GRAILS</SSBSSEC_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-        <SSBSSEC_VPDI_CODE>INST</SSBSSEC_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    <SSBSSEC>
+        <SSBSSEC_TERM_CODE>202410</SSBSSEC_TERM_CODE>
+        <SSBSSEC_CRN>20001</SSBSSEC_CRN>
+        <SSBSSEC_MID_GRD_DISP_IND>Y</SSBSSEC_MID_GRD_DISP_IND>
+        <SSBSSEC_FIN_GRD_DISP_IND>Y</SSBSSEC_FIN_GRD_DISP_IND>
+        <SSBSSEC_GRD_DETL_DISP_IND>Y</SSBSSEC_GRD_DETL_DISP_IND>
+        <SSBSSEC_ACTIVITY_DATE>01-JAN-10</SSBSSEC_ACTIVITY_DATE>
+        <SSBSSEC_USER_ID>GRAILS</SSBSSEC_USER_ID>
+        <SSBSSEC_SURROGATE_ID>4501</SSBSSEC_SURROGATE_ID>
+        <SSBSSEC_VERSION>0</SSBSSEC_VERSION>
+        <SSBSSEC_DATA_ORIGIN>GRAILS</SSBSSEC_DATA_ORIGIN>
+        <SSBSSEC_VPDI_CODE>INST</SSBSSEC_VPDI_CODE>
     </SSBSSEC>
-    <SSBFSEC>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        <SSBFSEC_TERM_CODE>202410</SSBFSEC_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-        <SSBFSEC_CRN>20001</SSBFSEC_CRN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-        <SSBFSEC_WAIT_LIST_DISP_IND>Y</SSBFSEC_WAIT_LIST_DISP_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-        <SSBFSEC_MID_GRD_DISP_IND>Y</SSBFSEC_MID_GRD_DISP_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-        <SSBFSEC_FIN_GRD_DISP_IND>Y</SSBFSEC_FIN_GRD_DISP_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-        <SSBFSEC_ACTIVITY_DATE>01-JAN-10</SSBFSEC_ACTIVITY_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        <SSBFSEC_USER_ID>GRAILS</SSBFSEC_USER_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-        <SSBFSEC_SURROGATE_ID>4721</SSBFSEC_SURROGATE_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-        <SSBFSEC_VERSION>0</SSBFSEC_VERSION>                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-        <SSBFSEC_DATA_ORIGIN>GRAILS</SSBFSEC_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-        <SSBFSEC_VPDI_CODE>INST</SSBFSEC_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    <SSBFSEC>
+        <SSBFSEC_TERM_CODE>202410</SSBFSEC_TERM_CODE>
+        <SSBFSEC_CRN>20001</SSBFSEC_CRN>
+        <SSBFSEC_WAIT_LIST_DISP_IND>Y</SSBFSEC_WAIT_LIST_DISP_IND>
+        <SSBFSEC_MID_GRD_DISP_IND>Y</SSBFSEC_MID_GRD_DISP_IND>
+        <SSBFSEC_FIN_GRD_DISP_IND>Y</SSBFSEC_FIN_GRD_DISP_IND>
+        <SSBFSEC_ACTIVITY_DATE>01-JAN-10</SSBFSEC_ACTIVITY_DATE>
+        <SSBFSEC_USER_ID>GRAILS</SSBFSEC_USER_ID>
+        <SSBFSEC_SURROGATE_ID>4721</SSBFSEC_SURROGATE_ID>
+        <SSBFSEC_VERSION>0</SSBFSEC_VERSION>
+        <SSBFSEC_DATA_ORIGIN>GRAILS</SSBFSEC_DATA_ORIGIN>
+        <SSBFSEC_VPDI_CODE>INST</SSBFSEC_VPDI_CODE>
     </SSBFSEC>
     <SSRTEXT>
         <SSRTEXT_TERM_CODE>202410</SSRTEXT_TERM_CODE>
@@ -1039,6 +1039,7 @@
         <SSBWLSC_ACTIVITY_DATE>10-DEC-10</SSBWLSC_ACTIVITY_DATE>
         <SSBWLSC_USER_ID>GRAILS</SSBWLSC_USER_ID>
         <SSBWLSC_DEADLINE_NOTIFY>4</SSBWLSC_DEADLINE_NOTIFY>
+        <SSBWLSC_MAX_RESEND_HRS>4</SSBWLSC_MAX_RESEND_HRS>
         <SSBWLSC_DATA_ORIGIN>GRAILS</SSBWLSC_DATA_ORIGIN>
         <SSBWLSC_SURROGATE_ID>1201</SSBWLSC_SURROGATE_ID>
         <SSBWLSC_VERSION>0</SSBWLSC_VERSION>
@@ -1841,7 +1842,6 @@
     </SSBACRL>
 
 
-
     <SFBETRM>
         <BANNERID>HOS00001</BANNERID>
         <SFBETRM_TERM_CODE>202410</SFBETRM_TERM_CODE>
@@ -2260,5 +2260,4 @@
         <SOBODTE_CENSUS_DATE_TWO>01-MAR-2025</SOBODTE_CENSUS_DATE_TWO>
         <SOBODTE_DATA_ORIGIN>GRAILS</SOBODTE_DATA_ORIGIN>
     </SOBODTE>
-</SCHEDULED>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
- 
+</SCHEDULED>
