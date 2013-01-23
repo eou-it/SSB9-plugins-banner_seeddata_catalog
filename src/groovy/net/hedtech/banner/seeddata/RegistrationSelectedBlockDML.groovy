@@ -67,10 +67,8 @@ class RegistrationSelectedBlockDML {
         this.connectInfo = connectInfo
         this.connectCall = connectCall
         this.xmlData = xmlData
-        connectInfo.debugThis = true
         parseXmlData()
         insertRuleDetailData()
-        connectInfo.debugThis = false
     }
 
 
@@ -204,28 +202,45 @@ class RegistrationSelectedBlockDML {
             }
         }
 
-        def assignedSql = """insert into sfrbsel ( sfrbsel_pidm, sfrbsel_term_code,
+        def selectSql = """select sfrbsel_blck_code block from sfrbsel where sfrbsel_pidm = ? and
+                           sfrbsel_term_code = ?"""
+        def selectFound
+        if (connectInfo.debugThis) println selectSql
+        try {
+            selectFound = conn.firstRow(selectSql, [connectInfo.saveStudentPidm, this.termCodeEff])
+        }
+        catch (Exception e) {
+            connectInfo.tableUpdate("SFRBSEL", 0, 0, 0, 1, 0)
+            if (connectInfo.showErrors) {
+                println "Select SFRBSEL ${this.pidm} ${this.blockCode}}"
+                println "Problem executing select  for table SFRBSEL from RegistrationSelectedBlockDML.groovy: $e.message"
+            }
+        }
+        if (!selectFound) {
+            def assignedSql = """insert into sfrbsel ( sfrbsel_pidm, sfrbsel_term_code,
                              sfrbsel_blck_code,  sfrbsel_brdh_seq_num,
                              sfrbsel_activity_date, sfrbsel_data_origin,
                              sfrbsel_user_id)
                              values ( ?, ?, ?, ?, to_date(?, 'MMDDYYYY'), ? , ?) """
-        if (connectInfo.debugThis) println assignedSql
-        try {
-            conn.executeUpdate(assignedSql, [connectInfo.saveStudentPidm, this.termCodeEff,
-                               this.blockCode, this.ruleSeqNum,
-                               '01012010', connectInfo.dataOrigin,
-                               connectInfo.dataOrigin])
-            connectInfo.tableUpdate("SFRBSEL", 0, 1, 0, 0, 0)
-        }
+            if (connectInfo.debugThis) println assignedSql
+            try {
+                conn.executeUpdate(assignedSql, [connectInfo.saveStudentPidm, this.termCodeEff,
+                                   this.blockCode, this.ruleSeqNum,
+                                   '01012010', connectInfo.dataOrigin,
+                                   connectInfo.dataOrigin])
+                selectFound = this.blockCode
+                connectInfo.tableUpdate("SFRBSEL", 0, 1, 0, 0, 0)
+            }
 
-        catch (Exception e) {
-            connectInfo.tableUpdate("SFRBSEL", 0, 0, 0, 1, 0)
-            if (connectInfo.showErrors) {
-                println "Insert SFRBSEL ${this.blockCode}}"
-                println "Problem executing insert  for table SFRBSEL from RegistrationSelectedBlockDML.groovy: $e.message"
+            catch (Exception e) {
+                connectInfo.tableUpdate("SFRBSEL", 0, 0, 0, 1, 0)
+                if (connectInfo.showErrors) {
+                    println "Insert SFRBSEL ${this.blockCode}}"
+                    println "Problem executing insert  for table SFRBSEL from RegistrationSelectedBlockDML.groovy: $e.message"
+                }
             }
         }
-        if (this.ruleSeqNum) {
+        if (this.ruleSeqNum && this.blockCode) {
             def registrationSql = """update sfrstcr
                                        set sfrstcr_brdh_seq_num = ?
                                        where sfrstcr_term_code = ?
@@ -234,8 +249,8 @@ class RegistrationSelectedBlockDML {
             if (connectInfo.debugThis) println registrationSql
             try {
                 def updcnt = conn.executeUpdate(registrationSql, [this.ruleSeqNum, this.termCodeEff,
-                                   connectInfo.saveStudentPidm,
-                                   this.blockCode])
+                                                connectInfo.saveStudentPidm,
+                                                this.blockCode])
                 connectInfo.tableUpdate("SFRSTCR", 0, 0, updcnt, 0, 0)
             }
 
