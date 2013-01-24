@@ -184,8 +184,8 @@ class RegistrationSelectedBlockDML {
                 }
             }
             if (!this.update) {
-                def insertSQL = """insert into SFRBRDB (SFRBRDB_BRDH_SEQ_NUM,SFRBRDB_BLCK_CODE,SFRBRDB_TERM_CODE_EFF,SFRBRDB_ASSIGN_IND,SFRBRDB_COURSE_RESTRICTION,
-                  SFRBRDB_CLAS_CODE,SFRBRDB_USER_ID,SFRBRDB_DATA_ORIGIN,SFRBRDB_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,to_date(?, 'MMDDYYYY'))"""
+                def insertSQL = """insert into SFRBRDB (SFRBRDB_BRDH_SEQ_NUM,SFRBRDB_BLCK_CODE,SFRBRDB_ASSIGN_IND,SFRBRDB_COURSE_RESTRICTION,
+                  SFRBRDB_USER_ID,SFRBRDB_DATA_ORIGIN,SFRBRDB_ACTIVITY_DATE) values (?,?,?,?,?,?,to_date(?, 'MMDDYYYY'))"""
                 if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.executeUpdate(insertSQL, [this.ruleSeqNum, this.blockCode, this.termCodeEff, this.blockAssignInd, this.courseRestriction,
