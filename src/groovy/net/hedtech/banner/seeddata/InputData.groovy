@@ -230,6 +230,7 @@ public class InputData {
             'registration-ssb-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeleniumRemove.xml'],
             'registration-error-message-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationErrorMessageSeleniumRemove.xml'],
             'registration-time-status-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationTimeStatusSeleniumRemove.xml'],
+            'registration-third-party-registration-time-controls-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/ThirdPartyRegistrationTimeControlsSeleniumRemove.xml'],
             'hold-information': ['/src/groovy/net/hedtech/banner/seeddata/Data/holdInformationSelenium.xml'],
             'hold-information-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/holdInformationRemoveSelenium.xml'],
             'validation-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
