@@ -295,7 +295,7 @@ public class ScheduleTermDeleteDML {
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Problem executing  ${tableName} for ${term} ${crn} from SScheduleTermDeleteDML.groovy: $e.message"
-                println "${sql}"
+                println "${schDel}"
             }
         }
     }
@@ -311,10 +311,25 @@ public class ScheduleTermDeleteDML {
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Problem executing  ${tableName} for ${term} from SScheduleTermDeleteDML.groovy: $e.message"
-                println "${sql}"
+                println "${schDel}"
             }
         }
     }
 
+
+    private def deleteData(String tableName) {
+        def schDel = """DELETE ${tableName}"""
+        try {
+
+            int delRows = conn.executeUpdate(schDel)
+            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing  ${tableName}  from SScheduleTermDeleteDML.groovy: $e.message"
+                println "${schDel}"
+            }
+        }
+    }
 
 }
