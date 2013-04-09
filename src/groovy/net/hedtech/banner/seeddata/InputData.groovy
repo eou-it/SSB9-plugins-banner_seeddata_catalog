@@ -145,8 +145,9 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumAreaSubjectCourseAttachmentRule_smrarul.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumGeneralAreaRequirement_smbagen.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumAreaCourseAttributeAttachment_smracaa.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumAreaGroupAttachmentAndManagement_smragam.xml']  ,
-            'studentcurriculumdata': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCurriculumData.xml']
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumAreaGroupAttachmentAndManagement_smragam.xml'],
+            'studentcurriculumdata': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCurriculumData.xml'],
+            'history': ['/src/groovy/net/hedtech/banner/seeddata/Data/HistoryData.xml']
     ]
 
     /**
@@ -264,17 +265,17 @@ public class InputData {
             'overall-page-config-seed': ['/src/groovy/net/hedtech/banner/seeddata/Data/OverallPageConfigurationSelenium.xml'],
             'overall-page-config-seed-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/OverallPageConfigurationSeleniumRemove.xml'],
             'student-centric-period-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriodSeleniumRemove.xml'],
-            'block-registration-group' : ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistrationGroup.xml']
+            'block-registration-group': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistrationGroup.xml']
     ]
 
 
-    def validateTable(Sql conn) {
+    def validateTable( Sql conn ) {
         String ownerSql = """select owner from all_tables where table_name = ?"""
 
-        def owner = conn.firstRow(ownerSql, [this.tableName])
+        def owner = conn.firstRow( ownerSql, [this.tableName] )
         if (!owner) {
             ownerSql = """ select owner from all_views where view_name = ?"""
-            owner = conn.firstRow(ownerSql, [this.tableName])
+            owner = conn.firstRow( ownerSql, [this.tableName] )
         }
         if (!owner) {
             validTable = null
@@ -287,11 +288,11 @@ public class InputData {
      * This is used to populate the activity date
      * */
 
-    def setCurrentDate() {
+    def setCurrentDate( ) {
         def cal = Calendar.instance
-        yyyy = cal.get(Calendar.YEAR)
-        mm = String.format('%02d', cal.get(Calendar.MONTH) + 1)   // pad with 0
-        day = String.format('%02d', cal.get(Calendar.DATE))   // pad with 0
+        yyyy = cal.get( Calendar.YEAR )
+        mm = String.format( '%02d', cal.get( Calendar.MONTH ) + 1 )   // pad with 0
+        day = String.format( '%02d', cal.get( Calendar.DATE ) )   // pad with 0
 
     }
 
@@ -299,7 +300,7 @@ public class InputData {
      * Prompts the user via the command line for input data needed in order to load seed data.
      * */
 
-    public def promptUserForInputData(args) {
+    public def promptUserForInputData( args ) {
         setCurrentDate()
         if (prompts) {
             xmlFile = prompts[0]
@@ -321,7 +322,7 @@ public class InputData {
         else {
 
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+            BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
             print "Enter path and file name of XML file: "
             xmlFile = br.readLine()
 
@@ -374,20 +375,20 @@ public class InputData {
     // of the hostname and instance/sid values.
 
 
-    public String getUrl() {
+    public String getUrl( ) {
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
-            def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
-            def slurper = new ConfigSlurper(GrailsUtil.environment)
-            def config = slurper.parse(configFile.toURI().toURL())
-            url = config.get("bannerDataSource").url
+            def configFile = new File( "${System.properties['user.home']}/.grails/banner_configuration.groovy" )
+            def slurper = new ConfigSlurper( GrailsUtil.environment )
+            def config = slurper.parse( configFile.toURI().toURL() )
+            url = config.get( "bannerDataSource" ).url
         }
         url
     }
 
 
-    public void setUrl(String urlString) {
+    public void setUrl( String urlString ) {
         url = urlString
     }
 
@@ -395,7 +396,7 @@ public class InputData {
      * Maintains counts for processed tables.
      * */
 
-    def tableUpdate(inTableName, long inReadCnt, long inInsertCnt, long inUpdateCnt, long inErrorCnt, long inDeleteCnt) {
+    def tableUpdate( inTableName, long inReadCnt, long inInsertCnt, long inUpdateCnt, long inErrorCnt, long inDeleteCnt ) {
 
         if (!(inReadCnt == 0 && inInsertCnt == 0 && inUpdateCnt == 0 && inErrorCnt == 0 && inDeleteCnt == 0)) {
 
@@ -415,13 +416,13 @@ public class InputData {
                     cc++
                 }
                 if (findcnt == 0) {
-                    def tabi = new TableCnts(inTableName, inReadCnt, inInsertCnt, inUpdateCnt, inErrorCnt, inDeleteCnt)
+                    def tabi = new TableCnts( inTableName, inReadCnt, inInsertCnt, inUpdateCnt, inErrorCnt, inDeleteCnt )
                     tableCnts << tabi
                     tableSize++
                 }
             }
             else {
-                def tab = new TableCnts(inTableName, inReadCnt, inInsertCnt, inUpdateCnt, inErrorCnt, inDeleteCnt)
+                def tab = new TableCnts( inTableName, inReadCnt, inInsertCnt, inUpdateCnt, inErrorCnt, inDeleteCnt )
                 tableCnts << tab
                 tableSize++
             }
@@ -429,7 +430,7 @@ public class InputData {
     }
 
 
-    def tableListCnts() {
+    def tableListCnts( ) {
         def readTot = 0
         def insertTot = 0
         def errorTot = 0
@@ -439,11 +440,11 @@ public class InputData {
 
         tableCnts.each { tab ->
             println "Total for Table: ${tab.tableName} " +
-                            " \tRead: ${tab.readCnt.toString().padLeft(4, ' ')} " +
-                            " \tInsert: ${tab.insertCnt.toString().padLeft(4, ' ')} " +
-                            " \tUpdate: ${tab.updateCnt.toString().padLeft(4, ' ')} " +
-                            " \tDeletes: ${tab.deleteCnt.toString().padLeft(4, ' ')} " +
-                            " \tErrors: ${tab.errorCnt.toString().padLeft(4, ' ')} "
+                    " \tRead: ${tab.readCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tInsert: ${tab.insertCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tUpdate: ${tab.updateCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tDeletes: ${tab.deleteCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tErrors: ${tab.errorCnt.toString().padLeft( 4, ' ' )} "
 
             tableCnt++
             readTot += tab.readCnt
@@ -453,16 +454,16 @@ public class InputData {
             deleteTot += tab.deleteCnt
         }
 
-        println "\nTotal Tables: ${tableCnt.toString().padLeft(4, ' ')} " +
-                        " \t\tRead: ${readTot.toString().padLeft(4, ' ')} " +
-                        " \tInsert: ${insertTot.toString().padLeft(4, ' ')} " +
-                        " \tUpdate: ${updateTot.toString().padLeft(4, ' ')} " +
-                        " \tDeletes: ${deleteTot.toString().padLeft(4, ' ')} " +
-                        " \tErrors: ${errorTot.toString().padLeft(4, ' ')} "
+        println "\nTotal Tables: ${tableCnt.toString().padLeft( 4, ' ' )} " +
+                " \t\tRead: ${readTot.toString().padLeft( 4, ' ' )} " +
+                " \tInsert: ${insertTot.toString().padLeft( 4, ' ' )} " +
+                " \tUpdate: ${updateTot.toString().padLeft( 4, ' ' )} " +
+                " \tDeletes: ${deleteTot.toString().padLeft( 4, ' ' )} " +
+                " \tErrors: ${errorTot.toString().padLeft( 4, ' ' )} "
     }
 
 
-    public String toString() {
+    public String toString( ) {
         println """Data Load Input Data:
                    XmlFile = ${xmlFile}
                    saveThis = ${saveThis}
