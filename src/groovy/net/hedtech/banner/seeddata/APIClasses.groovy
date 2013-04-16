@@ -79,7 +79,8 @@ public class APIClasses {
             'SFRBRDH': 'net.hedtech.banner.seeddata.RegistrationGroupRuleDML',
             'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML'  ,
             'SFRBSEL' : 'net.hedtech.banner.seeddata.RegistrationSelectedBlockDML',
-            'SFRBLPA' : 'net.hedtech.banner.seeddata.RegistrationBlockPreAssignmentDML'
+            'SFRBLPA' : 'net.hedtech.banner.seeddata.RegistrationBlockPreAssignmentDML',
+            'RECRUIT_SPRIDEN' : 'net.hedtech.banner.seeddata.RecruitPersonDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
