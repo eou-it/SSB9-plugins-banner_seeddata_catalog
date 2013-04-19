@@ -147,7 +147,6 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumAreaCourseAttributeAttachment_smracaa.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumAreaGroupAttachmentAndManagement_smragam.xml'],
             'studentcurriculumdata': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCurriculumData.xml'],
-            'history': ['/src/groovy/net/hedtech/banner/seeddata/Data/HistoryData.xml'],
             'admissions': ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsValidationSeed.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/RecruitData.xml']
     ]
