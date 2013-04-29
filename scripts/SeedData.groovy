@@ -66,6 +66,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
 
         else {
             def xmlfiles = inputData.targets.find { it.key == args}?.value
+            if (!xmlfiles) xmlFiles = inputData.seleniumTargets.find { it.key == args}?.value
             if (!xmlfiles) {
                 println "No files were specified in the targets map in the InputData class for ${args}"
             }

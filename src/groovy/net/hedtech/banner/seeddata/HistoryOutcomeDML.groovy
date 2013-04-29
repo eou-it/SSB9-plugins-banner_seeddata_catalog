@@ -1,4 +1,4 @@
-/*********************************************************************************
+/** *******************************************************************************
  Copyright 2009-2011 SunGard Higher Education. All Rights Reserved.
  This copyrighted software contains confidential and proprietary information of 
  SunGard Higher Education and its subsidiaries. Any use of this software is limited 
@@ -8,18 +8,19 @@
  trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
  Banner and Luminis are either registered trademarks or trademarks of SunGard Higher 
  Education in the U.S.A. and/or other regions and/or countries.
- **********************************************************************************/
+ ********************************************************************************* */
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
-import java.sql.Connection
 import java.sql.CallableStatement
-import java.text.*
+import java.sql.Connection
+import java.text.SimpleDateFormat
+
 /**
  *  DML for SHRDGMR
  */
 public class HistoryOutcomeDML {
-    def bannerid 
+    def bannerid
     def shrdgmr_pidm
     def shrdgmr_seq_no
     def shrdgmr_degs_code
@@ -61,20 +62,20 @@ public class HistoryOutcomeDML {
 
     def parseXmlData() {
         def apiData = new XmlParser().parseText(xmlData)
-        this.shrdgmr_pidm =  connectInfo.saveStudentPidm
+        this.shrdgmr_pidm = connectInfo.saveStudentPidm
         this.bannerid = apiData.BANNERID.text()
 
         if (connectInfo.debugThis) {
             println "--------- New XML SHRDGMR record ----------"
             println "${bannerid}    ${apiData.SHRDGMR_SEQ_NO.text()}    ${apiData.SHRDGMR_DEGS_CODE.text()}    ${apiData.SHRDGMR_DEGS_CODE.text()}    "
         }
-         this.shrdgmr_seq_no = apiData.SHRDGMR_SEQ_NO.text()
+        this.shrdgmr_seq_no = apiData.SHRDGMR_SEQ_NO.text()
         this.shrdgmr_degs_code = apiData.SHRDGMR_DEGS_CODE.text()
-         this.shrdgmr_appl_date = apiData.SHRDGMR_APPL_DATE.text()
+        this.shrdgmr_appl_date = apiData.SHRDGMR_APPL_DATE.text()
         this.shrdgmr_grad_date = apiData.SHRDGMR_GRAD_DATE.text()
         this.shrdgmr_acyr_code_bulletin = apiData.SHRDGMR_ACYR_CODE_BULLETIN.text()
         this.shrdgmr_term_code_sturec = apiData.SHRDGMR_TERM_CODE_STUREC.text()
-         this.shrdgmr_term_code_grad = apiData.SHRDGMR_TERM_CODE_GRAD.text()
+        this.shrdgmr_term_code_grad = apiData.SHRDGMR_TERM_CODE_GRAD.text()
         this.shrdgmr_acyr_code = apiData.SHRDGMR_ACYR_CODE.text()
         this.shrdgmr_grst_code = apiData.SHRDGMR_GRST_CODE.text()
         this.shrdgmr_fee_ind = apiData.SHRDGMR_FEE_IND.text()
@@ -86,7 +87,7 @@ public class HistoryOutcomeDML {
         this.shrdgmr_dept_code_dual = apiData.SHRDGMR_DEPT_CODE_DUAL.text()
         this.shrdgmr_coll_code_dual = apiData.SHRDGMR_COLL_CODE_DUAL.text()
         this.shrdgmr_majr_code_dual = apiData.SHRDGMR_MAJR_CODE_DUAL.text()
-         this.shrdgmr_stsp_key_sequence = apiData.SHRDGMR_STSP_KEY_SEQUENCE.text()
+        this.shrdgmr_stsp_key_sequence = apiData.SHRDGMR_STSP_KEY_SEQUENCE.text()
 
     }
 
@@ -337,7 +338,6 @@ public class HistoryOutcomeDML {
                 insertCall.setString(21, connectInfo.dataOrigin)
                 // parm 22 p_rowid  shrdgmr_rowid VARCHAR2
                 insertCall.setRowId(22, tableRow)
-                
 
                 // parm 23 p_stsp_key_sequence  shrdgmr_stsp_key_sequence NUMBER
                 if ((this.shrdgmr_stsp_key_sequence == "") || (this.shrdgmr_stsp_key_sequence == null) || (!this.shrdgmr_stsp_key_sequence)) { insertCall.setNull(23, java.sql.Types.INTEGER) }

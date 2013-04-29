@@ -1,4 +1,4 @@
-/*********************************************************************************
+/** *******************************************************************************
  Copyright 2009-2011 SunGard Higher Education. All Rights Reserved.
  This copyrighted software contains confidential and proprietary information of 
  SunGard Higher Education and its subsidiaries. Any use of this software is limited 
@@ -8,7 +8,7 @@
  trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
  Banner and Luminis are either registered trademarks or trademarks of SunGard Higher 
  Education in the U.S.A. and/or other regions and/or countries.
- **********************************************************************************/
+ ********************************************************************************* */
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
@@ -82,12 +82,10 @@ public class SoacurrDML {
             println "Curric Rule for ${currRule} for program  ${apiData.PROGRAM.text()} from sobcurr for ${connectInfo.tableName}."
         }
 
-
-
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "SOBCURR") {
-             // delete data so we can re-add instead of update so all children data is refreshed 
-             if (connectInfo.replaceData ) {
+            // delete data so we can re-add instead of update so all children data is refreshed
+            if (connectInfo.replaceData) {
                 deleteData()
             }
             if (apiData.SOBCURR_CURR_RULE.text().toInteger() != currRule) {
@@ -110,6 +108,12 @@ public class SoacurrDML {
             if (apiData.SORCCON_CURR_RULE.text().toInteger() != currRule) {
                 apiData.SORCCON_CURR_RULE[0].setValue(currRule.toString())
             }
+            if (apiData.MAJOR.text()) {
+                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where sorcmjr_majr_code = ?
+                and sorcmjr_curr_rule = ? """
+                def cmjr_rule = this.conn.firstRow(ssql, [apiData.MAJOR.text(), currRule])
+                apiData.SORCCON_CMJR_RULE[0].setValue(cmjr_rule?.sorcmjr_cmjr_rule?.toString())
+            }
             ssql = """SELECT nvl(MAX(SORCCON_CCON_RULE),0) + 1 rule  FROM sorccon """
             def cmjr = this.conn.firstRow(ssql).RULE
             apiData.SORCCON_CCON_RULE[0].setValue(cmjr.toString())
@@ -127,8 +131,30 @@ public class SoacurrDML {
         }
         // update the curr rule on the control record
         else if (connectInfo.tableName == "SORMCRL") {
+
             if (apiData.SORMCRL_CURR_RULE.text().toInteger() != currRule) {
                 apiData.SORMCRL_CURR_RULE[0].setValue(currRule.toString())
+            }
+
+        }
+        // update the concentration  rule and the curr rule
+        else if (connectInfo.tableName == "SARWAPC") {
+            apiData.SARWAPC_CURR_RULE[0].setValue(currRule.toString())
+            if (apiData.MAJOR.text()) {
+                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where  sorcmjr_majr_code = ?
+                and sorcmjr_curr_rule = ? """
+                def cmjr_rule = this.conn.firstRow(ssql, [apiData.MAJOR.text(), currRule])
+                apiData.SARWAPC_CMJR_RULE[0].setValue(cmjr_rule?.sorcmjr_cmjr_rule?.toString())
+            }
+
+        }
+          else if (connectInfo.tableName == "SARWADF") {
+            apiData.SARWADF_CURR_RULE[0].setValue(currRule.toString())
+            if (apiData.MAJOR.text()) {
+                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where  sorcmjr_majr_code = ?
+                and sorcmjr_curr_rule = ? """
+                def cmjr_rule = this.conn.firstRow(ssql, [apiData.MAJOR.text(), currRule])
+                apiData.SARWADF_CMJR_RULE[0].setValue(cmjr_rule?.sorcmjr_cmjr_rule?.toString())
             }
 
         }

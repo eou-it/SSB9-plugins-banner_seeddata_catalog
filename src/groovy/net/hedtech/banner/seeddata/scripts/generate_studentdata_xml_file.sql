@@ -55,6 +55,7 @@ insert into testTables values ( clob_sequence.nextval,'SPRADDR','select '''   ||
 insert into testTables values ( clob_sequence.nextval,'SPRTELE','select '''   ||  :bannerid || '''  bannerid,	SPRTELE.*	FROM 	SPRTELE	where 	SPRTELE_pidm = ' || :pidm    );
 insert into testTables values ( clob_sequence.nextval,'GOREMAL','select '''   ||  :bannerid || '''  bannerid,	GOREMAL.*	FROM 	GOREMAL	where 	GOREMAL_pidm = ' || :pidm    );
 insert into testTables values ( clob_sequence.nextval,'SPREMRG','select '''   ||  :bannerid || '''  bannerid,	SPREMRG.*	FROM 	SPREMRG	where 	SPREMRG_pidm = ' || :pidm    );
+insert into testTables values ( clob_sequence.nextval,'GORADID','select '''   ||  :bannerid || '''  bannerid,	GORADID.*	FROM 	GORADID	where 	GORADID_pidm = ' || :pidm    );
 
 insert into testTables values ( clob_sequence.nextval,'SRBRECR','select '''  || :bannerid || '''  bannerid,	SRBRECR.*	FROM 	SRBRECR	where 	SRBRECR_pidm = ' || :pidm    );
 insert into testTables values ( clob_sequence.nextval,'SORLCUR','select '''  || :bannerid || '''  bannerid,	SORLCUR.*	FROM 	SORLCUR	where 	SORLCUR_pidm = ' || :pidm || ' and sorlcur_lmod_code = sb_curriculum_str.f_recruit');
@@ -163,6 +164,8 @@ insert into testTables values ( clob_sequence.nextval,'SHRQPND','select '''  || 
 insert into testTables values ( clob_sequence.nextval,'SHRQPNM','select '''  || :bannerid || '''  bannerid,	SHRQPNM.* FROM 	SHRQPNM	where 	SHRQPNM_pidm = ' || :pidm);
 insert into testTables values ( clob_sequence.nextval,'SHRRPEQ','select '''  || :bannerid || '''  bannerid,	SHRRPEQ.* FROM 	SHRRPEQ	where 	SHRRPEQ_pidm = ' || :pidm);
 insert into testTables values ( clob_sequence.nextval,'SHRSGPA','select '''  || :bannerid || '''  bannerid,	SHRSGPA.* FROM 	SHRSGPA	where 	SHRSGPA_pidm = ' || :pidm);
+insert into testTables values ( clob_sequence.nextval,'SHRSMRK','select '''  || :bannerid || '''  bannerid,	SHRSMRK.* FROM 	SHRSMRK	where 	SHRSMRK_pidm = ' || :pidm);
+insert into testTables values ( clob_sequence.nextval,'SHRSRKA','select '''  || :bannerid || '''  bannerid,	SHRSRKA.* FROM 	SHRSRKA	where 	SHRSRKA_pidm = ' || :pidm);
 insert into testTables values ( clob_sequence.nextval,'SHRTCKN','select '''  || :bannerid || '''  bannerid,	SHRTCKN.* FROM 	SHRTCKN	where 	SHRTCKN_pidm = ' || :pidm);
 insert into testTables values ( clob_sequence.nextval,'SHRTATT','select '''  || :bannerid || '''  bannerid,	SHRTATT.* FROM 	SHRTATT	where 	SHRTATT_pidm = ' || :pidm);
 insert into testTables values ( clob_sequence.nextval,'SHRTCKD','select '''  || :bannerid || '''  bannerid,	SHRTCKD.* FROM 	SHRTCKD	where 	SHRTCKD_pidm = ' || :pidm);
