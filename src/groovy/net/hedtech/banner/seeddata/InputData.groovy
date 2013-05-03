@@ -149,7 +149,8 @@ public class InputData {
             'studentcurriculumdata': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCurriculumData.xml'],
             'admissions': ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsValidationSeed.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/RecruitData.xml'],
-            'academic-history':['/src/groovy/net/hedtech/banner/seeddata/Data/HistoryData.xml'],
+            'academic-history':['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryScheduleData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryData.xml'],
             'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']
     ]
 
