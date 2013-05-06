@@ -55,6 +55,7 @@ public class APIClasses {
             'SRBRECR': 'net.hedtech.banner.seeddata.RecruitDML',
             'STUDENT_SPRIDEN': 'net.hedtech.banner.seeddata.StudentPersonIDDML',
             'FACULTY_SPRIDEN': 'net.hedtech.banner.seeddata.FacultyPersonIDDML',
+            'ADVISING_SPRIDEN': 'net.hedtech.banner.seeddata.AdvisingPersonIDDML',
             'CURRICULUMBACK': 'net.hedtech.banner.seeddata.CurriculumBacklogDML',
             'SOBCURR': 'net.hedtech.banner.seeddata.SoacurrDML',
             'SORMCRL': 'net.hedtech.banner.seeddata.SoacurrDML',

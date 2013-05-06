@@ -53,6 +53,7 @@ public class InputData {
     List prompts
     // save the PIDM value for the general person view processing
     def savePidm = null
+    def saveAdvisingPidm = null
     def saveStudentPidm = null
     def saveLcurSeqno = null
     def saveSeqno = null
@@ -122,6 +123,8 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_203010.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_203020.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeedSelenium_204010.xml'],
+            'ssbadvisor': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorSeed.xml'],
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
             'ssbgeneralstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
