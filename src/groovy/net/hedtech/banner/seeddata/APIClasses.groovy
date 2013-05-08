@@ -83,7 +83,11 @@ public class APIClasses {
             'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML'  ,
             'SFRBSEL' : 'net.hedtech.banner.seeddata.RegistrationSelectedBlockDML',
             'SFRBLPA' : 'net.hedtech.banner.seeddata.RegistrationBlockPreAssignmentDML',
-            'RECRUIT_SPRIDEN' : 'net.hedtech.banner.seeddata.RecruitPersonDML'
+            'RECRUIT_SPRIDEN' : 'net.hedtech.banner.seeddata.RecruitPersonDML',
+            'SHRGCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRSCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRMRKS' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -97,7 +101,11 @@ public class APIClasses {
             'GOBTPAC': 'net.hedtech.banner.seeddata.GobtpacDML',
             'SFRSTCR': 'net.hedtech.banner.seeddata.SfrstcrDML',
             'SORATMT' : 'net.hedtech.banner.seeddata.SoratmtDML',
-            'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML'
+            'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML',
+            'SHRGCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRSCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRMRKS' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML'
     ]
 
 
