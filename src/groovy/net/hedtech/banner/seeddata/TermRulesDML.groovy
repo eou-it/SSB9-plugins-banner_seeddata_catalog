@@ -100,6 +100,15 @@ public class TermRulesDML {
     def sobterm_future_repeat_ind
     def sobterm_sp_web_upd_ind
     def sobterm_sectionfee_ind
+    def sobterm_meeting_time_src_cde
+    def sobterm_plan_term_open_cde
+    def sobterm_sec_allowed_plan_cde
+    def sobterm_max_plans
+    def sobterm_deg_audit_plan_cde
+    def sobterm_cond_add_drop_cde
+    def sobterm_auto_drop_cde
+    def sobterm_admin_drop_cde
+    def sobterm_drop_last_class_cde
     def InputData connectInfo
     Sql conn
     Connection connectCall
@@ -537,12 +546,85 @@ public class TermRulesDML {
                     insertCall.setString(80, this.sobterm_sectionfee_ind)
                 }
 
+                // parm 81 p_meeting_time_src_cde  sobterm_meeting_time_src_cde VARCHAR2
+                if (!this.sobterm_meeting_time_src_cde) {
+                    insertCall.setString(81, "N")
+                }
+                else {
+                    insertCall.setString(81, this.sobterm_meeting_time_src_cde)
+                }
+
+                // parm 82 p_plan_term_open_cde  sobterm_plan_term_open_cde VARCHAR2
+                if (!this.sobterm_plan_term_open_cde) {
+                    insertCall.setString(82, "N")
+                }
+                else {
+                    insertCall.setString(82, this.sobterm_plan_term_open_cde)
+                }
+
+                // parm 83 p_sec_allowed_plan_cde sobterm_sec_allowed_plan_cde VARCHAR2
+                if (!this.sobterm_sec_allowed_plan_cde) {
+                    insertCall.setString(83, "N")
+                }
+                else {
+                    insertCall.setString(83, this.sobterm_sec_allowed_plan_cde)
+                }
+
+                // parm 84 p_max_plans  sobterm_max_plans VARCHAR2
+                if (!this.sobterm_max_plans ) {
+                    insertCall.setInt(84, 0)
+                }
+                else {
+                    insertCall.setString(84, this.sobterm_max_plans)
+                }
+
+                // parm 85 p_deg_audit_plan_cde  sobterm_deg_audit_plan_cde VARCHAR2
+                if (!this.sobterm_deg_audit_plan_cde) {
+                    insertCall.setString(85, "N")
+                }
+                else {
+                    insertCall.setString(85, this.sobterm_deg_audit_plan_cde)
+                }
+
+                // parm 86 p_cond_add_drop_cde  sobterm_cond_add_drop_cde VARCHAR2
+                if (!this.sobterm_cond_add_drop_cde) {
+                    insertCall.setString(86, "N")
+                }
+                else {
+                    insertCall.setString(86, this.sobterm_cond_add_drop_cde)
+                }
+
+                // parm 87 p_auto_drop_cde  sobterm_auto_drop_cde VARCHAR2
+                if (!this.sobterm_auto_drop_cde) {
+                    insertCall.setString(87, "N")
+                }
+                else {
+                    insertCall.setString(87, this.sobterm_auto_drop_cde)
+                }
+
+                // parm 88 p_admin_drop_cde sobterm_admin_drop_cde VARCHAR2
+                if (!this.sobterm_admin_drop_cde) {
+                    insertCall.setString(88, "N")
+                }
+                else {
+                    insertCall.setString(88, this.sobterm_admin_drop_cde)
+                }
+
+                // parm 81 p_drop_last_class_cde sobterm_drop_last_class_cde VARCHAR2
+                if (!this.sobterm_drop_last_class_cde) {
+                    insertCall.setString(89, "N")
+                }
+                else {
+                    insertCall.setString(89, this.sobterm_drop_last_class_cde)
+                }
+
                 // parm 81 p_data_origin  sobterm_data_origin VARCHAR2
-                insertCall.setString(81, connectInfo.dataOrigin)
+                insertCall.setString(90, connectInfo.dataOrigin)
                 // parm 82 p_user_id  sobterm_user_id VARCHAR2
-                insertCall.setString(82, connectInfo.userID)
+                insertCall.setString(91, connectInfo.userID)
                 // parm 83 p_rowid_out  sobterm_rowid_out VARCHAR2
-                insertCall.registerOutParameter(83, java.sql.Types.ROWID)
+                insertCall.registerOutParameter(92, java.sql.Types.ROWID)
+
                 if (connectInfo.debugThis) {
                     println "Insert SOBTERM ${this.sobterm_term_code} "
                 }
@@ -884,12 +966,85 @@ public class TermRulesDML {
                 insertCall.setString(80, this.sobterm_sectionfee_ind)
             }
 
+            // parm 81 p_meeting_time_src_cde  sobterm_meeting_time_src_cde VARCHAR2
+            if (!this.sobterm_meeting_time_src_cde) {
+                insertCall.setString(81, "N")
+            }
+            else {
+                insertCall.setString(81, this.sobterm_meeting_time_src_cde)
+            }
+
+            // parm 82 p_plan_term_open_cde  sobterm_plan_term_open_cde VARCHAR2
+            if (!this.sobterm_plan_term_open_cde) {
+                insertCall.setString(82, "N")
+            }
+            else {
+                insertCall.setString(82, this.sobterm_plan_term_open_cde)
+            }
+
+            // parm 83 p_sec_allowed_plan_cde sobterm_sec_allowed_plan_cde VARCHAR2
+            if (!this.sobterm_sec_allowed_plan_cde) {
+                insertCall.setString(83, "N")
+            }
+            else {
+                insertCall.setString(83, this.sobterm_sec_allowed_plan_cde)
+            }
+
+            // parm 84 p_max_plans  sobterm_max_plans VARCHAR2
+            if (!this.sobterm_max_plans ) {
+                insertCall.setInt(84, 0)
+            }
+            else {
+                insertCall.setString(84, this.sobterm_max_plans)
+            }
+
+            // parm 85 p_deg_audit_plan_cde  sobterm_deg_audit_plan_cde VARCHAR2
+            if (!this.sobterm_deg_audit_plan_cde) {
+                insertCall.setString(85, "N")
+            }
+            else {
+                insertCall.setString(85, this.sobterm_deg_audit_plan_cde)
+            }
+
+            // parm 86 p_cond_add_drop_cde  sobterm_cond_add_drop_cde VARCHAR2
+            if (!this.sobterm_cond_add_drop_cde) {
+                insertCall.setString(86, "N")
+            }
+            else {
+                insertCall.setString(86, this.sobterm_cond_add_drop_cde)
+            }
+
+            // parm 87 p_auto_drop_cde  sobterm_auto_drop_cde VARCHAR2
+            if (!this.sobterm_auto_drop_cde) {
+                insertCall.setString(87, "N")
+            }
+            else {
+                insertCall.setString(87, this.sobterm_auto_drop_cde)
+            }
+
+            // parm 88 p_admin_drop_cde sobterm_admin_drop_cde VARCHAR2
+            if (!this.sobterm_admin_drop_cde) {
+                insertCall.setString(88, "N")
+            }
+            else {
+                insertCall.setString(88, this.sobterm_admin_drop_cde)
+            }
+
+            // parm 81 p_drop_last_class_cde sobterm_drop_last_class_cde VARCHAR2
+            if (!this.sobterm_drop_last_class_cde) {
+                insertCall.setString(89, "N")
+            }
+            else {
+                insertCall.setString(89, this.sobterm_drop_last_class_cde)
+            }
+
             // parm 81 p_data_origin  sobterm_data_origin VARCHAR2
-            insertCall.setString(81, connectInfo.dataOrigin)
+            insertCall.setString(90, connectInfo.dataOrigin)
             // parm 82 p_user_id  sobterm_user_id VARCHAR2
-            insertCall.setString(82, connectInfo.userID)
-            // parm 83 p_rowid  sobterm_rowid VARCHAR2
-            insertCall.setNull(83, java.sql.Types.ROWID)
+            insertCall.setString(91, connectInfo.userID)
+            // parm 83 p_rowid_out  sobterm_rowid_out VARCHAR2
+            insertCall.registerOutParameter(92, java.sql.Types.ROWID)
+
             if (connectInfo.debugThis) {
                 println "Update SOBTERM ${this.sobterm_term_code}"
             }
