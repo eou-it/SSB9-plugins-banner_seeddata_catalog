@@ -1,4 +1,4 @@
-/*********************************************************************************
+/** *******************************************************************************
  Copyright 2009-2011 SunGard Higher Education. All Rights Reserved.
  This copyrighted software contains confidential and proprietary information of 
  SunGard Higher Education and its subsidiaries. Any use of this software is limited 
@@ -8,7 +8,7 @@
  trademark of SunGard Data Systems in the U.S.A. and/or other regions and/or countries.
  Banner and Luminis are either registered trademarks or trademarks of SunGard Higher 
  Education in the U.S.A. and/or other regions and/or countries.
- **********************************************************************************/
+ ********************************************************************************* */
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
@@ -21,7 +21,7 @@ import java.text.SimpleDateFormat
  */
 
 public class ThirdPartyAccessPinDML {
-    
+
     def bannerid
     def gobtpac_pidm
     def gobtpac_pin_disabled_ind
@@ -105,7 +105,7 @@ public class ThirdPartyAccessPinDML {
                 def cntGobtpac = 0
                 String gobtpacsql = """select * from gobtpac  where gobtpac_pidm = ?"""
                 this.conn.eachRow(gobtpacsql, [PIDM]) {trow ->
-                cntGobtpac++
+                    cntGobtpac++
                 }
                 if (cntGobtpac) deleteData(PIDM)
 
@@ -117,7 +117,7 @@ public class ThirdPartyAccessPinDML {
                 insertCall.setString(3, this.gobtpac_usage_accept_ind)
                 insertCall.setString(4, this.gobtpac_user)
                 insertCall.setString(5, this.gobtpac_pin)
-                if (this.gobptpac_pin_exp_date == "")  { insertCall.setNull(6, java.sql.Types.DATE) }
+                if (this.gobptpac_pin_exp_date == "") { insertCall.setNull(6, java.sql.Types.DATE) }
                 else {
                     def ddate = new ColumnDateValue(this.gobptpac_pin_exp_date)
                     String unfDate = ddate.formatJavaDate()
@@ -130,14 +130,14 @@ public class ThirdPartyAccessPinDML {
                 insertCall.setString(9, this.gobtpac_insert_source)
                 insertCall.setString(10, this.gobtpac_ldap_user)
                 insertCall.setString(11, this.gobtpac_data_origin)
-                insertCall.setNull(12,java.sql.Types.VARCHAR)
-                insertCall.setString(13,'Y')
-                insertCall.setString(14,'N')
-                insertCall.setString(15,'N')
-                insertCall.setString(16,'Y')
+                insertCall.setNull(12, java.sql.Types.VARCHAR)
+                insertCall.setString(13, 'Y')
+                insertCall.setString(14, 'N')
+                insertCall.setString(15, 'N')
+                insertCall.setString(16, 'Y')
 
-                 insertCall.registerOutParameter(17, java.sql.Types.VARCHAR)
-                 insertCall.registerOutParameter(18, java.sql.Types.ROWID)
+                insertCall.registerOutParameter(17, java.sql.Types.VARCHAR)
+                insertCall.registerOutParameter(18, java.sql.Types.ROWID)
 
                 try {
                     insertCall.executeUpdate()
@@ -165,22 +165,24 @@ public class ThirdPartyAccessPinDML {
         }
     }
 
+
     def deleteData(pidm) {
-          deleteData("GOBTPAC", "delete GOBTPAC where GOBTPAC_pidm = ?  ",pidm)
-      }
+        deleteData("GOBTPAC", "delete GOBTPAC where GOBTPAC_pidm = ?  ", pidm)
+        deleteData("GORPAUD", "delete GORPAUD where GORPAUD_pidm = ?  ", pidm)
+    }
 
 
-      private def deleteData(String tableName, String sql, BigDecimal pidm) {
-          try {
-              int delRows = conn.executeUpdate(sql, [pidm])
-              connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
-          }
-          catch (Exception e) {
-              if (connectInfo.showErrors) {
-                  println "Problem executing delete for gobtpac ${pidm} from ThirdPartyAccessPinDM.groovy: $e.message"
-                  println "${sql}"
-              }
-          }
-      }
+    private def deleteData(String tableName, String sql, BigDecimal pidm) {
+        try {
+            int delRows = conn.executeUpdate(sql, [pidm])
+            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing delete for gobtpac ${pidm} from ThirdPartyAccessPinDM.groovy: $e.message"
+                println "${sql}"
+            }
+        }
+    }
 
 }
