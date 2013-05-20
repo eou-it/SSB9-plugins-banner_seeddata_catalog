@@ -279,7 +279,9 @@ public class InputData {
             'student-centric-period-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriodSeleniumRemove.xml'],
             'block-registration-group': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistrationGroup.xml'],
             'recruiting-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/RecruitingSelenium.xml'],
-            'recruiting-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RecruitingSeleniumRemove.xml']
+            'recruiting-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RecruitingSeleniumRemove.xml'],
+            'source-background-institution-base-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/SourceBackgroundInstitutionBaseSelenium.xml'],
+            'source-background-institution-base-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/SourceBackgroundInstitutionBaseSeleniumRemove.xml']
     ]
 
 
