@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Copyright 2013 Ellucian Company L.P. and its affiliates.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <HISTORY>
     <SHRGRSC>
         <SHRGRSC_GSCH_NAME>HISTGRDSCL</SHRGRSC_GSCH_NAME>
@@ -9,6 +12,16 @@
         <SHBGSCH_DESCRIPTION>History Grade Scale</SHBGSCH_DESCRIPTION>
         <DELETE>YES</DELETE>
     </SHBGSCH>
+
+    <SHBRPTS>
+        <SHBRPTS_LEVEL_IND>Y</SHBRPTS_LEVEL_IND>
+        <DELETE>YES</DELETE>
+    </SHBRPTS>
+
+    <SHBRPTS>
+        <SHBRPTS_LEVEL_IND>N</SHBRPTS_LEVEL_IND>
+        <DELETE>YES</DELETE>
+    </SHBRPTS>
 
     <SHBRTYP>
         <SHBRTYP_RULE_TYPE>LATE</SHBRTYP_RULE_TYPE>
