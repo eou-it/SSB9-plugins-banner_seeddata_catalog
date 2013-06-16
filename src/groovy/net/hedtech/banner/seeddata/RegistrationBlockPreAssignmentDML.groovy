@@ -233,7 +233,7 @@ class RegistrationBlockPreAssignmentDML {
     }
 
 
-    private def deleteData(String tableName, String sql, BigDecimal studentPidm, String studentTermCode, Integer studentStudyPath) {
+    def deleteData(String tableName, String sql, BigDecimal studentPidm, String studentTermCode, Integer studentStudyPath) {
         try {
             int delRows
             if (connectInfo.debugThis) println sql

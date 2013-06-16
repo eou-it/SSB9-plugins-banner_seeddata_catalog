@@ -296,7 +296,7 @@ public class AdvisingPersonIDDML {
     }
 
 
-    private def deleteData(String tableName, String sql) {
+    def deleteData(String tableName, String sql) {
         try {
 
             int delRows = conn.executeUpdate(sql, [connectInfo.saveAdvisingPidm.toInteger()])

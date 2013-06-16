@@ -424,7 +424,7 @@ class ProxyAccessCredentialInformationDML {
     }
 
 
-    private def deleteData(String tableName, String sql, String genidenid) {
+    def deleteData(String tableName, String sql, String genidenid) {
         try {
             int delRows = conn.executeUpdate(sql, [genidenid])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)

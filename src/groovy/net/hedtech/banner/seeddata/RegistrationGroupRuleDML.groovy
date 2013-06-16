@@ -229,7 +229,7 @@ class RegistrationGroupRuleDML {
     }
 
 
-    private def deleteData(String tableName, String sql, String ruleSeqNum) {
+    def deleteData(String tableName, String sql, String ruleSeqNum) {
         try {
             int delRows
 

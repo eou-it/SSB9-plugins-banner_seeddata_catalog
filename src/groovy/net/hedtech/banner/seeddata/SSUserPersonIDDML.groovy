@@ -100,7 +100,7 @@ public class SSUserPersonIDDML {
     }
 
 
-    private def deleteData(String tableName, String sql) {
+    def deleteData(String tableName, String sql) {
         try {
 
             int delRows = conn.executeUpdate(sql, [connectInfo.savePidm.toInteger()])

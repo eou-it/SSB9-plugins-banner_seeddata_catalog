@@ -172,7 +172,7 @@ public class ThirdPartyAccessPinDML {
     }
 
 
-    private def deleteData(String tableName, String sql, BigDecimal pidm) {
+    def deleteData(String tableName, String sql, BigDecimal pidm) {
         try {
             int delRows = conn.executeUpdate(sql, [pidm])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
