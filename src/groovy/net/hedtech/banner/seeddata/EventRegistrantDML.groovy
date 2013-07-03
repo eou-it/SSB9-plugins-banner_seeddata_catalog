@@ -235,7 +235,7 @@ class EventRegistrantDML {
     }
 
 
-    private def deleteData(String tableName, String sql, String genidenid) {
+    def deleteData(String tableName, String sql, String genidenid) {
         try {
             int delRows
             if (genidenid) {

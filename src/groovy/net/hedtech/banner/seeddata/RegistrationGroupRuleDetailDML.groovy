@@ -225,7 +225,7 @@ class RegistrationGroupRuleDetailDML {
     }
 
 
-    private def deleteData(String tableName, String sql, String ruleSeqNUm, String blockCode) {
+    def deleteData(String tableName, String sql, String ruleSeqNUm, String blockCode) {
         try {
             int delRows
             if (connectInfo.debugThis) println sql
