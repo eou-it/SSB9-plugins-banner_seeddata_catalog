@@ -54,7 +54,6 @@ public class TableDriver {
 
         try {
             def xmlTable = new XmlParser().parse(new File("${fileName}"))
-
             xmlTable.each() {node ->
                 def newTable = node.name()
                 connectInfo.tableName = newTable
@@ -179,6 +178,7 @@ public class TableDriver {
                     saveTable = newTable
 
                 }
+
                 if (connectInfo.mepUserId) {
                     if (!connectInfo.saveThis) {
                         conn.execute "{ call gb_common.p_rollback() }"
@@ -188,6 +188,7 @@ public class TableDriver {
                     }
                 }
             }
+
         }
 
 

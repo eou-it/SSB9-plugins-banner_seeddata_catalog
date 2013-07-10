@@ -79,9 +79,8 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     if (!inputFile.exists())
                         xmlInputData.xmlFile = "${basedir}${it.value}"
                     xmlInputData.replaceData = true
-                    println xmlInputData
+                    println xmlInputData.xmlFile
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
-
                     seedDataLoader.execute()
                 }
             }

@@ -55,7 +55,6 @@ public class SeedDataLoader {
     public void execute() {
         ConnectDB connectionFactory
         def groovySql
-        Statement addBatchSt
         Connection connection
         try {
             connectionFactory = new ConnectDB(inputData)

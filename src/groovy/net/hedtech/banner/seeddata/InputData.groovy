@@ -134,6 +134,7 @@ public class InputData {
             'blockregistration': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'ssbgeneralstudent2': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml'],
             'ssbgeneralstudent3': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew3.xml'],
+            'ssbgeneralstudentfa': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataFA.xml'],
             'ssbgeneralstudentblock': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlock.xml'],
             'ssbgeneralstudentblockrule': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockWithRule.xml'],
             'attr': ['src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingAdminRuleSetupSeed.xml',
@@ -456,7 +457,6 @@ public class InputData {
         def updateTot = 0
         def deleteTot = 0
         def tableCnt = 0
-
         tableCnts.each { tab ->
             println "Total for Table: ${tab.tableName} " +
                     " \tRead: ${tab.readCnt.toString().padLeft( 4, ' ' )} " +
@@ -483,7 +483,7 @@ public class InputData {
 
 
     public String toString( ) {
-        println """Data Load Input Data:
+        println """Data Load Input Data tostring:
                    XmlFile = ${xmlFile}
                    saveThis = ${saveThis}
                    debugThis = ${debugThis}
