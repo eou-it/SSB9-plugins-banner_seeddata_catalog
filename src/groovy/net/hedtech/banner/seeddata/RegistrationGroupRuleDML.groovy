@@ -77,7 +77,7 @@ class RegistrationGroupRuleDML {
 
     def parseXmlData() {
         def rule = new XmlParser().parseText(xmlData)
-        this.termCodeEff = rule.SFRBRDH_TERM_CODE_EFF.text()
+        this.termCodeEff = rule.SFRBRDH_TERM_CODE.text()
         this.classCode = rule.SFRBRDH_CLAS_CODE.text()
         this.rulePriority = rule.SFRBRDH_PRIORITY.text()
         this.mandInd = rule.SFRBRDH_MANDATORY_IND.text()
@@ -99,7 +99,7 @@ class RegistrationGroupRuleDML {
 
     def insertRuleData() {
         this.update = false
-        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE_EFF = ? """
+        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE = ? """
         def params = [this.rulePriority, this.termCodeEff]
 
         if (this.classCode) {
@@ -178,7 +178,7 @@ class RegistrationGroupRuleDML {
                 this.update = true
             }
             if (this.update) {
-                def blockUpdatesql = """update SFRBRDH set SFRBRDH_PRIORITY = ?,SFRBRDH_TERM_CODE_EFF = ?,SFRBRDH_CLAS_CODE = ?,SFRBRDH_COLL_CODE = ?,
+                def blockUpdatesql = """update SFRBRDH set SFRBRDH_PRIORITY = ?,SFRBRDH_TERM_CODE = ?,SFRBRDH_CLAS_CODE = ?,SFRBRDH_COLL_CODE = ?,
                                                         SFRBRDH_DEPT_CODE = ? ,SFRBRDH_MAJR_CODE = ?,SFRBRDH_CAMP_CODE = ? ,SFRBRDH_LEVL_CODE = ?,SFRBRDH_PROGRAM = ?,
                                                         SFRBRDH_DEGC_CODE = ? ,SFRBRDH_ATTS_CODE =? where SFRBRDH_SEQ_NUM =?"""
                 if (connectInfo.debugThis) println blockUpdatesql
@@ -197,7 +197,7 @@ class RegistrationGroupRuleDML {
                 //In case of insert generate the rule seq number
                 def getRuleSeqSQL = """ SELECT NVL(MAX(SFRBRDH_SEQ_NUM),0) + 1 AS ruleSeqNum FROM SFRBRDH """
 
-                def insertSQL = """insert into SFRBRDH (SFRBRDH_SEQ_NUM,SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE_EFF,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
+                def insertSQL = """insert into SFRBRDH (SFRBRDH_SEQ_NUM,SFRBRDH_PRIORITY,SFRBRDH_TERM_CODE,SFRBRDH_CLAS_CODE,SFRBRDH_COLL_CODE,
                                                                         SFRBRDH_DEPT_CODE,SFRBRDH_MAJR_CODE,SFRBRDH_CAMP_CODE,SFRBRDH_LEVL_CODE,SFRBRDH_PROGRAM,
                                                                         SFRBRDH_DEGC_CODE,SFRBRDH_ATTS_CODE,SFRBRDH_MANDATORY_IND,SFRBRDH_BLOCK_RESTRICTION_IND,SFRBRDH_STATUS_IND,
                                                                         SFRBRDH_ACTIVITY_DATE,SFRBRDH_USER_ID,SFRBRDH_DATA_ORIGIN) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,to_date(?,'MMDDYYYY'),?,?)"""

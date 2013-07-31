@@ -136,7 +136,7 @@ class RegistrationBlockPreAssignmentDML {
 
                 try {
 
-                    String getRuleSeqSQL = """select SFRBRDH_SEQ_NUM  as ruleSeqNum from SFRBRDH  where SFRBRDH_TERM_CODE_EFF = ? """
+                    String getRuleSeqSQL = """select SFRBRDH_SEQ_NUM  as ruleSeqNum from SFRBRDH  where SFRBRDH_TERM_CODE = ? """
                     def params = [this.termCode]
 
                     if (this.rulePriority) {
