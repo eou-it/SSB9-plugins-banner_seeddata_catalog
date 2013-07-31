@@ -95,7 +95,7 @@ class RegistrationGroupRuleDetailDML {
 
 
     def insertRuleDetailData() {
-        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE_EFF = ? """
+        String ruleSql = """select sfrbrdh_seq_num  as seqValue from sfrbrdh  where SFRBRDH_PRIORITY = ? and SFRBRDH_TERM_CODE = ? """
         def params = [this.rulePriority, this.termCodeInit]
 
         if (this.classCode) {
