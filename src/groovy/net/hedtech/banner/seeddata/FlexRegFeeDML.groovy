@@ -109,9 +109,9 @@ public class FlexRegFeeDML {
                     from dual
                     where not exists ( select 1 from flexreg.sftvctlg a where a.sftvctlg_code = 'A0');
 
+                     delete FLEXREG.sffrfees where sffrfees_term_code = term_code and sffrfees_crn = crn;
+                    delete FLEXREG.SFKRITEM where sfkritem_crn = crn and sfkritem_term_code = term_code;
                     delete flexreg.sfkbcart where sfkbcart_pidm = pidm;
-                    delete flexreg.sfkritem where sfkritm_crn = crn and sfkritm_term_code = term_code;
-                    delete flexreg.sffrfees where sfrrfees_term_code = term_code and sffrfees_crn = crn;
 
 
                 --  cart status values
@@ -138,7 +138,7 @@ public class FlexRegFeeDML {
                     values (cid,crn,term_code,cart_item_status_registered,null,null,null,null,sysdate,'FLEXREG_USER','TEST','RW',null,null,null,0);
 
                     -- Create a class fee
-                    INSERT INTO sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
+                    INSERT INTO FLEXREG.sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
                     values(cid, term_code, crn,tuition_tbbdetc_code,500,null,'F',sysdate,'FLEXREG_USER','TEST');
 
