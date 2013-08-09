@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  Copyright 2013 Ellucian Company L.P. and its affiliates.
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<STUDENTDATA>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+ <STUDENTDATA>
     <STUDENT_SPRIDEN>
         <BANNERID>HOSH00001</BANNERID>
         <SPRIDEN_PIDM>49435</SPRIDEN_PIDM>
