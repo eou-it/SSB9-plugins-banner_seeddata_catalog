@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FEEDATA_REMOVE>
+    <TBRACCD>
+        <DELETE>YES</DELETE>
+        <BANNERID>HOSWEB001</BANNERID>
+        <TBRACCD_PIDM>1</TBRACCD_PIDM>
+        <TBRACCD_TRAN_NUMBER>1</TBRACCD_TRAN_NUMBER>
+    </TBRACCD>
+</FEEDATA_REMOVE>

@@ -128,6 +128,8 @@ public class InputData {
             'ssbgeneralstudent2': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml'],
             'ssbgeneralstudent3': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew3.xml'],
             'ssbgeneralstudentfa': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataFA.xml'],
+            'feeSummaryData': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeSummaryData.xml'],
+            'feeSummaryDataRemove': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeSummaryDataRemove.xml'],
             'ssbgeneralstudentblock': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlock.xml'],
             'ssbgeneralstudentblockrule': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockWithRule.xml'],
             'attr': ['src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingAdminRuleSetupSeed.xml',
