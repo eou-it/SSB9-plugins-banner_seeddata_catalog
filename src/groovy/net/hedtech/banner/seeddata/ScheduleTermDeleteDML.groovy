@@ -64,7 +64,7 @@ public class ScheduleTermDeleteDML {
         if (sectionExists) {
             deleteSchedule()
         }
-
+        processTermDeletes()
     }
 
 
@@ -75,7 +75,7 @@ public class ScheduleTermDeleteDML {
             this.ssbsect_crn = row.ssbsect_crn
             processDelete()
         }
-        processTermDeletes()
+
     }
 
 
