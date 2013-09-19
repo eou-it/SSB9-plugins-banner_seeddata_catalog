@@ -119,6 +119,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorPersonaSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed2.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorPersonaSeed2.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed3.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorSearchSeed.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeSeed2.xml',
