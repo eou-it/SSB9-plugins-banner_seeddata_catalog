@@ -3590,7 +3590,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <SPBPERS_RELG_CODE/>
         <SPBPERS_SEX>N</SPBPERS_SEX>
         <SPBPERS_CONFID_IND>N</SPBPERS_CONFID_IND>
-        <SPBPERS_DEAD_IND/>
+        <SPBPERS_DEAD_IND>Y</SPBPERS_DEAD_IND>
         <SPBPERS_VETC_FILE_NUMBER/>
         <SPBPERS_LEGAL_NAME/>
         <SPBPERS_PREF_FIRST_NAME/>
@@ -3599,7 +3599,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <SPBPERS_ACTIVITY_DATE>01-JAN-10</SPBPERS_ACTIVITY_DATE>
         <SPBPERS_VERA_IND/>
         <SPBPERS_CITZ_IND/>
-        <SPBPERS_DEAD_DATE/>
+        <SPBPERS_DEAD_DATE>02-SEP-13</SPBPERS_DEAD_DATE>
         <SPBPERS_PIN/>
         <SPBPERS_CITZ_CODE/>
         <SPBPERS_HAIR_CODE/>
@@ -4433,7 +4433,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <SPBPERS_RELG_CODE/>
         <SPBPERS_SEX>N</SPBPERS_SEX>
         <SPBPERS_CONFID_IND>N</SPBPERS_CONFID_IND>
-        <SPBPERS_DEAD_IND/>
+        <SPBPERS_DEAD_IND>Y</SPBPERS_DEAD_IND>
         <SPBPERS_VETC_FILE_NUMBER/>
         <SPBPERS_LEGAL_NAME/>
         <SPBPERS_PREF_FIRST_NAME/>
@@ -4442,7 +4442,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <SPBPERS_ACTIVITY_DATE>01-JAN-10</SPBPERS_ACTIVITY_DATE>
         <SPBPERS_VERA_IND/>
         <SPBPERS_CITZ_IND/>
-        <SPBPERS_DEAD_DATE/>
+        <SPBPERS_DEAD_DATE>02-SEP-13</SPBPERS_DEAD_DATE>
         <SPBPERS_PIN/>
         <SPBPERS_CITZ_CODE/>
         <SPBPERS_HAIR_CODE/>
