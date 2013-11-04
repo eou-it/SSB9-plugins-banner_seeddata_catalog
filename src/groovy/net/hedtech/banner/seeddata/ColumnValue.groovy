@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -19,10 +19,12 @@ public class ColumnValue {
     def tableName
     Sql conn
     def indexColumns = []
+    def multiplePidmColumn
 
 
     public ColumnValue(tableName, columnValue, columnType, columnScale, columnName,
-                       InputData connectInfo, Sql conn, List indexColumns, columnLength) {
+                       InputData connectInfo, Sql conn, List indexColumns, columnLength,
+                       multiplePidmColumn) {
         this.columnValue = columnValue
         this.columnType = columnType
         this.columnName = columnName
@@ -32,13 +34,15 @@ public class ColumnValue {
         this.tableName = tableName
         this.conn = conn
         this.indexColumns = indexColumns
+        this.multiplePidmColumn = multiplePidmColumn
     }
+
 
     private determineUserId(def columnName, def columnValue, def dataLength) {
         def findIfIndex = indexColumns.find { index ->
-              index.COLUMN_NAME == columnName
+            index.COLUMN_NAME == columnName
         }
-        if ( findIfIndex ) return columnValue
+        if (findIfIndex) return columnValue
         else return connectInfo.userID
     }
     /**
@@ -51,7 +55,7 @@ public class ColumnValue {
                     from all_tab_columns where table_name = ?
                     and column_name = ?"""
             try {
-                conn.eachRow(colsql, [tableName, columnName]) {row ->
+                conn.eachRow(colsql, [tableName, columnName]) { row ->
                     columnType = row.data_type
                     dataScale = row.data_precision
                     dataLength = row.data_length
@@ -65,34 +69,41 @@ public class ColumnValue {
             }
         }
         String valsql = ""
-        if (columnName == this.tableName + "_PIDM" && connectInfo.saveStudentPidm) { valsql = connectInfo.saveStudentPidm}
-        else if (columnName =~ "ACTIVITY_DATE")
+        if ((multiplePidmColumn && columnName == this.tableName + "_PIDM" && connectInfo.saveStudentPidm) ||
+                (!multiplePidmColumn && columnName =~ "_PIDM" && connectInfo.saveStudentPidm)) {
+            valsql = connectInfo.saveStudentPidm
+        } else if (columnName =~ "ACTIVITY_DATE")
         // activity date will always be set to 1/1/2010
-        { valsql = "to_date('01012010','MMDDYYYY') " }
-        else if (columnName == "${this.tableName}_SURROGATE_ID") { valsql = "null"}
-        else if (columnName =~ "VERSION") { valsql = "null" }
-        else if (columnName =~ "_DATA_ORIGIN") {valsql = "'" + connectInfo.dataOrigin + "'" }
-        else if (columnName == this.tableName + "_USER") {valsql = "'" + determineUserId(columnName, columnValue, dataLength) + "'" }
-        else if (columnName == this.tableName + "_USER_ID") {valsql = "'" + determineUserId(columnName, columnValue, dataLength) + "'" }
-        else if (columnName == this.tableName + "_USERID") {valsql = "'" + determineUserId(columnName, columnValue, dataLength) + "'" }
-
-        else {
-            if (columnType == "RAW") { valsql = "null" }
-            else if (columnType == "NUMBER") {
-                if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) { valsql = "null"}
-                else {
-                    if (this.dataScale){
-                        valsql = columnValue.toString()
-                    }
-                    else  valsql = columnValue.toString()
-
-                }
-            }
-            else if ((columnType == "VARCHAR2") || (columnType == 'CLOB')) {
+        {
+            valsql = "to_date('01012010','MMDDYYYY') "
+        } else if (columnName == "${this.tableName}_SURROGATE_ID") {
+            valsql = "null"
+        } else if (columnName =~ "VERSION") {
+            valsql = "null"
+        } else if (columnName =~ "_DATA_ORIGIN") {
+            valsql = "'" + connectInfo.dataOrigin + "'"
+        } else if (columnName == this.tableName + "_USER") {
+            valsql = "'" + determineUserId(columnName, columnValue, dataLength) + "'"
+        } else if (columnName == this.tableName + "_USER_ID") {
+            valsql = "'" + determineUserId(columnName, columnValue, dataLength) + "'"
+        } else if (columnName == this.tableName + "_USERID") {
+            valsql = "'" + determineUserId(columnName, columnValue, dataLength) + "'"
+        } else {
+            if (columnType == "RAW") {
+                valsql = "null"
+            } else if (columnType == "NUMBER") {
                 if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) {
                     valsql = "null"
+                } else {
+                    if (this.dataScale) {
+                        valsql = columnValue.toString()
+                    } else valsql = columnValue.toString()
+
                 }
-                else {  // reduce to smaller size
+            } else if ((columnType == "VARCHAR2") || (columnType == 'CLOB')) {
+                if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) {
+                    valsql = "null"
+                } else {  // reduce to smaller size
                     String col = columnValue.toString()
                     if (col.length() > 3000) {
                         //  column is too big ${columnName} ${columnValue.length()} 
@@ -104,18 +115,24 @@ public class ColumnValue {
                     if (col =~ /\'/) {
                         def newcolval = col.replaceAll(/'/, '')
                         valsql = "'${newcolval}'"
+                    } else {
+                        valsql = "'${col}'"
                     }
-                    else {valsql = "'${col}'" }
                 }
-            }
-            else if (columnType == "DATE") {
-                if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) { valsql = "null" }
+            } else if (columnType == "DATE") {
+                if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) {
+                    valsql = "null"
+                }
                 //  date is in dd-mon-yyyy, mm/dd/yyyy or mmddyyyy format
                 else {
-                    def ddate = new ColumnDateValue(columnValue.toString() )
+                    def ddate = new ColumnDateValue(columnValue.toString())
                     valsql = ddate.formatDateWithMask()
                 }
             }
+        }
+
+        if (connectInfo.debugThis && columnName =~ "PIDM") {
+            println "MultiplePidms in table ${multiplePidmColumn} column name ${columnName} value ${valsql}"
         }
 
         return valsql
