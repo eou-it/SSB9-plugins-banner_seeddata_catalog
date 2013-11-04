@@ -65,7 +65,7 @@ public class ColumnValue {
             }
         }
         String valsql = ""
-        if (columnName =~ "PIDM" && connectInfo.saveStudentPidm) { valsql = connectInfo.saveStudentPidm}
+        if (columnName == this.tableName + "_PIDM" && connectInfo.saveStudentPidm) { valsql = connectInfo.saveStudentPidm}
         else if (columnName =~ "ACTIVITY_DATE")
         // activity date will always be set to 1/1/2010
         { valsql = "to_date('01012010','MMDDYYYY') " }

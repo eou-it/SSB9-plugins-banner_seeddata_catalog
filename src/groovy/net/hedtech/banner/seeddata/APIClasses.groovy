@@ -80,6 +80,7 @@ public class APIClasses {
             'SHRSCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
             'SHRMRKS' : 'net.hedtech.banner.seeddata.ShagcomDML',
             'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML'  ,
+            'SGRADVR' : 'net.hedtech.banner.seeddata.SgradvrDML'  ,
             'FLEXREGFEE' : 'net.hedtech.banner.seeddata.FlexRegFeeDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -98,7 +99,8 @@ public class APIClasses {
             'SHRGCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
             'SHRSCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
             'SHRMRKS' : 'net.hedtech.banner.seeddata.ShagcomDML',
-            'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML'
+            'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML' ,
+            'SGRADVR' : 'net.hedtech.banner.seeddata.SgradvrDML'
     ]
 
 
