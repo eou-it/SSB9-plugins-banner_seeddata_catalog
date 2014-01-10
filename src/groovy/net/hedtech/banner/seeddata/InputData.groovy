@@ -163,7 +163,8 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryComponentData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryStudentData.xml'],
             'registration-withdrawal': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHOSR24796.xml'],
-            'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']
+            'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']  ,
+            'transcript-award' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentTranscriptAwardedDegree.xml']
     ]
 
     /**
