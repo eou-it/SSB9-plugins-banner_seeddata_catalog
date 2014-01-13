@@ -385,6 +385,8 @@ public class ConcurrentCurriculumDML {
             }
 
             if (this.sorlcur_lmod_code == outcome) {
+                conn.call("call soklcur.p_create_sotvcur(?,?,sb_curriculum_str.f_learner)", [this.sorlcur_pidm.toInteger(),
+                          this.sorlcur_term_code  ])
                 String lcur = "call soklcur.p_learner_lcur_rolled(?,?,?,?,?,?,?,?,?)"
                 CallableStatement lcurCall = this.connectCall.prepareCall(lcur)
                 lcurCall.setInt(1, this.sorlcur_pidm.toInteger())
