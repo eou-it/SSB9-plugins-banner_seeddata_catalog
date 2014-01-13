@@ -1,12 +1,14 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
-import java.sql.Connection
+
 import java.sql.CallableStatement
-import java.text.*
+import java.sql.Connection
+import java.text.SimpleDateFormat
+
 /**
  *  DML for SORLCUR
  */
@@ -55,6 +57,8 @@ public class ConcurrentCurriculumDML {
     def xmlData
     java.sql.RowId tableRow = null
 
+    def outcome
+    def seqout
 
     public ConcurrentCurriculumDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
 
@@ -118,6 +122,7 @@ public class ConcurrentCurriculumDML {
 
     def processSorlcur() {
         tableRow = null
+        conn.call("{? = call sb_curriculum_str.f_outcome()}", [Sql.VARCHAR]) { result -> outcome = result }
 
         String rowSQL = """select rowid table_row from SORLCUR
            where sorlcur_pidm = ?  and sorlcur_seqno = ? """
@@ -139,14 +144,15 @@ public class ConcurrentCurriculumDML {
                 CallableStatement insertCall = this.connectCall.prepareCall(API)
                 // parm 1 p_pidm  sorlcur_pidm NUMBER
                 if ((this.sorlcur_pidm == "") || (this.sorlcur_pidm == null) || (!this.sorlcur_pidm)) {
-                    insertCall.setNull(1, java.sql.Types.INTEGER) }
-                else {
+                    insertCall.setNull(1, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(1, this.sorlcur_pidm.toInteger())
                 }
 
                 // parm 2 p_seqno  sorlcur_seqno NUMBER
-                if ((this.sorlcur_seqno == "") || (this.sorlcur_seqno == null) || (!this.sorlcur_seqno)) { insertCall.setNull(2, java.sql.Types.INTEGER) }
-                else {
+                if ((this.sorlcur_seqno == "") || (this.sorlcur_seqno == null) || (!this.sorlcur_seqno)) {
+                    insertCall.setNull(2, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(2, this.sorlcur_seqno.toInteger())
                 }
 
@@ -158,14 +164,15 @@ public class ConcurrentCurriculumDML {
 
                 // parm 5 p_key_seqno  sorlcur_key_seqno NUMBER
                 if ((this.sorlcur_key_seqno == "") || (this.sorlcur_key_seqno == null) || (!this.sorlcur_key_seqno)) {
-                    insertCall.setNull(5, java.sql.Types.INTEGER) }
-                else {
+                    insertCall.setNull(5, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(5, this.sorlcur_key_seqno.toInteger())
                 }
 
                 // parm 6 p_priority_no  sorlcur_priority_no NUMBER
-                if ((this.sorlcur_priority_no == "") || (this.sorlcur_priority_no == null) || (!this.sorlcur_priority_no)) { insertCall.setNull(6, java.sql.Types.INTEGER) }
-                else {
+                if ((this.sorlcur_priority_no == "") || (this.sorlcur_priority_no == null) || (!this.sorlcur_priority_no)) {
+                    insertCall.setNull(6, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(6, this.sorlcur_priority_no.toInteger())
                 }
 
@@ -213,8 +220,7 @@ public class ConcurrentCurriculumDML {
                 if ((this.sorlcur_start_date == "") || (this.sorlcur_start_date == null) ||
                         (!this.sorlcur_start_date)) {
                     insertCall.setNull(21, java.sql.Types.DATE)
-                }
-                else {
+                } else {
                     def ddate = new ColumnDateValue(this.sorlcur_start_date)
                     String unfDate = ddate.formatJavaDate()
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -226,8 +232,7 @@ public class ConcurrentCurriculumDML {
                 if ((this.sorlcur_end_date == "") || (this.sorlcur_end_date == null) ||
                         (!this.sorlcur_end_date)) {
                     insertCall.setNull(22, java.sql.Types.DATE)
-                }
-                else {
+                } else {
                     def ddate = new ColumnDateValue(this.sorlcur_end_date)
                     String unfDate = ddate.formatJavaDate()
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -237,11 +242,10 @@ public class ConcurrentCurriculumDML {
 
                 // parm 23 p_curr_rule  sorlcur_curr_rule NUMBER
                 if ((this.sorlcur_curr_rule == "") || (
-                this.sorlcur_curr_rule == null) ||
+                        this.sorlcur_curr_rule == null) ||
                         (!this.sorlcur_curr_rule)) {
                     insertCall.setNull(23, java.sql.Types.INTEGER)
-                }
-                else {
+                } else {
                     insertCall.setInt(23, this.sorlcur_curr_rule.toInteger())
                 }
 
@@ -264,8 +268,7 @@ public class ConcurrentCurriculumDML {
                 if ((this.sorlcur_exp_grad_date == "") || (this.sorlcur_exp_grad_date == null) ||
                         (!this.sorlcur_exp_grad_date)) {
                     insertCall.setNull(27, java.sql.Types.DATE)
-                }
-                else {
+                } else {
                     def ddate = new ColumnDateValue(this.sorlcur_exp_grad_date)
                     String unfDate = ddate.formatJavaDate()
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -280,8 +283,7 @@ public class ConcurrentCurriculumDML {
                 if ((this.sorlcur_leav_from_date == "") || (this.sorlcur_leav_from_date == null) ||
                         (!this.sorlcur_leav_from_date)) {
                     insertCall.setNull(29, java.sql.Types.DATE)
-                }
-                else {
+                } else {
                     def ddate = new ColumnDateValue(this.sorlcur_leav_from_date)
                     String unfDate = ddate.formatJavaDate()
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -293,8 +295,7 @@ public class ConcurrentCurriculumDML {
                 if ((this.sorlcur_leav_to_date == "") || (this.sorlcur_leav_to_date == null) ||
                         (!this.sorlcur_leav_to_date)) {
                     insertCall.setNull(30, java.sql.Types.DATE)
-                }
-                else {
+                } else {
                     def ddate = new ColumnDateValue(this.sorlcur_leav_to_date)
                     String unfDate = ddate.formatJavaDate()
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -317,16 +318,16 @@ public class ConcurrentCurriculumDML {
                 // parm 35 p_appl_seqno  sorlcur_appl_seqno NUMBER
                 if ((this.sorlcur_appl_seqno == "") || (this.sorlcur_appl_seqno == null)
                         || (!this.sorlcur_appl_seqno)) {
-                    insertCall.setNull(35, java.sql.Types.INTEGER) }
-                else {
+                    insertCall.setNull(35, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(35, this.sorlcur_appl_seqno.toInteger())
                 }
 
                 // parm 36 p_appl_key_seqno  sorlcur_appl_key_seqno NUMBER
                 if ((this.sorlcur_appl_key_seqno == "") || (this.sorlcur_appl_key_seqno == null)
                         || (!this.sorlcur_appl_key_seqno)) {
-                    insertCall.setNull(36, java.sql.Types.INTEGER) }
-                else {
+                    insertCall.setNull(36, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(36, this.sorlcur_appl_key_seqno.toInteger())
                 }
 
@@ -348,8 +349,8 @@ public class ConcurrentCurriculumDML {
                 // parm 42 p_gapp_seqno  sorlcur_gapp_seqno NUMBER
                 if ((this.sorlcur_gapp_seqno == "") || (this.sorlcur_gapp_seqno == null)
                         || (!this.sorlcur_gapp_seqno)) {
-                    insertCall.setNull(42, java.sql.Types.INTEGER) }
-                else {
+                    insertCall.setNull(42, java.sql.Types.INTEGER)
+                } else {
                     insertCall.setInt(42, this.sorlcur_gapp_seqno.toInteger())
                 }
 
@@ -362,6 +363,7 @@ public class ConcurrentCurriculumDML {
                 try {
                     insertCall.executeUpdate()
                     connectInfo.tableUpdate("SORLCUR", 0, 1, 0, 0, 0)
+                    seqout = insertCall.getInt(38)
                 }
                 catch (Exception e) {
                     connectInfo.tableUpdate("SORLCUR", 0, 0, 0, 1, 0)
@@ -380,6 +382,38 @@ public class ConcurrentCurriculumDML {
                     println "Insert SORLCUR ${bannerid} ${this.sorlcur_pidm} ${this.sorlcur_seqno} ${this.sorlcur_lmod_code}"
                     println "Problem setting up insert for table SORLCUR from ConcurrentCurriculumDML.groovy: $e.message"
                 }
+            }
+
+            if (this.sorlcur_lmod_code == outcome) {
+                String lcur = "call soklcur.p_learner_lcur_rolled(?,?,?,?,?,?,?,?,?)"
+                CallableStatement lcurCall = this.connectCall.prepareCall(lcur)
+                lcurCall.setInt(1, this.sorlcur_pidm.toInteger())
+                lcurCall.setString(2, this.sorlcur_degc_code)
+                lcurCall.setString(3, this.sorlcur_levl_code)
+                lcurCall.setString(4, this.sorlcur_coll_code)
+                lcurCall.setString(5, this.sorlcur_program)
+                lcurCall.setInt(6, this.sorlcur_seqno.toInteger())
+                lcurCall.setString(8, this.sorlcur_camp_code)
+                def lcurout
+                def priorityout
+                lcurCall.registerOutParameter(7, java.sql.Types.VARCHAR)
+                lcurCall.registerOutParameter(9, java.sql.Types.INTEGER)
+                try {
+                    lcurCall.executeUpdate()
+                    connectInfo.tableUpdate("SORLCUR", 0, 0, 1, 0, 0)
+
+                }
+                catch (e) {
+                    connectInfo.tableUpdate("SORLCUR", 0, 0, 0, 1, 0)
+                    if (connectInfo.showErrors) {
+                        println "Update SORLCUR Rolled ${bannerid} ${this.sorlcur_pidm} ${this.sorlcur_seqno} ${this.sorlcur_lmod_code}"
+                        println "Problem executing Update SORLCUR Rolled for table SORLCUR from ConcurrentCurriculumDML.groovy: $e.message"
+                    }
+                }
+                finally {
+                    lcurCall.close()
+                }
+
             }
         }
     }
