@@ -121,6 +121,9 @@ public class ConcurrentCurriculumDML {
 
 
     def processSorlcur() {
+        // turn curriculum checking on
+        conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = 'Y'")
+
         tableRow = null
         conn.call("{? = call sb_curriculum_str.f_outcome()}", [Sql.VARCHAR]) { result -> outcome = result }
 
@@ -241,6 +244,7 @@ public class ConcurrentCurriculumDML {
                 }
 
                 // parm 23 p_curr_rule  sorlcur_curr_rule NUMBER
+
                 if ((this.sorlcur_curr_rule == "") || (
                         this.sorlcur_curr_rule == null) ||
                         (!this.sorlcur_curr_rule)) {
