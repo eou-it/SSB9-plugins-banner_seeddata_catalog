@@ -245,10 +245,11 @@ public class StudentPersonIDDML {
         deleteData("SHRTRTA", "delete SHRTRTA where   	SHRTRTA_pidm = ?  ")
         deleteData("SHRTRTK", "delete SHRTRTK where  	SHRTRTK_pidm = ?  ")
         deleteData("SHRTTCM", "delete SHRTTCM where   	SHRTTCM_pidm = ?  ")
-        deleteData("SHRIACT", "delete SHTIACT where   	SHTIACT_pidm = ?  ")
+        deleteData("SHTIACT", "delete SHTIACT where   	SHTIACT_pidm = ?  ")
         deleteData("SHTTRAN", "delete SHTTRAN where   	SHTTRAN_pidm = ?  ")
         deleteData("SHRTRMN", "delete SHTTRNM where SHTTRNM_pidm = ? ")
         deleteData("SHRTTRM", "delete SHRTTRM where  	SHRTTRM_pidm = ?  ")
+        deleteData("GOBEACC", "delete GOBEACC where  	GOBEACC_pidm = ?  ")
 
         // reset enrollment counts
         def enrlCnt = """UPDATE ssbsect
