@@ -256,20 +256,6 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_VPDI_CODE/>
     </GOBTPAC_RECORD>
 
-    <TWGRROLE>
-        <BANNERID>HOSWEB011</BANNERID>
-        <TWGRROLE_PIDM>1</TWGRROLE_PIDM>
-        <TWGRROLE_ROLE>FACULTY</TWGRROLE_ROLE>
-        <TWGRROLE_ACTIVITY_DATE>18-NOV-06</TWGRROLE_ACTIVITY_DATE>
-    </TWGRROLE>
-
-    <TWGRROLE>
-        <BANNERID>HOSWEB011</BANNERID>
-        <TWGRROLE_PIDM>1</TWGRROLE_PIDM>
-        <TWGRROLE_ROLE>STUDENT</TWGRROLE_ROLE>
-        <TWGRROLE_ACTIVITY_DATE>18-NOV-06</TWGRROLE_ACTIVITY_DATE>
-    </TWGRROLE>
- 
   <SFBETRM>
   <BANNERID>HOSWEB011</BANNERID>
   <SFBETRM_TERM_CODE>201410</SFBETRM_TERM_CODE>
@@ -787,20 +773,6 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
       <GOBTPAC_VPDI_CODE/>
   </GOBTPAC_RECORD>
 
-  <TWGRROLE>
-      <BANNERID>HOSWEB017</BANNERID>
-      <TWGRROLE_PIDM>24</TWGRROLE_PIDM>
-      <TWGRROLE_ROLE>FACULTY</TWGRROLE_ROLE>
-      <TWGRROLE_ACTIVITY_DATE>18-NOV-06</TWGRROLE_ACTIVITY_DATE>
-  </TWGRROLE>
-
-  <TWGRROLE>
-      <BANNERID>HOSWEB017</BANNERID>
-      <TWGRROLE_PIDM>24</TWGRROLE_PIDM>
-      <TWGRROLE_ROLE>STUDENT</TWGRROLE_ROLE>
-      <TWGRROLE_ACTIVITY_DATE>18-NOV-06</TWGRROLE_ACTIVITY_DATE>
-  </TWGRROLE>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  
 <SFBETRM>
   <BANNERID>HOSWEB017</BANNERID>

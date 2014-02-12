@@ -156,7 +156,7 @@ public class StudentPersonIDDML {
 
         String selectTerms = """select sfrstcr_term_code, sfrstcr_crn from sfrstcr where sfrstcr_pidm = ? group by sfrstcr_term_code, sfrstcr_crn"""
         def terms = conn.rows(selectTerms, [connectInfo.saveStudentPidm])
-
+        deleteData("TWGRROLE", "delete TWGRROLE where TWGRROLE_pidm = ?")
         deleteData("TBRACCD", "delete TBRACCD where  	TBRACCD_pidm = ?  ")
         deleteData("SGRSATT", "delete SGRSATT where  	SGRSATT_pidm = ?  ")
         deleteData("SGRCHRT", "delete SGRCHRT where  	SGRCHRT_pidm = ?  ")
