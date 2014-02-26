@@ -105,9 +105,7 @@ public class TableDriver {
                         connectInfo.saveStudentPidm = null
                     }
 
-
-
-                    columnNames = []
+                   columnNames = []
                     if ((!saveTable) || (saveTable != newTable)) {
 
                         node.children().each() {fields ->
@@ -148,7 +146,7 @@ public class TableDriver {
                         }
                     }
                     if (connectInfo.debugThis) {
-                        println "--------- New Record for Table ${newTable} ----------"
+                        log.error "--------- New Record for Table ${newTable} ----------"
                         println "XML data: ${xmlRec}"
                     }
 
@@ -168,7 +166,7 @@ public class TableDriver {
                     }
 
                     saveTable = newTable
-
+                    log.error "end of record added to seed data"
                 }
 
                 if (connectInfo.mepUserId) {
