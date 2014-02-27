@@ -146,7 +146,7 @@ public class TableDriver {
                         }
                     }
                     if (connectInfo.debugThis) {
-                        log.error "--------- New Record for Table ${newTable} ----------"
+                        println  "--------- New Record for Table ${newTable} ----------"
                         println "XML data: ${xmlRec}"
                     }
 
@@ -166,7 +166,7 @@ public class TableDriver {
                     }
 
                     saveTable = newTable
-                    log.error "end of record added to seed data"
+                  //  println "end of record added to seed data ${saveTable}"
                 }
 
                 if (connectInfo.mepUserId) {
