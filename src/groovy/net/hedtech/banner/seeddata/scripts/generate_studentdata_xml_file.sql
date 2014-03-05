@@ -169,6 +169,11 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SHTTRAN','select '''  || 
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SHTTRNM','select '''  || :bannerid || '''  bannerid,	SHTTRNM.* FROM 	SHTTRNM	where 	SHTTRNM_pidm = ' || :pidm);
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'GOBTPAC_RECORD','select '''  || :bannerid || '''  bannerid,	GOBTPAC.* FROM GOBTPAC	where 	GOBTPAC_pidm = ' || :pidm);
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'TWGRROLE','select '''  || :bannerid || '''  bannerid,	TWGRROLE.* FROM TWGRROLE	where 	TWGRROLE_pidm = ' || :pidm);
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SPRHOLD','select '''  || :bannerid || '''  bannerid,	SPRHOLD.* FROM SPRHOLD	where 	SPRHOLD_pidm = ' || :pidm);
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORHSCH','select '''  || :bannerid || '''  bannerid,	SORHSCH.* FROM SORHSCH	where 	SORHSCH_pidm = ' || :pidm);
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORPCOL','select '''  || :bannerid || '''  bannerid,	SORPCOL.* FROM SORPCOL	where 	SORPCOL_pidm = ' || :pidm);
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORDEGR','select '''  || :bannerid || '''  bannerid,	SORDEGR.* FROM SORDEGR	where 	SORDEGR_pidm = ' || :pidm);
+
 
 
 SET TERM ON
