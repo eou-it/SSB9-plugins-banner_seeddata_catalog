@@ -156,6 +156,9 @@ public class StudentPersonIDDML {
 
         String selectTerms = """select sfrstcr_term_code, sfrstcr_crn from sfrstcr where sfrstcr_pidm = ? group by sfrstcr_term_code, sfrstcr_crn"""
         def terms = conn.rows(selectTerms, [connectInfo.saveStudentPidm])
+        deleteData("SORHSCH", "delete SORHSCH where  	SORHSCH_pidm = ?  ")
+        deleteData("SORDEGR", "delete SORDEGR where  	SORDEGR_pidm = ?  ")
+        deleteData("SORPCOL", "delete SORPCOL where  	SORPCOL_pidm = ?  ")
         deleteData("TWGRROLE", "delete TWGRROLE where TWGRROLE_pidm = ?")
         deleteData("TBRACCD", "delete TBRACCD where  	TBRACCD_pidm = ?  ")
         deleteData("SGRSATT", "delete SGRSATT where  	SGRSATT_pidm = ?  ")
@@ -236,11 +239,11 @@ public class StudentPersonIDDML {
         deleteData("SHRTCKN", "delete SHRTCKN where  	SHRTCKN_pidm = ?  ")
 
         deleteData("SHRTMCM", "delete SHRTMCM where  SHRTMCM_pidm = ?  ")
-        deleteData("SHRTRIT", "delete SHRTRIT where  	SHRTRIT_pidm = ?  ")
-        deleteData("SHRTRAM", "delete SHRTRAM where  SHRTRAM_pidm = ?  ")
-        deleteData("SHRTRCD", "delete SHRTRCD where  SHRTRCD_pidm = ?  ")
         deleteData("SHRTRCE", "delete SHRTRCE where  	SHRTRCE_pidm = ?  ")
         deleteData("SHRTRCR", "delete SHRTRCR where  	SHRTRCR_pidm = ?  ")
+        deleteData("SHRTRCD", "delete SHRTRCD where  SHRTRCD_pidm = ?  ")
+        deleteData("SHRTRIT", "delete SHRTRIT where  	SHRTRIT_pidm = ?  ")
+        deleteData("SHRTRAM", "delete SHRTRAM where  SHRTRAM_pidm = ?  ")
         deleteData("SHRTREP", "delete SHRTREP where  	SHRTREP_pidm = ?  ")
         deleteData("SHRTRTA", "delete SHRTRTA where   	SHRTRTA_pidm = ?  ")
         deleteData("SHRTRTK", "delete SHRTRTK where  	SHRTRTK_pidm = ?  ")
@@ -250,6 +253,7 @@ public class StudentPersonIDDML {
         deleteData("SHRTRMN", "delete SHTTRNM where SHTTRNM_pidm = ? ")
         deleteData("SHRTTRM", "delete SHRTTRM where  	SHRTTRM_pidm = ?  ")
         deleteData("GOBEACC", "delete GOBEACC where  	GOBEACC_pidm = ?  ")
+
 
         // reset enrollment counts
         def enrlCnt = """UPDATE ssbsect
