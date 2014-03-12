@@ -159,6 +159,7 @@ public class StudentPersonIDDML {
         deleteData("SORHSCH", "delete SORHSCH where  	SORHSCH_pidm = ?  ")
         deleteData("SORDEGR", "delete SORDEGR where  	SORDEGR_pidm = ?  ")
         deleteData("SORPCOL", "delete SORPCOL where  	SORPCOL_pidm = ?  ")
+        deleteData("SORTEST", "delete SORTEST where  	SORTEST_pidm = ?  ")
         deleteData("TWGRROLE", "delete TWGRROLE where TWGRROLE_pidm = ?")
         deleteData("TBRACCD", "delete TBRACCD where  	TBRACCD_pidm = ?  ")
         deleteData("SGRSATT", "delete SGRSATT where  	SGRSATT_pidm = ?  ")
