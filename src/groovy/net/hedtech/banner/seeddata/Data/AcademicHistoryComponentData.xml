@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2013-2014 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 
 <COMPONENTDATA>
@@ -317,4 +317,76 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <SHRSCOM_DATA_ORIGIN>GRAILS</SHRSCOM_DATA_ORIGIN>
         <SHRSCOM_VPDI_CODE />
     </SHRSCOM>
+
+    <SHRMRKS>
+        <SHRMRKS_TERM_CODE>201410</SHRMRKS_TERM_CODE>
+        <SHRMRKS_CRN>20488</SHRMRKS_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKS>
+
+    <SHRMRKA>
+        <SHRMRKA_TERM_CODE>201410</SHRMRKA_TERM_CODE>
+        <SHRMRKA_CRN>20488</SHRMRKA_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKA>
+
+    <SHRSMRK>
+        <SHRSMRK_TERM_CODE>201410</SHRSMRK_TERM_CODE>
+        <SHRSMRK_CRN>20488</SHRSMRK_CRN>
+        <DELETE>YES</DELETE>
+    </SHRSMRK>
+
+    <SHRSRKA>
+        <SHRSRKA_TERM_CODE>201410</SHRSRKA_TERM_CODE>
+        <SHRSRKA_CRN>20488</SHRSRKA_CRN>
+        <DELETE>YES</DELETE>
+    </SHRSRKA>
+
+    <SHRMRKS>
+        <SHRMRKS_TERM_CODE>201410</SHRMRKS_TERM_CODE>
+        <SHRMRKS_CRN>20489</SHRMRKS_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKS>
+
+    <SHRMRKA>
+        <SHRMRKA_TERM_CODE>201410</SHRMRKA_TERM_CODE>
+        <SHRMRKA_CRN>20489</SHRMRKA_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKA>
+
+    <SHRSMRK>
+        <SHRSMRK_TERM_CODE>201410</SHRSMRK_TERM_CODE>
+        <SHRSMRK_CRN>20489</SHRSMRK_CRN>
+        <DELETE>YES</DELETE>
+    </SHRSMRK>
+
+    <SHRSRKA>
+        <SHRSRKA_TERM_CODE>201410</SHRSRKA_TERM_CODE>
+        <SHRSRKA_CRN>20489</SHRSRKA_CRN>
+        <DELETE>YES</DELETE>
+    </SHRSRKA>
+
+    <SHRMRKS>
+        <SHRMRKS_TERM_CODE>201410</SHRMRKS_TERM_CODE>
+        <SHRMRKS_CRN>20490</SHRMRKS_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKS>
+
+    <SHRMRKA>
+        <SHRMRKA_TERM_CODE>201410</SHRMRKA_TERM_CODE>
+        <SHRMRKA_CRN>20490</SHRMRKA_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKA>
+
+    <SHRMRKS>
+        <SHRMRKS_TERM_CODE>201410</SHRMRKS_TERM_CODE>
+        <SHRMRKS_CRN>20490</SHRMRKS_CRN>
+        <DELETE>YES</DELETE>
+    </SHRMRKS>
+
+    <SHRSRKA>
+        <SHRSRKA_TERM_CODE>201410</SHRSRKA_TERM_CODE>
+        <SHRSRKA_CRN>20490</SHRSRKA_CRN>
+        <DELETE>YES</DELETE>
+    </SHRSRKA>
 </COMPONENTDATA>
