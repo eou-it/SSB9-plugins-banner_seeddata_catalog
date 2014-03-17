@@ -75,11 +75,6 @@ public class ScheduleDML {
     def ssbsect_number_of_extensions
     def ssbsect_intg_cde
     def ssbsect_prereq_chk_method_cde
-    def ssbsect_score_open_date
-    def ssbsect_score_cutoff_date
-    def ssbsect_reas_score_open_date
-    def ssbsect_reas_score_ctof_date
-
     java.sql.RowId ssbsectRow = null
     // database connection information
     def InputData connectInfo
@@ -168,10 +163,6 @@ public class ScheduleDML {
         this.ssbsect_number_of_extensions = sch.SSBSECT_NUMBER_OF_EXTENSIONS.text()
         this.ssbsect_intg_cde = sch.SSBSECT_INTG_CDE.text()
         this.ssbsect_prereq_chk_method_cde = sch.SSBSECT_PREREQ_CHK_METHOD_CDE.text()
-        this.ssbsect_score_open_date = sch.SSBSECT_SCORE_OPEN_DATE.text()
-        this.ssbsect_score_cutoff_date = sch.SSBSECT_SCORE_CUTOFF_DATE.text()
-        this.ssbsect_reas_score_open_date = sch.SSBSECT_REAS_SCORE_OPEN_DATE.text()
-        this.ssbsect_reas_score_ctof_date = sch.SSBSECT_REAS_SCORE_CTOF_DATE.text()
     }
 
 
@@ -727,20 +718,7 @@ public class ScheduleDML {
     def updateSchedule() {
         //  parm count is 63
         try {
-            String API = "{call  sb_section.p_update(?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?," +
-                    "?,?,?,?)}"
+            String API = "{call  sb_section.p_update(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
             // parm 1 p_term_code        ssbsect_term_code VARCHAR2
             insertCall.setString(1, this.ssbsect_term_code)
@@ -1081,47 +1059,6 @@ public class ScheduleDML {
             // do not send the rowid because setRowId is broken
             insertCall.setNull(64, java.sql.Types.ROWID)
             //  insertCall.setRowId(63,ssbsectRow)
-
-            // parm 65 p_score_open_date        ssbsect_score_open_date DATE
-            if ((this.ssbsect_score_open_date == "") || (this.ssbsect_score_open_date == null) || (!this.ssbsect_score_open_date)) { insertCall.setNull(65, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_score_open_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(65, sqlDate)
-            }
-
-            // parm 66 p_score_cutoff_date        ssbsect_score_cutoff_date DATE
-            if ((this.ssbsect_score_cutoff_date == "") || (this.ssbsect_score_cutoff_date == null) || (!this.ssbsect_score_cutoff_date)) { insertCall.setNull(66, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_score_cutoff_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(66, sqlDate)
-            }
-
-            // parm 67 p_reas_score_open_date        ssbsect_reas_score_open_date DATE
-            if ((this.ssbsect_reas_score_open_date == "") || (this.ssbsect_reas_score_open_date == null) || (!this.ssbsect_reas_score_open_date)) { insertCall.setNull(67, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_reas_score_open_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(67, sqlDate)
-            }
-
-            // parm 68 p_reas_score_ctof_date        ssbsect_reas_score_ctof_date DATE
-            if ((this.ssbsect_reas_score_ctof_date == "") || (this.ssbsect_reas_score_ctof_date == null) || (!this.ssbsect_reas_score_ctof_date)) { insertCall.setNull(68, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_reas_score_ctof_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(68, sqlDate)
-            }
-
             if (connectInfo.debugThis) {
                 println "Update SSBSECT ${this.ssbsect_term_code} ${this.ssbsect_crn} ${this.ssbsect_ptrm_code}"
             }
@@ -1156,20 +1093,7 @@ public class ScheduleDML {
 
         //  parm count is 63
         try {
-            String API = "{call  sb_section.p_create(?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?," +
-                    "?,?,?,?)}"
+            String API = "{call  sb_section.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
 
             // parm 1 p_term_code  ssbsect_term_code VARCHAR2
@@ -1510,45 +1434,7 @@ public class ScheduleDML {
             // parm 63 p_rowid_out  ssbsect_rowid_out VARCHAR2
             insertCall.registerOutParameter(64, java.sql.Types.ROWID)
 
-            // parm 65 p_score_open_date        ssbsect_score_open_date DATE
-            if ((this.ssbsect_score_open_date == "") || (this.ssbsect_score_open_date == null) || (!this.ssbsect_score_open_date)) { insertCall.setNull(65, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_score_open_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(65, sqlDate)
-            }
 
-            // parm 66 p_score_cutoff_date        ssbsect_score_cutoff_date DATE
-            if ((this.ssbsect_score_cutoff_date == "") || (this.ssbsect_score_cutoff_date == null) || (!this.ssbsect_score_cutoff_date)) { insertCall.setNull(66, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_score_cutoff_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(66, sqlDate)
-            }
-
-            // parm 67 p_reas_score_open_date        ssbsect_reas_score_open_date DATE
-            if ((this.ssbsect_reas_score_open_date == "") || (this.ssbsect_reas_score_open_date == null) || (!this.ssbsect_reas_score_open_date)) { insertCall.setNull(67, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_reas_score_open_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(67, sqlDate)
-            }
-
-            // parm 68 p_reas_score_ctof_date        ssbsect_reas_score_ctof_date DATE
-            if ((this.ssbsect_reas_score_ctof_date == "") || (this.ssbsect_reas_score_ctof_date == null) || (!this.ssbsect_reas_score_ctof_date)) { insertCall.setNull(68, java.sql.Types.DATE) }
-            else {
-                def ddate = new ColumnDateValue(this.ssbsect_reas_score_ctof_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(68, sqlDate)
-            }
 
             if (connectInfo.debugThis) {
                 println "Insert SSBSECT ${this.ssbsect_term_code} ${this.ssbsect_crn}  "

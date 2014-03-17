@@ -103,11 +103,6 @@ public class TermRulesDML {
     def sobterm_auto_drop_cde
     def sobterm_admin_drop_cde
     def sobterm_drop_last_class_cde
-    def sobterm_final_grde_pub_date
-    def sobterm_det_grde_pub_date
-    def sobterm_reas_grde_pub_date
-    def sobterm_reas_det_grd_pb_date
-
     def InputData connectInfo
     Sql conn
     Connection connectCall
@@ -221,11 +216,6 @@ public class TermRulesDML {
         this.sobterm_deg_audit_plan_cde = validation.SOBTERM_DEG_AUDIT_PLAN_CDE.text()
         this.sobterm_plan_da_reg_cde = validation.SOBTERM_PLAN_DA_REG_CDE.text()
         this.sobterm_plan_reg_cde = validation.SOBTERM_PLAN_REG_CDE.text()
-
-        this.sobterm_final_grde_pub_date = validation.SOBTERM_FINAL_GRDE_PUB_DATE.text()
-        this.sobterm_det_grde_pub_date = validation.SOBTERM_DET_GRDE_PUB_DATE.text()
-        this.sobterm_reas_grde_pub_date = validation.SOBTERM_REAS_GRDE_PUB_DATE.text()
-        this.sobterm_reas_det_grd_pb_date = validation.SOBTERM_REAS_DET_GRD_PB_DATE.text()
     }
 
 
@@ -253,26 +243,7 @@ public class TermRulesDML {
                 CallableStatement setContext = this.connectCall.prepareCall(contextAPI)
                 setContext.executeUpdate()
 
-                String API = "{call  sb_term.p_create(?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?,?," +
-                        "?,?,?,?," +
-                        "?,?,?,?)}"
+                String API = "{call  sb_term.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                 CallableStatement insertCall = this.connectCall.prepareCall(API)
                 // parm 1 p_term_code  sobterm_term_code VARCHAR2
                 insertCall.setString(1, this.sobterm_term_code)
@@ -650,50 +621,6 @@ public class TermRulesDML {
                 // parm 83 p_rowid_out  sobterm_rowid_out VARCHAR2
                 insertCall.registerOutParameter(94, java.sql.Types.ROWID)
 
-                // parm 95 p_final_grde_pub_date  sobterm_final_grde_pub_date DATE
-                if ((this.sobterm_final_grde_pub_date == "") || (this.sobterm_final_grde_pub_date == null) || (!this.sobterm_final_grde_pub_date)) {
-                    insertCall.setNull(95, java.sql.Types.DATE)
-                } else {
-                    def ddate = new ColumnDateValue(this.sobterm_final_grde_pub_date)
-                    String unfDate = ddate.formatJavaDate()
-                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                    insertCall.setDate(95, sqlDate)
-                }
-
-                // parm 96 p_det_grde_pub_date  sobterm_det_grde_pub_date DATE
-                if ((this.sobterm_det_grde_pub_date == "") || (this.sobterm_det_grde_pub_date == null) || (!this.sobterm_det_grde_pub_date)) {
-                    insertCall.setNull(96, java.sql.Types.DATE)
-                } else {
-                    def ddate = new ColumnDateValue(this.sobterm_det_grde_pub_date)
-                    String unfDate = ddate.formatJavaDate()
-                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                    insertCall.setDate(96, sqlDate)
-                }
-
-                // parm 97 p_reas_grde_pub_date  sobterm_reas_grde_pub_date DATE
-                if ((this.sobterm_reas_grde_pub_date == "") || (this.sobterm_reas_grde_pub_date == null) || (!this.sobterm_reas_grde_pub_date)) {
-                    insertCall.setNull(97, java.sql.Types.DATE)
-                } else {
-                    def ddate = new ColumnDateValue(this.sobterm_reas_grde_pub_date)
-                    String unfDate = ddate.formatJavaDate()
-                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                    insertCall.setDate(97, sqlDate)
-                }
-
-                // parm 98 p_reas_det_grd_pb_date  sobterm_reas_det_grd_pb_date DATE
-                if ((this.sobterm_reas_det_grd_pb_date == "") || (this.sobterm_reas_det_grd_pb_date == null) || (!this.sobterm_reas_det_grd_pb_date)) {
-                    insertCall.setNull(98, java.sql.Types.DATE)
-                } else {
-                    def ddate = new ColumnDateValue(this.sobterm_reas_det_grd_pb_date)
-                    String unfDate = ddate.formatJavaDate()
-                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                    insertCall.setDate(98, sqlDate)
-                }
-
                 if (connectInfo.debugThis) {
                     println "Insert SOBTERM ${this.sobterm_term_code} "
                 }
@@ -733,27 +660,7 @@ public class TermRulesDML {
             CallableStatement setContext = this.connectCall.prepareCall(contextAPI)
             setContext.executeUpdate()
 
-            String API = "{call  sb_term.p_update(?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?,?," +
-                    "?,?,?,?," +
-                    "?,?,?,?)}"
-
+            String API = "{call  sb_term.p_update(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
             // parm 1 p_term_code  sobterm_term_code VARCHAR2
             insertCall.setString(1, this.sobterm_term_code)
@@ -1129,50 +1036,6 @@ public class TermRulesDML {
             insertCall.setString(93, connectInfo.userID)
             // parm 94 p_rowid_out  sobterm_rowid_out VARCHAR2
             insertCall.registerOutParameter(94, java.sql.Types.ROWID)
-
-            // parm 95 p_final_grde_pub_date  sobterm_final_grde_pub_date DATE
-            if ((this.sobterm_final_grde_pub_date == "") || (this.sobterm_final_grde_pub_date == null) || (!this.sobterm_final_grde_pub_date)) {
-                insertCall.setNull(95, java.sql.Types.DATE)
-            } else {
-                def ddate = new ColumnDateValue(this.sobterm_final_grde_pub_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(95, sqlDate)
-            }
-
-            // parm 96 p_det_grde_pub_date  sobterm_det_grde_pub_date DATE
-            if ((this.sobterm_det_grde_pub_date == "") || (this.sobterm_det_grde_pub_date == null) || (!this.sobterm_det_grde_pub_date)) {
-                insertCall.setNull(96, java.sql.Types.DATE)
-            } else {
-                def ddate = new ColumnDateValue(this.sobterm_det_grde_pub_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(96, sqlDate)
-            }
-
-            // parm 97 p_reas_grde_pub_date  sobterm_reas_grde_pub_date DATE
-            if ((this.sobterm_reas_grde_pub_date == "") || (this.sobterm_reas_grde_pub_date == null) || (!this.sobterm_reas_grde_pub_date)) {
-                insertCall.setNull(97, java.sql.Types.DATE)
-            } else {
-                def ddate = new ColumnDateValue(this.sobterm_reas_grde_pub_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(97, sqlDate)
-            }
-
-            // parm 98 p_reas_det_grd_pb_date  sobterm_reas_det_grd_pb_date DATE
-            if ((this.sobterm_reas_det_grd_pb_date == "") || (this.sobterm_reas_det_grd_pb_date == null) || (!this.sobterm_reas_det_grd_pb_date)) {
-                insertCall.setNull(98, java.sql.Types.DATE)
-            } else {
-                def ddate = new ColumnDateValue(this.sobterm_reas_det_grd_pb_date)
-                String unfDate = ddate.formatJavaDate()
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                insertCall.setDate(98, sqlDate)
-            }
 
             if (connectInfo.debugThis) {
                 println "Update SOBTERM ${this.sobterm_term_code}"
