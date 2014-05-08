@@ -170,8 +170,9 @@ public class InputData {
             'api-general-student': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml'],
             'api-student-prior-education': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml'],
             'api-student-registration-history': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
-            'flat-rate-fee-rules': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeAssessmentFlatRate.xml']
-    ]
+            'flat-rate-fee-rules': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeAssessmentFlatRate.xml'],
+            'facultySecurityPlanAhead' :['/src/groovy/net/hedtech/banner/seeddata/Data/FacultySecurityPageData.xml']
+            ]
 
     /**
      *  Map of selenium targets
