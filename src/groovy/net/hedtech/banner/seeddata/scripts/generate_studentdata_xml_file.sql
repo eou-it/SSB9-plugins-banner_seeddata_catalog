@@ -174,6 +174,7 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORHSCH','select '''  || 
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORPCOL','select '''  || :bannerid || '''  bannerid,	SORPCOL.* FROM SORPCOL	where 	SORPCOL_pidm = ' || :pidm);
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORDEGR','select '''  || :bannerid || '''  bannerid,	SORDEGR.* FROM SORDEGR	where 	SORDEGR_pidm = ' || :pidm);
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORTEST','select '''  || :bannerid || '''  bannerid,	SORTEST.* FROM SORTEST	where 	SORTEST_pidm = ' || :pidm);
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SORTSPC','select '''  || :bannerid || '''  bannerid,	SORTSPC.* FROM SORTSPC	where 	SORTSPC_pidm = ' || :pidm);
 
 
 
