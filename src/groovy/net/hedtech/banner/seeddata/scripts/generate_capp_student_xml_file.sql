@@ -134,13 +134,6 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPOLV' ,'select   '''  
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPONC' ,'select   '''  ||:bannerid|| '''  bannerid, SMRPONC.* from SMRPONC where SMRPONC_request_no = ' || :request_no ||' and SMRPONC_pidm = ' || :pidm  );
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPOSA' ,'select   '''  ||:bannerid|| '''  bannerid, SMRPOSA.* from SMRPOSA where SMRPOSA_request_no = ' || :request_no ||' and SMRPOSA_pidm = ' || :pidm  );
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRRQ' ,'select   '''  ||:bannerid|| '''  bannerid, SMRPRRQ.* from SMRPRRQ where SMRPRRQ_request_no = ' || :request_no ||' and SMRPRRQ_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTASEL' ,'select   '''  ||:bannerid|| '''  bannerid, SMTASEL.* from SMTASEL where SMTASEL_request_no = ' || :request_no ||' and SMTASEL_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTCRSE' ,'select   '''  ||:bannerid|| '''  bannerid, SMTCRSE.* from SMTCRSE where SMTCRSE_request_no = ' || :request_no ||' and SMTCRSE_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTCUSE' ,'select   '''  ||:bannerid|| '''  bannerid, SMTCUSE.* from SMTCUSE where SMTCUSE_request_no = ' || :request_no ||' and SMTCUSE_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTRUSE' ,'select   '''  ||:bannerid|| '''  bannerid, SMTRUSE.* from SMTRUSE where SMTRUSE_request_no = ' || :request_no ||' and SMTRUSE_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTSPAT' ,'select   '''  ||:bannerid|| '''  bannerid, SMTSPAT.* from SMTSPAT where SMTSPAT_request_no = ' || :request_no ||' and SMTSPAT_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTSPLT' ,'select   '''  ||:bannerid|| '''  bannerid, SMTSPLT.* from SMTSPLT where SMTSPLT_request_no = ' || :request_no ||' and SMTSPLT_pidm = ' || :pidm  );
-INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMTSTRG' ,'select   '''  ||:bannerid|| '''  bannerid, SMTSTRG.* from SMTSTRG where SMTSTRG_request_no = ' || :request_no ||' and SMTSTRG_pidm = ' || :pidm  );
 end if;
 end;
 /
