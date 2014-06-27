@@ -173,7 +173,8 @@ public class InputData {
             'api-student-registration-history': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
             'flat-rate-fee-rules': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeAssessmentFlatRate.xml'],
             'facultySecurityPlanAhead' :['/src/groovy/net/hedtech/banner/seeddata/Data/FacultySecurityPageData.xml'],
-            'generalstudentcapp' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithCompliance.xml']
+            'generalstudentcapp' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithCompliance.xml'],
+            'reg-rsql' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionStructuredRegSql.xml']
 
             ]
 

@@ -127,6 +127,7 @@ public class Tables {
         }
         if (connectInfo.debugThis) {
             println "${this.tableName} index columns selected ${columns?.size()} index columns selected ${indexColumns?.size()}"
+            println "${columns}"
         }
         if (indexColumns.size() == 0) {
             selIndexSQL = """select table_name, column_name, data_type, column_id , DATA_SCALE
