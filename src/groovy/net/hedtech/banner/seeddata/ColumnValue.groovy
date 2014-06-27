@@ -50,7 +50,7 @@ public class ColumnValue {
      */
 
     def String formatColumnValue() {
-        if ((!columnType) && (!columnName) && (!tableName)) {
+          if ((!columnType) && (!columnName) && (!tableName)) {
             String colsql = """select data_type, data_scale, data_length
                     from all_tab_columns where table_name = ?
                     and column_name = ?"""
@@ -101,8 +101,8 @@ public class ColumnValue {
 
                 }
             } else if ((columnType == "VARCHAR2") || (columnType == 'CLOB')) {
-                if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) {
-                    valsql = "null"
+                if ((columnType == "VARCHAR2") && ((columnValue =~ "null") || (!columnValue) || (columnValue == " "))) {
+                     valsql = "null"
                 } else {  // reduce to smaller size
                     String col = columnValue.toString()
                     if (col.length() > 3000) {
@@ -110,14 +110,14 @@ public class ColumnValue {
                         def colv = col.substring(0, 3000)
                         col = colv
                     }
-
-                    // replace all ' with '' so they will load
-                    if (col =~ /\'/) {
+                      // replace all ' with '' so they will load
+                    if ((columnType == "VARCHAR2") && (col =~ /\'/)) {
                         def newcolval = col.replaceAll(/'/, '')
-                        valsql = "'${newcolval}'"
+                         valsql = "'${newcolval}'"
                     } else {
                         valsql = "'${col}'"
                     }
+
                 }
             } else if (columnType == "DATE") {
                 if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) {
@@ -131,7 +131,7 @@ public class ColumnValue {
             }
         }
 
-        if (connectInfo.debugThis && columnName =~ "PIDM") {
+         if (connectInfo.debugThis && columnName =~ "PIDM") {
             println "MultiplePidms in table ${multiplePidmColumn} column name ${columnName} value ${valsql}"
         }
 
