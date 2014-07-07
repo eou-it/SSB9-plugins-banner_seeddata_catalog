@@ -89,6 +89,7 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRSA','select  	SMRPRS
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRSC','select  	SMRPRSC.* FROM SMRPRSC where SMRPRSC_program like  ''' || :program || ''''   );
 -- areas - only courses attached and a rule on the courses
 insert into testTables values ( clob_sequence.nextval,'SMRALIB','select SMRALIB.*	FROM SMRALIB, smrpaap where SMRALIB_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRAQUA','select SMRAQUA.*	FROM SMRAQUA, smrpaap where SMRAQUA_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMBAGEN','select SMBAGEN.*	FROM SMBAGEN, smrpaap where SMBAGEN_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRACAA','select SMRACAA.*	FROM SMRACAA, smrpaap where SMRACAA_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMBAGRL','select SMBAGRL.*	FROM SMBAGRL, smrpaap where SMBAGRL_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
