@@ -95,6 +95,15 @@ insert into testTables values ( clob_sequence.nextval,'SMRACAA','select SMRACAA.
 insert into testTables values ( clob_sequence.nextval,'SMBAGRL','select SMBAGRL.*	FROM SMBAGRL, smrpaap where SMBAGRL_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMBARUL','select SMBARUL.*	FROM SMBARUL, smrpaap where SMBARUL_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRARUL','select SMRARUL.*	FROM SMRARUL, smrpaap where SMRARUL_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+-- qualifiers for dynamic areas in non captive program
+insert into testTables values ( clob_sequence.nextval,'SMRIEAT','select SMRIEAT.*	FROM SMRIEAT, smrpaap where SMRIEAT_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIECC','select SMRIECC.*	FROM SMRIECC, smrpaap where SMRIECC_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIECO','select SMRIECO.*	FROM SMRIECO, smrpaap where SMRIECO_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIECP','select SMRIECP.*	FROM SMRIECP, smrpaap where SMRIECP_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIEDG','select SMRIEDG.*	FROM SMRIEDG, smrpaap where SMRIEDG_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIEDP','select SMRIEDP.*	FROM SMRIEDP, smrpaap where SMRIEDP_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIEMJ','select SMRIEMJ.*	FROM SMRIEMJ, smrpaap where SMRIEMJ_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRIEMN','select SMRIEMN.*	FROM SMRIEMN, smrpaap where SMRIEMN_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 
 -- request for compliance
 begin
