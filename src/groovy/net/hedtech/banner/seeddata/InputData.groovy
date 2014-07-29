@@ -116,6 +116,11 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_203020.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeedSelenium_204010.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/FgeEgbEnhancement.xml'],
+            'egb' : ['/src/groovy/net/hedtech/banner/seeddata/Data/EGBTermData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBScheduleData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBComponentData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBStudentData.xml'],
             'ssbadvisor': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorPersonaSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed2.xml',
@@ -177,7 +182,9 @@ public class InputData {
             'facultySecurityPlanAhead' :['/src/groovy/net/hedtech/banner/seeddata/Data/FacultySecurityPageData.xml'],
             'generalstudentcapp' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithCompliance.xml'],
             'reg-rsql' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionStructuredRegSql.xml'],
-            'generalstudentsd01' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithSD01Program.xml']
+            'generalstudentsd01' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithSD01Program.xml'],
+            'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml']
             ]
 
     /**

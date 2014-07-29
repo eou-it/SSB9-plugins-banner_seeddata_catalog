@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright  2014 Ellucian Company L.P. and its affiliates.
+********************************************************************************* -->
+
 <STUDENTDATA>
     <SOBSTRG>
         <SOBSTRG_TERM_CODE>201410</SOBSTRG_TERM_CODE>
@@ -5802,8 +5806,8 @@
         <PROGRAM>BAMATH</PROGRAM>
         <SORMCRL_CURR_RULE>159</SORMCRL_CURR_RULE>
         <SORMCRL_TERM_CODE_EFF>000000</SORMCRL_TERM_CODE_EFF>
-        <SORMCRL_REC_IND>Y</SORMCRL_REC_IND>
-        <SORMCRL_ADM_IND>Y</SORMCRL_ADM_IND>
+        <SORMCRL_REC_IND>N</SORMCRL_REC_IND>
+        <SORMCRL_ADM_IND>N</SORMCRL_ADM_IND>
         <SORMCRL_STU_IND>Y</SORMCRL_STU_IND>
         <SORMCRL_HIS_IND>Y</SORMCRL_HIS_IND>
         <SORMCRL_DAU_IND>Y</SORMCRL_DAU_IND>
