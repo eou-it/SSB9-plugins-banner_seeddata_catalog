@@ -116,6 +116,21 @@ insert into testTables values ( clob_sequence.nextval,'SMRGCAA','select SMRGCAA.
 insert into testTables values ( clob_sequence.nextval,'SMBGRUL','select SMBGRUL.*	FROM SMBGRUL,smragam, smrpaap where smBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRGRUL','select SMRGRUL.*	FROM SMRGRUL,smragam, smrpaap where smRGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRGCMT','select SMRGCMT.*	FROM SMRGCMT,smragam, smrpaap where smRgCMT_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRGLIB','select * from SMRGLIB where exists ( select 1 from  smragrl, smbagrl,smragam, smrpaap  ' ||
+                'where  SMRGLIB_group = smragrl_group and smragrl_area = smbagrl_area and smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  like  ''' || :program || ''')' );
+
+insert into testTables values ( clob_sequence.nextval,'SMBGGEN','select * from SMBGGEN where exists ( select 1 from  smragrl, smbagrl,smragam, smrpaap  ' ||
+                'where  SMBGGEN_group = smragrl_group and smragrl_area = smbagrl_area and smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  like  ''' || :program || ''')' );
+
+insert into testTables values ( clob_sequence.nextval,'SMRGCAA','select * from SMRGCAA where exists ( select 1 from  smragrl, smbagrl,smragam, smrpaap  ' ||
+                'where  smrgcaa_group = smragrl_group and smragrl_area = smbagrl_area and smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  like  ''' || :program || ''')' );
+
+insert into testTables values ( clob_sequence.nextval,'SMBGRUL','select * from SMBGRUL where exists ( select 1 from  smrgcaa, smragrl, smbagrl,smragam, smrpaap ' ||
+                                ' where   smbgrul_key_rule = smrgcaa_rule and smrgcaa_group = smragrl_group and   smragrl_area = smbagrl_area and ' ||
+                                ' smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  like  ''' || :program || ''')'   );
+insert into testTables values ( clob_sequence.nextval,'SMRGRUL','select * from SMRGRUL where exists ( select 1 from  smrgcaa, smragrl, smbagrl,smragam, smrpaap '  ||
+                                 ' where   smrgrul_key_rule = smrgcaa_rule and smrgcaa_group = smragrl_group and   smragrl_area = smbagrl_area and '  ||
+                                 ' smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  like  ''' || :program || ''')'   );
 
 -- request for compliance
 begin
