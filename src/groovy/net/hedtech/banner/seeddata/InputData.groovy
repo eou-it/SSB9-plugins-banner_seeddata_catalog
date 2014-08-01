@@ -114,7 +114,13 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_201410.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_203010.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeed_203020.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeedSelenium_204010.xml'],
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationSeedSelenium_204010.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/FgeEgbEnhancement.xml'],
+            'egb' : ['/src/groovy/net/hedtech/banner/seeddata/Data/EGBTermData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBScheduleData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBComponentData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/EGBStudentData.xml'],
             'ssbadvisor': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorPersonaSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorTermSeed2.xml',
@@ -124,9 +130,11 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorSearchSeed.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeSeed1.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeSeed2.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeSeed3.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorBannerCourse.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorCourseSection.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorRegistration.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorPriorEducationAndTesting.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeGradeSeed_201410.xml'] ,
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
@@ -167,8 +175,19 @@ public class InputData {
             'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']  ,
             'transcript-award' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentTranscriptAwardedDegree.xml'],
              'student-adv-admin-persona' :['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAdvisorAdminPersonData.xml'],
-             'employee' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml']
-    ]
+             'employee' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
+            'api-general-student': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml'],
+            'api-student-prior-education': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml'],
+            'api-student-registration-history': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
+            'flat-rate-fee-rules': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeAssessmentFlatRate.xml'],
+            'facultySecurityPlanAhead' :['/src/groovy/net/hedtech/banner/seeddata/Data/FacultySecurityPageData.xml'],
+            'generalstudentcapp' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithCompliance.xml'],
+            'reg-rsql' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionStructuredRegSql.xml'],
+            'generalstudentsd01' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithSD01Program.xml'],
+            'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml']
+            ]
+
 
     /**
      *  Map of selenium targets
@@ -291,7 +310,10 @@ public class InputData {
             'source-background-institution-base-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/SourceBackgroundInstitutionBaseSelenium.xml'],
             'source-background-institution-base-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/SourceBackgroundInstitutionBaseSeleniumRemove.xml'],
             'gradable-component-definition-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/GradableComponentDefinitionSeleniumRemove.xml'],
-            'repeat-multiple-course-rules-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RepeatMultipleCourseRulesSeleniumRemove.xml']
+            'repeat-multiple-course-rules-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RepeatMultipleCourseRulesSeleniumRemove.xml'],
+            'gpa-rules-round' :    ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryGpaRulesRound.xml'],
+            'gpa-rules-truncate' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryGpaRulesTruncate.xml'],
+            'gpa-rules-delete' :   ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryGpaRulesDelete.xml']
     ]
 
 
