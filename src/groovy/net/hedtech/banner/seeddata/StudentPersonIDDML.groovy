@@ -167,6 +167,8 @@ public class StudentPersonIDDML {
         deleteData("SGRADVR", "delete SGRADVR where  	SGRADVR_pidm = ?  ")
         deleteData("SPRHOLD", "delete SPRHOLD where  	SPRHOLD_pidm = ?  ")
         deleteData("SPRAPIN", "delete SPRAPIN where  	SPRAPIN_pidm = ?  ")
+        deleteData("SFRSTRD", "delete SFRSTRD where  	SFRSTRD_pidm = ?  ")
+        deleteData("SFBSTRH", "delete SFBSTRH where  	SFBSTRH_pidm = ?  ")
         deleteData("SFRBTCH", "delete SFRBTCH where  	SFRBTCH_pidm = ?  ")
         deleteData("TBRCBRQ", "delete TBRCBRQ where  	TBRCBRQ_pidm = ?  ")
         deleteData("SFTAREA", "delete SFTAREA where  	SFTAREA_pidm = ?  ")
