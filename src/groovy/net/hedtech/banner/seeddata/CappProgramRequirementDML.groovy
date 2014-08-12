@@ -62,9 +62,8 @@ public class CappProgramRequirementDML {
                 'where   smbgrul_key_rule = smrgcaa_rule and smrgcaa_group = smragrl_group and   smragrl_area = smbagrl_area and  ' +
                 'smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  = ? ) ', program_code );
 
-
-        deleteData('SMBGRUL','delete SMBGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
         deleteData('SMRGRUL','delete SMRGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMRGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
+        deleteData('SMBGRUL','delete SMBGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
 
         deleteData('SMBAOGN','delete SMBAOGN where SMBAOGN_PROGRAM = ?',  program_code)
         deleteData('SMBDRRQ','delete SMBDRRQ where SMBDRRQ_PROGRAM = ?',  program_code)
@@ -109,6 +108,9 @@ public class CappProgramRequirementDML {
         deleteData('SMRPRSA','delete SMRPRSA where SMRPRSA_PROGRAM = ?',  program_code)
         deleteData('SMRPRSC','delete SMRPRSC where SMRPRSC_PROGRAM = ?',  program_code)
         deleteData('SMRPTRK','delete SMRPTRK where SMRPTRK_PROGRAM = ?',  program_code)
+        deleteData('SMRPRRQ','delete SMRPRRQ where exists (select 1 from SMRRQCM ' +
+                            ' where  SMRPRRQ_PIDM = SMRRQCM_PIDM and SMRPRRQ_REQUEST_NO = SMRRQCM_REQUEST_NO ' +
+                            ' and    SMRRQCM_PROGRAM = ?)',  program_code)
         deleteData('SMRRQCM','delete SMRRQCM where SMRRQCM_PROGRAM = ?',  program_code)
         deleteData('SMRSAPV','delete SMRSAPV where SMRSAPV_PROGRAM = ?',  program_code)
         deleteData('SMRSPAP','delete SMRSPAP where SMRSPAP_PROGRAM = ?',  program_code)
