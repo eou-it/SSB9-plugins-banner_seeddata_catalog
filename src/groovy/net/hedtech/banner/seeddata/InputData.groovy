@@ -184,6 +184,7 @@ public class InputData {
             'reg-rsql' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionStructuredRegSql.xml'],
             'generalstudentsd01' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithSD01Program.xml'],
             'generalstudentsd02' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithSD02Program.xml'],
+            'generalstudentdynamic' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithDynamicCappArea.xml'],
             'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml']
             ]
