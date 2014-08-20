@@ -186,7 +186,8 @@ public class InputData {
             'generalstudentsd02' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithSD02Program.xml'],
             'generalstudentdynamic' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithDynamicCappArea.xml'],
             'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
-                                  '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml']
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml'],
+            'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
             ]
 
     /**
