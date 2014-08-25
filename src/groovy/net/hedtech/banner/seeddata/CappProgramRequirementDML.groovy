@@ -150,6 +150,8 @@ public class CappProgramRequirementDML {
         deleteData('SMBSARU','delete SMBSARU  where exists ( select 1 from SMBSARU del,  smrpaap where del.SMBSARU_area = SMBSARU.SMBSARU_area and del.SMBSARU_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
         deleteData('SMRACAA','delete SMRACAA  where exists ( select 1 from SMRACAA del,  smrpaap where del.SMRACAA_area = SMRACAA.SMRACAA_area and del.SMRACAA_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
         deleteData('SMBAGEN','delete SMBAGEN  where exists ( select 1 from SMBAGEN del,  smrpaap where del.SMBAGEN_area = SMBAGEN.SMBAGEN_area and del.SMBAGEN_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
+        deleteData('SSRRARE','delete SSRRARE  where exists ( select 1 from SSRRARE del, smralib,  smrpaap \n' +
+                '        where del.SSRRARE_area = ssrrare.ssrrare_area and del.SSRRARE_area = smrpaap_area  and  smrpaap_program = ? )' , program_code );
 
         deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
 
