@@ -188,6 +188,10 @@ public class InputData {
             'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml'],
             'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
+            'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml']
+
             ]
 
     /**

@@ -155,11 +155,12 @@ public class CappProgramRequirementDML {
 
         deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
 
- 
+
         deleteData('SMRGRUL','delete SMRGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMRGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
         deleteData('SMBGRUL','delete SMBGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
 
         deleteData('SMBAOGN','delete SMBAOGN where SMBAOGN_PROGRAM = ?',  program_code)
+        deleteData('SFRPFCR','delete SFRPFCR where SFRPFCR_PROGRAM = ?',  program_code)
         deleteData('SMBDRRQ','delete SMBDRRQ where SMBDRRQ_PROGRAM = ?',  program_code)
         deleteData('SMBGOGN','delete SMBGOGN where SMBGOGN_PROGRAM = ?',  program_code)
         deleteData('SMBPOGN','delete SMBPOGN where SMBPOGN_PROGRAM = ?',  program_code)
