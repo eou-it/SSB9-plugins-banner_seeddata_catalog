@@ -41,8 +41,9 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        compile ":hibernate:$grailsVersion"
-        compile ":tomcat:$grailsVersion"
+        runtime  ":hibernate:3.6.10.10"
+        compile ":tomcat:7.0.52.1"
+        compile ":functional-test:2.0.0" // If the functional-test plugin is being used
         test ':code-coverage:1.2.5'
 
     }

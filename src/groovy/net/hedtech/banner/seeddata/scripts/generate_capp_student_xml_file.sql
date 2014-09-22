@@ -76,6 +76,8 @@ insert into testTables values ( clob_sequence.nextval,'SORCCON','select sobcurr_
 -- program rules
 
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMBPGEN','select  	SMBPGEN.* FROM SMBPGEN where SMBPGEN_program like  ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRALIB','select SMRALIB.*	FROM SMRALIB, smrpaap where SMRALIB_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMBPVPR','select  	SMBPVPR.* FROM SMBPVPR where SMBPVPR_program like  ''' || :program || ''''   );
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPAAP','select  	SMRPAAP.* FROM SMRPAAP where SMRPAAP_program like  ''' || :program || ''''   );
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPATR','select  	SMRPATR.* FROM SMRPATR where SMRPATR_program like  ''' || :program || ''''   );
@@ -88,16 +90,18 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRGD','select  	SMRPRG
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRSA','select  	SMRPRSA.* FROM SMRPRSA where SMRPRSA_program like  ''' || :program || ''''   );
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRSC','select  	SMRPRSC.* FROM SMRPRSC where SMRPRSC_program like  ''' || :program || ''''   );
 -- areas
-insert into testTables values ( clob_sequence.nextval,'SMRALIB','select SMRALIB.*	FROM SMRALIB, smrpaap where SMRALIB_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRAQUA','select SMRAQUA.*	FROM SMRAQUA, smrpaap where SMRAQUA_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMBAGEN','select SMBAGEN.*	FROM SMBAGEN, smrpaap where SMBAGEN_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRACAA','select SMRACAA.*	FROM SMRACAA, smrpaap where SMRACAA_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMBAGRL','select SMBAGRL.*	FROM SMBAGRL, smrpaap where SMBAGRL_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRAGRL','select SMRAGRL.*	FROM SMRAGRL, smrpaap where SMRAGRL_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRAGRT','select SMRAGRT.*	FROM SMRAGRT, smrpaap where SMRAGRT_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+
 insert into testTables values ( clob_sequence.nextval,'SMBARUL','select SMBARUL.*	FROM SMBARUL, smrpaap where SMBARUL_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRARUL','select SMRARUL.*	FROM SMRARUL, smrpaap where SMRARUL_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRARLT','select SMRARLT.*	FROM SMRARLT, smrpaap where SMRARLT_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
+
 insert into testTables values ( clob_sequence.nextval,'SMRACMT','select SMRACMT.*	FROM SMRACMT, smrpaap where SMRACMT_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
-insert into testTables values ( clob_sequence.nextval,'SMBAGRL','select SMBAGRL.*	FROM SMBAGRL, smrpaap where SMBAGRL_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
-insert into testTables values ( clob_sequence.nextval,'SMRAGRL','select SMRAGRL.*	FROM SMRAGRL, smrpaap where SMRAGRL_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
 
 -- qualifiers for dynamic areas in non captive program
 insert into testTables values ( clob_sequence.nextval,'SMRIEAT','select SMRIEAT.*	FROM SMRIEAT, smrpaap where SMRIEAT_area = smrpaap_area and  smrpaap_program like ''' || :program || ''''   );
@@ -115,6 +119,8 @@ insert into testTables values ( clob_sequence.nextval,'SMRAGAM','select SMRAGAM.
 insert into testTables values ( clob_sequence.nextval,'SMRGCAA','select SMRGCAA.*	FROM SMRGCAA,smragam, smrpaap where smRgCAA_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMBGRUL','select SMBGRUL.*	FROM SMBGRUL,smragam, smrpaap where smBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRGRUL','select SMRGRUL.*	FROM SMRGRUL,smragam, smrpaap where smRGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+insert into testTables values ( clob_sequence.nextval,'SMRGRLT','select SMRGRLT.*	FROM SMRGRLT,smragam, smrpaap where smRGRLT_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
+
 insert into testTables values ( clob_sequence.nextval,'SMRGCMT','select SMRGCMT.*	FROM SMRGCMT,smragam, smrpaap where smRgCMT_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program like  ''' || :program || ''''   );
 insert into testTables values ( clob_sequence.nextval,'SMRGLIB','select * from SMRGLIB where exists ( select 1 from  smragrl, smbagrl,smragam, smrpaap  ' ||
                 'where  SMRGLIB_group = smragrl_group and smragrl_area = smbagrl_area and smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  like  ''' || :program || ''')' );
