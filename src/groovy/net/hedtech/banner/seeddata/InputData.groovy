@@ -56,6 +56,7 @@ public class InputData {
 
     // map of run time targets to specify file names
     def targets = [
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
             'seed-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
@@ -175,7 +176,6 @@ public class InputData {
             'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']  ,
             'transcript-award' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentTranscriptAwardedDegree.xml'],
              'student-adv-admin-persona' :['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAdvisorAdminPersonData.xml'],
-             'employee' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
             'api-general-student': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml'],
             'api-student-prior-education': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml'],
             'api-student-registration-history': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
