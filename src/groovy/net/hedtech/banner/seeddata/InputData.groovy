@@ -51,6 +51,7 @@ public class InputData {
     def saveSeqno = null
     def saveCurrRule = null
     def tableName = null
+    def owner = null
 
     def validTable = null
 
@@ -189,7 +190,8 @@ public class InputData {
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml'],
             'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
             'studentApiData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml'],
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml'],
             'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml']
@@ -332,6 +334,7 @@ public class InputData {
             ownerSql = """ select owner from all_views where view_name = ?"""
             owner = conn.firstRow(ownerSql, [this.tableName])
         }
+        this.owner = owner?.owner
         if (!owner) {
             validTable = null
         } else validTable = owner
