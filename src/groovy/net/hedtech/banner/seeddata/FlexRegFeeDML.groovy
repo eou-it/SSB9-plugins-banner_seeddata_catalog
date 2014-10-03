@@ -101,7 +101,7 @@ public class FlexRegFeeDML {
                     from dual
                     where not exists ( select 1 from flexreg.sftvctlg a where a.sftvctlg_code = 'A0');
 
-                     delete FLEXREG.sffrfees where sffrfees_term_code = term_code and sffrfees_crn = crn;
+                    delete FLEXREG.sffrfees where sffrfees_term_code = term_code and sffrfees_crn = crn;
                     delete FLEXREG.SFKRITEM where sfkritem_crn = crn and sfkritem_term_code = term_code;
                     delete flexreg.sfkbcart where sfkbcart_pidm = pidm;
 
@@ -124,25 +124,25 @@ public class FlexRegFeeDML {
                         values (cid,pidm,cart_status_finalized,invoice_number,catalog,SYSDATE,'FLEXREG_USER','TEST',0,'A');
 
                     -- Create cart items
-                    insert into FLEXREG.SFKRITEM (SFKRITEM_CID,SFKRITEM_CRN,SFKRITEM_TERM_CODE, SFKRITEM_STATUS,
+                    insert into FLEXREG.SFKRITEM (SFKRITEM_PIDM, SFKRITEM_CID,SFKRITEM_CRN,SFKRITEM_TERM_CODE, SFKRITEM_STATUS,
                       SFKRITEM_MESSAGE,SFKRITEM_COST,SFKRITEM_START_DATE,SFKRITEM_END_DATE,SFKRITEM_ACTIVITY_DATE,SFKRITEM_USER_ID,
                       SFKRITEM_DATA_ORIGIN,SFKRITEM_RSTS_CODE,SFKRITEM_GMOD_CODE,SFKRITEM_CREDIT_HR,SFKRITEM_LEVL_CODE,SFKRITEM_VERSION)
-                    values (cid,crn,term_code,cart_item_status_registered,null,null,null,null,sysdate,'FLEXREG_USER','TEST','RW',null,null,null,0);
+                    values (pidm, cid,crn,term_code,cart_item_status_registered,null,null,null,null,sysdate,'FLEXREG_USER','TEST','RW',null,null,null,0);
 
                     -- Create a class fee
-                    INSERT INTO FLEXREG.sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
+                    INSERT INTO FLEXREG.sffrfees (SFFRFEES_PIDM, sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
-                    values(cid, term_code, crn,tuition_tbbdetc_code,500,null,'F',sysdate,'FLEXREG_USER','TEST');
+                    values(pidm,  cid, term_code, crn,tuition_tbbdetc_code,500,null,'F',sysdate,'FLEXREG_USER','TEST');
 
                     -- Create a coupon
-                    INSERT INTO sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
+                    INSERT INTO FLEXREG.sffrfees (SFFRFEES_PIDM, sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
-                    values(cid, term_code, crn,coupon_tbbdetc_code,-50,'Coupon 10% off','C',sysdate,'FLEXREG_USER','TEST');
+                    values(pidm,  cid, term_code, crn,coupon_tbbdetc_code,-50,'Coupon 10% off','C',sysdate,'FLEXREG_USER','TEST');
 
                     -- Create a discount
-                    INSERT INTO sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
+                    INSERT INTO FLEXREG.sffrfees ( SFFRFEES_PIDM, sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
-                            values(cid, term_code, crn,discount_tbbdetc_code,-100,'10% early bird','D',sysdate,'FLEXREG_USER','TEST');
+                            values(pidm,  cid, term_code, crn,discount_tbbdetc_code,-100,'10% early bird','D',sysdate,'FLEXREG_USER','TEST');
                     COMMIT;
                 END;
                 """)
