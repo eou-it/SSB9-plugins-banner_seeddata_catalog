@@ -192,7 +192,8 @@ public class InputData {
             'studentApiData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml'],
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml'],
             'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml']
