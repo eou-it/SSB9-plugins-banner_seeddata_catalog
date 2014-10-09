@@ -51,6 +51,7 @@ public class ConcurrentCurriculumDML {
     def sorlcur_activity_date_update
     def sorlcur_gapp_seqno
     def sorlcur_current_cde
+    def curricCheckingOn
     def InputData connectInfo
     Sql conn
     Connection connectCall
@@ -79,7 +80,7 @@ public class ConcurrentCurriculumDML {
             println "--------- New XML SORLCUR record ----------"
             println "${bannerid}    ${apiData.SORLCUR_SEQNO.text()}    ${apiData.SORLCUR_LMOD_CODE.text()}    ${apiData.SORLCUR_TERM_CODE.text()}    "
         }
-
+        this.curricCheckingOn = apiData?.CURRICON?.text() ? apiData.CURRICON?.text() : "Y"
         this.sorlcur_seqno = apiData.SORLCUR_SEQNO.text()
         this.sorlcur_lmod_code = apiData.SORLCUR_LMOD_CODE.text()
         this.sorlcur_term_code = apiData.SORLCUR_TERM_CODE.text()
@@ -117,12 +118,14 @@ public class ConcurrentCurriculumDML {
         this.sorlcur_gapp_seqno = apiData.SORLCUR_GAPP_SEQNO.text()
         this.sorlcur_current_cde = apiData.SORLCUR_CURRENT_CDE.text()
 
+
     }
 
 
     def processSorlcur() {
         // turn curriculum checking on
-        conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = 'Y'")
+
+        conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = ?", this.curricCheckingOn)
 
         tableRow = null
         conn.call("{? = call sb_curriculum_str.f_outcome()}", [Sql.VARCHAR]) { result -> outcome = result }
