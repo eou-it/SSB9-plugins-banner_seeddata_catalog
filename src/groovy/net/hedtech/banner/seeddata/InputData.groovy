@@ -5,7 +5,10 @@ package net.hedtech.banner.seeddata
 
 import grails.util.GrailsUtil
 import groovy.sql.Sql
-
+import java.io.Console;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 /**
  * Prompts user via the command line for input data needed to load seed data.
  * */
@@ -196,7 +199,22 @@ public class InputData {
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml'],
             'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml']
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml'],
+            'capp-programs' : ['/src/groovy/net/hedtech/banner/seeddata/Data/capp/artprogam01.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baengllit.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baengllitx.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baseedsp1.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baseedsp2.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/dynamicproa1.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jentest01.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jimsprog.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jmcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jmnotcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxnocptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml']
 
             ]
 
@@ -379,9 +397,8 @@ public class InputData {
             }
         } else {
 
-
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
-            print "Enter path and file name of XML file: "
+            print "Enter path and file name of XML file take 3: "
             xmlFile = br.readLine()
 
             print "Enter Y or N to save your transaction [${saveThis ? 'Y' : 'N'}]: "
