@@ -447,7 +447,7 @@ public class InputData {
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
-            def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
+            def configFile = locateConfigFile()
             def slurper = new ConfigSlurper(GrailsUtil.environment)
             def config = slurper.parse(configFile.toURI().toURL())
             url = config.get("bannerDataSource").url
@@ -541,7 +541,7 @@ public class InputData {
 
 
     public syncSsbSectOracleTextIndex() {
-        def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
+        def configFile = locateConfigFile()
         def slurper = new ConfigSlurper(GrailsUtil.environment)
         def config = slurper.parse(configFile.toURI().toURL())
         def url = config.get("bannerDataSource").url
@@ -575,5 +575,19 @@ public class InputData {
                                   From Ctxsys.Ctx_User_Pending group by Pnd_Index_Name """)
        // println "after sync ${rows}"
         db.close()
+    }
+
+
+    public locateConfigFile() {
+        def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
+        def bannerAppConfig = System.getenv("BANNER_APP_CONFIG")
+        if (bannerAppConfig) {
+            def bannerAppConfigFile = new File(bannerAppConfig)
+            if (bannerAppConfigFile.exists()) {
+                configFile = bannerAppConfigFile
+            }
+        }
+        println "using banner_configuration file: ${configFile}"
+        return configFile
     }
 }
