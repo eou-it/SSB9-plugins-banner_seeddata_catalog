@@ -587,7 +587,7 @@ public class InputData {
                 configFile = bannerAppConfigFile
             }
         }
-        println "using banner_configuration file: ${configFile}"
+        println "using BANNER_APP_CONFIG file: ${configFile}"
         return configFile
     }
 }
