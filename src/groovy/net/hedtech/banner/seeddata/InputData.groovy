@@ -578,16 +578,34 @@ public class InputData {
     }
 
 
-    public locateConfigFile() {
-        def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
-        def bannerAppConfig = System.getenv("BANNER_APP_CONFIG")
-        if (bannerAppConfig) {
-            def bannerAppConfigFile = new File(bannerAppConfig)
-            if (bannerAppConfigFile.exists()) {
-                configFile = bannerAppConfigFile
-            }
+    private locateConfigFile() {
+        def propertyName = "BANNER_APP_CONFIG"
+        def fileName = "banner_configuration.groovy"
+        def filePathName = getFilePath( System.getProperty( propertyName ) )
+        if (!filePathName) {
+            filePathName = getFilePath( "${System.getProperty( 'user.home' )}/.grails/${fileName}" )
         }
-        println "using BANNER_APP_CONFIG file: ${configFile}"
+        if (!filePathName) {
+            filePathName = getFilePath( "${fileName}" )
+        }
+        if (!filePathName) {
+            filePathName = getFilePath( "grails-app/conf/${fileName}" )
+        }
+        if (!filePathName) {
+            filePathName = getFilePath( System.getenv( propertyName ) )
+        }
+        if (!filePathName) {
+            throw new RuntimeException( "Unable to locate ${fileName}" )
+        }
+        def configFile = new File( filePathName )
+        println "using configuration: " + configFile
         return configFile
+    }
+    
+
+    private String getFilePath( filePath ) {
+        if (filePath && new File( filePath ).exists()) {
+            "${filePath}"
+        }
     }
 }
