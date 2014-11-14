@@ -80,7 +80,8 @@ public class Columns {
 
         def colCnt = 0
         def insCnt = 0
-        String valsql = "insert into ${this.tableName} ("
+        def ownerString = connectInfo?.owner ? connectInfo.owner + "." : ""
+        String valsql = "insert into ${ownerString + this.tableName} ("
         // step 2: build insert part of statement pulling the column names from the columns array
 
         // loop through all columns and parse together an insert statement
@@ -204,7 +205,8 @@ public class Columns {
                 colCnt++
             }
         }
-        String matchSQL = "Select 'x' from ${this.tableName}  " + this.indexSQL
+        def ownerString = connectInfo?.owner ? connectInfo.owner + "." : ""
+        String matchSQL = "Select 'x' from ${ownerString + this.tableName}  " + this.indexSQL
         return matchSQL
     }
 
@@ -214,7 +216,8 @@ public class Columns {
      */
 
     def String createUpdateSQL() {
-        String updateSQL = "update ${this.tableName} set "
+        def ownerString = connectInfo?.owner ? connectInfo.owner + "." : ""
+        String updateSQL = "update ${ownerString + this.tableName} set "
         def colCnt = 0
         def colPos = 0
         def updCnt = 0
