@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -10,6 +10,8 @@ grails.plugin.location.'banner-core'="../banner_core.git"
 grails.plugin.location.'i18n-core'="../i18n_core.git"
 grails.plugin.location.'banner-codenarc'="../banner_codenarc.git"
 grails.plugin.location.'spring-security-cas'="../spring_security_cas.git"
+
+grails.project.dependency.resolver = "ivy" // or maven
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -43,10 +45,11 @@ grails.project.dependency.resolution = {
     plugins {
         runtime  ":hibernate:3.6.10.10"
         compile ":tomcat:7.0.52.1"
+        compile ':resources:1.2.7' // If the functional-test plugin is being used
         compile ":functional-test:2.0.0" // If the functional-test plugin is being used
-        test ':code-coverage:1.2.5'
 
     }
+
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 

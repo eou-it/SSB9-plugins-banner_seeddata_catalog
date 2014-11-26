@@ -90,7 +90,7 @@ public class SeedDataLoader {
         } catch (e) {
             groovySql.execute "{ call gb_common.p_rollback() }"
             println "Sorry, an error has occurred:  ${e.message}"
-            e.printStackTrace()
+            println e.printStackTrace()
         } finally {
               try {
 

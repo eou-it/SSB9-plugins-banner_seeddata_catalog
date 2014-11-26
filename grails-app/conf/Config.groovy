@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 
 import net.hedtech.banner.configuration.ApplicationConfigurationUtils as ConfigFinder
@@ -28,8 +28,13 @@ def locationAdder = ConfigFinder.&addLocation.curry( grails.config.locations )
   releaseInfo:                        "release_info.groovy",
 ].each { envName, defaultFileName -> locationAdder( envName, defaultFileName ) }
 
+// In case logging is problematic, we'll just write this to the console immediately
+grails.config.locations.each {
+    println "Using configuration: " + it
+}
 
 
+grails.databinding.useSpringBinder=true
 
 grails.project.groupId = "net.hedtech" // used when deploying to a maven repo
 

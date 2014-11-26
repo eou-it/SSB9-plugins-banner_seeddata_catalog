@@ -5,7 +5,10 @@ package net.hedtech.banner.seeddata
 
 import grails.util.GrailsUtil
 import groovy.sql.Sql
-
+import java.io.Console;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 /**
  * Prompts user via the command line for input data needed to load seed data.
  * */
@@ -51,6 +54,7 @@ public class InputData {
     def saveSeqno = null
     def saveCurrRule = null
     def tableName = null
+    def owner = null
 
     def validTable = null
 
@@ -189,9 +193,29 @@ public class InputData {
             'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml'],
             'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
+            'studentApiData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml'],
             'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml']
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml'],
+            'capp-programs' : ['/src/groovy/net/hedtech/banner/seeddata/Data/capp/artprogam01.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baengllit.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baengllitx.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baseedsp1.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baseedsp2.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/dynamicproa1.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jentest01.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jimsprog.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jmcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jmnotcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxnocptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml']
 
             ]
 
@@ -332,6 +356,7 @@ public class InputData {
             ownerSql = """ select owner from all_views where view_name = ?"""
             owner = conn.firstRow(ownerSql, [this.tableName])
         }
+        this.owner = owner?.owner
         if (!owner) {
             validTable = null
         } else validTable = owner
@@ -374,9 +399,8 @@ public class InputData {
             }
         } else {
 
-
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
-            print "Enter path and file name of XML file: "
+            print "Enter path and file name of XML file take 3: "
             xmlFile = br.readLine()
 
             print "Enter Y or N to save your transaction [${saveThis ? 'Y' : 'N'}]: "
@@ -432,7 +456,7 @@ public class InputData {
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
-            def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
+            def configFile = locateConfigFile()
             def slurper = new ConfigSlurper(GrailsUtil.environment)
             def config = slurper.parse(configFile.toURI().toURL())
             url = config.get("bannerDataSource").url
@@ -526,7 +550,7 @@ public class InputData {
 
 
     public syncSsbSectOracleTextIndex() {
-        def configFile = new File("${System.properties['user.home']}/.grails/banner_configuration.groovy")
+        def configFile = locateConfigFile()
         def slurper = new ConfigSlurper(GrailsUtil.environment)
         def config = slurper.parse(configFile.toURI().toURL())
         def url = config.get("bannerDataSource").url
@@ -560,5 +584,37 @@ public class InputData {
                                   From Ctxsys.Ctx_User_Pending group by Pnd_Index_Name """)
        // println "after sync ${rows}"
         db.close()
+    }
+
+
+    private locateConfigFile() {
+        def propertyName = "BANNER_APP_CONFIG"
+        def fileName = "banner_configuration.groovy"
+        def filePathName = getFilePath( System.getProperty( propertyName ) )
+        if (!filePathName) {
+            filePathName = getFilePath( "${System.getProperty( 'user.home' )}/.grails/${fileName}" )
+        }
+        if (!filePathName) {
+            filePathName = getFilePath( "${fileName}" )
+        }
+        if (!filePathName) {
+            filePathName = getFilePath( "grails-app/conf/${fileName}" )
+        }
+        if (!filePathName) {
+            filePathName = getFilePath( System.getenv( propertyName ) )
+        }
+        if (!filePathName) {
+            throw new RuntimeException( "Unable to locate ${fileName}" )
+        }
+        def configFile = new File( filePathName )
+        println "using configuration: " + configFile
+        return configFile
+    }
+    
+
+    private String getFilePath( filePath ) {
+        if (filePath && new File( filePath ).exists()) {
+            "${filePath}"
+        }
     }
 }
