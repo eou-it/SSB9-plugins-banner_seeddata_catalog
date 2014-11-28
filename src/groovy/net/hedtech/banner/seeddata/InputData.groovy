@@ -170,10 +170,10 @@ public class InputData {
             'studentcurriculumdata': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCurriculumData.xml'],
             'admissions': ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsValidationSeed.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RecruitData.xml'],
-            'academic-history': ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryScheduleData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryComponentData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryStudentData.xml'],
+            'academic-history': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryScheduleData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryComponentData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryStudentData.xml'],
             'registration-withdrawal': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHOSR24796.xml'],
             'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']  ,
             'transcript-award' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentTranscriptAwardedDegree.xml'],
@@ -208,7 +208,8 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxnocptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
-                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml']
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
+            'exam-board-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewAdministrator.xml']
 
             ]
 
@@ -334,9 +335,9 @@ public class InputData {
             'source-background-institution-base-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/SourceBackgroundInstitutionBaseSeleniumRemove.xml'],
             'gradable-component-definition-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/GradableComponentDefinitionSeleniumRemove.xml'],
             'repeat-multiple-course-rules-selenium-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RepeatMultipleCourseRulesSeleniumRemove.xml'],
-            'gpa-rules-round' :    ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryGpaRulesRound.xml'],
-            'gpa-rules-truncate' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryGpaRulesTruncate.xml'],
-            'gpa-rules-delete' :   ['/src/groovy/net/hedtech/banner/seeddata/Data/AcademicHistoryGpaRulesDelete.xml']
+            'gpa-rules-round' :    ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesRound.xml'],
+            'gpa-rules-truncate' : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesTruncate.xml'],
+            'gpa-rules-delete' :   ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesDelete.xml']
     ]
 
 
@@ -601,7 +602,7 @@ public class InputData {
         println "using configuration: " + configFile
         return configFile
     }
-    
+
 
     private String getFilePath( filePath ) {
         if (filePath && new File( filePath ).exists()) {
