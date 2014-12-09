@@ -33,7 +33,7 @@ public class InputData {
     def mepUserId = false
 
     def saveThis = true
-    def debugThis = false
+    def debugThis = true
     def showErrors = true
     def replaceData = true
     def sqlTrace = false
@@ -60,6 +60,7 @@ public class InputData {
 
     // map of run time targets to specify file names
     def targets = [
+            'general-communication': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
             'seed-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
@@ -610,7 +611,7 @@ public class InputData {
         println "using configuration: " + configFile
         return configFile
     }
-    
+
 
     private String getFilePath( filePath ) {
         if (filePath && new File( filePath ).exists()) {
