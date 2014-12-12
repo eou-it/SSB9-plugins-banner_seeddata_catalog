@@ -33,7 +33,7 @@ public class InputData {
     def mepUserId = false
 
     def saveThis = true
-    def debugThis = false
+    def debugThis = true
     def showErrors = true
     def replaceData = true
     def sqlTrace = false
@@ -611,7 +611,7 @@ public class InputData {
         println "using configuration: " + configFile
         return configFile
     }
-    
+
 
     private String getFilePath( filePath ) {
         if (filePath && new File( filePath ).exists()) {

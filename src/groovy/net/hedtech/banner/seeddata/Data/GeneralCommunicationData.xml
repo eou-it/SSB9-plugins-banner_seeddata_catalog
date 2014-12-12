@@ -763,35 +763,7 @@
   <GCBTMPL_DATA_ORIGIN>Banner</GCBTMPL_DATA_ORIGIN>
   <GCBTMPL_VPDI_CODE/>
  </GCBTMPL>
- <GCBEMTL>
-  <FOLDER>General</FOLDER>
-  <TEMPLATE>Building Notice</TEMPLATE>
-  <GCBEMTL_SURROGATE_ID>17</GCBEMTL_SURROGATE_ID>
-  <GCBEMTL_BCCLIST/>
-  <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;ALERT:&lt;/p&gt;
 
-   &lt;p&gt;The Humanities Building-52 on FAU&amp;rsquo;s Boca Raton campus has issued a boil water notice due to a water main break.&amp;nbsp; The water main is being repaired and the boil water notice is in effect until further notice.&amp;nbsp; Do not drink from the building water supply until the notice is lifted.&amp;nbsp; At this time use the restrooms in adjacent buildings and once water pressure is restored, it is safe to use restrooms and wash your hands. For more information, contact Environmental Health and Safety at &lt;a href=&quot;tel:561-297-3129&quot; target=&quot;_blank&quot; value=&quot;+15612973129&quot;&gt;561-297-3129&lt;/a&gt;, option 1, or visit &lt;a href=&quot;http://www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdf&quot; target=&quot;_blank&quot;&gt;www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdf&lt;/a&gt;.&lt;/p&gt;
-
-   &lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;293&quot; src=&quot;http://www.wormsandgermsblog.com/uploads/image/boil%20advisory.jpg&quot; width=&quot;390&quot; /&gt;&lt;/p&gt;
-
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
-  </GCBEMTL_CONTENT>
-  <GCBEMTL_FROMLIST/>
-  <GCBEMTL_SUBJECT>Boil Water Alert</GCBEMTL_SUBJECT>
-  <GCBEMTL_TOLIST/>
- </GCBEMTL>
  <GCRFLDR>
   <FOLDER>Alumni</FOLDER>
   <GCRFLDR_SURROGATE_ID>53</GCRFLDR_SURROGATE_ID>
@@ -1243,7 +1215,33 @@
   <GCBEMTL_SUBJECT>Open Enrollment Reminder</GCBEMTL_SUBJECT>
   <GCBEMTL_TOLIST/>
  </GCBEMTL>
+ <GCBEMTL>
+  <GCBEMTL_SURROGATE_ID>17</GCBEMTL_SURROGATE_ID>
+  <GCBEMTL_BCCLIST/>
+  <GCBEMTL_CCLIST/>
+  <GCBEMTL_CONTENT>&lt;html&gt;
+   &lt;head&gt;
+   &lt;title&gt;&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+   &lt;p&gt;ALERT:&lt;/p&gt;
 
+   &lt;p&gt;The Humanities Building-52 on FAU&amp;rsquo;s Boca Raton campus has issued a boil water notice due to a water main break.&amp;nbsp; The water main is being repaired and the boil water notice is in effect until further notice.&amp;nbsp; Do not drink from the building water supply until the notice is lifted.&amp;nbsp; At this time use the restrooms in adjacent buildings and once water pressure is restored, it is safe to use restrooms and wash your hands. For more information, contact Environmental Health and Safety at &lt;a href=&quot;tel:561-297-3129&quot; target=&quot;_blank&quot; value=&quot;+15612973129&quot;&gt;561-297-3129&lt;/a&gt;, option 1, or visit &lt;a href=&quot;http://www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdf&quot; target=&quot;_blank&quot;&gt;www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdf&lt;/a&gt;.&lt;/p&gt;
+
+   &lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;293&quot; src=&quot;http://www.wormsandgermsblog.com/uploads/image/boil%20advisory.jpg&quot; width=&quot;390&quot; /&gt;&lt;/p&gt;
+
+   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+  </GCBEMTL_CONTENT>
+  <GCBEMTL_FROMLIST/>
+  <GCBEMTL_SUBJECT>Boil Water Alert</GCBEMTL_SUBJECT>
+  <GCBEMTL_TOLIST/>
+ </GCBEMTL>
 
 
  <GCRFLDR>
