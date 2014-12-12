@@ -215,7 +215,8 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxnocptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
-                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml']
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
+            'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
 
             ]
 

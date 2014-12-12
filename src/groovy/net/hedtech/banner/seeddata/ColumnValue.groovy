@@ -50,7 +50,7 @@ public class ColumnValue {
      */
 
     def String formatColumnValue() {
-          if ((!columnType) && (!columnName) && (!tableName)) {
+        if ((!columnType) && (!columnName) && (!tableName)) {
             String colsql = """select data_type, data_scale, data_length
                     from all_tab_columns where table_name = ?
                     and column_name = ?"""
@@ -76,7 +76,7 @@ public class ColumnValue {
         // activity date will always be set to 1/1/2010
         {
             valsql = "to_date('01012010','MMDDYYYY') "
-        } else if (columnName == "${this.tableName}_SURROGATE_ID") {
+        } else if (!doesIndexHaveSurrogateId() && columnName == "${this.tableName}_SURROGATE_ID") {
             valsql = "null"
         } else if (columnName =~ "VERSION") {
             valsql = "null"
@@ -102,7 +102,7 @@ public class ColumnValue {
                 }
             } else if ((columnType == "VARCHAR2") || (columnType == 'CLOB')) {
                 if ((columnType == "VARCHAR2") && ((columnValue =~ "null") || (!columnValue) || (columnValue == " "))) {
-                     valsql = "null"
+                    valsql = "null"
                 } else {  // reduce to smaller size
                     String col = columnValue.toString()
                     if (col.length() > 3000) {
@@ -110,10 +110,10 @@ public class ColumnValue {
                         def colv = col.substring(0, 3000)
                         col = colv
                     }
-                      // replace all ' with '' so they will load
+                    // replace all ' with '' so they will load
                     if ((columnType == "VARCHAR2") && (col =~ /\'/)) {
                         def newcolval = col.replaceAll(/'/, '')
-                         valsql = "'${newcolval}'"
+                        valsql = "'${newcolval}'"
                     } else {
                         valsql = "'${col}'"
                     }
@@ -128,14 +128,28 @@ public class ColumnValue {
                     def ddate = new ColumnDateValue(columnValue.toString())
                     valsql = ddate.formatDateWithMask()
                 }
+            } else if (columnType == "TIMESTAMP(3)" ||columnType == "TIMESTAMP(6)" ) {
+                if ((columnValue =~ "null") || (!columnValue) || (columnValue == " ")) {
+                    valsql = "null"
+                } else {
+                    valsql = "to_timestamp('${columnValue.toString()}','YYYY-MM-DD HH24:MI:SS.FF','NLS_CALENDAR=GREGORIAN')"
+                }
             }
         }
 
-         if (connectInfo.debugThis && columnName =~ "PIDM") {
+        if (connectInfo.debugThis && columnName =~ "PIDM") {
             println "MultiplePidms in table ${multiplePidmColumn} column name ${columnName} value ${valsql}"
         }
 
         return valsql
     }
 
+
+    def Boolean doesIndexHaveSurrogateId() {
+
+        def surrogateIndex = this.indexColumns.find { ind ->
+            ind.column_name == "${this.tableName}_SURROGATE_ID"
+        }
+        return surrogateIndex ? true : false
+    }
 }
