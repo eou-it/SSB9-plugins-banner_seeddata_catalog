@@ -164,7 +164,7 @@ public class Tables {
             println "${columns}"
         }
         if (indexColumns.size() == 0) {
-            selIndexSQL = """select table_name, column_name, data_type, column_id , DATA_SCALE
+            def selIndexSQL2 = """select table_name, column_name, data_type, column_id , DATA_SCALE
                                     from all_tab_columns where table_name = ?
                                      and owner = ?
                                      and data_type not in ('CLOB','RAW')
@@ -173,12 +173,12 @@ public class Tables {
                                      and column_name not like  '%DATA_ORIGIN' )
                                     order by column_id"""
             try {
-                indexColumns = conn.rows(selIndexSQL, [this.tableName, owner.owner])
+                indexColumns = conn.rows(selIndexSQL2, [this.tableName, owner.owner])
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
                     println "Problem selecting indexes on table with no index for ${this.tableName} in Tables.groovy: $e.message"
-                    println "${selIndexSQL}"
+                    println "${selIndexSQL2}"
                 }
             }
             if (connectInfo.debugThis) {

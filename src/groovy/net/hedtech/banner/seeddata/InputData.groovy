@@ -60,7 +60,6 @@ public class InputData {
 
     // map of run time targets to specify file names
     def targets = [
-            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
             'seed-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
@@ -70,6 +69,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
