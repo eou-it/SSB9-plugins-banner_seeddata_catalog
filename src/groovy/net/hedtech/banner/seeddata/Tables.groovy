@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -30,6 +30,7 @@ public class Tables {
         selectColumns()
 
     }
+
 
     def selectColumns() {
 
@@ -70,7 +71,7 @@ public class Tables {
 //        }
         // copy all table columns to the list columns which is saved off later on
         tabColumns.each { col ->
-             columns << col
+            columns << col
         }
 
         // add the user ID and data origin column  if they don't exist in the xml but
@@ -93,36 +94,69 @@ public class Tables {
 //            }
 //        }
 
-        // find columns associated with the index
-        String selIndexSQL = """select  cc.table_name table_name,
-        cc.column_name column_name
-        from  all_ind_columns cc, all_indexes ind
-        where ind.table_name = ?
-          and ind.owner = ?
-          and cc.column_name not like '%SURROGATE_ID'
-          and cc.table_name = ind.table_name
-          and cc.table_owner = ind.table_owner
-          and cc.index_name = ind.index_name
-          and   ind.uniqueness = 'UNIQUE'
-          and ( ind.index_name like 'PK%'  or
-          ind.index_name like  ind.table_name || '_KEY_INDEX'  or
-          ind.index_name like  'UK_%'  or
-          ind.index_name like  ind.table_name || '_KEY_INDEX1'  or
-          ind.index_name like  ind.table_name || '_KEY1_INDEX')
-          order by ind.index_name, cc.column_position  """
-        if (connectInfo.debugThis) {
-            println "${selIndexSQL}"
-        }
+        // find out if there is only 1 index
+        String selIndexCntSQL = """select * from all_indexes ind where ind.table_name = ?
+        and ind.owner = ?"""
+        def cntIndexes = conn.rows(selIndexCntSQL, [this.tableName, owner.owner])?.size()
 
-        // fetch the index columns into list
-        def colcnt = 0
-        try {
-            indexColumns = conn.rows(selIndexSQL, [this.tableName, owner.owner])
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Problem selecting indexes for ${this.tableName} in Tables.groovy: $e.message"
+        if (cntIndexes > 1) {
+            // find columns associated with the index
+            String selIndexSQL = """select  cc.table_name table_name,
+                cc.column_name column_name
+                from  all_ind_columns cc, all_indexes ind
+                where ind.table_name = ?
+                  and ind.owner = ?
+                  and cc.column_name not like '%SURROGATE_ID'
+                  and cc.table_name = ind.table_name
+                  and cc.table_owner = ind.table_owner
+                  and cc.index_name = ind.index_name
+                  and   ind.uniqueness = 'UNIQUE'
+                  and ( ind.index_name like 'PK%'  or
+                  ind.index_name like  ind.table_name || '_KEY_INDEX'  or
+                  ind.index_name like  'UK_%'  or
+                  ind.index_name like  'UK2_%'  or
+                  ind.index_name like  ind.table_name || '_KEY_INDEX1'  or
+                  ind.index_name like  ind.table_name || '_KEY1_INDEX')
+                  order by ind.index_name, cc.column_position  """
+            if (connectInfo.debugThis) {
                 println "${selIndexSQL}"
+            }
+
+            // fetch the index columns into list
+            def colcnt = 0
+            try {
+                indexColumns = conn.rows(selIndexSQL, [this.tableName, owner.owner])
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Problem selecting indexes for ${this.tableName} in Tables.groovy: $e.message"
+                    println "${selIndexSQL}"
+                }
+            }
+        } else {
+            String selIndexSQL = """select  cc.table_name table_name,
+               cc.column_name column_name
+               from  all_ind_columns cc, all_indexes ind
+               where ind.table_name = ?
+                  and ind.owner = ?
+                  and cc.table_name = ind.table_name
+                  and cc.table_owner = ind.table_owner
+                  and cc.index_name = ind.index_name
+                  order by ind.index_name, cc.column_position  """
+            if (connectInfo.debugThis) {
+                println "${selIndexSQL}"
+            }
+
+            // fetch the index columns into list
+            def colcnt = 0
+            try {
+                indexColumns = conn.rows(selIndexSQL, [this.tableName, owner.owner])
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Problem selecting indexes for ${this.tableName} in Tables.groovy: $e.message"
+                    println "${selIndexSQL}"
+                }
             }
         }
         if (connectInfo.debugThis) {
@@ -130,7 +164,7 @@ public class Tables {
             println "${columns}"
         }
         if (indexColumns.size() == 0) {
-            selIndexSQL = """select table_name, column_name, data_type, column_id , DATA_SCALE
+            def selIndexSQL2 = """select table_name, column_name, data_type, column_id , DATA_SCALE
                                     from all_tab_columns where table_name = ?
                                      and owner = ?
                                      and data_type not in ('CLOB','RAW')
@@ -139,12 +173,12 @@ public class Tables {
                                      and column_name not like  '%DATA_ORIGIN' )
                                     order by column_id"""
             try {
-                indexColumns = conn.rows(selIndexSQL, [this.tableName, owner.owner])
+                indexColumns = conn.rows(selIndexSQL2, [this.tableName, owner.owner])
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
                     println "Problem selecting indexes on table with no index for ${this.tableName} in Tables.groovy: $e.message"
-                    println "${selIndexSQL}"
+                    println "${selIndexSQL2}"
                 }
             }
             if (connectInfo.debugThis) {

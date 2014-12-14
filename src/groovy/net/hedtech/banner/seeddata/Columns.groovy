@@ -97,9 +97,9 @@ public class Columns {
                 def dataFound = dataFoundInXml.call(columns.column_name)
                 if (dataFound) {
                     if (insCnt > 0) {
-                        valsql += ", ${columns.column_name }\n"
+                        valsql += ", ${columns.column_name}\n"
                     } else {
-                        valsql += "${columns.column_name }\n"
+                        valsql += "${columns.column_name}\n"
                     }
                     insCnt++
                 }
@@ -141,8 +141,8 @@ public class Columns {
                     }
 
                     def parseCol = new ColumnValue(this.tableName, colValue, columns.data_type, columns.data_scale,
-                                                   columns.column_name, connectInfo, conn, this.indexColumns, columns.data_length,
-                                                   this.multiplePidmColumn)
+                            columns.column_name, connectInfo, conn, this.indexColumns, columns.data_length,
+                            this.multiplePidmColumn)
                     def svalSql = parseCol.formatColumnValue()
 
 
@@ -188,19 +188,19 @@ public class Columns {
                     } else {
                         connector = "="
                     }
-                    if ((indexColumns.column_name[colCnt] == "${this.tableName}_SURROGATE_ID") ||
-                            (indexColumns.column_name[colCnt] =~ "VPDI_CODE" &&
-                                    (this.tableName != 'GTVVPDI' && this.tableName != 'GURUSRI')) ||
-                            (indexColumns.column_name[colCnt] =~ "VERSION")) {
-                    } else {
+//                    if ((indexColumns.column_name[colCnt] == "${this.tableName}_SURROGATE_ID") ||
+//                            (indexColumns.column_name[colCnt] =~ "VPDI_CODE" &&
+//                                    (this.tableName != 'GTVVPDI' && this.tableName != 'GURUSRI')) ||
+//                            (indexColumns.column_name[colCnt] =~ "VERSION")) {
+//                    } else {
 
-                        if (indCnt > 0) {
-                            indexSQL += " and ${indexColumns.column_name[colCnt]} ${connector} ${indVal} \n"
-                        } else {
-                            indexSQL = " where ${indexColumns.column_name[colCnt]} ${connector} ${indVal} \n"
-                        }
-                        indCnt++
+                    if (indCnt > 0) {
+                        indexSQL += " and ${indexColumns.column_name[colCnt]} ${connector} ${indVal} \n"
+                    } else {
+                        indexSQL = " where ${indexColumns.column_name[colCnt]} ${connector} ${indVal} \n"
                     }
+                    indCnt++
+//                    }
                 }
                 colCnt++
             }
@@ -221,12 +221,17 @@ public class Columns {
         def colCnt = 0
         def colPos = 0
         def updCnt = 0
+
+        def surrogateIndex = this.indexColumns.find { ind ->
+            ind.column_name == "${this.tableName}_SURROGATE_ID"
+        }
+        Boolean indexHasSurrogate = surrogateIndex ? true : false
         while (colCnt < columns.size()) {
             // need to find if this is part of the index, we dont want to update it
             def inIndex = ""
             inIndex = this.indexColumns.find { ind -> ind.column_name == columns.column_name[colCnt] }
 
-            if ((columns.column_name[colCnt] == "${this.tableName}_SURROGATE_ID") ||
+            if (((!doesIndexHaveSurrogateId() && columns.column_name[colCnt] == "${this.tableName}_SURROGATE_ID")) ||
                     (columns.column_name[colCnt] =~ "VERSION") ||
                     (columns.column_name[colCnt] =~ "VPDI_CODE") ||
                     ((inIndex != null) && (this.tableName != "SOBCTRL"))) {
@@ -247,6 +252,15 @@ public class Columns {
         }
         updateSQL += this.indexSQL
         return updateSQL
+    }
+
+
+    def Boolean doesIndexHaveSurrogateId() {
+
+        def surrogateIndex = this.indexColumns.find { ind ->
+            ind.column_name == "${this.tableName}_SURROGATE_ID"
+        }
+        return surrogateIndex ? true : false
     }
 
     /**
@@ -277,9 +291,9 @@ public class Columns {
             if (columnData) {
 
                 def parseCol = new ColumnValue(this.tableName, deleteColumns[colCnt].value,
-                                               columnData?.data_type, columnData?.data_scale,
-                                               columnData?.column_name, connectInfo, conn, this.indexColumns, columns.data_length,
-                                               this.multiplePidmColumn)
+                        columnData?.data_type, columnData?.data_scale,
+                        columnData?.column_name, connectInfo, conn, this.indexColumns, columns.data_length,
+                        this.multiplePidmColumn)
                 def deleteValue = parseCol.formatColumnValue()
 
                 if (updCnt == 0) {

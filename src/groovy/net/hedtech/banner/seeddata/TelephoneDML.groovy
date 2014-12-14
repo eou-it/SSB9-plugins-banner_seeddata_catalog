@@ -87,7 +87,7 @@ public class TelephoneDML {
         String rowSQL = "select rowid table_row from SPRTELE \n "
         rowSQL += " where sprtele_pidm = ${this.sprtele_pidm} \n "
         rowSQL += " and sprtele_tele_code = '${this.sprtele_tele_code}' \n "
-        rowSQL += " and sprtele_phone_number= '${this.sprtele_phone_number}'"
+        rowSQL += " and sprtele_seqno = '${this.sprtele_seqno}'"
         try {
             conn.eachRow(rowSQL) {row ->
                 tableRow = row.table_row
