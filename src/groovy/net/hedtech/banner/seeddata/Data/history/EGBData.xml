@@ -684,7 +684,7 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
 
     <STVGCHG>
         <STVGCHG_CODE>OE</STVGCHG_CODE>
-        <STVGCHG_DESC>Original Entr</STVGCHG_DESC>
+        <STVGCHG_DESC>Original Entry</STVGCHG_DESC>
 
         <STVGCHG_PERMIT_DUP_IND>N</STVGCHG_PERMIT_DUP_IND>
         <STVGCHG_EGB_IND>Y</STVGCHG_EGB_IND>

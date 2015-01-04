@@ -209,7 +209,15 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
-            'exam-board-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewAdministrator.xml']
+            'exam-board-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewAdministrator.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewTermData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewCatalogData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewScheduleData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewGradeScaleData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewComponentData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum2Program1StudyPathStudentData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml'
+                                   ]
 
             ]
 
