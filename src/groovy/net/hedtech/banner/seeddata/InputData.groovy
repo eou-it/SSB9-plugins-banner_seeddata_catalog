@@ -54,6 +54,7 @@ public class InputData {
     def saveSeqno = null
     def saveCurrRule = null
     def tableName = null
+    def owner = null
 
     def validTable = null
 
@@ -68,6 +69,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
@@ -191,6 +193,11 @@ public class InputData {
             'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml'],
             'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
+            'studentApiData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml'],
             'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml'],
@@ -209,18 +216,22 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
+
             'exam-board-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewAdministrator.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewTermData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewCatalogData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewScheduleData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewGradeScaleData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewComponentData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum2Program1StudyPathStudentData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/1Curriculum1ProgramNoStudyPath.xml'
-                                   ]
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewTermData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewCatalogData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewScheduleData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewGradeScaleData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewComponentData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum2Program1StudyPathStudentData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/1Curriculum1ProgramNoStudyPath.xml'],
+
+            'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
+
 
             ]
+
 
     /**
      *  Map of selenium targets
@@ -358,6 +369,7 @@ public class InputData {
             ownerSql = """ select owner from all_views where view_name = ?"""
             owner = conn.firstRow(ownerSql, [this.tableName])
         }
+        this.owner = owner?.owner
         if (!owner) {
             validTable = null
         } else validTable = owner

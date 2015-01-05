@@ -83,7 +83,13 @@ public class APIClasses {
             'SGRADVR' : 'net.hedtech.banner.seeddata.SgradvrDML'  ,
             'FLEXREGFEE' : 'net.hedtech.banner.seeddata.FlexRegFeeDML',
             'SMBPGEN' : 'net.hedtech.banner.seeddata.CappProgramRequirementDML',
-            'STVGCHG' : 'net.hedtech.banner.seeddata.GradeChangeReasonDML'
+
+            'STVGCHG' : 'net.hedtech.banner.seeddata.GradeChangeReasonDML',
+            'GCRFLDR' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCRCFLD' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -103,7 +109,12 @@ public class APIClasses {
             'SHRMRKS' : 'net.hedtech.banner.seeddata.ShagcomDML',
             'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML' ,
             'SGRADVR' : 'net.hedtech.banner.seeddata.SgradvrDML',
-            'SMBPGEN' : 'net.hedtech.banner.seeddata.CappProgramRequirementDML'
+            'SMBPGEN' : 'net.hedtech.banner.seeddata.CappProgramRequirementDML',
+            'GCRFLDR' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCRCFLD' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML'
     ]
 
 

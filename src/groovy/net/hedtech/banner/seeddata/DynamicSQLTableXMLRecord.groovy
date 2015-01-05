@@ -122,7 +122,6 @@ public class DynamicSQLTableXMLRecord {
 
         // table is the first 7 chars of xml element string
         def newTable = tableName
-
         Columns col = new Columns(newTable, connectInfo, conn, tableName, columns, indexColumns, xmlData)
 
         String deleteSQL = col.createDeleteSQL()
