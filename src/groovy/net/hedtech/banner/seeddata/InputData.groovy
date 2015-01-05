@@ -216,7 +216,8 @@ public class InputData {
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewGradeScaleData.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewComponentData.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum2Program1StudyPathStudentData.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml'
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/1Curriculum1ProgramNoStudyPath.xml'
                                    ]
 
             ]
