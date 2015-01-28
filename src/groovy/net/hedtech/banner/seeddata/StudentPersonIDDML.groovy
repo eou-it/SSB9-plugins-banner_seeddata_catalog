@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -93,9 +93,9 @@ public class StudentPersonIDDML {
             conn.eachRow(selectSql, [connectInfo.saveStudentPidm]) {
 
                 conn.call("{call sb_recruit.p_delete(p_pidm => ?,p_term_code => ?, p_admin_seqno =>? ) }",
-                          [connectInfo.saveStudentPidm.toInteger(),
-                          it.srbrecr_term_code,
-                          it.srbrecr_admin_seqno.toInteger()])
+                        [connectInfo.saveStudentPidm.toInteger(),
+                         it.srbrecr_term_code,
+                         it.srbrecr_admin_seqno.toInteger()])
             }
         }
         catch (e) {
@@ -111,9 +111,9 @@ public class StudentPersonIDDML {
             conn.eachRow(selectSql, [connectInfo.saveStudentPidm]) {
                 conn.call("""{call sb_admissionsapplication.p_delete(p_pidm => ?,
                      p_term_code_entry => ?,p_appl_no => ?) }""",
-                          [connectInfo.saveStudentPidm.toInteger(),
-                          it.saradap_term_code_entry,
-                          it.saradap_appl_no.toInteger()])
+                        [connectInfo.saveStudentPidm.toInteger(),
+                         it.saradap_term_code_entry,
+                         it.saradap_appl_no.toInteger()])
             }
         }
         catch (e) {
@@ -129,7 +129,7 @@ public class StudentPersonIDDML {
             conn.eachRow(selectSql, [connectInfo.saveStudentPidm]) {
                 conn.call("""{call sb_learner.p_delete(p_pidm => ?,
                             p_term_code_eff => ?) }""",
-                          [connectInfo.saveStudentPidm.toInteger(), it.sgbstdn_term_code_eff])
+                        [connectInfo.saveStudentPidm.toInteger(), it.sgbstdn_term_code_eff])
             }
         }
         catch (e) {
@@ -144,7 +144,7 @@ public class StudentPersonIDDML {
         try {
             conn.eachRow(selectSql, [connectInfo.saveStudentPidm]) {
                 conn.call("{call sb_learneroutcome.p_delete(p_pidm => ?, p_seq_no => ? ) }",
-                          [connectInfo.saveStudentPidm.toInteger(), it.shrdgmr_seq_no.toInteger()])
+                        [connectInfo.saveStudentPidm.toInteger(), it.shrdgmr_seq_no.toInteger()])
             }
         }
         catch (e) {
@@ -256,6 +256,7 @@ public class StudentPersonIDDML {
         deleteData("SHRTRMN", "delete SHTTRNM where SHTTRNM_pidm = ? ")
         deleteData("SHRTTRM", "delete SHRTTRM where  	SHRTTRM_pidm = ?  ")
         deleteData("GOBEACC", "delete GOBEACC where  	GOBEACC_pidm = ?  ")
+        deleteData("GOBSRID", "delete GOBSRID where  	GOBSRID_pidm = ?  ")
 
 
         // reset enrollment counts
