@@ -2,13 +2,8 @@
  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
-
 import grails.util.GrailsUtil
 import groovy.sql.Sql
-import java.io.Console;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 /**
  * Prompts user via the command line for input data needed to load seed data.
  * */
@@ -217,12 +212,12 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
 
-            'exam-board-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewAdministrator.xml',
-                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewTermData.xml',
-                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewCatalogData.xml',
-                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewScheduleData.xml',
-                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewGradeScaleData.xml',
-                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ExamBoardReviewComponentData.xml',
+            'student-academic-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewAdministrator.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewTermData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewCatalogData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewScheduleData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewGradeScaleData.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewComponentData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum2Program1StudyPathStudentData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/1Curriculum1ProgramNoStudyPath.xml',

@@ -2,9 +2,9 @@
 <!-- *****************************************************************************
 Copyright 2014 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
-<EXAMBOARDREVIEWADMINDATA>
+<STUDENTACADEMICREVIEWADMINDATA>
 
-    <!-- HOSEBR001 is a Person with GOBTPAC record and Exam Board Admin role -->
+    <!-- HOSEBR001 is a Person with GOBTPAC record and Student Academic Review Admin role -->
     <SPRIDEN>
         <BANNERID>HOSEBR001</BANNERID>
         <SPRIDEN_PIDM>59717</SPRIDEN_PIDM>
@@ -58,11 +58,11 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
     <TWGRROLE>
         <BANNERID>HOSEBR001</BANNERID>
         <TWGRROLE_PIDM>59717</TWGRROLE_PIDM>
-        <TWGRROLE_ROLE>EXAMBOARDADMIN</TWGRROLE_ROLE>
+        <TWGRROLE_ROLE>STUDENTACADEMICREVIEWADMIN</TWGRROLE_ROLE>
         <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
     </TWGRROLE>
 
-    <!-- HOSEBR002 is a Faculty with Exam Board Admin role  -->
+    <!-- HOSEBR002 is a Faculty with Student Academic Review Admin role  -->
     <FACULTY_SPRIDEN>
         <BANNERID>HOSEBR002</BANNERID>
         <SPRIDEN_PIDM>59720</SPRIDEN_PIDM>
@@ -142,8 +142,8 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
     <TWGRROLE>
         <BANNERID>HOSEBR002</BANNERID>
         <TWGRROLE_PIDM>59720</TWGRROLE_PIDM>
-        <TWGRROLE_ROLE>EXAMBOARDADMIN</TWGRROLE_ROLE>
+        <TWGRROLE_ROLE>STUDENTACADEMICREVIEWADMIN</TWGRROLE_ROLE>
         <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
     </TWGRROLE>
 
-</EXAMBOARDREVIEWADMINDATA>
+</STUDENTACADEMICREVIEWADMINDATA>
