@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2014 Ellucian Company L.P. and its affiliates.
+Copyright 2014-2015 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <STUDENTDATA>
 
@@ -36,7 +36,7 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
     <SPBPERS>
         <BANNERID>HOSP0001</BANNERID>
         <SPBPERS_PIDM>50199</SPBPERS_PIDM>
-        <SPBPERS_SSN/>
+        <SPBPERS_SSN>000277832</SPBPERS_SSN>
         <SPBPERS_BIRTH_DATE>17-DEC-1989</SPBPERS_BIRTH_DATE>
         <SPBPERS_LGCY_CODE/>
         <SPBPERS_ETHN_CODE>8</SPBPERS_ETHN_CODE>
@@ -86,6 +86,31 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
         <SPBPERS_VERSION/>
         <SPBPERS_VPDI_CODE/>
     </SPBPERS>
+
+    <GOBSRID>
+        <BANNERID>HOSP0001</BANNERID>
+        <GOBSRID_PIDM>50199</GOBSRID_PIDM>
+        <GOBSRID_SOURCED_ID>Elevate0001</GOBSRID_SOURCED_ID>
+        <GOBSRID_USER_ID>GRAILS</GOBSRID_USER_ID>
+        <GOBSRID_ACTIVITY_DATE>01-JAN-10</GOBSRID_ACTIVITY_DATE>
+        <GOBSRID_DATA_ORIGIN>GRAILS</GOBSRID_DATA_ORIGIN>
+        <GOBSRID_SURROGATE_ID/>
+        <GOBSRID_VERSION/>
+        <GOBSRID_VPDI_CODE/>
+    </GOBSRID>
+
+    <GOBUMAP>
+        <BANNERID>HOSP0001</BANNERID>
+        <GOBUMAP_UDC_ID>DSTERLIN</GOBUMAP_UDC_ID>
+        <GOBUMAP_PIDM>50199</GOBUMAP_PIDM>
+        <GOBUMAP_CREATE_DATE>01-JAN-10</GOBUMAP_CREATE_DATE>
+        <GOBUMAP_USER_ID>GRAILS</GOBUMAP_USER_ID>
+        <GOBUMAP_ACTIVITY_DATE>01-JAN-10</GOBUMAP_ACTIVITY_DATE>
+        <GOBUMAP_DATA_ORIGIN>GRAILS</GOBUMAP_DATA_ORIGIN>
+        <GOBUMAP_SURROGATE_ID/>
+        <GOBUMAP_VERSION/>
+        <GOBUMAP_VPDI_CODE/>
+    </GOBUMAP>
 
     <SGBSTDN>
         <BANNERID>HOSP0001</BANNERID>
