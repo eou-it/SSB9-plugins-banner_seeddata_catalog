@@ -226,7 +226,8 @@ public class InputData {
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/UnRolledStudentData.xml'],
 
             'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
-            'api-person-filters': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonFiltersData.xml']
+            'api-person-filters': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonFiltersData.xml'],
+            'admissions-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsStudentData.xml']
             ]
 
 
