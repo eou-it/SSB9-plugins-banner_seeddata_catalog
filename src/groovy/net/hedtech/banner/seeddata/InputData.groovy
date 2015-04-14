@@ -356,9 +356,9 @@ public class InputData {
             'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
             'api-person-filters': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonFiltersData.xml'],
             'admissions-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsStudentData.xml'],
+            'api-hedm-program' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMProgramData.xml'],
             'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
             'api-hedm-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMTermData.xml',
-                                       '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMProgramData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMCatalogData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHDEMScheduleData.xml']
     ]
