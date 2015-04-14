@@ -356,11 +356,11 @@ public class InputData {
             'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
             'api-person-filters': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonFiltersData.xml'],
             'admissions-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsStudentData.xml'],
-            'elevate-seed' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermSeedElevateRegistration.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramElevateRegistration.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/StudentSeedElevateRegistration.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedElevateRegistration.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleSeedElevateRegistration.xml']
+            'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
+            'api-hedm-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMTermData.xml',
+                                       '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMProgramData.xml',
+                                       '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMCatalogData.xml',
+                                       '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHDEMScheduleData.xml']
     ]
 
 
