@@ -116,7 +116,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
       <SSBSECT_CRSE_TITLE />
       <SSBSECT_CREDIT_HRS />
       <SSBSECT_BILL_HRS />
-      <SSBSECT_GMOD_CODE />
+      <SSBSECT_GMOD_CODE>S</SSBSECT_GMOD_CODE>
       <SSBSECT_SAPR_CODE />
       <SSBSECT_SESS_CODE />
       <SSBSECT_LINK_IDENT />
