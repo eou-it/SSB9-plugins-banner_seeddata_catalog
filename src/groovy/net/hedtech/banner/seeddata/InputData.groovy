@@ -359,7 +359,7 @@ public class InputData {
             'api-hedm-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMTermData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMProgramData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMCatalogData.xml',
-                                       '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHDEMScheduleData.xml'],
+                                       '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMScheduleData.xml'],
             'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
 
     ]
