@@ -245,6 +245,12 @@ public class ScheduleTermDeleteDML {
         tableName = "SORRTRM"
         deleteTermData(tableName, this.ssbsect_term_code)
 
+        tableName = "SFRAFEE"
+        deleteTermData(tableName, this.ssbsect_term_code)
+
+        tableName = "SFRFMAX"
+        deleteTermData(tableName, this.ssbsect_term_code)
+
         tableName = "SFBRFST"
         deleteTermData(tableName, this.ssbsect_term_code)
 

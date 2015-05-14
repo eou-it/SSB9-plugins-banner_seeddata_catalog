@@ -188,11 +188,6 @@ public class Columns {
                     } else {
                         connector = "="
                     }
-//                    if ((indexColumns.column_name[colCnt] == "${this.tableName}_SURROGATE_ID") ||
-//                            (indexColumns.column_name[colCnt] =~ "VPDI_CODE" &&
-//                                    (this.tableName != 'GTVVPDI' && this.tableName != 'GURUSRI')) ||
-//                            (indexColumns.column_name[colCnt] =~ "VERSION")) {
-//                    } else {
 
                     if (indCnt > 0) {
                         indexSQL += " and ${indexColumns.column_name[colCnt]} ${connector} ${indVal} \n"
@@ -200,7 +195,6 @@ public class Columns {
                         indexSQL = " where ${indexColumns.column_name[colCnt]} ${connector} ${indVal} \n"
                     }
                     indCnt++
-//                    }
                 }
                 colCnt++
             }
