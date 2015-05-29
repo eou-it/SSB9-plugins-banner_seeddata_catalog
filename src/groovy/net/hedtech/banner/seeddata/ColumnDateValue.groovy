@@ -30,8 +30,19 @@ public class ColumnDateValue {
         def MM = 0
         def DD = 0
         def YY = 0
+        def HH = 0
+        def MMM = 0
+        def SS = 0
         def splCnt = 0
         def YYy = ""
+        def AMPM = ""
+        def inTime = ""
+        def hasTime = false
+
+        if (inDate.endsWith("PM") || inDate.endsWith("AM")) {
+            hasTime = true
+            inTime = getTimeFromDate(inDate)
+        }
         String valsql = ""
         if (this.separater) {
             this.inDate.split(this.separater).each {
@@ -59,12 +70,16 @@ public class ColumnDateValue {
             }
         }
         else {
+            def stop = inDate.length()
+            if (hasTime) {
+                stop = inDate.indexOf(" ")
+            }
             MM = inDate.substring(0, 2)
             DD = inDate.substring(2, 4)
             if (inDate.length() <= 6) {
-                YYy = inDate.substring(4)
+                YYy = inDate.substring(4, stop)
             }
-            else { YYy = inDate.substring(4) }
+            else { YYy = inDate.substring(4, stop) }
         }
         MM = MM.toString().padLeft(2,'0')
         DD = DD.toString().padLeft(2,'0')
@@ -74,7 +89,12 @@ public class ColumnDateValue {
             else { yycen = YYy.toInteger() + 2000 }
         }
         else { yycen = YYy.toInteger() }
-        valsql = "to_date('${DD}${MM}${yycen.toString()}','DDMMYYYY','NLS_CALENDAR=GREGORIAN')"
+        if (hasTime) {
+            valsql = "to_date('${DD}${MM}${yycen.toString()} ${inTime}','DDMMYYYY HH24:MI:SS','NLS_CALENDAR=GREGORIAN')"
+        }
+        else {
+            valsql = "to_date('${DD}${MM}${yycen.toString()}','DDMMYYYY','NLS_CALENDAR=GREGORIAN')"
+        }
 
         return valsql
     }
@@ -149,6 +169,41 @@ public class ColumnDateValue {
         String dateOut = "${yycen}-${MM}-${DD}"
 
         return dateOut
+    }
+
+
+    private def getTimeFromDate(def theDate) {
+        def hours = ""
+        def minutes = ""
+        def seconds = ""
+        def timeL = []
+
+        def totalTime = theDate.substring(theDate.indexOf(" ")+1, theDate.length())
+        def AMPM = totalTime.substring(totalTime.indexOf(" ")+1, totalTime.length())
+        def justTime = totalTime.substring(0, totalTime.indexOf(" "))
+        timeL = justTime.split(":")
+        hours = withPadding(timeL[0], 2)
+        minutes = withPadding(timeL[1], 2)
+        seconds = withPadding(timeL[2], 2)
+
+        if (AMPM == 'PM') {
+            def hoursI = hours.toInteger() + 12
+            hours = "" + hoursI
+        }
+
+        justTime = hours + ":" + minutes + ":" + seconds
+
+        return justTime
+    }
+
+
+    private def withPadding(def theNumber, def theLength) {
+        def returnMe = ""
+        for (def i=theNumber.length(); i<theLength; i++ ) {
+            returnMe = returnMe + "0"
+        }
+        returnMe = returnMe + theNumber
+        return returnMe
     }
 
 }
