@@ -30,9 +30,6 @@ public class ColumnDateValue {
         def MM = 0
         def DD = 0
         def YY = 0
-        def HH = 0
-        def MMM = 0
-        def SS = 0
         def splCnt = 0
         def YYy = ""
         def AMPM = ""
@@ -187,7 +184,10 @@ public class ColumnDateValue {
         seconds = withPadding(timeL[2], 2)
 
         if (AMPM == 'PM') {
-            def hoursI = hours.toInteger() + 12
+            def hoursI = hours.toInteger()
+            if (hoursI < 12) {
+                hoursI += 12
+            }
             hours = "" + hoursI
         }
 

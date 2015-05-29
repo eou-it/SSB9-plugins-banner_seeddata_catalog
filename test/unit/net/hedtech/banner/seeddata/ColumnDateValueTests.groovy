@@ -43,6 +43,13 @@ class ColumnDateValueTests extends GrailsUnitTestCase {
     }
 
 
+    void testDateFormatWithTimeSlashNoon() {
+        def dateToTest = "2/28/2015 12:41:35 PM"
+        def formatter = new ColumnDateValue(dateToTest)
+        assertEquals "to_date('28022015 12:41:35','DDMMYYYY HH24:MI:SS','NLS_CALENDAR=GREGORIAN')", formatter.formatDateWithMask()
+    }
+
+
     void testDateFormatWithTimeDash() {
         def dateToTest = "28-02-2015 3:41:35 AM"
         def formatter = new ColumnDateValue(dateToTest)
@@ -54,6 +61,12 @@ class ColumnDateValueTests extends GrailsUnitTestCase {
         def dateToTest = "02282015 4:41:35 PM"
         def formatter = new ColumnDateValue(dateToTest)
         assertEquals "to_date('28022015 16:41:35','DDMMYYYY HH24:MI:SS','NLS_CALENDAR=GREGORIAN')", formatter.formatDateWithMask()
+    }
+
+    void testDateFormatWithTimeDashNoon() {
+        def dateToTest = "28-02-2015 12:41:35 PM"
+        def formatter = new ColumnDateValue(dateToTest)
+        assertEquals "to_date('28022015 12:41:35','DDMMYYYY HH24:MI:SS','NLS_CALENDAR=GREGORIAN')", formatter.formatDateWithMask()
     }
 
 
@@ -68,5 +81,12 @@ class ColumnDateValueTests extends GrailsUnitTestCase {
         def dateToTest = "28-02-2015 4:41:35 PM"
         def formatter = new ColumnDateValue(dateToTest)
         assertEquals "to_date('28022015 16:41:35','DDMMYYYY HH24:MI:SS','NLS_CALENDAR=GREGORIAN')", formatter.formatDateWithMask()
+    }
+
+
+    void testDateFormatWithTimeNoSepNoon() {
+        def dateToTest = "02282015 12:41:35 PM"
+        def formatter = new ColumnDateValue(dateToTest)
+        assertEquals "to_date('28022015 12:41:35','DDMMYYYY HH24:MI:SS','NLS_CALENDAR=GREGORIAN')", formatter.formatDateWithMask()
     }
 }
