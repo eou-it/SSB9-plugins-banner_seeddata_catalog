@@ -141,6 +141,8 @@ public class InputData {
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
             'ssbgeneralstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
+            'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml ',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml'],
             'ssbgeneralstudentblockreg': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockReg.xml'],
             'blockregistration': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'ssbgeneralstudent2': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml'],

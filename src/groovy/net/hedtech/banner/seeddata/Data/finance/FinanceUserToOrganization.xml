@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FORUSOR_DATA>
+    <FORUSOR>
+        <FORUSOR_USER_ID_ENTERED>FIMSPRD</FORUSOR_USER_ID_ENTERED>
+        <FORUSOR_COAS_CODE>B</FORUSOR_COAS_CODE>
+        <FORUSOR_ORGN_CODE>11001</FORUSOR_ORGN_CODE>
+        <FORUSOR_ACCESS_IND>B</FORUSOR_ACCESS_IND>
+        <FORUSOR_USER_ID>GRAILS</FORUSOR_USER_ID>
+        <FORUSOR_DATA_ORIGIN>GRAILS</FORUSOR_DATA_ORIGIN>
+        <FORUSOR_WBUD_ACCESS_IND>N</FORUSOR_WBUD_ACCESS_IND>
+        <FORUSOR_VERSION>0</FORUSOR_VERSION>
+    </FORUSOR>
+</FORUSOR_DATA>
+
