@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2014-2015 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
 
 <SCHEDULED>
 
@@ -158,7 +162,10 @@
   <SOBPTRM_REAS_SCORE_OPEN_DATE/>
   <SOBPTRM_REAS_SCORE_CUTOFF_DATE/>
  </SOBPTRM>
-
+ <SORRTRM>
+  <DELETE>YES</DELETE>
+  <SORRTRM_TERM_CODE>201350</SORRTRM_TERM_CODE>
+ </SORRTRM>
  <SORRTRM>
   <SORRTRM_TERM_CODE>201350</SORRTRM_TERM_CODE>
   <SORRTRM_START_DATE>01/01/2013</SORRTRM_START_DATE>
@@ -417,6 +424,10 @@
   <SOBPTRM_REAS_SCORE_OPEN_DATE/>
   <SOBPTRM_REAS_SCORE_CUTOFF_DATE/>
  </SOBPTRM>
+ <SORRTRM>
+  <DELETE>YES</DELETE>
+  <SORRTRM_TERM_CODE>201720</SORRTRM_TERM_CODE>
+ </SORRTRM>
  <SORRTRM>
   <SORRTRM_TERM_CODE>201720</SORRTRM_TERM_CODE>
   <SORRTRM_START_DATE>18-JUN-13</SORRTRM_START_DATE>

@@ -1290,6 +1290,10 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
   <SOBPTRM_DATA_ORIGIN>GRAILS</SOBPTRM_DATA_ORIGIN>
   <SOBPTRM_VPDI_CODE/>
 </SOBPTRM>
+ <SORRTRM>
+        <DELETE>YES</DELETE>
+        <SORRTRM_TERM_CODE>203010</SORRTRM_TERM_CODE>
+    </SORRTRM>
 <SORRTRM>
  <SORRTRM_TERM_CODE>203010</SORRTRM_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  <SORRTRM_START_DATE>06-JUN-2011</SORRTRM_START_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
@@ -1301,7 +1305,11 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  <SORRTRM_DATA_ORIGIN>GRAILS</SORRTRM_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
  <SORRTRM_VPDI_CODE>INST</SORRTRM_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 </SORRTRM>
-<SORRTRM>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+<SORRTRM>
+        <DELETE>YES</DELETE>
+        <SORRTRM_TERM_CODE>203020</SORRTRM_TERM_CODE>
+</SORRTRM>
+<SORRTRM>
  <SORRTRM_TERM_CODE>203020</SORRTRM_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  <SORRTRM_START_DATE>20-JUN-2011</SORRTRM_START_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
  <SORRTRM_END_DATE>06-JUL-2025</SORRTRM_END_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
@@ -1312,7 +1320,11 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  <SORRTRM_DATA_ORIGIN>GRAILS</SORRTRM_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
  <SORRTRM_VPDI_CODE>INST</SORRTRM_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 </SORRTRM>
-<SORRTRM>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+<SORRTRM>
+        <DELETE>YES</DELETE>
+        <SORRTRM_TERM_CODE>203030</SORRTRM_TERM_CODE>
+    </SORRTRM>
+<SORRTRM>
  <SORRTRM_TERM_CODE>203030</SORRTRM_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  <SORRTRM_START_DATE>04-JUL-2011</SORRTRM_START_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
  <SORRTRM_END_DATE>20-JUL-2012</SORRTRM_END_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
@@ -1324,6 +1336,10 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  <SORRTRM_VPDI_CODE>INST</SORRTRM_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 </SORRTRM>
 <SORRTRM>
+        <DELETE>YES</DELETE>
+        <SORRTRM_TERM_CODE>204010</SORRTRM_TERM_CODE>
+    </SORRTRM>
+<SORRTRM>
  <SORRTRM_TERM_CODE>204010</SORRTRM_TERM_CODE>
  <SORRTRM_START_DATE>7/3/2011</SORRTRM_START_DATE>
  <SORRTRM_END_DATE>7/20/2012</SORRTRM_END_DATE>
@@ -1334,6 +1350,10 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  <SORRTRM_DATA_ORIGIN>GRAILS</SORRTRM_DATA_ORIGIN>
  <SORRTRM_VPDI_CODE/>
 </SORRTRM>
+<SORRTRM>
+        <DELETE>YES</DELETE>
+        <SORRTRM_TERM_CODE>201410</SORRTRM_TERM_CODE>
+    </SORRTRM>
 <SORRTRM>
   <SORRTRM_TERM_CODE>201410</SORRTRM_TERM_CODE>
   <SORRTRM_START_DATE>01-JAN-10</SORRTRM_START_DATE>
