@@ -358,7 +358,7 @@ public class FinanceProcurementUserDML {
                 connectInfo.tableUpdate( "SPRIDEN", 0, 0, 0, 1, 0 )
                 if (connectInfo.showErrors) {
                     println "Executing script with ${this.oracle_id} ${this.spriden_id} ${this.source_oracle_id}"
-                    println "Problem executing FinanceProcurementUserDML.groovy: $e.message"
+                    println "Problem executing Update for table SPRIDEN from FinanceProcurementUserDML.groovy: $e.message"
                 }
             }
             finally {
@@ -369,7 +369,7 @@ public class FinanceProcurementUserDML {
             connectInfo.tableUpdate( "SPRIDEN", 0, 0, 0, 1, 0 )
             if (connectInfo.showErrors) {
                 println "Executing script with ${this.oracle_id} ${this.spriden_id} ${this.source_oracle_id}"
-                println "Problem executing FinanceProcurementUserDML.groovy: $e.message"
+                println "Problem executing Update for table SPRIDEN from FinanceProcurementUserDML.groovy: $e.message"
             }
         }
     }
