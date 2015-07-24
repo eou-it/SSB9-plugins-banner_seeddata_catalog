@@ -142,6 +142,13 @@ public class InputData {
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
             'ssbgeneralstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
+            'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml ',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionHeader.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCommodity.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionAccounting.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionText.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceGeneralTickler.xml'],
             'ssbgeneralstudentblockreg': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockReg.xml'],
             'blockregistration': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'ssbgeneralstudent2': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml'],
@@ -234,7 +241,8 @@ public class InputData {
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMProgramData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMCatalogData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMScheduleData.xml'],
-            'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml']
+            'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
+            'finance-procurement-user-creation' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserCreationData.xml']
             ]
 
 
