@@ -101,6 +101,7 @@ public class FinanceProcurementUserDML {
                     "   where gurucls_userid = p_id and" +
                     "   gurucls_class_code = 'BAN_FINANCE_C');" +
                     "   DBMS_OUTPUT.put_line ('Created oracle user : ' || p_id);" +
+                    "   delete from FOBPROF where FOBPROF_USER_ID = p_id;" +
                     "   INSERT" +
                     "   INTO FOBPROF" +
                     "   (" +
@@ -206,7 +207,7 @@ public class FinanceProcurementUserDML {
                     "   FOBPROF_PMT_HOLD_OVRD_IND," +
                     "   FOBPROF_VERSION," +
                     "   FOBPROF_DATA_ORIGIN," +
-                    "   FOBPROF_VPDI_CODE FROM FOBPROF where FOBPROF_USER_ID like ?;" +
+                    "   FOBPROF_VPDI_CODE FROM FOBPROF where FOBPROF_USER_ID = ?;" +
                     "   END p_create_oracle_user;" +
                     "   FUNCTION f_create_banner_id (p_id            VARCHAR2" +
                     "   ,p_spriden_id\tVARCHAR2" +
@@ -222,21 +223,21 @@ public class FinanceProcurementUserDML {
                     "   DELETE FROM gobeacc" +
                     "   WHERE gobeacc_pidm = (SELECT DISTINCT spriden_pidm" +
                     "   FROM spriden" +
-                    "   WHERE spriden_id = p_id);" +
+                    "   WHERE spriden_id = p_spriden_id);" +
                     "   DELETE FROM gobeacc" +
                     "   WHERE gobeacc_username = p_id;" +
                     "   DELETE FROM gobtpac" +
                     "   WHERE gobtpac_pidm = (SELECT DISTINCT spriden_pidm" +
                     "   FROM spriden" +
-                    "   WHERE spriden_id = p_id);" +
+                    "   WHERE spriden_id = p_spriden_id);" +
                     "   DELETE FROM twgrrole" +
                     "   WHERE twgrrole_pidm = (SELECT DISTINCT spriden_pidm" +
                     "   FROM spriden" +
-                    "   WHERE spriden_id = p_id);" +
+                    "   WHERE spriden_id = p_spriden_id);" +
                     "   DELETE FROM spriden" +
                     "   WHERE spriden_pidm = (SELECT DISTINCT spriden_pidm" +
                     "   FROM spriden" +
-                    "   WHERE spriden_id = p_id);" +
+                    "   WHERE spriden_id = p_spriden_id);" +
                     "   IF (gb_common.f_id_exists (p_id) = 'N')" +
                     "   THEN" +
                     "   gb_identification.p_create (p_id_inout      => gv_id" +
@@ -251,7 +252,7 @@ public class FinanceProcurementUserDML {
                     "   SELECT spriden_id, spriden_pidm" +
                     "   INTO gv_id, gv_pidm1" +
                     "   FROM spriden" +
-                    "   WHERE spriden_id = p_id AND spriden_change_ind IS NULL;" +
+                    "   WHERE spriden_id = p_spriden_id AND spriden_change_ind IS NULL;" +
                     "   END IF;" +
                     "   DBMS_OUTPUT.put_line ('Created spriden id: ' || gv_id || ', pidm: ' || gv_pidm1);" +
                     "   IF gb_third_party_access.f_exists (gv_pidm1) = 'N'" +
@@ -337,22 +338,24 @@ public class FinanceProcurementUserDML {
                     "   commit;" +
                     "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
-
-            // parm 1 oracle_id
-            insertCall.setString( 1, this.oracle_id )
-
-            // parm 2 spriden_id
-            insertCall.setString( 2, this.spriden_id )
-
-            // parm 3 source_oracle_id
-            insertCall.setString( 3, this.source_oracle_id )
-
             if (connectInfo.debugThis) {
                 println "Executing script with ${this.oracle_id} ${this.spriden_id} ${this.source_oracle_id}"
             }
             try {
-                insertCall.execute()
-                connectInfo.tableUpdate( "SPRIDEN", 0, 1, 0, 0, 0 )
+                // create  5 users
+                for (int i = 1; i <= 5; i++) {
+                    // parm 1 oracle_id
+                    insertCall.setString( 1, this.oracle_id + i )
+
+                    // parm 2 spriden_id
+                    insertCall.setString( 2, this.spriden_id + i )
+
+                    // parm 3 source_oracle_id
+                    insertCall.setString( 3, this.source_oracle_id )
+                    insertCall.execute()
+                    connectInfo.tableUpdate( "SPRIDEN", 0, 1, 0, 0, 0 )
+                }
+
             }
             catch (Exception e) {
                 connectInfo.tableUpdate( "SPRIDEN", 0, 0, 0, 1, 0 )
