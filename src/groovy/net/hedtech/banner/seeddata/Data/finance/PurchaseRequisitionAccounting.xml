@@ -4,8 +4,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <REQUISITION_ACCOUNTING>
 
-    <FPRREQA> <!-- Add counting for DLA requisition RSD00003 -->
-        <FPRREQA_REQH_CODE>RSD00003</FPRREQA_REQH_CODE>
+    <FPRREQA> <!-- Add counting for DLA requisition RSED0003 -->
+        <FPRREQA_REQH_CODE>RSED0003</FPRREQA_REQH_CODE>
         <FPRREQA_ITEM>0</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>1</FPRREQA_SEQ_NUM>
         <FPRREQA_USER_ID>MSWANSON</FPRREQA_USER_ID>
@@ -38,8 +38,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPRREQA_VERSION>0</FPRREQA_VERSION>
 
     </FPRREQA>
-    <FPRREQA><!-- Add another counting for DLA requisition RSD00003 -->
-        <FPRREQA_REQH_CODE>RSD00003</FPRREQA_REQH_CODE>
+    <FPRREQA><!-- Add another counting for DLA requisition RSED0003 -->
+        <FPRREQA_REQH_CODE>RSED0003</FPRREQA_REQH_CODE>
         <FPRREQA_ITEM>0</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>2</FPRREQA_SEQ_NUM>
         <FPRREQA_PCT>30</FPRREQA_PCT>
@@ -72,8 +72,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
     </FPRREQA>
 
 
-    <FPRREQA><!-- Add counting for CLA requisition RSD00005 -->
-        <FPRREQA_REQH_CODE>RSD00005</FPRREQA_REQH_CODE>
+    <FPRREQA><!-- Add counting for CLA requisition RSED0005 -->
+        <FPRREQA_REQH_CODE>RSED0005</FPRREQA_REQH_CODE>
         <FPRREQA_ITEM>1</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>1</FPRREQA_SEQ_NUM>
         <FPRREQA_PCT>30</FPRREQA_PCT>
@@ -105,8 +105,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPRREQA_VERSION>0</FPRREQA_VERSION>
     </FPRREQA>
 
-    <FPRREQA><!-- Add another counting for CLA requisition RSD00005 -->
-        <FPRREQA_REQH_CODE>RSD00005</FPRREQA_REQH_CODE>
+    <FPRREQA><!-- Add another counting for CLA requisition RSED0005 -->
+        <FPRREQA_REQH_CODE>RSED0005</FPRREQA_REQH_CODE>
         <FPRREQA_ITEM>1</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>2</FPRREQA_SEQ_NUM>
         <FPRREQA_PCT>70</FPRREQA_PCT>
@@ -138,8 +138,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPRREQA_VERSION>0</FPRREQA_VERSION>
     </FPRREQA>
 
-    <FPRREQA><!-- Add another counting for disapproved requisition RSD00006 -->
-        <FPRREQA_REQH_CODE>RSD00006</FPRREQA_REQH_CODE>
+    <FPRREQA><!-- Add another counting for disapproved requisition RSED0006 -->
+        <FPRREQA_REQH_CODE>RSED0006</FPRREQA_REQH_CODE>
         <FPRREQA_ITEM>1</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>2</FPRREQA_SEQ_NUM>
         <FPRREQA_PCT>70</FPRREQA_PCT>
@@ -171,8 +171,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPRREQA_VERSION>0</FPRREQA_VERSION>
     </FPRREQA>
 
-    <FPRREQA><!-- Add another counting for pending requisition RSD00007 -->
-        <FPRREQA_REQH_CODE>RSD00007</FPRREQA_REQH_CODE>
+    <FPRREQA><!-- Add another counting for pending requisition RSED0007 -->
+        <FPRREQA_REQH_CODE>RSED0007</FPRREQA_REQH_CODE>
         <FPRREQA_ITEM>1</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>2</FPRREQA_SEQ_NUM>
         <FPRREQA_PCT>70</FPRREQA_PCT>
