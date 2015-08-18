@@ -166,8 +166,8 @@ public class FinanceProcurementUserDML {
                     "   FOBPROF_TOLERANCE," +
                     "   FOBPROF_BUD_ID," +
                     "   FOBPROF_PIDM," +
-                    "   FOBPROF_MASTER_FUND_IND," +
-                    "   FOBPROF_MASTER_ORGN_IND," +
+                    "   'B'," +
+                    "   'B'," +
                     "   FOBPROF_MAX_TOLERANCE_AMT," +
                     "   FOBPROF_RCVD_OVERRIDE_IND," +
                     "   FOBPROF_RCVD_TOLERANCE_PCT," +
