@@ -3,7 +3,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <FINANCEUSERDATA>
     <FINANCEUSER>
-        <FINANCEUSER_ORACLE_ID>FORSED2</FINANCEUSER_ORACLE_ID>
+        <FINANCEUSER_ORACLE_ID>FORSED2</FINANCEUSER_ORACLE_ID> <!-- FORSED21 is used for test cases. Use other user FORSED22-FORSED25 for other purposes-->
         <FINANCEUSER_SRC_ORACLE_ID>MSWANSON</FINANCEUSER_SRC_ORACLE_ID>
         <FINANCEUSER_SPRIDEN_ID>FSSSED2</FINANCEUSER_SPRIDEN_ID>
     </FINANCEUSER>

@@ -55,13 +55,13 @@ public class FinanceProcurementHeaderCreateDML {
                             "   FPBREQH_NAME, FPBREQH_VEND_PIDM, FPBREQH_ATYP_CODE, FPBREQH_ATYP_SEQ_NUM, FPBREQH_COAS_CODE, FPBREQH_ORGN_CODE," +
                             "   FPBREQH_REQD_DATE, FPBREQH_COMPLETE_IND, FPBREQH_APPR_IND, FPBREQH_NSF_ON_OFF_IND, FPBREQH_SINGLE_ACCTG_IND, FPBREQH_SHIP_CODE," +
                             "   FPBREQH_RQST_TYPE_IND, FPBREQH_ATTENTION_TO, FPBREQH_VENDOR_CONTACT, FPBREQH_TGRP_CODE, FPBREQH_MATCH_REQUIRED," +
-                            "   FPBREQH_USER_ID, FPBREQH_ORIGIN_CODE, FPBREQH_VERSION, FPBREQH_ACTIVITY_DATE,FPBREQH_CURR_CODE,FPBREQH_DISC_CODE) " +
+                            "   FPBREQH_USER_ID, FPBREQH_ORIGIN_CODE, FPBREQH_VERSION, FPBREQH_ACTIVITY_DATE, FPBREQH_CURR_CODE, FPBREQH_DISC_CODE) " +
                             "   VALUES (" +
                             "   ?, sysdate, sysdate, " +
                             "   ?,  ?, ?, ?, ?, ?, " +
                             "   sysdate, ?, ?, ?, ?, ?, " +
                             "   ?, ?, ?, ?, ?, " +
-                            "   ?, 'GRAILS', 0, sysdate,?,?);" +
+                            "   ?, 'GRAILS', 0, sysdate, ?, ?);" +
                             "   commit;" +
                             "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
