@@ -327,9 +327,9 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPRREQA_ADDL_RUCL_CODE>REQA</FPRREQA_ADDL_RUCL_CODE>
         <FPRREQA_VERSION>0</FPRREQA_VERSION>
     </FPRREQA>
-    <FPRREQA><!-- Add another counting for DLA requisition RSED0012 -->
-        <FPRREQA_REQH_CODE>RSED0012</FPRREQA_REQH_CODE>
-        <FPRREQA_ITEM>0</FPRREQA_ITEM>
+    <FPRREQA><!-- Add another counting for CLA requisition RSED0013 -->
+        <FPRREQA_REQH_CODE>RSED0013</FPRREQA_REQH_CODE>
+        <FPRREQA_ITEM>1</FPRREQA_ITEM>
         <FPRREQA_SEQ_NUM>1</FPRREQA_SEQ_NUM>
         <FPRREQA_PCT>100</FPRREQA_PCT>
         <FPRREQA_AMT>396</FPRREQA_AMT>
@@ -357,5 +357,6 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPRREQA_ADDL_RUCL_CODE>REQA</FPRREQA_ADDL_RUCL_CODE>
         <FPRREQA_VERSION>0</FPRREQA_VERSION>
     </FPRREQA>
+
 </REQUISITION_ACCOUNTING>
 
