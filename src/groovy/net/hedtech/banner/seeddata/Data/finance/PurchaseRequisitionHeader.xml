@@ -283,7 +283,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <FPBREQH_CURR_CODE>CAN</FPBREQH_CURR_CODE>
         <FPBREQH_DISC_CODE>01</FPBREQH_DISC_CODE>
     </FPBREQH>
-    <FPBREQH><!--CLS Requisition Header That has one commodity and one accounting-->
+    <FPBREQH><!--CLA Requisition Header That has one commodity and one accounting-->
         <FPBREQH_CODE>RSED0013</FPBREQH_CODE>
         <FPBREQH_NAME>Accounting Clerk II</FPBREQH_NAME>
         <FPBREQH_VEND_PIDM>2510</FPBREQH_VEND_PIDM>
