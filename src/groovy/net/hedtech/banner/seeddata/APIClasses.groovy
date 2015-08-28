@@ -91,6 +91,7 @@ public class APIClasses {
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
 
             'FINANCEFISCAYEAR' :'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'      :'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
