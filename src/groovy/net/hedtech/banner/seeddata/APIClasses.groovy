@@ -122,7 +122,7 @@ public class APIClasses {
             'GCRCFLD' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML', 
+            'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML'
     ]
 
