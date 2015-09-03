@@ -3,6 +3,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <FINANCEUSERDATA>
     <FINANCEUSER>
+        <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
         <FINANCEUSER_ORACLE_ID>FORSED2</FINANCEUSER_ORACLE_ID> <!-- FORSED21 is used for test cases. Use other user FORSED22-FORSED25 for other purposes-->
         <FINANCEUSER_SRC_ORACLE_ID>MSWANSON</FINANCEUSER_SRC_ORACLE_ID>
         <FINANCEUSER_SPRIDEN_ID>FSSSED2</FINANCEUSER_SPRIDEN_ID>
