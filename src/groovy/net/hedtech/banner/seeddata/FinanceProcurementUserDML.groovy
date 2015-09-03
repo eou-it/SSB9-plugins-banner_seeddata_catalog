@@ -32,14 +32,17 @@ public class FinanceProcurementUserDML {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
+        this.connectInfo.dataSource=null;
+
+
     }
 
 
     public FinanceProcurementUserDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData ) {
-        //For creating finance user we need to login as BANSECR, as BANPROXY is lacking access privilages on some db stored procedures and tables
-        conn = Sql.newInstance( "jdbc:oracle:thin:@localhost:1521:BAN83", "bansecr", "u_pick_it", "oracle.jdbc.driver.OracleDriver" )
         this.connectInfo = connectInfo
-        this.connectCall = conn.getConnection()
+        this.connectInfo.dataSource=null;
+        def newConn = new ConnectDB(connectInfo)
+        this.connectCall = newConn.getSqlConnection().connection
         this.xmlData = xmlData
         parseXmlData()
         createFinanceProcurementUser()
