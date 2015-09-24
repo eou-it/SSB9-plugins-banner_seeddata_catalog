@@ -91,7 +91,12 @@ public class APIClasses {
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML'
+            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
+
+            'FINANCEFISCAYEAR' :'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
+            'FINANCEUSER'      :'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
+            'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
+            'FPBREQH'          : 'net.hedtech.banner.seeddata.FinanceProcurementHeaderCreateDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
