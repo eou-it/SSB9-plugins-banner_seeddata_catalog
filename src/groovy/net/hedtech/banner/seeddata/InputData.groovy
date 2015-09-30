@@ -379,6 +379,10 @@ public class InputData {
             'gpa-rules-truncate' : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesTruncate.xml'],
             'gpa-rules-delete' :   ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesDelete.xml'],
             'schedule-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset.xml'],
+            'schedule-20151-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Reset.xml'],
+            'schedule-20151-approval' : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
+            'schedule-20122-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
+            'schedule-20122-approval' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
             'registration-history-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
 
