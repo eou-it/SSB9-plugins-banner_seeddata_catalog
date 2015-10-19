@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -7,9 +7,6 @@ grails.project.test.reports.dir = "target/test-reports"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.plugin.location.'banner-core'="../banner_core.git"
-grails.plugin.location.'i18n-core'="../i18n_core.git"
-grails.plugin.location.'banner-codenarc'="../banner_codenarc.git"
-grails.plugin.location.'banner-spring-security-cas' = "../banner_spring_security_cas.git"
 
 grails.project.dependency.resolver = "maven" // or maven
 
