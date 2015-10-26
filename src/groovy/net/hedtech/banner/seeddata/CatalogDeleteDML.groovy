@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -317,7 +317,7 @@ public class CatalogDeleteDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Problem executing ${tableName} for $subject} ${crse}from CatalogDeleteDML.groovy: $e.message"
+                println "Problem executing ${tableName} for {$subject} ${crse}from CatalogDeleteDML.groovy: $e.message"
                 println "${sql}"
             }
         }
