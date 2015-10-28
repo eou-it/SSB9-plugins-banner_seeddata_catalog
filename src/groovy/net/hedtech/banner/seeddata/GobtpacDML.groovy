@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -52,6 +52,7 @@ public class GobtpacDML {
 
         def bannerId = apiData.BANNERID.text()
         println "banner ID ${bannerId}   from xml ${apiData.BANNERID.text()}"
+        def message="attempted to call GobtpacDML.processGobtpac with values ${bannerId}"
         try {
 
             conn.call("""
@@ -88,7 +89,7 @@ public class GobtpacDML {
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Problem executing pin update ${apiData.GOBTPAC_PIDM.text()} ${apiData.BANNER_ID.text()} : $e.message"
-                println "${sql}"
+                println "${message}"
             }
         }
     }

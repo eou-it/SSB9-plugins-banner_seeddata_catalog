@@ -385,6 +385,10 @@ public class InputData {
             'gpa-rules-truncate' : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesTruncate.xml'],
             'gpa-rules-delete' :   ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesDelete.xml'],
             'schedule-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset.xml'],
+            'schedule-20151-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Reset.xml'],
+            'schedule-20151-approval' : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
+            'schedule-20122-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
+            'schedule-20122-approval' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
             'registration-history-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
 
@@ -600,9 +604,11 @@ public class InputData {
                                  "u_pick_it",
                                  'oracle.jdbc.driver.OracleDriver')
 
-        def rows = db.rows("""Select Pnd_Index_Name name, count(*) cnt,
-                                      max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
-                                  From Ctxsys.Ctx_User_Pending group by Pnd_Index_Name""")
+        def rows = db.rows("""SELECT Pnd_Index_Name name, count(*) cnt,
+                                     max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
+                                FROM Ctxsys.Ctx_User_Pending
+                               WHERE Pnd_Index_name IN ('SSBSECT_SS_IDX','SCBCRSE_SC_IDX')
+                            GROUP BY Pnd_Index_Name""")
        // println "before sync ${rows}"
         def syncRequired = false
         rows.each {
