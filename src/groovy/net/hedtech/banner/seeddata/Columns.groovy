@@ -70,7 +70,11 @@ public class Columns {
         def data = new XmlSlurper().parseText(xmlRec)
         data.each { table ->
             table.children().each() { fields ->
-                def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
+                def value
+                if ((this.tableName in ['GCBQURY','GCRCFLD','GCBTMPL']))
+                    value = fields.text()
+                else
+                        value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
                 if (value) {
                     def map = [column: fields.name(), value: value]
                     this.columnValues.add(map)
