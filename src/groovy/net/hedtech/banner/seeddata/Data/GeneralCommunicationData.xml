@@ -25,7 +25,7 @@
   <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
   <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Population with Spriden ID like A0000091</GCBQURY_DESCRIPTION>
-  <GCBQURY_QUERY_STRING>Select spriden_pidm from spriden where spriden_change_ind is null and spriden_id like &apos;A0000091%&apos;</GCBQURY_QUERY_STRING>
+  <GCBQURY_QUERY_STRING>Select spriden_pidm from spriden where spriden_change_ind is null and spriden_id like ApostropheCHARApostropheCHARA0000091%ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>0</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -72,7 +72,6 @@
   <GCBTMPL_NAME>Faculty Replacement Notice</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>50</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>bcmadmin</GCBTMPL_USER_ID>
@@ -92,12 +91,12 @@
   <GCBEMTL_SURROGATE_ID>16</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;&lt;/body&gt;
-   &lt;/html&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHARLesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT/>
@@ -123,7 +122,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select sorfolk_parent_first, sorfolk_parent_last from sorfolk
    where sorfolk_pidm = :pidm
-   and sorfolk_relt_code = &apos;F&apos;</GCRCFLD_RULE_STATEMENT>
+   and sorfolk_relt_code = ApostropheCHARApostropheCHARFApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>2</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -148,7 +147,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select sorfolk_parent_first, sorfolk_parent_last from sorfolk
    where sorfolk_pidm = :pidm
-   and sorfolk_relt_code = &apos;M&apos;</GCRCFLD_RULE_STATEMENT>
+   and sorfolk_relt_code = ApostropheCHARApostropheCHARMApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>1</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -163,11 +162,11 @@
   <GCRCFLD_USER_ID>BCMADMIN</GCRCFLD_USER_ID>
   <GCRCFLD_ACTIVITY_DATE>05-DEC-14</GCRCFLD_ACTIVITY_DATE>
   <GCRCFLD_DESCRIPTION>Hold Description and Reason List</GCRCFLD_DESCRIPTION>
-  <GCRCFLD_FORMATSTRING>&amp;lt;ul&amp;gt;
+  <GCRCFLD_FORMATSTRING>AmpersandCHARlt;ulAmpersandCHARgt;
    $description, reason:{ d,r |
-   &amp;lt;li&amp;gt;$d$, $r$&amp;lt;/li&amp;gt;
+   AmpersandCHARlt;liAmpersandCHARgt;$d$, $r$AmpersandCHARlt;/liAmpersandCHARgt;
    }$
-   &amp;lt;/ul&amp;gt;</GCRCFLD_FORMATSTRING>
+   AmpersandCHARlt;/ulAmpersandCHARgt;</GCRCFLD_FORMATSTRING>
   <GCRCFLD_RULE_URI/>
   <GCRCFLD_GROOVY_FORMATTER/>
   <GCRCFLD_PREVIEW_VALUE/>
@@ -178,8 +177,8 @@
   <GCRCFLD_RULE_STATEMENT>select stvhldd_desc description, sprhold_reason reason
    from sprhold, stvhldd
    where stvhldd_code = sprhold_hldd_code
-   and sprhold_from_date &lt;= SYSDATE
-   and sprhold_to_date &gt; SYSDATE
+   and sprhold_from_date LesserThanCHAR= SYSDATE
+   and sprhold_to_date GreaterThanCHAR SYSDATE
    and sprhold_pidm = :pidm</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>2</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
@@ -277,7 +276,7 @@
   <GCRCFLD_RULE_STATEMENT>select stvastd_desc from stvastd, shrttrm
    where stvastd_code = shrttrm_astd_code_end_of_term
    and shrttrm_pidm = :pidm
-   and shrttrm_term_code = &apos;201410&apos;</GCRCFLD_RULE_STATEMENT>
+   and shrttrm_term_code = ApostropheCHARApostropheCHAR201410ApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>4</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -288,7 +287,6 @@
   <GCBTMPL_NAME>Student Newsletter</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>50</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -308,40 +306,40 @@
   <GCBEMTL_SURROGATE_ID>19</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Dear $First_Name$,&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDear $First_Name$,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;With the term coming to an end and the holiday season approaching, I have been making a conscious effort to reflect on what is right with the world and with our community. As I told our students in a letter I sent to them this weekend, I see evidence of what is right on this campus everyday, in the classrooms, on the playing fields, in the dining halls, across student groups.&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARWith the term coming to an end and the holiday season approaching, I have been making a conscious effort to reflect on what is right with the world and with our community. As I told our students in a letter I sent to them this weekend, I see evidence of what is right on this campus everyday, in the classrooms, on the playing fields, in the dining halls, across student groups.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;During Winter Break (December 21 &amp;ndash; January 25), some students spend Winter Break with family, traveling or pursuing off-campus activities. Other students return to campus early to participate in Wintersession, featuring student-initiated and College-led programs. Whatever your student chooses to do over break, they should do what is best for them.&amp;nbsp; Information for Wintersession can be found at &lt;a href=&quot;https://www.facebook.com/WintersessionHarvard&quot;&gt;https://www.facebook.com/WintersessionHarvard&lt;/a&gt;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDuring Winter Break (December 21 AmpersandCHARndash; January 25), some students spend Winter Break with family, traveling or pursuing off-campus activities. Other students return to campus early to participate in Wintersession, featuring student-initiated and College-led programs. Whatever your student chooses to do over break, they should do what is best for them.AmpersandCHARnbsp; Information for Wintersession can be found at LesserThanCHARa href=DoubleQuoteCHARhttps://www.facebook.com/WintersessionHarvardDoubleQuoteCHARGreaterThanCHARhttps://www.facebook.com/WintersessionHarvardLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;We are all so fortunate to be part of a community that pushes each of us to stretch beyond what we thought was possible for ourselves and that holds us to such high standards. I am grateful you are a part of this community.&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARWe are all so fortunate to be part of a community that pushes each of us to stretch beyond what we thought was possible for ourselves and that holds us to such high standards. I am grateful you are a part of this community.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Sincerely,&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARSincerely,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Dr. John Smith&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDr. John SmithLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>December Newsletter</GCBEMTL_SUBJECT>
@@ -353,7 +351,6 @@
   <GCBTMPL_NAME>Parents News letter</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>50</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -373,32 +370,32 @@
   <GCBEMTL_SURROGATE_ID>20</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Dear Parents and Guardians,&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDear Parents and Guardians,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;With the term coming to an end and the holiday season approaching, I have been making a conscious effort to reflect on what is right with the world and with our community. As I told our students in a letter I sent to them this weekend, I see evidence of what is right on this campus everyday, in the classrooms, on the playing fields, in the dining halls, across student groups.&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARWith the term coming to an end and the holiday season approaching, I have been making a conscious effort to reflect on what is right with the world and with our community. As I told our students in a letter I sent to them this weekend, I see evidence of what is right on this campus everyday, in the classrooms, on the playing fields, in the dining halls, across student groups.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;During Winter Break (December 21 &amp;ndash; January 25), some students spend Winter Break with family, traveling or pursuing off-campus activities. Other students return to campus early to participate in Wintersession, featuring student-initiated and College-led programs. Whatever your student chooses to do over break, they should do what is best for them.&amp;nbsp; Information for Wintersession can be found at &lt;a href=&quot;https://www.facebook.com/WintersessionHarvard&quot;&gt;https://www.facebook.com/WintersessionHarvard&lt;/a&gt;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDuring Winter Break (December 21 AmpersandCHARndash; January 25), some students spend Winter Break with family, traveling or pursuing off-campus activities. Other students return to campus early to participate in Wintersession, featuring student-initiated and College-led programs. Whatever your student chooses to do over break, they should do what is best for them.AmpersandCHARnbsp; Information for Wintersession can be found at LesserThanCHARa href=DoubleQuoteCHARhttps://www.facebook.com/WintersessionHarvardDoubleQuoteCHARGreaterThanCHARhttps://www.facebook.com/WintersessionHarvardLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;We are all so fortunate to be part of a community that pushes each of us to stretch beyond what we thought was possible for ourselves and that holds us to such high standards. I am grateful you are a part of this community.&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARWe are all so fortunate to be part of a community that pushes each of us to stretch beyond what we thought was possible for ourselves and that holds us to such high standards. I am grateful you are a part of this community.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Sincerely,&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARSincerely,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Dr. John Smith&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDr. John SmithLesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Decmber Newsletter</GCBEMTL_SUBJECT>
@@ -407,10 +404,9 @@
  <GCBTMPL>
   <FOLDER>Student</FOLDER>
   <GCBTMPL_SURROGATE_ID>22</GCBTMPL_SURROGATE_ID>
-  <GCBTMPL_NAME>Dean&apos;s letter for award winning individuals</GCBTMPL_NAME>
+  <GCBTMPL_NAME>Deans letter for award winning individuals</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>50</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -426,25 +422,25 @@
  </GCBTMPL>
  <GCBEMTL>
   <FOLDER>Student</FOLDER>
-  <TEMPLATE>Dean&apos;s letter for award winning individuals</TEMPLATE>
+  <TEMPLATE>Deans letter for award winning individuals</TEMPLATE>
   <GCBEMTL_SURROGATE_ID>22</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;&lt;br /&gt;
-   $Salutation$&lt;/p&gt;
-
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARLesserThanCHARbr /GreaterThanCHAR
+   $Salutation$LesserThanCHAR/pGreaterThanCHAR
+Congratulations you have won a spot on the Deans list.
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
-  <GCBEMTL_SUBJECT/>
-  <GCBEMTL_TOLIST/>
+  <GCBEMTL_SUBJECT>Decmber Newsletter</GCBEMTL_SUBJECT>
+  <GCBEMTL_TOLIST>$Email_Parent$</GCBEMTL_TOLIST>
  </GCBEMTL>
  <GCRFLDR>
   <FOLDER>Admissions</FOLDER>
@@ -504,11 +500,11 @@
   <GCRCFLD_USER_ID>BCMADMIN</GCRCFLD_USER_ID>
   <GCRCFLD_ACTIVITY_DATE>08-DEC-14</GCRCFLD_ACTIVITY_DATE>
   <GCRCFLD_DESCRIPTION>List of test scores</GCRCFLD_DESCRIPTION>
-  <GCRCFLD_FORMATSTRING>&amp;lt;ul&amp;gt;
+  <GCRCFLD_FORMATSTRING>AmpersandCHARlt;ulAmpersandCHARgt;
    $description, score:{ d,s |
-   &amp;lt;li&amp;gt;$d$, $s$&amp;lt;/li&amp;gt;
+   AmpersandCHARlt;liAmpersandCHARgt;$d$, $s$AmpersandCHARlt;/liAmpersandCHARgt;
    }$
-   &amp;lt;/ul&amp;gt;</GCRCFLD_FORMATSTRING>
+   AmpersandCHARlt;/ulAmpersandCHARgt;</GCRCFLD_FORMATSTRING>
   <GCRCFLD_RULE_URI/>
   <GCRCFLD_GROOVY_FORMATTER/>
   <GCRCFLD_PREVIEW_VALUE>||ACT Reading || ACT Math||</GCRCFLD_PREVIEW_VALUE>
@@ -530,7 +526,6 @@
   <GCBTMPL_NAME>Letter of Acceptance</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>52</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -550,56 +545,56 @@
   <GCBEMTL_SURROGATE_ID>13</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.ellucian.com/img/ellucian-logo.png&quot; style=&quot;width: 200px; height: 90px;&quot; /&gt;&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARLesserThanCHARimg alt=DoubleQuoteCHARDoubleQuoteCHAR src=DoubleQuoteCHARhttp://www.ellucian.com/img/ellucian-logo.pngDoubleQuoteCHAR style=DoubleQuoteCHARwidth: 200px; height: 90px;DoubleQuoteCHAR /GreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;$Date_Current$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR$Date_Current$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;$First_Name$ $Last_Name$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR$First_Name$ $Last_Name$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;$Street_Permanent$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR$Street_Permanent$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;$City_ Permanent$, $State_Permanent$&amp;nbsp; $Zip_Permanent$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR$City_ Permanent$, $State_Permanent$AmpersandCHARnbsp; $Zip_Permanent$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Dear $First_Name$,&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARDear $First_Name$,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Congratulations! Ellucian University is honored to offer you admission for Fall 2014. You are the type of student we want at LUCI.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARCongratulations! Ellucian University is honored to offer you admission for Fall 2014. You are the type of student we want at LUCI.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Your admission has been based on your academic record at this time.&amp;nbsp; You must maintain this level of overall academic performance.&amp;nbsp; If your high school or college academic record should change, notify this office as soon as possible. All final transcripts, high school and college, must be received in our office before the first day of class.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARYour admission has been based on your academic record at this time.AmpersandCHARnbsp; You must maintain this level of overall academic performance.AmpersandCHARnbsp; If your high school or college academic record should change, notify this office as soon as possible. All final transcripts, high school and college, must be received in our office before the first day of class.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;You will find important information that will answer many of your questions regarding the &amp;ldquo;Next Steps.&amp;rdquo; Please read the information carefully found at &lt;a href=&quot;http://www.ellucian.edu/nextsteps/&quot;&gt;www.ellucian.edu/nextsteps/&lt;/a&gt; to finalize your enrollment.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARYou will find important information that will answer many of your questions regarding the AmpersandCHARldquo;Next Steps.AmpersandCHARrdquo; Please read the information carefully found at LesserThanCHARa href=DoubleQuoteCHARhttp://www.ellucian.edu/nextsteps/DoubleQuoteCHARGreaterThanCHARwww.ellucian.edu/nextsteps/LesserThanCHAR/aGreaterThanCHAR to finalize your enrollment.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;The University encourages you to get involved, enjoy new experiences, discover yourself and make life-long friends. We challenge you to participate in undergraduate research, honors programs, internships, and study abroad. Ellucian University is committed to your success, academically, and personally, and knows that you will thrive under our care.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARThe University encourages you to get involved, enjoy new experiences, discover yourself and make life-long friends. We challenge you to participate in undergraduate research, honors programs, internships, and study abroad. Ellucian University is committed to your success, academically, and personally, and knows that you will thrive under our care.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Again, $First_Name$, on behalf of Ellucian University, congratulations.&amp;nbsp; I want to extend a personal invitation for you to visit us this fall, spring or during one of our Campus Day events.&amp;nbsp; See all that we have to offer; for the next four years and beyond. Welcome to the Class of 2018! Go Cougars!&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAgain, $First_Name$, on behalf of Ellucian University, congratulations.AmpersandCHARnbsp; I want to extend a personal invitation for you to visit us this fall, spring or during one of our Campus Day events.AmpersandCHARnbsp; See all that we have to offer; for the next four years and beyond. Welcome to the Class of 2018! Go Cougars!LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Best Regards,&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARBest Regards,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;John T Pletcher&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARJohn T PletcherLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Director of Admissions&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARDirector of AdmissionsLesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Congratulation on your Acceptance</GCBEMTL_SUBJECT>
@@ -631,7 +626,7 @@
   <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
   <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Female Population</GCBQURY_DESCRIPTION>
-  <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = &apos;F&apos;</GCBQURY_QUERY_STRING>
+  <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = ApostropheCHARApostropheCHARFApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>0</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -649,7 +644,7 @@
   <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
   <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Male Population</GCBQURY_DESCRIPTION>
-  <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = &apos;M&apos;</GCBQURY_QUERY_STRING>
+  <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = ApostropheCHARApostropheCHARMApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>0</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -708,7 +703,7 @@
   <GCRCFLD_CREATED_BY/>
   <GCRCFLD_RETURNS_ARRAY>N</GCRCFLD_RETURNS_ARRAY>
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
-  <GCRCFLD_RULE_STATEMENT>select to_char(sysdate,&apos;Month DD, YYYY&apos;) today from spriden
+  <GCRCFLD_RULE_STATEMENT>select to_char(sysdate,ApostropheCHARApostropheCHARMonth DD, YYYYApostropheCHARApostropheCHAR) today from spriden
    where spriden_pidm = :pidm</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>10</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
@@ -732,7 +727,7 @@
   <GCRCFLD_CREATED_BY/>
   <GCRCFLD_RETURNS_ARRAY>N</GCRCFLD_RETURNS_ARRAY>
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
-  <GCRCFLD_RULE_STATEMENT>SELECT DECODE (spbpers_sex,&apos;F&apos;,&apos;Y&apos;,NULL) isfemale
+  <GCRCFLD_RULE_STATEMENT>SELECT DECODE (spbpers_sex,ApostropheCHARApostropheCHARFApostropheCHARApostropheCHAR,ApostropheCHARApostropheCHARYApostropheCHARApostropheCHAR,NULL) isfemale
    ,spriden_first_name first
    ,spriden_last_name last
    FROM spbpers, spriden
@@ -749,7 +744,6 @@
   <GCBTMPL_NAME>Building Notice</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>51</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -763,6 +757,37 @@
   <GCBTMPL_DATA_ORIGIN>Banner</GCBTMPL_DATA_ORIGIN>
   <GCBTMPL_VPDI_CODE/>
  </GCBTMPL>
+ <GCBEMTL>
+  <FOLDER>General</FOLDER>
+  <TEMPLATE>Building Notice</TEMPLATE>
+  <GCBEMTL_SURROGATE_ID>17</GCBEMTL_SURROGATE_ID>
+  <GCBEMTL_BCCLIST/>
+  <GCBEMTL_CCLIST/>
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARDear $First_Name$,LesserThanCHAR/pGreaterThanCHAR
+
+   LesserThanCHARpGreaterThanCHARRegistration for the upcoming semester will be opening soon. As of the date of this email your record indicates that you haveAmpersandCHARnbsp; holds which will prevent you from registering for courses.LesserThanCHAR/pGreaterThanCHAR
+
+   LesserThanCHARpGreaterThanCHAR$Holds$LesserThanCHAR/pGreaterThanCHAR
+
+   LesserThanCHARpGreaterThanCHARWe recommend taking action to resolve these holds as soon as possible so that your registration is not delayed.LesserThanCHARbr /GreaterThanCHAR
+   For hold detail, please log into LesserThanCHARa href=DoubleQuoteCHARhttps://bannersso.fau.edu/ssomanager/c/SSB?pkg=bwskoacc.P_ViewHoldDoubleQuoteCHAR target=DoubleQuoteCHAR_blankDoubleQuoteCHARGreaterThanCHARMyEllucian Self-ServiceLesserThanCHAR/aGreaterThanCHAR to view your holds.LesserThanCHAR/pGreaterThanCHAR
+
+   LesserThanCHARpGreaterThanCHARTo see when you can register visit the following web site LesserThanCHARa href=DoubleQuoteCHARhttp://www.fau.edu/registrar/registration/schedule.phpDoubleQuoteCHAR target=DoubleQuoteCHAR_blankDoubleQuoteCHARGreaterThanCHARhttp://www.ellucian.edu/registrar/registration/schedule.phpLesserThanCHAR/aGreaterThanCHAR . Best wishes on your continued success.LesserThanCHAR/pGreaterThanCHAR
+
+   LesserThanCHARpGreaterThanCHAREllucian University, Office of the RegistrarLesserThanCHARbr /GreaterThanCHAR
+   PLEASE DO NOT RESPOND TO THIS SYSTEM GENERATED MESSAGELesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
+  </GCBEMTL_CONTENT>
+  <GCBEMTL_FROMLIST/>
+  <GCBEMTL_SUBJECT>Registration Holds</GCBEMTL_SUBJECT>
+  <GCBEMTL_TOLIST>$Preferred_Email$</GCBEMTL_TOLIST>
+ </GCBEMTL>
 
  <GCRFLDR>
   <FOLDER>Alumni</FOLDER>
@@ -789,7 +814,7 @@
   <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
   <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Population with first name Mikey</GCBQURY_DESCRIPTION>
-  <GCBQURY_QUERY_STRING>select spriden_pidm from spriden where spriden_first_name = &apos;Mickey&apos;</GCBQURY_QUERY_STRING>
+  <GCBQURY_QUERY_STRING>select spriden_pidm from spriden where spriden_first_name = ApostropheCHARApostropheCHARMickeyApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>0</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -819,7 +844,6 @@
   <GCBTMPL_NAME>Reunion Letter</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>53</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -839,44 +863,44 @@
   <GCBEMTL_SURROGATE_ID>15</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;Dear&amp;nbsp;$Name_Prefix$&amp;nbsp;$First_Name$$Last_Name$&lt;/span&gt;&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARDearAmpersandCHARnbsp;$Name_Prefix$AmpersandCHARnbsp;$First_Name$$Last_Name$LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;It&amp;#39;s time to play &amp;quot;Remember when&amp;quot; at our Doe High Class of &amp;#39;81 reunion next July, and the organizing committee is in high gear!&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-size:14px;DoubleQuoteCHARGreaterThanCHARItAmpersandCHAR#39;s time to play AmpersandCHARquot;Remember whenAmpersandCHARquot; at our Doe High Class of AmpersandCHAR#39;81 reunion next July, and the organizing committee is in high gear!LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;box-sizing: border-box; margin: 5px 0px 17px; color: rgb(51, 51, 51); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;&quot;&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;We&amp;#39;ll get started with an informal reception at the &lt;strong&gt;Doe House Friday evening, July 14&lt;/strong&gt;, from &lt;strong&gt;7:00 to 11:00&lt;/strong&gt;. On Saturday, those interested may sign up for an afternoon of golf or tennis before the dinner dance at the Doe Inn that evening at 7:00 p.m.&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARbox-sizing: border-box; margin: 5px 0px 17px; color: rgb(51, 51, 51); font-family: ApostropheCHARHelvetica NeueApostropheCHAR, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;DoubleQuoteCHARGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARWeAmpersandCHAR#39;ll get started with an informal reception at the LesserThanCHARstrongGreaterThanCHARDoe House Friday evening, July 14LesserThanCHAR/strongGreaterThanCHAR, from LesserThanCHARstrongGreaterThanCHAR7:00 to 11:00LesserThanCHAR/strongGreaterThanCHAR. On Saturday, those interested may sign up for an afternoon of golf or tennis before the dinner dance at the Doe Inn that evening at 7:00 p.m.LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;box-sizing: border-box; margin: 5px 0px 17px; color: rgb(51, 51, 51); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;&quot;&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;We appreciate your help in locating addresses for the following classmates: &lt;em&gt;John Doe, Eric Johnson, Suzanne Smith, and Ryan Moffat.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARbox-sizing: border-box; margin: 5px 0px 17px; color: rgb(51, 51, 51); font-family: ApostropheCHARHelvetica NeueApostropheCHAR, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;DoubleQuoteCHARGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARWe appreciate your help in locating addresses for the following classmates: LesserThanCHARemGreaterThanCHARJohn Doe, Eric Johnson, Suzanne Smith, and Ryan Moffat.LesserThanCHAR/emGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;For your convenience nearest &lt;a href=&quot;#Hotels&quot;&gt;Hotels&lt;/a&gt;&amp;nbsp;and &lt;a href=&quot;#Cars&quot;&gt;Car Rental&lt;/a&gt;&amp;nbsp;information is provided.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-size:14px;DoubleQuoteCHARGreaterThanCHARFor your convenience nearest LesserThanCHARa href=DoubleQuoteCHAR#HotelsDoubleQuoteCHARGreaterThanCHARHotelsLesserThanCHAR/aGreaterThanCHARAmpersandCHARnbsp;and LesserThanCHARa href=DoubleQuoteCHAR#CarsDoubleQuoteCHARGreaterThanCHARCar RentalLesserThanCHAR/aGreaterThanCHARAmpersandCHARnbsp;information is provided.AmpersandCHARnbsp;LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;&lt;a id=&quot;Hotels&quot; name=&quot;Hotels&quot;&gt;Hotels Information&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARLesserThanCHARa id=DoubleQuoteCHARHotelsDoubleQuoteCHAR name=DoubleQuoteCHARHotelsDoubleQuoteCHARGreaterThanCHARHotels InformationLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;&lt;a href=&quot;http://www.extendedstayamerica.com/?mid=ps-bran-geo-goo-&quot;&gt;&lt;img alt=&quot;Extended Stay America Hotels&quot; src=&quot;http://www.extendedstayamerica.com/images/191x61xlogo_esa_191x61.png.pagespeed.ic.p_MpPg3Jrw.webp&quot; /&gt;&lt;/a&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARLesserThanCHARa href=DoubleQuoteCHARhttp://www.extendedstayamerica.com/?mid=ps-bran-geo-goo-DoubleQuoteCHARGreaterThanCHARLesserThanCHARimg alt=DoubleQuoteCHARExtended Stay America HotelsDoubleQuoteCHAR src=DoubleQuoteCHARhttp://www.extendedstayamerica.com/images/191x61xlogo_esa_191x61.png.pagespeed.ic.p_MpPg3Jrw.webpDoubleQuoteCHAR /GreaterThanCHARLesserThanCHAR/aGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;&lt;a name=&quot;Cars&quot;&gt;Car Rentals&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARLesserThanCHARa name=DoubleQuoteCHARCarsDoubleQuoteCHARGreaterThanCHARCar RentalsLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;span style=&quot;font-family:tahoma,geneva,sans-serif;&quot;&gt;&lt;a href=&quot;http://www.enterprise.com/car_rental/deeplinkmap.do?bid=019&amp;amp;cnty=US&amp;amp;language=en&amp;amp;arc=GSSB183&amp;amp;cm_mmc=Google-_-Brand-_-GS_SE_Top_B_DMA_E_US-_-enterprise-asm&amp;amp;mobi=true&quot;&gt;&lt;img alt=&quot;Enterprise Rent-A-Car&quot; border=&quot;0&quot; height=&quot;35&quot; src=&quot;http://www.enterprise.com/car_rental/include/20141024110933/images/ban_enterpriseLogo.jpg&quot; width=&quot;175&quot; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-family:tahoma,geneva,sans-serif;DoubleQuoteCHARGreaterThanCHARLesserThanCHARa href=DoubleQuoteCHARhttp://www.enterprise.com/car_rental/deeplinkmap.do?bid=019AmpersandCHARamp;cnty=USAmpersandCHARamp;language=enAmpersandCHARamp;arc=GSSB183AmpersandCHARamp;cm_mmc=Google-_-Brand-_-GS_SE_Top_B_DMA_E_US-_-enterprise-asmAmpersandCHARamp;mobi=trueDoubleQuoteCHARGreaterThanCHARLesserThanCHARimg alt=DoubleQuoteCHAREnterprise Rent-A-CarDoubleQuoteCHAR border=DoubleQuoteCHAR0DoubleQuoteCHAR height=DoubleQuoteCHAR35DoubleQuoteCHAR src=DoubleQuoteCHARhttp://www.enterprise.com/car_rental/include/20141024110933/images/ban_enterpriseLogo.jpgDoubleQuoteCHAR width=DoubleQuoteCHAR175DoubleQuoteCHAR /GreaterThanCHARLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Best Regards,&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARBest Regards,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Steve Romano&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARSteve RomanoLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Organizer&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAROrganizerAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Reunion Letter</GCBEMTL_SUBJECT>
@@ -1008,7 +1032,7 @@
   <GCRCFLD_RULE_STATEMENT>select stvbldg_desc from stvbldg, slrrasg
    Where stvbldg_code = slrrasg_bldg_code
    and slrrasg_pidm = :pidm
-   and slrrasg_term_code = &apos;201430&apos;</GCRCFLD_RULE_STATEMENT>
+   and slrrasg_term_code = ApostropheCHARApostropheCHAR201430ApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>3</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -1033,7 +1057,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select slrrasg_room_number room from slrrasg
    Where slrrasg_pidm = :pidm
-   and slrrasg_term_code = &apos;201430&apos;</GCRCFLD_RULE_STATEMENT>
+   and slrrasg_term_code = ApostropheCHARApostropheCHAR201430ApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>2</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -1044,7 +1068,6 @@
   <GCBTMPL_NAME>Room Assignment</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>57</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -1064,41 +1087,41 @@
   <GCBEMTL_SURROGATE_ID>23</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;$today$&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHAR$today$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Dear $First_Name$:&lt;br /&gt;
-   &lt;br /&gt;
-   Welcome to LUCI Housing for Fall 2014! The staff is looking forward to greeting new residents at check in on Thursday, August 14, 2014.&amp;nbsp; Students assigned to even numbered floors may move in from 8:30 am until noon.&amp;nbsp; Students assigned to odd numbered floors may move in from 1:00 pm until 4:00 pm.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARDear $First_Name$:LesserThanCHARbr /GreaterThanCHAR
+   LesserThanCHARbr /GreaterThanCHAR
+   Welcome to LUCI Housing for Fall 2014! The staff is looking forward to greeting new residents at check in on Thursday, August 14, 2014.AmpersandCHARnbsp; Students assigned to even numbered floors may move in from 8:30 am until noon.AmpersandCHARnbsp; Students assigned to odd numbered floors may move in from 1:00 pm until 4:00 pm.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Your housing assignment is: Bulding: &lt;strong&gt;$Housing_Building$&lt;/strong&gt; Room:&lt;strong&gt;$Housing_Room$&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARYour housing assignment is: Bulding: LesserThanCHARstrongGreaterThanCHAR$Housing_Building$LesserThanCHAR/strongGreaterThanCHAR Room:LesserThanCHARstrongGreaterThanCHAR$Housing_Room$LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Your mailing address is:&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARYour mailing address is:LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;$First_Name$ $Last_Name$&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHAR$First_Name$ $Last_Name$LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;LUCI University&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHARLUCI UniversityLesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;$Housing_Building$ Box:$Housing_Room$&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHAR$Housing_Building$ Box:$Housing_Room$LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;Boca Raton, FL&amp;nbsp; 31123&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHARBoca Raton, FLAmpersandCHARnbsp; 31123LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;br /&gt;
-   Students should report directly to their assigned building during their designated time.&amp;nbsp; Please note that we will be unable to accommodate early arrivals, so we ask that you make other arrangements if you find it necessary to arrive in Boca Raton prior to August 14th.&amp;nbsp; &amp;nbsp;You may view your housing assignment information online at My Housing in your MyLUCI &amp;quot;Students&amp;quot; tab.&lt;br /&gt;
-   &lt;br /&gt;
-   Don&amp;#39;t forget! The remainder of housing charges for the fall semester are due in full by September 1, 2014. You may pay your balance online at&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARbr /GreaterThanCHAR
+   Students should report directly to their assigned building during their designated time.AmpersandCHARnbsp; Please note that we will be unable to accommodate early arrivals, so we ask that you make other arrangements if you find it necessary to arrive in Boca Raton prior to August 14th.AmpersandCHARnbsp; AmpersandCHARnbsp;You may view your housing assignment information online at My Housing in your MyLUCI AmpersandCHARquot;StudentsAmpersandCHARquot; tab.LesserThanCHARbr /GreaterThanCHAR
+   LesserThanCHARbr /GreaterThanCHAR
+   DonAmpersandCHAR#39;t forget! The remainder of housing charges for the fall semester are due in full by September 1, 2014. You may pay your balance online atLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;If you have any questions, please contact LUCI Housing at &lt;a href=&quot;tel:561-297-2880&quot; value=&quot;+15612972880&quot;&gt;561-297-1880&lt;/a&gt; or &lt;a href=&quot;mailto:housing@fau.edu&quot;&gt;housing@luci.edu&lt;/a&gt;.&lt;br /&gt;
-   &lt;br /&gt;
-   We look forward to a great Fall term!&lt;br /&gt;
-   &lt;br /&gt;
-   LUCI Housing &amp;amp; Residential Life&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;If you have any questions, please contact LUCI Housing at LesserThanCHARa href=DoubleQuoteCHARtel:561-297-2880DoubleQuoteCHAR value=DoubleQuoteCHAR+15612972880DoubleQuoteCHARGreaterThanCHAR561-297-1880LesserThanCHAR/aGreaterThanCHAR or LesserThanCHARa href=DoubleQuoteCHARmailto:housing@fau.eduDoubleQuoteCHARGreaterThanCHARhousing@luci.eduLesserThanCHAR/aGreaterThanCHAR.LesserThanCHARbr /GreaterThanCHAR
+   LesserThanCHARbr /GreaterThanCHAR
+   We look forward to a great Fall term!LesserThanCHARbr /GreaterThanCHAR
+   LesserThanCHARbr /GreaterThanCHAR
+   LUCI Housing AmpersandCHARamp; Residential LifeLesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT/>
@@ -1160,7 +1183,6 @@
   <GCBTMPL_NAME>Open Enrollment Reminder Notice</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>58</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -1180,36 +1202,36 @@
   <GCBEMTL_SURROGATE_ID>24</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;strong&gt;Annual Enrollment Reminders:&amp;nbsp; &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-size:16px;DoubleQuoteCHARGreaterThanCHARLesserThanCHARstrongGreaterThanCHARAnnual Enrollment Reminders:AmpersandCHARnbsp; LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;ul&gt;
-   &lt;li&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;The Benefits Portal at &lt;strong&gt;&lt;a href=&quot;http://www.thalesbenefits.com&quot;&gt;www.xyzlesbenefits.com&lt;/a&gt;&lt;/strong&gt; is open for Annual Enrollment &lt;strong&gt;until on November 7, 2014 (8:00 p.m. EST). &lt;/strong&gt;All new elections will become effective on January 1, 2015, after which the appropriate payroll deductions will occur.&lt;/span&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;XYZLES has a &amp;ldquo;positive enrollment&amp;rdquo; process. &lt;u&gt;All benefits-eligible employees will be required to log into the Benefits Portal to review, make any needed updates, and approve your health and welfare elections for 2015 -- even if you are not making any benefit changes&lt;/u&gt;.&lt;/span&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;For assistance with logging-in or submitting required benefit-related documents, please contact the Benefits Portal help desk at 1.855.855.11111 between 8:00 a.m. EST to 9:00 p.m. EST on weekdays.&amp;nbsp; Log-into the Benefits Portal today to review your current 2014 benefits!&lt;/span&gt;&lt;/li&gt;
-   &lt;/ul&gt;
+   LesserThanCHARulGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-size:14px;DoubleQuoteCHARGreaterThanCHARThe Benefits Portal at LesserThanCHARstrongGreaterThanCHARLesserThanCHARa href=DoubleQuoteCHARhttp://www.thalesbenefits.comDoubleQuoteCHARGreaterThanCHARwww.xyzlesbenefits.comLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/strongGreaterThanCHAR is open for Annual Enrollment LesserThanCHARstrongGreaterThanCHARuntil on November 7, 2014 (8:00 p.m. EST). LesserThanCHAR/strongGreaterThanCHARAll new elections will become effective on January 1, 2015, after which the appropriate payroll deductions will occur.LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-size:14px;DoubleQuoteCHARGreaterThanCHARXYZLES has a AmpersandCHARldquo;positive enrollmentAmpersandCHARrdquo; process. LesserThanCHARuGreaterThanCHARAll benefits-eligible employees will be required to log into the Benefits Portal to review, make any needed updates, and approve your health and welfare elections for 2015 -- even if you are not making any benefit changesLesserThanCHAR/uGreaterThanCHAR.LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHARLesserThanCHARspan style=DoubleQuoteCHARfont-size:14px;DoubleQuoteCHARGreaterThanCHARFor assistance with logging-in or submitting required benefit-related documents, please contact the Benefits Portal help desk at 1.855.855.11111 between 8:00 a.m. EST to 9:00 p.m. EST on weekdays.AmpersandCHARnbsp; Log-into the Benefits Portal today to review your current 2014 benefits!LesserThanCHAR/spanGreaterThanCHARLesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHAR/ulGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;Marci Leonard, SPHR&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHARMarci Leonard, SPHRLesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;Human Resources Manager&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHARHuman Resources ManagerLesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;XYZLES, LLC &lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHARXYZLES, LLC LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;1700 S. Babcock&lt;/strong&gt; St&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHAR1700 S. BabcockLesserThanCHAR/strongGreaterThanCHAR StLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;Syracuse, NY&amp;nbsp; 13291&lt;/strong&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHARSyracuse, NYAmpersandCHARnbsp; 13291LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;strong&gt;(T) 315-308-3876&lt;/strong&gt;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARstrongGreaterThanCHAR(T) 315-308-3876LesserThanCHAR/strongGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Open Enrollment Reminder</GCBEMTL_SUBJECT>
@@ -1219,24 +1241,24 @@
   <GCBEMTL_SURROGATE_ID>17</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;ALERT:&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARALERT:LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;The Humanities Building-52 on FAU&amp;rsquo;s Boca Raton campus has issued a boil water notice due to a water main break.&amp;nbsp; The water main is being repaired and the boil water notice is in effect until further notice.&amp;nbsp; Do not drink from the building water supply until the notice is lifted.&amp;nbsp; At this time use the restrooms in adjacent buildings and once water pressure is restored, it is safe to use restrooms and wash your hands. For more information, contact Environmental Health and Safety at &lt;a href=&quot;tel:561-297-3129&quot; target=&quot;_blank&quot; value=&quot;+15612973129&quot;&gt;561-297-3129&lt;/a&gt;, option 1, or visit &lt;a href=&quot;http://www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdf&quot; target=&quot;_blank&quot;&gt;www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdf&lt;/a&gt;.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARThe Humanities Building-52 on FAUAmpersandCHARrsquo;s Boca Raton campus has issued a boil water notice due to a water main break.AmpersandCHARnbsp; The water main is being repaired and the boil water notice is in effect until further notice.AmpersandCHARnbsp; Do not drink from the building water supply until the notice is lifted.AmpersandCHARnbsp; At this time use the restrooms in adjacent buildings and once water pressure is restored, it is safe to use restrooms and wash your hands. For more information, contact Environmental Health and Safety at LesserThanCHARa href=DoubleQuoteCHARtel:561-297-3129DoubleQuoteCHAR target=DoubleQuoteCHAR_blankDoubleQuoteCHAR value=DoubleQuoteCHAR+15612973129DoubleQuoteCHARGreaterThanCHAR561-297-3129LesserThanCHAR/aGreaterThanCHAR, option 1, or visit LesserThanCHARa href=DoubleQuoteCHARhttp://www.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdfDoubleQuoteCHAR target=DoubleQuoteCHAR_blankDoubleQuoteCHARGreaterThanCHARwww.fau.edu/facilities/ehs/info/DOH_Boil_water_QA.pdfLesserThanCHAR/aGreaterThanCHAR.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;293&quot; src=&quot;http://www.wormsandgermsblog.com/uploads/image/boil%20advisory.jpg&quot; width=&quot;390&quot; /&gt;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARLesserThanCHARimg alt=DoubleQuoteCHARDoubleQuoteCHAR height=DoubleQuoteCHAR293DoubleQuoteCHAR src=DoubleQuoteCHARhttp://www.wormsandgermsblog.com/uploads/image/boil%20advisory.jpgDoubleQuoteCHAR width=DoubleQuoteCHAR390DoubleQuoteCHAR /GreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Boil Water Alert</GCBEMTL_SUBJECT>
@@ -1263,7 +1285,6 @@
   <GCBTMPL_NAME>Open House</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>59</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMAUTHOR</GCBTMPL_USER_ID>
@@ -1283,34 +1304,34 @@
   <GCBEMTL_SURROGATE_ID>21</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Dear $First Name$,&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDear $First Name$,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Thank you for attending our Open House at our Philadelphia Campus.&amp;nbsp; We hope that you enjoyed the tour and the information was helpful in making a decision to attend our institution.&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARThank you for attending our Open House at our Philadelphia Campus.AmpersandCHARnbsp; We hope that you enjoyed the tour and the information was helpful in making a decision to attend our institution.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;We are looking forward to having you as part of our vibrant community!&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARWe are looking forward to having you as part of our vibrant community!LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Sincerely,&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARSincerely,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Karla Jones&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARKarla JonesLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Dean of Admissions&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARDean of AdmissionsLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p style=&quot;margin:0in;font-family:Calibri;font-size:11.0pt&quot;&gt;Please visit our website for more information at &lt;a href=&quot;http://www.drexel.edu&quot;&gt;http://www.drexel.edu&lt;/a&gt;&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARp style=DoubleQuoteCHARmargin:0in;font-family:Calibri;font-size:11.0ptDoubleQuoteCHARGreaterThanCHARPlease visit our website for more information at LesserThanCHARa href=DoubleQuoteCHARhttp://www.drexel.eduDoubleQuoteCHARGreaterThanCHARhttp://www.drexel.eduLesserThanCHAR/aGreaterThanCHARLesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT/>
@@ -1396,8 +1417,8 @@
   <GCBQURY_ACTIVITY_DATE>08-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Students assigned to a specific class</GCBQURY_DESCRIPTION>
   <GCBQURY_QUERY_STRING>select sfrstcr_pidm from sfrstcr
-   where sfrstcr_term_code = &apos;500001&apos;
-   and sfrstcr_crn = &apos;5001&apos;</GCBQURY_QUERY_STRING>
+   where sfrstcr_term_code = ApostropheCHARApostropheCHAR500001ApostropheCHARApostropheCHAR
+   and sfrstcr_crn = ApostropheCHARApostropheCHAR5001ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>6</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -1416,8 +1437,8 @@
   <GCBQURY_ACTIVITY_DATE>08-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Students assigned to CRN 10020</GCBQURY_DESCRIPTION>
   <GCBQURY_QUERY_STRING>select sfrstcr_pidm from sfrstcr
-   where sfrstcr_term_code = &apos;200910&apos;
-   and sfrstcr_crn = &apos;10020&apos;</GCBQURY_QUERY_STRING>
+   where sfrstcr_term_code = ApostropheCHARApostropheCHAR200910ApostropheCHARApostropheCHAR
+   and sfrstcr_crn = ApostropheCHARApostropheCHAR10020ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>0</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -1436,8 +1457,8 @@
   <GCBQURY_ACTIVITY_DATE>08-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Students assigned to CRN 10012</GCBQURY_DESCRIPTION>
   <GCBQURY_QUERY_STRING>select sfrstcr_pidm from sfrstcr
-   where sfrstcr_term_code = &apos;200899&apos;
-   and sfrstcr_crn = &apos;10012&apos;</GCBQURY_QUERY_STRING>
+   where sfrstcr_term_code = ApostropheCHARApostropheCHAR200899ApostropheCHARApostropheCHAR
+   and sfrstcr_crn = ApostropheCHARApostropheCHAR10012ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>1</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -1461,18 +1482,18 @@
   <GCRCFLD_RETURNS_ARRAY>N</GCRCFLD_RETURNS_ARRAY>
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>TimeTicket
-   SELECT    &apos;Open  Date/Time: &apos;
+   SELECT    ApostropheCHARApostropheCHAROpen  Date/Time: ApostropheCHARApostropheCHAR
    || TRUNC (c.SFRWCTL_BEGIN_DATE)
-   || &apos; at &apos;
+   || ApostropheCHARApostropheCHAR at ApostropheCHARApostropheCHAR
    || c.SFRWCTL_HOUR_BEGIN
-   || &apos;     &apos;
-   || &apos;Close Date/Time: &apos;
+   || ApostropheCHARApostropheCHAR     ApostropheCHARApostropheCHAR
+   || ApostropheCHARApostropheCHARClose Date/Time: ApostropheCHARApostropheCHAR
    || TRUNC (c.SFRWCTL_END_DATE)
-   || &apos; at &apos;
+   || ApostropheCHARApostropheCHAR at ApostropheCHARApostropheCHAR
    || c.SFRWCTL_HOUR_END
    FROM sfbrgrp t, sfbwctl g, sfrwctl c
    WHERE     t.SFBRGRP_PIDM = :PIDM
-   AND t.SFBRGRP_TERM_CODE = &apos;201430&apos;
+   AND t.SFBRGRP_TERM_CODE = ApostropheCHARApostropheCHAR201430ApostropheCHARApostropheCHAR
    AND t.SFBRGRP_TERM_CODE = g.SFBWCTL_TERM_CODE
    AND t.SFBRGRP_RGRP_CODE = g.SFBWCTL_RGRP_CODE
    AND g.SFBWCTL_TERM_CODE = c.SFRWCTL_TERM_CODE
@@ -1491,7 +1512,6 @@
   <GCBTMPL_NAME>Missing Documentation</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>60</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -1511,45 +1531,45 @@
   <GCBEMTL_SURROGATE_ID>14</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;$Date_Current$&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHAR$Date_Current$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Dear $First_Name$&amp;nbsp;$Last_Name$,&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARDear $First_Name$AmpersandCHARnbsp;$Last_Name$,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Our records indicate that we are missing some documentation for your change to Housing request due to your new RA status. &amp;nbsp;Please provide the documentation listed below and we will process the change as soon as possible. &amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAROur records indicate that we are missing some documentation for your change to Housing request due to your new RA status. AmpersandCHARnbsp;Please provide the documentation listed below and we will process the change as soon as possible. AmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;ul&gt;
-   &lt;li&gt;$ID$&lt;/li&gt;
-   &lt;li&gt;$GPA$&lt;/li&gt;
-   &lt;li&gt;$Advisor$&lt;/li&gt;
-   &lt;li&gt;Letter of acknowledgement&amp;nbsp;&lt;/li&gt;
-   &lt;/ul&gt;
+   LesserThanCHARulGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHAR$ID$LesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHAR$GPA$LesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHAR$Advisor$LesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHARliGreaterThanCHARLetter of acknowledgementAmpersandCHARnbsp;LesserThanCHAR/liGreaterThanCHAR
+   LesserThanCHAR/ulGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Be advised that&amp;nbsp;$Housing_Building$ is a very populated building and time is of the essence to guarantee a space for you.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARBe advised thatAmpersandCHARnbsp;$Housing_Building$ is a very populated building and time is of the essence to guarantee a space for you.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Congratulations on your assignment and we look forward to hearing from you.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARCongratulations on your assignment and we look forward to hearing from you.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Sincerely,&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARSincerely,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Mr. John Smith&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARMr. John SmithLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Residential Coordinator.&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARResidential Coordinator.LesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT/>
@@ -1562,7 +1582,6 @@
   <GCBTMPL_NAME>Registration on hold</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>60</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -1582,26 +1601,26 @@
   <GCBEMTL_SURROGATE_ID>18</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;Dear $First_Name$,&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARDear $First_Name$,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Registration for the upcoming semester will be opening soon. As of the date of this email your record indicates that you have&amp;nbsp; holds which will prevent you from registering for courses.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARRegistration for the upcoming semester will be opening soon. As of the date of this email your record indicates that you haveAmpersandCHARnbsp; holds which will prevent you from registering for courses.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;$Holds$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR$Holds$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;We recommend taking action to resolve these holds as soon as possible so that your registration is not delayed.&lt;br /&gt;
-   For hold detail, please log into &lt;a href=&quot;https://bannersso.fau.edu/ssomanager/c/SSB?pkg=bwskoacc.P_ViewHold&quot; target=&quot;_blank&quot;&gt;MyEllucian Self-Service&lt;/a&gt; to view your holds.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARWe recommend taking action to resolve these holds as soon as possible so that your registration is not delayed.LesserThanCHARbr /GreaterThanCHAR
+   For hold detail, please log into LesserThanCHARa href=DoubleQuoteCHARhttps://bannersso.fau.edu/ssomanager/c/SSB?pkg=bwskoacc.P_ViewHoldDoubleQuoteCHAR target=DoubleQuoteCHAR_blankDoubleQuoteCHARGreaterThanCHARMyEllucian Self-ServiceLesserThanCHAR/aGreaterThanCHAR to view your holds.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;To see when you can register visit the following web site &lt;a href=&quot;http://www.fau.edu/registrar/registration/schedule.php&quot; target=&quot;_blank&quot;&gt;http://www.ellucian.edu/registrar/registration/schedule.php&lt;/a&gt; . Best wishes on your continued success.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARTo see when you can register visit the following web site LesserThanCHARa href=DoubleQuoteCHARhttp://www.fau.edu/registrar/registration/schedule.phpDoubleQuoteCHAR target=DoubleQuoteCHAR_blankDoubleQuoteCHARGreaterThanCHARhttp://www.ellucian.edu/registrar/registration/schedule.phpLesserThanCHAR/aGreaterThanCHAR . Best wishes on your continued success.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Ellucian University, Office of the Registrar&lt;br /&gt;
-   PLEASE DO NOT RESPOND TO THIS SYSTEM GENERATED MESSAGE&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHAREllucian University, Office of the RegistrarLesserThanCHARbr /GreaterThanCHAR
+   PLEASE DO NOT RESPOND TO THIS SYSTEM GENERATED MESSAGELesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Registration Holds</GCBEMTL_SUBJECT>
@@ -1613,7 +1632,6 @@
   <GCBTMPL_NAME>Summer Registration Letter</GCBTMPL_NAME>
   <GCBTMPL_PERSONAL>N</GCBTMPL_PERSONAL>
   <GCBTMPL_FOLDER_ID>60</GCBTMPL_FOLDER_ID>
-  <GCBTMPL_ACTIVE>N</GCBTMPL_ACTIVE>
   <GCBTMPL_ONEOFF>N</GCBTMPL_ONEOFF>
   <GCBTMPL_PUBLISH>N</GCBTMPL_PUBLISH>
   <GCBTMPL_USER_ID>BCMADMIN</GCBTMPL_USER_ID>
@@ -1633,74 +1651,74 @@
   <GCBEMTL_SURROGATE_ID>25</GCBEMTL_SURROGATE_ID>
   <GCBEMTL_BCCLIST/>
   <GCBEMTL_CCLIST/>
-  <GCBEMTL_CONTENT>&lt;html&gt;
-   &lt;head&gt;
-   &lt;title&gt;&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-   &lt;p&gt;Dear $First_Name$,&lt;/p&gt;
+  <GCBEMTL_CONTENT>LesserThanCHARhtmlGreaterThanCHAR
+   LesserThanCHARheadGreaterThanCHAR
+   LesserThanCHARtitleGreaterThanCHARLesserThanCHAR/titleGreaterThanCHAR
+   LesserThanCHAR/headGreaterThanCHAR
+   LesserThanCHARbodyGreaterThanCHAR
+   LesserThanCHARpGreaterThanCHARDear $First_Name$,LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;Important information for Phase I Summer registration:&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARImportant information for Phase I Summer registration:LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;1.&amp;nbsp; Please note that time ticket assignments are currently available. Phase I&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR1.AmpersandCHARnbsp; Please note that time ticket assignments are currently available. Phase IAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; Summer registration begins Monday, March 31 and concludes on Friday, Apr. 25&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; Summer registration begins Monday, March 31 and concludes on Friday, Apr. 25LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; at 4:00 PM ET.&amp;nbsp; Registration time tickets are assigned based on hours earned&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; at 4:00 PM ET.AmpersandCHARnbsp; Registration time tickets are assigned based on hours earnedLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; and will be released incrementally over several days.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; and will be released incrementally over several days.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; $Time_Ticket$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; $Time_Ticket$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;2.&amp;nbsp; Many campus departments have the ability to place registration holds on student&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR2.AmpersandCHARnbsp; Many campus departments have the ability to place registration holds on studentLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; accounts. A registration hold will prevent a student from accessing the&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; accounts. A registration hold will prevent a student from accessing theLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; registration system.&amp;nbsp; The department that places the hold must also remove the&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; registration system.AmpersandCHARnbsp; The department that places the hold must also remove theLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; hold. If you have a registration hold on your account, please contact the&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; hold. If you have a registration hold on your account, please contact theLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; appropriate department indicated.&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; appropriate department indicated.LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; $Holds$&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; $Holds$LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;3.&amp;nbsp; Please access Buzzport and follow the links for OSCAR to view your registration&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR3.AmpersandCHARnbsp; Please access Buzzport and follow the links for OSCAR to view your registrationLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; time ticket assignment, and any holds on your account that will prevent your access&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; time ticket assignment, and any holds on your account that will prevent your accessLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; to registration:&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; to registration:LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Access www.buzzport.gatech.edu&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; Access www.buzzport.gatech.eduLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Select OSCAR Self Service (Secure Access)&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; Select OSCAR Self Service (Secure Access)LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Select Student Services &amp;amp; Financial Aid&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; Select Student Services AmpersandCHARamp; Financial AidLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Select Registration to view registration time ticket assignment&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; Select Registration to view registration time ticket assignmentLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Select Student Records to view registration holds&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; Select Student Records to view registration holdsLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;LesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;4.&amp;nbsp; Registration assistance is available online at www.registrar.gatech.edu via the&lt;/p&gt;
+   LesserThanCHARpGreaterThanCHAR4.AmpersandCHARnbsp; Registration assistance is available online at www.registrar.gatech.edu via theLesserThanCHAR/pGreaterThanCHAR
 
-   &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; student tab.&lt;/p&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+   LesserThanCHARpGreaterThanCHARAmpersandCHARnbsp;AmpersandCHARnbsp;AmpersandCHARnbsp; student tab.LesserThanCHAR/pGreaterThanCHAR
+   LesserThanCHAR/bodyGreaterThanCHAR
+   LesserThanCHAR/htmlGreaterThanCHAR
   </GCBEMTL_CONTENT>
   <GCBEMTL_FROMLIST/>
   <GCBEMTL_SUBJECT>Important Summer Registration Information</GCBEMTL_SUBJECT>
@@ -1731,7 +1749,7 @@
   <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
   <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
   <GCBQURY_DESCRIPTION>Population with last name like Smi*</GCBQURY_DESCRIPTION>
-  <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden WHERE spriden_last_name LIKE &apos;Smi%&apos;</GCBQURY_QUERY_STRING>
+  <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden WHERE spriden_last_name LIKE ApostropheCHARApostropheCHARSmi%ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
   <GCBQURY_VERSION>0</GCBQURY_VERSION>
   <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
   <GCBQURY_VPDI_CODE/>
@@ -1756,7 +1774,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select GOREMAL_EMAIL_address from goremal
    where goremal_pidm = :pidm and
-   GOREMAL_emal_code = &apos;CAMP&apos;</GCRCFLD_RULE_STATEMENT>
+   GOREMAL_emal_code = ApostropheCHARApostropheCHARCAMPApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>1</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2014,8 +2032,8 @@
   <GCRCFLD_RULE_STATEMENT>select spraddr_zip
    from spraddr
    where spraddr_pidm = :pidm
-   and spraddr_atyp_code = &apos;PR&apos;
-   and spraddr_from_date &lt;= SYSDATE</GCRCFLD_RULE_STATEMENT>
+   and spraddr_atyp_code = ApostropheCHARApostropheCHARPRApostropheCHARApostropheCHAR
+   and spraddr_from_date LesserThanCHAR= SYSDATE</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>4</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2041,8 +2059,8 @@
   <GCRCFLD_RULE_STATEMENT>select spraddr_zip
    from spraddr
    where spraddr_pidm = :pidm
-   and spraddr_atyp_code = &apos;MA&apos;
-   and spraddr_from_date &lt;= SYSDATE</GCRCFLD_RULE_STATEMENT>
+   and spraddr_atyp_code = ApostropheCHARApostropheCHARMAApostropheCHARApostropheCHAR
+   and spraddr_from_date LesserThanCHAR= SYSDATE</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>1</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2069,7 +2087,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select GOREMAL_EMAIL_address from goremal
    where goremal_pidm = :pidm and
-   GOREMAL_PREFERRED_IND = &apos;Y&apos;</GCRCFLD_RULE_STATEMENT>
+   GOREMAL_PREFERRED_IND = ApostropheCHARApostropheCHARYApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>5</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2094,7 +2112,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select GOREMAL_EMAIL_address from goremal
    where goremal_pidm = :pidm and
-   GOREMAL_emal_code = &apos;PEML&apos;</GCRCFLD_RULE_STATEMENT>
+   GOREMAL_emal_code = ApostropheCHARApostropheCHARPEMLApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>3</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2120,7 +2138,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select spraddr_city from spraddr
    where spraddr_pidm = :pidm
-   and SPRADDR_ATYP_CODE = &apos;PR&apos;</GCRCFLD_RULE_STATEMENT>
+   and SPRADDR_ATYP_CODE = ApostropheCHARApostropheCHARPRApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>6</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2192,7 +2210,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select stvstat_desc from stvstat, spraddr
    where spraddr_pidm = :pidm
-   and SPRADDR_ATYP_CODE = &apos;MA&apos;
+   and SPRADDR_ATYP_CODE = ApostropheCHARApostropheCHARMAApostropheCHARApostropheCHAR
    and stvstat_code = spraddr_stat_code</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>5</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
@@ -2218,7 +2236,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select stvnatn_nation from stvnatn, spraddr
    where spraddr_pidm = :pidm
-   and SPRADDR_ATYP_CODE = &apos;MA&apos;
+   and SPRADDR_ATYP_CODE = ApostropheCHARApostropheCHARMAApostropheCHARApostropheCHAR
    and stvnatn_code = spraddr_natn_code</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>7</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
@@ -2343,7 +2361,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select spraddr_city from spraddr
    where spraddr_pidm = :pidm
-   and SPRADDR_ATYP_CODE = &apos;MA&apos;</GCRCFLD_RULE_STATEMENT>
+   and SPRADDR_ATYP_CODE = ApostropheCHARApostropheCHARMAApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>5</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2368,7 +2386,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select stvstat_desc from stvstat, spraddr
    where spraddr_pidm = :pidm
-   and SPRADDR_ATYP_CODE = &apos;PR&apos;
+   and SPRADDR_ATYP_CODE = ApostropheCHARApostropheCHARPRApostropheCHARApostropheCHAR
    and stvstat_code = spraddr_stat_code</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>2</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
@@ -2394,7 +2412,7 @@
   <GCRCFLD_STATEMENT_TYPE>SQL_PREPARED_STATEMENT</GCRCFLD_STATEMENT_TYPE>
   <GCRCFLD_RULE_STATEMENT>select stvnatn_nation from stvnatn, spraddr
    where spraddr_pidm = :pidm
-   and SPRADDR_ATYP_CODE = &apos;PA&apos;
+   and SPRADDR_ATYP_CODE = ApostropheCHARApostropheCHARPAApostropheCHARApostropheCHAR
    and stvnatn_code = spraddr_natn_code</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>2</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
@@ -2424,8 +2442,8 @@
   <GCRCFLD_RULE_STATEMENT>select spraddr_street_line1, spraddr_street_line2, spraddr_street_line3
    from spraddr
    where spraddr_pidm = :pidm
-   and spraddr_atyp_code = &apos;MA&apos;
-   and spraddr_from_date &lt;= SYSDATE</GCRCFLD_RULE_STATEMENT>
+   and spraddr_atyp_code = ApostropheCHARApostropheCHARMAApostropheCHARApostropheCHAR
+   and spraddr_from_date LesserThanCHAR= SYSDATE</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>5</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2451,7 +2469,7 @@
   <GCRCFLD_RULE_STATEMENT>select sprtele_phone_area, sprtele_phone_number
    from sprtele
    where sprtele_pidm = :pidm
-   and sprtele_tele_code = &apos;PR&apos;</GCRCFLD_RULE_STATEMENT>
+   and sprtele_tele_code = ApostropheCHARApostropheCHARPRApostropheCHARApostropheCHAR</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>5</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2480,8 +2498,8 @@
   <GCRCFLD_RULE_STATEMENT>select spraddr_street_line1, spraddr_street_line2, spraddr_street_line3
    from spraddr
    where spraddr_pidm = :pidm
-   and spraddr_atyp_code = &apos;PR&apos;
-   and spraddr_from_date &lt;= SYSDATE</GCRCFLD_RULE_STATEMENT>
+   and spraddr_atyp_code = ApostropheCHARApostropheCHARPRApostropheCHARApostropheCHAR
+   and spraddr_from_date LesserThanCHAR= SYSDATE</GCRCFLD_RULE_STATEMENT>
   <GCRCFLD_VERSION>2</GCRCFLD_VERSION>
   <GCRCFLD_DATA_ORIGIN>Banner</GCRCFLD_DATA_ORIGIN>
   <GCRCFLD_VPDI_CODE/>
@@ -2521,18 +2539,21 @@
 
  <GCRORAN>
   <GCRORAN_SURROGATE_ID>7</GCRORAN_SURROGATE_ID>
-  <GCRORAN_NAME>Test</GCRORAN_NAME>
+  <GCRORAN_NAME>Ellucian University - Root Organization</GCRORAN_NAME>
   <GCRORAN_USER_ID>bcmadmin</GCRORAN_USER_ID>
   <GCRORAN_ACTIVITY_DATE>08-DEC-14</GCRORAN_ACTIVITY_DATE>
-  <GCRORAN_DESCRIPTION>abcd</GCRORAN_DESCRIPTION>
-  <GCRORAN_IS_ROOT/>
+  <GCRORAN_DESCRIPTION>Ellucian University</GCRORAN_DESCRIPTION>
   <GCRORAN_PARENT_ID/>
-  <GCRORAN_DATE_FORMAT>skdfhsdkfhf MMMM dd,yyyy</GCRORAN_DATE_FORMAT>
-  <GCRORAN_DAYOFWEEK_FORMAT>skfskfsf EEEE, MMMM, dd, yyyy</GCRORAN_DAYOFWEEK_FORMAT>
-  <GCRORAN_TIMEOFDAY_FORMAT>sflsjfslfj hh:mma</GCRORAN_TIMEOFDAY_FORMAT>
+  <GCRORAN_DATE_FORMAT>MMMM dd,yyyy</GCRORAN_DATE_FORMAT>
+  <GCRORAN_DAYOFWEEK_FORMAT>EEEE, MMMM, dd, yyyy</GCRORAN_DAYOFWEEK_FORMAT>
+  <GCRORAN_TIMEOFDAY_FORMAT>hh:mma</GCRORAN_TIMEOFDAY_FORMAT>
+  <GCRORAN_NOTFN_ENDPOINT_URL>https://mobiledev1.ellucian.com/banner-mobileserver/</GCRORAN_NOTFN_ENDPOINT_URL>
+  <GCRORAN_NOTFN_APPL_NAME>StudentSuccess</GCRORAN_NOTFN_APPL_NAME>
+  <GCRORAN_NOTFN_APPL_KEY>26EA0504F153F5BE4FF4CD1603DD4082</GCRORAN_NOTFN_APPL_KEY>
   <GCRORAN_VERSION>1</GCRORAN_VERSION>
   <GCRORAN_DATA_ORIGIN>Banner</GCRORAN_DATA_ORIGIN>
   <GCRORAN_VPDI_CODE/>
  </GCRORAN>
+
 
 </GENERALCOMMUNICATIONDATA>

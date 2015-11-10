@@ -4,6 +4,7 @@
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
+import org.apache.commons.lang.StringUtils
 
 import java.sql.Connection
 
@@ -48,7 +49,13 @@ public class GcrfldrDML {
      */
 
     def processGcrfldr() {
-        def apiData = new XmlParser().parseText(xmlData)
+        //special xml characters are getting scrubbed from the xml for some reason. So doing this hack to re-introduce them into
+        //the xml before it gets parsed by the xml parser
+        def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
+        def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
+
+        def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
+
 
         String ssql = """select * from gcrfldr  where GCRFLDR_NAME = ? """
         // find if the FOLDER already exists in the database and use it's curr_rule for inserting into the db
@@ -146,7 +153,7 @@ public class GcrfldrDML {
         if (connectInfo.tableName != "GCBEMTL") {
             def xmlRecNew = "<${apiData.name()}>\n"
             apiData.children().each() { fields ->
-                def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
+                def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
                 xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
             }
             xmlRecNew += "</${apiData.name()}>\n"
