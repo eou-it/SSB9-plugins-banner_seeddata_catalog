@@ -1,6 +1,7 @@
 /** *****************************************************************************************
 * Copyright 2010-2013 Ellucian Company L.P. and its affiliates.                         *
 *****************************************************************************************/
+import grails.util.Holders;
 
 includeTargets << grailsScript("_GrailsArgParsing")
 includeTargets << new File("${grailsHome}/scripts/Bootstrap.groovy")
@@ -26,7 +27,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
     def inputData = clazzInputData.newInstance([dataSource: dataSource])
 
     //def inputData = new net.hedtech.banner.seeddata.InputData([dataSource: dataSource])
-    def seedDataTargets = org.codehaus.groovy.grails.commons.ConfigurationHolder.config.seedDataTarget
+    def seedDataTargets = Holders.getConfig().seedDataTarget
 
     def pluginDirPath = getPluginDirectoryPathString()
     
