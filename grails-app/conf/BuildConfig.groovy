@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -38,10 +38,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        runtime  ":hibernate:3.6.10.10"
-        compile ":tomcat:7.0.52.1"
-        compile ':resources:1.2.7' // If the functional-test plugin is being used
-        compile ":functional-test:2.0.0" // If the functional-test plugin is being used
+
 
     }
 
