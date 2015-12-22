@@ -26,7 +26,7 @@ grails.project.dependency.resolution = {
         mavenRepo "http://repository.jboss.org/maven2/"
         mavenRepo "http://download.java.net/maven/2/"
         mavenRepo "http://repo.grails.org/grails/repo"
-        
+
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         //mavenLocal()
