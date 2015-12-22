@@ -18,14 +18,15 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
-        if (System.properties['PROXY_SERVER_NAME']) {
+        if ( System.properties[ 'PROXY_SERVER_NAME' ] ) {
             mavenRepo "${System.properties['PROXY_SERVER_NAME']}"
-        } else {
-            grailsCentral()
-            mavenCentral()
-            mavenRepo "http://repository.jboss.org/maven2/"
-            mavenRepo "https://code.lds.org/nexus/content/groups/main-repo"
         }
+        grailsCentral()
+        mavenCentral()
+        mavenRepo "http://repository.jboss.org/maven2/"
+        mavenRepo "http://download.java.net/maven/2/"
+        mavenRepo "http://repo.grails.org/grails/repo"
+        
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         //mavenLocal()
