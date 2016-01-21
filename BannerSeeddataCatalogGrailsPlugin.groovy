@@ -43,7 +43,7 @@ class BannerSeeddataCatalogGrailsPlugin {
     String version = "1.0.52"
 
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "2.2.1 > *"
+    def grailsVersion = "2.5.0 > *"
 
 
 
