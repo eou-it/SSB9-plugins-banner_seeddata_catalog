@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -7,11 +7,8 @@ grails.project.test.reports.dir = "target/test-reports"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.plugin.location.'banner-core'="../banner_core.git"
-grails.plugin.location.'i18n-core'="../i18n_core.git"
-grails.plugin.location.'banner-codenarc'="../banner_codenarc.git"
-grails.plugin.location.'spring-security-cas'="../spring_security_cas.git"
 
-grails.project.dependency.resolver = "ivy" // or maven
+grails.project.dependency.resolver = "maven" // or maven
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -24,13 +21,11 @@ grails.project.dependency.resolution = {
         if (System.properties['PROXY_SERVER_NAME']) {
             mavenRepo "${System.properties['PROXY_SERVER_NAME']}"
         } else {
+            grailsCentral()
+            mavenCentral()
+            mavenRepo "http://repository.jboss.org/maven2/"
+            mavenRepo "https://code.lds.org/nexus/content/groups/main-repo"
         }
-
-        grailsPlugins()
-        grailsHome()
-        grailsCentral()
-        mavenRepo "http://repository.jboss.org/maven2/"
-        mavenRepo "http://repository.codehaus.org"
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         //mavenLocal()
