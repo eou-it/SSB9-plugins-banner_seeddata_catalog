@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 import grails.util.GrailsUtil
@@ -211,7 +211,8 @@ public class InputData {
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml'],
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCurriculumData.xml'],
             'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentProjectionsRemove.xml',
                                '/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
