@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>1</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Drug and Alcohol Policy</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR001</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>You must review and confirm the Ellucian University Campus Drug and Alcohol policy prior to registering for classes.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR001</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>2</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Registration Process Training</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR001</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>It takes just 10 minutes, review the training video provided to help expedite your registration experience.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR001</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>3</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Personal Information</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR001</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>It is important that we have your current information such as your name, and contact information therefore it is required that you review, update and confirm your personal information.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR001</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>4</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Meet with Advisor</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR001</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION></GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR001</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>5</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Proof of Residence</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR001</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>All incoming students are required to submit an approved document as proof of residency.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR001</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>6</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Policy Handbook</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR002</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>The Ellucian University Policy Handbook provides information including graduation requirements, degree programs offered, admission requirements and general academic regulations.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR002</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>7</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Notice of Right to Change Requirements</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR002</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Please review the Ellucian University Right to Change Requirements policy statement</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR002</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>8</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Notice of Non-Discrimination Policy</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR002</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Ellucian University prohibits discrimination, including any form of harassment, by employees, faculty, students, contractors, or agents
+of the University and by anyone participating in a University sponsored activity against an individual based on race, color, national origin,
+gender, disability, or any other classification protected by applicable law in its programs or activities. Title IX regulations require nondiscrimination
+on the basis of sex or gender.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR002</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>9</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Please Review the University Mission Statement</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR002</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Ellucian University prepares learners to become global citizens, critical thinkers, effective communicators, and responsible leaders by
+providing an academically challenging, values-based curriculum.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR002</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>10</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Please Review the Attendance Policy</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR002</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>A student who is not officially registered may not attend a university course.
+
+The university expects regular attendance at all class meetings. Instructors must communicate any particular attendance requirements of the course to students in writing before the first class meeting. Students are responsible for acquainting themselves with and satisfying the entire range of academic objectives and requirements as defined by the instructor.
+
+Students are not automatically dropped from class(es) if they do not attend. They must officially drop their class(es) by the published deadline in the academic calendar to avoid a W grade.
+
+Students absent from class to participate in officially sanctioned university activities (e.g. band, debate, student government, intercollegiate athletics) or religious obligations, or with instructor’s approval, shall be permitted to make up both assignments and examinations.
+
+Unexpected university facility closures due to weather, emergency or disaster may occur from time to time. Students may be required to complete coursework missed due to these or other class cancellations. However, instructors requiring mandatory make-up sessions may not penalize students if they are unable to attend due to time conflicts, etc.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR002</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>11</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Notice of Scholastic Standards</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR003</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>The University’s regulations on academic standards are established by the University Senate and implemented by the Academic Evaluation and Standards Committee. This committee has assigned the responsibility of monitoring the academic progress of under­graduate students to University College Advising.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR003</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>12</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Deans List</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR003</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Students who earn a 3.5 GPA or better for at least 12 graded credit hours for an academic term are placed on the deans list. Students receive notification of this honor on the Campus Information System and it is noted on their transcript.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR003</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>13</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>All staff: Prepare for winter snow</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR003</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>With the winter season fast approaching. Please prepare yourself for the upcoming snow by reviewing the Facilities Department Winter Season and Snow Removal FAQ’s and the 2013-2014 Snow Removal Grounds Care Assignment Chart.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR003</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>14</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>All staff: There’s still time to encourage your friends and family to Give to the Max for your school</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR003</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Click the DONATE button on your school website, and what do you see? Photos of smiling students engaged in learning? A few words making the case for supporting the special place that is your school? If so, you’re ready to invite staff members, families and local business people to contribute to your school via www.GiveMN.org. You can find Give to the Max Day materials in Hmong, Karen, Somali and Spanish by checking out the right-hand column at http://www.spps.org/toolkit.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR003</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>15</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>School staff: Register for Yoga Calm training</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR003</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Yoga Calm is a program that teaches the scientific practices of mindfulness, social/emotional learning and yoga-based movement. Learn and apply practical, research-based interventions that impact student focus, attention and connection to others. These 3-hour sessions will provide hands-on skills and activities to reduce stress, prepare students to learn, and foster a calm and more productive learning environment and classroom culture. This opportunity is funded by Statewide Health Improvement Plan (SHIP) in a grant from Saint Paul Ramsey County Public Health.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR003</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>16</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Teachers: Fund for Teachers deadline is January 30, 2014</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR004</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>Fund for Teachers (FFT) provides educators who possess a broad vision of what it means to teach and learn with resources to pursue self-designed professional learning experiences. FFT grants can be used for a variety of projects, all designed to create enhanced learning environments for teachers, their students and their school communities. We believe that supporting teachers&apos; active participation in their own professional growth positively impacts student learning and achievement. To learn more about the Fund for Teachers, visit: http://www.fundforteachers.org/
+
+To apply, teachers must:
+
+Be employed by SPPS full-time as a PreK-12th grade teacher at the time the grant is used;
+Spend 100% of their work week in direct instruction with students in a classroom or classroom-like setting;
+Intend to continue teaching in the consecutive school year; and
+Have at least three years teaching experience as a PreK-12th grade teacher in SPPS.
+Individuals may apply for up to $5,000; teams may apply for up to $7,500 (all team members must meet eligibility criteria). To confirm eligibility, please contact Kathy Weyandt, kathy.weyandt@spps.org, 7-8373. The Saint Paul Fund For Teachers is sponsored by the SPPS Foundation.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR004</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>17</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Teachers: Register for service-learning and We Act trainings</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR004</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>On November 15, the SPPS Community Education Service-Learning Program is hosting two training opportunities about service-learning that will include information on organizations that offer great partnership opportunities. Register now on PD Express by searching for “Service Learning.”
+
+In the morning session, Service-Learning 101 for Secondary Teachers (SL017), guest facilitator Jim Toole (president and co-founder of the Compass Institute) will help secondary teachers and those leading We Act projects to explore service-learning processes, quality standards and outcomes for students, schools and community. Teachers will gain deeper insight into strategies and techniques for developing and implementing quality service-learning projects with students.
+
+In the afternoon session, We Act Project Planning (SL019), teachers will hear from partner organizations – such as H2O for Life, Impact Lives and local Watershed Districts – about opportunities for SPPS teachers and students to partner in their service-learning and We Act projects. Teachers will have time to network and exchange ideas related and receive support in project planning.
+
+For more information call the Service-Learning Program at 651-487-7383 or email service-learning@spps.org.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR004</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>18</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children&apos;s Museum</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR004</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>The 2nd grade Strategic Science and Engineering Initiative (SSEI) trip for 2013 is to Minnesota Children’s Museum (MCM). This trip is fully funded by a grant from 3M.
+
+At MCM, students will learn about the life cycle of ants via interactive activities and a discussion with a museum educator. This trip coincides with the Insect Trunk, which is booked through SPPS during Opening Week. 
+
+This visit will help meet Science Benchmark 1.4.3.1.2, “Recognize that animals pass through the same life cycle stages as their parents.” Please talk with the science specialist at your school about how this trip can be integrated with what your students are learning in science.
+
+It is expected that every SPPS 2nd grade student will have the opportunity to visit MCM as a part of SSEI. Please book your trip immediately. 
+
+To schedule this field trip for your class, contact the Minnesota Children’s Museum at 651-225-6000.
+
+Please have the following information ready when reserving your trip:
+
+School Name
+Time/Date preference
+Names of all teachers attending
+Approximate number of students
+Email address for confirmation
+For more information about programs at MCM, contact Amy Bry at 651-225-6047 or abry@mcm.org.
+
+Your confirmation and schedule will arrive via email. Please contact Minnesota Children’s Museum if you do not receive confirmation after booking.
+
+To arrange for bus transportation, fill out an SPPS Field Trip Order Form. Remember to order your bus(es) at least two weeks in advance. Enter “SSEI” as the budget number on your bus order form.
+
+Note: This 2nd grade trip is funded differently from the preK-1 trips to MCM. Please be sure to cite “SSEI” in your communications to the transportation department regarding this trip.
+
+For more information on 3M-funded field trips at SPPS, contact Jaime Dery at jaime.dery@spps.org or 651-744-7394.
+
+Clerks: Manage Campus enrollments
+It is crucial for clerks to keep up with Campus enrollments. This work is essential for SPPS to comply with mandatory reporting to the Minnesota Department of Education. Student Placement Center staff will continue to enter Campus enrollments for new and returning students. However, clerks must:
+
+Regularly review School View at  sms1314.placement.spps.org to learn of new students assigned to your school. You will receive an email in your Lotus Notes Enrollment Group alerting you of the change in School View.
+Log into Campus to ensure the new student&apos;s start date is correct or mark the student as a no-show if appropriate.
+Enter Campus enrollments for students transferring from one SPPS school to another.
+Please contact Erin Moline 651-632-3740 or Jayné Williams 651-632-3722 with questions.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR004</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>19</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Please read the Minimum GPA requirements</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR004</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>All undergraduate students are required to maintain a cumulative GPA of at least 2.0 (C average): Transfer students should be aware that the cumulative GPA is computed only on the basis of University of Utah course work. For detailed information about the grading system, see Grading Policies.Specific departments or colleges may have more stringent requirements for retention in their programs than the overall University requirements.</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR004</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>20</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>Inspection Notice</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR004</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>You are hereby notified of an upcoming inspection of something, by someone, for some reason.  It will probably occur on some date, so please be ready before then!  That is all!!!</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR004</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>21</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>!@#$%^&amp;*()_+=-1234567890-[}{]\|</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR005</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>There is a house in New Orleans
+They call the Rising Sun
+And it&apos;s been the ruin of many a poor boy
+And God I know I&apos;m one
+My mother was a tailor
+She sewed my new blue jeans
+My father was a gamblin&apos; man
+Down in New Orleans
+Now the only thing a gambler needs
+Is a suitcase and trunk
+And the only time he&apos;s satisfied
+Is when he&apos;s on a drunk
+Oh mother tell your children
+Not to do what I have done
+Spend your lives in sin and misery
+In the House of the Rising Sun
+Well, I got one foot on the platform
+The other foot on the train
+I&apos;m goin&apos; back to New Orleans
+To wear that ball and chain
+Well, there is a house in New Orleans
+They call the Rising Sun
+And it&apos;s been the ruin of many a poor boy
+And God I know I&apos;m one</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR005</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>22</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>The Declaration of Independence</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR005</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>The Declaration of Independence: A Transcription
+
+IN CONGRESS, July 4, 1776.
+
+The unanimous Declaration of the thirteen united States of America,
+
+When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature&apos;s God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
+
+We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness. Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.--Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.
+
+He has refused his Assent to Laws, the most wholesome and necessary for the public good.
+He has forbidden his Governors to pass Laws of immediate and pressing importance, unless suspended in their operation till his Assent should be obtained; and when so suspended, he has utterly neglected to attend to them.
+He has refused to pass other Laws for the accommodation of large districts of people, unless those people would relinquish the right of Representation in the Legislature, a right inestimable to them and formidable to tyrants only. 
+He has called together legislative bodies at places unusual, uncomfortable, and distant from the depository of their public Records, for the sole purpose of fatiguing them into compliance with his measures. 
+He has dissolved Representative Houses repeatedly, for opposing with manly firmness his invasions on the rights of the people.
+He has refused for a long time, after such dissolutions, to cause others to be elected; whereby the Legislative powers, incapable of Annihilation, have returned to the People at large for their exercise; the State remaining in the mean time exposed to all the dangers of invasion from without, and convulsions within.
+He has endeavoured to prevent the population of these States; for that purpose obstructing the Laws for Naturalization of Foreigners; refusing to pass others to encourage their migrations hither, and raising the conditions of new Appropriations of Lands.
+He has obstructed the Administration of Justice, by refusing his Assent to Laws for establishing Judiciary powers.
+He has made Judges dependent on his Will alone, for the tenure of their offices, and the amount and payment of their salaries.
+He has erected a multitude of New Offices, and sent hither swarms of Officers to harrass our people, and eat out their substance.
+He has kept among us, in times of peace, Standing Armies without the Consent of our legislatures.
+He has affected to render the Military independent of and superior to the Civil power.
+He has combined with others to subject us to a jurisdiction foreign to our constitution, and unacknowledged by our laws; giving his Assent to their Acts of pretended Legislation:
+For Quartering large bodies of armed troops among us:
+For protecting them, by a mock Trial, from punishment for any Murders which they should commit on the Inhabitants of these States:
+For cutting off our Trade with all parts of the world:
+For imposing Taxes on us without our Consent: 
+For depriving us in many cases, of the benefits of Trial by Jury:
+For transporting us beyond Seas to be tried for pretended offences
+For abolishing the free System of English Laws in a neighbouring Province, establishing therein an Arbitrary government, and enlarging its Boundaries so as to render it at once an example and fit instrument for introducing the same absolute rule into these Colonies:
+For taking away our Charters, abolishing our most valuable Laws, and altering fundamentally the Forms of our Governments:
+For suspending our own Legislatures, and declaring themselves invested with power to legislate for us in all cases whatsoever.
+He has abdicated Government here, by declaring us out of his Protection and waging War against us.
+He has plundered our seas, ravaged our Coasts, burnt our towns, and destroyed the lives of our people.
+He is at this time transporting large Armies of foreign Mercenaries to compleat the works of death, desolation and tyranny, already begun with circumstances of Cruelty &amp; perfidy scarcely paralleled in the most barbarous ages, and totally unworthy the Head of a civilized nation.
+He has constrained our fellow Citizens taken Captive on the high Seas to bear Arms against their Country, to become the executioners of their friends and Brethren, or to fall themselves by their Hands. 
+He has excited domestic insurrections amongst us, and has endeavoured to bring on the inhabitants of our frontiers, the merciless Indian Savages, whose known rule of warfare, is an undistinguished destruction of all ages, sexes and conditions.
+
+In every stage of these Oppressions We have Petitioned for Redress in the most humble terms: Our repeated Petitions have been answered only by repeated injury. A Prince whose character is thus marked by every act which may define a Tyrant, is unfit to be the ruler of a free people.
+
+Nor have We been wanting in attentions to our Brittish brethren. We have warned them from time to time of attempts by their legislature to extend an unwarrantable jurisdiction over us. We have reminded them of the circumstances of our emigration and settlement here. We have appealed to their native justice and magnanimity, and we have conjured them by the ties of our common kindred to disavow these usurpations, which, would inevitably interrupt our connections and correspondence. They too have been deaf to the voice of justice and of consanguinity. We must, therefore, acquiesce in the necessity, which denounces our Separation, and hold them, as we hold the rest of mankind, Enemies in War, in Peace Friends.
+
+We, therefore, the Representatives of the united States of America, in General Congress, Assembled, appealing to the Supreme Judge of the world for the rectitude of our intentions, do, in the Name, and by Authority of the good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right ought to be Free and Independent States; that they are Absolved from all Allegiance to the British Crown, and that all political connection between them and the State of Great Britain, is and ought to be totally dissolved; and that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances, establish Commerce, and to do all other Acts and Things which Independent States may of right do. And for the support of this Declaration, with a firm reliance on the protection of divine Providence, we mutually pledge to each other our Lives, our Fortunes and our sacred Honor.
+
+The 56 signatures on the Declaration appear in the positions indicated:
+
+Column 1
+Georgia:
+   Button Gwinnett
+   Lyman Hall
+   George Walton
+
+Column 2
+North Carolina:
+   William Hooper
+   Joseph Hewes
+   John Penn
+South Carolina:
+   Edward Rutledge
+   Thomas Heyward, Jr.
+   Thomas Lynch, Jr.
+   Arthur Middleton
+
+Column 3
+Massachusetts:
+John Hancock
+Maryland:
+Samuel Chase
+William Paca
+Thomas Stone
+Charles Carroll of Carrollton
+Virginia:
+George Wythe
+Richard Henry Lee
+Thomas Jefferson
+Benjamin Harrison
+Thomas Nelson, Jr.
+Francis Lightfoot Lee
+Carter Braxton
+
+Column 4
+Pennsylvania:
+   Robert Morris
+   Benjamin Rush
+   Benjamin Franklin
+   John Morton
+   George Clymer
+   James Smith
+   George Taylor
+   James Wilson
+   George Ross
+Delaware:
+   Caesar Rodney
+   George Read
+   Thomas McKean
+
+Column 5
+New York:
+   William Floyd
+   Philip Livingston
+   Francis Lewis
+   Lewis Morris
+New Jersey:
+   Richard Stockton
+   John Witherspoon
+   Francis Hopkinson
+   John Hart
+   Abraham Clark
+
+Column 6
+New Hampshire:
+   Josiah Bartlett
+   William Whipple
+Massachusetts:
+   Samuel Adams
+   John Adams
+   Robert Treat Paine
+   Elbridge Gerry
+Rhode Island:
+   Stephen Hopkins
+   William Ellery
+Connecticut:
+   Roger Sherman
+   Samuel Huntington
+   William Williams
+   Oliver Wolcott
+New Hampshire:
+   Matthew Thornton</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR005</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>23</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>N</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR005</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>1</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR005</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>24</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>One Long Word</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR005</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION>ASDFGHJKLQWERTYUUUUUUIIIIIIIIIOOOOOOPPPPPPPPPPPPPPZXCVBNMasdfghjklqwertyuiiiopzxcvbnm</GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR005</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+<GCBCSRT>
+    <GCBCSRT_SURROGATE_ID>25</GCBCSRT_SURROGATE_ID>
+    <GCBCSRT_NAME>@</GCBCSRT_NAME>
+    <GCBCSRT_ACTIVE>Y</GCBCSRT_ACTIVE>
+    <GCBCSRT_USER_ID>CSRAOR005</GCBCSRT_USER_ID>
+    <GCBCSRT_ACTIVITY_DATE>02-02-2016</GCBCSRT_ACTIVITY_DATE>
+    <GCBCSRT_DESCRIPTION></GCBCSRT_DESCRIPTION>
+    <GCBCSRT_CREATOR_ID>CSRAOR005</GCBCSRT_CREATOR_ID>
+    <GCBCSRT_CREATE_DATE>02-02-2016</GCBCSRT_CREATE_DATE>
+    <GCBCSRT_VERSION></GCBCSRT_VERSION>
+    <GCBCSRT_DATA_ORIGIN></GCBCSRT_DATA_ORIGIN>
+    <GCBCSRT_VPDI_CODE></GCBCSRT_VPDI_CODE>
+</GCBCSRT>
+</dataroot>
