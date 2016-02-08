@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 import grails.util.GrailsUtil
@@ -65,7 +65,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
-            'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
+            'functionaltest': [  '/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
             'sde': ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
@@ -603,16 +603,16 @@ public class InputData {
                                 FROM Ctxsys.Ctx_User_Pending
                                WHERE Pnd_Index_name IN ('SSBSECT_SS_IDX','SCBCRSE_SC_IDX')
                             GROUP BY Pnd_Index_Name""")
-       // println "before sync ${rows}"
+        //println "before sync ${rows}"
         def syncRequired = false
         rows.each {
             if (it.CNT > 0) syncRequired = true
         }
-       // println "sync required ${syncRequired}"
+         //println "sync required ${syncRequired}"
         def user2 = db.firstRow("select user from dual")
-        // println "user2 ${user2}"
+        //  println "user2 ${user2}"
         if (syncRequired) {
-            println "sync in progress"
+           // println "sync in progress"
             db.call("""Begin
                        Ctxsys.ctx_ddl.sync_index('ssbsect_ss_idx');
                        Ctxsys.CTX_DDL.OPTIMIZE_INDEX('ssbsect_ss_idx','FULL');
@@ -623,7 +623,7 @@ public class InputData {
         rows = db.rows("""Select Pnd_Index_Name name, count(*) cnt,
                                   max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
                                   From Ctxsys.Ctx_User_Pending group by Pnd_Index_Name """)
-       // println "after sync ${rows}"
+        // println "after sync ${rows}"
         db.close()
     }
 
