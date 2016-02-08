@@ -81,6 +81,7 @@ public class SeedDataLoader {
                 else {
                     println "Committing  seed data"
                     groovySql.execute "{ call gb_common.p_commit() }"
+                    println "completed commit"
                     inputData.syncSsbSectOracleTextIndex()
                 }
             }
