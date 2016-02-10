@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <EVENT_VALIDATION_DATA>
     <GTVRATE>
@@ -70,6 +70,14 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
     <STVCAMP>
         <STVCAMP_CODE>S01</STVCAMP_CODE>
         <STVCAMP_DESC>South Campus</STVCAMP_DESC>
+        <STVCAMP_ACTIVITY_DATE>01-JAN-10</STVCAMP_ACTIVITY_DATE>
+        <STVCAMP_VERSION>0</STVCAMP_VERSION>
+        <STVCAMP_USER_ID>GRAILS</STVCAMP_USER_ID>
+        <STVCAMP_DATA_ORIGIN>GRAILS</STVCAMP_DATA_ORIGIN>
+    </STVCAMP>
+    <STVCAMP>
+        <STVCAMP_CODE>A</STVCAMP_CODE>
+        <STVCAMP_DESC>Addison Campus</STVCAMP_DESC>
         <STVCAMP_ACTIVITY_DATE>01-JAN-10</STVCAMP_ACTIVITY_DATE>
         <STVCAMP_VERSION>0</STVCAMP_VERSION>
         <STVCAMP_USER_ID>GRAILS</STVCAMP_USER_ID>
