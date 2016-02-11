@@ -199,7 +199,7 @@ class EventRegistrantDML {
                 catch (Exception e) {
                     connectInfo.tableUpdate("GERATTD", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
-                        println "Insert GERATTD ${this.genidenid}}"
+                        println "Insert GERATTD ${this.genidenid} "
                         println "Problem executing insert for table GERATTD from EventRegistrantDML.groovy: $e.message"
                     }
                 }

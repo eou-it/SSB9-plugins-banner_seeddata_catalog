@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -20,7 +20,7 @@ import java.sql.Statement
  *   3) do you want to run in debug (display sql statements) Y/N
  *   4-7) database connect info:  username, password, instance, hostname of database
  * */
-public class SeedDataLoader {
+public class  SeedDataLoader {
 
     def inputData
 
