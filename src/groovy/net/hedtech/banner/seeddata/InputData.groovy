@@ -235,13 +235,7 @@ public class InputData {
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMScheduleData.xml'],
             'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
             'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
-                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml'],
-            'classList' : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListTermData.xml',
-                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListCatalogData.xml',
-                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListScheduleData.xml',
-                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListComponentData.xml',
-                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData.xml',
-                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024925.xml']
+                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml']
     ]
 
 
