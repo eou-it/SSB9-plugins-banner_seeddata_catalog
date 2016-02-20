@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
-<!-- *****************************************************************************
-Copyright 2014 Ellucian Company L.P. and its affiliates.
- ********************************************************************************* -->
+<!-- Copyright 2014-2016 Ellucian Company L.P. and its affiliates. -->
 <TERMDATA>
     <STVTERM>
         <STVTERM_CODE>201440</STVTERM_CODE>
@@ -383,7 +381,7 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
         <SHBGCTL_TERM_CODE>201440</SHBGCTL_TERM_CODE>
         <SHBGCTL_USER_ID>GRAILS</SHBGCTL_USER_ID>
         <SHBGCTL_ACTIVITY_DATE>01-JAN-10</SHBGCTL_ACTIVITY_DATE>
-        <SHBGCTL_FIN_SCORE_CUTOFF>30-DEC-15</SHBGCTL_FIN_SCORE_CUTOFF>
+        <SHBGCTL_FIN_SCORE_CUTOFF>30-DEC-20</SHBGCTL_FIN_SCORE_CUTOFF>
         <SHBGCTL_FIN_SCORE_DESC />
         <SHBGCTL_MID_SCORE_CUTOFF>30-DEC-15</SHBGCTL_MID_SCORE_CUTOFF>
         <SHBGCTL_MID_SCORE_DESC />

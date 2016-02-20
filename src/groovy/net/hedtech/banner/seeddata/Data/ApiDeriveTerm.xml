@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2014 Ellucian Company L.P. and its affiliates.
+Copyright 2014-2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <STUDENTDATA>
     <GTVINSM>
@@ -66,7 +66,7 @@ Copyright 2014 Ellucian Company L.P. and its affiliates.
         <SOBODTE_TERM_CODE>201510</SOBODTE_TERM_CODE>
         <SOBODTE_INSM_CODE>ELEV8</SOBODTE_INSM_CODE>
         <SOBODTE_REG_START_DATE>01-JAN-15</SOBODTE_REG_START_DATE>
-        <SOBODTE_REG_END_DATE>31-DEC-15</SOBODTE_REG_END_DATE>
+        <SOBODTE_REG_END_DATE>31-DEC-21</SOBODTE_REG_END_DATE>
         <SOBODTE_CENSUS_DATE_ONE>1-FEB-15</SOBODTE_CENSUS_DATE_ONE>
         <SOBODTE_OVERRIDE_IND>N</SOBODTE_OVERRIDE_IND>
         <SOBODTE_ACTIVITY_DATE>01-JAN-10</SOBODTE_ACTIVITY_DATE>
