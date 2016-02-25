@@ -93,6 +93,9 @@ public class APIClasses {
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
 
+            'GCBCSRT' : 'net.hedtech.banner.seeddata.Gcbcsrt',
+            'GCRCSRS' : 'net.hedtech.banner.seeddata.Gcbcsrt',
+
             'FINANCEFISCAYEAR' :'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'      :'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
             'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
@@ -123,7 +126,9 @@ public class APIClasses {
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML'
+            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
+            'GCBCSRT' : 'net.hedtech.banner.seeddata.Gcbcsrt',
+            'GCRCSRS' : 'net.hedtech.banner.seeddata.Gcbcsrt',
     ]
 
 
