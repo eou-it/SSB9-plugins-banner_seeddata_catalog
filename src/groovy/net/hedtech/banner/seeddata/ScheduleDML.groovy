@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -79,6 +79,7 @@ public class ScheduleDML {
     def ssbsect_score_cutoff_date
     def ssbsect_reas_score_open_date
     def ssbsect_reas_score_ctof_date
+    def ssbsect_override_dur_ind
 
     java.sql.RowId ssbsectRow = null
     // database connection information
@@ -172,6 +173,7 @@ public class ScheduleDML {
         this.ssbsect_score_cutoff_date = sch.SSBSECT_SCORE_CUTOFF_DATE.text()
         this.ssbsect_reas_score_open_date = sch.SSBSECT_REAS_SCORE_OPEN_DATE.text()
         this.ssbsect_reas_score_ctof_date = sch.SSBSECT_REAS_SCORE_CTOF_DATE.text()
+        this.ssbsect_override_dur_ind =  sch.SSBSECT_OVERRIDE_DUR_IND.text()
     }
 
 
@@ -740,7 +742,7 @@ public class ScheduleDML {
                     "?,?,?,?,?," +
                     "?,?,?,?,?," +
                     "?,?,?,?," +
-                    "?,?,?,?)}"
+                    "?,?,?,?,?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
             // parm 1 p_term_code        ssbsect_term_code VARCHAR2
             insertCall.setString(1, this.ssbsect_term_code)
@@ -1122,6 +1124,13 @@ public class ScheduleDML {
                 insertCall.setDate(68, sqlDate)
             }
 
+            // param 69 p_override_dur_ind   ssbsect_override_dur_ind varchar2
+            if ((this.ssbsect_override_dur_ind == "") || (this.ssbsect_override_dur_ind == null) || (!this.ssbsect_override_dur_ind)) { insertCall.setString(69,'N') }
+            else {
+                insertCall.setString(69, this.ssbsect_override_dur_ind)
+            }
+
+
             if (connectInfo.debugThis) {
                 println "Update SSBSECT ${this.ssbsect_term_code} ${this.ssbsect_crn} ${this.ssbsect_ptrm_code}"
             }
@@ -1169,7 +1178,7 @@ public class ScheduleDML {
                     "?,?,?,?,?," +
                     "?,?,?,?,?," +
                     "?,?,?,?," +
-                    "?,?,?,?)}"
+                    "?,?,?,?,?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
 
             // parm 1 p_term_code  ssbsect_term_code VARCHAR2
@@ -1548,6 +1557,12 @@ public class ScheduleDML {
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
                 java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                 insertCall.setDate(68, sqlDate)
+            }
+
+            // param 69 p_override_dur_ind   ssbsect_override_dur_ind varchar2
+            if ((this.ssbsect_override_dur_ind == "") || (this.ssbsect_override_dur_ind == null) || (!this.ssbsect_override_dur_ind)) { insertCall.setString(69,'N') }
+            else {
+                insertCall.setString(69, this.ssbsect_override_dur_ind)
             }
 
             if (connectInfo.debugThis) {

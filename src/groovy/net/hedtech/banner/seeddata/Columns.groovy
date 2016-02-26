@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -70,7 +70,11 @@ public class Columns {
         def data = new XmlSlurper().parseText(xmlRec)
         data.each { table ->
             table.children().each() { fields ->
-                def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
+                def value
+                if ((this.tableName in ['GCBQURY','GCRCFLD','GCBTMPL']))
+                    value = fields.text()
+                else
+                        value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
                 if (value) {
                     def map = [column: fields.name(), value: value]
                     this.columnValues.add(map)
@@ -277,7 +281,7 @@ public class Columns {
             }
         }
 
-        String deleteSQL = "delete ${this.tableName} where "
+        String deleteSQL = "delete from ${this.tableName} where "
         def colCnt = 0
         def updCnt = 0
         while (colCnt < deleteColumns.size()) {

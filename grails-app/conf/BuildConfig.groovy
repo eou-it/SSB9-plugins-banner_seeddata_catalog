@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2015 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -7,11 +7,8 @@ grails.project.test.reports.dir = "target/test-reports"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.plugin.location.'banner-core'="../banner_core.git"
-grails.plugin.location.'i18n-core'="../i18n_core.git"
-grails.plugin.location.'banner-codenarc'="../banner_codenarc.git"
-grails.plugin.location.'spring-security-cas'="../spring_security_cas.git"
 
-grails.project.dependency.resolver = "ivy" // or maven
+grails.project.dependency.resolver = "maven" // or maven
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -21,16 +18,15 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
-        if (System.properties['PROXY_SERVER_NAME']) {
+        if ( System.properties[ 'PROXY_SERVER_NAME' ] ) {
             mavenRepo "${System.properties['PROXY_SERVER_NAME']}"
-        } else {
         }
-
-        grailsPlugins()
-        grailsHome()
         grailsCentral()
+        mavenCentral()
         mavenRepo "http://repository.jboss.org/maven2/"
-        mavenRepo "http://repository.codehaus.org"
+        mavenRepo "http://download.java.net/maven/2/"
+        mavenRepo "http://repo.grails.org/grails/repo"
+
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         //mavenLocal()
@@ -43,10 +39,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        runtime  ":hibernate:3.6.10.10"
-        compile ":tomcat:7.0.52.1"
-        compile ':resources:1.2.7' // If the functional-test plugin is being used
-        compile ":functional-test:2.0.0" // If the functional-test plugin is being used
+
 
     }
 
