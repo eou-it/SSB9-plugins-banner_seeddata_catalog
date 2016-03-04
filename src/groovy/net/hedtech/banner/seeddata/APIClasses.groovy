@@ -84,7 +84,6 @@ public class APIClasses {
             'SORNOTE' : 'net.hedtech.banner.seeddata.SornoteDML',
             'FLEXREGFEE' : 'net.hedtech.banner.seeddata.FlexRegFeeDML',
             'SMBPGEN' : 'net.hedtech.banner.seeddata.CappProgramRequirementDML',
-
             'STVGCHG' : 'net.hedtech.banner.seeddata.GradeChangeReasonDML',
             'GCRFLDR' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCRCFLD' : 'net.hedtech.banner.seeddata.GcrfldrDML',
@@ -124,9 +123,9 @@ public class APIClasses {
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
-            'GCBCSRT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
-            'GCRCSRS' : 'net.hedtech.banner.seeddata.GcbcsrtDML'
+            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML'
+            //'GCBCSRT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
+            //'GCRCSRS' : 'net.hedtech.banner.seeddata.GcbcsrtDML'
     ]
 
 

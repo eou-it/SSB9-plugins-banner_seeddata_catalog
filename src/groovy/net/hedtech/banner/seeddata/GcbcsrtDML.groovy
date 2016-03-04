@@ -23,8 +23,12 @@ public class GcbcsrtDML {
     def Batch batch
     def deleteNode
 
+    def pidm
+    def bannerid
+
 
     public GcbcsrtDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
+
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -40,17 +44,11 @@ public class GcbcsrtDML {
      *
      */
     def processGcbcsrt() {
+        def apiData = new XmlParser().parseText(xmlData)
 
         def studentId = apiData.BANNERID?.text()
         def studentPidm
         def spridenRow
-
-        //special xml characters are getting scrubbed from the xml for some reason. So doing this hack to re-introduce them into
-        //the xml before it gets parsed by the xml parser
-        def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
-        def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
-
-        def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
 
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBCSRT") {
