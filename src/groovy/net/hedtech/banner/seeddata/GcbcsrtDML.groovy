@@ -88,7 +88,7 @@ public class GcbcsrtDML {
 
     def deleteData() {
         deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_CSRT_ID in ( select GCBCSRT_SURROGATE_ID from GCBCSRT ) ")
-        deleteData("GCBCSRT", "delete from GCBTMPL where GCBTMPL_folder_id  = ?   ")
+        deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ?   ")
     }
 
     def deleteData(String tableName, String sql) {
