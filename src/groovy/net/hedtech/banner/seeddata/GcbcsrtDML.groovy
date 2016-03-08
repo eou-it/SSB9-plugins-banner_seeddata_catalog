@@ -11,7 +11,7 @@ import java.sql.Connection
  * Provide PIDM to student.
  */
 
-public class GcbcsrtDML {
+public class GcbcsrtDML{
 
     def InputData connectInfo
     Sql conn
