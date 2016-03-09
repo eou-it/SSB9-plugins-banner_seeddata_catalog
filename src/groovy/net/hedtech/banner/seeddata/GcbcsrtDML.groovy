@@ -22,10 +22,8 @@ public class GcbcsrtDML{
     List indexColumns
     def Batch batch
     def deleteNode
-
     def pidm
     def bannerid
-
 
     public GcbcsrtDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
 
@@ -50,11 +48,7 @@ public class GcbcsrtDML{
         def studentPidm
         def spridenRow
 
-        // update the curr rule with the one that is selected
-        if (connectInfo.tableName == "GCBCSRT") {
-            // delete data so we can re-add instead of update so all child data is refreshed
-            deleteData()
-        } else if (connectInfo.tableName == "GCRCSRS") {
+      if (connectInfo.tableName == "GCRCSRS") {
             //lookup pidm and set based on banner id
             if (studentId) {
                 String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
@@ -71,7 +65,6 @@ public class GcbcsrtDML{
             if (connectInfo.debugThis) {
                 println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
             }
-
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
@@ -86,11 +79,14 @@ public class GcbcsrtDML{
         def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
     }
 
+    /*
     def deleteData() {
         deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_CSRT_ID in ( select GCBCSRT_SURROGATE_ID from GCBCSRT ) ")
         deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ?   ")
     }
+    */
 
+    /*
     def deleteData(String tableName, String sql) {
         try {
 
@@ -105,6 +101,7 @@ public class GcbcsrtDML{
             }
         }
     }
+    */
 
 }
 
