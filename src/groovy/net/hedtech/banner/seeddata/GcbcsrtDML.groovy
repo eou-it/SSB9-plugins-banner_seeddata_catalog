@@ -67,6 +67,25 @@ public class GcbcsrtDML{
             }
         }
 
+        if (connectInfo.tableName == "GCRCSRS") {
+            //lookup pidm and set based on banner id
+            if (studentId) {
+                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
+                spridenRow = conn.firstRow(findPidm, [studentId])
+                if (spridenRow) {
+                    studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+                    apiData.GCRCSRS_PIDM[0].setValue(studentPidm)
+                    println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
+                } else {
+                    println "No record found for student ID ${studentId}"
+                }
+            }
+            //debug
+            if (connectInfo.debugThis) {
+                println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
+            }
+        }
+
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() { fields ->
