@@ -48,22 +48,110 @@ public class GcbcsrtDML{
         def studentPidm
         def spridenRow
 
-      if (connectInfo.tableName == "GCRCSRS") {
+
+
+        if (connectInfo.tableName == "SPRIDEN") {
+            //lookup pidm and set based on banner id
+
+            if (studentId) {
+                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
+                spridenRow = conn.firstRow(findPidm, [studentId])
+            }
+            else {
+                println "No record found for student ID ${studentId}"
+            }
+
+            if (spridenRow) {
+              studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+              apiData.SPRIDEN_PIDM[0].setValue(studentPidm)
+              println "SPRIDEN Record student ID ${studentId} pidm ${studentPidm}"
+            }
+            //debug
+            if (connectInfo.debugThis) {
+                println "SPRIDEN Record student ID ${studentId} pidm ${studentPidm}"
+            }
+        }
+
+        if (connectInfo.tableName == "GOBTPAC") {
             //lookup pidm and set based on banner id
             if (studentId) {
                 String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
                 spridenRow = conn.firstRow(findPidm, [studentId])
-                if (spridenRow) {
-                    studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                    apiData.GCRCSRS_PIDM[0].setValue(studentPidm)
-                    println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
-                } else {
-                    println "No record found for student ID ${studentId}"
-                }
+            }
+            else {
+                println "No record found for student ID ${studentId}"
+            }
+
+            if (spridenRow) {
+                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+                apiData.GOBTPAC_PIDM[0].setValue(studentPidm)
+                println "GOBTPAC Record student ID ${studentId} pidm ${studentPidm}"
             }
             //debug
             if (connectInfo.debugThis) {
-                println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
+                println "GOBTPAC Record student ID ${studentId} pidm ${studentPidm}"
+            }
+        }
+
+        if (connectInfo.tableName == "GOBEACC") {
+            //lookup pidm and set based on banner id
+            if (studentId) {
+                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
+                spridenRow = conn.firstRow(findPidm, [studentId])
+            }
+            else {
+                println "No record found for student ID ${studentId}"
+            }
+
+            if (spridenRow) {
+                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+                apiData.GOBEACC_PIDM[0].setValue(studentPidm)
+                println "GOBEACC Record student ID ${studentId} pidm ${studentPidm}"
+            }
+            //debug
+            if (connectInfo.debugThis) {
+                println "GOBEACC Record student ID ${studentId} pidm ${studentPidm}"
+            }
+        }
+
+        if (connectInfo.tableName == "SGBSTDN") {
+            //lookup pidm and set based on banner id
+            if (studentId) {
+                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
+                spridenRow = conn.firstRow(findPidm, [studentId])
+            }
+            else {
+                println "No record found for student ID ${studentId}"
+            }
+            if (spridenRow) {
+                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+                apiData.SGBSTDN_PIDM[0].setValue(studentPidm)
+                println "SGBSTDN Record student ID ${studentId} pidm ${studentPidm}"
+            }
+            //debug
+            if (connectInfo.debugThis) {
+                println "SGBSTDN Record student ID ${studentId} pidm ${studentPidm}"
+            }
+        }
+
+        if (connectInfo.tableName == "SORLFOS") {
+            //lookup pidm and set based on banner id
+            if (studentId) {
+                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
+                spridenRow = conn.firstRow(findPidm, [studentId])
+            }
+            else {
+                println "No record found for student ID ${studentId}"
+            }
+
+            if (spridenRow) {
+                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+                apiData.SORLFOS_PIDM[0].setValue(studentPidm)
+                println "SORLFOS Record student ID ${studentId} pidm ${studentPidm}"
+            }
+            //debug
+            if (connectInfo.debugThis) {
+                println "SORLFOS Record student ID ${studentId} pidm ${studentPidm}"
             }
         }
 
@@ -72,13 +160,14 @@ public class GcbcsrtDML{
             if (studentId) {
                 String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
                 spridenRow = conn.firstRow(findPidm, [studentId])
-                if (spridenRow) {
-                    studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                    apiData.GCRCSRS_PIDM[0].setValue(studentPidm)
-                    println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
-                } else {
-                    println "No record found for student ID ${studentId}"
-                }
+            }
+            else {
+                println "No record found for student ID ${studentId}"
+            }
+            if (spridenRow) {
+                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
+                apiData.GCRCSRS_PIDM[0].setValue(studentPidm)
+                println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
             }
             //debug
             if (connectInfo.debugThis) {
@@ -97,30 +186,5 @@ public class GcbcsrtDML{
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
     }
-
-    /*
-    def deleteData() {
-        deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_CSRT_ID in ( select GCBCSRT_SURROGATE_ID from GCBCSRT ) ")
-        deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ?   ")
-    }
-    */
-
-    /*
-    def deleteData(String tableName, String sql) {
-        try {
-
-            int delRows = conn.executeUpdate(sql, [templateSeq])
-            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                connectInfo.tableUpdate(tableName, 0, 0, 0, 1, 0)
-                println "Problem executing delete for template ${template} ${templateSeq} from GcbcsrtDML.groovy for ${connectInfo.tableName}: $e.message"
-                println "${sql}"
-            }
-        }
-    }
-    */
-
 }
 
