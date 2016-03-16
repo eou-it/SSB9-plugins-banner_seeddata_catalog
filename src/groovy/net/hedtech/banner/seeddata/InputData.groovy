@@ -143,7 +143,7 @@ public class InputData {
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
             'ssbgeneralstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
-            'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml ',
+            'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFiscalYear.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionHeader.xml',
