@@ -24,9 +24,9 @@ public class GcbcsrtDML{
     def deleteNode
     def pidm
     def bannerid
+    def apiData = new XmlParser().parseText(xmlData)
 
     public GcbcsrtDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
-
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -34,6 +34,7 @@ public class GcbcsrtDML{
         this.columns = columns
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
+        processStudent()
         processGcbcsrt()
     }
 
@@ -41,138 +42,38 @@ public class GcbcsrtDML{
      * Process the Action Item Table records.
      *
      */
+
+    def processStudent() {
+
+        String ssql = """select * from spriden  where spriden_id = ? and spriden_change_ind is null"""
+        def cntSpriden = 0
+
+        try {
+            this.conn.eachRow(ssql, [apiData.SPRIDEN_ID.text()]) {trow ->
+                pidm = trow.spriden_pidm
+                cntSpriden++
+            }
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select ID in StudentPersonIDDML,  ${apiData.SPRIDEN_ID.text()}  from SPRIDEN. $e.message"
+            }
+        }
+        if (cntSpriden == 0) {
+            def newSpriden = new StudentPersonIDDML(connectInfo, conn, connectCall, xmlData)
+            connectInfo.saveStudentPidm = newSpriden.pidm
+        }
+        else {
+            connectInfo.saveStudentPidm = pidm
+        }
+
+    }
+
     def processGcbcsrt() {
-        def apiData = new XmlParser().parseText(xmlData)
 
-        def studentId = apiData.BANNERID?.text()
-        def studentPidm
-        def spridenRow
-
-
-
-        if (connectInfo.tableName == "SPRIDEN") {
-            //lookup pidm and set based on banner id
-
-            if (studentId) {
-                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
-                spridenRow = conn.firstRow(findPidm, [studentId])
-            }
-            else {
-                println "No record found for student ID ${studentId}"
-            }
-
-            if (spridenRow) {
-              studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-              apiData.SPRIDEN_PIDM[0].setValue(studentPidm)
-              println "SPRIDEN Record student ID ${studentId} pidm ${studentPidm}"
-            }
-            //debug
-            if (connectInfo.debugThis) {
-                println "SPRIDEN Record student ID ${studentId} pidm ${studentPidm}"
-            }
-        }
-
-        if (connectInfo.tableName == "GOBTPAC") {
-            //lookup pidm and set based on banner id
-            if (studentId) {
-                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
-                spridenRow = conn.firstRow(findPidm, [studentId])
-            }
-            else {
-                println "No record found for student ID ${studentId}"
-            }
-
-            if (spridenRow) {
-                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                apiData.GOBTPAC_PIDM[0].setValue(studentPidm)
-                println "GOBTPAC Record student ID ${studentId} pidm ${studentPidm}"
-            }
-            //debug
-            if (connectInfo.debugThis) {
-                println "GOBTPAC Record student ID ${studentId} pidm ${studentPidm}"
-            }
-        }
-
-        if (connectInfo.tableName == "GOBEACC") {
-            //lookup pidm and set based on banner id
-            if (studentId) {
-                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
-                spridenRow = conn.firstRow(findPidm, [studentId])
-            }
-            else {
-                println "No record found for student ID ${studentId}"
-            }
-
-            if (spridenRow) {
-                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                apiData.GOBEACC_PIDM[0].setValue(studentPidm)
-                println "GOBEACC Record student ID ${studentId} pidm ${studentPidm}"
-            }
-            //debug
-            if (connectInfo.debugThis) {
-                println "GOBEACC Record student ID ${studentId} pidm ${studentPidm}"
-            }
-        }
-
-        if (connectInfo.tableName == "SGBSTDN") {
-            //lookup pidm and set based on banner id
-            if (studentId) {
-                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
-                spridenRow = conn.firstRow(findPidm, [studentId])
-            }
-            else {
-                println "No record found for student ID ${studentId}"
-            }
-            if (spridenRow) {
-                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                apiData.SGBSTDN_PIDM[0].setValue(studentPidm)
-                println "SGBSTDN Record student ID ${studentId} pidm ${studentPidm}"
-            }
-            //debug
-            if (connectInfo.debugThis) {
-                println "SGBSTDN Record student ID ${studentId} pidm ${studentPidm}"
-            }
-        }
-
-        if (connectInfo.tableName == "SORLFOS") {
-            //lookup pidm and set based on banner id
-            if (studentId) {
-                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
-                spridenRow = conn.firstRow(findPidm, [studentId])
-            }
-            else {
-                println "No record found for student ID ${studentId}"
-            }
-
-            if (spridenRow) {
-                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                apiData.SORLFOS_PIDM[0].setValue(studentPidm)
-                println "SORLFOS Record student ID ${studentId} pidm ${studentPidm}"
-            }
-            //debug
-            if (connectInfo.debugThis) {
-                println "SORLFOS Record student ID ${studentId} pidm ${studentPidm}"
-            }
-        }
 
         if (connectInfo.tableName == "GCRCSRS") {
-            //lookup pidm and set based on banner id
-            if (studentId) {
-                String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
-                spridenRow = conn.firstRow(findPidm, [studentId])
-            }
-            else {
-                println "No record found for student ID ${studentId}"
-            }
-            if (spridenRow) {
-                studentPidm = spridenRow.SPRIDEN_PIDM.toString()
-                apiData.GCRCSRS_PIDM[0].setValue(studentPidm)
-                println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
-            }
-            //debug
-            if (connectInfo.debugThis) {
-                println "Gcrcsrs Record student ID ${studentId} pidm ${studentPidm}"
-            }
+          apiData.GCRCSRS_PIDM[0].setValue(connectInfo.saveStudentPidm)
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
