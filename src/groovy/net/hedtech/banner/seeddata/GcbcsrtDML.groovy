@@ -1,34 +1,36 @@
 /*********************************************************************************
- Copyright 2015 Ellucian Company L.P. and its affiliates.
+ Copyright 2016 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
+import org.apache.commons.lang.StringUtils
+
 import java.sql.Connection
 
 /**
- * Action Item tables
- * Provide PIDM to student.
+ * Gcbcsrt tables
+ * replace the curr rule in the xml
  */
 
-public class GcbcsrtDML{
-
+public class GcbcsrtDML {
+    int itemSeq
+    int itemPidm
+    def item = null
+    def itemTerm
     def InputData connectInfo
     Sql conn
     Connection connectCall
-    java.sql.RowId tableRow = null
     def xmlData
     List columns
     List indexColumns
     def Batch batch
     def deleteNode
-    def pidm
-    def bannerid
-    def apiData = new XmlParser().parseText(xmlData)
-    int itemSeq
-    def item = null
 
-    public GcbcsrtDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
+
+    public GcbcsrtDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
+                      def deleteNode) {
+
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -36,121 +38,120 @@ public class GcbcsrtDML{
         this.columns = columns
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
-        //processStudent()
         processGcbcsrt()
+
     }
 
     /**
-     * Process the Action Item Table records.
+     * Process the gcbcsrt records.   The item attribute gives us the surrogate key to the gcbcsrt which
+     * is the item ID on the gcbqury, gcrcfld, gcbtmpl records.  The template attribute on gcbemtl plus the
+     * item gets us the parent gcbtmpl record.
      *
      */
 
-    def processStudent() {
-
-
-        String ssql = """select * from spriden  where spriden_id = ? and spriden_change_ind is null"""
-        def cntSpriden = 0
-
-        try {
-            this.conn.eachRow(ssql, [apiData.BANNERID.text()]) {trow ->
-                pidm = trow.spriden_pidm
-                cntSpriden++
-            }
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select ID in StudentPersonIDDML,  ${apiData.BANNERID.text()}  from SPRIDEN. $e.message"
-            }
-        }
-        if (cntSpriden == 0) {
-            def newSpriden = new StudentPersonIDDML(connectInfo, conn, connectCall, xmlData)
-            connectInfo.saveStudentPidm = newSpriden.pidm
-        }
-        else {
-            connectInfo.saveStudentPidm = pidm
-        }
-
-
-    }
-
     def processGcbcsrt() {
+        //special xml characters are getting scrubbed from the xml for some reason. So doing this hack to re-introduce them into
+        //the xml before it gets parsed by the xml parser
+        /*
+        def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
+        def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
+        def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
+        */
 
-        String ssql = """select * from gcbcsrt  where gcbcsrt_name = ? """
-        // find if the action item already exists in the database and use it's curr_rule for inserting into the db
-        try {
-            def itemSeqR = this.conn.firstRow(ssql, [apiData.GCBCSRT_NAME.text()])
+        def apiData = new XmlParser().parseText(xmlData)
 
-            println "itemSeqR: " + itemSeqR
-
-            if ( itemSeqR) {
-                itemSeq = itemSeqR?.GCBCSRT_SURROGATE_ID
-            }
-            else itemSeq = 0
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Action Item ID in GcbcsrtDML,  ${apiData.GCBCSRT_NAME.text()} from GCBCSRT " +
-                        "for ${connectInfo.tableName}. $e.message"
-            }
-        }
-
+        // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBCSRT") {
-            deleteData()
-            println "deleting data"
+
+            def curid = apiData.GCBCSRT_SURROGATE_ID.text()
+
+            processDelete("GCRCSRS", "delete from GCRCSRS where GCRCSRS_CSRT_ID  = ? ", curid)
+            processDelete("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ?", curid)
+
+
+            /*
+            String ssql = """select * from gcbcsrt  where GCBCSRT_SURROGATE_ID = ? """
+
+            def itemSeqR = this.conn.firstRow(ssql, [apiData.GCBCSRT_SURROGATE_ID.text()])
+
+            if (itemSeqR) {
+                itemSeq = itemSeqR?.GCBCSRT_SURROGATE_ID
+            } else itemSeq = 0
+
+            println "itemSeq: " + itemSeq
+
+            if (itemSeq != 0) {
+
+            }
+            */
+
+            def isql
+            try {
+                isql = """insert into gcbcsrt
+                   (
+                    GCBCSRT_SURROGATE_ID,
+                    GCBCSRT_NAME  ,
+                    GCBCSRT_ACTIVE ,
+                    GCBCSRT_USER_ID,
+                    GCBCSRT_ACTIVITY_DATE ,
+                    GCBCSRT_DESCRIPTION ,
+                    GCBCSRT_CREATOR_ID ,
+                    GCBCSRT_CREATE_DATE
+                     )
+                 values (?,?,?,?,?,?,?,?)
+                """
+                this.conn.executeInsert(isql, [
+                        apiData.GCBCSRT_SURROGATE_ID.text(),
+                        apiData.GCBCSRT_NAME.text(),
+                        apiData.GCBCSRT_ACTIVE.text(),
+                        apiData.GCBCSRT_USER_ID.text(),
+                        apiData.GCBCSRT_ACTIVITY_DATE.text(),
+                        apiData.GCBCSRT_DESCRIPTION.text(),
+                        apiData.GCBCSRT_CREATOR_ID.text(),
+                        apiData.GCBCSRT_CREATOR_DATE.text()])
+                connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 0, 1, 0)
+                    println isql
+                    println apiData
+                    println "Could not insert into GCBCSRT in GcbcsrtDML, ${apiData.GCBCSRT_NAME.text()} for ${connectInfo.tableName}. $e.message"
+                }
+            }
         }
 
-        if (connectInfo.tableName == "GCRCSRS") {
-          apiData.GCRCSRS_PIDM[0].setValue(connectInfo.saveStudentPidm)
-        if (apiData.GCRCSRS_CSRT_ID.text().toInteger() != itemSeq) {
-            apiData.GCRCSRS_CSRT_ID[0].setValue(itemSeq.toString()
-            )
-
-            println itemSeq.toString()
-        }
-
-        }
 
         // parse the xml  back into  gstring for the dynamic sql loader
-        def xmlRecNew = "<${apiData.name()}>\n"
-        apiData.children().each() { fields ->
-            def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
-            xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
-        }
-        xmlRecNew += "</${apiData.name()}>\n"
 
-        // parse the data using dynamic sql for inserts and updates
-        def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
+        if (connectInfo.tableName != "GCBCSRT") {
+            def xmlRecNew = "<${apiData.name()}>\n"
+            apiData.children().each() { fields ->
+                def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
+                xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
+            }
+            xmlRecNew += "</${apiData.name()}>\n"
+
+            // parse the data using dynamic sql for inserts and updates
+            def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
+        }
+
     }
 
 
-    def deleteData() {
-        String deleteSQL = "delete from gcrcsrs where gcrcsrs_pidm = ${connectInfo.saveStudentPidm}"
-        try {
-            def cntDel = conn.executeUpdate(deleteSQL)
-            connectInfo.tableUpdate("GCRCSRS", 0, 0, 0, 0, cntDel)
-            //println "delete GCRCSRS ${connectInfo.saveStudentPidm} ${this.ID} ${this.lastName}"
-        }
-        catch (Exception e) {
-            connectInfo.tableUpdate("GCRCSRS", 0, 0, 0, 1, 0)
-            if (connectInfo.showErrors) {
-                println "Problem executing delete GCRCSRS ${connectInfo.saveStudentPidm} ${this.ID} ${this.lastName}" +
-                        " from GcbcsrtDML.groovy: $e.message"
-            }
-        }
+    def processDelete(String tableName, String sql, String itemKey) {
 
-        deleteSQL = "delete from gcbcsrt"
         try {
-            def cntDel = conn.executeUpdate(deleteSQL)
-            connectInfo.tableUpdate("GCBCSRT", 0, 0, 0, 0, cntDel)
+            int delRows = conn.executeUpdate(sql, [itemKey])
+            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
         catch (Exception e) {
-            connectInfo.tableUpdate("GCBCSRT", 0, 0, 0, 1, 0)
             if (connectInfo.showErrors) {
-                println "Problem executing delete GCBCSRT ${connectInfo.saveStudentPidm} ${this.ID} ${this.lastName}" +
-                        " from GcbcsrtDML.groovy: $e.message"
+                connectInfo.tableUpdate(tableName, 0, 0, 0, 1,0)
+                println "Problem executing delete for item ${item} ${itemKey} from GcbcsrtDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
             }
         }
     }
 
 }
-
