@@ -64,8 +64,8 @@ public class GcbcsrtDML {
         if (connectInfo.tableName == "GCBCSRT") {
 
             def curid = apiData.GCBCSRT_SURROGATE_ID.text()
-
             processDelete("GCRCSRS", "delete from GCRCSRS where GCRCSRS_CSRT_ID  = ? ", curid)
+            processDelete("GCRACNT", "delete from GCRACNT where GCRACNT_SURROGATE_ID  = ?", curid)
             processDelete("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ?", curid)
 
 
