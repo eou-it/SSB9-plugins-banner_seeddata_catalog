@@ -232,7 +232,9 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
-
+            'structured-progcat': ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbproo.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbareo.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbcrso.xml'],
             'student-academic-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewAdministrator.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewTermData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewCatalogData.xml',
