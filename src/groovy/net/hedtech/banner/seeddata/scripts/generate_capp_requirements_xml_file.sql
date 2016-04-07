@@ -81,7 +81,8 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRGD','SELECT * FROM S
    INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRGC','SELECT * FROM SMRPRGC WHERE SMRPRGC_PROGRAM LIKE  ''' || :program || ''''   );   
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPAAP','SELECT * FROM SMRPAAP WHERE SMRPAAP_PROGRAM LIKE  ''' || :program || ''''   );      
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMBPVPR','SELECT * FROM SMBPVPR WHERE SMBPVPR_PROGRAM LIKE  ''' || :program || ''''   );      
--- 
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBPROS','SELECT	* FROM SKBPROS where SKBPROS_program like  ''' || :program || ''''   );
+--
 -- Area requirements from SMAALIB and SMAAQUA
 --
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRAQUA','SELECT * FROM SMRAQUA WHERE EXISTS ( SELECT 1 
@@ -250,7 +251,14 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRARLT','SELECT * FROM S
                                                                                                         FROM SMRARLT sel,  SMRPAAP
                                                                                                        WHERE sel.SMRARLT_AREA = SMRARLT.SMRARLT_AREA
                                                                                                          AND sel.SMRARLT_AREA = SMRPAAP_AREA
-                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' ); 
+                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBARES','SELECT * FROM SKBARES WHERE EXISTS ( SELECT 1
+                                                                                                        FROM SKBARES sel,  SMRPAAP
+                                                                                                       WHERE sel.SKBARES_AREA = SKBARES.SKBARES_AREA
+                                                                                                         AND sel.SKBARES_AREA = SMRPAAP_AREA
+                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
 --
 -- Group requirements
 --
@@ -360,6 +368,20 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRGRLT','SELECT * FROM S
                                                                                                          AND sel.SMRGRLT_GROUP = SMRAGAM_GROUP
                                                                                                          AND SMRAGAM_AREA = SMRPAAP_AREA
                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBGROS','SELECT * FROM SKBGROS WHERE EXISTS (  SELECT 1
+                                                                                                        FROM SKBGROS sel, SMRAGAM, SMRPAAP
+                                                                                                       WHERE sel.SKBGROS_GROUP = SKBGROS.SKBGROS_GROUP
+                                                                                                         AND sel.SKBGROS_GROUP = SMRAGAM_GROUP
+                                                                                                         AND SMRAGAM_AREA = SMRPAAP_AREA
+                                                                                                        AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBRULS','SELECT * FROM SKBRULS WHERE EXISTS (  SELECT 1
+                                                                                                        FROM SKBRULS sel, SMRPAAP
+                                                                                                       WHERE sel.SKBRULS_AREA = SKBRULS.SKBRULS_AREA
+                                                                                                         AND sel.SKBRULS_AREA = SMRPAAP_AREA
+                                                                                                        AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
 
 set term on
 set echo on
