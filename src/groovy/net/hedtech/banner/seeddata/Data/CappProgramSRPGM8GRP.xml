@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>                                                                 
 <!-- *****************************************************************************     
-Copyright 2015 Ellucian Company L.P. and its affiliates.                               
+Copyright 2016 Ellucian Company L.P. and its affiliates.                               
 ********************************************************************************* -->  
 <STRUCTUREGROUPS>                                                                      
  <SMRPRLE>                                                                             
@@ -19,8 +19,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRPRLE_WEB_IND>Y</SMRPRLE_WEB_IND>                                                 
   <SMRPRLE_SURROGATE_ID/>                                                              
   <SMRPRLE_VERSION/>                                                                   
-  <SMRPRLE_USER_ID/>                                                                   
-  <SMRPRLE_DATA_ORIGIN/>                                                               
+  <SMRPRLE_USER_ID>GRAILS</SMRPRLE_USER_ID>                                                                   
+  <SMRPRLE_DATA_ORIGIN>GRAILS</SMRPRLE_DATA_ORIGIN>                                                               
   <SMRPRLE_VPDI_CODE/>                                                                 
  </SMRPRLE>                                                                            
                                                                                        
@@ -59,8 +59,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMBPGEN_REGISTRATION_MODEL_CDE>S</SMBPGEN_REGISTRATION_MODEL_CDE>                   
   <SMBPGEN_SURROGATE_ID/>                                                              
   <SMBPGEN_VERSION/>                                                                   
-  <SMBPGEN_USER_ID/>                                                                   
-  <SMBPGEN_DATA_ORIGIN/>                                                               
+  <SMBPGEN_USER_ID>GRAILS</SMBPGEN_USER_ID>                                                                   
+  <SMBPGEN_DATA_ORIGIN>GRAILS</SMBPGEN_DATA_ORIGIN>                                                                
   <SMBPGEN_VPDI_CODE/>                                                                 
  </SMBPGEN>                                                                            
                                                                                        
@@ -77,9 +77,9 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRALIB_PRESCR_USAGE_IND/>                                                          
   <SMRALIB_SURROGATE_ID/>                                                              
   <SMRALIB_VERSION/>                                                                   
-  <SMRALIB_USER_ID/>                                                                   
-  <SMRALIB_DATA_ORIGIN/>                                                               
-  <SMRALIB_VPDI_CODE/>                                                                 
+  <SMRALIB_USER_ID>GRAILS</SMRALIB_USER_ID>                                                                    
+  <SMRALIB_DATA_ORIGIN>GRAILS</SMRALIB_DATA_ORIGIN>                                                                
+  <SMRALIB_VPDI_CODE/>                                                                  
  </SMRALIB>                                                                            
                                                                                        
  <SMRPAAP>                                                                             
@@ -94,8 +94,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRPAAP_WITHIN_IND>N</SMRPAAP_WITHIN_IND>                                           
   <SMRPAAP_SURROGATE_ID/>                                                              
   <SMRPAAP_VERSION/>                                                                   
-  <SMRPAAP_USER_ID/>                                                                   
-  <SMRPAAP_DATA_ORIGIN/>                                                               
+  <SMRPAAP_USER_ID>GRAILS</SMRPAAP_USER_ID>                                                                   
+  <SMRPAAP_DATA_ORIGIN>GRAILS</SMRPAAP_DATA_ORIGIN>                                                               
   <SMRPAAP_VPDI_CODE/>                                                                 
  </SMRPAAP>                                                                            
                                                                                        
@@ -131,15 +131,15 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMBAGEN_MAX_COURSES_TRANSFER/>                                                      
   <SMBAGEN_SURROGATE_ID/>                                                              
   <SMBAGEN_VERSION/>                                                                   
-  <SMBAGEN_USER_ID/>                                                                   
-  <SMBAGEN_DATA_ORIGIN/>                                                               
+  <SMBAGEN_USER_ID>GRAILS</SMBAGEN_USER_ID>                                                                  
+  <SMBAGEN_DATA_ORIGIN>GRAILS</SMBAGEN_DATA_ORIGIN>                                                               
   <SMBAGEN_VPDI_CODE/>                                                                 
  </SMBAGEN>                                                                            
                                                                                        
  <SMRAGAM>                                                                             
   <SMRAGAM_AREA>SR008G-A01</SMRAGAM_AREA>                                              
   <SMRAGAM_TERM_CODE_EFF>000000</SMRAGAM_TERM_CODE_EFF>                                
-  <SMRAGAM_ACTIVITY_DATE>28-MAR-16</SMRAGAM_ACTIVITY_DATE>                             
+  <SMRAGAM_ACTIVITY_DATE>01-JAN-10</SMRAGAM_ACTIVITY_DATE>                             
   <SMRAGAM_CRSE_REUSE_IND>N</SMRAGAM_CRSE_REUSE_IND>                                   
   <SMRAGAM_ATTR_REUSE_IND>N</SMRAGAM_ATTR_REUSE_IND>                                   
   <SMRAGAM_GROUP>SR008-G01</SMRAGAM_GROUP>                                             
@@ -150,8 +150,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRAGAM_WITHIN_IND>N</SMRAGAM_WITHIN_IND>                                           
   <SMRAGAM_SURROGATE_ID/>                                                              
   <SMRAGAM_VERSION/>                                                                   
-  <SMRAGAM_USER_ID/>                                                                   
-  <SMRAGAM_DATA_ORIGIN/>                                                               
+  <SMRAGAM_USER_ID>GRAILS</SMRAGAM_USER_ID>                                                                   
+  <SMRAGAM_DATA_ORIGIN>GRAILS</SMRAGAM_DATA_ORIGIN>                                                               
   <SMRAGAM_VPDI_CODE/>                                                                 
  </SMRAGAM>                                                                            
                                                                                        
@@ -160,19 +160,19 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRGLIB_GROUP_DESC>Struc Reg Group 8</SMRGLIB_GROUP_DESC>                           
   <SMRGLIB_LEVL_CODE>UG</SMRGLIB_LEVL_CODE>                                            
   <SMRGLIB_PRINT_IND>Y</SMRGLIB_PRINT_IND>                                             
-  <SMRGLIB_ACTIVITY_DATE>28-MAR-16</SMRGLIB_ACTIVITY_DATE>                             
+  <SMRGLIB_ACTIVITY_DATE>01-JAN-10</SMRGLIB_ACTIVITY_DATE>                             
   <SMRGLIB_LEVL_CODE_STU>UG</SMRGLIB_LEVL_CODE_STU>                                    
   <SMRGLIB_SURROGATE_ID/>                                                              
   <SMRGLIB_VERSION/>                                                                   
-  <SMRGLIB_USER_ID/>                                                                   
-  <SMRGLIB_DATA_ORIGIN/>                                                               
+  <SMRGLIB_USER_ID>GRAILS</SMRGLIB_USER_ID>                                                                   
+  <SMRGLIB_DATA_ORIGIN>GRAILS</SMRGLIB_DATA_ORIGIN>                                                               
   <SMRGLIB_VPDI_CODE/>                                                                 
  </SMRGLIB>                                                                            
                                                                                        
  <SMBGGEN>                                                                             
   <SMBGGEN_GROUP>SR008-G01</SMBGGEN_GROUP>                                             
   <SMBGGEN_TERM_CODE_EFF>000000</SMBGGEN_TERM_CODE_EFF>                                
-  <SMBGGEN_ACTIVITY_DATE>28-MAR-16</SMBGGEN_ACTIVITY_DATE>                             
+  <SMBGGEN_ACTIVITY_DATE>01-JAN-10</SMBGGEN_ACTIVITY_DATE>                             
   <SMBGGEN_ACTIVE_IND>Y</SMBGGEN_ACTIVE_IND>                                           
   <SMBGGEN_CRSE_REUSE_IND>N</SMBGGEN_CRSE_REUSE_IND>                                   
   <SMBGGEN_ATTR_REUSE_IND>N</SMBGGEN_ATTR_REUSE_IND>                                   
@@ -198,15 +198,15 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMBGGEN_MAX_COURSES_TRANSFER/>                                                      
   <SMBGGEN_SURROGATE_ID/>                                                              
   <SMBGGEN_VERSION/>                                                                   
-  <SMBGGEN_USER_ID/>                                                                   
-  <SMBGGEN_DATA_ORIGIN/>                                                               
+  <SMBGGEN_USER_ID>GRAILS</SMBGGEN_USER_ID>                                                                   
+  <SMBGGEN_DATA_ORIGIN>GRAILS</SMBGGEN_DATA_ORIGIN>                                                               
   <SMBGGEN_VPDI_CODE/>                                                                 
  </SMBGGEN>                                                                            
                                                                                        
  <SMRGCAA>                                                                             
   <SMRGCAA_GROUP>SR008-G01</SMRGCAA_GROUP>                                             
   <SMRGCAA_TERM_CODE_EFF>000000</SMRGCAA_TERM_CODE_EFF>                                
-  <SMRGCAA_ACTIVITY_DATE>28-MAR-16</SMRGCAA_ACTIVITY_DATE>                             
+  <SMRGCAA_ACTIVITY_DATE>01-JAN-10</SMRGCAA_ACTIVITY_DATE>                             
   <SMRGCAA_TRANSFER_IND>Y</SMRGCAA_TRANSFER_IND>                                       
   <SMRGCAA_SPLIT_COURSE_IND>Y</SMRGCAA_SPLIT_COURSE_IND>                               
   <SMRGCAA_SEQNO>1</SMRGCAA_SEQNO>                                                     
@@ -247,8 +247,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRGCAA_CONCURRENCY_IND>N</SMRGCAA_CONCURRENCY_IND>                                 
   <SMRGCAA_SURROGATE_ID/>                                                              
   <SMRGCAA_VERSION/>                                                                   
-  <SMRGCAA_USER_ID/>                                                                   
-  <SMRGCAA_DATA_ORIGIN/>                                                               
+  <SMRGCAA_USER_ID>GRAILS</SMRGCAA_USER_ID>                                                                   
+  <SMRGCAA_DATA_ORIGIN>GRAILS</SMRGCAA_DATA_ORIGIN>                                                               
   <SMRGCAA_VPDI_CODE/>                                                                 
  </SMRGCAA>                                                                            
                                                                                        
@@ -261,7 +261,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMBGRUL_CONNECTOR_MAX_COND>N</SMBGRUL_CONNECTOR_MAX_COND>                           
   <SMBGRUL_CONNECTOR_REQ>N</SMBGRUL_CONNECTOR_REQ>                                     
   <SMBGRUL_CONNECTOR_MAX>N</SMBGRUL_CONNECTOR_MAX>                                     
-  <SMBGRUL_ACTIVITY_DATE>28-MAR-16</SMBGRUL_ACTIVITY_DATE>                             
+  <SMBGRUL_ACTIVITY_DATE>01-JAN-10</SMBGRUL_ACTIVITY_DATE>                             
   <SMBGRUL_REQ_CRED_COND/>                                                             
   <SMBGRUL_REQ_COURSES_COND>2</SMBGRUL_REQ_COURSES_COND>                               
   <SMBGRUL_MAX_CRED_COND/>                                                             
@@ -273,8 +273,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMBGRUL_MAX_COURSES/>                                                               
   <SMBGRUL_SURROGATE_ID/>                                                              
   <SMBGRUL_VERSION/>                                                                   
-  <SMBGRUL_USER_ID/>                                                                   
-  <SMBGRUL_DATA_ORIGIN/>                                                               
+  <SMBGRUL_USER_ID>GRAILS</SMBGRUL_USER_ID>                                                                   
+  <SMBGRUL_DATA_ORIGIN>GRAILS</SMBGRUL_DATA_ORIGIN>                                                                
   <SMBGRUL_VPDI_CODE/>                                                                 
  </SMBGRUL>                                                                            
                                                                                        
@@ -283,7 +283,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRGRUL_GROUP>SR008-G01</SMRGRUL_GROUP>                                             
   <SMRGRUL_TERM_CODE_EFF>000000</SMRGRUL_TERM_CODE_EFF>                                
   <SMRGRUL_SEQNO>1</SMRGRUL_SEQNO>                                                     
-  <SMRGRUL_ACTIVITY_DATE>28-MAR-16</SMRGRUL_ACTIVITY_DATE>                             
+  <SMRGRUL_ACTIVITY_DATE>01-JAN-10</SMRGRUL_ACTIVITY_DATE>                             
   <SMRGRUL_TRANSFER_IND>Y</SMRGRUL_TRANSFER_IND>                                       
   <SMRGRUL_SPLIT_COURSE_IND>Y</SMRGRUL_SPLIT_COURSE_IND>                               
   <SMRGRUL_CONNECTOR_REQ>N</SMRGRUL_CONNECTOR_REQ>                                     
@@ -322,8 +322,8 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
   <SMRGRUL_CONCURRENCY_IND>N</SMRGRUL_CONCURRENCY_IND>                                 
   <SMRGRUL_SURROGATE_ID/>                                                              
   <SMRGRUL_VERSION/>                                                                   
-  <SMRGRUL_USER_ID/>                                                                   
-  <SMRGRUL_DATA_ORIGIN/>                                                               
+  <SMRGRUL_USER_ID>GRAILS</SMRGRUL_USER_ID>                                                                   
+  <SMRGRUL_DATA_ORIGIN>GRAILS</SMRGRUL_DATA_ORIGIN>                                                               
   <SMRGRUL_VPDI_CODE/>                                                                 
  </SMRGRUL>                                                                            
 </STRUCTUREGROUPS>                                                                     
