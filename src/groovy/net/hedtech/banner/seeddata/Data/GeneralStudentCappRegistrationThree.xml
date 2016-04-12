@@ -138,10 +138,10 @@ Copyright 2015 - 2016 Ellucian Company L.P. and its affiliates.
   <SKBPROS_EFF_TERM>201410</SKBPROS_EFF_TERM>
   <SKBPROS_PIDM>51439</SKBPROS_PIDM>
   <SKBPROS_SEC_PIDM/>
-  <SKBPROS_LONG_DESC>LMARINCH this is program description this is program description this is program description this is program description this is program description this is program description</SKBPROS_LONG_DESC>
+  <SKBPROS_LONG_DESC>PROGCAT this is program description this is program description this is program description this is program description this is program description this is program description</SKBPROS_LONG_DESC>
   <SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
   <SKBPROS_USER_ID></SKBPROS_USER_ID>
-  <SKBPROS_LONG_TITLE>LMARINCH this is program Supplemental Long Title LMARINCH this is program Supplemental Long Title LMARINCH this is program Supplemental Long Title</SKBPROS_LONG_TITLE>
+  <SKBPROS_LONG_TITLE>PROGCAT this is program Supplemental Long Title PROGCAT this is program Supplemental Long Title PROGCAT this is program Supplemental Long Title</SKBPROS_LONG_TITLE>
   <SKBPROS_DATA_ORIGIN/>
   <SKBPROS_SURROGATE_ID>61</SKBPROS_SURROGATE_ID>
   <SKBPROS_VERSION>0</SKBPROS_VERSION>
@@ -519,13 +519,13 @@ Copyright 2015 - 2016 Ellucian Company L.P. and its affiliates.
   <SKBARES_EFF_TERM>201410</SKBARES_EFF_TERM>
   <SKBARES_PIDM/>
   <SKBARES_SEC_PIDM/>
-  <SKBARES_LONG_DESC>LMARINCH PRCAT_A_01 DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION descrip tion DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description </SKBARES_LONG_DESC>
+  <SKBARES_LONG_DESC>PROGCAT PRCAT_A_01 DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION descrip tion DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description DESCRIPTION description </SKBARES_LONG_DESC>
   <SKBARES_ACTIVITY_DATE>01-JAN-10</SKBARES_ACTIVITY_DATE>
   <SKBARES_USER_ID>A00025985</SKBARES_USER_ID>
   <SKBARES_MAX_CREDITS_OVERALL/>
   <SKBARES_CONNECTOR_MAXOVERALL/>
   <SKBARES_MAX_COURSES_OVERALL/>
-  <SKBARES_LONG_TITLE>LMARINCH PRCAT_A_01 Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title </SKBARES_LONG_TITLE>
+  <SKBARES_LONG_TITLE>PROGCAT PRCAT_A_01 Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title </SKBARES_LONG_TITLE>
   <SKBARES_SURROGATE_ID>21</SKBARES_SURROGATE_ID>
   <SKBARES_VERSION>0</SKBARES_VERSION>
   <SKBARES_DATA_ORIGIN/>
@@ -536,13 +536,13 @@ Copyright 2015 - 2016 Ellucian Company L.P. and its affiliates.
   <SKBARES_EFF_TERM>201410</SKBARES_EFF_TERM>
   <SKBARES_PIDM/>
   <SKBARES_SEC_PIDM/>
-  <SKBARES_LONG_DESC>LMARINCH PRCAT_G_01 Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description</SKBARES_LONG_DESC>
+  <SKBARES_LONG_DESC>PROGCAT PRCAT_G_01 Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description</SKBARES_LONG_DESC>
   <SKBARES_ACTIVITY_DATE>01-JAN-10</SKBARES_ACTIVITY_DATE>
   <SKBARES_USER_ID>A00025985</SKBARES_USER_ID>
   <SKBARES_MAX_CREDITS_OVERALL/>
   <SKBARES_CONNECTOR_MAXOVERALL/>
   <SKBARES_MAX_COURSES_OVERALL/>
-  <SKBARES_LONG_TITLE>LMARINCH PRCAT_G_01 Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title </SKBARES_LONG_TITLE>
+  <SKBARES_LONG_TITLE>PROGCAT PRCAT_G_01 Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title Supplemental Long Title </SKBARES_LONG_TITLE>
   <SKBARES_SURROGATE_ID>22</SKBARES_SURROGATE_ID>
   <SKBARES_VERSION>1</SKBARES_VERSION>
   <SKBARES_DATA_ORIGIN/>
@@ -552,7 +552,7 @@ Copyright 2015 - 2016 Ellucian Company L.P. and its affiliates.
   <SKBRULS_KEY_RULE>MANDATORY</SKBRULS_KEY_RULE>
   <SKBRULS_AREA>PRCAT_A_01</SKBRULS_AREA>
   <SKBRULS_EFF_TERM>201410</SKBRULS_EFF_TERM>
-  <SKBRULS_LONG_DESC>LMARINCH PRCAT_A_01 Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description Rul
+  <SKBRULS_LONG_DESC>PROGCAT PRCAT_A_01 Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description Rul
 e Description Rule Description Rule Description Rule Description Rule Description Rule Description Rule Description </SKBRULS_LONG_DESC>
   <SKBRULS_ACTIVITY_DATE>01-JAN-10</SKBRULS_ACTIVITY_DATE>
   <SKBRULS_USER_ID>A00025985</SKBRULS_USER_ID>
@@ -565,7 +565,7 @@ e Description Rule Description Rule Description Rule Description Rule Descriptio
   <SKBRULS_MAX_CREDITS/>
   <SKBRULS_MAX_CONNECTOR/>
   <SKBRULS_MAX_COURSES/>
-  <SKBRULS_LONG_TITLE>LMARINCH PRCAT_A_01 Rule Supplemental Long Title Rule Supplemental Long Title Rule Supplemental Long Title Rule Supplemental Long Title </SKBRULS_LONG_TITLE>
+  <SKBRULS_LONG_TITLE>PROGCAT PRCAT_A_01 Rule Supplemental Long Title Rule Supplemental Long Title Rule Supplemental Long Title Rule Supplemental Long Title </SKBRULS_LONG_TITLE>
   <SKBRULS_DATA_ORIGIN/>
   <SKBRULS_SURROGATE_ID>21</SKBRULS_SURROGATE_ID>
   <SKBRULS_VERSION>1</SKBRULS_VERSION>
@@ -877,12 +877,34 @@ e Description Rule Description Rule Description Rule Description Rule Descriptio
   <SKBGROS_MAX_CREDITS_OVERALL/>
   <SKBGROS_CONNECTOR_MAXOVERALL/>
   <SKBGROS_MAX_COURSES_OVERALL/>
-  <SKBGROS_LONG_TITLE>LMARINCH PRCAT_G_01 This is program Supplemental Long Title LMARINCH this is program Supplemental Long Title LMARINCH this is program Supplemental Long Title</SKBGROS_LONG_TITLE>
+  <SKBGROS_LONG_TITLE>PROGCAT PRCAT_G_01 This is program Supplemental Long Title PROGCAT this is program Supplemental Long Title PROGCAT this is program Supplemental Long Title</SKBGROS_LONG_TITLE>
   <SKBGROS_DATA_ORIGIN/>
   <SKBGROS_SURROGATE_ID>1</SKBGROS_SURROGATE_ID>
   <SKBGROS_VERSION>0</SKBGROS_VERSION>
   <SKBGROS_VPDI_CODE/>
- </SKBGROS> 
+ </SKBGROS>
+ <SKBRULS>
+  <SKBRULS_KEY_RULE>MANDATORY</SKBRULS_KEY_RULE>
+  <SKBRULS_EFF_TERM>201410</SKBRULS_EFF_TERM>
+  <SKBRULS_ACTIVITY_DATE>01-JAN-10</SKBRULS_ACTIVITY_DATE>
+  <SKBRULS_USER_ID>GRAILS</SKBRULS_USER_ID>
+  <SKBRULS_SURROGATE_ID>21</SKBRULS_SURROGATE_ID>
+  <SKBRULS_VERSION>0</SKBRULS_VERSION>
+  <SKBRULS_AREA/>
+  <SKBRULS_LONG_TITLE>SKBRULS GROUP LONG TITLE GROUP LONG TITLE</SKBRULS_LONG_TITLE>
+  <SKBRULS_LONG_DESC>SKBRULS GROUP LONG DESCRIPTION GROUP LONG DESCRIPTION</SKBRULS_LONG_DESC>
+  <SKBRULS_MIN_SETS/>
+  <SKBRULS_MAX_SETS/>
+  <SKBRULS_GROUP>PRCAT_G_01</SKBRULS_GROUP>
+  <SKBRULS_MIN_CREDITS/>
+  <SKBRULS_MIN_CONNECTOR/>
+  <SKBRULS_MIN_COURSES/>
+  <SKBRULS_MAX_CREDITS/>
+  <SKBRULS_MAX_CONNECTOR/>
+  <SKBRULS_MAX_COURSES/>
+  <SKBRULS_DATA_ORIGIN/>
+  <SKBRULS_VPDI_CODE/>
+ </SKBRULS>
  <STUDENT_SPRIDEN>
   <BANNERID>HOSCPR053</BANNERID>
   <SPRIDEN_PIDM>52572</SPRIDEN_PIDM>
