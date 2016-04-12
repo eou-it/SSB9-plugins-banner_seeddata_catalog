@@ -382,6 +382,13 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBRULS','SELECT * FROM S
                                                                                                          AND sel.SKBRULS_AREA = SMRPAAP_AREA
                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
 
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBRULS','SELECT * FROM SKBRULS WHERE EXISTS (  SELECT 1
+                                                                                                        FROM SKBRULS sel, SMRAGAM, SMRPAAP
+                                                                                                       WHERE sel.SKBRULS_GROUP = SKBRULS.SKBRULS_GROUP
+                                                                                                         AND sel.SKBRULS_GROUP = SMRAGAM_GROUP
+                                                                                                         AND SMRAGAM_AREA = SMRPAAP_AREA
+                                                                                                        AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
 
 set term on
 set echo on
