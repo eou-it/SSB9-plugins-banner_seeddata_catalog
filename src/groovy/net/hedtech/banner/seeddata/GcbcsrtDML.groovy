@@ -37,7 +37,7 @@ public class GcbcsrtDML {
         this.deleteNode = deleteNode
         processGcbcsrt()
     }
-    
+
     /**
      * Process the gcbcsrt records.   The item attribute gives us the surrogate key to the gcbcsrt which
      * is the item ID on the gcbqury, gcrcfld, gcbtmpl records.  The template attribute on gcbemtl plus the
