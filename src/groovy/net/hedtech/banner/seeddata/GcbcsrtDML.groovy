@@ -52,31 +52,32 @@ public class GcbcsrtDML {
 
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBCSRT") {
+            updateFk(apiData)
+
             deleteData()
         }
         
         if (connectInfo.tableName == "GCRCSRS") {
             //replace sequence number with current
             updateFk(apiData)
-            if (apiData.GCRCSRS_ACTION_ITEM_ID.text().toInteger() != itemSeq) {
-                apiData.GCRCSRS_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+
+            apiData.GCRCSRS_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            if (itemSeq == 0) {
+                println connectInfo.tableName + " " + apiData.GCRCSRS_ACTION_ITEM_ID.text() + " " + itemSeq
             }
+
         }
         if (connectInfo.tableName == "GCRACNT") {
             updateFk(apiData)
             //replace sequence number with current
-            if (apiData.GCRACNT_ACTION_ITEM_ID.text().toInteger() != itemSeq) {
-                apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
-            } else {
-            }
+
+            apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
         }
 
          if (connectInfo.tableName == "GCBAGRP") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
             updateFk(apiData)
-            if (apiData.GCBAGRP_FOLDER_ID.text().toInteger() != folderSeq) {
-                apiData.GCBAGRP_FOLDER_ID[0].setValue(folderSeq.toString())
-            }
+             apiData.GCBAGRP_FOLDER_ID[0].setValue(itemSeq.toString())
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
@@ -95,19 +96,22 @@ public class GcbcsrtDML {
     def updateFk(apiData) {
         try {
             if (connectInfo.tableName == "GCBAGRP") {
+
                 String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
                 def folderSeqR = this.conn.firstRow(fsql, [apiData.FOLDER.text()])
-                folderSeq = folderSeqR?.GCRFLDR_SURROGATE_ID
+                itemSeq = folderSeqR?.GCRFLDR_SURROGATE_ID
+               // println apiData.FOLDER.text() + " " + itemSeq + " " + apiData.GCBAGRP_SURROGATE_ID.text()
 
             } else {
 
                 String ssql = """select * from GCBCSRT where GCBCSRT_NAME = ? """
-
                 def itemSeqR = this.conn.firstRow(ssql, [apiData.ACTIONITEMNAME.text()])
-
                 if (itemSeqR) {
                     itemSeq = itemSeqR?.GCBCSRT_SURROGATE_ID
                 } else itemSeq = 0
+
+
+               // println connectInfo.tableName + " " + apiData.ACTIONITEMNAME.text() + " " + itemSeq
             }
         } catch (Exception e) {
             if (connectInfo.showErrors) {
@@ -118,30 +122,22 @@ public class GcbcsrtDML {
 
 
     def deleteData() {
-        deleteData("GCBAGRP", "delete from GCBAGRP where GCBAGRP_FOLDER_ID  = ?  OR GCBAGRP_FOLDER_ID  NOT IN(select GCRFLDR_SURROGATE_ID from GCRFLDR )")
-        deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_ACTION_ITEM_ID  = ?  OR GCRCSRS_ACTION_ITEM_ID NOT IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
-        deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  OR GCRACNT_ACTION_ITEM_ID NOT IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
-        deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ?  ")
+        deleteData("GCBAGRP", "delete from GCBAGRP where GCBAGRP_FOLDER_ID  = ? ")
+        deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_ACTION_ITEM_ID  = ?  OR GCRCSRS_ACTION_ITEM_ID IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
+        deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  OR GCRACNT_ACTION_ITEM_ID IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
+        deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ? ")
     }
 
 
     def deleteData(String tableName, String sql) {
         try {
-            def keyId
-
-            if (connectInfo.tableName == "GCBAGRP") {
-                keyId = folderSeq
-            } else {
-                keyId = itemSeq
-            }
-
-            int delRows = conn.executeUpdate(sql, [keyId])
+            int delRows = conn.executeUpdate(sql, [itemSeq])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 connectInfo.tableUpdate(tableName, 0, 0, 0, 1, 0)
-                println "Problem executing delete for id ${keyId} from GcbcsrtDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "Problem executing delete for id ${itemSeq} from GcbcsrtDML.groovy for ${connectInfo.tableName}: $e.message"
                 println "${sql}"
             }
         }
