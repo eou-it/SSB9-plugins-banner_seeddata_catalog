@@ -260,7 +260,9 @@ public class InputData {
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormCatalogData.xml',
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormScheduleData.xml'],
             'brainstorm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormStudentData.xml'],
-            'brainstorm-registration-planning' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormPlanningData.xml']
+            'brainstorm-registration-planning' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormPlanningData.xml'],
+            'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml']
             ]
 
 
