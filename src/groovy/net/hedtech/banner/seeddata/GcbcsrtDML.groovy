@@ -63,9 +63,6 @@ public class GcbcsrtDML {
 
             apiData.GCRCSRS_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
 
-            println connectInfo.tableName + " " + apiData.GCRCSRS_ACTION_ITEM_ID.text() + " " + itemSeq
-
-
         }
         if (connectInfo.tableName == "GCRACNT") {
             updateFk(apiData)
@@ -111,6 +108,11 @@ public class GcbcsrtDML {
                 } else itemSeq = 0
 
 
+                if (connectInfo.tableName == "GCRCSRS") {
+                    println connectInfo.tableName + " " + apiData.GCRCSRS_ACTION_ITEM_ID.text() + " " + itemSeq
+                }
+
+
                // println connectInfo.tableName + " " + apiData.ACTIONITEMNAME.text() + " " + itemSeq
             }
         } catch (Exception e) {
@@ -122,7 +124,7 @@ public class GcbcsrtDML {
 
 
     def deleteData() {
-        deleteData("GCBAGRP", "delete from GCBAGRP ")
+        deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_ACTION_ITEM_ID  = ?  OR GCRCSRS_ACTION_ITEM_ID IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  OR GCRACNT_ACTION_ITEM_ID IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
         deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ? ")
