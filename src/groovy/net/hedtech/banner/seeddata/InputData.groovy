@@ -66,7 +66,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
-            'functionaltest': [  '/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
+            'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
             'sde': ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
@@ -260,13 +260,10 @@ public class InputData {
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormScheduleData.xml'],
             'brainstorm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormStudentData.xml'],
             'brainstorm-registration-planning' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormPlanningData.xml'],
-<<<<<<< HEAD
-            'reg-ar': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAccountsReceivableData.xml']
-=======
+            'reg-ar': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAccountsReceivableData.xml'],
             'api-student-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
             'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml']
->>>>>>> master
             ]
 
 
