@@ -194,8 +194,7 @@ public class InputData {
             'transcript-award' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentTranscriptAwardedDegree.xml'],
              'student-adv-admin-persona' :['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAdvisorAdminPersonData.xml'],
             'api-general-student': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
+                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml'],
             'flat-rate-fee-rules': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeAssessmentFlatRate.xml'],
             'facultySecurityPlanAhead' :['/src/groovy/net/hedtech/banner/seeddata/Data/FacultySecurityPageData.xml'],
             'generalstudentcapp' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithCompliance.xml'],
@@ -252,6 +251,7 @@ public class InputData {
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMCatalogData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMScheduleData.xml'],
             'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
+            'api-hedm-registration-grade' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMGradeData.xml'],
             'finance-procurement-user-creation' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserCreationData.xml'],
             'brainstorm-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormTermData.xml',
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormIntegrationPartnerData.xml',
@@ -260,7 +260,13 @@ public class InputData {
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormScheduleData.xml'],
             'brainstorm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormStudentData.xml'],
             'brainstorm-registration-planning' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormPlanningData.xml'],
+<<<<<<< HEAD
             'reg-ar': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAccountsReceivableData.xml']
+=======
+            'api-student-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
+            'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml']
+>>>>>>> master
             ]
 
 
