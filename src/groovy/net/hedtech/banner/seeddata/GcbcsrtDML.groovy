@@ -49,31 +49,57 @@ public class GcbcsrtDML {
         //the xml before it gets parsed by the xml parser
 
         def apiData = new XmlParser().parseText(xmlData)
+        def personId = apiData.BANNERID?.text()
+        def personPidm
+        def actionItemName = apiData.GCRCSRS_ACTION_ITEM_ID.text()
+
+        if (actionItemName != null) {
+            try {
+
+                String ssql = """select * from GCBCSRT where GCBCSRT_NAME = ? """
+                def itemSeqR = this.conn.firstRow(ssql, [apiData.ACTIONITEMNAME.text()])
+                if (itemSeqR) {
+                    itemSeq = itemSeqR?.GCBCSRT_SURROGATE_ID
+                } else itemSeq = 0
+
+            } catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Could not select Action Item ID in GcbcsrtDML, from GCBCSRT for ${connectInfo.tableName}. $e.message"
+                }
+            }
+        }
+
+        if (personId) {
+            String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
+            def spridenRow = conn.firstRow(findPidm, [personId])
+            if (spridenRow) {
+                personPidm = spridenRow.SPRIDEN_PIDM.toString()
+            }
+        }
 
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBCSRT") {
-            updateFk(apiData)
-
             deleteData()
         }
         
         if (connectInfo.tableName == "GCRCSRS") {
             //replace sequence number with current
-            updateFk(apiData)
-
+            // connectInfo.debugThis = true
+            apiData.GCRCSRS_PIDM[0].setValue(personPidm)
             apiData.GCRCSRS_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            //println apiData.ACTIONITEMNAME.text() + " " + apiData.GCRCSRS_ACTION_ITEM_ID.text()
 
         }
         if (connectInfo.tableName == "GCRACNT") {
-            updateFk(apiData)
             //replace sequence number with current
-
             apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
         }
 
          if (connectInfo.tableName == "GCBAGRP") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-            updateFk(apiData)
+             String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
+             def folderSeqR = this.conn.firstRow(fsql, [apiData.FOLDER.text()])
+             itemSeq = folderSeqR?.GCRFLDR_SURROGATE_ID
              apiData.GCBAGRP_FOLDER_ID[0].setValue(itemSeq.toString())
         }
 
@@ -90,46 +116,12 @@ public class GcbcsrtDML {
     }
 
 
-    def updateFk(apiData) {
-        try {
-            if (connectInfo.tableName == "GCBAGRP") {
-
-                String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
-                def folderSeqR = this.conn.firstRow(fsql, [apiData.FOLDER.text()])
-                itemSeq = folderSeqR?.GCRFLDR_SURROGATE_ID
-               // println apiData.FOLDER.text() + " " + itemSeq + " " + apiData.GCBAGRP_SURROGATE_ID.text()
-
-            } else {
-
-                String ssql = """select * from GCBCSRT where GCBCSRT_NAME = ? """
-                def itemSeqR = this.conn.firstRow(ssql, [apiData.ACTIONITEMNAME.text()])
-                if (itemSeqR) {
-                    itemSeq = itemSeqR?.GCBCSRT_SURROGATE_ID
-                } else itemSeq = 0
-
-
-                if (connectInfo.tableName == "GCRCSRS") {
-                    println connectInfo.tableName + " " + apiData.GCRCSRS_ACTION_ITEM_ID.text() + " " + itemSeq
-                }
-
-
-               // println connectInfo.tableName + " " + apiData.ACTIONITEMNAME.text() + " " + itemSeq
-            }
-        } catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Action Item ID in GcbcsrtDML, from GCBCSRT for ${connectInfo.tableName}. $e.message"
-            }
-        }
-    }
-
-
     def deleteData() {
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
-        deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_ACTION_ITEM_ID  = ?  OR GCRCSRS_ACTION_ITEM_ID IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
-        deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  OR GCRACNT_ACTION_ITEM_ID IN(select GCBCSRT_SURROGATE_ID from GCBCSRT)")
+        deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_ACTION_ITEM_ID  = ? ")
+        deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
         deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ? ")
     }
-
 
     def deleteData(String tableName, String sql) {
         try {
