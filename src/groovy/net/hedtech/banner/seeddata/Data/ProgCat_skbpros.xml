@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+********************************************************************************* -->
+<SUPPPROG>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM9</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC>Lorem ipsum dolor sit amet, sed et rebum molestie. Nam cu erat detraxit gubergren. Ius iudico volumus ne, eu solet aperiam consetetur per, mea ne voluptaria disputando. Ne sed ornatus commune, virtute ceteros instructior et nec. Nam diceret recteque ne. Legere eloquentiam definitiones at mel. Dolore dictas ei eum, usu clita iuvaret perfecto ne, te electram consequat quo. Pri in erant argumentum.Vim oratio placerat an, dolor everti vocent vim te. Eu dictas oportere percipitur pri, detraxit iudicabit ad vis. Unum similique nam in. Dictas verear accusamus cum at, mandamus salutatus ad eos, eu erant veritus epicuri mei. Cu liber nusquam usu, et saperet insolens perpetua mei, cum partiendo definiebas eu.Ea pri semper dictas, etiam accusamus ut vis. Te eam quem modus. Sea ex tale nostro philosophia, augue tantas dignissim id sit. Eum eu vidit scripta, has an nonumes assentior. Paulo feugait qui an, pri recusabo platonem in, vim ad debet semper labitur. Oblique indoctum ei mel, eam cu utinam recusabo, etiam alterum dolorum pri ut. Vim te deleniti fabellas, nullam meliore est et.Vel homero constituam instructior ei. Sit ipsum contentiones comprehensam ei, corpora laboramus theophrastus cu vel. Ex usu dicat fabellas perpetua, vim eu eirmod delenit. Eos ea audiam senserit efficiantur. Nam soleat perpetua eu.</SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF025993</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE>Lorem ipsum dolor si amet aliquam mediocrem Nam eirmod an, debitis principes sed ei, voluptatum is ex. Vix laudem omnium efficiendi at, modus detracto te nam. Ei quo ocurreret delicatissimi, instructior interpretaris concludaturque sed an.Sea ex quas laudem postea, ex qui iracundia forensibus referrentur, te his malis fabellas. At has error movet praesent tius elit fastidii at. Cu persius etiam accumsan lobortis pro, quo te hinc definiebas, ad paulo graeci fabulas eam. Putant omnesque sit ut, ea cibo harum incorrupte pro. Et ocurreret persecuti deseruisse pro. Lus habemus petentium efficiantur ad, noe tia tota eius ridens sed.Ad erat posse mediocrem nec, vidit partem aeterno ei sea. Labores eu sit, vix solet animal eleifend et, eu vis nostro democritum. In Ponderum Argumentum vim, a vitae tincidunt duo. Et audire definitionem sed, ne etiam eloquentiam adversarium mi. This title has 1000 characters including spaces. ex qui tius elit fastidii at persius etiam accumsan lobortis pro riden.</SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM7-GRP</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC><![CDATA[The <strong>African/African-American Studies Program (AFA)</strong> at Ellucian University offers students the opportunity to engage with the histories, stories, and experiences of Africans and peoples of African descent around the world. These often-overlooked narratives can help us makes sense of a globalized world, present-day <em>socio-political</em> issues in the US, and our own identities.</br> The program currently offers a minor or certificate to Ellucian students. Our faculty members are drawn from diverse academic fields and backgrounds, and offer a wide range of  classes . We are committed to encouraging student research and community involvement beyond the classroom. ]]></SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF026007</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE><![CDATA[<strong> NEW PROGRAM TITLE</strong> for <em>Structured group reg pgm 7\</em>]]></SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM9-GRP</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC><![CDATA[The <strong>African/African-American Studies Program (AFA)</strong> at Ellucian University offers students the opportunity to engage with the histories, stories, and experiences of Africans and peoples of African descent around the world. These often-overlooked narratives can help us makes sense of a globalized world, present-day <em>socio-political\</em> issues in the US, and our own identities.</br> The program currently offers a minor or certificate to Ellucian students. Our faculty members are drawn from diverse academic fields and backgrounds, and offer a wide range of  classes . We are committed to encouraging student research and community involvement beyond the classroom.]]> </SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF026009</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE><![CDATA[<strong> NEW PROGRAM TITLE</strong> for <em>Structured group reg pgm  9 \</em>]]></SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM13-GRP</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC><![CDATA[The <strong>African/African-American Studies Program (AFA)</strong> at Ellucian University offers students the opportunity to engage with the histories, stories, and experiences of Africans and peoples of African descent around the world. These often-overlooked narratives can help us makes sense of a globalized world, present-day <em>socio-political\</em> issues in the US, and our own identities.</br> The program currently offers a minor or certificate to Ellucian students. Our faculty members are drawn from diverse academic fields and backgrounds, and offer a wide range of  classes . We are committed to encouraging student research and community involvement beyond the classroom.]]> </SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF026013</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE><![CDATA[<strong> NEW PROGRAM TITLE</strong> for <em>Structured group reg pgm 13 </em>]]></SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM16-GRP</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC><![CDATA[The <strong>African/African-American Studies Program (AFA)</strong> at Ellucian University offers students the opportunity to engage with the histories, stories, and experiences of Africans and peoples of African descent around the world. These often-overlooked narratives can help us makes sense of a globalized world, present-day <em>socio-political\</em> issues in the US, and our own identities.</br> The program currently offers a minor or certificate to Ellucian students. Our faculty members are drawn from diverse academic fields and backgrounds, and offer a wide range of  classes . We are committed to encouraging student research and community involvement beyond the classroom.]]> </SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF026016</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE><![CDATA[<strong> NEW PROGRAM TITLE</strong> for <em>Structured group reg pgm  16\</em>]]></SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM16</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC><![CDATA[The African/African-American Studies Program (AFA) at Ellucian University offers students the opportunity to engage with the histories, stories, and experiences of Africans and peoples of African descent around the world. These often-overlooked narratives can help us makes sense of a globalized world, present-day socio-political issues in the US, and our own identities.</br> The program currently offers a minor or certificate to Ellucian students. Our faculty members are drawn from diverse academic fields and backgrounds, and offer a wide range of  classes . We are committed to encouraging student research and community involvement beyond the classroom. ]]></SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF026000</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE>NEW PROGRAM TITLE for Structured reg pgm 16</SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM7</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC>Lorem ipsum dolor sit amet, sed et rebum molestie. Nam cu erat detraxit gubergren. Ius iudico volumus ne, eu solet aperiam consetetur per, mea ne voluptaria disputando. Ne sed ornatus commune, virtute ceteros instructior et nec. Nam diceret recteque ne. Legere eloquentiam definitiones at mel. Dolore dictas ei eum, usu clita iuvaret perfecto ne, te electram consequat quo. Pri in erant argumentum. Vi oratio placerat an, dolor everti vocent vim te. Eu dictas oportere percipitur pri, detraxit iudicabit ad vis. Unum similique nam in. Dictas verear accusamus cum at, mandamus salutatus ad eos, eu erant veritus epicuri mei. Cu liber nusquam usu, et saperet insolens perpetua mei, cum partiendo definiebas eu. Ea pri semper dictas, etiam accusamus ut vis. Te eam quem modus. Sea ex tale nostro philosophia, augue tantas dignissim id sit. Eum eu vidit scripta, has an nonumes assentior. Paulo feugait qui an, pri recusabo platonem in, vim ad debet semper labitur. Oblique indoctum ei mel, eam cu utinam recusabo, etiam alterum dolorum pri ut. Vim te deleniti fabellas, nullam meliore est et. Vel homero constituam instructior ei. Sit ipsum contentiones comprehensam ei, corpora laboramus theophrastus cu vel. Ex usu dicat fabellas perpetua, vim eu eirmod delenit. Eos ea audiam senserit efficiantur. Nam soleat perpetua eu. Id vix harum tritani. Nam sale natum intellegat no. No alterum corrumpit omittantur sed. Dicunt percipit ponderum ius in, ei has movet percipit. Petentium consetetur at his, ut has nulla nusquam, phaedrum vituperata repudiandae ad usu. Impetus saperet recusabo eu vel. An eam aperiri atomorum. Quo lobortis theophrastus no, ex vel persecuti sadipscing. In vel appetere scripserit, an ius nemore nusquam incorrupte, his minim patrioque forensibus ex. Mei te enim nemore noluisse, cum id quot rebum verear, ea eam mutat convenire suavitate. Ne dicant reformidans mea, vim repudiare prodesset eu. His ad zril dolorem intellegebat, no eros expetenda disputationi nam. Erroribus molestiae quo an. Partem iudicabit an vis, magna illud propriae ne vis, qui inermis sententiae ad. Sea an aliquid invenire efficiendi, te sed invidunt neglegentur, qui cu odio volumus praesent.</SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF025991</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE>Lorem ipsum dolor si amet aliquam mediocrem Nam eirmod an, debitis principes sed ei, voluptatum is ex. Vix laudem omnium efficiendi at, modus detracto te nam. Ei quo ocurreret delicatissimi, instructior interpretaris concludaturque sed an.Sea ex quas laudem postea, ex qui iracundia forensibus referrentur, te his malis fabellas. At has error movet praesent tius elit fastidii at. Cu persius etiam accumsan lobortis pro, quo te hinc definiebas, ad paulo graeci fabulas eam. Putant omnesque sit ut, ea cibo harum incorrupte pro. Et ocurreret persecuti deseruisse pro. Lus habemus petentium efficiantur ad, noe tia tota eius ridens sed.Ad erat posse mediocrem nec, vidit partem aeterno ei sea. Labores eu sit, vix solet animal eleifend et, eu vis nostro democritum. In Ponderum Argumentum vim, a vitae tincidunt duo. Et audire definitionem sed, ne etiam eloquentiam adversarium mi. This title has 1000 characters including spaces. ex qui tius elit fastidii at persius etiam accumsan lobortis pro riden.</SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM1</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC></SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>30-MAR-16</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF025985</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE>NEW PROGRAM NAME Structured reg pgm 1 (SRPGM1)</SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+	<SKBPROS>
+		<SKBPROS_PROGRAM>SRPGM13</SKBPROS_PROGRAM>
+		<SKBPROS_EFF_TERM>000000</SKBPROS_EFF_TERM>
+		<SKBPROS_PIDM></SKBPROS_PIDM>
+		<SKBPROS_SEC_PIDM></SKBPROS_SEC_PIDM>
+		<SKBPROS_LONG_DESC>Lorem ipsum dolor sit amet, sed et rebum molestie. Nam cu erat detraxit gubergren. Ius iudico volumus ne, eu solet aperiam consetetur per, mea ne voluptaria disputando. Ne sed ornatus commune, virtute ceteros instructior et nec. Nam diceret recteque ne. Legere eloquentiam definitiones at mel. Dolore dictas ei eum, usu clita iuvaret perfecto ne, te electram consequat quo. Pri in erant argumentum. Vim oratio placerat an, dolor everti vocent vim te. Eu dictas oportere percipitur pri, detraxit iudicabit ad vis. Unum similique nam in. Dictas verear accusamus cum at, mandamus salutatus ad eos, eu erant veritus epicuri mei. Cu liber nusquam usu, et saperet insolens perpetua mei, cum partiendo definiebas eu. Ea pri semper dictas, etiam accusamus ut vis. Te eam quem modus. Sea ex tale nostro philosophia, augue tantas dignissim id sit. Eum eu vidit scripta, has an nonumes assentior. Paulo feugait qui an, pri recusabo platonem in, vim ad debet semper labitur. Oblique indoctum ei mel, eam cu utinam recusabo, etiam alterum dolorum pri ut. Vim te deleniti fabellas, nullam meliore est et.</SKBPROS_LONG_DESC>
+		<SKBPROS_ACTIVITY_DATE>01-JAN-10</SKBPROS_ACTIVITY_DATE>
+		<SKBPROS_USER_ID>HOF025997</SKBPROS_USER_ID>
+		<SKBPROS_LONG_TITLE>Lorem ipsum dolor si amet aliquam mediocrem Nam eirmod an, debitis principes sed ei, voluptatum is ex. Vix laudem omnium efficiendi at, modus detracto te nam. Ei quo ocurreret delicatissimi, instructior interpretaris concludaturque sed an.Sea ex quas laudem postea, ex qui iracundia forensibus referrentur, te his malis fabellas. At has error movet praesent tius elit fastidii at. Cu persius etiam accumsan lobortis pro, quo te hinc definiebas, ad paulo graeci fabulas eam. Putant omnesque sit ut, ea cibo harum incorrupte pro. Et ocurreret persecuti deseruisse pro. Lus habemus petentium efficiantur ad, noe tia tota eius ridens sed.Ad erat posse mediocrem nec, vidit partem aeterno ei sea. Labores eu sit, vix solet animal eleifend et, eu vis nostro democritum. In Ponderum Argumentum vim, a vitae tincidunt duo. Et audire definitionem sed, ne etiam eloquentiam adversarium mi. This title has 1000 characters including spaces. ex qui tius elit fastidii at persius etiam accumsan lobortis pro riden.</SKBPROS_LONG_TITLE>
+		<SKBPROS_SURROGATE_ID></SKBPROS_SURROGATE_ID>
+		<SKBPROS_VERSION></SKBPROS_VERSION>
+		<SKBPROS_DATA_ORIGIN>GRAILS</SKBPROS_DATA_ORIGIN>
+		<SKBPROS_VPDI_CODE></SKBPROS_VPDI_CODE>
+	</SKBPROS>
+</SUPPPROG>
