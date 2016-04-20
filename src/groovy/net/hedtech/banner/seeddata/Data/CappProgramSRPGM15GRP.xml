@@ -23,7 +23,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMRPRLE_DATA_ORIGIN>GRAILS</SMRPRLE_DATA_ORIGIN>                                                           
   <SMRPRLE_VPDI_CODE/>                                                                    
  </SMRPRLE>                                                                               
-                                                                                          
  <SMBPGEN>                                                                                
   <SMBPGEN_PROGRAM>SRPGM15-GRP</SMBPGEN_PROGRAM>                                          
   <SMBPGEN_TERM_CODE_EFF>000000</SMBPGEN_TERM_CODE_EFF>                                   
@@ -63,7 +62,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMBPGEN_DATA_ORIGIN>GRAILS</SMBPGEN_DATA_ORIGIN>                                                                   
   <SMBPGEN_VPDI_CODE/>                                                                    
  </SMBPGEN>                                                                               
-                                                                                          
  <SMRALIB>                                                                                
   <SMRALIB_AREA>SR015G-A01</SMRALIB_AREA>                                                 
   <SMRALIB_AREA_DESC>Struc reg testng group area 15</SMRALIB_AREA_DESC>                   
@@ -81,7 +79,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMRALIB_DATA_ORIGIN>GRAILS</SMRALIB_DATA_ORIGIN>                                                                   
   <SMRALIB_VPDI_CODE/>                                                                    
  </SMRALIB>                                                                               
-                                                                                          
  <SMRPAAP>                                                                                
   <SMRPAAP_PROGRAM>SRPGM15-GRP</SMRPAAP_PROGRAM>                                          
   <SMRPAAP_TERM_CODE_EFF>000000</SMRPAAP_TERM_CODE_EFF>                                   
@@ -98,7 +95,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMRPAAP_DATA_ORIGIN>GRAILS</SMRPAAP_DATA_ORIGIN>                                                                  
   <SMRPAAP_VPDI_CODE/>                                                                    
  </SMRPAAP>                                                                               
-                                                                                          
  <SMBAGEN>                                                                                
   <SMBAGEN_AREA>SR015G-A01</SMBAGEN_AREA>                                                 
   <SMBAGEN_TERM_CODE_EFF>000000</SMBAGEN_TERM_CODE_EFF>                                   
@@ -135,7 +131,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMBAGEN_DATA_ORIGIN>GRAILS</SMBAGEN_DATA_ORIGIN>                                                                   
   <SMBAGEN_VPDI_CODE/>                                                                    
  </SMBAGEN>                                                                               
-                                                                                          
  <SMRAGAM>                                                                                
   <SMRAGAM_AREA>SR015G-A01</SMRAGAM_AREA>                                                 
   <SMRAGAM_TERM_CODE_EFF>000000</SMRAGAM_TERM_CODE_EFF>                                   
@@ -154,7 +149,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMRAGAM_DATA_ORIGIN>GRAILS</SMRAGAM_DATA_ORIGIN>                                                                  
   <SMRAGAM_VPDI_CODE/>                                                                    
  </SMRAGAM>                                                                               
-                                                                                          
  <SMRGLIB>                                                                                
   <SMRGLIB_GROUP>SR015-G01</SMRGLIB_GROUP>                                                
   <SMRGLIB_GROUP_DESC>Struc Reg Group 15</SMRGLIB_GROUP_DESC>                             
@@ -168,7 +162,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMRGLIB_DATA_ORIGIN>GRAILS</SMRGLIB_DATA_ORIGIN>                                                                   
   <SMRGLIB_VPDI_CODE/>                                                                    
  </SMRGLIB>                                                                               
-                                                                                          
  <SMBGGEN>                                                                                
   <SMBGGEN_GROUP>SR015-G01</SMBGGEN_GROUP>                                                
   <SMBGGEN_TERM_CODE_EFF>000000</SMBGGEN_TERM_CODE_EFF>                                   
@@ -202,7 +195,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMBGGEN_DATA_ORIGIN>GRAILS</SMBGGEN_DATA_ORIGIN>                                                                  
   <SMBGGEN_VPDI_CODE/>                                                                    
  </SMBGGEN>                                                                               
-                                                                                          
  <SMRGCAA>                                                                                
   <SMRGCAA_GROUP>SR015-G01</SMRGCAA_GROUP>                                                
   <SMRGCAA_TERM_CODE_EFF>000000</SMRGCAA_TERM_CODE_EFF>                                   
@@ -251,7 +243,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMRGCAA_DATA_ORIGIN>GRAILS</SMRGCAA_DATA_ORIGIN>                                                                  
   <SMRGCAA_VPDI_CODE/>                                                                    
  </SMRGCAA>                                                                               
-                                                                                          
  <SMBGRUL>                                                                                
   <SMBGRUL_KEY_RULE>MATH</SMBGRUL_KEY_RULE>                                               
   <SMBGRUL_DESC>Pick 1 math</SMBGRUL_DESC>                                                
@@ -327,7 +318,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <SMBGRUL_DATA_ORIGIN>GRAILS</SMBGRUL_DATA_ORIGIN>                                                                    
   <SMBGRUL_VPDI_CODE/>                                                                    
  </SMBGRUL>                                                                               
-                                                                                          
  <SMRGRUL>                                                                                
   <SMRGRUL_KEY_RULE>ELECTIVE</SMRGRUL_KEY_RULE>                                           
   <SMRGRUL_GROUP>SR015-G01</SMRGRUL_GROUP>                                                
