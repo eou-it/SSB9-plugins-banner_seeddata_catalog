@@ -165,7 +165,6 @@ public class CappProgramRequirementDML {
         deleteData('SSRRARE','delete SSRRARE  where exists ( select 1 from SSRRARE del, smralib,  smrpaap \n' +
                 '        where del.SSRRARE_area = ssrrare.ssrrare_area and del.SSRRARE_area = smrpaap_area  and  smrpaap_program = ? )' , program_code );
 
-        deleteData('SCRPARE','delete SCRPARE where SCRPARE_PROGRAM = ?',  program_code)
         deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
 
 
