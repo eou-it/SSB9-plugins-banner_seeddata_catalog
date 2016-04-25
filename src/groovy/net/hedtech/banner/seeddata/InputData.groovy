@@ -270,7 +270,13 @@ public class InputData {
                                 'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml'],
             'program-prerequisite' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramRestriction_Data.xml',
                                       '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramTestScoreRestrictionAndPrerequisite_Data.xml',
-                                      '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaRestriction_Data.xml']
+                                      '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaRestriction_Data.xml'],
+            'classList' : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListTermData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListCatalogData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListScheduleData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListComponentData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024925.xml']
             ]
 
     /**
