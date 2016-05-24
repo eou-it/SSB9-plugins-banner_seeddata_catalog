@@ -1,0 +1,288 @@
+|Loading Grails 2.5.0
+|Configuring classpath
+.
+|Environment set to development
+......base dir: C:\Users\apoliski\Documents\XEapps\BTE\banner_web_time_entry_ssb_app\plugins\banner_seeddata_catalog.git target employee
+..Using configuration: file:C:\Users\apoliski/.grails/banner_configuration.groovy
+.........................................Error 
+|
+log4j:ERROR Property missing when configuring log4j: environment
+..
+Configuring Spring Security Core ...
+... finished configuring Spring Security Core
+
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:42 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: GTVEMAL  	Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:43 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:43 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTVECIP  	Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:43 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:43 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTVEEOG  	Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:43 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:43 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTVESKL  	Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:44 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvshcdData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:44 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTVSHCD  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:44 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvlcatData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:44 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTVLCAT  	Read:   14  	Insert:    0  	Update:   14  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   14  	Insert:    0  	Update:   14  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:44 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbcatData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:44 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTRBCAT  	Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:44 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtremprData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:44 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTREMPR  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:44 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrpictData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:44 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTRPICT  	Read:   13  	Insert:    0  	Update:   13  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   13  	Insert:    0  	Update:   13  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:45 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclsData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:45 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTRECLS  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:46 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjblnData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:46 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTRJBLN  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:46 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtresocData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:46 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTRESOC  	Read:   29  	Insert:    0  	Update:   29  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   29  	Insert:    0  	Update:   29  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:46 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrinstData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:46 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: PTRINST  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:47 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:47 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NTRALVL  	Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:44:47 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml
+
+
+Seed data loader starting at Tue May 24 16:44:47 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NTRSALA  	Read: 2443  	Insert:    0  	Update: 2443  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 2443  	Insert:    0  	Update: 2443  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:13 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsgrpData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:13 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NTRSGRP  	Read:  268  	Insert:    0  	Update:  268  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  268  	Insert:    0  	Update:  268  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:16 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalbData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:16 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NTRSALB  	Read:  975  	Insert:    0  	Update:  975  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  975  	Insert:    0  	Update:  975  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:26 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:26 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NTRPCLS  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:26 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrinstData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:26 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NTRINST  	Read:    1  	Insert:    1  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    1  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:26 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:26 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: NBBFISC  	Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:27 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:27 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: SPRIDEN  	Read:    2  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: SPBPERS  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+Total for Table: SPRADDR  	Read:    2  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: SPREMRG  	Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+Total for Table: SPRTELE  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+Total for Table: GOREMAL  	Read:    3  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: PEBEMPL  	Read:    2  	Insert:    2  	Update:    0  	Deletes:    2  	Errors:    0 
+Total for Table: PDRBENE  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    2  	Errors:    0 
+Total for Table: PDRBEHS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    4  	Errors:    0 
+Total for Table: PERLEAV  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   10  	Errors:    0 
+Total for Table: PERLHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   10  	Errors:    0 
+Total for Table: PEREHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    2  	Errors:    0 
+
+Total Tables:   12  		Read:   16  	Insert:    2  	Update:    7  	Deletes:   30  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:28 EDT 2016
+C:/Users/apoliski/Documents/XEapps/BTE/banner_web_time_entry_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml
+
+
+Seed data loader starting at Tue May 24 16:45:28 EDT 2016
+Committing  seed data
+using configuration: C:\Users\apoliski\.grails\banner_configuration.groovy
+Total for Table: GXRDIRD  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Tue May 24 16:45:28 EDT 2016
