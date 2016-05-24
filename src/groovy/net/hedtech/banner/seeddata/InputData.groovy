@@ -79,6 +79,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtresklData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvlcatData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvshcdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrinstData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsgrpData.xml',
@@ -88,7 +89,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml'],
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GxvbankData.xml'],
 
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
