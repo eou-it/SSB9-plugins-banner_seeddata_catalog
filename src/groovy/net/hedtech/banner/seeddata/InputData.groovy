@@ -67,8 +67,8 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml',
@@ -105,9 +105,11 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml',
                          //'/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
                          //'/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
+                    // Employee Information
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
                          //'/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml'],
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductions.xml'],
 
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],

@@ -104,151 +104,128 @@ class EmployeeBenefitsIDDML {
         java.sql.Date sqlDate
 
         if (PIDM) {
+            def findY = ""
+            String findRow = """select 'Y' pdrbded_find from pdrbded where pdrbded_pidm = ?
+                                and pdrbded_bdca_code  = ? """
             try {
-                def cntDeductions = 0
-                String employeeDeductionsSql = """select * from pdrbded  where pdrbded_pidm = ?"""
-                this.conn.eachRow(employeeDeductionsSql, [PIDM]) { trow ->
-                    cntDeductions++
+                conn.eachRow(findRow, [this.pdrbded_pidm, this.pdrbded_bdca_code]) {row ->
+                    findY = row.pdrbded_find
                 }
-                if (cntDeductions) {
-                    deleteData()
-                }
-                String API = "{call pb_deduction_base.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?)}"
-                CallableStatement insertCall = this.connectCall.prepareCall(API)
-                insertCall.setInt(1, this.PIDM.toInteger())
-                insertCall.setString(2, this.pdrbded_bdca_code)
-                insertCall.setString(3, this.pdrbded_add_repl_ind)
-                // parm 4
-                if ((this.pdrbded_add_repl_empl == "") || (this.pdrbded_add_repl_empl == null) ||
-                        (!this.pdrbded_add_repl_empl)) {
-                    insertCall.setNull(4, java.sql.Types.DOUBLE)
-                } else {
-                    insertCall.setDouble(4, this.pdrbded_add_repl_empl.toDouble())
-                }
-                // parm 5
-                if ((this.pdrbded_add_repl_empr == "") || (this.pdrbded_add_repl_empr == null) ||
-                        (!this.pdrbded_add_repl_empr)) {
-                    insertCall.setNull(5, java.sql.Types.DOUBLE)
-                } else {
-                    insertCall.setDouble(5, this.pdrbded_add_repl_empr.toDouble())
-                }
-                // parm 6
-                if ((this.pdrbded_add_repl_tax_base == "") || (this.pdrbded_add_repl_tax_base == null) ||
-                        (!this.pdrbded_add_repl_tax_base)) {
-                    insertCall.setNull(6, java.sql.Types.DOUBLE)
-                } else {
-                    insertCall.setDouble(6, this.pdrbded_add_repl_tax_base.toDouble())
-                }
-                //parm 7
-                insertCall.setString(7, this.pdrbded_arr_status)
-                // parm 8
-                if ((this.pdrbded_arr_balance == "") || (this.pdrbded_arr_balance == null) ||
-                        (!this.pdrbded_arr_balance)) {
-                    insertCall.setNull(8, java.sql.Types.DOUBLE)
-                } else {
-                    insertCall.setDouble(8, this.pdrbded_arr_balance.toDouble())
-                }
-                // parm 9
-                if ((this.pdrbded_bond_balance == "") || (this.pdrbded_bond_balance == null) ||
-                        (!this.pdrbded_bond_balance)) {
-                    insertCall.setNull(9, java.sql.Types.DOUBLE)
-                } else {
-                    insertCall.setDouble(9, this.pdrbded_bond_balance.toDouble())
-                }
-                // parm 10
-                if ((this.pdrbded_begin_date == "") || (this.pdrbded_begin_date == null) ||
-                        (!this.pdrbded_begin_date)) {
-                    insertCall.setNull(10, java.sql.Types.DATE)
-                } else {
-                    ddate = new ColumnDateValue(this.pdrbded_begin_date)
-                    unfDate = ddate.formatJavaDate()
-                    formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                    insertCall.setDate(10, sqlDate)
-                }
-                // parm 11
-                if ((this.pdrbded_end_date == "") || (this.pdrbded_end_date == null) ||
-                        (!this.pdrbded_end_date)) {
-                    insertCall.setNull(11, java.sql.Types.DATE)
-                } else {
-                    ddate = new ColumnDateValue(this.pdrbded_begin_date)
-                    unfDate = ddate.formatJavaDate()
-                    formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                    insertCall.setDate(11, sqlDate)
-                }
-                // parm 12
-                if ((this.pdrbded_arr_recover_max == "") || (this.pdrbded_arr_recover_max == null) ||
-                        (!this.pdrbded_arr_recover_max)) {
-                    insertCall.setNull(12, java.sql.Types.DOUBLE)
-                } else {
-                    insertCall.setDouble(12, this.getPdrbded_arr_recover_max().toDouble())
-                }
-                // parm 13
-                insertCall.setString(13, this.pdrbded_add_repl_pict_code)
-
-                try {
-                    insertCall.executeUpdate()
-                    connectInfo.tableUpdate("PDRBDED", 0, 1, 0, 0, 0)
-                }
-                catch (Exception e) {
-                    connectInfo.tableUpdate("PDRBDED", 0, 0, 0, 1, 0)
-                    if (connectInfo.showErrors) {
-                        println "Insert PEBEMPL ${this.bannerid}}"
-                        println "Problem executing insert for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
-                    }
-                }
-                finally {
-                    insertCall.close()
-                }
-
             }
             catch (Exception e) {
                 connectInfo.tableUpdate("PDRBDED", 0, 0, 0, 1, 0)
                 if (connectInfo.showErrors) {
-                    println "Insert PDRBDED ${this.bannerid} }"
-                    println "Problem executing insert for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
+                    println "${findRow}"
+                    println "Problem with select for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
+                }
+            }
+            if (!findY) {
+                try {
+                    conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'OFF') }"
+                    String API = "{call pb_deduction_base.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
+                    CallableStatement insertCall = this.connectCall.prepareCall(API)
+                    insertCall.setInt(1, this.PIDM.toInteger())
+                    insertCall.setString(2, this.pdrbded_bdca_code)
+                    insertCall.setString(3, this.pdrbded_add_repl_ind)
+                    // parm 4
+                    if ((this.pdrbded_add_repl_empl == "") || (this.pdrbded_add_repl_empl == null) ||
+                            (!this.pdrbded_add_repl_empl)) {
+                        insertCall.setNull(4, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(4, this.pdrbded_add_repl_empl.toDouble())
+                    }
+                    // parm 5
+                    if ((this.pdrbded_add_repl_empr == "") || (this.pdrbded_add_repl_empr == null) ||
+                            (!this.pdrbded_add_repl_empr)) {
+                        insertCall.setNull(5, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(5, this.pdrbded_add_repl_empr.toDouble())
+                    }
+                    // parm 6
+                    if ((this.pdrbded_add_repl_tax_base == "") || (this.pdrbded_add_repl_tax_base == null) ||
+                            (!this.pdrbded_add_repl_tax_base)) {
+                        insertCall.setNull(6, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(6, this.pdrbded_add_repl_tax_base.toDouble())
+                    }
+                    //parm 7
+                    insertCall.setString(7, this.pdrbded_arr_status)
+                    // parm 8
+                    if ((this.pdrbded_arr_balance == "") || (this.pdrbded_arr_balance == null) ||
+                            (!this.pdrbded_arr_balance)) {
+                        insertCall.setNull(8, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(8, this.pdrbded_arr_balance.toDouble())
+                    }
+                    // parm 9
+                    if ((this.pdrbded_bond_balance == "") || (this.pdrbded_bond_balance == null) ||
+                            (!this.pdrbded_bond_balance)) {
+                        insertCall.setNull(9, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(9, this.pdrbded_bond_balance.toDouble())
+                    }
+                    // parm 10
+                    if ((this.pdrbded_begin_date == "") || (this.pdrbded_begin_date == null) ||
+                            (!this.pdrbded_begin_date)) {
+                        insertCall.setNull(10, java.sql.Types.DATE)
+                    } else {
+                        ddate = new ColumnDateValue(this.pdrbded_begin_date)
+                        unfDate = ddate.formatJavaDate()
+                        formatter = new SimpleDateFormat("yyyy-MM-dd");
+                        sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
+                        insertCall.setDate(10, sqlDate)
+                    }
+                    // parm 11
+                    if ((this.pdrbded_end_date == "") || (this.pdrbded_end_date == null) ||
+                            (!this.pdrbded_end_date)) {
+                        insertCall.setNull(11, java.sql.Types.DATE)
+                    } else {
+                        ddate = new ColumnDateValue(this.pdrbded_begin_date)
+                        unfDate = ddate.formatJavaDate()
+                        formatter = new SimpleDateFormat("yyyy-MM-dd");
+                        sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
+                        insertCall.setDate(11, sqlDate)
+                    }
+                    // parm 12
+                    if ((this.pdrbded_arr_recover_max == "") || (this.pdrbded_arr_recover_max == null) ||
+                            (!this.pdrbded_arr_recover_max)) {
+                        insertCall.setNull(12, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(12, this.getPdrbded_arr_recover_max().toDouble())
+                    }
+                    // parm 13
+                    insertCall.setString(13, this.pdrbded_add_repl_pict_code)
+                    insertCall.setString(14, this.pdrbded_user_id)
+                    insertCall.setString(15, this.pdrbded_data_origin)
+                    insertCall.registerOutParameter(16, java.sql.Types.ROWID)
+
+                    try {
+                        insertCall.executeUpdate()
+                        connectInfo.tableUpdate("PDRBDED", 0, 1, 0, 0, 0)
+                    }
+                    catch (Exception e) {
+                        connectInfo.tableUpdate("PDRBDED", 0, 0, 0, 1, 0)
+                        if (connectInfo.showErrors) {
+                            println "Insert PEBEMPL ${this.bannerid}}"
+                            println "Problem executing insert for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
+                        }
+                    }
+                    finally {
+                        insertCall.close()
+                    }
+                    conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'ON') }"
+
+                }
+                catch (Exception e) {
+                    connectInfo.tableUpdate("PDRBDED", 0, 0, 0, 1, 0)
+                    if (connectInfo.showErrors) {
+                        println "Insert PDRBDED ${this.bannerid} }"
+                        println "Problem executing insert for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
+                    }
                 }
             }
         }
 
-    }
-
-    def deleteData() {
-        String selectSql = """select pdrbded_pidm from pdrbded where pdrbded_pidm = ?"""
-        try {
-            conn.eachRow(selectSql, [connectInfo.savePidm]) {
-                // Benefits and Deductions
-                deleteData("PDRFLEX", "delete from pdrflex where pdrflex_pidm = ?")
-                deleteData("PDRBFLX", "delete from pdrbflx where pdrbflx_pidm = ?")
-                deleteData("PERPCRE", "delete from perpcre where perpcre_pidm = ?")
-                deleteData("PDRXPID", "delete from pdrxpid where pdrxpid_pidm = ?")
-                deleteData("PDRPERS", "delete from pdrpers where pdrpers_pidm = ?")
-                deleteData("PHRDEDN", "delete from phrdedn where phrdedn_pidm = ?")
-                deleteData("PERDHIS", "delete from perdhis where perdhis_pidm = ?")
-                deleteData("PDRDEDN", "delete from pdrdedn where pdrdedn_pidm = ?")
-                deleteData("PDRBDED", "delete from pdrbded where pdrbded_pidm = ?")
-            }
-        }
-        catch ( e ) {
-           connectInfo.tableUpdate("PDRBDED", 0, 0, 0, 1, 0)
-           if (connectInfo.showErrors) {
-               println "Problem executing select or delete for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
-           }
-        }
-    }
-    def deleteData(String tableName, String sql) {
-        try {
-
-            int delRows = conn.executeUpdate(sql, [connectInfo.savePidm.toInteger()])
-            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Problem executing delete for employee base deduction ${connectInfo.savePidm} from EmployeeBenefitsIDDML.groovy: $e.message"
-                println "${sql}"
-            }
-        }
     }
 
 }
