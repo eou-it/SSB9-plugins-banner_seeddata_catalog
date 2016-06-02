@@ -95,11 +95,6 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdldData.xml',
-                    // History
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdednData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdocmData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrearnData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml',
                     // Position Control Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml',
@@ -114,7 +109,12 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
                          //'/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductions.xml'],
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductions.xml',
+                    // Employee Pay History
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdednData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdocmData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrearnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml'],
 
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
