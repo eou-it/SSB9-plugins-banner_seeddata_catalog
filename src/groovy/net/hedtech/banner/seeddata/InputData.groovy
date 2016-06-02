@@ -95,6 +95,11 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdldData.xml',
+                    // History
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdednData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdocmData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrearnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml',
                     // Position Control Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml',
