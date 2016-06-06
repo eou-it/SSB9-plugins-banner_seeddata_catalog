@@ -262,7 +262,9 @@ public class InputData {
                                     '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml',
                                     '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
             'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
-                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml']
+                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml'],
+
+            ' ':['src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFund.xml']
             ]
 
 
