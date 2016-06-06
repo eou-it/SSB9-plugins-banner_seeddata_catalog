@@ -43,7 +43,7 @@ class EmployeeBenefitsIDDML {
 
     def PIDM
 
-    public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall) {
+    public EmployeeBenefitsIDDML(InputData connectInfo, Sql conn, Connection connectCall) {
 
         this.conn = conn
         this.connectInfo = connectInfo
