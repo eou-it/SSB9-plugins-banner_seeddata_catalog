@@ -98,7 +98,11 @@ public class APIClasses {
             'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
             'FPBREQH'          : 'net.hedtech.banner.seeddata.FinanceProcurementHeaderCreateDML',
             'PEBEMPL'          : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
-            'PDRBDED'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsIDDML'
+            'PDRBDED'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsIDDML',
+            'PDRDEDN'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsDetailDML',
+            'PERDHIS'          : 'net.hedtech.banner.seeddata.PerdhisDML',
+            'PERJHIS'          : 'net.hedtech.banner.seeddata.PerjhisDML',
+            'NBRPTOT'          : 'net.hedtech.banner.seeddata.NbrptotDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -125,7 +129,10 @@ public class APIClasses {
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML'
+            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
+            'PERDHIS' : 'net.hedtech.banner.seeddata.PerdhisDML',
+            'NBRPTOT' : 'net.hedtech.banner.seeddata.NbrptotDML',
+            'PERJHIS' : 'net.hedtech.banner.seeddata.PerjhisDML'
     ]
 
 

@@ -88,6 +88,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvasData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrtreaData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrearnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrshftData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtresocData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrinstData.xml',
                     // Benefits and Deductions Rules
@@ -103,6 +104,11 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdldData.xml',
+                    // Finance data
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfsyrData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfspdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobudData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobphData.xml',
                     // Position Control Rules and Posn Budget
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml',
@@ -122,8 +128,9 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductions.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductionsDetail.xml',
                     // Employee History
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerdhisData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjhisData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdhisData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjhisData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdtotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhraccrData.xml',
                          //'/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjobsData.xml',

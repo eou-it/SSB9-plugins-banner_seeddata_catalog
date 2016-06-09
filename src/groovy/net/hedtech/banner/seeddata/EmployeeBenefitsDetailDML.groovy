@@ -68,13 +68,13 @@ class EmployeeBenefitsDetailDML {
         this.connectCall = connectCall
         this.xmlData = xmlData
         parseXmlData()
-        //processEmployeeBenefitsDetail()
+        processEmployeeBenefitsDetail()
     }
 
     def parseXmlData() {
         def pdrdedn = new XmlParser().parseText(xmlData)
         this.bannerid = pdrdedn.BANNERID
-        this.bannerid_w4_signed_pidm - pdrdedn.BANNERID_W4_SIGNED_PIDM
+        this.bannerid_w4_signed_pidm = pdrdedn.BANNERID_W4_SIGNED_PIDM
         this.pdrdedn_bdca_code = pdrdedn.PDRDEDN_BDCA_CODE.text()
         this.pdrdedn_effective_date = pdrdedn.PDRDEDN_EFFECTIVE_DATE.text()
         this.pdrdedn_status = pdrdedn.PDRDEDN_STATUS.text()
@@ -88,11 +88,11 @@ class EmployeeBenefitsDetailDML {
         this.pdrdedn_opt_code3 = pdrdedn.PDRDEDN_OPT_CODE3.text()
         this.pdrdedn_opt_code4 = pdrdedn.PDRDEDN_OPT_CODE4.text()
         this.pdrdedn_opt_code5 = pdrdedn.PDRDEDN_OPT_CODE5.text()
-        this.pdrdedn_activity_date = pdrdedn.PDRDEDN_ACTIVITY_DATE().text()
-        this.pdrdedn_coverage_date = pdrdedn.PDRDEDN_COVERAGE_DATE().text()
-        this.pdrdedn_bdcl_code = pdrdedn.PDRDEDN_BDCL_CODE().text()
+        this.pdrdedn_activity_date = pdrdedn.PDRDEDN_ACTIVITY_DATE.text()
+        this.pdrdedn_coverage_date = pdrdedn.PDRDEDN_COVERAGE_DATE.text()
+        this.pdrdedn_bdcl_code = pdrdedn.PDRDEDN_BDCL_CODE.text()
         this.pdrdedn_w4_name_change_ind = pdrdedn.PDRDEDN_W4_NAME_CHANGE_IND.text()
-        //this.pdrdedn_w4_signed_pidm =
+        this.pdrdedn_w4_signed_pidm = pdrdedn.PDRDEDN_W4_SGNED_PIDM.text()
         this.pdrdedn_w4_signed_date = pdrdedn.PDRDEDN_W4_SIGNED_DATE.text()
         this.pdrdedn_lockin_letter_status = pdrdedn.PDRDEDN_LOCKIN_LETTER_STATUS.text()
         this.pdrdedn_lockin_letter_date = pdrdedn.PDRDEDN_LOCKIN_LETTER_DATE.text()
@@ -113,8 +113,7 @@ class EmployeeBenefitsDetailDML {
     def processEmployeeBenefitsDetail() {
         PIDM = null
         W4_SIGNED_PIDM = null
-        String pidmsql = """select * from spriden  where spriden_id = ?"""
-
+        String pidmsql = """select * from spriden  where spriden_id = ? and spriden_change_ind is null"""
         try {
             this.conn.eachRow(pidmsql, [this.bannerid.text()]) { trow ->
                 PIDM = trow.spriden_pidm
@@ -126,6 +125,19 @@ class EmployeeBenefitsDetailDML {
                 println "Could not select ID in EmployeeBenefitsDetailDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
             }
         }
+        if (this.bannerid_w4_signed_pidm) {
+            String w4pidmsql = """select * from spriden  where spriden_id = ? and spriden_change_ind is null"""
+            try {
+                this.conn.eachRow(w4pidmsql, [this.bannerid_w4_signed_pidm.text()]) { t2row ->
+                    W4_SIGNED_PIDM = t2row.spriden_pidm
+                }
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                   println "Could not select W4 ID in EmployeeBenefitsDetailDML,  ${this.bannerid_w4_signed_pidm.text()}  from SPRIDEN. $e.message"
+                }
+            }
+        }
         ColumnDateValue ddate
         SimpleDateFormat formatter
         String unfDate
@@ -135,9 +147,9 @@ class EmployeeBenefitsDetailDML {
             def findY = ""
             String findRow = """select 'Y' pdrdedn_find from pdrdedn where pdrdedn_pidm = ?
                                 and pdrdedn_bdca_code  = ?
-                                and pdrdedn_effective_date = ?"""
+                                and trunc(pdrdedn_effective_date) = trunc(to_date(?,'dd/mm/yyyy'))"""
             try {
-                conn.eachRow(findRow, [this.pdrdedn_pidm, this.pdrdedn_bdca_code, this.pdrdedn_effective_date]) { row ->
+                conn.eachRow(findRow, [PIDM, this.pdrdedn_bdca_code, this.pdrdedn_effective_date]) { row ->
                     findY = row.pdrdedn_find
                 }
             }
@@ -150,11 +162,12 @@ class EmployeeBenefitsDetailDML {
             }
             if (!findY) {
                 try {
-                    //conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'OFF') }"
-                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,,?,?,?,?,?,?,?,?,?)}"
+                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                     CallableStatement insertCall = this.connectCall.prepareCall(API)
+
                     insertCall.setInt(1, this.PIDM.toInteger())
-                    insertCall.setString(2, this.pdrdedn_bdca_code())
+                    insertCall.setString(2, this.pdrdedn_bdca_code)
+
                     if ((this.pdrdedn_effective_date == "") || (this.pdrdedn_effective_date == null) ||
                             (!this.pdrdedn_effective_date)) {
                         insertCall.setNull(3, java.sql.Types.DATE)
@@ -165,8 +178,10 @@ class EmployeeBenefitsDetailDML {
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                         insertCall.setDate(3, sqlDate)
                     }
-                    insertCall.setString(4, this.pdrdedn_status())
-                    insertCall.setString(5, this.pdrdedn_ref_no())
+
+                    insertCall.setString(4, this.pdrdedn_status)
+                    insertCall.setString(5, this.pdrdedn_ref_no)
+
                     if ((this.pdrdedn_amount1 == "") || (this.pdrdedn_amount1 == null) ||
                             (!this.pdrdedn_amount1)) {
                         insertCall.setNull(6, java.sql.Types.DOUBLE)
@@ -191,76 +206,85 @@ class EmployeeBenefitsDetailDML {
                     } else {
                         insertCall.setDouble(9, this.pdrdedn_amount4.toDouble())
                     }
-                    insertCall.setString(10, this.pdrdedn_opt_code1())
-                    insertCall.setString(11, this.pdrdedn_opt_code2())
-                    insertCall.setString(12, this.pdrdedn_opt_code3())
-                    insertCall.setString(13, this.pdrdedn_opt_code4())
-                    insertCall.setString(14, this.pdrdedn_opt_code5())
 
-                    if ((this.pdrdedn_activity_date == "") || (this.pdrdedn_activity_date == null) ||
-                            (!this.pdrdedn_activity_date)) {
+                    insertCall.setString(10, this.pdrdedn_opt_code1)
+                    insertCall.setString(11, this.pdrdedn_opt_code2)
+                    insertCall.setString(12, this.pdrdedn_opt_code3)
+                    insertCall.setString(13, this.pdrdedn_opt_code4)
+                    insertCall.setString(14, this.pdrdedn_opt_code5)
+
+                    if ((this.pdrdedn_coverage_date == "") || (this.pdrdedn_coverage_date == null) ||
+                            (!this.pdrdedn_coverage_date)) {
                         insertCall.setNull(15, java.sql.Types.DATE)
                     } else {
-                        ddate = new ColumnDateValue(this.pdrdedn_activity_date)
+                        ddate = new ColumnDateValue(this.pdrdedn_coverage_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                         insertCall.setDate(15, sqlDate)
                     }
 
-                    if ((this.pdrdedn_coverage_date == "") || (this.pdrdedn_coverage_date == null) ||
-                            (!this.pdrdedn_coverage_date)) {
-                        insertCall.setNull(16, java.sql.Types.DATE)
-                    } else {
-                        ddate = new ColumnDateValue(this.pdrdedn_coverage_date)
-                        unfDate = ddate.formatJavaDate()
-                        formatter = new SimpleDateFormat("yyyy-MM-dd");
-                        sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(16, sqlDate)
-                    }
-                    insertCall.setString(17, this.pdrdedn_bdcl_code())
-                    insertCall.setString(18, this.pdrdedn_w4_name_change_ind())
+                    insertCall.setString(16, this.pdrdedn_bdcl_code)
 
-                    insertCall.setInt(19, this.W4_SIGNED_PIDM.toInteger())
+                    // W-4 info
+                    insertCall.setString(17, this.pdrdedn_w4_name_change_ind)
+                    if ((this.W4_SIGNED_PIDM == "") || (this.W4_SIGNED_PIDM == null) ||
+                            (!this.W4_SIGNED_PIDM)) {
+                        insertCall.setNull(18, java.sql.Types.INTEGER)
+                    } else {
+                        insertCall.setInt(18, this.W4_SIGNED_PIDM.toInteger())
+                    }
 
                     if ((this.pdrdedn_w4_signed_date == "") || (this.pdrdedn_w4_signed_date == null) ||
                             (!this.pdrdedn_w4_signed_date)) {
-                        insertCall.setNull(20, java.sql.Types.DATE)
+                        insertCall.setNull(19, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_w4_signed_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(20, sqlDate)
+                        insertCall.setDate(19, sqlDate)
                     }
+                    // lockin letter info
+                    insertCall.setString(20, this.pdrdedn_lockin_letter_status)
 
-                    insertCall.setString(21, this.pdrdedn_lockin_letter_status())
                     if ((this.pdrdedn_lockin_letter_date == "") || (this.pdrdedn_lockin_letter_date == null) ||
                             (!this.pdrdedn_lockin_letter_date)) {
-                        insertCall.setNull(22, java.sql.Types.DATE)
+                        insertCall.setNull(21, java.sql.Types.DATE)
                     } else {
-                        ddate = new ColumnDateValue(this.pdrdedn_w4_signed_date)
+                        ddate = new ColumnDateValue(this.pdrdedn_lockin_letter_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(22, sqlDate)
+                        insertCall.setDate(21, sqlDate)
                     }
-                    insertCall.setString(23, this.pdrdedn_lockin_fsta_fil_st())
-                    insertCall.setInt(24, this.pdrdedn_lockin_withhold_allow.toInteger())
-                    insertCall.setString(25, this.pdrdedn_comment())
+
+                    insertCall.setString(22, this.pdrdedn_lockin_fsta_fil_st)
+
+                    if ((this.pdrdedn_lockin_withhold_allow == "") || (this.pdrdedn_lockin_withhold_allow == null) ||
+                            (!this.pdrdedn_lockin_withhold_allow)) {
+                        insertCall.setNull(23, java.sql.Types.INTEGER)
+                    } else {
+                        insertCall.setInt(23, this.pdrdedn_lockin_withhold_allow.toInteger())
+                    }
+
+                    insertCall.setString(24, this.pdrdedn_comment)
                     if ((this.pdrdedn_comment_date == "") || (this.pdrdedn_comment_date == null) ||
                             (!this.pdrdedn_comment_date)) {
-                        insertCall.setNull(26, java.sql.Types.DATE)
+                        insertCall.setNull(25, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_comment_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(26, sqlDate)
+                        insertCall.setDate(25, sqlDate)
                     }
+
+                    insertCall.setString(26, this.pdrdedn_comment_user_id)
                     insertCall.setString(27, this.pdrdedn_user_id)
                     insertCall.setString(28, this.pdrdedn_data_origin)
-                    insertCall.setString(29, this.pdrdedn_brea_code())
+                    insertCall.setString(29, this.pdrdedn_brea_code)
+
                     if ((this.pdrdedn_event_date == "") || (this.pdrdedn_event_date == null) ||
                             (!this.pdrdedn_event_date)) {
                         insertCall.setNull(30, java.sql.Types.DATE)
@@ -271,8 +295,8 @@ class EmployeeBenefitsDetailDML {
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                         insertCall.setDate(30, sqlDate)
                     }
+
                     insertCall.registerOutParameter(31, java.sql.Types.ROWID)
-                    //
                     try {
                         insertCall.executeUpdate()
                         connectInfo.tableUpdate("PDRDEDN", 0, 1, 0, 0, 0)
@@ -280,19 +304,18 @@ class EmployeeBenefitsDetailDML {
                     catch (Exception e) {
                         connectInfo.tableUpdate("PDRDEDN", 0, 0, 0, 1, 0)
                         if (connectInfo.showErrors) {
-                            println "Insert PDRDEDN ${this.bannerid}}"
+                            println "Insert PDRDEDN ${this.bannerid} ${this.pdrdedn_bdca_code} ${this.pdrdedn_effective_date}"
                             println "Problem executing insert for table PDRDEDN from EmployeeBenefitsDetailDML.groovy: $e.message"
                         }
                     }
                     finally {
                         insertCall.close()
                     }
-                    //conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'ON') }"
                 }
                 catch (Exception e) {
                     connectInfo.tableUpdate("PDRDEDN", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
-                        println "Insert PDRDEDN ${this.bannerid} }"
+                        println "Insert PDRDEDN ${this.bannerid} ${this.pdrdedn_bdca_code} ${this.pdrdedn_effective_date}"
                         println "Problem executing insert for table PDRDEDN from EmployeeBenefitsDetailDML.groovy: $e.message"
                     }
                 }
