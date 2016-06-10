@@ -219,7 +219,7 @@ class EmployeeBenefitsIDDML {
                 catch (Exception e) {
                     connectInfo.tableUpdate("PDRBDED", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
-                        println "Insert PDRBDED ${this.bannerid} }"
+                        println "Insert PDRBDED ${this.bannerid} "
                         println "Problem executing insert for table PDRBDED from EmployeeBenefitsIDDML.groovy: $e.message"
                     }
                 }

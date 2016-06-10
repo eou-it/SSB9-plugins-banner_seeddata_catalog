@@ -536,6 +536,16 @@ public class EmployeePersonIDDML {
                 deleteData("PERDHIS","delete from perdhis where perdhis_pidm = ?")
                 deleteData("PDRDEDN","delete from pdrdedn where pdrdedn_pidm = ?")
                 deleteData("PDRBDED","delete from pdrbded where pdrbded_pidm = ?")
+            // Employee Jobs
+                deleteData("NBRXDED","delete from nbrxded where nbrxded_pidm = ?")
+                deleteData("NBRJFTE","delete from nbrjfte where nbrjfte_pidm = ?")
+                deleteData("NBRWKSH","delete from nbrwksh where nbrwksh_pidm = ?")
+                deleteData("NBBWKSH","delete from nbbwksh where nbbwksh_pidm = ?")
+                deleteData("NBRJLBD","delete from nbrjlbd where nbrjlbd_pidm = ?")
+                deleteData("NBREARN","delete from nbrearn where nbrearn_pidm = ?")
+                deleteData("NBRJOBS","delete from nbrjobs where nbrjobs_pidm = ?")
+                deleteData("NBRJLHS","delete from nbrjlhs where nbrjlhs_pidm = ?")
+                deleteData("NBRBJOB","delete from nbrbjob where nbrbjob_pidm = ?")
              // Employee essential data
                 deleteData("PERREVW","delete from perrevw where perrevw_pidm = ?")
                 deleteData("PERRHOL","delete from perrhol where perrhol_pidm = ?")
