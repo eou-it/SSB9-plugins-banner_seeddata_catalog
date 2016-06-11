@@ -43,18 +43,18 @@ public class FinanceBudgetAvailabilityFoapalOrganizationDML {
 
 
     def parseXmlData() {
-        def userCreationData = new XmlParser().parseText( xmlData )
-        this.ORG_CODE = userCreationData.ORG_CODE?.text()
-        this.FTVORGN_COAS_CODE = userCreationData.FTVORGN_COAS_CODE?.text()
-        boolean isEmpty = StringUtils.isEmpty userCreationData.TOTAL_COUNT?.text()
-        this.TOTAL_COUNT = isEmpty ? 0 : userCreationData.TOTAL_COUNT?.text() as int
-        this.FTVORGN_ORGN_CODE_PRED = userCreationData.FTVORGN_ORGN_CODE_PRED?.text()
-        this.ORG_DESC = userCreationData.ORG_DESC?.text()
-        this.FTVORGN_ORGN_CODE_PRED = userCreationData.FTVORGN_ORGN_CODE_PRED?.text()
-        isEmpty = StringUtils.isEmpty userCreationData.START_COUNT?.text()
-        this.START_COUNT = isEmpty ? 0 : userCreationData.START_COUNT?.text() as int
-        this.ORGCODE_PATTERN = userCreationData.ORGCODE_PATTERN?.text()
-        this.ORGDESC_PATTERN = userCreationData.ORGDESC_PATTERN?.text()
+        def organizationCreationData = new XmlParser().parseText( xmlData )
+        this.ORG_CODE = organizationCreationData.ORG_CODE?.text()
+        this.FTVORGN_COAS_CODE = organizationCreationData.FTVORGN_COAS_CODE?.text()
+        boolean isEmpty = StringUtils.isEmpty organizationCreationData.TOTAL_COUNT?.text()
+        this.TOTAL_COUNT = isEmpty ? 0 : organizationCreationData.TOTAL_COUNT?.text() as int
+        this.FTVORGN_ORGN_CODE_PRED = organizationCreationData.FTVORGN_ORGN_CODE_PRED?.text()
+        this.ORG_DESC = organizationCreationData.ORG_DESC?.text()
+        this.FTVORGN_ORGN_CODE_PRED = organizationCreationData.FTVORGN_ORGN_CODE_PRED?.text()
+        isEmpty = StringUtils.isEmpty organizationCreationData.START_COUNT?.text()
+        this.START_COUNT = isEmpty ? 0 : organizationCreationData.START_COUNT?.text() as int
+        this.ORGCODE_PATTERN = organizationCreationData.ORGCODE_PATTERN?.text()
+        this.ORGDESC_PATTERN = organizationCreationData.ORGDESC_PATTERN?.text()
     }
 
     /**
