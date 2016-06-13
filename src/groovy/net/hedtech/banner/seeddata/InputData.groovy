@@ -268,7 +268,9 @@ public class InputData {
 
             'finance-budget-availability-foapal': ['src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFund.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalOrganization.xml',
-                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccount.xml']
+                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccount.xml',
+                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalProgram.xml',
+                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalLocation.xml']
     ]
 
     /**

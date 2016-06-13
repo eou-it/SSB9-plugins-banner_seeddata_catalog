@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<BA_FOAPAL_PROGRAMS>
+    <FOAPAL_PROGRAMS>
+        <PROGRAM_CODE_PATTERN>P</PROGRAM_CODE_PATTERN>
+        <PROGRAM_CODE_DESCRIPTION_PATTERN>Test Program</PROGRAM_CODE_DESCRIPTION_PATTERN>
+        <PROGRAM_COA_CODE>B</PROGRAM_COA_CODE>
+        <START_COUNT>1</START_COUNT>
+        <TOTAL_COUNT>100</TOTAL_COUNT>
+    </FOAPAL_PROGRAMS>
+</BA_FOAPAL_PROGRAMS>
+
