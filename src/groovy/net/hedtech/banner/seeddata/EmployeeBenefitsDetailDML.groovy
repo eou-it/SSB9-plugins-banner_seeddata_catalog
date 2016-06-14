@@ -147,7 +147,7 @@ class EmployeeBenefitsDetailDML {
             def findY = ""
             String findRow = """select 'Y' pdrdedn_find from pdrdedn where pdrdedn_pidm = ?
                                 and pdrdedn_bdca_code  = ?
-                                and trunc(pdrdedn_effective_date) = trunc(to_date(?,'dd/mm/yyyy'))"""
+                                and trunc(pdrdedn_effective_date) = trunc(to_date(?,'mm/dd/yyyy'))"""
             try {
                 conn.eachRow(findRow, [PIDM, this.pdrdedn_bdca_code, this.pdrdedn_effective_date]) { row ->
                     findY = row.pdrdedn_find

@@ -51,7 +51,6 @@ class EmployeeJobAssignmentDML {
 
     def xmlData
     def PIDM
-    def SUPERVISOR_PIDM
 
     public EmployeeJobAssignmentDML(InputData connectInfo, Sql conn, Connection connectCall) {
 
@@ -106,7 +105,6 @@ class EmployeeJobAssignmentDML {
     }
     def processEmployeeJobAssignment() {
         PIDM = null
-        String apiMessageOut
         String pidmsql = """select * from spriden  where spriden_id = ? and spriden_change_ind is null"""
         try {
             this.conn.eachRow(pidmsql, [this.bannerid.text()]) { trow ->
@@ -143,7 +141,6 @@ class EmployeeJobAssignmentDML {
             }
             if (!findY) {
                 try {
-                    println "processing  ${this.bannerid} ${this.nbrbjob_posn} ${this.nbrbjob_suff}"
                     conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'OFF') }"
                     String API = "{call nb_job_base.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                     CallableStatement insertCall = this.connectCall.prepareCall(API)
@@ -256,7 +253,6 @@ class EmployeeJobAssignmentDML {
                     insertCall.setString(22, this.nbrbjob_data_origin)
                     insertCall.registerOutParameter(23, java.sql.Types.ROWID)
                     insertCall.registerOutParameter(24, java.sql.Types.VARCHAR)
-                    println ("done setting parm values")
                     try {
                         insertCall.executeUpdate()
                         connectInfo.tableUpdate("NBRBJOB", 0, 1, 0, 0, 0)
@@ -265,7 +261,7 @@ class EmployeeJobAssignmentDML {
                         connectInfo.tableUpdate("NBRBJOB", 0, 0, 0, 1, 0)
                         if (connectInfo.showErrors) {
                             println "Insert NBRBJOB ${this.bannerid}}"
-                            println "Problem executing insert for table NBRBJOB from EmployeeJobAssignmentIDDML.groovy: $e.message"
+                            println "Problem executing insert for table NBRBJOB from EmployeeJobAssignmentDML.groovy: $e.message"
                         }
                     }
                     finally {
