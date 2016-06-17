@@ -41,7 +41,7 @@ public class TbbcstuDML {
     }
 
     /**
-     * Process the sgradvr records.
+     * Process the TBBCSTU records.
      *
      */
 
