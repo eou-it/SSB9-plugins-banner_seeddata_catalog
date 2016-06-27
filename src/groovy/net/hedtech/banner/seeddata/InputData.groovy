@@ -70,6 +70,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GxvbankData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmclData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmskData.xml',
                        // Finance data
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfsyrData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfspdData.xml',
