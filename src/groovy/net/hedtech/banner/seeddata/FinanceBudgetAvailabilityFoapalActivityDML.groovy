@@ -54,7 +54,7 @@ public class FinanceBudgetAvailabilityFoapalActivityDML {
     }
 
     /**
-     * Populate Program
+     * Populate Acitvity
      */
     def populaActivity() {
         try {

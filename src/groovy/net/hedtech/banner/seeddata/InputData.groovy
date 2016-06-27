@@ -271,7 +271,8 @@ public class InputData {
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccount.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalProgram.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalLocation.xml',
-                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalActivity.xml']
+                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalActivity.xml',
+                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityVendors.xml']
     ]
 
     /**
