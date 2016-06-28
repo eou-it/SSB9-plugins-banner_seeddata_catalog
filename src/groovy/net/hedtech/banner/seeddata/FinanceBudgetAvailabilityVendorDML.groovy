@@ -37,7 +37,7 @@ public class FinanceBudgetAvailabilityVendorDML {
         this.connectCall = conn.getConnection()
         this.xmlData = xmlData
         parseXmlData()
-        populateProgram()
+        populateVendor()
     }
 
 
