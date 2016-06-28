@@ -114,7 +114,6 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrinstData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvacData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvprData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvtkData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrwstbData.xml',
                     // Benefits and Deductions Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/Ptv1099Data.xml',
