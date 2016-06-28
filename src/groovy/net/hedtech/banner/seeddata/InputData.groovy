@@ -101,6 +101,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrcalnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclcData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreernData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecbcData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjblnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjcreData.xml',
