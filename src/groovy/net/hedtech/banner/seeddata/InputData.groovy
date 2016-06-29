@@ -205,7 +205,6 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml',
                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationThree.xml'],
             'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
-            'structured-webmancont-on': ['/src/groovy/net/hedtech/banner/seeddata/Data/StructuredWebUseManagementControlsOn.xml'],
             'studentcappstructuredreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCappStructuredRegistration.xml'],
             'studentApiData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
