@@ -281,6 +281,7 @@ public class InputData {
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024934.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024935.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024937.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024919.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListAdministrator.xml' ]
             ]
 
