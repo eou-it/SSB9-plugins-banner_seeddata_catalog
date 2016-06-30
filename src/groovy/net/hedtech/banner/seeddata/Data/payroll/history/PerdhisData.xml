@@ -1277,7 +1277,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <PERDHIS_VERSION/>
   <PERDHIS_VPDI_CODE/>
  </PERDHIS>
- <!--
+
   <PERDHIS>
    <BANNERID>HOP510003</BANNERID>
    <BANNERID_W4_SIGNED_PIDM/>
@@ -3188,5 +3188,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
    <PERDHIS_VERSION/>
    <PERDHIS_VPDI_CODE/>
   </PERDHIS>
--->
  </PERDHIS_DATA>

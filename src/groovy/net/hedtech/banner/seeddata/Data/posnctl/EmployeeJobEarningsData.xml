@@ -43,7 +43,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <NBREARN_VERSION/>
   <NBREARN_VPDI_CODE/>
  </NBREARN>
- <!--
+
   <NBREARN>
    <BANNERID>HOP510003</BANNERID>
    <NBREARN_PIDM/>
@@ -103,5 +103,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
    <NBREARN_VERSION/>
    <NBREARN_VPDI_CODE/>
   </NBREARN>
--->
  </NBREARN_DATA>

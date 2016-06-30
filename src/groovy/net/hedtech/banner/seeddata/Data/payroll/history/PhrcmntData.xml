@@ -192,7 +192,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <PHRCMNT_VPDI_CODE/>
   <PHRCMNT_EMPLOYEE_PROXY_PIDM/>
  </PHRCMNT>
- <!--
+
   <PHRCMNT>
    <BANNERID>HOP510003</BANNERID>
    <BANNERID_USER_PIDM>MS0000002</BANNERID_USER_PIDM>
@@ -444,5 +444,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
    <PHRCMNT_VPDI_CODE/>
    <PHRCMNT_EMPLOYEE_PROXY_PIDM/>
   </PHRCMNT>
--->
  </PHRCMNT_DATA>

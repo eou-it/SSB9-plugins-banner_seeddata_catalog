@@ -32,7 +32,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <GXRDIRD_VPDI_CODE/>
  </GXRDIRD>
 
- <!--
   <GXRDIRD>
    <BANNERID>HOP510003</BANNERID>
    <GXRDIRD_PIDM/>
@@ -144,5 +143,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
    <GXRDIRD_DATA_ORIGIN>SEED_DATA</GXRDIRD_DATA_ORIGIN>
    <GXRDIRD_VPDI_CODE/>
   </GXRDIRD>
-*-->
  </GXRDIRD_DATA>

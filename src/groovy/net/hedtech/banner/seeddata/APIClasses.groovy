@@ -102,6 +102,7 @@ public class APIClasses {
             'PDRDEDN'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsDetailDML',
             'PERDHIS'          : 'net.hedtech.banner.seeddata.PerdhisDML',
             'PERJHIS'          : 'net.hedtech.banner.seeddata.PerjhisDML',
+            'NBBPOSN'          : 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT'          : 'net.hedtech.banner.seeddata.NbrptotDML',
             'NBRBJOB'          : 'net.hedtech.banner.seeddata.EmployeeJobAssignmentDML',
             'NBRJOBS'          : 'net.hedtech.banner.seeddata.EmployeeJobAssignmentDetailDML',
@@ -134,6 +135,7 @@ public class APIClasses {
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
             'PERDHIS' : 'net.hedtech.banner.seeddata.PerdhisDML',
+            'NBBPOSN' : 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT' : 'net.hedtech.banner.seeddata.NbrptotDML',
             'PERJHIS' : 'net.hedtech.banner.seeddata.PerjhisDML'
     ]

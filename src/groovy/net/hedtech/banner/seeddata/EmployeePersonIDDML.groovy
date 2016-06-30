@@ -544,6 +544,7 @@ public class EmployeePersonIDDML {
                 deleteData("NBRJLBD","delete from nbrjlbd where nbrjlbd_pidm = ?")
                 deleteData("NBREARN","delete from nbrearn where nbrearn_pidm = ?")
                 deleteData("NBRJOBS","delete from nbrjobs where nbrjobs_pidm = ?")
+                deleteData("NBRBJLH","delete from nbrjlhs where nbrjlhs_pidm = ?")
                 deleteData("NBRJLHS","delete from nbrjlhs where nbrjlhs_pidm = ?")
                 deleteData("NBRBJOB","delete from nbrbjob where nbrbjob_pidm = ?")
              // Employee essential data

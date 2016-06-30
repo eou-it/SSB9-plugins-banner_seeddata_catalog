@@ -823,7 +823,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <PERJHIS_VERSION/>
   <PERJHIS_VPDI_CODE/>
  </PERJHIS>
- <!--
+
   <PERJHIS>
    <BANNERID>HOP510003</BANNERID>
    <BANNERID_SUPERVISOR_PIDM>HOP510002</BANNERID_SUPERVISOR_PIDM>
@@ -2053,5 +2053,5 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
    <PERJHIS_VERSION/>
    <PERJHIS_VPDI_CODE/>
   </PERJHIS>
--->
+
  </PERJHIS_DATA>

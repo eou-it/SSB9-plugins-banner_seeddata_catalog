@@ -939,7 +939,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <PDRDEDN_VERSION/>
   <PDRDEDN_VPDI_CODE/>
  </PDRDEDN>
-<!--
+
  <PDRDEDN>
   <BANNERID>HOP510003</BANNERID>
   <BANNERID_W4_SIGNED_PIDM/>
@@ -2343,5 +2343,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <PDRDEDN_VERSION/>
   <PDRDEDN_VPDI_CODE/>
  </PDRDEDN>
--->
 </PDRDEDN_DATA>

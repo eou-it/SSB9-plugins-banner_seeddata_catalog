@@ -308,7 +308,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <NBRJOBS_VERSION/>
   <NBRJOBS_VPDI_CODE/>
  </NBRJOBS>
-<!--
+
  <NBRJOBS>
   <BANNERID>HOP510003</BANNERID>
   <BANNERID_SUPERVISOR_PIDM>HOP510002</BANNERID_SUPERVISOR_PIDM>
@@ -735,5 +735,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
   <NBRJOBS_VERSION/>
   <NBRJOBS_VPDI_CODE/>
  </NBRJOBS>
--->
 </NBRJOBS_DATA>
