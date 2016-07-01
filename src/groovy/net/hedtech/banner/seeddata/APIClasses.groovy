@@ -103,7 +103,8 @@ public class APIClasses {
             'FOAPAL_LOCATION'     : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityFoapalLocationDML',
             'FOAPAL_ACTIVITY'     : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityFoapalActivityDML',
             'BA_VENDORS'          : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityVendorDML',
-            'BA_JOUNRAL_VOUCHER'  : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreateBudgetJournalVoucherDML'
+            'BA_JOUNRAL_VOUCHER'  : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreateBudgetJournalVoucherDML',
+            'REQUISITION'         : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
