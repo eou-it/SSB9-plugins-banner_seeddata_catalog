@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<BUDGET_AVAILABILITY_REQUISITIONS>
+    <PURCHASE_REQUISITION><!--Requisition Headers, details and accounting -->
+        <START_FSYR_CODE>2015</START_FSYR_CODE>
+        <END_FSYR_CODE>2016</END_FSYR_CODE>
+        <DOCUMENT_NUMBER>REQS</DOCUMENT_NUMBER>
+        <ORACLE_USER_NAME>FORSED21</ORACLE_USER_NAME>
+    </PURCHASE_REQUISITION>
+</BUDGET_AVAILABILITY_REQUISITIONS>
+
