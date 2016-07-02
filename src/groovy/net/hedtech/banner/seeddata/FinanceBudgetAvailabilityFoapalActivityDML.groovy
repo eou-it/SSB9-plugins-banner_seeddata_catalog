@@ -63,7 +63,7 @@ public class FinanceBudgetAvailabilityFoapalActivityDML {
                             "  FOR ind IN ? .. ?\n" +
                             "  loop\n" +
                             "    delete from FTVACTV where FTVACTV_ACTV_CODE=replace(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ','') AND FTVACTV_COAS_CODE = ?;\n" +
+                            "        ||TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')),' ','') AND FTVACTV_COAS_CODE = ?;\n" +
                             "INSERT INTO FTVACTV \n" +
                             "  (\n" +
                             "\t FTVACTV_ACTV_CODE,\n" +
@@ -79,7 +79,7 @@ public class FinanceBudgetAvailabilityFoapalActivityDML {
                             "      VALUES\n" +
                             "      (\n" +
                             "        REPLACE(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
+                            "        ||TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')),' ',''),\n" +
                             "        REPLACE(?\n" +
                             "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
                             "        ?,\n" +
@@ -98,10 +98,13 @@ public class FinanceBudgetAvailabilityFoapalActivityDML {
             insertCall.setInt( 1, this.startCount )
             insertCall.setInt( 2, this.totalCount )
             insertCall.setString( 3, this.activityCodePattern )
-            insertCall.setString( 4, this.coaCode )
-            insertCall.setString( 5, this.activityCodePattern )
-            insertCall.setString( 6, this.activityCodeDescriptionPattern )
-            insertCall.setString( 7, this.coaCode )
+            insertCall.setString( 4, this.activityCodePattern )
+            insertCall.setString( 5, this.coaCode )
+
+            insertCall.setString( 6, this.activityCodePattern )
+            insertCall.setString( 7, this.activityCodePattern )
+            insertCall.setString( 8, this.activityCodeDescriptionPattern )
+            insertCall.setString( 9, this.coaCode )
 
             insertCall.execute()
             connectInfo.tableUpdate( "FTVACTV", 0, 1, 0, 0, 0 )

@@ -81,7 +81,7 @@ public class FinanceBudgetAvailabilityFoapalOrganizationDML {
                             " '31-MAY-10', 'GRAILS', '31-DEC-2099', ?, 'A', ?, 'Y', 'GRAILS', 'N');\n" +
                             " ElSIF ? IS NOT NULL THEN\n" +
                             "  FOR ind in ?..? LOOP\n" +
-                            " DELETE FROM FTVORGN WHERE FTVORGN_COAS_CODE=? AND FTVORGN_ORGN_CODE = ? || replace(TO_CHAR(ind, '00099'), ' ', '') ;\n" +
+                            " DELETE FROM FTVORGN WHERE FTVORGN_COAS_CODE=? AND FTVORGN_ORGN_CODE = ? || replace(TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')), ' ', '') ;\n" +
                             " INSERT INTO  FTVORGN (FTVORGN_COAS_CODE,\n" +
                             " FTVORGN_ORGN_CODE,\n" +
                             " FTVORGN_EFF_DATE,\n" +
@@ -93,7 +93,7 @@ public class FinanceBudgetAvailabilityFoapalOrganizationDML {
                             " FTVORGN_ORGN_CODE_PRED,\n" +
                             " FTVORGN_DATA_ENTRY_IND,\n" +
                             " FTVORGN_DATA_ORIGIN,\n" +
-                            " FTVORGN_HIERARCHY_TABLE_IND) VALUES(?, ? || replace( TO_CHAR(ind, '00099'), ' ', ''), '31-MAY-10', \n" +
+                            " FTVORGN_HIERARCHY_TABLE_IND) VALUES(?, ? || replace( TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')), ' ', ''), '31-MAY-10', \n" +
                             " '31-MAY-10', 'GRAILS', '31-DEC-2099', ? || replace(TO_CHAR(ind, '00099'), ' ', ''), 'A', ?, 'Y', 'GRAILS', 'N');\n" +
                             "  END LOOP;\n" +
                             " END  IF ;\n" +
@@ -112,10 +112,12 @@ public class FinanceBudgetAvailabilityFoapalOrganizationDML {
             insertCall.setInt( 10, this.TOTAL_COUNT )
             insertCall.setString( 11, this.FTVORGN_COAS_CODE )
             insertCall.setString( 12, this.ORGCODE_PATTERN)
-            insertCall.setString( 13, this.FTVORGN_COAS_CODE )
-            insertCall.setString( 14, this.ORGCODE_PATTERN )
-            insertCall.setString( 15, this.ORGDESC_PATTERN )
-            insertCall.setString( 16, this.FTVORGN_ORGN_CODE_PRED )
+            insertCall.setString( 13, this.ORGCODE_PATTERN)
+            insertCall.setString( 14, this.FTVORGN_COAS_CODE )
+            insertCall.setString( 15, this.ORGCODE_PATTERN )
+            insertCall.setString( 16, this.ORGCODE_PATTERN )
+            insertCall.setString( 17, this.ORGDESC_PATTERN )
+            insertCall.setString( 18, this.FTVORGN_ORGN_CODE_PRED )
             insertCall.execute()
             connectInfo.tableUpdate( "FTVORGN", 0, 1, 0, 0, 0 )
 

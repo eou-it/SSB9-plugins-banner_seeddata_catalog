@@ -120,13 +120,13 @@ public class FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML {
                             "  IF l_foap_code > 80 THEN\n" +
                             "    l_foap_code := 21;\n" +
                             "  END IF;\n" +
-                            "  L_FUND_CODE         := 'F' || TRIM(TO_CHAR(L_FOAP_CODE, '00099'));\n" +
-                            "  l_orgn_code         := 'O' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "  l_acct_code         := 'A' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "  l_prog_code         := 'P' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "  L_FUND_CODE         := 'FS' || TRIM(TO_CHAR(L_FOAP_CODE, '00099'));\n" +
+                            "  l_orgn_code         := 'OS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "  l_acct_code         := 'AS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "  l_prog_code         := 'PS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
                             "  IF mod(l_foap_code,2)< 1 THEN\n" +
-                            "    l_actv_code       := 'T' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "    l_locn_code       := 'L' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "    l_actv_code       := 'TS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "    l_locn_code       := 'LS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
                             "  ELSE\n" +
                             "    l_actv_code := NULL;\n" +
                             "    l_locn_code := NULL;\n" +

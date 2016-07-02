@@ -112,7 +112,7 @@ public class FinanceBudgetAvailabilityFoapalAccountDML {
                             "  FOR ind IN ? .. ?\n" +
                             "  loop\n" +
                             "    delete from ftvacct where FTVACCT_ACCT_CODE=replace(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ','') AND FTVACCT_COAS_CODE = ?;\n" +
+                            "        ||TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')),' ','') AND FTVACCT_COAS_CODE = ?;\n" +
                             "    INSERT\n" +
                             "    INTO FTVACCT\n" +
                             "      (\n" +
@@ -135,7 +135,7 @@ public class FinanceBudgetAvailabilityFoapalAccountDML {
                             "      (\n" +
                             "        ?,\n" +
                             "        REPLACE(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
+                            "        ||TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')),' ',''),\n" +
                             "        '01-MAY-2010',\n" +
                             "        '01-MAY-2010',\n" +
                             "        'GRAILS',\n" +
@@ -170,13 +170,15 @@ public class FinanceBudgetAvailabilityFoapalAccountDML {
             insertCall.setInt( 12, this.totalCount )
 
             insertCall.setString( 13, this.accountCodePattern )
-            insertCall.setString( 14, this.coaCode )
-
+            insertCall.setString( 14, this.accountCodePattern )
             insertCall.setString( 15, this.coaCode )
-            insertCall.setString( 16, this.accountCodePattern )
 
-            insertCall.setString( 17, this.accountTypeCode )
-            insertCall.setString( 18, this.accountCodePool )
+            insertCall.setString( 16, this.coaCode )
+            insertCall.setString( 17, this.accountCodePattern )
+            insertCall.setString( 18, this.accountCodePattern )
+
+            insertCall.setString( 19, this.accountTypeCode )
+            insertCall.setString( 20, this.accountCodePool )
             insertCall.execute()
             connectInfo.tableUpdate( "FTVACCT", 0, 1, 0, 0, 0 )
 

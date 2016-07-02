@@ -63,7 +63,7 @@ public class FinanceBudgetAvailabilityFoapalProgramDML {
                             "  FOR ind IN ? .. ?\n" +
                             "  loop\n" +
                             "    delete from FTVPROG where FTVPROG_PROG_CODE=replace(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ','') AND FTVPROG_COAS_CODE = ?;\n" +
+                            "        ||TO_CHAR(ind,  DECODE(LENGTH(?),1,'00099','0099')),' ','') AND FTVPROG_COAS_CODE = ?;\n" +
                             "      insert into  ftvprog (\n" +
                             "   FTVPROG_ACTIVITY_DATE,\n" +
                             "    FTVPROG_COAS_CODE,\n" +
@@ -83,7 +83,7 @@ public class FinanceBudgetAvailabilityFoapalProgramDML {
                             "        '01-MAY-2010',\n" +
                             "        '31-DEC-2099',\n" +
                             "        REPLACE(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
+                            "        ||TO_CHAR(ind,  DECODE(LENGTH(?),1,'00099','0099')),' ',''),\n" +
                             "        'A',\n" +
                             "        REPLACE(?\n" +
                             "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
@@ -98,12 +98,14 @@ public class FinanceBudgetAvailabilityFoapalProgramDML {
             insertCall.setInt( 2, this.totalCount )
 
             insertCall.setString( 3, this.programCodePattern )
-            insertCall.setString( 4, this.coaCode )
+            insertCall.setString( 4, this.programCodePattern )
             insertCall.setString( 5, this.coaCode )
+            insertCall.setString( 6, this.coaCode )
 
-            insertCall.setString( 6, this.programCodePattern )
+            insertCall.setString( 7, this.programCodePattern )
+            insertCall.setString( 8, this.programCodePattern )
 
-            insertCall.setString( 7, this.programCodeDescriptionPattern )
+            insertCall.setString( 9, this.programCodeDescriptionPattern )
             insertCall.execute()
             connectInfo.tableUpdate( "FTVPROG", 0, 1, 0, 0, 0 )
 

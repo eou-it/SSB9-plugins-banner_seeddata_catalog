@@ -76,7 +76,7 @@ public class FinanceBudgetAvailabilityFoapalLocationDML {
                             "  FOR ind IN ? .. ?\n" +
                             "  loop\n" +
                             "    delete from FTVLOCN where FTVLOCN_LOCN_CODE=replace(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ','') AND FTVLOCN_COAS_CODE = ?;\n" +
+                            "        ||TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')),' ','') AND FTVLOCN_COAS_CODE = ?;\n" +
                             "INSERT INTO FTVLOCN \n" +
                             "  (\n" +
                             "\tFTVLOCN_LOCN_CODE,\n" +
@@ -103,7 +103,7 @@ public class FinanceBudgetAvailabilityFoapalLocationDML {
                             "      VALUES\n" +
                             "      (\n" +
                             "        REPLACE(?\n" +
-                            "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
+                            "        ||TO_CHAR(ind, DECODE(LENGTH(?),1,'00099','0099')),' ',''),\n" +
                             "        REPLACE(?\n" +
                             "        ||TO_CHAR(ind, '00099'),' ',''),\n" +
                             "        ?,\n" +
@@ -132,22 +132,24 @@ public class FinanceBudgetAvailabilityFoapalLocationDML {
             insertCall.setInt( 1, this.startCount )
             insertCall.setInt( 2, this.totalCount )
             insertCall.setString( 3, this.locationCodePattern )
-            insertCall.setString( 4, this.locationCoaCode )
-            insertCall.setString( 5, this.locationCodePattern )
-            insertCall.setString( 6, this.locationCodeDescriptionPattern )
-            insertCall.setString( 7, this.locationCoaCode )
-            insertCall.setString( 8, this.locationCodePred )
+            insertCall.setString( 4, this.locationCodePattern )
+            insertCall.setString( 5, this.locationCoaCode )
+            insertCall.setString( 6, this.locationCodePattern )
+            insertCall.setString( 7, this.locationCodePattern )
+            insertCall.setString( 8, this.locationCodeDescriptionPattern )
+            insertCall.setString( 9, this.locationCoaCode )
+            insertCall.setString( 10, this.locationCodePred )
 
-            insertCall.setString( 9, this.locationAddressLine1 )
-            insertCall.setString( 10, this.locationCity )
-            insertCall.setString( 11, this.locationState )
-            insertCall.setString( 12, this.locationZip )
-            insertCall.setString( 13, this.locationCountryCode )
-            insertCall.setString( 14, this.locationNationCode )
-            insertCall.setString( 15, this.locationPhoneArea )
-            insertCall.setString( 16, this.locationPhoneNumber )
-            insertCall.setString( 17, this.locationSquareFootage )
-            insertCall.setString( 18, this.locationSquareFootageRate )
+            insertCall.setString( 11, this.locationAddressLine1 )
+            insertCall.setString( 12, this.locationCity )
+            insertCall.setString( 13, this.locationState )
+            insertCall.setString( 14, this.locationZip )
+            insertCall.setString( 15, this.locationCountryCode )
+            insertCall.setString( 16, this.locationNationCode )
+            insertCall.setString( 17, this.locationPhoneArea )
+            insertCall.setString( 18, this.locationPhoneNumber )
+            insertCall.setString( 19, this.locationSquareFootage )
+            insertCall.setString( 20, this.locationSquareFootageRate )
 
             insertCall.execute()
             connectInfo.tableUpdate( "FTVLOCN", 0, 1, 0, 0, 0 )
