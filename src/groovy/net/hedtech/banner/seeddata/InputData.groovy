@@ -266,7 +266,7 @@ public class InputData {
             'direct-deposit'                    : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml'],
 
-            'finance-budget-availability-foapal': ['src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFund.xml',
+            'finance-budget-availability-data': ['src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFund.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalOrganization.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccount.xml',
                                                    'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalProgram.xml',

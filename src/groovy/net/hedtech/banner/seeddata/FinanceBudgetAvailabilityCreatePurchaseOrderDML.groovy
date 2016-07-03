@@ -121,13 +121,13 @@ public class FinanceBudgetAvailabilityCreatePurchaseOrderDML {
                             "  IF l_foap_code > 80 THEN\n" +
                             "    l_foap_code := 21;\n" +
                             "  END IF;\n" +
-                            "  l_fund_code         := 'FS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "  l_orgn_code         := 'OS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "  l_acct_code         := 'AS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "  l_prog_code         := 'PS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "  l_fund_code         := 'FS' || TRIM(TO_CHAR(l_foap_code, '0099'));\n" +
+                            "  l_orgn_code         := 'OS' || TRIM(TO_CHAR(l_foap_code, '0099'));\n" +
+                            "  l_acct_code         := 'AS' || TRIM(TO_CHAR(l_foap_code, '0099'));\n" +
+                            "  l_prog_code         := 'PS' || TRIM(TO_CHAR(l_foap_code, '0099'));\n" +
                             "  IF mod(l_foap_code,2)< 1 THEN\n" +
-                            "    l_actv_code       := 'TS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
-                            "    l_locn_code       := 'LS' || TRIM(TO_CHAR(l_foap_code, '00099'));\n" +
+                            "    l_actv_code       := 'TS' || TRIM(TO_CHAR(l_foap_code, '0099'));\n" +
+                            "    l_locn_code       := 'LS' || TRIM(TO_CHAR(l_foap_code, '0099'));\n" +
                             "  ELSE\n" +
                             "    l_actv_code := NULL;\n" +
                             "    l_locn_code := NULL;\n" +
@@ -276,13 +276,13 @@ public class FinanceBudgetAvailabilityCreatePurchaseOrderDML {
 
 
             insertCall.execute()
-            connectInfo.tableUpdate( "BUDGET_AVAILABILITY_REQUISITIONS", 0, 1, 0, 0, 0 )
+            connectInfo.tableUpdate( "BUDGET_AVAILABILITY_PURCHASE_ORDERS", 0, 1, 0, 0, 0 )
 
         }
         catch (Exception e) {
-            connectInfo.tableUpdate( "BUDGET_AVAILABILITY_REQUISITIONS", 0, 0, 0, 1, 0 )
+            connectInfo.tableUpdate( "BUDGET_AVAILABILITY_PURCHASE_ORDERS", 0, 0, 0, 1, 0 )
             if (connectInfo.showErrors) {
-                println "Executing BA Requisitions" + e
+                println "Executing BA Purchase Orders" + e
             }
         }
         finally {

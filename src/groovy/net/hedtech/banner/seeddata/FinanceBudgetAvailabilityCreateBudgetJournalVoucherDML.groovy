@@ -108,13 +108,13 @@ public class FinanceBudgetAvailabilityCreateBudgetJournalVoucherDML {
                             "    foap_code NUMBER := MOD(CNT,100);\n" +
                             "    ACCT_CODE NUMBER := MOD(CNT,999);\n" +
                             "  BEGIN\n" +
-                            "    l_fund_code       := 'FS' || TRIM(TO_CHAR(foap_code, '00099'));\n" +
-                            "    l_orgn_code       := 'OS' || TRIM(TO_CHAR(foap_code, '00099'));\n" +
-                            "    l_acct_code       := 'AS' || TRIM(TO_CHAR(foap_code, '00099'));\n" +
-                            "    l_prog_code       := 'PS' || TRIM(TO_CHAR(foap_code, '00099'));\n" +
+                            "    l_fund_code       := 'FS' || TRIM(TO_CHAR(foap_code, '0099'));\n" +
+                            "    l_orgn_code       := 'OS' || TRIM(TO_CHAR(foap_code, '0099'));\n" +
+                            "    l_acct_code       := 'AS' || TRIM(TO_CHAR(foap_code, '0099'));\n" +
+                            "    l_prog_code       := 'PS' || TRIM(TO_CHAR(foap_code, '0099'));\n" +
                             "    IF mod(foap_code,2)< 1 THEN\n" +
-                            "      l_actv_code     := 'TS' || TRIM(TO_CHAR(foap_code, '00099'));\n" +
-                            "      l_locn_code     := 'LS' || TRIM(TO_CHAR(foap_code, '00099'));\n" +
+                            "      l_actv_code     := 'TS' || TRIM(TO_CHAR(foap_code, '0099'));\n" +
+                            "      l_locn_code     := 'LS' || TRIM(TO_CHAR(foap_code, '0099'));\n" +
                             "    ELSE\n" +
                             "      l_actv_code := NULL;\n" +
                             "      l_locn_code := NULL;\n" +
