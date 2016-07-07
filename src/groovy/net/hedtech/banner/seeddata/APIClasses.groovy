@@ -98,6 +98,7 @@ public class APIClasses {
             'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
             'FPBREQH'          : 'net.hedtech.banner.seeddata.FinanceProcurementHeaderCreateDML',
             'PEBEMPL'          : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
+            'PEBEMPLEAVEBYJOB' : 'net.hedtech.banner.seeddata.EmployeeLeaveByJobPersonIDDML',
             'PDRBDED'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsIDDML',
             'PDRDEDN'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsDetailDML',
             'PERDHIS'          : 'net.hedtech.banner.seeddata.PerdhisDML',

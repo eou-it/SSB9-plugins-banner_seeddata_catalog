@@ -1,6 +1,3 @@
-/*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
- **********************************************************************************/
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
@@ -10,11 +7,10 @@ import java.sql.Connection
 import java.text.SimpleDateFormat
 
 /**
- * Employee Person ID DML for Leave by Employee
- * Save the PIDM in the InputData.saveStudentPidm
+ * Employee Person ID DML for Leave by Job
+ * Created by apoliski on 7/5/2016.
  */
-
-public class EmployeePersonIDDML {
+class EmployeeLeaveByJobPersonIDDML {
     def bannerid
     def pebempl_pidm
     def pebempl_empl_status
@@ -84,7 +80,7 @@ public class EmployeePersonIDDML {
 
     def PIDM
 
-    public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall) {
+    public EmployeeLeaveByJobPersonIDDML(InputData connectInfo, Sql conn, Connection connectCall) {
 
         this.conn = conn
         this.connectInfo = connectInfo
@@ -92,18 +88,15 @@ public class EmployeePersonIDDML {
     }
 
 
-    public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
+    public EmployeeLeaveByJobPersonIDDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
 
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
         this.xmlData = xmlData
         parseXmlData()
-        processEmployee()
+        processLeaveByJobEmployee()
     }
-
-
-
 
     def parseXmlData() {
         def pebempl = new XmlParser().parseText(xmlData)
@@ -170,16 +163,16 @@ public class EmployeePersonIDDML {
 
 
 
- /*   public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
-        this.conn = conn
-        this.connectInfo = connectInfo
-        this.connectCall = connectCall
-        this.xmlData = xmlData
-        def pebempl = new XmlParser().parseText(xmlData)
-    }*/
+    /*   public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
+           this.conn = conn
+           this.connectInfo = connectInfo
+           this.connectCall = connectCall
+           this.xmlData = xmlData
+           def pebempl = new XmlParser().parseText(xmlData)
+       }*/
 
 
-    def processEmployee() {
+    def processLeaveByJobEmployee() {
         PIDM = null
         String pidmsql = """select * from spriden  where spriden_id = ?"""
 
@@ -191,7 +184,21 @@ public class EmployeePersonIDDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could not select ID in EmployeePersonIDDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
+                println "Could not select ID in EmployeeLeaveByJobPersonIDDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
+            }
+        }
+
+        String updateLeaveMethodSQL = ""
+
+        updateLeaveMethodSQL = "update ptrinst set ptrinst_accrue_leave_method  = 'J'"
+        try {
+            def cntUpdt = conn.executeUpdate(updateLeaveMethodSQL)
+            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 0, cntUpdt)
+        }
+        catch (Exception e) {
+            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 1, 0)
+            if (connectInfo.showErrors) {
+                println "Problem executing update PTRINST to Leave By Job in EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
             }
         }
 
@@ -235,7 +242,7 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(10, sqlDate)
                 }
-             //   insertCall.setDate(10, this.pebempl_first_hire_date)
+                //   insertCall.setDate(10, this.pebempl_first_hire_date)
 
                 if ((this.pebempl_current_hire_date == "") || (this.pebempl_current_hire_date == null) ||
                         (!this.pebempl_current_hire_date)) {
@@ -248,7 +255,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(11, sqlDate)
                 }
 
-            //    insertCall.setDate(11, this.pebempl_current_hire_date)
+                //    insertCall.setDate(11, this.pebempl_current_hire_date)
 
 
                 if ((this.pebempl_adj_service_date == "") || (this.pebempl_adj_service_date == null) ||
@@ -262,7 +269,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(12, sqlDate)
                 }
 
-            //    insertCall.setDate(12, this.pebempl_adj_service_date)
+                //    insertCall.setDate(12, this.pebempl_adj_service_date)
 
                 if ((this.pebempl_seniority_date == "") || (this.pebempl_seniority_date == null) ||
                         (!this.pebempl_seniority_date)) {
@@ -275,7 +282,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(13, sqlDate)
                 }
 
-              //  insertCall.setDate(13, this.pebempl_seniority_date)
+                //  insertCall.setDate(13, this.pebempl_seniority_date)
 
 
 
@@ -293,7 +300,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(15, sqlDate)
                 }
 
-              //  insertCall.setString(15, this.pebempl_loa_beg_date)
+                //  insertCall.setString(15, this.pebempl_loa_beg_date)
 
                 if ((this.pebempl_loa_end_date == "") || (this.pebempl_loa_end_date == null) ||
                         (!this.pebempl_loa_end_date)) {
@@ -305,7 +312,7 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(16, sqlDate)
                 }
-               // insertCall.setString(16, this.pebempl_loa_end_date)
+                // insertCall.setString(16, this.pebempl_loa_end_date)
 
                 insertCall.setString(17, this.pebempl_trea_code)
 
@@ -319,7 +326,7 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(18, sqlDate)
                 }
-              //  insertCall.setDate(18, this.pebempl_term_date)
+                //  insertCall.setDate(18, this.pebempl_term_date)
                 insertCall.setString(19, this.pebempl_i9_form_ind)
 
 
@@ -333,7 +340,7 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(20, sqlDate)
                 }
-              //  insertCall.setDate(20, this.pebempl_i9_date)
+                //  insertCall.setDate(20, this.pebempl_i9_date)
 
                 if ((this.pebempl_i9_expire_date == "") || (this.pebempl_i9_expire_date == null) ||
                         (!this.pebempl_i9_expire_date)) {
@@ -346,7 +353,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(21, sqlDate)
                 }
 
-              //  insertCall.setDate(21, this.pebempl_i9_expire_date)
+                //  insertCall.setDate(21, this.pebempl_i9_expire_date)
                 insertCall.setString(22, this.pebempl_wkpr_code)
                 insertCall.setString(23, this.pebempl_flsa_ind)
                 insertCall.setString(24, this.pebempl_stgr_code)
@@ -371,7 +378,7 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(31, sqlDate)
                 }
-              //  insertCall.setDate(31, this.pebempl_first_work_date)
+                //  insertCall.setDate(31, this.pebempl_first_work_date)
 
 
                 if ((this.pebempl_last_work_date == "") || (this.pebempl_last_work_date == null) ||
@@ -385,7 +392,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(32, sqlDate)
                 }
 
-              //  insertCall.setDate(32, this.pebempl_last_work_date)
+                //  insertCall.setDate(32, this.pebempl_last_work_date)
                 insertCall.setString(33, this.pebempl_calif_pension_ind)
                 insertCall.setString(34, this.pebempl_nrsi_code)
                 insertCall.setString(35, this.pebempl_ssn_last_name)
@@ -410,7 +417,7 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(45, sqlDate)
                 }
-            //    insertCall.setDate(44, this.pebempl_ew2_consent_date)
+                //    insertCall.setDate(44, this.pebempl_ew2_consent_date)
                 insertCall.setString(46, this.pebempl_ew2_consent_user_id)
                 // parm 13 p_rowid_out      spriden_rowid_out VARCHAR2
                 insertCall.registerOutParameter(47, java.sql.Types.ROWID)
@@ -472,6 +479,18 @@ public class EmployeePersonIDDML {
 
 
         }
+
+        updateLeaveMethodSQL = "update ptrinst set ptrinst_accrue_leave_method  = 'E'"
+        try {
+            def cntUpdt = conn.executeUpdate(updateLeaveMethodSQL)
+            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 0, cntUpdt)
+        }
+        catch (Exception e) {
+            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 1, 0)
+            if (connectInfo.showErrors) {
+                println "Problem executing update PTRINST to Leave By Employee in EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
+            }
+        }
     }
 
 
@@ -491,8 +510,8 @@ public class EmployeePersonIDDML {
                 //        WHERE  ptrinst_accrue_leave_method = 'E'
                 //        AND  ptrinst_code = 'PAYROLL')
                 //        and perlhis_pidm = ?""")
-             // Pay History
-                deleteData("PHRACCR","delete from phraccr where phraccr_pidm = ?")
+                // Pay History
+                //deleteData("PHRACCR","delete from phraccr where phraccr_pidm = ?")
                 deleteData("PHRJACR","delete from phrjacr where phrjacr_pidm = ?")
                 deleteData("PHRDOCM","delete from phrdocm where phrdocm_pidm = ?")
                 deleteData("PHREARN","delete from phrearn where phrearn_pidm = ?")
@@ -514,7 +533,7 @@ public class EmployeePersonIDDML {
                 deleteData("PERDTOT","delete from perdtot where perdtot_pidm = ?")
                 deleteData("PERJTOT","delete from perjtot where perjtot_pidm = ?")
                 deleteData("PERETOT","delete from peretot where peretot_pidm = ?")
-             // Cobra and Non-Cobra Beneficiary and Dependents
+                // Cobra and Non-Cobra Beneficiary and Dependents
                 deleteData("PCRDEDN","delete from pcrdedn where pcrdedn_pidm = ?")
                 deleteData("PCRBENE","delete from pcrbene where pcrbene_pidm = ?")
                 deleteData("PCBPERS","delete from pcbpers where pcbpers_pidm = ?")
@@ -526,7 +545,7 @@ public class EmployeePersonIDDML {
                 deleteData("PDRBCOV","delete from pdrbcov where pdrbcov_pidm = ?")
                 deleteData("PDRBENE","delete from pdrbene where pdrbene_pidm = ?")
                 deleteData("PDRBEHS","delete from pdrbehs where pdrbehs_pidm = ?")
-             // Benefits and Deductions
+                // Benefits and Deductions
                 deleteData("PDRFLEX","delete from pdrflex where pdrflex_pidm = ?")
                 deleteData("PDRBFLX","delete from pdrbflx where pdrbflx_pidm = ?")
                 deleteData("PERPCRE","delete from perpcre where perpcre_pidm = ?")
@@ -536,7 +555,7 @@ public class EmployeePersonIDDML {
                 deleteData("PERDHIS","delete from perdhis where perdhis_pidm = ?")
                 deleteData("PDRDEDN","delete from pdrdedn where pdrdedn_pidm = ?")
                 deleteData("PDRBDED","delete from pdrbded where pdrbded_pidm = ?")
-            // Employee Jobs
+                // Employee Jobs
                 deleteData("NBRXDED","delete from nbrxded where nbrxded_pidm = ?")
                 deleteData("NBRJFTE","delete from nbrjfte where nbrjfte_pidm = ?")
                 deleteData("NBRWKSH","delete from nbrwksh where nbrwksh_pidm = ?")
@@ -547,20 +566,20 @@ public class EmployeePersonIDDML {
                 deleteData("NBRBJLH","delete from nbrjlhs where nbrjlhs_pidm = ?")
                 deleteData("NBRJLHS","delete from nbrjlhs where nbrjlhs_pidm = ?")
                 deleteData("NBRBJOB","delete from nbrbjob where nbrbjob_pidm = ?")
-             // Employee essential data
+                // Employee essential data
                 deleteData("PERREVW","delete from perrevw where perrevw_pidm = ?")
                 deleteData("PERRHOL","delete from perrhol where perrhol_pidm = ?")
                 deleteData("PERDIRD","delete from perdird where perdird_pidm = ?")
                 deleteData("PERROTH","delete from perroth where perroth_pidm = ?")
                 deleteData("PERRCMT","delete from perrcmt where perrcmt_pidm = ?")
-                deleteData("PERLEAV","delete from perleav where perleav_pidm = ?")
-                deleteData("PERLHIS","delete from perlhis where perlhis_pidm = ?")
+                //deleteData("PERLEAV","delete from perleav where perleav_pidm = ?")
+                //deleteData("PERLHIS","delete from perlhis where perlhis_pidm = ?")
                 deleteData("PEREHIS","delete from perehis where perehis_pidm = ?")
                 deleteData("PERJHIS","delete from perjhis where perjhis_pidm = ?")
                 deleteData("PERJLHS","delete from perjlhs where perjlhs_pidm = ?")
                 deleteData("PERJLEV","delete from perjlev where perjlev_pidm = ?")
                 deleteData("PERJOBH","delete from perjobh where perjobh_pidm = ?")
-             // Others
+                // Others
                 deleteData("PERJBBG","delete from perjbbg where perjbbg_pidm = ?")
                 deleteData("PERBARG","delete from perbarg where perbarg_pidm = ?")
                 deleteData("PERRANK","delete from perrank where perrank_pidm = ?")
@@ -576,26 +595,26 @@ public class EmployeePersonIDDML {
                 deleteData("PERINDV","delete from perindv where perindv_pidm = ?")
                 deleteData("PERSNBL","delete from persnbl where persnbl_pidm = ?")
                 deleteData("PERXJOB","delete from perxjob where perxjob_pidm = ?")
-             // Open Enrollment
+                // Open Enrollment
                 deleteData("PDRBERR","delete from pdrberr where pdrberr_pidm = ?")
                 deleteData("PDRTCOV","delete from pdrtcov where pdrtcov_pidm = ?")
                 deleteData("PDRTBAL","delete from pdrtbal where pdrtbal_pidm = ?")
                 deleteData("PDRDTOE","delete from pdrdtoe where pdrdtoe_pidm = ?")
                 deleteData("PDRBDOE","delete from pdrbdoe where pdrbdoe_pidm = ?")
-             // Applicant data
+                // Applicant data
                 deleteData("PATRECR","delete from patrecr where patrecr_pidm = ?")
                 deleteData("PARAPST","delete from parapst where parapst_pidm = ?")
                 deleteData("PARAPIN","delete from parapin where parapin_pidm = ?")
                 deleteData("PABREQU","delete from pabrequ where pabrequ_appr_pidm = ?")
                 deleteData("PABAPPL","delete from pabappl where pabappl_pidm = ?")
-             // Employee
+                // Employee
                 deleteData("PEBEMPL","delete from pebempl where pebempl_pidm = ?")
             }
         }
         catch (e) {
             connectInfo.tableUpdate("PEBEMPL", 0, 0, 0, 1, 0)
             if (connectInfo.showErrors) {
-                println "Problem executing select or delete for table PEBEMPL from EmployeePersonIDDML.groovy: $e.message"
+                println "Problem executing select or delete for table PEBEMPL from EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
             }
         }
 
@@ -611,10 +630,9 @@ public class EmployeePersonIDDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Problem executing delete for person ${connectInfo.saveStudentPidm} from StudentPersonIDDML.groovy: $e.message"
+                println "Problem executing delete for person ${connectInfo.saveStudentPidm} from EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
                 println "${sql}"
             }
         }
     }
-
 }
