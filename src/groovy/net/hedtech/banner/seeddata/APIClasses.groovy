@@ -97,7 +97,7 @@ public class APIClasses {
             'FINANCEUSER'      :'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
             'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
             'FPBREQH'          : 'net.hedtech.banner.seeddata.FinanceProcurementHeaderCreateDML',
-            'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML'
+            'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PEBEMPL'          : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
             'PEBEMPLEAVEBYJOB' : 'net.hedtech.banner.seeddata.EmployeeLeaveByJobPersonIDDML',
             'PDRBDED'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsIDDML',
@@ -136,7 +136,7 @@ public class APIClasses {
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
-            'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML'
+            'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS' : 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN' : 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT' : 'net.hedtech.banner.seeddata.NbrptotDML',
