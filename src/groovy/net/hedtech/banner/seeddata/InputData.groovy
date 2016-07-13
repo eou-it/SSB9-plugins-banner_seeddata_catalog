@@ -264,7 +264,10 @@ public class InputData {
             'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml'],
             'general-ledger' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedger.xml'],
-            'general-ledger-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerClean.xml']
+            'general-ledger-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerClean.xml'],
+            'fiscal-period-year' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FiscalPeriodAndYear.xml'],
+            'fiscal-period-year-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FiscalPeriodAndYearClean.xml'],
+            'goriccr' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml']
             ]
 
 
