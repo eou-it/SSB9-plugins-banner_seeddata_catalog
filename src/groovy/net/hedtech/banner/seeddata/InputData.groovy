@@ -372,6 +372,12 @@ public class InputData {
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListComponentData.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024925.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024831.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024932.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024934.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024935.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024937.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024919.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListAdministrator.xml' ],
             'registration-planning-region' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml']
             ]
