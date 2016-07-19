@@ -267,7 +267,17 @@ public class InputData {
             'general-ledger-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerClean.xml'],
             'fiscal-period-year' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FiscalPeriodAndYear.xml'],
             'fiscal-period-year-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FiscalPeriodAndYearClean.xml'],
-            'goriccr' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml']
+            'goriccr' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml'],
+            'fgbtrni' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBTRNI.xml'],
+            'fgbtrni-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBTRNIClean.xml'],
+            'fgbjvch' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBJVCH.xml'],
+            'fgbjvch-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBJVCHClean.xml'],
+            'fgbtrnh' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBTRNH.xml'],
+            'fgbtrnh-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBTRNHClean.xml'],
+            'fgbarcd' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBARCD.xml'],
+            'fgbarcd-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBARCDClean.xml'],
+            'general-ledger-gurfeed' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerGURFEED.xml'],
+            'general-ledger-gurfeed-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerGURFEEDClean.xml']
             ]
 
 
