@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FGBJVCH>
+    <FGBJVCH>
+        <FGBJVCH_ACTIVITY_DATE>01-01-2016</FGBJVCH_ACTIVITY_DATE>
+        <FGBJVCH_DOC_NUM>DCITTST</FGBJVCH_DOC_NUM>
+        <FGBJVCH_EDIT_DEFER_IND>Y</FGBJVCH_EDIT_DEFER_IND>
+        <FGBJVCH_TRANS_DATE>01-01-9999</FGBJVCH_TRANS_DATE>
+        <FGBJVCH_USER_ID>USR_ID</FGBJVCH_USER_ID>
+        <FGBJVCH_DATA_ORIGIN>GRAILS</FGBJVCH_DATA_ORIGIN>
+    </FGBJVCH>
+</FGBJVCH>
