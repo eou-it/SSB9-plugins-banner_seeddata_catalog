@@ -190,6 +190,7 @@ class EmployeeJobAssignmentDetailDML {
         java.sql.Date sqlDate
 
         if (PIDM) {
+            def updateLeaveMethodSQL = ""
             def findY = ""
             String findRow = """select 'Y' nbrjobs_find from nbrjobs where nbrjobs_pidm = ?
                                 and nbrjobs_posn  = ?
@@ -209,6 +210,23 @@ class EmployeeJobAssignmentDetailDML {
             }
             if (!findY) {
                 try {
+                    // Set PTRINST leave method by Job and re-initialize session globals.
+                    if (this.nbrjobs_lcat_code) {
+                        updateLeaveMethodSQL = "update ptrinst set ptrinst_accrue_leave_method  = 'J'"
+                        try {
+                            def cntUpdt = conn.executeUpdate(updateLeaveMethodSQL)
+                            connectInfo.tableUpdate("PTRINST", 0, 0, 1, 0, cntUpdt)
+                        }
+                        catch (Exception e) {
+                            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 1, 0)
+                            if (connectInfo.showErrors) {
+                                println "Problem executing update PTRINST to Leave By Job in EmployeeJobAssignmentDetailDML.groovy: $e.message"
+                            }
+                        }
+                        conn.execute "{ call nokglob.p_init_session_globals() }"
+                    }
+
+
                     conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'OFF') }"
                     String API = "{call nb_job_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                     CallableStatement insertCall = this.connectCall.prepareCall(API)
@@ -375,6 +393,22 @@ class EmployeeJobAssignmentDetailDML {
                         insertCall.close()
                     }
                     conn.execute "{call nokglob.p_set_global ('HR_SECURITY_MODE', 'ON') }"
+
+                    // Set PTRINST leave method back to by Employee and re-initialize session globals.
+                    if (this.nbrjobs_lcat_code) {
+                        updateLeaveMethodSQL = "update ptrinst set ptrinst_accrue_leave_method  = 'E'"
+                       try {
+                            def cntUpdt = conn.executeUpdate(updateLeaveMethodSQL)
+                            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 0, cntUpdt)
+                        }
+                        catch (Exception e) {
+                            connectInfo.tableUpdate("PTRINST", 0, 0, 0, 1, 0)
+                            if (connectInfo.showErrors) {
+                                println "Problem executing update PTRINST to Leave By Employee in EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
+                            }
+                        }
+                        conn.execute "{ call nokglob.p_init_session_globals() }"
+                    }
                 }
                 catch (Exception e) {
                     connectInfo.tableUpdate("NBRJOBS", 0, 0, 0, 1, 0)
