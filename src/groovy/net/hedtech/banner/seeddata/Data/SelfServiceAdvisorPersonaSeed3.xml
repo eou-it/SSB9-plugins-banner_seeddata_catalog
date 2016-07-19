@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2013-2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
 <dataroot>
     <FACULTY_SPRIDEN>
         <BANNERID>ADVAFSU02</BANNERID>
@@ -55454,7 +55457,7 @@
         <BANNERID>STUAFR343</BANNERID>
         <GOREMAL_PIDM>29343</GOREMAL_PIDM>
         <GOREMAL_EMAL_CODE>BUS</GOREMAL_EMAL_CODE>
-        <GOREMAL_EMAIL_ADDRESS>‚Äúdelete from SPRIDEN where SPRIDEN_ID=‚ÄòADVFSR001‚Äô‚Äù@host.com</GOREMAL_EMAIL_ADDRESS>
+        <GOREMAL_EMAIL_ADDRESS>ìdelete from SPRIDEN where SPRIDEN_ID=ëADVFSR001íî@host.com</GOREMAL_EMAIL_ADDRESS>
         <GOREMAL_STATUS_IND>A</GOREMAL_STATUS_IND>
         <GOREMAL_PREFERRED_IND>Y</GOREMAL_PREFERRED_IND>
         <GOREMAL_ACTIVITY_DATE>6-FEB-2</GOREMAL_ACTIVITY_DATE>
