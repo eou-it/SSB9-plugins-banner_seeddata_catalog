@@ -65,7 +65,8 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
-            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
@@ -157,7 +158,11 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdednData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdocmData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerlhisData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerleavData.xml'],
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjlhsData.xml',
+
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerleavData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml'],
+
 
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],

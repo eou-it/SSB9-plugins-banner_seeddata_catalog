@@ -204,6 +204,7 @@ class EmployeeLeaveByJobPersonIDDML {
                 println "Problem executing update PTRINST to Leave By Job in EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
             }
         }
+        conn.execute "{ call nokglob.p_init_session_globals() }"
 
 
         ColumnDateValue ddate
@@ -494,6 +495,7 @@ class EmployeeLeaveByJobPersonIDDML {
                 println "Problem executing update PTRINST to Leave By Employee in EmployeeLeaveByJobPersonIDDML.groovy: $e.message"
             }
         }
+        conn.execute "{ call nokglob.p_init_session_globals() }"
     }
 
 
@@ -575,8 +577,8 @@ class EmployeeLeaveByJobPersonIDDML {
                 deleteData("PERDIRD","delete from perdird where perdird_pidm = ?")
                 deleteData("PERROTH","delete from perroth where perroth_pidm = ?")
                 deleteData("PERRCMT","delete from perrcmt where perrcmt_pidm = ?")
-                //deleteData("PERLEAV","delete from perleav where perleav_pidm = ?")
-                //deleteData("PERLHIS","delete from perlhis where perlhis_pidm = ?")
+                deleteData("PERLEAV","delete from perleav where perleav_pidm = ?")
+                deleteData("PERLHIS","delete from perlhis where perlhis_pidm = ?")
                 deleteData("PEREHIS","delete from perehis where perehis_pidm = ?")
                 deleteData("PERJHIS","delete from perjhis where perjhis_pidm = ?")
                 deleteData("PERJLHS","delete from perjlhs where perjlhs_pidm = ?")

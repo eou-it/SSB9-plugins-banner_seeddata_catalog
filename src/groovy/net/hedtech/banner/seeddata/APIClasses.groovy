@@ -108,7 +108,8 @@ public class APIClasses {
             'NBRPTOT'          : 'net.hedtech.banner.seeddata.NbrptotDML',
             'NBRBJOB'          : 'net.hedtech.banner.seeddata.EmployeeJobAssignmentDML',
             'NBRJOBS'          : 'net.hedtech.banner.seeddata.EmployeeJobAssignmentDetailDML',
-            'NBREARN'          : 'net.hedtech.banner.seeddata.EmployeeJobEarningsDML'
+            'NBREARN'          : 'net.hedtech.banner.seeddata.EmployeeJobEarningsDML',
+            'BANNERUSER'       : 'net.hedtech.banner.seeddata.BannerUserDML'
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
