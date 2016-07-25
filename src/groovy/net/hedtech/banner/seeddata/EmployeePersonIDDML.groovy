@@ -576,6 +576,8 @@ public class EmployeePersonIDDML {
                 deleteData("PERINDV","delete from perindv where perindv_pidm = ?")
                 deleteData("PERSNBL","delete from persnbl where persnbl_pidm = ?")
                 deleteData("PERXJOB","delete from perxjob where perxjob_pidm = ?")
+             // Tax
+                deleteData("PXRW2FD","delete from pxrw2fd where pxrw2fd_pidm = ?")
              // Open Enrollment
                 deleteData("PDRBERR","delete from pdrberr where pdrberr_pidm = ?")
                 deleteData("PDRTCOV","delete from pdrtcov where pdrtcov_pidm = ?")

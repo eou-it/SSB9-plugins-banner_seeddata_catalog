@@ -161,7 +161,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjlhsData.xml',
 
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerleavData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml'],
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml'],
 
 
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
