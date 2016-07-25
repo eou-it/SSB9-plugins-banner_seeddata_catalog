@@ -165,9 +165,6 @@ public class CappProgramRequirementDML {
         deleteData('SSRRARE','delete SSRRARE  where exists ( select 1 from SSRRARE del, smralib,  smrpaap \n' +
                 '        where del.SSRRARE_area = ssrrare.ssrrare_area and del.SSRRARE_area = smrpaap_area  and  smrpaap_program = ? )' , program_code );
 
-        deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
-
-
         deleteData('SMRGRUL','delete SMRGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMRGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
         deleteData('SMBGRUL','delete SMBGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
 
@@ -234,6 +231,8 @@ public class CappProgramRequirementDML {
         deleteData('SMRSWPV','delete SMRSWPV where SMRSWPV_PROGRAM = ?',  program_code)
         deleteData('SMTCUSE','delete SMTCUSE where SMTCUSE_PROGRAM = ?',  program_code)
         deleteData('SMBPGEN','delete SMBPGEN where SMBPGEN_PROGRAM = ?',  program_code)
+
+        deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
 
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlData, columns, indexColumns, batch, deleteNode)
