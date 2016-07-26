@@ -112,6 +112,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvacData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvprData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrwstbData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml',
                     // Benefits and Deductions Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/Ptv1099Data.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtvbdtyData.xml',
@@ -370,6 +371,7 @@ public class InputData {
             'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositUsers.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml'],
+            'general' : ['src/groovy/net/hedtech/banner/seeddata/Data/general/SprmediData.xml'],                                
             'personal-info' : ['src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoData.xml'],
             'general-common' : ['src/groovy/net/hedtech/banner/seeddata/Data/GorvisaData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/SqlProcessData.xml',
