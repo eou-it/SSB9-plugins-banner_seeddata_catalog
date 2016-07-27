@@ -153,6 +153,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdtotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhraccrData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjacrData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjobsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrearnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrelbdData.xml',
