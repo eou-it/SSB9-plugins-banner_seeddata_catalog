@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!--***************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<GTVDUNTDATA>
+    <GTVDUNT>
+        <GTVDUNT_CODE>HALF</GTVDUNT_CODE>
+        <GTVDUNT_DESC>half day</GTVDUNT_DESC>
+        <GTVDUNT_NUMBER_OF_DAYS>0.5</GTVDUNT_NUMBER_OF_DAYS>
+    </GTVDUNT>
+</GTVDUNTDATA>
