@@ -51,7 +51,7 @@ public class GcbcsrtDML {
         def apiData = new XmlParser().parseText(xmlData)
         def personId = apiData.BANNERID?.text()
         def personPidm
-        def actionItemName = apiData.GCRACCT_ACTION_ITEM_ID.text()
+        def actionItemName = apiData.GCRAACT_ACTION_ITEM_ID.text()
 
         if (actionItemName != null) {
             try {
@@ -82,12 +82,12 @@ public class GcbcsrtDML {
             deleteData()
         }
         
-        if (connectInfo.tableName == "GCRACCT") {
+        if (connectInfo.tableName == "GCRAACT") {
             //replace sequence number with current
             // connectInfo.debugThis = true
-            apiData.GCRACCT_PIDM[0].setValue(personPidm)
-            apiData.GCRACCT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
-            //println apiData.ACTIONITEMNAME.text() + " " + apiData.GCRACCT_ACTION_ITEM_ID.text()
+            apiData.GCRAACT_PIDM[0].setValue(personPidm)
+            apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            //println apiData.ACTIONITEMNAME.text() + " " + apiData.GCRAACT_ACTION_ITEM_ID.text()
 
         }
         if (connectInfo.tableName == "GCRACNT") {
@@ -118,7 +118,7 @@ public class GcbcsrtDML {
 
     def deleteData() {
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
-        deleteData("GCRACCT", "delete from GCRACCT where GCRACCT_ACTION_ITEM_ID  = ? ")
+        deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
         deleteData("GCBACTM", "delete from GCBACTM where GCBACTM_SURROGATE_ID  = ? ")
     }
