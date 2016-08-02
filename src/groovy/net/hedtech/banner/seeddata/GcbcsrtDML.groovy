@@ -51,20 +51,20 @@ public class GcbcsrtDML {
         def apiData = new XmlParser().parseText(xmlData)
         def personId = apiData.BANNERID?.text()
         def personPidm
-        def actionItemName = apiData.GCRCSRS_ACTION_ITEM_ID.text()
+        def actionItemName = apiData.GCRACCT_ACTION_ITEM_ID.text()
 
         if (actionItemName != null) {
             try {
 
-                String ssql = """select * from GCBCSRT where GCBCSRT_NAME = ? """
+                String ssql = """select * from GCBACTM where GCBACTM_NAME = ? """
                 def itemSeqR = this.conn.firstRow(ssql, [apiData.ACTIONITEMNAME.text()])
                 if (itemSeqR) {
-                    itemSeq = itemSeqR?.GCBCSRT_SURROGATE_ID
+                    itemSeq = itemSeqR?.GCBACTM_SURROGATE_ID
                 } else itemSeq = 0
 
             } catch (Exception e) {
                 if (connectInfo.showErrors) {
-                    println "Could not select Action Item ID in GcbcsrtDML, from GCBCSRT for ${connectInfo.tableName}. $e.message"
+                    println "Could not select Action Item ID in GcbcsrtDML, from GCBACTM for ${connectInfo.tableName}. $e.message"
                 }
             }
         }
@@ -78,16 +78,16 @@ public class GcbcsrtDML {
         }
 
         // update the curr rule with the one that is selected
-        if (connectInfo.tableName == "GCBCSRT") {
+        if (connectInfo.tableName == "GCBACTM") {
             deleteData()
         }
         
-        if (connectInfo.tableName == "GCRCSRS") {
+        if (connectInfo.tableName == "GCRACCT") {
             //replace sequence number with current
             // connectInfo.debugThis = true
-            apiData.GCRCSRS_PIDM[0].setValue(personPidm)
-            apiData.GCRCSRS_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
-            //println apiData.ACTIONITEMNAME.text() + " " + apiData.GCRCSRS_ACTION_ITEM_ID.text()
+            apiData.GCRACCT_PIDM[0].setValue(personPidm)
+            apiData.GCRACCT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            //println apiData.ACTIONITEMNAME.text() + " " + apiData.GCRACCT_ACTION_ITEM_ID.text()
 
         }
         if (connectInfo.tableName == "GCRACNT") {
@@ -118,9 +118,9 @@ public class GcbcsrtDML {
 
     def deleteData() {
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
-        deleteData("GCRCSRS", "delete from GCRCSRS where GCRCSRS_ACTION_ITEM_ID  = ? ")
+        deleteData("GCRACCT", "delete from GCRACCT where GCRACCT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
-        deleteData("GCBCSRT", "delete from GCBCSRT where GCBCSRT_SURROGATE_ID  = ? ")
+        deleteData("GCBACTM", "delete from GCBACTM where GCBACTM_SURROGATE_ID  = ? ")
     }
 
     def deleteData(String tableName, String sql) {
