@@ -92,7 +92,7 @@ public class APIClasses {
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
             'GCBACTM' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
-            'GCRACCT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
+            'GCRAACT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
             'GCRACNT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
             'GCBAGRP' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
             'FINANCEFISCAYEAR' :'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
@@ -127,7 +127,7 @@ public class APIClasses {
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
             'GCBACTM' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
-            'GCRACCT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
+            'GCRAACT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
             'GCRACNT' : 'net.hedtech.banner.seeddata.GcbcsrtDML',
             'GCBAGRP' : 'net.hedtech.banner.seeddata.GcbcsrtDML'
     ]
