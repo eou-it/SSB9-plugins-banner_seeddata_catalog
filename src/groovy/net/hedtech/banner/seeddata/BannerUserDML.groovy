@@ -88,9 +88,12 @@ public class BannerUserDML {
                 println "Executing script with ${this.oracle_id} "
             }
             try {
-                    insertCall.setString( 1, this.oracle_id )
+                // create  3 users
+                for (int i = 1; i <= 3; i++) {
+                    insertCall.setString(1, this.oracle_id +i)
                     insertCall.execute()
-                    connectInfo.tableUpdate( "ORACLEUSER", 0, 1, 0, 0, 0 )
+                    connectInfo.tableUpdate("ORACLEUSER", 0, 1, 0, 0, 0)
+                }
                 }
             catch (Exception e) {
                 connectInfo.tableUpdate( "ORACLEUSER", 0, 0, 0, 1, 0 )
