@@ -277,7 +277,9 @@ public class InputData {
             'fgbarcd' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBARCD.xml'],
             'fgbarcd-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/FGBARCDClean.xml'],
             'general-ledger-gurfeed' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerGURFEED.xml'],
-            'general-ledger-gurfeed-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerGURFEEDClean.xml']
+            'general-ledger-gurfeed-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerGURFEEDClean.xml'],
+            'stvcomf' : ['/src/groovy/net/hedtech/banner/seeddata/Data/STVCOMF_Data.xml'],
+            'stvcomf-clean' : ['/src/groovy/net/hedtech/banner/seeddata/Data/STVCOMF_DataClean.xml']
             ]
 
 
