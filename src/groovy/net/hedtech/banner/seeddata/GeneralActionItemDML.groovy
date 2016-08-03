@@ -15,6 +15,7 @@ import java.sql.Connection
 
 public class GeneralActionItemDML {
     int itemSeq
+    int folderId
     def item = null
     def InputData connectInfo
     Sql conn
@@ -50,6 +51,10 @@ public class GeneralActionItemDML {
         def personId = apiData.BANNERID?.text()
         def personPidm
         def actionItemName = apiData.GCBACTM_ACTION_ITEM_ID.text()
+        def actionItemFolder = apiData.FOLDER.text()
+
+        println "testing folder"
+        println actionItemFolder
 
         if (actionItemName != null) {
             try {
@@ -66,6 +71,22 @@ public class GeneralActionItemDML {
             }
         }
 
+        if (actionItemFolder != null) {
+
+            try {
+                String ssql = """select * from GCRFLDR where GCRFLDR_NAME = ? """
+                def folderIdR = this.conn.firstRow(ssql, [apiData.FOLDER.text()])
+                if (folderIdR) {
+                    folderId = folderIdR?.GCRFLDR_SURROGATE_ID
+                } else folderId = 0
+
+            } catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Could not select Action Item ID in GeneralActionItemDML, from GCRFLDR for ${connectInfo.tableName}. $e.message"
+                }
+            }
+        }
+
         if (personId) {
             String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
             def spridenRow = conn.firstRow(findPidm, [personId])
@@ -77,6 +98,11 @@ public class GeneralActionItemDML {
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBACTM") {
             deleteData()
+            println "what is the folder"
+            println folderId
+            if (folderId !=null) {
+                apiData.FOLDER[0].setValue(folderId.toString())
+            }
         }
 
         if (connectInfo.tableName == "GCRAACT") {
