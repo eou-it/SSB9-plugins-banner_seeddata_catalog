@@ -38,9 +38,8 @@ public class GeneralActionItemDML {
     }
 
     /**
-     * Process the gcbcsrt records.   The item attribute gives us the surrogate key to the gcbcsrt which
-     * is the item ID on the gcbqury, gcrcfld, gcbtmpl records.  The template attribute on gcbemtl plus the
-     * item gets us the parent gcbtmpl record.
+     * Process the gcbcsrt records.   The item attribute gives us the surrogate key to the gcbactm which
+     * is used as fk in other records.
      *
      */
     def processData() {
@@ -50,7 +49,6 @@ public class GeneralActionItemDML {
         def apiData = new XmlParser().parseText(xmlData)
         def personId = apiData.BANNERID?.text()
         def personPidm
-        def actionItemId = apiData.GCBACTM_SURROGATE_ID.text()
         def actionItemName = apiData.GCBACTM_ACTION_ITEM_ID.text()
 
         if (actionItemName != null) {
@@ -66,9 +64,6 @@ public class GeneralActionItemDML {
                     println "Could not select Action Item ID in GeneralActionItemDML, from GCBACTM for ${connectInfo.tableName}. $e.message"
                 }
             }
-        } else {
-
-
         }
 
         if (personId) {
@@ -82,7 +77,6 @@ public class GeneralActionItemDML {
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBACTM") {
             deleteData()
-
         }
 
         if (connectInfo.tableName == "GCRAACT") {
@@ -90,7 +84,6 @@ public class GeneralActionItemDML {
             // connectInfo.debugThis = true
             apiData.GCRAACT_PIDM[0].setValue(personPidm)
             apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
-            //println apiData.ACTIONITEMNAME.text() + " " + apiData.GCRAACT_ACTION_ITEM_ID.text()
 
         }
         if (connectInfo.tableName == "GCRACNT") {
