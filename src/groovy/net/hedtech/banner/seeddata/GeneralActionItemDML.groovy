@@ -5,7 +5,6 @@ package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
 import org.apache.commons.lang.StringUtils
-
 import java.sql.Connection
 
 /**
@@ -14,9 +13,6 @@ import java.sql.Connection
  */
 
 public class GeneralActionItemDML {
-    int itemSeq
-    int folderId
-    def item = null
     def InputData connectInfo
     Sql conn
     Connection connectCall
@@ -25,6 +21,8 @@ public class GeneralActionItemDML {
     List indexColumns
     def Batch batch
     def deleteNode
+    int itemSeq
+    int folderId
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                       def deleteNode) {
@@ -39,53 +37,19 @@ public class GeneralActionItemDML {
     }
 
     /**
-     * Process the gcbcsrt records.   The item attribute gives us the surrogate key to the gcbactm which
+     * Process the action item records.   The item attribute gives us the surrogate key to the gcbactm which
      * is used as fk in other records.
      *
      */
     def processData() {
         //special xml characters are getting scrubbed from the xml for some reason. So doing this hack to re-introduce them into
         //the xml before it gets parsed by the xml parser
+        def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
+        def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
+        def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
 
-        def apiData = new XmlParser().parseText(xmlData)
         def personId = apiData.BANNERID?.text()
         def personPidm
-        def actionItemName = apiData.GCBACTM_ACTION_ITEM_ID.text()
-        def actionItemFolder = apiData.FOLDER.text()
-
-        println "testing folder"
-        println actionItemFolder
-
-        if (actionItemName != null) {
-            try {
-                String ssql = """select * from GCBACTM where GCBACTM_NAME = ? """
-                def itemSeqR = this.conn.firstRow(ssql, [apiData.ACTIONITEMNAME.text()])
-                if (itemSeqR) {
-                    itemSeq = itemSeqR?.GCBACTM_SURROGATE_ID
-                } else itemSeq = 0
-
-            } catch (Exception e) {
-                if (connectInfo.showErrors) {
-                    println "Could not select Action Item ID in GeneralActionItemDML, from GCBACTM for ${connectInfo.tableName}. $e.message"
-                }
-            }
-        }
-
-        if (actionItemFolder != null) {
-
-            try {
-                String ssql = """select * from GCRFLDR where GCRFLDR_NAME = ? """
-                def folderIdR = this.conn.firstRow(ssql, [apiData.FOLDER.text()])
-                if (folderIdR) {
-                    folderId = folderIdR?.GCRFLDR_SURROGATE_ID
-                } else folderId = 0
-
-            } catch (Exception e) {
-                if (connectInfo.showErrors) {
-                    println "Could not select Action Item ID in GeneralActionItemDML, from GCRFLDR for ${connectInfo.tableName}. $e.message"
-                }
-            }
-        }
 
         if (personId) {
             String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
@@ -97,32 +61,62 @@ public class GeneralActionItemDML {
 
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBACTM") {
-            deleteData()
-            println "what is the folder"
-            println folderId
-            if (folderId !=null) {
-                apiData.FOLDER[0].setValue(folderId.toString())
+
+            itemSeq = getActionItemId( apiData.GCBACTM_NAME[0]?.text().toString() )
+            folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
+
+            //println "folder returned: " + folderId
+
+            if (itemSeq == 0) {
+                itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
             }
+
+            if (folderId == 0) {
+                folderId = apiData.GCBACTM_FOLDER_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
+            //println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
+
+            deleteData()
         }
 
         if (connectInfo.tableName == "GCRAACT") {
-            //replace sequence number with current
-            // connectInfo.debugThis = true
+
+            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            //println "action item id: " + itemSeq
+
+            if (itemSeq == 0) {
+                itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
+            }
+
+            //println connectInfo.tableName +  " itemSeq: " + itemSeq
+
             apiData.GCRAACT_PIDM[0].setValue(personPidm)
             apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
 
         }
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
+            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+
+            if (itemSeq == 0) {
+                itemSeq = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
+            }
+
             apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
         }
 
         if (connectInfo.tableName == "GCBAGRP") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-            String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
-            def folderSeqR = this.conn.firstRow(fsql, [apiData.FOLDER.text()])
-            itemSeq = folderSeqR?.GCRFLDR_SURROGATE_ID
-            apiData.GCBAGRP_FOLDER_ID[0].setValue(itemSeq.toString())
+
+            folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
+
+            if (folderId == 0) {
+                folderId = apiData.GCBAGRP_FOLDER_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCBAGRP_FOLDER_ID[0].setValue(folderId.toString())
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
@@ -137,8 +131,8 @@ public class GeneralActionItemDML {
         def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
     }
 
-
     def deleteData() {
+        //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
@@ -146,6 +140,8 @@ public class GeneralActionItemDML {
     }
 
     def deleteData(String tableName, String sql) {
+        //println "delete " + tableName + " " + itemSeq.toString( )
+
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
@@ -158,5 +154,45 @@ public class GeneralActionItemDML {
             }
         }
     }
+
+    def getFolderId(String folderName) {
+        String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
+        int fId
+        def fRow
+
+        //println "getting folder id for: " + folderName
+
+        try {
+            fRow = this.conn.firstRow(fsql, [folderName])
+            if (fRow) {
+                fId = fRow?.GCRFLDR_SURROGATE_ID
+            } else fId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Folder ID in GeneralActionItemDML, from GCRFLDR for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return fId
+    }
+
+    def getActionItemId(String actionItemName) {
+        String asql = """select * from GCBACTM where GCBACTM_NAME = ? """
+        int aId
+        def aRow
+        try {
+            aRow = this.conn.firstRow(asql, [actionItemName])
+            if (aRow) {
+                aId = aRow?.GCBACTM_SURROGATE_ID
+            } else aId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Action Item ID in GeneralActionItemDML, from GCBACTM for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return aId
+    }
+
 
 }
