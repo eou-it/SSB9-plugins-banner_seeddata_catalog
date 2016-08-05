@@ -65,10 +65,12 @@ public class GeneralActionItemDML {
             itemSeq = getActionItemId( apiData.GCBACTM_NAME[0]?.text().toString() )
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
-            //println "folder returned: " + folderId
+            println "folder returned: " + folderId
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
+            } else {
+                deleteData( )
             }
 
             if (folderId == 0) {
@@ -76,9 +78,8 @@ public class GeneralActionItemDML {
             }
 
             apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
-            //println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
+            println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
 
-            deleteData()
         }
 
         if (connectInfo.tableName == "GCRAACT") {
@@ -140,7 +141,7 @@ public class GeneralActionItemDML {
     }
 
     def deleteData(String tableName, String sql) {
-        //println "delete " + tableName + " " + itemSeq.toString( )
+        println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -160,7 +161,7 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
-        //println "getting folder id for: " + folderName
+        println "getting folder id for: " + folderName
 
         try {
             fRow = this.conn.firstRow(fsql, [folderName])
