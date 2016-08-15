@@ -8,11 +8,11 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HRUTEST2</BANNERUSER_ORACLE_ID>
+        <BANNERUSER_ORACLE_ID>HRUTEST1</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HRUTEST3</BANNERUSER_ORACLE_ID>
+        <BANNERUSER_ORACLE_ID>HRUTEST2</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
