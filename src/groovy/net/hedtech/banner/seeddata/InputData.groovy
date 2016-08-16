@@ -166,7 +166,10 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerlvtkData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerleavData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml'],
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml'
+            ],
+            // Position Desc Routing Queue
+            'pdesc' : ['/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml'],
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
