@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<NTRRQUE_DATA>
+
+ <NTRRQUE>
+  <NTRRQUE_ACAT_CODE>PDESC</NTRRQUE_ACAT_CODE>
+  <NTRRQUE_APPR_SEQ_NO>1</NTRRQUE_APPR_SEQ_NO>
+  <NTRRQUE_ACTION_IND>A</NTRRQUE_ACTION_IND>
+  <NTRRQUE_ACTIVITY_DATE>28-JUN-16</NTRRQUE_ACTIVITY_DATE>
+  <NTRRQUE_COAS_CODE>B</NTRRQUE_COAS_CODE>
+  <NTRRQUE_ORGN_CODE>10</NTRRQUE_ORGN_CODE>
+  <NTRRQUE_POSN>XA0002</NTRRQUE_POSN>
+  <NTRRQUE_APPR_POSN>XA0001</NTRRQUE_APPR_POSN>
+  <NTRRQUE_SURROGATE_ID/>
+  <NTRRQUE_VERSION/>
+  <NTRRQUE_USER_ID/>
+  <NTRRQUE_DATA_ORIGIN>SEED_DATA</NTRRQUE_DATA_ORIGIN>
+  <NTRRQUE_VPDI_CODE/>
+ </NTRRQUE>
+
+</NTRRQUE_DATA>

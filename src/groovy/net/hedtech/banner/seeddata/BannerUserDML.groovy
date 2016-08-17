@@ -89,11 +89,9 @@ public class BannerUserDML {
             }
             try {
                 // create  3 users
-                for (int i = 1; i <= 3; i++) {
-                    insertCall.setString(1, this.oracle_id +i)
+                    insertCall.setString(1, this.oracle_id )
                     insertCall.execute()
                     connectInfo.tableUpdate("ORACLEUSER", 0, 1, 0, 0, 0)
-                }
                 }
             catch (Exception e) {
                 connectInfo.tableUpdate( "ORACLEUSER", 0, 0, 0, 1, 0 )
