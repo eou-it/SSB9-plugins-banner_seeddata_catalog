@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<GOBEACC_DATA>
+ <HRGOBEACCUSER>
+  <BANNERID>HOP510001</BANNERID>
+ </HRGOBEACCUSER>
+ <HRGOBEACCUSER>
+  <BANNERID>HOP510002</BANNERID>
+ </HRGOBEACCUSER>
+ <HRGOBEACCUSER>
+  <BANNERID>HOP510003</BANNERID>
+ </HRGOBEACCUSER>
+ <HRGOBEACCUSER>
+  <BANNERID>HOP510004</BANNERID>
+ </HRGOBEACCUSER>
+</GOBEACC_DATA>
