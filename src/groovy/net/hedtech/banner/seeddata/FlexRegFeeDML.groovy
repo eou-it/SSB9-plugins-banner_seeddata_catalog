@@ -43,21 +43,26 @@ public class FlexRegFeeDML {
     def processDiscount() {
         def apiData = new XmlParser().parseText(xmlData)
 
-        // banner ID
-        // crn
-        // term code
-        this.pidm = connectInfo.saveStudentPidm
-        this.bannerid = apiData.BANNERID?.text()
-        if (connectInfo.debugThis) {
-            println "--------- New XML Flex Reg Discount record ----------"
-            println "${bannerid}    ${apiData?.CRN?.text()}    ${apiData?.TERM_CODE?.text()}   }    "
+        def flexCheck
+        conn.call("{$Sql.VARCHAR = call genutil.product_installed('SF')}") {flex ->
+            flexCheck = flex
         }
-        if (apiData?.CRN?.text() && apiData?.TERM_CODE?.text() && bannerid)
+        if (flexCheck == "Y") {
+            // banner ID
+            // crn
+            // term code
+            this.pidm = connectInfo.saveStudentPidm
+            this.bannerid = apiData.BANNERID?.text()
+            if (connectInfo.debugThis) {
+                println "--------- New XML Flex Reg Discount record ----------"
+                println "${bannerid}    ${apiData?.CRN?.text()}    ${apiData?.TERM_CODE?.text()}   }    "
+            }
 
+            if (apiData?.CRN?.text() && apiData?.TERM_CODE?.text() && bannerid)
 
-            try {
+                try {
 
-                conn.call("""
+                    conn.call("""
                     DECLARE
                     cid  VARCHAR2(32);
                     pidm NUMBER;
@@ -123,38 +128,39 @@ public class FlexRegFeeDML {
                       SFKBCART_CTLG_CODE,SFKBCART_ACTIVITY_DATE,SFKBCART_USER_ID,SFKBCART_DATA_ORIGIN,SFKBCART_VERSION,  SFKBCART_SOURCE)
                         values (cid,pidm,cart_status_finalized,invoice_number,catalog,SYSDATE,'FLEXREG_USER','TEST',0,'A');
 
-                    -- Create cart items (note: pidm removed)
+                    -- Create cart items (note: pidm col removed from table)
                     insert into FLEXREG.SFKRITEM (SFKRITEM_CID,SFKRITEM_CRN,SFKRITEM_TERM_CODE, SFKRITEM_STATUS,
                       SFKRITEM_MESSAGE,SFKRITEM_COST,SFKRITEM_START_DATE,SFKRITEM_END_DATE,SFKRITEM_ACTIVITY_DATE,SFKRITEM_USER_ID,
                       SFKRITEM_DATA_ORIGIN,SFKRITEM_RSTS_CODE,SFKRITEM_GMOD_CODE,SFKRITEM_CREDIT_HR,SFKRITEM_LEVL_CODE,SFKRITEM_VERSION)
                     values (cid,crn,term_code,cart_item_status_registered,null,null,null,null,sysdate,'FLEXREG_USER','TEST','RW',null,null,null,0);
 
-                    -- Create a class fee (note: pidm removed)
+                    -- Create a class fee (note: pidm col removed from table)
                     INSERT INTO FLEXREG.sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
                     values(cid, term_code, crn,tuition_tbbdetc_code,500,null,'F',sysdate,'FLEXREG_USER','TEST');
 
-                    -- Create a coupon (note: pidm removed)
+                    -- Create a coupon (note: pidm col removed from table)
                     INSERT INTO FLEXREG.sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
                     values(cid, term_code, crn,coupon_tbbdetc_code,-50,'Coupon 10% off','C',sysdate,'FLEXREG_USER','TEST');
 
-                    -- Create a discount (note: pidm removed)
+                    -- Create a discount (note: pidm col removed from table)
                     INSERT INTO FLEXREG.sffrfees (sffrfees_cid,sffrfees_term_code,sffrfees_crn,sffrfees_detail_code,
                          sffrfees_amount,sffrfees_note,sffrfees_type_ind,sffrfees_activity_date,sffrfees_user_id,sffrfees_data_origin)
                             values(cid, term_code, crn,discount_tbbdetc_code,-100,'10% early bird','D',sysdate,'FLEXREG_USER','TEST');
                     COMMIT;
                 END;
                 """)
-                connectInfo.tableUpdate("FLEXREG", 0, 0, 1, 0, 0)
+                    connectInfo.tableUpdate("FLEXREG", 0, 0, 1, 0, 0)
 
 
-            }
-            catch (Exception e) {
-                if (connectInfo.showErrors) {
-                    println "Problem executing update of flex reg fee ${bannerid} ${apiData.TERM_CODE.text()} ${apiData.CRN.text()} from FlexRegFeeDML.groovy for ${connectInfo.tableName}: $e.message"
                 }
-            }
+                catch (Exception e) {
+                    if (connectInfo.showErrors) {
+                        println "Problem executing update of flex reg fee ${bannerid} ${apiData.TERM_CODE.text()} ${apiData.CRN.text()} from FlexRegFeeDML.groovy for ${connectInfo.tableName}: $e.message"
+                    }
+                }
+        }
     }
 }
 
