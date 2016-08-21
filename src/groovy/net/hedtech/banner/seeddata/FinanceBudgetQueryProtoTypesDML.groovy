@@ -17,7 +17,7 @@ public class FinanceBudgetQueryPrototypesDML {
 
     def fobprtoName, fobprtoType, spridenId, fobprtoCoasCode, fobprtoOrgnCode,
         fobprtoFsyrCode, fobprtoFsyrCode2, fobprtoFspdCode, fobprtoFspdCode2, fobprtoViewby, fobprtoIncludeRevenues, fobprtoCmttypeCode,
-        fobprtoAdoptOption, fobprtoBudadjtOption, fobprtoAdjtbudOption, fobprtoTempbudOption, fobprtoCommitedOption
+        fobprtoAdoptOption, fobprtoBudadjtOption, fobprtoAdjtbudOption, fobprtoTempbudOption, fobprtoCommitedOption,fobprtoSharedType
 
 
     def InputData connectInfo
@@ -63,6 +63,7 @@ public class FinanceBudgetQueryPrototypesDML {
         this.fobprtoAdjtbudOption = queryPrototypeXMLData.FOBPRTO_ADJTBUD_OPTION.text()
         this.fobprtoTempbudOption = queryPrototypeXMLData.FOBPRTO_TEMPBUD_OPTION.text()
         this.fobprtoCommitedOption = queryPrototypeXMLData.FOBPRTO_COMMITED_OPTION.text()
+        this.fobprtoSharedType = queryPrototypeXMLData.FOBPRTO_SHARED_TYPE.text()
     }
 
     /**
@@ -101,8 +102,9 @@ public class FinanceBudgetQueryPrototypesDML {
                             "\t\t\tFOBPRTO_TEMPBUD_OPTION,\n" +
                             "\t\t\tFOBPRTO_COMMITED_OPTION,\n" +
                             "\t\t\tFOBPRTO_ACTIVITY_DATE, \n" +
-                            "\t\t\tFOBPRTO_DATA_ORIGIN)\n" +
-                            "\t\t\tVALUES (?, ?, pidm, 'GRAILS', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate, 'GRAILS');\n" +
+                            "\t\t\tFOBPRTO_DATA_ORIGIN,\n" +
+                            "\t\t\tFOBPRTO_SHARED_TYPE)\n" +
+                            "\t\t\tVALUES (?, ?, pidm, 'GRAILS', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate, 'GRAILS', ?);\n" +
                             "  COMMIT;\n" +
                             "END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
@@ -129,6 +131,7 @@ public class FinanceBudgetQueryPrototypesDML {
             insertCall.setString( 17, this.fobprtoAdjtbudOption )
             insertCall.setString( 18, this.fobprtoTempbudOption )
             insertCall.setString( 19, this.fobprtoCommitedOption )
+            insertCall.setString( 20, this.fobprtoSharedType )
 
             insertCall.execute()
             connectInfo.tableUpdate( "BUDGET_AVAILABILITY_QUERY_PROTOTYPE", 0, 1, 0, 0, 0 )
