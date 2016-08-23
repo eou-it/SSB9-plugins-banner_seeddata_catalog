@@ -67,7 +67,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRGobeaccData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrGobeaccData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml',
