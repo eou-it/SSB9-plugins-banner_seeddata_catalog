@@ -174,6 +174,8 @@ public class InputData {
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
             'sde': ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
+            //TODO Remove SMBPGEN seed for program BA-ECON once it gets added to vagrant
+            'program-data': ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramData.xml'],
             'generalstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantQuickEntryRule.xml'],
@@ -251,7 +253,7 @@ public class InputData {
             'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFiscalYear.xml',
-                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionBuyerVerification.xml',								   
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionBuyerVerification.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionHeader.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCommodity.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionAccounting.xml',
