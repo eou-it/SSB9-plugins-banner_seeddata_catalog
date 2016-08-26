@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -106,7 +106,22 @@ public class APIClasses {
             'BA_JOUNRAL_VOUCHER'  : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreateBudgetJournalVoucherDML',
             'PURCHASE_REQUISITION': 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML',
             'PURCHASE_ORDER'      : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreatePurchaseOrderDML',
-            'BA_QUERY_PROTOTYPE'  : 'net.hedtech.banner.seeddata.FinanceBudgetQueryPrototypesDML'
+            'BA_QUERY_PROTOTYPE'  : 'net.hedtech.banner.seeddata.FinanceBudgetQueryPrototypesDML',
+            'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML',
+            'PEBEMPL'          : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
+            'PEBEMPLEAVEBYJOB' : 'net.hedtech.banner.seeddata.EmployeeLeaveByJobPersonIDDML',
+            'PDRBDED'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsIDDML',
+            'PDRDEDN'          : 'net.hedtech.banner.seeddata.EmployeeBenefitsDetailDML',
+            'PERDHIS'          : 'net.hedtech.banner.seeddata.PerdhisDML',
+            'PERJHIS'          : 'net.hedtech.banner.seeddata.PerjhisDML',
+            'NBBPOSN'          : 'net.hedtech.banner.seeddata.NbbposnDML',
+            'NBRPTOT'          : 'net.hedtech.banner.seeddata.NbrptotDML',
+            'NBRBJOB'          : 'net.hedtech.banner.seeddata.EmployeeJobAssignmentDML',
+            'NBRJOBS'          : 'net.hedtech.banner.seeddata.EmployeeJobAssignmentDetailDML',
+            'NBREARN'          : 'net.hedtech.banner.seeddata.EmployeeJobEarningsDML',
+            'BANNERUSER'       : 'net.hedtech.banner.seeddata.BannerUserDML',
+            'HRGOBEACCUSER'      : 'net.hedtech.banner.seeddata.HrGobeaccDML'
+
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -119,21 +134,26 @@ public class APIClasses {
             'SARWADF': 'net.hedtech.banner.seeddata.SoacurrDML',
             'GOBTPAC': 'net.hedtech.banner.seeddata.GobtpacDML',
             'SFRSTCR': 'net.hedtech.banner.seeddata.SfrstcrDML',
-            'SORATMT': 'net.hedtech.banner.seeddata.SoratmtDML',
-            'SORSATR': 'net.hedtech.banner.seeddata.SorsatrDML',
-            'SHRGCOM': 'net.hedtech.banner.seeddata.ShagcomDML',
-            'SHRSCOM': 'net.hedtech.banner.seeddata.ShagcomDML',
-            'SHRMRKS': 'net.hedtech.banner.seeddata.ShagcomDML',
-            'SHRSMRK': 'net.hedtech.banner.seeddata.ShagcomDML',
-            'SGRADVR': 'net.hedtech.banner.seeddata.SgradvrDML',
-            'SORNOTE': 'net.hedtech.banner.seeddata.SornoteDML',
-            'SMBPGEN': 'net.hedtech.banner.seeddata.CappProgramRequirementDML',
-            'GCRFLDR': 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GCRCFLD': 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GCBQURY': 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GCBTMPL': 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GCBEMTL': 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GLBEXTR': 'net.hedtech.banner.seeddata.GlbextrDML'
+            'SORATMT' : 'net.hedtech.banner.seeddata.SoratmtDML',
+            'SORSATR' : 'net.hedtech.banner.seeddata.SorsatrDML',
+            'SHRGCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRSCOM' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRMRKS' : 'net.hedtech.banner.seeddata.ShagcomDML',
+            'SHRSMRK' : 'net.hedtech.banner.seeddata.ShagcomDML' ,
+            'SGRADVR' : 'net.hedtech.banner.seeddata.SgradvrDML',
+            'SORNOTE' : 'net.hedtech.banner.seeddata.SornoteDML',
+            'SMBPGEN' : 'net.hedtech.banner.seeddata.CappProgramRequirementDML',
+            'GCRFLDR' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCRCFLD' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
+            'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML',
+            'PERDHIS' : 'net.hedtech.banner.seeddata.PerdhisDML',
+            'NBBPOSN' : 'net.hedtech.banner.seeddata.NbbposnDML',
+            'NBRPTOT' : 'net.hedtech.banner.seeddata.NbrptotDML',
+            'PERJHIS' : 'net.hedtech.banner.seeddata.PerjhisDML'
     ]
 
 

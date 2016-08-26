@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <WAITLIST>
 
@@ -168,8 +168,8 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>HOS00001</BANNERID>
         <SFRAREG_PIDM>37859</SFRAREG_PIDM>
-        <SFRAREG_TERM_CODE>200343</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>43033</SFRAREG_CRN>
+        <SFRAREG_TERM_CODE>201410</SFRAREG_TERM_CODE>
+        <SFRAREG_CRN>20106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>WL</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -195,9 +195,9 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
 
     <SFRSTCR>
         <BANNERID>HOS00001</BANNERID>
-        <SFRSTCR_TERM_CODE>200343</SFRSTCR_TERM_CODE>
+        <SFRSTCR_TERM_CODE>201410</SFRSTCR_TERM_CODE>
         <SFRSTCR_PIDM>37859</SFRSTCR_PIDM>
-        <SFRSTCR_CRN>43033</SFRSTCR_CRN>
+        <SFRSTCR_CRN>2040</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>1</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>CE3</SFRSTCR_PTRM_CODE>
@@ -473,8 +473,8 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>HOS00002</BANNERID>
         <SFRAREG_PIDM>38009</SFRAREG_PIDM>
-        <SFRAREG_TERM_CODE>200343</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>43033</SFRAREG_CRN>
+        <SFRAREG_TERM_CODE>201410</SFRAREG_TERM_CODE>
+        <SFRAREG_CRN>20106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>WL</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -500,9 +500,9 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
 
     <SFRSTCR>
         <BANNERID>HOS00002</BANNERID>
-        <SFRSTCR_TERM_CODE>200343</SFRSTCR_TERM_CODE>
+        <SFRSTCR_TERM_CODE>201410</SFRSTCR_TERM_CODE>
         <SFRSTCR_PIDM>38009</SFRSTCR_PIDM>
-        <SFRSTCR_CRN>43033</SFRSTCR_CRN>
+        <SFRSTCR_CRN>20408</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>1</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>CE3</SFRSTCR_PTRM_CODE>

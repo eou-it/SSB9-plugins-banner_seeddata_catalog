@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <SECTIONDATA>
  <SSBSECT>
@@ -698,7 +698,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
   <SSBSECT_CRN>8</SSBSECT_CRN>
   <SSBSECT_PTRM_CODE>1</SSBSECT_PTRM_CODE>
   <SSBSECT_SUBJ_CODE>MATH</SSBSECT_SUBJ_CODE>
-  <SSBSECT_CRSE_NUMB>002</SSBSECT_CRSE_NUMB>
+  <SSBSECT_CRSE_NUMB>021</SSBSECT_CRSE_NUMB>
   <SSBSECT_SEQ_NUMB>0</SSBSECT_SEQ_NUMB>
   <SSBSECT_SSTS_CODE>A</SSBSECT_SSTS_CODE>
   <SSBSECT_SCHD_CODE>L</SSBSECT_SCHD_CODE>
