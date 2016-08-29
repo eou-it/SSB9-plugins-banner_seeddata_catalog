@@ -68,7 +68,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
-            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrGobeaccData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml',
@@ -420,7 +420,7 @@ public class InputData {
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024937.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024919.xml',
                            '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListAdministrator.xml' ],
-            'registration-planning-region' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml']
+            'registration-planning-region' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml'],
             'finance-budget-availability-data' : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccountIndex.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccountType.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFundType.xml',
