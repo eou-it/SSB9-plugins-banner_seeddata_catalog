@@ -2294,7 +2294,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>GLO</STVSTAT_CODE>
         <STVSTAT_DESC>Gloucestershire</STVSTAT_DESC>
@@ -2303,7 +2302,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>EN</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>AN</STVSTAT_CODE>
         <STVSTAT_DESC>Co Antrim</STVSTAT_DESC>
@@ -2312,7 +2310,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>BA</STVSTAT_CODE>
         <STVSTAT_DESC>Basra</STVSTAT_DESC>
@@ -2321,7 +2318,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>DE</STVSTAT_CODE>
         <STVSTAT_DESC>Delaware</STVSTAT_DESC>
@@ -2330,7 +2326,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>NJ</STVSTAT_CODE>
         <STVSTAT_DESC>New Jersey</STVSTAT_DESC>
@@ -2339,7 +2334,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>PA</STVSTAT_CODE>
         <STVSTAT_DESC>Pennsylvania</STVSTAT_DESC>
@@ -2348,7 +2342,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>DC</STVSTAT_CODE>
         <STVSTAT_DESC>District of Columbia</STVSTAT_DESC>
@@ -2357,7 +2350,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>NY</STVSTAT_CODE>
         <STVSTAT_DESC>New York</STVSTAT_DESC>
@@ -2366,7 +2358,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>CA</STVSTAT_CODE>
         <STVSTAT_DESC>California</STVSTAT_DESC>
@@ -2375,7 +2366,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>VA</STVSTAT_CODE>
         <STVSTAT_DESC>Virginia</STVSTAT_DESC>
@@ -2384,7 +2374,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>NC</STVSTAT_CODE>
         <STVSTAT_DESC>North Carolina</STVSTAT_DESC>
@@ -2393,7 +2382,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>TX</STVSTAT_CODE>
         <STVSTAT_DESC>Texas</STVSTAT_DESC>
@@ -2402,7 +2390,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>FL</STVSTAT_CODE>
         <STVSTAT_DESC>Florida</STVSTAT_DESC>
@@ -2411,7 +2398,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>HI</STVSTAT_CODE>
         <STVSTAT_DESC>Hawaii</STVSTAT_DESC>
@@ -2420,7 +2406,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>WV</STVSTAT_CODE>
         <STVSTAT_DESC>West Virginia</STVSTAT_DESC>
@@ -2429,7 +2414,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>MT</STVSTAT_CODE>
         <STVSTAT_DESC>Montana</STVSTAT_DESC>
@@ -2438,7 +2422,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>GA</STVSTAT_CODE>
         <STVSTAT_DESC>Georgia</STVSTAT_DESC>
@@ -2447,7 +2430,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>MD</STVSTAT_CODE>
         <STVSTAT_DESC>Maryland</STVSTAT_DESC>
@@ -2456,7 +2438,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE>US</STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>OH</STVSTAT_CODE>
         <STVSTAT_DESC>Ohio</STVSTAT_DESC>
@@ -9632,7 +9613,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>MBH</STVSTAT_CODE>
         <STVSTAT_DESC>Marlborough</STVSTAT_DESC>
@@ -9641,7 +9621,6 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
     </STVSTAT>
-
     <STVSTAT>
         <STVSTAT_CODE>UNK</STVSTAT_CODE>
         <STVSTAT_DESC>Unknown</STVSTAT_DESC>
@@ -9649,6 +9628,46 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <STVSTAT_EDI_EQUIV></STVSTAT_EDI_EQUIV>
         <STVSTAT_STATSCAN_CDE></STVSTAT_STATSCAN_CDE>
         <STVSTAT_IPEDS_CDE></STVSTAT_IPEDS_CDE>
+    </STVSTAT>
+    <STVSTAT>
+        <STVSTAT_CODE>1</STVSTAT_CODE>
+        <STVSTAT_DESC>first state</STVSTAT_DESC>
+        <STVSTAT_ACTIVITY_DATE>01-JAN-10</STVSTAT_ACTIVITY_DATE>
+        <STVSTAT_EDI_EQUIV/>
+        <STVSTAT_STATSCAN_CD/>
+        <STVSTAT_IPEDS_CDE/>
+    </STVSTAT>
+    <STVSTAT>
+        <STVSTAT_CODE>CN</STVSTAT_CODE>
+        <STVSTAT_DESC>Canada</STVSTAT_DESC>
+        <STVSTAT_ACTIVITY_DATE>01-JAN-10</STVSTAT_ACTIVITY_DATE>
+        <STVSTAT_EDI_EQUIV>CN</STVSTAT_EDI_EQUIV>
+        <STVSTAT_STATSCAN_CD/>
+        <STVSTAT_IPEDS_CDE/>
+    </STVSTAT>
+    <STVSTAT>
+        <STVSTAT_CODE>W</STVSTAT_CODE>
+        <STVSTAT_DESC>The W state</STVSTAT_DESC>
+        <STVSTAT_ACTIVITY_DATE>01-JAN-10</STVSTAT_ACTIVITY_DATE>
+        <STVSTAT_EDI_EQUIV/>
+        <STVSTAT_STATSCAN_CD/>
+        <STVSTAT_IPEDS_CDE/>
+    </STVSTAT>
+    <STVSTAT>
+      <STVSTAT_CODE>WWW</STVSTAT_CODE>
+      <STVSTAT_DESC>W test province or state</STVSTAT_DESC>
+      <STVSTAT_ACTIVITY_DATE>01-JAN-10</STVSTAT_ACTIVITY_DATE>
+      <STVSTAT_EDI_EQUIV/>
+      <STVSTAT_STATSCAN_CD/>
+      <STVSTAT_IPEDS_CDE/>
+    </STVSTAT>
+    <STVSTAT>
+        <STVSTAT_CODE>ZZ</STVSTAT_CODE>
+        <STVSTAT_DESC>New State</STVSTAT_DESC>
+        <STVSTAT_ACTIVITY_DATE>01-JAN-10</STVSTAT_ACTIVITY_DATE>
+        <STVSTAT_EDI_EQUIV/>
+        <STVSTAT_STATSCAN_CD/>
+        <STVSTAT_IPEDS_CDE/>
     </STVSTAT>
 
     <STVSPSR>
