@@ -23,6 +23,8 @@ public class GeneralActionItemDML {
     def deleteNode
     int itemSeq
     int folderId
+    int templateId
+    int statusId
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                       def deleteNode) {
@@ -59,11 +61,15 @@ public class GeneralActionItemDML {
             }
         }
 
+        //templateId = getTemplateId( apiData.TEMPLATE[0]?.text().toString() )
+        //
+
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBACTM") {
 
             itemSeq = getActionItemId( apiData.GCBACTM_NAME[0]?.text().toString() )
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
+
 
             println "folder returned: " + folderId
 
@@ -85,16 +91,21 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRAACT") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            statusId = getStatusId( apiData.STATUS[0]?.text().toString() )
             //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
             }
 
-            //println connectInfo.tableName +  " itemSeq: " + itemSeq
+            if (statusId == 0) {
+                statusId = apiData.GCRAACT_STATUS_ID[0]?.text().toInteger()
+            }
 
             apiData.GCRAACT_PIDM[0].setValue(personPidm)
             apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            apiData.GCRAACT_STATUS_ID[0].setValue(statusId.toString())
+
 
         }
         if (connectInfo.tableName == "GCRACNT") {
@@ -120,6 +131,18 @@ public class GeneralActionItemDML {
             apiData.GCBAGRP_FOLDER_ID[0].setValue(folderId.toString())
         }
 
+        if (connectInfo.tableName == "GCBPBTR") {
+            //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
+
+            templateId = getTemplateId( apiData.TEMPLATE[0]?.text().toString() )
+
+            if (templateId == 0) {
+                templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCBPBTR_TEMPLATE_ID[0].setValue(templateId.toString())
+        }
+
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() { fields ->
@@ -134,6 +157,8 @@ public class GeneralActionItemDML {
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
+        deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
+        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
@@ -193,6 +218,48 @@ public class GeneralActionItemDML {
             }
         }
         return aId
+    }
+
+    def getTemplateId(String templateName) {
+        String tsql = """select * from GCBPBTM where GCBPBTM_TEMPLATE_NAME= ? """
+        int tId
+        def tRow
+
+        println "getting template id for: " + templateName
+
+        try {
+            tRow = this.conn.firstRow(tsql, [templateName])
+            if (trow) {
+                tId = tRow?.GCBPBTR_SURROGATE_ID
+            } else tId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Template ID in GeneralActionItemDML, from GCBPBTM for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return tId
+    }
+
+    def getStatusId(String statusName) {
+        String ssql = """select * from GCVASTS where GCVASTS_ACTION_ITEM_STATUS= ? """
+        int sId
+        def sRow
+
+        println "getting status id for: " + statusName
+
+        try {
+            sRow = this.conn.firstRow(ssql, [statusName])
+            if (srow) {
+                sId = sRow?.GCVASTS_SURROGATE_ID
+            } else sId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Status ID in GeneralActionItemDML, from GCVASTS for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return sId
     }
 
 
