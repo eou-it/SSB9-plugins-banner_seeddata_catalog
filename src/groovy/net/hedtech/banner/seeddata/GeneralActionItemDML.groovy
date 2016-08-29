@@ -91,7 +91,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRAACT") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
-            statusId = getStatusId( apiData.STATUS[0]?.text().toString() )
+            statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
             //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
@@ -134,7 +134,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCBPBTR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
 
-            templateId = getTemplateId( apiData.TEMPLATE[0]?.text().toString() )
+            templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
 
             if (templateId == 0) {
                 templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
