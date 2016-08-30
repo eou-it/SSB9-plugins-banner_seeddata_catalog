@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<GORVISADATA>
+    <GORVISA>
+        <BANNERID>HOR000001</BANNERID>
+        <GORVISA_SEQ_NO>1</GORVISA_SEQ_NO>
+        <GORVISA_VTYP_CODE>F1</GORVISA_VTYP_CODE>
+        <GORVISA_ENTRY_IND>N</GORVISA_ENTRY_IND>
+    </GORVISA>
+</GORVISADATA>

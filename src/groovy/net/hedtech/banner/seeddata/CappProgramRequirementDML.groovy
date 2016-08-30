@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -52,6 +52,18 @@ public class CappProgramRequirementDML {
         if (connectInfo.debugThis) {
             println "CappProgramRequirementDML Process program xmlData ${program_code}"
         }
+        deleteData('SCRPARE','delete SCRPARE where SCRPARE_PROGRAM = ?',  program_code)
+        deleteData('SCRCLPP','delete SCRCLPP where SCRCLPP_PROGRAM = ?',  program_code)
+        deleteData('SCRPRTS','delete SCRPRTS where SCRPRTS_PROGRAM = ?',  program_code)
+
+        deleteData('SKBRULS','delete SKBRULS  where exists ( select 1 from SKBRULS del, SMRAGAM, SMRPAAP where del.SKBRULS_GROUP = SKBRULS.SKBRULS_GROUP and del.SKBRULS_GROUP = SMRAGAM_GROUP AND SMRAGAM_AREA = SMRPAAP_AREA AND SMRPAAP_PROGRAM = ? ) ' , program_code );
+        deleteData('SKBRULS','delete SKBRULS  where exists ( select 1 from SKBRULS del, SMRPAAP where del.SKBRULS_AREA = SKBRULS.SKBRULS_AREA and del.SKBRULS_AREA = SMRPAAP_AREA AND SMRPAAP_PROGRAM = ? ) ' , program_code );
+        deleteData('SKBGROS','delete SKBGROS  where exists ( select 1 from SKBGROS del, SMRAGAM, SMRPAAP where del.SKBGROS_GROUP = SKBGROS.SKBGROS_GROUP and del.SKBGROS_GROUP = SMRAGAM_GROUP AND SMRAGAM_AREA = SMRPAAP_AREA AND SMRPAAP_PROGRAM = ? ) ' , program_code );
+        deleteData('SKBARES','delete SKBARES  where exists ( select 1 from SKBARES del, SMRPAAP where del.SKBARES_AREA = SKBARES.SKBARES_AREA and del.SKBARES_AREA = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
+        deleteData('SKBPROS','delete SKBPROS where SKBPROS_PROGRAM = ?',  program_code)
+
+        deleteData('SKBAREO','delete SKBAREO  where exists ( select 1 from SKBAREO del, SMRPAAP where del.SKBAREO_AREA = SKBAREO.SKBAREO_AREA and del.SKBAREO_AREA = SMRPAAP_AREA and SMRPAAP_PROGRAM = ? ) ' , program_code );
+        deleteData('SKBPROO','delete SKBPROO where SKBPROO_PROGRAM = ?',  program_code)
 
         deleteData('SMRGCAA','delete SMRGCAA where exists ( select 1 from  smragrl, smbagrl,smragam, smrpaap  ' +
                 'where  smrgcaa_group = smragrl_group and smragrl_area = smbagrl_area and smragrl_key_rule = smbagrl_key_rule and smbagrl_area = smragam_area and smragam_area = smrpaap_area and  smrpaap_program  = ? ) ', program_code );
@@ -153,9 +165,6 @@ public class CappProgramRequirementDML {
         deleteData('SSRRARE','delete SSRRARE  where exists ( select 1 from SSRRARE del, smralib,  smrpaap \n' +
                 '        where del.SSRRARE_area = ssrrare.ssrrare_area and del.SSRRARE_area = smrpaap_area  and  smrpaap_program = ? )' , program_code );
 
-        deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
-
-
         deleteData('SMRGRUL','delete SMRGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMRGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
         deleteData('SMBGRUL','delete SMBGRUL where exists ( select 1 from   smbagrl, smragam, smrpaap where  SMBGRUL_group = smragam_group and smragam_area = smrpaap_area and  smrpaap_program = ? ) ', program_code );
 
@@ -222,6 +231,8 @@ public class CappProgramRequirementDML {
         deleteData('SMRSWPV','delete SMRSWPV where SMRSWPV_PROGRAM = ?',  program_code)
         deleteData('SMTCUSE','delete SMTCUSE where SMTCUSE_PROGRAM = ?',  program_code)
         deleteData('SMBPGEN','delete SMBPGEN where SMBPGEN_PROGRAM = ?',  program_code)
+
+        deleteData('SMRALIB','delete SMRALIB  where exists ( select 1 from SMRALIB del,  smrpaap where del.SMRALIB_area = SMRALIB.SMRALIB_area and del.SMRALIB_area = smrpaap_area  and  smrpaap_program = ? ) ' , program_code );
 
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlData, columns, indexColumns, batch, deleteNode)
