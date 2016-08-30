@@ -64,8 +64,112 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml'],
-            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml'],
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmclData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmskData.xml',
+                       // Finance data
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfsyrData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfspdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobudData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobphData.xml',
+                      // Position Control Rules
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsgrpData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalbData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrinstData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrfiniData.xml',
+                      // Payroll Rules and Validation
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvshcdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvlcatData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvjctyData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbcatData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtremprData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrpictData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrcalnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrdfprData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclcData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrearnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreernData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecbcData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjblnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjcreData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrleavData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvasData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrtreaData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrshftData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtresocData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrinstData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvacData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvprData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrwstbData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml',
+                    // Benefits and Deductions Rules
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/Ptv1099Data.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtvbdtyData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdclData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PxrtxcdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdcaData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdpdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdplData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdcgData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdidData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxeData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdldData.xml',
+                    // Position class and Posn budget
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
+                    // Employee Information
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveByJobData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtruserData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GobeaccData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductionsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductionsDetailData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobAssignmentData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobAssignmentDetailData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobEarningsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrjlbdData.xml',
+                    // Employee History
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PeretotData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjtotData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdhisData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjhisData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdtotData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhraccrData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjacrData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjobsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrearnData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrelbdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdednData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdocmData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerlhisData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjlhsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjobsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerlvtkData.xml',
+
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerleavData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml'],
+
+
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
@@ -144,7 +248,7 @@ public class InputData {
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml'],
             'ssbgeneralstudent': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
-            'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml ',
+            'finance-procurement': ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFiscalYear.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionHeader.xml',
@@ -194,9 +298,6 @@ public class InputData {
             'registration-planning': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceStudentRegistrationPlanSeed.xml']  ,
             'transcript-award' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentTranscriptAwardedDegree.xml'],
              'student-adv-admin-persona' :['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAdvisorAdminPersonData.xml'],
-            'api-general-student': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
             'flat-rate-fee-rules': ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeAssessmentFlatRate.xml'],
             'facultySecurityPlanAhead' :['/src/groovy/net/hedtech/banner/seeddata/Data/FacultySecurityPageData.xml'],
             'generalstudentcapp' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithCompliance.xml'],
@@ -206,18 +307,17 @@ public class InputData {
             'generalstudentdynamic' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentWithDynamicCappArea.xml'],
             'structured-reg': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
                                '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml',
-                               '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml'],
-            'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml'],
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationThree.xml'],
+            'generalstudentcappreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml',
+                                       '/src/groovy/net/hedtech/banner/seeddata/Data/StvsubjData.xml'],
+            'studentcappstructuredreg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCappStructuredRegistration.xml'],
             'studentApiData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCurriculumData.xml'],
-            'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentProjectionsRemove.xml',
-                               '/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentBS_SR_SC2.xml'],
             'capp-programs' : ['/src/groovy/net/hedtech/banner/seeddata/Data/capp/artprogam01.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baengllit.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/baengllitx.xml',
@@ -232,8 +332,22 @@ public class InputData {
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jxnocptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/jzcptv.xml' ,
                                '/src/groovy/net/hedtech/banner/seeddata/Data/capp/leeds.xml' ,
-                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml'],
-
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/capp/multiterm01.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/CappProgramSRPGMGroup.xml'],
+            'structured-progcat': ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbproo.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbareo.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbcrso.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbares.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbcrss.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbgros.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbpros.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/ProgCat_skbruls.xml'],
+            'projected-reg' : ['/src/groovy/net/hedtech/banner/seeddata/Data/TermDataForProjections.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataForProjections.xml',
+                               '/src/groovy/net/hedtech/banner/seeddata/Data/CappComplianceDataForProjections.xml'],
+            'projected-reg-config' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionConfigData.xml'],
+            'projected-reg-data': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionData.xml'],
+            'projected-reg-data-remove': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationProjectionDataRemove.xml'],
             'student-academic-review': ['/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewAdministrator.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewTermData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentAcademicReviewCatalogData.xml',
@@ -244,7 +358,6 @@ public class InputData {
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/2Curriculum1Program2StudyPathsStudentData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/1Curriculum1ProgramNoStudyPath.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/UnRolledStudentData.xml'],
-
             'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
             'api-person-filters': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonFiltersData.xml'],
 			'admissions-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsStudentData.xml'],
@@ -253,6 +366,7 @@ public class InputData {
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMCatalogData.xml',
                                        '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMScheduleData.xml'],
             'api-hedm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMStudentData.xml'],
+            'api-hedm-registration-grade' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMGradeData.xml'],
             'finance-procurement-user-creation' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserCreationData.xml'],
             'brainstorm-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormTermData.xml',
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormIntegrationPartnerData.xml',
@@ -260,9 +374,44 @@ public class InputData {
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormCatalogData.xml',
                                         '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormScheduleData.xml'],
             'brainstorm-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormStudentData.xml'],
-            'brainstorm-registration-planning' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormPlanningData.xml']
+            'brainstorm-registration-planning' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationBrainstormPlanningData.xml'],
+            'reg-ar': ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentAccountsReceivableData.xml'],
+            'api-student-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
+            'api-general-student': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml',
+                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml',
+                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
+            'direct-deposit' : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositUsers.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml'],
+            'general' : ['src/groovy/net/hedtech/banner/seeddata/Data/general/SprmediData.xml',
+                         'src/groovy/net/hedtech/banner/seeddata/Data/general/NonPersonData.xml',
+                         'src/groovy/net/hedtech/banner/seeddata/Data/general/GoradrlData.xml'],
+            'personal-info' : ['src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoData.xml'],
+            'general-common' : ['src/groovy/net/hedtech/banner/seeddata/Data/GorvisaData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/SqlProcessData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/GeneralGtvsdaxData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/CommonMatchingData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/GtvduntData.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/GeneralUsers.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/LetterGenerationData.xml'],
+            'program-prerequisite' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramRestriction_Data.xml',
+                                      '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramTestScoreRestrictionAndPrerequisite_Data.xml',
+                                      '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaRestriction_Data.xml'],
+            'classList' : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListTermData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListCatalogData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListScheduleData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListComponentData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024925.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024831.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024932.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024934.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024935.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024937.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024919.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListAdministrator.xml' ],
+            'registration-planning-region' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml']
             ]
-
 
     /**
      *  Map of selenium targets
@@ -614,16 +763,16 @@ public class InputData {
                                 FROM Ctxsys.Ctx_User_Pending
                                WHERE Pnd_Index_name IN ('SSBSECT_SS_IDX','SCBCRSE_SC_IDX')
                             GROUP BY Pnd_Index_Name""")
-       // println "before sync ${rows}"
+        //println "before sync ${rows}"
         def syncRequired = false
         rows.each {
             if (it.CNT > 0) syncRequired = true
         }
-       // println "sync required ${syncRequired}"
+         //println "sync required ${syncRequired}"
         def user2 = db.firstRow("select user from dual")
-        // println "user2 ${user2}"
+        //  println "user2 ${user2}"
         if (syncRequired) {
-            println "sync in progress"
+           // println "sync in progress"
             db.call("""Begin
                        Ctxsys.ctx_ddl.sync_index('ssbsect_ss_idx');
                        Ctxsys.CTX_DDL.OPTIMIZE_INDEX('ssbsect_ss_idx','FULL');
@@ -634,7 +783,7 @@ public class InputData {
         rows = db.rows("""Select Pnd_Index_Name name, count(*) cnt,
                                   max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
                                   From Ctxsys.Ctx_User_Pending group by Pnd_Index_Name """)
-       // println "after sync ${rows}"
+        // println "after sync ${rows}"
         db.close()
     }
 
