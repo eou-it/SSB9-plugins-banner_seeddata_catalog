@@ -221,7 +221,7 @@ public class GeneralActionItemDML {
     }
 
     def getTemplateId(String templateName) {
-        String tsql = """select * from GCBPBTM where GCBPBTM_TEMPLATE_NAME= ? """
+        String tsql = """select * from GCBPBTR where GCBPBTR_TEMPLATE_NAME= ? """
         int tId
         def tRow
 
@@ -235,7 +235,7 @@ public class GeneralActionItemDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could not select Template ID in GeneralActionItemDML, from GCBPBTM for ${connectInfo.tableName}. $e.message"
+                println "Could not select Template ID in GeneralActionItemDML, from GCBPBTR for ${connectInfo.tableName}. $e.message"
             }
         }
         return tId
