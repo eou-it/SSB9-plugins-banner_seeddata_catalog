@@ -157,8 +157,8 @@ public class GeneralActionItemDML {
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
-        deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
-        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        //deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
+        //deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
@@ -166,7 +166,7 @@ public class GeneralActionItemDML {
     }
 
     def deleteData(String tableName, String sql) {
-        //println "delete " + tableName + " " + itemSeq.toString( )
+        println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -225,7 +225,7 @@ public class GeneralActionItemDML {
         int tId
         def tRow
 
-        //println "getting template id for: " + templateName
+        println "getting template id for: " + templateName
 
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
