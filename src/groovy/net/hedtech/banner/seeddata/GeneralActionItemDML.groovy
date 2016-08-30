@@ -71,7 +71,7 @@ public class GeneralActionItemDML {
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
 
-            println "folder returned: " + folderId
+           // println "folder returned: " + folderId
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
@@ -166,7 +166,7 @@ public class GeneralActionItemDML {
     }
 
     def deleteData(String tableName, String sql) {
-        println "delete " + tableName + " " + itemSeq.toString( )
+        //println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -225,7 +225,7 @@ public class GeneralActionItemDML {
         int tId
         def tRow
 
-        println "getting template id for: " + templateName
+        //println "getting template id for: " + templateName
 
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
