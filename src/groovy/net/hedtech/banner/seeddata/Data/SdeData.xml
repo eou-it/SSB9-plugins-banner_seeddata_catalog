@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <SDEDATA>
 
@@ -11,7 +11,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GOBSDTB_USER_ID>grails_user</GOBSDTB_USER_ID>
         <GOBSDTB_PK_DYNSQL>SCRCORQ_SUBJ_CODE||CHR(1)||SCRCORQ_CRSE_NUMB||CHR(1)||SCRCORQ_EFF_TERM||CHR(1)||SCRCORQ_SUBJ_CODE_CORQ||CHR(1)||SCRCORQ_CRSE_NUMB_CORQ</GOBSDTB_PK_DYNSQL>
         <GOBSDTB_DATA_ORIGIN/>
- </GOBSDTB>
+   </GOBSDTB>
 
 
     <GOBSDTB>
@@ -21,7 +21,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GOBSDTB_USER_ID>grails_user</GOBSDTB_USER_ID>
         <GOBSDTB_PK_DYNSQL>SCBSUPP_SUBJ_CODE||CHR(1)||SCBSUPP_CRSE_NUMB||CHR(1)||SCBSUPP_EFF_TERM</GOBSDTB_PK_DYNSQL>
         <GOBSDTB_DATA_ORIGIN/>
- </GOBSDTB>
+   </GOBSDTB>
 
     <GOBSDTB>
         <GOBSDTB_TABLE_NAME>SCRATTR</GOBSDTB_TABLE_NAME>
@@ -343,6 +343,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GOBSDTB_DATA_ORIGIN/>
     </GOBSDTB>
 
+    
  <GORSDAM>
   <GORSDAM_TABLE_NAME>SCRCORQ</GORSDAM_TABLE_NAME>
   <GORSDAM_ATTR_NAME>REVIEW_NAME</GORSDAM_ATTR_NAME>
@@ -357,7 +358,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
   <GORSDAM_ATTR_DATA_SCALE/>
   <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
   <GORSDAM_ATTR_BASE_COL/>
-  <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+  <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
   <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
  </GORSDAM>
 
@@ -429,7 +430,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
   <GORSDAM_ATTR_DATA_SCALE/>
   <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
   <GORSDAM_ATTR_BASE_COL/>
-  <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+  <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
   <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
  </GORSDAM>
 
@@ -483,7 +484,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
          <GORSDAM_ATTR_DATA_SCALE/>
          <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
          <GORSDAM_ATTR_BASE_COL/>
-         <GORSDAM_SDDC_CODE>cyndy3</GORSDAM_SDDC_CODE>
+         <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
          <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
      </GORSDAM>
 
@@ -501,7 +502,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
          <GORSDAM_ATTR_DATA_SCALE/>
          <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
          <GORSDAM_ATTR_BASE_COL/>
-         <GORSDAM_SDDC_CODE>lang</GORSDAM_SDDC_CODE>
+         <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
          <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
      </GORSDAM>
 
@@ -520,7 +521,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -593,7 +594,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -666,7 +667,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -739,7 +740,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -811,7 +812,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -883,7 +884,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -956,7 +957,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1028,7 +1029,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1113,7 +1114,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ACTIVITY_DATE>01-JAN-10</GORSDAM_ACTIVITY_DATE>
         <GORSDAM_USER_ID>GRAILS</GORSDAM_USER_ID>
         <GORSDAM_ATTR_INFO>Select the Subjects</GORSDAM_ATTR_INFO>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>GRAILS</GORSDAM_DATA_ORIGIN>
         <GORSDAM_LOV_FORM>GTVSUBJ</GORSDAM_LOV_FORM>
         <GORSDAM_GJAPDEF_VALIDATION>LOV_VALIDATION</GORSDAM_GJAPDEF_VALIDATION>
@@ -1156,6 +1157,16 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_LOV_HIGH_SYSDATE_IND>N</GORSDAM_LOV_HIGH_SYSDATE_IND>
         <GORSDAM_GJAPDEF_VALIDATION>LOV_VALIDATION</GORSDAM_GJAPDEF_VALIDATION>
     </GORSDAM>
+
+    <GOBSDTB>
+        <GOBSDTB_TABLE_NAME>GTVZIPC</GOBSDTB_TABLE_NAME>
+        <GOBSDTB_OWNER>GENERAL</GOBSDTB_OWNER>
+        <GOBSDTB_ACTIVITY_DATE>01-JAN-11</GOBSDTB_ACTIVITY_DATE>
+        <GOBSDTB_USER_ID>grails_user</GOBSDTB_USER_ID>
+        <GOBSDTB_PK_DYNSQL>GTVZIPC_CODE||CHR(1)||GTVZIPC_CITY</GOBSDTB_PK_DYNSQL>
+        <GOBSDTB_DATA_ORIGIN/>
+    </GOBSDTB>
+
     <GORSDAM>
         <GORSDAM_TABLE_NAME>SCRLEVL</GORSDAM_TABLE_NAME>
         <GORSDAM_ATTR_NAME>ZIP</GORSDAM_ATTR_NAME>
@@ -1187,7 +1198,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1259,7 +1270,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1331,7 +1342,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1403,7 +1414,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1475,7 +1486,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1548,7 +1559,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1620,7 +1631,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1693,7 +1704,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1765,7 +1776,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1837,7 +1848,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1909,7 +1920,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -1981,7 +1992,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2053,7 +2064,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2125,7 +2136,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2197,7 +2208,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2269,7 +2280,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2341,7 +2352,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2395,7 +2406,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2449,7 +2460,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2503,7 +2514,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2557,7 +2568,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2629,7 +2640,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2701,7 +2712,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2773,7 +2784,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2845,7 +2856,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2917,7 +2928,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -2989,7 +3000,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>three</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -3061,7 +3072,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>cyndy3</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 
@@ -3079,7 +3090,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <GORSDAM_ATTR_DATA_SCALE/>
         <GORSDAM_ATTR_INFO>sde test</GORSDAM_ATTR_INFO>
         <GORSDAM_ATTR_BASE_COL/>
-        <GORSDAM_SDDC_CODE>lang</GORSDAM_SDDC_CODE>
+        <GORSDAM_SDDC_CODE></GORSDAM_SDDC_CODE>
         <GORSDAM_DATA_ORIGIN>grails</GORSDAM_DATA_ORIGIN>
     </GORSDAM>
 

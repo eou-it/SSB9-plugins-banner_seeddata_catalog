@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<PTVRQST_DATA>
+ <PTVRQST>
+  <PTVRQST_CODE>ACC</PTVRQST_CODE>
+  <PTVRQST_DESC>Request Accepted</PTVRQST_DESC>
+  <PTVRQST_ACTIVITY_DATE>01-JAN-2010</PTVRQST_ACTIVITY_DATE>
+  <PTVRQST_SURROGATE_ID/>
+  <PTVRQST_VERSION/>
+  <PTVRQST_USER_ID/>
+  <PTVRQST_DATA_ORIGIN>SEED_DATA</PTVRQST_DATA_ORIGIN>
+  <PTVRQST_VPDI_CODE/>
+ </PTVRQST>
+
+ <PTVRQST>
+  <PTVRQST_CODE>PROC</PTVRQST_CODE>
+  <PTVRQST_DESC>Request in Process</PTVRQST_DESC>
+  <PTVRQST_ACTIVITY_DATE>01-JAN-2010</PTVRQST_ACTIVITY_DATE>
+  <PTVRQST_SURROGATE_ID/>
+  <PTVRQST_VERSION/>
+  <PTVRQST_USER_ID/>
+  <PTVRQST_DATA_ORIGIN>SEED_DATA</PTVRQST_DATA_ORIGIN>
+  <PTVRQST_VPDI_CODE/>
+ </PTVRQST>
+</PTVRQST_DATA>
