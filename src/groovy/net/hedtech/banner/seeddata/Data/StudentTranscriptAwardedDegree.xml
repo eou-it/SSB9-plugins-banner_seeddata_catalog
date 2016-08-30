@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2014-2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
 <STUDENTDATA>
     <SOBCURR>
         <PROGRAM>MS-ANTHRO</PROGRAM>
@@ -685,7 +688,7 @@
         <SORLCUR_KEY_SEQNO>1</SORLCUR_KEY_SEQNO>
         <SORLCUR_PRIORITY_NO>3</SORLCUR_PRIORITY_NO>
         <SORLCUR_ROLL_IND>Y</SORLCUR_ROLL_IND>
-        <SORLCUR_CACT_CODE>NEWACTIVE</SORLCUR_CACT_CODE>
+        <SORLCUR_CACT_CODE>ACTIVE</SORLCUR_CACT_CODE>
         <SORLCUR_USER_ID>MHOCKETT</SORLCUR_USER_ID>
         <SORLCUR_DATA_ORIGIN>Banner</SORLCUR_DATA_ORIGIN>
         <SORLCUR_ACTIVITY_DATE>10-JAN-14</SORLCUR_ACTIVITY_DATE>

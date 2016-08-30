@@ -18,7 +18,6 @@ public class FinanceProcurementUserDML {
     def oracle_id
     def spriden_id
     def pidm_role
-    def source_oracle_id
 
     def InputData connectInfo
     Sql conn
@@ -53,7 +52,6 @@ public class FinanceProcurementUserDML {
         def userCreationData = new XmlParser().parseText( xmlData )
         this.oracle_id = userCreationData.FINANCEUSER_ORACLE_ID.text()
         this.spriden_id = userCreationData.FINANCEUSER_SPRIDEN_ID.text()
-        this.source_oracle_id = userCreationData.FINANCEUSER_SRC_ORACLE_ID.text()
         this.pidm_role = userCreationData.FINANCEUSER_PIDM_ROLE.text()
     }
 
@@ -105,112 +103,216 @@ public class FinanceProcurementUserDML {
                     "   gurucls_class_code = 'BAN_FINANCE_C');" +
                     "   DBMS_OUTPUT.put_line ('Created oracle user : ' || p_id);" +
                     "   delete from FOBPROF where FOBPROF_USER_ID = p_id;" +
-                    "   INSERT" +
-                    "   INTO FOBPROF" +
-                    "   (" +
-                    "   FOBPROF_USER_ID," +
-                    "   FOBPROF_ACTIVITY_DATE," +
-                    "   FOBPROF_USER_NAME," +
-                    "   FOBPROF_COAS_CODE," +
-                    "   FOBPROF_SECG_CODE," +
-                    "   FOBPROF_NSF_OVERRIDE," +
-                    "   FOBPROF_TOLERANCE," +
-                    "   FOBPROF_BUD_ID," +
-                    "   FOBPROF_PIDM," +
-                    "   FOBPROF_MASTER_FUND_IND," +
-                    "   FOBPROF_MASTER_ORGN_IND," +
-                    "   FOBPROF_MAX_TOLERANCE_AMT," +
-                    "   FOBPROF_RCVD_OVERRIDE_IND," +
-                    "   FOBPROF_RCVD_TOLERANCE_PCT," +
-                    "   FOBPROF_TOL_OVERRIDE_IND," +
-                    "   FOBPROF_DST_SPD_OVERRIDE_IND," +
-                    "   FOBPROF_SPD_OVERRIDE_IND," +
-                    "   FOBPROF_INT_RATE_OVERRIDE_IND," +
-                    "   FOBPROF_USER_INV_PRIV," +
-                    "   FOBPROF_EXP_END_POST_AUTH_IND," +
-                    "   FOBPROF_ACCRUAL_POST_AUTH_IND," +
-                    "   FOBPROF_REQUESTER_ORGN_CODE," +
-                    "   FOBPROF_RCVD_TOLERANCE_QTY," +
-                    "   FOBPROF_RCVD_TOLERANCE_AMT," +
-                    "   FOBPROF_RCVD_TOLERANCE_AMT_PCT," +
-                    "   FOBPROF_REQUESTOR_EMAIL_ADDR," +
-                    "   FOBPROF_REQUESTOR_FAX_AREA," +
-                    "   FOBPROF_REQUESTOR_FAX_NUMBER," +
-                    "   FOBPROF_REQUESTOR_FAX_EXT," +
-                    "   FOBPROF_REQUESTOR_PHONE_AREA," +
-                    "   FOBPROF_REQUESTOR_PHONE_NUMBER," +
-                    "   FOBPROF_REQUESTOR_PHONE_EXT," +
-                    "   FOBPROF_REQUESTOR_SHIP_CODE," +
-                    "   FOBPROF_EDI_OVERRIDE_IND," +
-                    "   FOBPROF_ACH_OVERRIDE_IND," +
-                    "   FOBPROF_CARD_OVERRIDE_IND," +
-                    "   FOBPROF_REQ_MATCH_OVRRD_IND," +
-                    "   FOBPROF_PO_MATCH_OVRRD_IND," +
-                    "   FOBPROF_INV_MATCH_OVRRD_IND," +
-                    "   FOBPROF_WEB_ACCESS_IND," +
-                    "   FOBPROF_WBUD_ACCESS_IND," +
-                    "   FOBPROF_WBUD_MSTR_FUND_IND," +
-                    "   FOBPROF_WBUD_MSTR_ORGN_IND," +
-                    "   FOBPROF_CTRY_CODE_REQ_PHONE," +
-                    "   FOBPROF_CTRY_CODE_REQ_FAX," +
-                    "   FOBPROF_WHRLD_ACCESS_IND," +
-                    "   FOBPROF_PO_HOLD_OVRD_IND," +
-                    "   FOBPROF_PMT_HOLD_OVRD_IND," +
-                    "   FOBPROF_VERSION," +
-                    "   FOBPROF_DATA_ORIGIN," +
-                    "   FOBPROF_VPDI_CODE" +
-                    "   ) select" +
-                    "   p_id," +
-                    "   FOBPROF_ACTIVITY_DATE," +
-                    "   FOBPROF_USER_NAME," +
-                    "   FOBPROF_COAS_CODE," +
-                    "   FOBPROF_SECG_CODE," +
-                    "   FOBPROF_NSF_OVERRIDE," +
-                    "   FOBPROF_TOLERANCE," +
-                    "   FOBPROF_BUD_ID," +
-                    "   FOBPROF_PIDM," +
-                    "   'B'," +
-                    "   'B'," +
-                    "   FOBPROF_MAX_TOLERANCE_AMT," +
-                    "   FOBPROF_RCVD_OVERRIDE_IND," +
-                    "   FOBPROF_RCVD_TOLERANCE_PCT," +
-                    "   FOBPROF_TOL_OVERRIDE_IND," +
-                    "   FOBPROF_DST_SPD_OVERRIDE_IND," +
-                    "   FOBPROF_SPD_OVERRIDE_IND," +
-                    "   FOBPROF_INT_RATE_OVERRIDE_IND," +
-                    "   FOBPROF_USER_INV_PRIV," +
-                    "   FOBPROF_EXP_END_POST_AUTH_IND," +
-                    "   FOBPROF_ACCRUAL_POST_AUTH_IND," +
-                    "   FOBPROF_REQUESTER_ORGN_CODE," +
-                    "   FOBPROF_RCVD_TOLERANCE_QTY," +
-                    "   FOBPROF_RCVD_TOLERANCE_AMT," +
-                    "   FOBPROF_RCVD_TOLERANCE_AMT_PCT," +
-                    "   FOBPROF_REQUESTOR_EMAIL_ADDR," +
-                    "   FOBPROF_REQUESTOR_FAX_AREA," +
-                    "   FOBPROF_REQUESTOR_FAX_NUMBER," +
-                    "   FOBPROF_REQUESTOR_FAX_EXT," +
-                    "   FOBPROF_REQUESTOR_PHONE_AREA," +
-                    "   FOBPROF_REQUESTOR_PHONE_NUMBER," +
-                    "   FOBPROF_REQUESTOR_PHONE_EXT," +
-                    "   FOBPROF_REQUESTOR_SHIP_CODE," +
-                    "   FOBPROF_EDI_OVERRIDE_IND," +
-                    "   FOBPROF_ACH_OVERRIDE_IND," +
-                    "   FOBPROF_CARD_OVERRIDE_IND," +
-                    "   FOBPROF_REQ_MATCH_OVRRD_IND," +
-                    "   FOBPROF_PO_MATCH_OVRRD_IND," +
-                    "   FOBPROF_INV_MATCH_OVRRD_IND," +
-                    "   FOBPROF_WEB_ACCESS_IND," +
-                    "   FOBPROF_WBUD_ACCESS_IND," +
-                    "   FOBPROF_WBUD_MSTR_FUND_IND," +
-                    "   FOBPROF_WBUD_MSTR_ORGN_IND," +
-                    "   FOBPROF_CTRY_CODE_REQ_PHONE," +
-                    "   FOBPROF_CTRY_CODE_REQ_FAX," +
-                    "   FOBPROF_WHRLD_ACCESS_IND," +
-                    "   FOBPROF_PO_HOLD_OVRD_IND," +
-                    "   FOBPROF_PMT_HOLD_OVRD_IND," +
-                    "   FOBPROF_VERSION," +
-                    "   FOBPROF_DATA_ORIGIN," +
-                    "   FOBPROF_VPDI_CODE FROM FOBPROF where FOBPROF_USER_ID = ?;" +
+                    /* "   INSERT" +
+                     "   INTO FOBPROF" +
+                     "   (" +
+                     "   FOBPROF_USER_ID," +
+                     "   FOBPROF_ACTIVITY_DATE," +
+                     "   FOBPROF_USER_NAME," +
+                     "   FOBPROF_COAS_CODE," +
+                     "   FOBPROF_SECG_CODE," +
+                     "   FOBPROF_NSF_OVERRIDE," +
+                     "   FOBPROF_TOLERANCE," +
+                     "   FOBPROF_BUD_ID," +
+                     "   FOBPROF_PIDM," +
+                     "   FOBPROF_MASTER_FUND_IND," +
+                     "   FOBPROF_MASTER_ORGN_IND," +
+                     "   FOBPROF_MAX_TOLERANCE_AMT," +
+                     "   FOBPROF_RCVD_OVERRIDE_IND," +
+                     "   FOBPROF_RCVD_TOLERANCE_PCT," +
+                     "   FOBPROF_TOL_OVERRIDE_IND," +
+                     "   FOBPROF_DST_SPD_OVERRIDE_IND," +
+                     "   FOBPROF_SPD_OVERRIDE_IND," +
+                     "   FOBPROF_INT_RATE_OVERRIDE_IND," +
+                     "   FOBPROF_USER_INV_PRIV," +
+                     "   FOBPROF_EXP_END_POST_AUTH_IND," +
+                     "   FOBPROF_ACCRUAL_POST_AUTH_IND," +
+                     "   FOBPROF_REQUESTER_ORGN_CODE," +
+                     "   FOBPROF_RCVD_TOLERANCE_QTY," +
+                     "   FOBPROF_RCVD_TOLERANCE_AMT," +
+                     "   FOBPROF_RCVD_TOLERANCE_AMT_PCT," +
+                     "   FOBPROF_REQUESTOR_EMAIL_ADDR," +
+                     "   FOBPROF_REQUESTOR_FAX_AREA," +
+                     "   FOBPROF_REQUESTOR_FAX_NUMBER," +
+                     "   FOBPROF_REQUESTOR_FAX_EXT," +
+                     "   FOBPROF_REQUESTOR_PHONE_AREA," +
+                     "   FOBPROF_REQUESTOR_PHONE_NUMBER," +
+                     "   FOBPROF_REQUESTOR_PHONE_EXT," +
+                     "   FOBPROF_REQUESTOR_SHIP_CODE," +
+                     "   FOBPROF_EDI_OVERRIDE_IND," +
+                     "   FOBPROF_ACH_OVERRIDE_IND," +
+                     "   FOBPROF_CARD_OVERRIDE_IND," +
+                     "   FOBPROF_REQ_MATCH_OVRRD_IND," +
+                     "   FOBPROF_PO_MATCH_OVRRD_IND," +
+                     "   FOBPROF_INV_MATCH_OVRRD_IND," +
+                     "   FOBPROF_WEB_ACCESS_IND," +
+                     "   FOBPROF_WBUD_ACCESS_IND," +
+                     "   FOBPROF_WBUD_MSTR_FUND_IND," +
+                     "   FOBPROF_WBUD_MSTR_ORGN_IND," +
+                     "   FOBPROF_CTRY_CODE_REQ_PHONE," +
+                     "   FOBPROF_CTRY_CODE_REQ_FAX," +
+                     "   FOBPROF_WHRLD_ACCESS_IND," +
+                     "   FOBPROF_PO_HOLD_OVRD_IND," +
+                     "   FOBPROF_PMT_HOLD_OVRD_IND," +
+                     "   FOBPROF_VERSION," +
+                     "   FOBPROF_DATA_ORIGIN," +
+                     "   FOBPROF_VPDI_CODE" +
+                     "   ) select" +
+                     "   p_id," +
+                     "   FOBPROF_ACTIVITY_DATE," +
+                     "   FOBPROF_USER_NAME," +
+                     "   FOBPROF_COAS_CODE," +
+                     "   FOBPROF_SECG_CODE," +
+                     "   FOBPROF_NSF_OVERRIDE," +
+                     "   FOBPROF_TOLERANCE," +
+                     "   FOBPROF_BUD_ID," +
+                     "   FOBPROF_PIDM," +
+                     "   'B'," +
+                     "   'B'," +
+                     "   FOBPROF_MAX_TOLERANCE_AMT," +
+                     "   FOBPROF_RCVD_OVERRIDE_IND," +
+                     "   FOBPROF_RCVD_TOLERANCE_PCT," +
+                     "   FOBPROF_TOL_OVERRIDE_IND," +
+                     "   FOBPROF_DST_SPD_OVERRIDE_IND," +
+                     "   FOBPROF_SPD_OVERRIDE_IND," +
+                     "   FOBPROF_INT_RATE_OVERRIDE_IND," +
+                     "   FOBPROF_USER_INV_PRIV," +
+                     "   FOBPROF_EXP_END_POST_AUTH_IND," +
+                     "   FOBPROF_ACCRUAL_POST_AUTH_IND," +
+                     "   FOBPROF_REQUESTER_ORGN_CODE," +
+                     "   FOBPROF_RCVD_TOLERANCE_QTY," +
+                     "   FOBPROF_RCVD_TOLERANCE_AMT," +
+                     "   FOBPROF_RCVD_TOLERANCE_AMT_PCT," +
+                     "   FOBPROF_REQUESTOR_EMAIL_ADDR," +
+                     "   FOBPROF_REQUESTOR_FAX_AREA," +
+                     "   FOBPROF_REQUESTOR_FAX_NUMBER," +
+                     "   FOBPROF_REQUESTOR_FAX_EXT," +
+                     "   FOBPROF_REQUESTOR_PHONE_AREA," +
+                     "   FOBPROF_REQUESTOR_PHONE_NUMBER," +
+                     "   FOBPROF_REQUESTOR_PHONE_EXT," +
+                     "   FOBPROF_REQUESTOR_SHIP_CODE," +
+                     "   FOBPROF_EDI_OVERRIDE_IND," +
+                     "   FOBPROF_ACH_OVERRIDE_IND," +
+                     "   FOBPROF_CARD_OVERRIDE_IND," +
+                     "   FOBPROF_REQ_MATCH_OVRRD_IND," +
+                     "   FOBPROF_PO_MATCH_OVRRD_IND," +
+                     "   FOBPROF_INV_MATCH_OVRRD_IND," +
+                     "   FOBPROF_WEB_ACCESS_IND," +
+                     "   FOBPROF_WBUD_ACCESS_IND," +
+                     "   FOBPROF_WBUD_MSTR_FUND_IND," +
+                     "   FOBPROF_WBUD_MSTR_ORGN_IND," +
+                     "   FOBPROF_CTRY_CODE_REQ_PHONE," +
+                     "   FOBPROF_CTRY_CODE_REQ_FAX," +
+                     "   FOBPROF_WHRLD_ACCESS_IND," +
+                     "   FOBPROF_PO_HOLD_OVRD_IND," +
+                     "   FOBPROF_PMT_HOLD_OVRD_IND," +
+                     "   FOBPROF_VERSION," +
+                     "   FOBPROF_DATA_ORIGIN," +
+                     "   FOBPROF_VPDI_CODE FROM FOBPROF where FOBPROF_USER_ID = ?;" +    */
+                    "INSERT INTO FOBPROF  " +
+                    "  (FOBPROF_USER_ID, " +
+                    "   FOBPROF_ACTIVITY_DATE, " +
+                    "   FOBPROF_USER_NAME, " +
+                    "   FOBPROF_COAS_CODE, " +
+                    "   FOBPROF_SECG_CODE, " +
+                    "   FOBPROF_NSF_OVERRIDE, " +
+                    "   FOBPROF_TOLERANCE, " +
+                    "   FOBPROF_BUD_ID, " +
+                    "   FOBPROF_PIDM, " +
+                    "   FOBPROF_MASTER_FUND_IND, " +
+                    "   FOBPROF_MASTER_ORGN_IND, " +
+                    "   FOBPROF_MAX_TOLERANCE_AMT, " +
+                    "   FOBPROF_RCVD_OVERRIDE_IND, " +
+                    "   FOBPROF_RCVD_TOLERANCE_PCT, " +
+                    "   FOBPROF_TOL_OVERRIDE_IND, " +
+                    "   FOBPROF_DST_SPD_OVERRIDE_IND, " +
+                    "   FOBPROF_SPD_OVERRIDE_IND, " +
+                    "   FOBPROF_INT_RATE_OVERRIDE_IND, " +
+                    "   FOBPROF_USER_INV_PRIV, " +
+                    "   FOBPROF_EXP_END_POST_AUTH_IND, " +
+                    "   FOBPROF_ACCRUAL_POST_AUTH_IND, " +
+                    "   FOBPROF_REQUESTER_ORGN_CODE, " +
+                    "   FOBPROF_RCVD_TOLERANCE_QTY, " +
+                    "   FOBPROF_RCVD_TOLERANCE_AMT, " +
+                    "   FOBPROF_RCVD_TOLERANCE_AMT_PCT, " +
+                    "   FOBPROF_REQUESTOR_EMAIL_ADDR, " +
+                    "   FOBPROF_REQUESTOR_FAX_AREA, " +
+                    "   FOBPROF_REQUESTOR_FAX_NUMBER, " +
+                    "   FOBPROF_REQUESTOR_FAX_EXT, " +
+                    "   FOBPROF_REQUESTOR_PHONE_AREA, " +
+                    "   FOBPROF_REQUESTOR_PHONE_NUMBER, " +
+                    "   FOBPROF_REQUESTOR_PHONE_EXT, " +
+                    "   FOBPROF_REQUESTOR_SHIP_CODE, " +
+                    "   FOBPROF_EDI_OVERRIDE_IND, " +
+                    "   FOBPROF_ACH_OVERRIDE_IND, " +
+                    "   FOBPROF_CARD_OVERRIDE_IND, " +
+                    "   FOBPROF_REQ_MATCH_OVRRD_IND, " +
+                    "   FOBPROF_PO_MATCH_OVRRD_IND, " +
+                    "   FOBPROF_INV_MATCH_OVRRD_IND, " +
+                    "   FOBPROF_WEB_ACCESS_IND, " +
+                    "   FOBPROF_WBUD_ACCESS_IND, " +
+                    "   FOBPROF_WBUD_MSTR_FUND_IND, " +
+                    "   FOBPROF_WBUD_MSTR_ORGN_IND, " +
+                    "   FOBPROF_CTRY_CODE_REQ_PHONE, " +
+                    "   FOBPROF_CTRY_CODE_REQ_FAX, " +
+                    "   FOBPROF_WHRLD_ACCESS_IND, " +
+                    "   FOBPROF_PO_HOLD_OVRD_IND, " +
+                    "   FOBPROF_PMT_HOLD_OVRD_IND, " +
+                    "   FOBPROF_VERSION, " +
+                    "   FOBPROF_DATA_ORIGIN, " +
+                    "   FOBPROF_VPDI_CODE)  " +
+                    "   select " +
+                    "   p_id, " +
+                    "   sysdate, " +
+                    "   'Finance Seed User - ' || p_id, " +
+                    "   'B', " +
+                    "   null, " +
+                    "   'Y', " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   'B', " +
+                    "   'B', " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   'A', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   '11007', " +
+                    "   null, " +
+                    "   null, " +
+                    "   null, " +
+                    "   'seed user', " +
+                    "   '252', " +
+                    "   '6597777', " +
+                    "   null, " +
+                    "   '252', " +
+                    "   '6591111', " +
+                    "   null, " +
+                    "   'ATHLDR', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   'Y', " +
+                    "   'Y', " +
+                    "   'B', " +
+                    "   'B', " +
+                    "   null, " +
+                    "   null, " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   'N', " +
+                    "   0, " +
+                    "   null, " +
+                    "   null from dual; " +
                     "   END p_create_oracle_user;" +
                     "   FUNCTION f_create_banner_id (p_id            VARCHAR2" +
                     "   ,p_spriden_id\tVARCHAR2" +
@@ -222,6 +324,7 @@ public class FinanceProcurementUserDML {
                     "   gv_pidm1                           NUMBER := NULL;" +
                     "   gv_rowid1                          VARCHAR2 (18);" +
                     "   lv_result                          VARCHAR2 (10);" +
+                    "   gv_format                          VARCHAR2(1); "  +
                     "   BEGIN" +
                     "   DELETE FROM gobeacc" +
                     "   WHERE gobeacc_pidm = (SELECT DISTINCT spriden_pidm" +
@@ -241,6 +344,8 @@ public class FinanceProcurementUserDML {
                     "   WHERE spriden_pidm = (SELECT DISTINCT spriden_pidm" +
                     "   FROM spriden" +
                     "   WHERE spriden_id = p_spriden_id);" +
+                    "   SELECT gubpprf_format into gv_format FROM gubpprf; " +
+                    "   UPDATE gubpprf set gubpprf_format='A' ; " +
                     "   IF (gb_common.f_id_exists (p_id) = 'N')" +
                     "   THEN" +
                     "   gb_identification.p_create (p_id_inout      => gv_id" +
@@ -269,6 +374,7 @@ public class FinanceProcurementUserDML {
                     "   END IF;" +
                     "   gokmods.p_update_gobtpac (gv_pidm1, '111111', '01-JAN-2050');" +
                     "   p_create_oracle_user (p_id);" +
+                    "   UPDATE gubpprf set gubpprf_format=gv_format ; " +
                     "   RETURN gv_pidm1;" +
                     "   END f_create_banner_id;" +
                     "   PROCEDURE p_create_gobeacc (p_pidm PLS_INTEGER, p_id VARCHAR2)" +
@@ -342,7 +448,7 @@ public class FinanceProcurementUserDML {
                     "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
             if (connectInfo.debugThis) {
-                println "Executing script with ${this.oracle_id} ${this.spriden_id} ${this.source_oracle_id}"
+                println "Executing script with ${this.oracle_id} ${this.spriden_id}"
             }
             try {
                 // create  5 users
@@ -353,8 +459,6 @@ public class FinanceProcurementUserDML {
                     // parm 2 spriden_id
                     insertCall.setString( 2, this.spriden_id + i )
 
-                    // parm 3 source_oracle_id
-                    insertCall.setString( 3, this.source_oracle_id )
                     insertCall.execute()
                     connectInfo.tableUpdate( "SPRIDEN", 0, 1, 0, 0, 0 )
                 }

@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -159,7 +159,7 @@ class EventRegistrantDML {
                     catch (Exception e) {
                         connectInfo.tableUpdate("GERATTD", 0, 0, 0, 1, 0)
                         if (connectInfo.showErrors) {
-                            println "Update GERATTD ${this.bannerid}}"
+                            println "Update GERATTD ${this.bannerid} crn ${this.eventCourseReferenceNumber} func ${this.functionCode}  "
                             println "Problem executing insert for table GERATTD from EventRegistrantDML.groovy: $e.message"
                         }
                     }
@@ -176,7 +176,7 @@ class EventRegistrantDML {
                     catch (Exception e) {
                         connectInfo.tableUpdate("GERATTD", 0, 0, 0, 1, 0)
                         if (connectInfo.showErrors) {
-                            println "Update GERATTD ${this.genidenid}}"
+                            println "Update GERATTD ${this.genidenid} crn ${this.eventCourseReferenceNumber} func ${this.functionCode} "
                             println "Problem executing insert for table GERATTD from EventRegistrantDML.groovy: $e.message"
                         }
                     }
@@ -199,7 +199,7 @@ class EventRegistrantDML {
                 catch (Exception e) {
                     connectInfo.tableUpdate("GERATTD", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
-                        println "Insert GERATTD ${this.genidenid}}"
+                        println "Insert GERATTD ${this.genidenid} "
                         println "Problem executing insert for table GERATTD from EventRegistrantDML.groovy: $e.message"
                     }
                 }
