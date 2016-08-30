@@ -146,7 +146,7 @@ public class APIClasses {
             'GCRACNT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBAGRP' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML'
+            'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS' : 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN' : 'net.hedtech.banner.seeddata.NbbposnDML',
