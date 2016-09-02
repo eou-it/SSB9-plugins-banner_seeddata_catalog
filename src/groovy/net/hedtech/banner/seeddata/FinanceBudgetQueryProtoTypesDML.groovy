@@ -108,9 +108,6 @@ public class FinanceBudgetQueryPrototypesDML {
                             "  COMMIT;\n" +
                             "END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
-            println this.spridenId
-            println this.fobprtoName
-            println this.fobprtoType
 
             insertCall.setString( 1, this.spridenId )
             insertCall.setString( 2, this.fobprtoName )
