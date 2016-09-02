@@ -96,6 +96,7 @@ public class APIClasses {
             'FINANCEFISCAYEAR' :'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'      :'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
             'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
+            'UPDATEFOBSYSC'    : 'net.hedtech.banner.seeddata.FinanceSystemControlDML',
             'FPBREQH'          : 'net.hedtech.banner.seeddata.FinanceProcurementHeaderCreateDML',
             'TBBCSTU' : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PEBEMPL'          : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
