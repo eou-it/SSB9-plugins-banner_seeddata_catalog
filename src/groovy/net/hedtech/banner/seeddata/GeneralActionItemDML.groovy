@@ -88,11 +88,16 @@ public class GeneralActionItemDML {
 
         }
 
+        if (connectInfo.tableName == "GCVASTS") {
+            println "status " +  apiData.GCVASTS_ACTION_ITEM_STATUS?.text()
+        }
+
+
         if (connectInfo.tableName == "GCRAACT") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            //println "action item id: " + itemSeq
+            println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -134,12 +139,11 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCBPBTR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
 
-            templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
+            templateId = getTemplateId( apiData.GCVASTS_ACTION_ITEM_TEMPLATE[0]?.text().toString() )
 
             if (templateId == 0) {
                 templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
             }
-
             apiData.GCBPBTR_TEMPLATE_ID[0].setValue(templateId.toString())
         }
 
@@ -152,7 +156,8 @@ public class GeneralActionItemDML {
         xmlRecNew += "</${apiData.name()}>\n"
 
         // parse the data using dynamic sql for inserts and updates
-        def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
+        def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
+
     }
 
     def deleteData() {
@@ -229,7 +234,7 @@ public class GeneralActionItemDML {
 
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
-            if (trow) {
+            if (tRow) {
                 tId = tRow?.GCBPBTR_SURROGATE_ID
             } else tId = 0
         }
@@ -250,7 +255,7 @@ public class GeneralActionItemDML {
 
         try {
             sRow = this.conn.firstRow(ssql, [statusName])
-            if (srow) {
+            if (sRow) {
                 sId = sRow?.GCVASTS_SURROGATE_ID
             } else sId = 0
         }

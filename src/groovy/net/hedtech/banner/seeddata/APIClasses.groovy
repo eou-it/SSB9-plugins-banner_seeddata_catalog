@@ -92,11 +92,11 @@ public class APIClasses {
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
             'GCBACTM' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAACT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRACNT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBAGRP' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'FINANCEFISCAYEAR' :'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'      :'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
             'UPDATEFOBPROF'    : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
@@ -129,11 +129,11 @@ public class APIClasses {
             'GCBEMTL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
             'GCBACTM' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAACT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRACNT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBAGRP' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCBPBTR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML'
+            'GCBPBTR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML'
     ]
 
 
