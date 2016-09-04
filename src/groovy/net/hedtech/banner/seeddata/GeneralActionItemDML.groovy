@@ -139,7 +139,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCBPBTR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
 
-            templateId = getTemplateId( apiData.GCVASTS_ACTION_ITEM_TEMPLATE[0]?.text().toString() )
+            templateId = getTemplateId( apiData.GCVASTS_ACTION_ITEM_STATUS[0]?.text().toString() )
 
             if (templateId == 0) {
                 templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
