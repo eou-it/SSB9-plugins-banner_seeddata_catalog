@@ -12,7 +12,7 @@ import java.sql.RowId
 /**
  *  DML for FinanceBudget Query Prototypes
  */
-public class FinanceBudgetQueryPrototypesDML {
+public class FinanceBudgetQueryProtoTypesDML {
 
 
     def fobprtoName, fobprtoType, spridenId, fobprtoCoasCode, fobprtoOrgnCode,
@@ -27,7 +27,7 @@ public class FinanceBudgetQueryPrototypesDML {
     RowId tableRow = null
 
 
-    public FinanceBudgetQueryPrototypesDML( InputData connectInfo, Sql conn, Connection connectCall ) {
+    public FinanceBudgetQueryProtoTypesDML( InputData connectInfo, Sql conn, Connection connectCall ) {
 
         this.conn = conn
         this.connectInfo = connectInfo
@@ -35,7 +35,7 @@ public class FinanceBudgetQueryPrototypesDML {
     }
 
 
-    public FinanceBudgetQueryPrototypesDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData ) {
+    public FinanceBudgetQueryProtoTypesDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData ) {
         this.connectInfo = connectInfo
         this.connectCall = conn.getConnection()
         this.xmlData = xmlData
