@@ -61,7 +61,6 @@ public class GeneralActionItemDML {
             }
         }
 
-        //templateId = getTemplateId( apiData.TEMPLATE[0]?.text().toString() )
         //
 
         // update the curr rule with the one that is selected
@@ -116,10 +115,20 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+           // templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
             }
+
+
+
+            /* --to be added
+            if (templateId == 0) {
+                templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
+            }
+            apiData.GCBPBTR_TEMPLATE_ID[0].setValue(templateId.toString())
+            */
 
             apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
         }
@@ -138,13 +147,7 @@ public class GeneralActionItemDML {
 
         if (connectInfo.tableName == "GCBPBTR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-
-            templateId = getTemplateId( apiData.GCVASTS_ACTION_ITEM_STATUS[0]?.text().toString() )
-
-            if (templateId == 0) {
-                templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
-            }
-            apiData.GCBPBTR_TEMPLATE_ID[0].setValue(templateId.toString())
+            println "GCBPBTR"
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
