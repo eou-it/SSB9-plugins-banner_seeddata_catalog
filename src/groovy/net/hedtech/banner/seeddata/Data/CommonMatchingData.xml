@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2015 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<COMMONMATCHINGDATA>
+    <GOREMAL>
+        <BANNERID>HOS00001</BANNERID>
+        <GOREMAL_EMAL_CODE>CAMP</GOREMAL_EMAL_CODE>
+        <GOREMAL_EMAIL_ADDRESS>eejamison@camp.edu</GOREMAL_EMAIL_ADDRESS>
+        <GOREMAL_STATUS_IND>A</GOREMAL_STATUS_IND>
+        <GOREMAL_PREFERRED_IND>Y</GOREMAL_PREFERRED_IND>
+        <GOREMAL_DISP_WEB_IND>Y</GOREMAL_DISP_WEB_IND>
+    </GOREMAL>
+</COMMONMATCHINGDATA>

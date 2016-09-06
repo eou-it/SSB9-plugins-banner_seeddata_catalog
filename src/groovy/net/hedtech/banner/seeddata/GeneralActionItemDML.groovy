@@ -70,7 +70,7 @@ public class GeneralActionItemDML {
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
 
-            println "folder returned: " + folderId
+           // println "folder returned: " + folderId
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
@@ -165,8 +165,8 @@ public class GeneralActionItemDML {
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
-        deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
-        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        //deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
+        //deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
