@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<PTRDFPR_DATA>
+	<PTRDFPR>
+	    <PTRDFPR_CODE>XF12</PTRDFPR_CODE>
+		<PTRDFPR_DESC>Full time Faculty</PTRDFPR_DESC>
+		<PTRDFPR_PICT_CODE>XM</PTRDFPR_PICT_CODE>
+		<PTRDFPR_BEGIN_PAYNO>8</PTRDFPR_BEGIN_PAYNO>
+		<PTRDFPR_END_PAYNO>7</PTRDFPR_END_PAYNO>
+		<PTRDFPR_ACTIVITY_DATE>14-MAY-14</PTRDFPR_ACTIVITY_DATE>
+		<PTRDFPR_FACTOR>9</PTRDFPR_FACTOR>
+		<PTRDFPR_PAYS>12</PTRDFPR_PAYS>
+		<PTRDFPR_SURROGATE_ID/>
+		<PTRDFPR_VERSION/>
+		<PTRDFPR_USER_ID/>
+		<PTRDFPR_DATA_ORIGIN/>
+		<PTRDFPR_VPDI_CODE/>
+	</PTRDFPR>
+</PTRDFPR_DATA>

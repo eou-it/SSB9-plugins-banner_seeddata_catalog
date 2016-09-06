@@ -1,5 +1,5 @@
 -- *****************************************************************************************
--- * Copyright 2014 Ellucian Company L.P. and its affiliates.                         *
+-- * Copyright 2014 - 2016 Ellucian Company L.P. and its affiliates.                         *
 -- *****************************************************************************************
 --  
 -- Script to create facilitate moving Compliance Program requirements between instances.
@@ -81,7 +81,8 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRGD','SELECT * FROM S
    INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPRGC','SELECT * FROM SMRPRGC WHERE SMRPRGC_PROGRAM LIKE  ''' || :program || ''''   );   
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRPAAP','SELECT * FROM SMRPAAP WHERE SMRPAAP_PROGRAM LIKE  ''' || :program || ''''   );      
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMBPVPR','SELECT * FROM SMBPVPR WHERE SMBPVPR_PROGRAM LIKE  ''' || :program || ''''   );      
--- 
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBPROS','SELECT	* FROM SKBPROS where SKBPROS_program like  ''' || :program || ''''   );
+--
 -- Area requirements from SMAALIB and SMAAQUA
 --
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRAQUA','SELECT * FROM SMRAQUA WHERE EXISTS ( SELECT 1 
@@ -250,10 +251,24 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRARLT','SELECT * FROM S
                                                                                                         FROM SMRARLT sel,  SMRPAAP
                                                                                                        WHERE sel.SMRARLT_AREA = SMRARLT.SMRARLT_AREA
                                                                                                          AND sel.SMRARLT_AREA = SMRPAAP_AREA
-                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' ); 
+                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBARES','SELECT * FROM SKBARES WHERE EXISTS ( SELECT 1
+                                                                                                        FROM SKBARES sel,  SMRPAAP
+                                                                                                       WHERE sel.SKBARES_AREA = SKBARES.SKBARES_AREA
+                                                                                                         AND sel.SKBARES_AREA = SMRPAAP_AREA
+                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
 --
 -- Group requirements
 --
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRGLIB','SELECT * FROM SMRGLIB WHERE EXISTS ( SELECT 1
+                                                                                                        FROM SMRGLIB sel,  SMRAGAM, SMRPAAP
+                                                                                                       WHERE sel.SMRGLIB_GROUP = SMRGLIB.SMRGLIB_GROUP
+                                                                                                         AND sel.SMRGLIB_GROUP = SMRAGAM_GROUP
+                                                                                                         AND SMRAGAM_AREA = SMRPAAP_AREA
+                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
 INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMBGGEN','SELECT * FROM SMBGGEN WHERE EXISTS ( SELECT 1 
                                                                                                         FROM SMBGGEN sel, SMRAGAM, SMRPAAP
                                                                                                        WHERE sel.SMBGGEN_GROUP = SMBGGEN.SMBGGEN_GROUP
@@ -354,6 +369,27 @@ INSERT INTO testTables VALUES ( clob_sequence.nextval,'SMRGRLT','SELECT * FROM S
                                                                                                          AND SMRAGAM_AREA = SMRPAAP_AREA
                                                                                                         AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
 
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBGROS','SELECT * FROM SKBGROS WHERE EXISTS (  SELECT 1
+                                                                                                        FROM SKBGROS sel, SMRAGAM, SMRPAAP
+                                                                                                       WHERE sel.SKBGROS_GROUP = SKBGROS.SKBGROS_GROUP
+                                                                                                         AND sel.SKBGROS_GROUP = SMRAGAM_GROUP
+                                                                                                         AND SMRAGAM_AREA = SMRPAAP_AREA
+                                                                                                        AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBRULS','SELECT * FROM SKBRULS WHERE EXISTS (  SELECT 1
+                                                                                                        FROM SKBRULS sel, SMRPAAP
+                                                                                                       WHERE sel.SKBRULS_AREA = SKBRULS.SKBRULS_AREA
+                                                                                                         AND sel.SKBRULS_AREA = SMRPAAP_AREA
+                                                                                                        AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+INSERT INTO testTables VALUES ( clob_sequence.nextval,'SKBRULS','SELECT * FROM SKBRULS WHERE EXISTS (  SELECT 1
+                                                                                                        FROM SKBRULS sel, SMRAGAM, SMRPAAP
+                                                                                                       WHERE sel.SKBRULS_GROUP = SKBRULS.SKBRULS_GROUP
+                                                                                                         AND sel.SKBRULS_GROUP = SMRAGAM_GROUP
+                                                                                                         AND SMRAGAM_AREA = SMRPAAP_AREA
+                                                                                                        AND SMRPAAP_PROGRAM LIKE ''' || :program || ''' ) ' );
+
+
 set term on
 set echo on
 set verify on
@@ -366,7 +402,33 @@ set echo off
 set term off
 set feedback off
 
+/*
 CREATE OR REPLACE PROCEDURE p_xmltable(p_table varchar2, p_select varchar2, p_id number) IS
+   my_context NUMBER := 0;
+   xmlresult clob;
+   result_clob clob;
+   cnt   number := 1 ;
+BEGIN
+   my_context:= DBMS_XMLGEN.NEWCONTEXT (p_select);
+   dbms_xmlgen.setNullHandling(my_context,2);
+
+   DBMS_XMLGEN.SETROWSETTAG(my_context,NULL);
+   DBMS_XMLGEN.SETROWTAG(my_context,p_table);
+   xmlresult := DBMS_XMLGEN.GETXML(my_context);
+   --result_clob = smkmxml.p_appendclob(result_clob,xmlresult);
+   --INSERT INTO testClob ( Id, Text) values (p_id, result_clob);
+   INSERT INTO testClob ( Id, Text) values (p_id, xmlresult);
+
+   COMMIT;
+  DBMS_XMLGEN.CLOSECONTEXT(my_context);
+END p_xmltable;   
+/
+*/
+
+CREATE OR REPLACE PROCEDURE p_xmltable(p_table IN varchar2,
+                                       p_select IN varchar2,
+                                       p_id IN number,
+                                       p_xmlclob IN OUT CLOB) IS
    my_context NUMBER := 0;
    xmlresult clob;
    result_clob clob;
@@ -378,14 +440,11 @@ BEGIN
    DBMS_XMLGEN.SETROWSETTAG(my_context,'CAPP');
    DBMS_XMLGEN.SETROWTAG(my_context,p_table);
    xmlresult := DBMS_XMLGEN.GETXML(my_context);
-   --result_clob = smkmxml.p_appendclob(result_clob,xmlresult);
-   --INSERT INTO testClob ( Id, Text) values (p_id, result_clob);
-   INSERT INTO testClob ( Id, Text) values (p_id, xmlresult);
-
-   COMMIT;
+   smkmxml.p_appendclob(p_xmlclob, xmlresult);
   DBMS_XMLGEN.CLOSECONTEXT(my_context);
-END p_xmltable;   
+END p_xmltable;
 /
+
 
 set serveroutput On Size 1000000
 set verify on
@@ -396,18 +455,22 @@ DECLARE
   p_table varchar2(30);
   p_select varchar2(2000);
   p_id number;
+  p_xmlclob CLOB;
   CURSOR tablelist IS
      SELECT table_name, table_select , id
      FROM testTables
      ORDER BY id;
 BEGIN
+   SMKMXML.P_INIT_CLOB(p_xmlclob);
    OPEN tableList;
    LOOP
       FETCH tableList INTO p_table, p_select, p_id ;
       EXIT WHEN tableList%NOTFOUND; 
-      p_xmltable(p_table, p_select, p_id);
+      p_xmltable(p_table, p_select, p_id, p_xmlclob);
    END LOOP;
    CLOSE tableList;
+   INSERT INTO testClob ( Id, Text) values (1, p_xmlclob);
+   COMMIT;
 END;
 /
 
@@ -417,14 +480,13 @@ set verify on
 set feedback on
 
 SELECT COUNT(*) FROM testClob ;
-
-Select '<?xml version="1.0" encoding="Windows-1252" ?>' from dual;
 set pages 0
 set linesize 500
 set long 10000000
 set head off
 column text format a9999
 
+Select '<?xml version="1.0" encoding="Windows-1252" ?>' from dual;
 SELECT text FROM testClob ORDER BY id;
 
 DROP TABLE testClob;

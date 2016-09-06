@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <SECTIONDATA>
  <SSBSECT>
@@ -130,7 +130,7 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
   <SSBSECT_REG_TO_DATE>31-DEC-25</SSBSECT_REG_TO_DATE>
   <SSBSECT_LEARNER_REGSTART_FDATE>01-SEP-10</SSBSECT_LEARNER_REGSTART_FDATE>
   <SSBSECT_LEARNER_REGSTART_TDATE>31-DEC-25</SSBSECT_LEARNER_REGSTART_TDATE>
-  <SSBSECT_DUNT_CODE>DAY</SSBSECT_DUNT_CODE>
+  <SSBSECT_DUNT_CODE>DAYS</SSBSECT_DUNT_CODE>
   <SSBSECT_NUMBER_OF_UNITS>15</SSBSECT_NUMBER_OF_UNITS>
   <SSBSECT_NUMBER_OF_EXTENSIONS>0</SSBSECT_NUMBER_OF_EXTENSIONS>
   <SSBSECT_DATA_ORIGIN>GRAILS</SSBSECT_DATA_ORIGIN>
