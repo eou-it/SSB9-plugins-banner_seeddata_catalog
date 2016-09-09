@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FGBTRNICLEAN>
+    <FGBTRNI>
+        <FGBTRNI_ACTIVITY_DATE>01-01-2016</FGBTRNI_ACTIVITY_DATE>
+        <FGBTRNI_DOC_CODE>DCITTST</FGBTRNI_DOC_CODE>
+        <FGBTRNI_REC_TYPE>Y</FGBTRNI_REC_TYPE>
+        <FGBTRNI_SYSTEM_ID>SYS_ID</FGBTRNI_SYSTEM_ID>
+        <FGBTRNI_SYSTEM_TIME_STAMP>12345678901234</FGBTRNI_SYSTEM_TIME_STAMP>
+        <FGBTRNI_TRANS_AMT>100.00</FGBTRNI_TRANS_AMT>
+        <FGBTRNI_TRANS_DATE>01-01-9999</FGBTRNI_TRANS_DATE>
+        <FGBTRNI_USER_ID>USR_ID</FGBTRNI_USER_ID>
+        <FGBTRNI_DATA_ORIGIN>GRAILS</FGBTRNI_DATA_ORIGIN>
+        <DELETE>YES</DELETE>
+    </FGBTRNI>
+</FGBTRNICLEAN>
