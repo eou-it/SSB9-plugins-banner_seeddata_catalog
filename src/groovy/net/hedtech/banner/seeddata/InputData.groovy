@@ -320,6 +320,8 @@ public class InputData {
             'studentApiData': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/Api_GTVICSN.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/Api_GOBICPS.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiIntegrationConfigurationData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCountryValidationData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ApiCurriculumData.xml'],
