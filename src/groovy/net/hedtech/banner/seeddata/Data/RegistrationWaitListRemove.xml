@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <WAITLIST>
 
@@ -33,6 +33,15 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <BANNERID>HOS00001</BANNERID>
         <SFRSTCR_TERM_CODE>201410</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>20106</SFRSTCR_CRN>
+        <SFRSTCR_PTRM_CODE>CE3</SFRSTCR_PTRM_CODE>
+        <SFRSTCR_RSTS_CODE>WL</SFRSTCR_RSTS_CODE>
+        <DELETE>YES</DELETE>
+    </SFRSTCR>
+
+    <SFRSTCR>
+        <BANNERID>HOS00001</BANNERID>
+        <SFRSTCR_TERM_CODE>201410</SFRSTCR_TERM_CODE>
+        <SFRSTCR_CRN>2040</SFRSTCR_CRN>
         <SFRSTCR_PTRM_CODE>CE3</SFRSTCR_PTRM_CODE>
         <SFRSTCR_RSTS_CODE>WL</SFRSTCR_RSTS_CODE>
         <DELETE>YES</DELETE>
