@@ -170,6 +170,7 @@ public class GcrfldrDML {
         deleteData("GCBQURY", "delete from GCBQURY where GCBQURY_folder_id  = ? ")
         deleteData("GCRCFLD", "delete from GCRCFLD where GCRCFLD_folder_id = ?  ")
         deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_surrogate_id = ?  ")
+        updateTmplData("GCBTMPL", "update GCBTMPL set GCBTMPL_COMM_CHANNEL = 'LETTER' where GCBTMPL_COMM_CHANNEL in ('NEWSLETTER','NOTICE')  ")
 
     }
 
@@ -184,6 +185,21 @@ public class GcrfldrDML {
             if (connectInfo.showErrors) {
                 connectInfo.tableUpdate(tableName, 0, 0, 0, 1,0)
                 println "Problem executing delete for folder ${folder} ${folderSeq} from GcrfldrDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
+            }
+        }
+    }
+
+    def updateTmplData(String tableName, String sql) {
+        try {
+
+            int updRows = conn.executeUpdate(sql)
+            connectInfo.tableUpdate(tableName, 0, 0, updRows, 0, 0)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                connectInfo.tableUpdate(tableName, 0, 0, 0, 1,0)
+                println "Problem executing update for GCBTMPL from GcrfldrDML.groovy for ${connectInfo.tableName}: $e.message"
                 println "${sql}"
             }
         }
