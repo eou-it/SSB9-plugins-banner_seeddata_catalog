@@ -418,6 +418,7 @@ public class InputData {
                                 'src/groovy/net/hedtech/banner/seeddata/Data/CommonMatchingData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/GtvduntData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/GeneralUsers.xml',
+                                'src/groovy/net/hedtech/banner/seeddata/Data/AuthenticationUserData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/LetterGenerationData.xml'],
             'program-prerequisite' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramRestriction_Data.xml',
                                       '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramTestScoreRestrictionAndPrerequisite_Data.xml',
