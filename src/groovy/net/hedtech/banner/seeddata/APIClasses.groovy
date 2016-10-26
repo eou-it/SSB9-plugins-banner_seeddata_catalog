@@ -127,7 +127,8 @@ public class APIClasses {
             'NBREARN'          : 'net.hedtech.banner.seeddata.EmployeeJobEarningsDML',
             'BANNERUSER'       : 'net.hedtech.banner.seeddata.BannerUserDML',
             'HRGOBEACCUSER'      : 'net.hedtech.banner.seeddata.HrGobeaccDML',
-            'ORACLEUSER'      : 'net.hedtech.banner.seeddata.CreateOracleUserDML'
+            'ORACLEUSER'      : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
+            'NTRLRAQ'          : 'net.hedtech.banner.seeddata.NtrlraqDML'
 
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -166,7 +167,8 @@ public class APIClasses {
             'PERDHIS' : 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN' : 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT' : 'net.hedtech.banner.seeddata.NbrptotDML',
-            'PERJHIS' : 'net.hedtech.banner.seeddata.PerjhisDML'
+            'PERJHIS' : 'net.hedtech.banner.seeddata.PerjhisDML',
+            'NTRLRAQ' : 'net.hedtech.banner.seeddata.NtrlraqDML'
     ]
 
 
