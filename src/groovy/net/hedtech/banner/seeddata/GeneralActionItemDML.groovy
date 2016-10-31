@@ -167,11 +167,11 @@ public class GeneralActionItemDML {
             }
 
             if (statusId == 0) {
-                statusId = apiData.GCRAISR_STATUS_ID[0]?.text().toInteger()
+                statusId = apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0]?.text().toInteger()
             }
 
             apiData.GCRAISR_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
-            apiData.GCRAISR_STATUS_ID[0].setValue(statusId.toString())
+            apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0].setValue(statusId.toString())
 
         }
 
