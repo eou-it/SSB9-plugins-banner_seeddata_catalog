@@ -176,6 +176,9 @@ public class StudentPersonIDDML {
         deleteData("SFRFAUD", "delete SFRFAUD where  	SFRFAUD_pidm = ?  ")
         deleteData("SFRREGD", "delete SFRREGD where  	SFRREGD_pidm = ?  ")
         deleteData("SFTREGS", "delete SFTREGS where  	SFTREGS_pidm = ?  ")
+        if (doesTableExist("SHRGRID")) deleteData("SHRGRID", "delete SHRGRID where SHRGRID_RGID_GUID IN (SELECT SFRRGID_GUID FROM SFRRGID where SFRRGID_pidm = ?)")
+        if (doesTableExist("SFRGSID")) deleteData("SFRGSID", "delete SFRGSID where SFRGSID_RGID_GUID IN (SELECT SFRRGID_GUID FROM SFRRGID where SFRRGID_pidm=?) ")
+        if (doesTableExist("SFRRGID")) deleteData("SFRRGID", "delete SFRRGID where SFRRGID_pidm=?")
         deleteData("SFRSTCR", "delete SFRSTCR where  	SFRSTCR_pidm = ?  ")
         deleteData("SFRAREG", "delete SFRAREG where  	SFRAREG_pidm = ?  ")
         deleteData("SFRSTCA", "delete SFRSTCA where  	SFRSTCA_pidm = ?  ")
@@ -330,7 +333,7 @@ public class StudentPersonIDDML {
 
 
     private def doesTableExist(String tableName) {
-        def findTableSql = """select table_name from all_tables where table_name = ?"""
+        def findTableSql = """select table_name from DBA_TABLES where table_name = ?"""
         def findTable = conn.firstRow(findTableSql, [tableName])?.table_name
         if (findTable) return true
         else return false
