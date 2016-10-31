@@ -89,6 +89,12 @@ public class GeneralActionItemDML {
 
         if (connectInfo.tableName == "GCVASTS") {
             println "status " +  apiData.GCVASTS_ACTION_ITEM_STATUS?.text()
+
+            /*
+            if (statusId == 0) {
+                statusId = apiData.GCVASTS_SURROGATE_ID[0]?.text().toInteger()
+            }
+            */
         }
 
 
@@ -145,9 +151,28 @@ public class GeneralActionItemDML {
             apiData.GCBAGRP_FOLDER_ID[0].setValue(folderId.toString())
         }
 
-        if (connectInfo.tableName == "GCBPBTR") {
+        if (connectInfo.tableName == "GCRAISR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-            println "GCBPBTR"
+            println "GCRAISR"
+        }
+
+        if (connectInfo.tableName == "GCRAISR") {
+
+            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
+            println "action item id: " + itemSeq
+
+            if (itemSeq == 0) {
+                itemSeq = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
+            }
+
+            if (statusId == 0) {
+                statusId = apiData.GCRAISR_STATUS_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCRAISR_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            apiData.GCRAISR_STATUS_ID[0].setValue(statusId.toString())
+
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
@@ -166,14 +191,18 @@ public class GeneralActionItemDML {
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
         //deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
-        //deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCRAISR", "delete from GCRAISR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
         deleteData("GCBACTM", "delete from GCBACTM where GCBACTM_SURROGATE_ID  = ? ")
+        deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }
 
     def deleteData(String tableName, String sql) {
+
+
         println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
