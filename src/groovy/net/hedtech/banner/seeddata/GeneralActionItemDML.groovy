@@ -83,7 +83,7 @@ public class GeneralActionItemDML {
             }
 
             apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
-            println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
+            //println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
 
         }
 
@@ -100,7 +100,7 @@ public class GeneralActionItemDML {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            println "action item id: " + itemSeq
+            //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -152,14 +152,14 @@ public class GeneralActionItemDML {
 
         if (connectInfo.tableName == "GCRAISR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-            println "GCRAISR"
+            //println "GCRAISR"
         }
 
         if (connectInfo.tableName == "GCRAISR") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
-            println "action item id: " + itemSeq
+            //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -202,7 +202,7 @@ public class GeneralActionItemDML {
     def deleteData(String tableName, String sql) {
 
 
-        println "delete " + tableName + " " + itemSeq.toString( )
+        //println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -222,7 +222,7 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
-        println "getting folder id for: " + folderName
+        //println "getting folder id for: " + folderName
 
         try {
             fRow = this.conn.firstRow(fsql, [folderName])
@@ -261,7 +261,7 @@ public class GeneralActionItemDML {
         int tId
         def tRow
 
-        println "getting template id for: " + templateName
+        //println "getting template id for: " + templateName
 
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
@@ -282,7 +282,7 @@ public class GeneralActionItemDML {
         int sId
         def sRow
 
-        println "getting status id for: " + statusName
+        //println "getting status id for: " + statusName
 
         try {
             sRow = this.conn.firstRow(ssql, [statusName])
