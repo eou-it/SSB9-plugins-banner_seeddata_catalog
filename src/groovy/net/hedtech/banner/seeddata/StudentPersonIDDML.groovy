@@ -333,7 +333,7 @@ public class StudentPersonIDDML {
 
 
     private def doesTableExist(String tableName) {
-        def findTableSql = """select table_name from DBA_TABLES where table_name = ?"""
+        def findTableSql = """select table_name from all_tables where table_name = ?"""
         def findTable = conn.firstRow(findTableSql, [tableName])?.table_name
         if (findTable) return true
         else return false
