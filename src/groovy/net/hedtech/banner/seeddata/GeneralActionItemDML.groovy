@@ -27,7 +27,7 @@ public class GeneralActionItemDML {
     int statusId
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
-                      def deleteNode) {
+                                def deleteNode) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -70,7 +70,7 @@ public class GeneralActionItemDML {
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
 
-           // println "folder returned: " + folderId
+            // println "folder returned: " + folderId
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
@@ -121,7 +121,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
-           // templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
+            // templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
