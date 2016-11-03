@@ -83,20 +83,24 @@ public class GeneralActionItemDML {
             }
 
             apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
-            println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
+            //println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
 
         }
 
+        /*
         if (connectInfo.tableName == "GCVASTS") {
             println "status " +  apiData.GCVASTS_ACTION_ITEM_STATUS?.text()
+
+
         }
+        */
 
 
         if (connectInfo.tableName == "GCRAACT") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            println "action item id: " + itemSeq
+            //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -112,6 +116,7 @@ public class GeneralActionItemDML {
 
 
         }
+
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
@@ -145,9 +150,29 @@ public class GeneralActionItemDML {
             apiData.GCBAGRP_FOLDER_ID[0].setValue(folderId.toString())
         }
 
-        if (connectInfo.tableName == "GCBPBTR") {
+        if (connectInfo.tableName == "GCRAISR") {
             //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-            println "GCBPBTR"
+            //println "GCRAISR"
+        }
+
+        if (connectInfo.tableName == "GCRAISR") {
+
+            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
+            //println "action item id: " + itemSeq
+
+            if (itemSeq == 0) {
+                itemSeq = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
+            }
+
+            if (statusId == 0) {
+                println "Problem getting status id from GeneralActionItemDML.groovy for ${connectInfo.tableName}"
+                statusId = apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCRAISR_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0].setValue(statusId.toString())
+
         }
 
         // parse the xml  back into  gstring for the dynamic sql loader
@@ -166,7 +191,8 @@ public class GeneralActionItemDML {
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
         //deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
-        //deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCRAISR", "delete from GCRAISR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
@@ -174,7 +200,9 @@ public class GeneralActionItemDML {
     }
 
     def deleteData(String tableName, String sql) {
-        println "delete " + tableName + " " + itemSeq.toString( )
+
+
+        //println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -194,7 +222,7 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
-        println "getting folder id for: " + folderName
+        //println "getting folder id for: " + folderName
 
         try {
             fRow = this.conn.firstRow(fsql, [folderName])
@@ -233,7 +261,7 @@ public class GeneralActionItemDML {
         int tId
         def tRow
 
-        println "getting template id for: " + templateName
+        //println "getting template id for: " + templateName
 
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
@@ -254,7 +282,7 @@ public class GeneralActionItemDML {
         int sId
         def sRow
 
-        println "getting status id for: " + statusName
+        //println "getting status id for: " + statusName
 
         try {
             sRow = this.conn.firstRow(ssql, [statusName])
