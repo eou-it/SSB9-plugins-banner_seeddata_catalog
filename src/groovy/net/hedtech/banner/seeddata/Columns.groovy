@@ -160,6 +160,11 @@ public class Columns {
 
         valsql += ")\n "
 
+        if (connectInfo.tableName == "GCBACTM") {
+            println valsql
+
+        }
+
         return valsql
     }
 
