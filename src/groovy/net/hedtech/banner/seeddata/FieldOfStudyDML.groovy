@@ -88,7 +88,8 @@ public class FieldOfStudyDML {
 
 
     def processSorlfos() {
-       // conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = 'Y'")
+        conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = 'Y'")
+        conn.execute "{ call gb_common.p_commit() }"
         tableRow = null
         String rowSQL = """select rowid table_row from SORLFOS
            where sorlfos_pidm = ? and sorlfos_lcur_seqno = ? and sorlfos_seqno = ? """
