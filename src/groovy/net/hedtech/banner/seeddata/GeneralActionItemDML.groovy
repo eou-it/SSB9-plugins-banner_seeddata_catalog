@@ -91,14 +91,12 @@ public class GeneralActionItemDML {
 
         }
 
+
         if (connectInfo.tableName == "GCVASTS") {
             //println "status " +  apiData.GCVASTS_ACTION_ITEM_STATUS?.text()
-
-
             if (statusId == 0) {
                 statusId = apiData.GCVASTS_SURROGATE_ID[0]?.text().toInteger()
             }
-
         }
 
 
@@ -122,6 +120,7 @@ public class GeneralActionItemDML {
 
 
         }
+
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
@@ -159,13 +158,13 @@ public class GeneralActionItemDML {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
-           // println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
             }
 
             if (statusId == 0) {
+                println "Problem getting status id from GeneralActionItemDML.groovy for ${connectInfo.tableName}"
                 statusId = apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0]?.text().toInteger()
             }
 
@@ -195,12 +194,9 @@ public class GeneralActionItemDML {
         deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
         deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
         deleteData("GCBACTM", "delete from GCBACTM where GCBACTM_SURROGATE_ID  = ? ")
-        deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }
 
     def deleteData(String tableName, String sql) {
-
-        //println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -220,7 +216,6 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
-       // println "getting folder id for: " + folderName
 
         try {
             fRow = this.conn.firstRow(fsql, [folderName])
