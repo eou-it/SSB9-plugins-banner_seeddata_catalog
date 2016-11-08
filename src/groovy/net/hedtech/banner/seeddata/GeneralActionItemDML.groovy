@@ -25,6 +25,7 @@ public class GeneralActionItemDML {
     int folderId
     int templateId
     int statusId
+    int actionItemId
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                                 def deleteNode) {
@@ -52,6 +53,8 @@ public class GeneralActionItemDML {
 
         def personId = apiData.BANNERID?.text()
         def personPidm
+
+       // connectInfo.debugThis = true
 
         if (personId) {
             String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
@@ -91,13 +94,11 @@ public class GeneralActionItemDML {
             }
 
             apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
-            //println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
 
         }
 
 
         if (connectInfo.tableName == "GCVASTS") {
-            //println "status " +  apiData.GCVASTS_ACTION_ITEM_STATUS?.text()
             if (statusId == 0) {
                 statusId = apiData.GCVASTS_SURROGATE_ID[0]?.text().toInteger()
             }
@@ -108,7 +109,6 @@ public class GeneralActionItemDML {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -188,16 +188,19 @@ public class GeneralActionItemDML {
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
 
+        if (connectInfo.saveThis) {
+            conn.execute "{ call gb_common.p_commit() }"
+        }
     }
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
-        deleteData("GCBPBTR", "delete from GCBPBTR where 0 = ? ")
-        deleteData("GCRAISR", "delete from GCRAISR where 0 = ? ")
-        deleteData("GCBAGRP", "delete from GCBAGRP where 0 = ? ")
-        deleteData("GCRAACT", "delete from GCRAACT where 0 = ? ")
-        deleteData("GCRACNT", "delete from GCRACNT where 0 = ?  ")
-        deleteData("GCBACTM", "delete from GCBACTM where 0 = ? ")
+        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCRAISR", "delete from GCRAISR where 0 <> ? ")
+        deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
+        deleteData("GCRAACT", "delete from GCRAACT where 0 <> ? ")
+        deleteData("GCRACNT", "delete from GCRACNT where 0 <> ?  ")
+        deleteData("GCBACTM", "delete from GCBACTM where 0 <> ? ")
         deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }
 
