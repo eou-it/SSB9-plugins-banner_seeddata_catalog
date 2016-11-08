@@ -86,7 +86,6 @@ public class APIClasses {
             'SMBPGEN' : 'net.hedtech.banner.seeddata.CappProgramRequirementDML',
             'STVGCHG' : 'net.hedtech.banner.seeddata.GradeChangeReasonDML',
             'GCRFLDR' : 'net.hedtech.banner.seeddata.GcrfldrDML',
-            'GCRFLDR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRCFLD' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBQURY' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBTMPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
