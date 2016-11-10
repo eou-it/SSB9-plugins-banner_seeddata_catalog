@@ -25,9 +25,10 @@ public class GeneralActionItemDML {
     int folderId
     int templateId
     int statusId
+    int actionItemId
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
-                      def deleteNode) {
+                                def deleteNode) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -53,6 +54,8 @@ public class GeneralActionItemDML {
         def personId = apiData.BANNERID?.text()
         def personPidm
 
+       // connectInfo.debugThis = true
+
         if (personId) {
             String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """
             def spridenRow = conn.firstRow(findPidm, [personId])
@@ -63,6 +66,14 @@ public class GeneralActionItemDML {
 
         //
 
+        if (connectInfo.tableName == "GCVASTS") {
+            itemSeq = 0
+            itemSeq = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
+            println "delete"
+            println itemSeq
+            deleteData( )
+        }
+
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBACTM") {
 
@@ -70,12 +81,12 @@ public class GeneralActionItemDML {
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
 
-           // println "folder returned: " + folderId
+            // println "folder returned: " + folderId
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
             } else {
-                deleteData( )
+               //
             }
 
             if (folderId == 0) {
@@ -83,24 +94,21 @@ public class GeneralActionItemDML {
             }
 
             apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
-            //println  "folder for GCBACTM " + apiData.GCBACTM_FOLDER_ID?.text() + " itemseq: " + itemSeq
 
         }
 
-        /*
+
         if (connectInfo.tableName == "GCVASTS") {
-            println "status " +  apiData.GCVASTS_ACTION_ITEM_STATUS?.text()
-
-
+            if (statusId == 0) {
+                statusId = apiData.GCVASTS_SURROGATE_ID[0]?.text().toInteger()
+            }
         }
-        */
 
 
         if (connectInfo.tableName == "GCRAACT") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -120,7 +128,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
-           // templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
+            // templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -151,15 +159,9 @@ public class GeneralActionItemDML {
         }
 
         if (connectInfo.tableName == "GCRAISR") {
-            //clear out current group data w/folder information in xml. gcrfldrdml will process new records.
-            //println "GCRAISR"
-        }
-
-        if (connectInfo.tableName == "GCRAISR") {
 
             itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
-            //println "action item id: " + itemSeq
 
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
@@ -186,23 +188,23 @@ public class GeneralActionItemDML {
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
 
+        if (connectInfo.saveThis) {
+            conn.execute "{ call gb_common.p_commit() }"
+        }
     }
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
-        //deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
         deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
         deleteData("GCRAISR", "delete from GCRAISR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
-        deleteData("GCRAACT", "delete from GCRAACT where GCRAACT_ACTION_ITEM_ID  = ? ")
-        deleteData("GCRACNT", "delete from GCRACNT where GCRACNT_ACTION_ITEM_ID  = ?  ")
-        deleteData("GCBACTM", "delete from GCBACTM where GCBACTM_SURROGATE_ID  = ? ")
+        deleteData("GCRAACT", "delete from GCRAACT where 0 <> ? ")
+        deleteData("GCRACNT", "delete from GCRACNT where 0 <> ?  ")
+        deleteData("GCBACTM", "delete from GCBACTM where 0 <> ? ")
+        deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }
 
     def deleteData(String tableName, String sql) {
-
-
-        //println "delete " + tableName + " " + itemSeq.toString( )
 
         try {
             int delRows = conn.executeUpdate(sql, [itemSeq])
@@ -222,7 +224,6 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
-        //println "getting folder id for: " + folderName
 
         try {
             fRow = this.conn.firstRow(fsql, [folderName])
