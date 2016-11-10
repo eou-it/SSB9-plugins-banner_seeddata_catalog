@@ -113,6 +113,7 @@ public class APIClasses {
             'PURCHASE_REQUISITION': 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML',
             'PURCHASE_ORDER'      : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreatePurchaseOrderDML',
             'BA_QUERY_PROTOTYPE'  : 'net.hedtech.banner.seeddata.FinanceBudgetQueryProtoTypesDML',
+			'BA_FAV_QUERY_PROTOTYPE'  : 'net.hedtech.banner.seeddata.FinanceFavoriteBudgetQueryProtoTypesDML',			
             'BA_FORCOMP'          : 'net.hedtech.banner.seeddata.FinanceBudgetComputedColumnsDML',
             'TBBCSTU'          : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PEBEMPL'          : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
