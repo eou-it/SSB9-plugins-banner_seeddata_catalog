@@ -376,7 +376,7 @@ public class InputData {
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/1Curriculum1ProgramNoStudyPath.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/UnRolledStudentData.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentGpaHoursCampusAndLevelRule.xml'],
-            'bcm'  : [ '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
+            'bcm'  : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml'],
             'api-person-filters': ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonFiltersData.xml'],
 			'admissions-student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/AdmissionsStudentData.xml'],
             'api-hedm-registration' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHEDMTermData.xml',
