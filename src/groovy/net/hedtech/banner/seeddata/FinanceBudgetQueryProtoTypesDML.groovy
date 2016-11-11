@@ -85,7 +85,7 @@ public class FinanceBudgetQueryProtoTypesDML {
                             "\t\t\tWHEN NO_DATA_FOUND THEN\n" +
                             "\t\t\tNULL;\n" +
                             "END;\n" +
-                            "DELETE FROM FOBPRTO WHERE FOBPRTO_NAME= ? AND FOBPRTO_TYPE = ?;\n" +
+                            "DELETE FROM FOBPRTO WHERE FOBPRTO_PIDM = pidm AND FOBPRTO_NAME= ? AND FOBPRTO_TYPE = ?;\n" +
                             "INSERT INTO FOBPRTO(\n" +
                             "\t\t\tFOBPRTO_NAME, \n" +
                             "\t\t\tFOBPRTO_TYPE, \n" +

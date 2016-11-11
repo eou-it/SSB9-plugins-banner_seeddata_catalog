@@ -531,8 +531,7 @@ public class InputData {
                          'src/groovy/net/hedtech/banner/seeddata/Data/general/NonPersonData.xml',
                          'src/groovy/net/hedtech/banner/seeddata/Data/general/GoradrlData.xml',
                          'src/groovy/net/hedtech/banner/seeddata/Data/general/GtvzipcData.xml'],
-            'personal-info' : ['src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoData.xml',
-                               'src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoGtvsdaxData.xml'],
+            'personal-info' : ['src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoData.xml'],
             'general-common' : ['src/groovy/net/hedtech/banner/seeddata/Data/GorvisaData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/SqlProcessData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/GeneralGtvsdaxData.xml',
@@ -584,7 +583,6 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityPayrollExpense.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityEncumbPeriodDetails.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityQueryPrototypes.xml',
-												  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityFavQueryPrototypes.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityComputedColumns.xml'],
             'registered-student-attribute' : ['src/groovy/net/hedtech/banner/seeddata/Data/RegisteredStudentAttribute_Data.xml']
     ]
