@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>  
+ <!-- ***************************************************************************** 
+ Copyright 2016 Ellucian Company L.P. and its affiliates. 
+ ********************************************************************************* --> 
+<SCHEDULED>	
+ <STVCOLL>
+  <STVCOLL_CODE>AN</STVCOLL_CODE>
+  <STVCOLL_DESC>College of Anthropology</STVCOLL_DESC>
+  <STVCOLL_ADDR_STREET_LINE1/>
+  <STVCOLL_ADDR_STREET_LINE2/>
+  <STVCOLL_ADDR_STREET_LINE3/>
+  <STVCOLL_ADDR_CITY/>
+  <STVCOLL_ADDR_STATE/>
+  <STVCOLL_ADDR_COUNTRY/>
+  <STVCOLL_ADDR_ZIP_CODE/>
+  <STVCOLL_ACTIVITY_DATE>01/01/2010</STVCOLL_ACTIVITY_DATE>
+  <STVCOLL_SYSTEM_REQ_IND/>
+  <STVCOLL_VR_MSG_NO/>
+  <STVCOLL_STATSCAN_CDE3/>
+  <STVCOLL_DICD_CODE/>
+  <STVCOLL_HOUSE_NUMBER/>
+  <STVCOLL_ADDR_STREET_LINE4/>
+  <STVCOLL_SURROGATE_ID>140</STVCOLL_SURROGATE_ID>
+  <STVCOLL_VERSION>0</STVCOLL_VERSION>
+  <STVCOLL_USER_ID>GRAILS</STVCOLL_USER_ID>
+  <STVCOLL_DATA_ORIGIN>GRAILS</STVCOLL_DATA_ORIGIN>
+  <STVCOLL_VPDI_CODE/>
+ </STVCOLL>
+</SCHEDULED>

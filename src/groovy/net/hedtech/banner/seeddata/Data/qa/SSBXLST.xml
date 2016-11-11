@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252" ?>  
+ <!-- ***************************************************************************** 
+ Copyright 2016 Ellucian Company L.P. and its affiliates. 
+ ********************************************************************************* --> 
+<SCHEDULED>
+	<SSBXLST>
+		<SSBXLST_TERM_CODE>600010</SSBXLST_TERM_CODE>
+		<SSBXLST_XLST_GROUP>AT</SSBXLST_XLST_GROUP>
+		<SSBXLST_DESC></SSBXLST_DESC>
+		<SSBXLST_MAX_ENRL>100</SSBXLST_MAX_ENRL>
+		<SSBXLST_ENRL>4</SSBXLST_ENRL>
+		<SSBXLST_SEATS_AVAIL>96</SSBXLST_SEATS_AVAIL>
+		<SSBXLST_ACTIVITY_DATE>01/01/2010</SSBXLST_ACTIVITY_DATE>
+		<SSBXLST_SURROGATE_ID>545</SSBXLST_SURROGATE_ID>
+		<SSBXLST_VERSION>4</SSBXLST_VERSION>
+		<SSBXLST_USER_ID>GRAILS</SSBXLST_USER_ID>
+		<SSBXLST_DATA_ORIGIN>GRAILS</SSBXLST_DATA_ORIGIN>
+		<SSBXLST_VPDI_CODE></SSBXLST_VPDI_CODE>
+	</SSBXLST>
+</SCHEDULED>
