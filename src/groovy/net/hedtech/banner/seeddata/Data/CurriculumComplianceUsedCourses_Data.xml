@@ -2,11 +2,12 @@
 <!-- *****************************************************************************
 Copyright 2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
-<SMRDOUS>
+<SMRDOUS_DATA>
+	<SMRDOUS>
 		<SMRDOUS_PIDM>37859</SMRDOUS_PIDM>         
 		<SMRDOUS_REQUEST_NO>1</SMRDOUS_REQUEST_NO>
 		<SMRDOUS_COMPLIANCE_ORDER>1</SMRDOUS_COMPLIANCE_ORDER>
-		<SMRDOUS_AREA>BS_SC11</SMRDOUS_AREA>   <!-- Area - DP -->
+		<SMRDOUS_AREA>BS_SC11</SMRDOUS_AREA>
 		<SMRDOUS_CAA_SEQNO>1</SMRDOUS_CAA_SEQNO>
 		<SMRDOUS_GROUP></SMRDOUS_GROUP>
 		<SMRDOUS_KEY_RULE></SMRDOUS_KEY_RULE>
@@ -78,5 +79,5 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
 		<SMRDOUS_USER_ID></SMRDOUS_USER_ID>
 		<SMRDOUS_DATA_ORIGIN></SMRDOUS_DATA_ORIGIN>
 		<SMRDOUS_VPDI_CODE></SMRDOUS_VPDI_CODE>
-</SMRDOUS>
-
+	</SMRDOUS>
+</SMRDOUS_DATA>
