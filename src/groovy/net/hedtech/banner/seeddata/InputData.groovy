@@ -57,8 +57,7 @@ public class InputData {
     def targets = [
             'seed-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatusRemoveSFRRSTSrecords.xml'],
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
             'catalog': ['/src/groovy/net/hedtech/banner/seeddata/Data/genpersonValidationXML.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogValidationSeed.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
