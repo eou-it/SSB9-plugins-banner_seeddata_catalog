@@ -69,8 +69,8 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCVASTS") {
             itemSeq = 0
             itemSeq = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            println "delete"
-            println itemSeq
+            //println "delete"
+            //println itemSeq
             deleteData( )
         }
 
