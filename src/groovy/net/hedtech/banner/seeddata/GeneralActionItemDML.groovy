@@ -258,8 +258,6 @@ public class GeneralActionItemDML {
         int tId
         def tRow
 
-        //println "getting template id for: " + templateName
-
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
             if (tRow) {
@@ -279,8 +277,6 @@ public class GeneralActionItemDML {
         int sId
         def sRow
 
-        //println "getting status id for: " + statusName
-
         try {
             sRow = this.conn.firstRow(ssql, [statusName])
             if (sRow) {
@@ -294,6 +290,4 @@ public class GeneralActionItemDML {
         }
         return sId
     }
-
-
 }
