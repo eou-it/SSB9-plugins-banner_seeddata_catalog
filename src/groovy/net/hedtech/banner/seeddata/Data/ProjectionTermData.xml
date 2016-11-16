@@ -1,0 +1,22 @@
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+********************************************************************************* -->
+
+<PROJECTIONDATA>
+    <SOBPROJ>
+        <SOBPROJ_TERM_CODE>201350</SOBPROJ_TERM_CODE>
+        <SOBPROJ_PROJ_PASSED_IND>Y</SOBPROJ_PROJ_PASSED_IND>
+        <SOBPROJ_PROJ_TRANSFERRED_IND>N</SOBPROJ_PROJ_TRANSFERRED_IND>
+        <SOBPROJ_PROJ_INPROGRESS_IND>N</SOBPROJ_PROJ_INPROGRESS_IND>
+        <SOBPROJ_PROJ_ROLL_TO_AH_IND>N</SOBPROJ_PROJ_ROLL_TO_AH_IND>
+        <SOBPROJ_PROJ_MAND_REG_IND>Y</SOBPROJ_PROJ_MAND_REG_IND>
+        <SOBPROJ_PROJ_ELEC_REG_IND>Y</SOBPROJ_PROJ_ELEC_REG_IND>
+        <SOBPROJ_ATTR_CODE/>
+        <SOBPROJ_SURROGATE_ID/>
+        <SOBPROJ_VERSION/>
+        <SOBPROJ_USER_ID>GRAILS</SOBPROJ_USER_ID>
+        <SOBPROJ_DATA_ORIGIN>GRAILS</SOBPROJ_DATA_ORIGIN>
+        <SOBPROJ_VPDI_CODE/>
+    </SOBPROJ>
+</PROJECTIONDATA>
+

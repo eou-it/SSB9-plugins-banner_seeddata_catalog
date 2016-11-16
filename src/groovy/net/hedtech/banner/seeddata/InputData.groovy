@@ -480,7 +480,8 @@ public class InputData {
 												  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityFavQueryPrototypes.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityComputedColumns.xml'],
             'registration-student-attribute' : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
-            'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml']
+            'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
+                                          'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml']
     ]
 
     /**
