@@ -69,8 +69,8 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCVASTS") {
             itemSeq = 0
             itemSeq = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            println "delete"
-            println itemSeq
+            //println "delete"
+            //println itemSeq
             deleteData( )
         }
 
@@ -121,8 +121,6 @@ public class GeneralActionItemDML {
             apiData.GCRAACT_PIDM[0].setValue(personPidm)
             apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
             apiData.GCRAACT_STATUS_ID[0].setValue(statusId.toString())
-
-
         }
 
         if (connectInfo.tableName == "GCRACNT") {
@@ -133,8 +131,6 @@ public class GeneralActionItemDML {
             if (itemSeq == 0) {
                 itemSeq = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
             }
-
-
 
             /* --to be added
             if (templateId == 0) {
