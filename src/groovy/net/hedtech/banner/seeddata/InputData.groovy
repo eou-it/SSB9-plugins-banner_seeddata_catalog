@@ -57,8 +57,7 @@ public class InputData {
     def targets = [
             'seed-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatusRemoveSFRRSTSrecords.xml'],
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
             'catalog': ['/src/groovy/net/hedtech/banner/seeddata/Data/genpersonValidationXML.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogValidationSeed.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
@@ -67,6 +66,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
+            'curriculumdefault' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SobctrlDefaultData.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrGobeaccData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
@@ -251,7 +251,10 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorNotes.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorHolds.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeGradeSeed_201410.xml'] ,
-            'aip': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml'],
+            'aip': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml'],
             'registration-general': ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatus.xml'],
@@ -431,7 +434,8 @@ public class InputData {
                                 'src/groovy/net/hedtech/banner/seeddata/Data/GeneralUsers.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/AuthenticationUserData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/LetterGenerationData.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/TabBasedSecurity.xml'],
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/TabBasedSecurity.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/WebTailorMenu.xml'],
             'program-prerequisite' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramRestriction_Data.xml',
                                       '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramTestScoreRestrictionAndPrerequisite_Data.xml',
                                       '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaRestriction_Data.xml'],
@@ -477,7 +481,8 @@ public class InputData {
 												  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityFavQueryPrototypes.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityComputedColumns.xml'],
             'registration-student-attribute' : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
-            'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml']
+            'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
+                                          'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml']
     ]
 
     /**
@@ -612,6 +617,9 @@ public class InputData {
             'schedule-20122-approval' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
             'registration-history-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
+
+    def calbTargets = [
+              'student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/calb/student/CalbstuMisProgramData.xml']]
 
 
     def validateTable(Sql conn) {
