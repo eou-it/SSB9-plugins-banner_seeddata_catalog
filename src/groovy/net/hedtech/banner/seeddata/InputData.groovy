@@ -66,6 +66,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
+            'curriculumdefault' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SobctrlDefaultData.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrGobeaccData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
@@ -272,13 +273,13 @@ public class InputData {
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionApprovalInProgress.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionUnApprovedDocument.xml',
                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionPO.xml',
-								   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceSystemControlUpdateData.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceProjectCustomerCharge.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFund.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceAccountIndex.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyCode.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyRate.xml',
-                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinaceApprovalQueueDefinition.xml'],
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceSystemControlUpdateData.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceProjectCustomerCharge.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFund.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceAccountIndex.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyCode.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyRate.xml',
+                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceApprovalQueueDefinition.xml'],
             'ssbgeneralstudentblockreg': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockReg.xml'],
             'blockregistration': ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'ssbgeneralstudent2': ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml'],
@@ -433,7 +434,8 @@ public class InputData {
                                 'src/groovy/net/hedtech/banner/seeddata/Data/GeneralUsers.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/AuthenticationUserData.xml',
                                 'src/groovy/net/hedtech/banner/seeddata/Data/LetterGenerationData.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/TabBasedSecurity.xml'],
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/TabBasedSecurity.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/WebTailorMenu.xml'],
             'program-prerequisite' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramRestriction_Data.xml',
                                       '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramTestScoreRestrictionAndPrerequisite_Data.xml',
                                       '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaRestriction_Data.xml'],
@@ -476,10 +478,12 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityPayrollExpense.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityEncumbPeriodDetails.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityQueryPrototypes.xml',
-												  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityFavQueryPrototypes.xml',
-                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityComputedColumns.xml'],
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityFavQueryPrototypes.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityComputedColumns.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/DocumentApprovalQueueDefinition.xml'],
             'registration-student-attribute' : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
-            'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml']
+            'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
+                                          'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml']
     ]
 
     /**
@@ -614,6 +618,9 @@ public class InputData {
             'schedule-20122-approval' : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
             'registration-history-reset' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
+
+    def calbTargets = [
+              'student' : ['/src/groovy/net/hedtech/banner/seeddata/Data/calb/student/CalbstuMisProgramData.xml']]
 
 
     def validateTable(Sql conn) {

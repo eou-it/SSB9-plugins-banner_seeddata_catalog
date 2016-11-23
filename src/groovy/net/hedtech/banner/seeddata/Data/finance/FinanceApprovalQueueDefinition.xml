@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<APPROVAEL_QUEUE_DEFINITION>
+    <FTVAPPQ><!-- Approval Queue Definition !-->
+        <FTVAPPQ_QUEUE_ID>INVP</FTVAPPQ_QUEUE_ID>
+        <FTVAPPQ_DESCRIPTION>INVOICE APPROVAL QUEUE</FTVAPPQ_DESCRIPTION>
+        <FTVAPPQ_QUEUE_LIMIT>999999.99</FTVAPPQ_QUEUE_LIMIT>
+        <FTVAPPQ_NEXT_QUEUE_ID>GH01</FTVAPPQ_NEXT_QUEUE_ID>
+        <FTVAPPQ_APPROVAL_REQ>N</FTVAPPQ_APPROVAL_REQ>
+    </FTVAPPQ>
+    <FTVAPPQ><!-- Approval Queue Definition !-->
+        <FTVAPPQ_QUEUE_ID>JV</FTVAPPQ_QUEUE_ID>
+        <FTVAPPQ_DESCRIPTION>JV QUEUE</FTVAPPQ_DESCRIPTION>
+        <FTVAPPQ_QUEUE_LIMIT>999999.99</FTVAPPQ_QUEUE_LIMIT>
+        <FTVAPPQ_NEXT_QUEUE_ID/>
+        <FTVAPPQ_APPROVAL_REQ>N</FTVAPPQ_APPROVAL_REQ>
+    </FTVAPPQ>
+    <FTVAPPQ><!-- Approval Queue Definition !-->
+        <FTVAPPQ_QUEUE_ID>JFGR</FTVAPPQ_QUEUE_ID>
+        <FTVAPPQ_DESCRIPTION>JF GRANT QUEUES</FTVAPPQ_DESCRIPTION>
+        <FTVAPPQ_QUEUE_LIMIT>999999.99</FTVAPPQ_QUEUE_LIMIT>
+        <FTVAPPQ_NEXT_QUEUE_ID/>
+        <FTVAPPQ_APPROVAL_REQ>N</FTVAPPQ_APPROVAL_REQ>
+    </FTVAPPQ>
+</APPROVAEL_QUEUE_DEFINITION>
