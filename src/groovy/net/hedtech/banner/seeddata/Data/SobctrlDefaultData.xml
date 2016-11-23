@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<CURRICULUMDEFAULT>
+    <SOBCTRL>
+        <SOBCTRL_CURR_RULE_IND>Y</SOBCTRL_CURR_RULE_IND>
+        <SOBCTRL_PRIORITY_NO>1</SOBCTRL_PRIORITY_NO>
+        <SOBCTRL_PRIORITY_INCR>1</SOBCTRL_PRIORITY_INCR>
+    </SOBCTRL>
+</CURRICULUMDEFAULT>
