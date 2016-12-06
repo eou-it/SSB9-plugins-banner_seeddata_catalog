@@ -34,7 +34,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <GURNHIR_VPDI_CODE/>
     </GURNHIR>
     <GURNHIR>
-        <GURNHIR_PRODUCT>testApp</GURNHIR_PRODUCT>
+        <GURNHIR_PRODUCT>Student</GURNHIR_PRODUCT>
         <GURNHIR_APPLICATION>testApp</GURNHIR_APPLICATION>
         <GURNHIR_PAGE>testPage</GURNHIR_PAGE>
         <GURNHIR_SECTION>testSection</GURNHIR_SECTION>
