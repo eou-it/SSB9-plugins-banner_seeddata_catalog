@@ -481,7 +481,9 @@ public class InputData {
             'registration-student-attribute' : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
             'projection-used-courses' :  ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml'],
 			'finance-journals' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalHeader.xml' ,
-                                      '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalDetail.xml']
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalDetail.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToRuleClass.xml'
+            ]
     ]
 
     /**
