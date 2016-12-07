@@ -67,7 +67,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
-            'regqaautomated': ['/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101610.xml',
+  'regqaautomated': ['/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101610.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101615.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101620.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101625.xml',
