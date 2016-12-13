@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<ROWSET_CLEAN_NHRDIST>
+    <CLEAN_NHRDIS>
+        <PAYROLL_PIDM>-99999999</PAYROLL_PIDM>
+    </CLEAN_NHRDIS>
+</ROWSET_CLEAN_NHRDIST>
