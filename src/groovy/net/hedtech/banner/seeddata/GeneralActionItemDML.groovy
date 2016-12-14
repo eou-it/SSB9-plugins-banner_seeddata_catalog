@@ -26,6 +26,8 @@ public class GeneralActionItemDML {
     int templateId
     int statusId
     int actionItemId
+    int blockId
+
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                                 def deleteNode) {
@@ -173,6 +175,19 @@ public class GeneralActionItemDML {
 
         }
 
+        if (connectInfo.tableName == "GCRABLK") {
+
+            actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            //statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
+
+            if (actionItemId == 0) {
+                actionItemId = apiData.GCRABLK_ACTION_ITEM_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCRABLK_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
+
+        }
+
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() { fields ->
@@ -196,6 +211,8 @@ public class GeneralActionItemDML {
         deleteData("GCRAACT", "delete from GCRAACT where 0 <> ? ")
         deleteData("GCRACNT", "delete from GCRACNT where 0 <> ? ")
         deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCRABLK", "delete from GCRABLK where 0 <> ? ")
+        deleteData("GUROCFG", "delete from GUROCFG where 0 <> ? ")
         deleteData("GCBACTM", "delete from GCBACTM where 0 <> ? ")
         deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }
@@ -290,4 +307,5 @@ public class GeneralActionItemDML {
         }
         return sId
     }
+
 }
