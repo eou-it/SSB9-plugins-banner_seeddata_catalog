@@ -455,6 +455,7 @@ public class InputData {
             'registration-planning-region' : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml'],
             'GrailsReadOnly' : ['/src/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml'],
             'finance-budget-availability-data' : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccountIndex.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinancePayrollUserData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccountType.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFundType.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalFund.xml',
