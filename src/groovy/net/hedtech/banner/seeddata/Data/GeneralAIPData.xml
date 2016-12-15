@@ -4191,28 +4191,45 @@
     </GCRAISR>
 
     <GUROCFG>
-        <GUROCFG_NAME>aipConfig</GUROCFG_NAME>
-        <GUROCFG_TYPE>blockedProcesses</GUROCFG_TYPE>
-        <GUROCFG_VALUE>{"processes": [
+        <GUROCFG_NAME>aipProcesses.planAhead</GUROCFG_NAME>
+        <GUROCFG_TYPE>array</GUROCFG_TYPE>
+        <GUROCFG_VALUE>{"aipProcesses": [
             {
             "planAhead": [
             {	"messagePropertyName":"aip.blocked.process.name.plan.ahead",
             "urls":	 [
             { "url1": ":8090/StudentRegistrationSsb/ssb/plan" }
+
             ]
+            }]
             }
-            ]
-            },
-            "registerForClasses":[
+        </GUROCFG_VALUE>
+        <GUROCFG_SURROGATE_ID>1</GUROCFG_SURROGATE_ID>
+        <GUROCFG_VERSION></GUROCFG_VERSION>
+        <GUROCFG_DATA_ORIGIN>AIP</GUROCFG_DATA_ORIGIN>
+        <GUROCFG_ACTIVITY_DATE>14-2-2016</GUROCFG_ACTIVITY_DATE>
+        <GUROCFG_USER_ID>CSRADM001</GUROCFG_USER_ID>
+        <GUROCFG_VPDI_CODE></GUROCFG_VPDI_CODE>
+    </GUROCFG>
+
+
+
+    <GUROCFG>
+        <GUROCFG_NAME>aipProcesses.registerForClasses</GUROCFG_NAME>
+        <GUROCFG_TYPE>array</GUROCFG_TYPE>
+        <GUROCFG_VALUE>{"aipProcesses": [
+            {
+            "registerForClasses": [
             {	"messagePropertyName":"aip.blocked.process.name.register.for.classes",
             "urls":	 [
             { "url1": ":8090/StudentRegistrationSsb/ssb/register" }
+
             ]
+            }]
             }
-            ]
-            ]
-            }</GUROCFG_VALUE>
-        <GUROCFG_SURROGATE_ID>1</GUROCFG_SURROGATE_ID>
+        </GUROCFG_VALUE>
+
+        <GUROCFG_SURROGATE_ID>2</GUROCFG_SURROGATE_ID>
         <GUROCFG_VERSION></GUROCFG_VERSION>
         <GUROCFG_DATA_ORIGIN>AIP</GUROCFG_DATA_ORIGIN>
         <GUROCFG_ACTIVITY_DATE>14-2-2016</GUROCFG_ACTIVITY_DATE>
@@ -4222,10 +4239,9 @@
 
     <GCRABLK>
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipConfig</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>blockedProcesses</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_NAME>aipProcesses.planAhead</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>22</GCRABLK_ACTION_ITEM_ID>
-        <GCRABLK_CONFIG_PROCESS_CODE>planAhead</GCRABLK_CONFIG_PROCESS_CODE>
         <GCRABLK_SURROGATE_ID>1</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
         <GCRABLK_ACTIVITY_DATE>14-12-2016</GCRABLK_ACTIVITY_DATE>
@@ -4235,10 +4251,9 @@
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Please Review the Attendance Policy</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipConfig</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>blockedProcesses</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_NAME>aipProcesses.registerForClasses</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>10</GCRABLK_ACTION_ITEM_ID>
-        <GCRABLK_CONFIG_PROCESS_CODE>registerForClasses</GCRABLK_CONFIG_PROCESS_CODE>
         <GCRABLK_SURROGATE_ID>2</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
         <GCRABLK_ACTIVITY_DATE>14-12-2016</GCRABLK_ACTIVITY_DATE>
@@ -4248,10 +4263,9 @@
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipConfig</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>blockedProcesses</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_NAME>aipProcesses.planAhead</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>11</GCRABLK_ACTION_ITEM_ID>
-        <GCRABLK_CONFIG_PROCESS_CODE>planAhead</GCRABLK_CONFIG_PROCESS_CODE>
         <GCRABLK_SURROGATE_ID>3</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
         <GCRABLK_ACTIVITY_DATE>14-12-2016</GCRABLK_ACTIVITY_DATE>
@@ -4261,10 +4275,9 @@
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipConfig</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>blockedProcesses</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_NAME>aipProcesses.registerForClasses</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>11</GCRABLK_ACTION_ITEM_ID>
-        <GCRABLK_CONFIG_PROCESS_CODE>registerForClasses</GCRABLK_CONFIG_PROCESS_CODE>
         <GCRABLK_SURROGATE_ID>4</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
         <GCRABLK_ACTIVITY_DATE>14-12-2016</GCRABLK_ACTIVITY_DATE>
