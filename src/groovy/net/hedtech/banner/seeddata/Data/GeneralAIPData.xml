@@ -4198,7 +4198,7 @@
             "planAhead": [
             {	"messagePropertyName":"aip.blocked.process.name.plan.ahead",
             "urls":	 [
-            { "url1": ":8090/StudentRegistrationSsb/ssb/plan" }
+            { "url": ":8090/StudentRegistrationSsb/ssb/plan" }
 
             ]
             }]
@@ -4222,7 +4222,7 @@
             "registerForClasses": [
             {	"messagePropertyName":"aip.blocked.process.name.register.for.classes",
             "urls":	 [
-            { "url1": ":8090/StudentRegistrationSsb/ssb/register" }
+            { "url": ":8090/StudentRegistrationSsb/ssb/register" }
 
             ]
             }]
