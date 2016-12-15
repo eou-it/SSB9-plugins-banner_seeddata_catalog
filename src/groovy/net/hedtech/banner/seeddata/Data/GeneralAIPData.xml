@@ -4191,9 +4191,9 @@
     </GCRAISR>
 
     <GUROCFG>
-        <GUROCFG_NAME>aipProcesses.planAhead</GUROCFG_NAME>
+        <GUROCFG_NAME>registration.planAhead</GUROCFG_NAME>
         <GUROCFG_TYPE>array</GUROCFG_TYPE>
-        <GUROCFG_VALUE>{"aipProcesses": [
+        <GUROCFG_VALUE>{"registration": [
             {
             "planAhead": [
             {	"messagePropertyName":"aip.blocked.process.name.plan.ahead",
@@ -4215,9 +4215,9 @@
 
 
     <GUROCFG>
-        <GUROCFG_NAME>aipProcesses.registerForClasses</GUROCFG_NAME>
+        <GUROCFG_NAME>registration.registerForClasses</GUROCFG_NAME>
         <GUROCFG_TYPE>array</GUROCFG_TYPE>
-        <GUROCFG_VALUE>{"aipProcesses": [
+        <GUROCFG_VALUE>{"registration": [
             {
             "registerForClasses": [
             {	"messagePropertyName":"aip.blocked.process.name.register.for.classes",
@@ -4239,7 +4239,7 @@
 
     <GCRABLK>
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipProcesses.planAhead</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_NAME>registration.planAhead</GCRABLK_CONFIG_NAME>
         <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>22</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>1</GCRABLK_SURROGATE_ID>
@@ -4251,7 +4251,7 @@
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Please Review the Attendance Policy</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipProcesses.registerForClasses</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_NAME>registration.registerForClasses</GCRABLK_CONFIG_NAME>
         <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>10</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>2</GCRABLK_SURROGATE_ID>
@@ -4263,7 +4263,7 @@
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipProcesses.planAhead</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_NAME>registration.planAhead</GCRABLK_CONFIG_NAME>
         <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>11</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>3</GCRABLK_SURROGATE_ID>
@@ -4275,7 +4275,7 @@
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
-        <GCRABLK_CONFIG_NAME>aipProcesses.registerForClasses</GCRABLK_CONFIG_NAME>
+        <GCRABLK_CONFIG_NAME>registration.registerForClasses</GCRABLK_CONFIG_NAME>
         <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>11</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>4</GCRABLK_SURROGATE_ID>
