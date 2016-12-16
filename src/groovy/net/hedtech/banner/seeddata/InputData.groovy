@@ -67,33 +67,35 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
             'curriculumdefault' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SobctrlDefaultData.xml'],
-            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrGobeaccData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
+            'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmclData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmskData.xml',
-                       // Finance data
+                         // Finance data
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfsyrData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfspdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobudData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobphData.xml',
-                      // Position Control Rules
+                         // HR Validation
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvegrpData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvshcdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvlcatData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvjctyData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/Ptv1099Data.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtvbdtyData.xml',
+                         // HR Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsgrpData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalbData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrinstData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrfiniData.xml',
-                      // Payroll Rules and Validation
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvshcdData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvlcatData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvjctyData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbcatData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtremprData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrpictData.xml',
@@ -110,15 +112,12 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvasData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrtreaData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrshftData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrteshData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtresocData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrinstData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvacData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvprData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrwstbData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml',
-                    // Benefits and Deductions Rules
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/Ptv1099Data.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtvbdtyData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdclData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PxrtxcdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdcaData.xml',
@@ -129,18 +128,21 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdldData.xml',
-                    // Position class and Posn budget
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrlraqData.xml',
+                         // Position Budgeting
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
-                    // Employee Information
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml',
+                         // Employee Information
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtruserData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveByJobData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrGobeaccData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtruserData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/general/GobeaccData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeGxrdirdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductionsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/EmployeeDeductionsDetailData.xml',
@@ -148,7 +150,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobAssignmentDetailData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobEarningsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrjlbdData.xml',
-                    // Employee History
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrrjqeData.xml',
+                         // Employee History
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PeretotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjtotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdhisData.xml',
@@ -168,11 +171,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerlvtkData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerleavData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml',
-                    //Labir Redistribution
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrlraqData.xml'
-
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml'
             ],
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],

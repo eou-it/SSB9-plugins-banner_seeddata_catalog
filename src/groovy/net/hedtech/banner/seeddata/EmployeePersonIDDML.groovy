@@ -432,8 +432,12 @@ public class EmployeePersonIDDML {
 
                 insertCall.setString(52, this.pebempl_etax_consent_user_id)
                 insertCall.setString(53, this.pebempl_new_hire_ind)
-                insertCall.setString(54, this.pebempl_1095tx_consent_ind)
 
+                if (!this.pebempl_1095tx_consent_ind) {
+                    insertCall.setString(54, "N")
+                } else {
+                    insertCall.setString(54, this.pebempl_1095tx_consent_ind)
+                }
 
                 if ((this.pebempl_1095tx_consent_date == "") || (this.pebempl_1095tx_consent_date == null) ||
                         (!this.pebempl_1095tx_consent_date)) {
