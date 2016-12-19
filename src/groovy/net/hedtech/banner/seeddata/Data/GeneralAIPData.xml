@@ -4218,7 +4218,7 @@
             "registerForClasses":
             {
             "i18n":"aip.blocked.process.name.register.for.classes",
-            "urls": ["url": ":8090/StudentRegistrationSsb/ssb/register" ]
+            "urls": [":8090/StudentRegistrationSsb/ssb/register" ]
             }
             }}
         </GUROCFG_VALUE>
