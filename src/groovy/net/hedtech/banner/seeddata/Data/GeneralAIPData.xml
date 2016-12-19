@@ -4192,15 +4192,8 @@
 
     <GUROCFG>
         <GUROCFG_NAME>planAhead</GUROCFG_NAME>
-        <GUROCFG_TYPE>array</GUROCFG_TYPE>
-        <GUROCFG_VALUE>{	"aipBlockedProcess":
-            {
-            "planAhead":
-            {
-            "i18n":"aip.blocked.process.name.plan.ahead",
-            "urls": [ ":8090/StudentRegistrationSsb/ssb/plan" ]
-            }
-            }}
+        <GUROCFG_TYPE>json/aipBlock</GUROCFG_TYPE>
+        <GUROCFG_VALUE>{"aipBlock": {"processNamei18n":"aip.blocked.process.name.plan.ahead", "urls": ["/ssb/planningStuff","/ssb/term/termSelection?mode=plan"] }}
         </GUROCFG_VALUE>
         <GUROCFG_SURROGATE_ID>1</GUROCFG_SURROGATE_ID>
         <GUROCFG_VERSION></GUROCFG_VERSION>
@@ -4212,15 +4205,8 @@
 
     <GUROCFG>
         <GUROCFG_NAME>registerForClasses</GUROCFG_NAME>
-        <GUROCFG_TYPE>array</GUROCFG_TYPE>
-        <GUROCFG_VALUE> {	"aipBlockedProcess":
-            {
-            "registerForClasses":
-            {
-            "i18n":"aip.blocked.process.name.register.for.classes",
-            "urls": [":8090/StudentRegistrationSsb/ssb/register" ]
-            }
-            }}
+        <GUROCFG_TYPE>json/aipBlock</GUROCFG_TYPE>
+        <GUROCFG_VALUE> {"aipBlock": {"processNamei18n":"aip.blocked.process.name.register.for.classes","urls":["/ssb/term/termSelection?mode=registration" ] }}
         </GUROCFG_VALUE>
         <GUROCFG_SURROGATE_ID>2</GUROCFG_SURROGATE_ID>
         <GUROCFG_VERSION></GUROCFG_VERSION>
@@ -4234,7 +4220,7 @@
     <GCRABLK>
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
         <GCRABLK_CONFIG_NAME>planAhead</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_TYPE>json/aipBlock</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>22</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>1</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
@@ -4246,7 +4232,7 @@
     <GCRABLK>
         <ACTIONITEMNAME>Please Review the Attendance Policy</ACTIONITEMNAME>
         <GCRABLK_CONFIG_NAME>registerForClasses</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_TYPE>json/aipBlock</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>10</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>2</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
@@ -4258,7 +4244,7 @@
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
         <GCRABLK_CONFIG_NAME>planAhead</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_TYPE>json/aipBlock</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>11</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>3</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
@@ -4270,7 +4256,7 @@
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
         <GCRABLK_CONFIG_NAME>registerForClasses</GCRABLK_CONFIG_NAME>
-        <GCRABLK_CONFIG_TYPE>array</GCRABLK_CONFIG_TYPE>
+        <GCRABLK_CONFIG_TYPE>json/aipBlock</GCRABLK_CONFIG_TYPE>
         <GCRABLK_ACTION_ITEM_ID>11</GCRABLK_ACTION_ITEM_ID>
         <GCRABLK_SURROGATE_ID>4</GCRABLK_SURROGATE_ID>
         <GCRABLK_USER_ID>AIP</GCRABLK_USER_ID>
