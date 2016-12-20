@@ -40,6 +40,9 @@ public class FinanceBudgetAvailabilityTransactionDetailsDML {
     def submissionNum
     def postDocCode
     def transAmt
+    def encdItemNum
+    def encdNum
+    def encdSeqNum
     def InputData connectInfo
     Sql conn
     Connection connectCall
@@ -74,6 +77,9 @@ public class FinanceBudgetAvailabilityTransactionDetailsDML {
         this.docCode = transDetail.FGBTRND_DOC_CODE.text()
         this.docSeqCode = transDetail.FGBTRND_DOC_SEQ_CODE.text()
         this.drCrInd = transDetail.FGBTRND_DR_CR_IND.text()
+        this.encdItemNum = transDetail.FGBTRND_ENCD_ITEM_NUM.text()
+        this.encdNum = transDetail.FGBTRND_ENCD_NUM.text()
+        this.encdSeqNum = transDetail.FGBTRND_ENCD_SEQ_NUM.text()
         this.fieldCode = transDetail.FGBTRND_FIELD_CODE.text()
         this.fsyrCode = transDetail.FGBTRND_FSYR_CODE.text()
         this.fundCode = transDetail.FGBTRND_FUND_CODE.text()
@@ -101,7 +107,7 @@ public class FinanceBudgetAvailabilityTransactionDetailsDML {
 
             final String apiQuery =
                     """BEGIN
-                       DELETE FROM FGBTRND WHERE FGBTRND_DOC_CODE=?;
+                       DELETE FROM FGBTRND WHERE FGBTRND_DOC_CODE=? AND FGBTRND_DOC_SEQ_CODE=?;
                        INSERT INTO FGBTRND (
                        FGBTRND_ACCT_CODE,
                        FGBTRND_AMT_IND,
@@ -128,11 +134,17 @@ public class FinanceBudgetAvailabilityTransactionDetailsDML {
                        FGBTRND_SUBMISSION_NUMBER,
                        FGBTRND_SUM_POST_DOC_CODE,
                        FGBTRND_TRANS_AMT,
+                       FGBTRND_ENCD_ITEM_NUM,
+                       FGBTRND_ENCD_NUM,
+                       FGBTRND_ENCD_SEQ_NUM,
                        FGBTRND_USER_ID,
                        FGBTRND_ACTIVITY_DATE,
                        FGBTRND_DATA_ORIGIN
                        )
                        VALUES (
+                       ?,
+                       ?,
+                       ?,
                        ?,
                        ?,
                        ?,
@@ -166,32 +178,36 @@ public class FinanceBudgetAvailabilityTransactionDetailsDML {
                     """
             CallableStatement insertCall = this.connectCall.prepareCall(apiQuery)
             insertCall.setString(1, this.docCode)
+            insertCall.setString(2, this.docSeqCode)
 
-            insertCall.setString(2, this.accountCode)
-            insertCall.setString(3, this.amtInd)
-            insertCall.setString(4, this.budgetPeriod)
-            insertCall.setString(5, this.commitmentType)
-            insertCall.setString(6, this.coasCode)
-            insertCall.setString(7, this.docCode)
-            insertCall.setString(8, this.docSeqCode)
-            insertCall.setString(9, this.drCrInd)
-            insertCall.setString(10, this.fieldCode)
-            insertCall.setString(11, this.fsyrCode)
-            insertCall.setString(12, this.fundCode)
-            insertCall.setString(13, this.itemNumber)
-            insertCall.setString(14, this.ledgerInd)
-            insertCall.setString(15, this.ordnCode)
-            insertCall.setString(16, this.postingPeriod)
-            insertCall.setString(17, this.procCode)
-            insertCall.setString(18, this.programCode)
-            insertCall.setString(19, this.reversalInd)
-            insertCall.setString(20, this.ruleClassCode)
-            insertCall.setString(21, this.rulePCode)
-            insertCall.setString(22, this.seqNum)
-            insertCall.setString(23, this.serialNumber)
-            insertCall.setString(24, this.submissionNum)
-            insertCall.setString(25, this.postDocCode)
-            insertCall.setDouble(26, this.transAmt)
+            insertCall.setString(3, this.accountCode)
+            insertCall.setString(4, this.amtInd)
+            insertCall.setString(5, this.budgetPeriod)
+            insertCall.setString(6, this.commitmentType)
+            insertCall.setString(7, this.coasCode)
+            insertCall.setString(8, this.docCode)
+            insertCall.setString(9, this.docSeqCode)
+            insertCall.setString(10, this.drCrInd)
+            insertCall.setString(11, this.fieldCode)
+            insertCall.setString(12, this.fsyrCode)
+            insertCall.setString(13, this.fundCode)
+            insertCall.setString(14, this.itemNumber)
+            insertCall.setString(15, this.ledgerInd)
+            insertCall.setString(16, this.ordnCode)
+            insertCall.setString(17, this.postingPeriod)
+            insertCall.setString(18, this.procCode)
+            insertCall.setString(19, this.programCode)
+            insertCall.setString(20, this.reversalInd)
+            insertCall.setString(21, this.ruleClassCode)
+            insertCall.setString(22, this.rulePCode)
+            insertCall.setString(23, this.seqNum)
+            insertCall.setString(24, this.serialNumber)
+            insertCall.setString(25, this.submissionNum)
+            insertCall.setString(26, this.postDocCode)
+            insertCall.setDouble(27, this.transAmt)
+            insertCall.setString(28, this.encdItemNum)
+            insertCall.setString(29, this.encdNum)
+            insertCall.setString(30, this.encdSeqNum)
 
             insertCall.execute()
             connectInfo.tableUpdate("BUDGET_AVAILABILITY_TRANSACTION_DETAILS", 0, 1, 0, 0, 0)
