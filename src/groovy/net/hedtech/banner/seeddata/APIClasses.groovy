@@ -130,7 +130,9 @@ public class APIClasses {
             'BANNERUSER'       : 'net.hedtech.banner.seeddata.BannerUserDML',
             'HRGOBEACCUSER'      : 'net.hedtech.banner.seeddata.HrGobeaccDML',
             'ORACLEUSER'      : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
-            'NTRLRAQ'          : 'net.hedtech.banner.seeddata.NtrlraqDML'
+            'NTRLRAQ'          : 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'FGBJVCH'          : 'net.hedtech.banner.seeddata.FinanceJournalHeaderCreateDML',
+            'FGBJVCD'          : 'net.hedtech.banner.seeddata.FinanceJournalDetailCreateDML'
 
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
