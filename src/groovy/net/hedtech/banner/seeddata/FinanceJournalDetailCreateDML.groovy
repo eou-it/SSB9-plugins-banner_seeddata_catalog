@@ -50,16 +50,16 @@ public class FinanceJournalDetailCreateDML {
         try {
             final String apiQuery =
                     "   BEGIN" +
-                            "  DELETE FROM FGBJVCD WHERE FGBJVCD_DOC_NUM = '" + headerData.FGBJVCD_DOC_NUM.text() + "' ;" +
+                            "  DELETE FROM FV_FGBJVCD WHERE FGBJVCD_DOC_NUM = '" + headerData.FGBJVCD_DOC_NUM.text() + "' ;" +
                             "   INSERT INTO FGBJVCD (FGBJVCD_DOC_NUM, FGBJVCD_SUBMISSION_NUMBER, FGBJVCD_SEQ_NUM, FGBJVCD_RUCL_CODE, FGBJVCD_TRANS_AMT," +
                             "   FGBJVCD_TRANS_DESC, FGBJVCD_DR_CR_IND, FGBJVCD_FSYR_CODE, FGBJVCD_COAS_CODE, FGBJVCD_FUND_CODE," +
                             "   FGBJVCD_ORGN_CODE, FGBJVCD_ACCT_CODE, FGBJVCD_PROG_CODE, FGBJVCD_BANK_CODE, FGBJVCD_POSTING_PERIOD," +
-                            "   FGBJVCD_BUDGET_PERIOD, FGBJVCD_STATUS_IND, FGBJVCD_ABAL_OVERRIDE, FGBJVCD_POST_BAVL, FGBJVCD_USER_ID,FGBJVCD_ACTIVITY_DATE) " +
+                            "   FGBJVCD_BUDGET_PERIOD, FGBJVCD_STATUS_IND, FGBJVCD_ABAL_OVERRIDE, FGBJVCD_POST_BAVL, FGBJVCD_USER_ID) " +
                             "   VALUES (" +
                             "   ?, ?, ?, ?, ?," +
                             "   ?, ?, ?, ?, ?," +
                             "   ?, ?, ?, ?, ?," +
-                            "   ?, ?, ?, ?, ?, sysdate);" +
+                            "   ?, ?, ?, ?, ?);" +
                             "   commit;" +
                             "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
@@ -89,11 +89,11 @@ public class FinanceJournalDetailCreateDML {
                 insertCall.setString( 20, headerData.FGBJVCD_USER_ID?.text() )
                 insertCall.execute()
 
-                connectInfo.tableUpdate( "FGBJVCD", 0, 1, 0, 0, 0 )
+                connectInfo.tableUpdate( "FV_FGBJVCD", 0, 1, 0, 0, 0 )
 
             }
             catch (Exception e) {
-                connectInfo.tableUpdate( "FGBJVCD", 0, 0, 0, 1, 0 )
+                connectInfo.tableUpdate( "FV_FGBJVCD", 0, 0, 0, 1, 0 )
                 if (connectInfo.showErrors) {
                     println "Executing script to insert record for Journal Detail with ..."
                     println "Problem executing insert record for Journal Detail : $e.message"
@@ -104,7 +104,7 @@ public class FinanceJournalDetailCreateDML {
             }
         }
         catch (Exception e) {
-            connectInfo.tableUpdate( "FGBJVCD", 0, 0, 0, 1, 0 )
+            connectInfo.tableUpdate( "FV_FGBJVCD", 0, 0, 0, 1, 0 )
             if (connectInfo.showErrors) {
                 println "Problem executing Update for table FGBJVCD from FinanceJournalDetailCreateDML.groovy: $e.message"
             }
