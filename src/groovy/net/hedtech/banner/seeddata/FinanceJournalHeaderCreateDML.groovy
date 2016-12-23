@@ -50,8 +50,8 @@ public class FinanceJournalHeaderCreateDML {
         try {
             final String apiQuery =
                     "   BEGIN" +
-                            "  DELETE FROM FGBJVCH WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
-                            "   INSERT INTO FGBJVCH ( FGBJVCH_DOC_NUM, FGBJVCH_SUBMISSION_NUMBER, FGBJVCH_ACTIVITY_DATE, FGBJVCH_USER_ID, FGBJVCH_TRANS_DATE , " +
+                            "  DELETE FROM FV_FGBJVCH WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
+                            "   INSERT INTO FV_FGBJVCH ( FGBJVCH_DOC_NUM, FGBJVCH_SUBMISSION_NUMBER, FGBJVCH_ACTIVITY_DATE, FGBJVCH_USER_ID, FGBJVCH_TRANS_DATE , " +
                             "	FGBJVCH_DOC_DESCRIPTION, FGBJVCH_DOC_AMT, FGBJVCH_EDIT_DEFER_IND, FGBJVCH_STATUS_IND, FGBJVCH_APPROVAL_IND, "+
                             "   FGBJVCH_DATA_ORIGIN, FGBJVCH_CREATE_SOURCE, FGBJVCH_VERSION) " +
                             "   VALUES (" +
@@ -73,11 +73,11 @@ public class FinanceJournalHeaderCreateDML {
                 insertCall.setString( 9, headerData.FGBJVCH_APPROVAL_IND.text() )
                 insertCall.execute()
 
-                connectInfo.tableUpdate( "FGBJVCH", 0, 1, 0, 0, 0 )
+                connectInfo.tableUpdate( "FV_FGBJVCH", 0, 1, 0, 0, 0 )
 
             }
             catch (Exception e) {
-                connectInfo.tableUpdate( "FGBJVCH", 0, 0, 0, 1, 0 )
+                connectInfo.tableUpdate( "FV_FGBJVCH", 0, 0, 0, 1, 0 )
                 if (connectInfo.showErrors) {
                     println "Executing script to insert record for Journal Header with ..."
                     println "Problem executing insert record for Journal Header: $e.message"
@@ -88,7 +88,7 @@ public class FinanceJournalHeaderCreateDML {
             }
         }
         catch (Exception e) {
-            connectInfo.tableUpdate( "FGBJVCH", 0, 0, 0, 1, 0 )
+            connectInfo.tableUpdate( "FV_FGBJVCH", 0, 0, 0, 1, 0 )
             if (connectInfo.showErrors) {
                 println "Problem executing Update for table FGBJVCH from FinanceJournalHeaderCreateDML.groovy: $e.message"
             }
