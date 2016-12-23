@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="Windows-1252" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+Copyright 2016 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <VALIDATIONDATA>
     <GURNHIR>
@@ -19,8 +19,8 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <GURNHIR_VPDI_CODE/>
     </GURNHIR>
     <GURNHIR>
-        <GURNHIR_PRODUCT>testApp_DEFAULT</GURNHIR_PRODUCT>
-        <GURNHIR_APPLICATION>testApp_DEFAULT</GURNHIR_APPLICATION>
+        <GURNHIR_PRODUCT>Student</GURNHIR_PRODUCT>
+        <GURNHIR_APPLICATION>testApp</GURNHIR_APPLICATION>
         <GURNHIR_PAGE/>
         <GURNHIR_SECTION/>
         <GURNHIR_USAGE>DEFAULT</GURNHIR_USAGE>
@@ -34,11 +34,11 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
         <GURNHIR_VPDI_CODE/>
     </GURNHIR>
     <GURNHIR>
-        <GURNHIR_PRODUCT>testApp</GURNHIR_PRODUCT>
+        <GURNHIR_PRODUCT>Student</GURNHIR_PRODUCT>
         <GURNHIR_APPLICATION>testApp</GURNHIR_APPLICATION>
-        <GURNHIR_PAGE/>
-        <GURNHIR_SECTION/>
-        <GURNHIR_USAGE/>
+        <GURNHIR_PAGE>testPage</GURNHIR_PAGE>
+        <GURNHIR_SECTION>testSection</GURNHIR_SECTION>
+        <GURNHIR_USAGE>DEFAULT</GURNHIR_USAGE>
         <GURNHIR_ACTIVE_IND>Y</GURNHIR_ACTIVE_IND>
         <GURNHIR_MAX_LENGTH>2000</GURNHIR_MAX_LENGTH>
         <GURNHIR_ACTIVITY_DATE>17-OCT-16</GURNHIR_ACTIVITY_DATE>
