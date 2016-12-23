@@ -50,7 +50,8 @@ public class FinanceJournalHeaderCreateDML {
         try {
             final String apiQuery =
                     "   BEGIN" +
-                            "  DELETE FROM FV_FGBJVCH WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
+                            "  DELETE FROM FGBJVCD WHERE FGBJVCD_DOC_NUM = '" + headerData.FGBJVCD_DOC_NUM.text() + "' ;" +
+                            "  DELETE FROM FGBJVCH WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
                             "   INSERT INTO FV_FGBJVCH ( FGBJVCH_DOC_NUM, FGBJVCH_SUBMISSION_NUMBER, FGBJVCH_ACTIVITY_DATE, FGBJVCH_USER_ID, FGBJVCH_TRANS_DATE , " +
                             "	FGBJVCH_DOC_DESCRIPTION, FGBJVCH_DOC_AMT, FGBJVCH_EDIT_DEFER_IND, FGBJVCH_STATUS_IND, FGBJVCH_APPROVAL_IND, "+
                             "   FGBJVCH_DATA_ORIGIN, FGBJVCH_CREATE_SOURCE, FGBJVCH_VERSION) " +
