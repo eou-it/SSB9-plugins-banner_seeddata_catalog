@@ -114,6 +114,7 @@ public class InputData {
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogENGL_ATUO2.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogENGL_ATUT2.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogESL_ATC2T.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogESL_1601.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogESL_ATC3O.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogHIST_AT101.xml',
                     '/src/groovy/net/hedtech/banner/seeddata/Data/qa/02CatalogHIST_AT102.xml',
