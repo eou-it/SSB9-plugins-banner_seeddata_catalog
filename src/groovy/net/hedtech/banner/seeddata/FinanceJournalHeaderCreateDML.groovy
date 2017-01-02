@@ -50,13 +50,13 @@ public class FinanceJournalHeaderCreateDML {
         try {
             final String apiQuery =
                     "   BEGIN" +
-                            "  DELETE FROM FGBJVCD WHERE FGBJVCD_DOC_NUM = '" + headerData.FGBJVCD_DOC_NUM.text() + "' ;" +
+                            "  DELETE FROM FGBJVCD WHERE FGBJVCD_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
                             "  DELETE FROM FGBJVCH WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
                             "   INSERT INTO FV_FGBJVCH ( FGBJVCH_DOC_NUM, FGBJVCH_SUBMISSION_NUMBER, FGBJVCH_ACTIVITY_DATE, FGBJVCH_USER_ID, FGBJVCH_TRANS_DATE , " +
                             "	FGBJVCH_DOC_DESCRIPTION, FGBJVCH_DOC_AMT, FGBJVCH_EDIT_DEFER_IND, FGBJVCH_STATUS_IND, FGBJVCH_APPROVAL_IND, "+
                             "   FGBJVCH_DATA_ORIGIN, FGBJVCH_CREATE_SOURCE, FGBJVCH_VERSION) " +
                             "   VALUES (" +
-                            "   ?, ?, sysdate, ?, ?," +
+                            "   ?, ?, sysdate, 'FORSED21', ?," +
                             "   ?,  ?, ?, ?, ?, " +
                             "   'GRAILS','Banner', 0);" +
                             "   commit;" +
@@ -65,13 +65,12 @@ public class FinanceJournalHeaderCreateDML {
             try {
                 insertCall.setString( 1, headerData.FGBJVCH_DOC_NUM.text() )
                 insertCall.setString( 2, headerData.FGBJVCH_SUBMISSION_NUMBER.text() )
-                insertCall.setString( 3, headerData.FGBJVCH_USER_ID.text() )
-                insertCall.setString( 4, headerData.FGBJVCH_TRANS_DATE.text() )
-                insertCall.setString( 5, headerData.FGBJVCH_DOC_DESCRIPTION.text() )
-                insertCall.setString( 6, headerData.FGBJVCH_DOC_AMT.text() )
-                insertCall.setString( 7, headerData.FGBJVCH_EDIT_DEFER_IND.text() )
-                insertCall.setString( 8, headerData.FGBJVCH_STATUS_IND.text() )
-                insertCall.setString( 9, headerData.FGBJVCH_APPROVAL_IND.text() )
+                insertCall.setString( 3, headerData.FGBJVCH_TRANS_DATE.text() )
+                insertCall.setString( 4, headerData.FGBJVCH_DOC_DESCRIPTION.text() )
+                insertCall.setString( 5, headerData.FGBJVCH_DOC_AMT.text() )
+                insertCall.setString( 6, headerData.FGBJVCH_EDIT_DEFER_IND.text() )
+                insertCall.setString( 7, headerData.FGBJVCH_STATUS_IND.text() )
+                insertCall.setString( 8, headerData.FGBJVCH_APPROVAL_IND.text() )
                 insertCall.execute()
 
                 connectInfo.tableUpdate( "FV_FGBJVCH", 0, 1, 0, 0, 0 )
