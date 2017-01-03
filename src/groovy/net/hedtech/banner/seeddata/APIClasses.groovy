@@ -98,6 +98,7 @@ public class APIClasses {
             'GCBAGRP'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAISR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GUROCFG'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'FINANCEFISCAYEAR'      : 'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'           : 'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
             'UPDATEFOBPROF'         : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
@@ -136,7 +137,6 @@ public class APIClasses {
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
             'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML'
-
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -171,6 +171,7 @@ public class APIClasses {
             'GCBAGRP': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAISR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GUROCFG' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'TBBCSTU': 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS': 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN': 'net.hedtech.banner.seeddata.NbbposnDML',
