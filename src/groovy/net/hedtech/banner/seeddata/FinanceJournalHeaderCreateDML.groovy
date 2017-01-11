@@ -48,6 +48,10 @@ public class FinanceJournalHeaderCreateDML {
      */
     def createFinanceJournalHeader() {
         try {
+            final String updateToCompleted = headerData.FGBJVCH_STATUS_IND.text()=='C'?
+                    " UPDATE FGBJVCH set FGBJVCH_STATUS_IND = 'C' WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" : ""
+            final String updateToApproved =  headerData.FGBJVCH_APPROVAL_IND.text() =='Y'?
+                    " UPDATE FGBJVCH set FGBJVCH_APPROVAL_IND = 'Y' WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" : ""
             final String apiQuery =
                     "   BEGIN" +
                             "  DELETE FROM FGBJVCD WHERE FGBJVCD_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" +
@@ -57,8 +61,8 @@ public class FinanceJournalHeaderCreateDML {
                             "   FGBJVCH_DATA_ORIGIN, FGBJVCH_CREATE_SOURCE, FGBJVCH_VERSION) " +
                             "   VALUES (" +
                             "   ?, ?, sysdate, 'FORSED21', ?," +
-                            "   ?,  ?, ?, ?, ?, " +
-                            "   'GRAILS','Banner', 0);" +
+                            "   ?,  ?, ?, 'I', 'N', " +
+                            "   'GRAILS','Banner', 0);" + updateToCompleted + updateToApproved +
                             "   commit;" +
                             "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
@@ -69,8 +73,6 @@ public class FinanceJournalHeaderCreateDML {
                 insertCall.setString( 4, headerData.FGBJVCH_DOC_DESCRIPTION.text() )
                 insertCall.setString( 5, headerData.FGBJVCH_DOC_AMT.text() )
                 insertCall.setString( 6, headerData.FGBJVCH_EDIT_DEFER_IND.text() )
-                insertCall.setString( 7, headerData.FGBJVCH_STATUS_IND.text() )
-                insertCall.setString( 8, headerData.FGBJVCH_APPROVAL_IND.text() )
                 insertCall.execute()
 
                 connectInfo.tableUpdate( "FV_FGBJVCH", 0, 1, 0, 0, 0 )
