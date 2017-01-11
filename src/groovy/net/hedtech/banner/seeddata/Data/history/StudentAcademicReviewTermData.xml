@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
-<!-- Copyright 2014-2016 Ellucian Company L.P. and its affiliates. -->
+<!-- Copyright 2014-2017 Ellucian Company L.P. and its affiliates. -->
 
 <TERMDATA>
 
@@ -97,7 +97,7 @@
     <SORRTRM>
         <SORRTRM_TERM_CODE>201510</SORRTRM_TERM_CODE>
         <SORRTRM_START_DATE>01-JAN-14</SORRTRM_START_DATE>
-        <SORRTRM_END_DATE>31-DEC-16</SORRTRM_END_DATE>
+        <SORRTRM_END_DATE>31-DEC-17</SORRTRM_END_DATE>
         <SORRTRM_ACTIVITY_DATE>01-JAN-10</SORRTRM_ACTIVITY_DATE>
         <SORRTRM_SURROGATE_ID>353</SORRTRM_SURROGATE_ID>
         <SORRTRM_VERSION>2</SORRTRM_VERSION>
