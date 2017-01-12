@@ -130,7 +130,11 @@ public class APIClasses {
             'BANNERUSER'       : 'net.hedtech.banner.seeddata.BannerUserDML',
             'HRGOBEACCUSER'      : 'net.hedtech.banner.seeddata.HrGobeaccDML',
             'ORACLEUSER'      : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
-            'NTRLRAQ'          : 'net.hedtech.banner.seeddata.NtrlraqDML'
+            'NTRLRAQ'          : 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'PERJOBS_EXTRACT'  : 'net.hedtech.banner.seeddata.EmployeeTimeEntryExtractDML',
+            'PEREARN'          : 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR'          : 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO'          : 'net.hedtech.banner.seeddata.PertitoDML'
 
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -171,7 +175,10 @@ public class APIClasses {
             'NBBPOSN' : 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT' : 'net.hedtech.banner.seeddata.NbrptotDML',
             'PERJHIS' : 'net.hedtech.banner.seeddata.PerjhisDML',
-            'NTRLRAQ' : 'net.hedtech.banner.seeddata.NtrlraqDML'
+            'NTRLRAQ' : 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'PEREARN' : 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR' : 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO' : 'net.hedtech.banner.seeddata.PertitoDML'
     ]
 
 
