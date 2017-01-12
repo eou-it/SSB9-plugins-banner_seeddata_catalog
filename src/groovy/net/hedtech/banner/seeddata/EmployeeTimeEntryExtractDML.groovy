@@ -118,7 +118,7 @@ class EmployeeTimeEntryExtractDML {
         CallableStatement sqlCall
 
         if (!setupFailure) {
-            sqlCall = this.connectCall.prepareCall("{ call pektess.p_extract_time(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) }")
+            sqlCall = this.connectCall.prepareCall("{ call pekteex.p_extract_time(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) }")
 
             sqlCall.setString(1, this.perjobs_year)
             sqlCall.setString(2, this.perjobs_pict_code)
