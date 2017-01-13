@@ -100,8 +100,8 @@ public class ColumnValue {
                     } else valsql = columnValue.toString()
 
                 }
-            } else if ((columnType == "VARCHAR2") || (columnType == 'CLOB')) {
-                if ((columnType == "VARCHAR2") && ((columnValue =~ "null") || (!columnValue) || (columnValue == " "))) {
+            } else if ((columnType == "VARCHAR2") || (columnType == "CHAR") || (columnType == 'CLOB')) {
+                if (( (columnType == "VARCHAR2") || (columnType == "CHAR") ) && ((columnValue =~ "null") || (!columnValue) || (columnValue == " "))) {
                     valsql = "null"
                 } else {  // reduce to smaller size
                     String col = columnValue.toString()
@@ -111,7 +111,7 @@ public class ColumnValue {
                         col = colv
                     }
                     // replace all ' with '' so they will load
-                    if ((columnType == "VARCHAR2") && (col =~ /\'/)) {
+                    if (( (columnType == "VARCHAR2") || (columnType == "CHAR") ) && (col =~ /\'/)) {
                         def newcolval = col.replaceAll(/'/, '')
                         valsql = "'${newcolval}'"
                     } else {
