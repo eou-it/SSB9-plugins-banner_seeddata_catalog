@@ -490,6 +490,7 @@ public class InputData {
            
 			'finance-journals' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalHeader.xml' ,
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalDetail.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceText.xml',
                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToRuleClass.xml'
             ],
 
