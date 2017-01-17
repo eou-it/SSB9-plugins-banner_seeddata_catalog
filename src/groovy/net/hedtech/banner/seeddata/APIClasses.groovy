@@ -99,6 +99,7 @@ public class APIClasses {
             'GCBPBTR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAISR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GUROCFG'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRABLK'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'FINANCEFISCAYEAR'      : 'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'           : 'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
             'UPDATEFOBPROF'         : 'net.hedtech.banner.seeddata.FinanceProcurementUserProfileUpdateDML',
@@ -136,7 +137,17 @@ public class APIClasses {
             'HRGOBEACCUSER'         : 'net.hedtech.banner.seeddata.HrGobeaccDML',
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
-            'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML'
+            'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML',
+            'PTRECPD'               : 'net.hedtech.banner.seeddata.PtrecpdDML',
+            'PHRECRT'               : 'net.hedtech.banner.seeddata.PhrecrtDML',
+            'PHRECST'               : 'net.hedtech.banner.seeddata.PhrecstDML',
+            'PHRECSN'               : 'net.hedtech.banner.seeddata.PhrecsnDML',
+            'PHRECSC'               : 'net.hedtech.banner.seeddata.PhrecscDML',
+            'PHRECSI'               : 'net.hedtech.banner.seeddata.PhrecsiDML',
+            'PHRECRQ'               : 'net.hedtech.banner.seeddata.PhrecrqDML',
+            'PHRECRS'               : 'net.hedtech.banner.seeddata.PhrecrsDML',
+            'PHRECDT'               : 'net.hedtech.banner.seeddata.PhrecdtDML',
+
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -171,13 +182,23 @@ public class APIClasses {
             'GCBAGRP': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAISR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GUROCFG' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GUROCFG': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRABLK': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'TBBCSTU': 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS': 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN': 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT': 'net.hedtech.banner.seeddata.NbrptotDML',
             'PERJHIS': 'net.hedtech.banner.seeddata.PerjhisDML',
-            'NTRLRAQ': 'net.hedtech.banner.seeddata.NtrlraqDML'
+            'NTRLRAQ': 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'PTRECPD': 'net.hedtech.banner.seeddata.PtrecpdDML',
+            'PHRECRT': 'net.hedtech.banner.seeddata.PhrecrtDML',
+            'PHRECST': 'net.hedtech.banner.seeddata.PhrecstDML',
+            'PHRECSN': 'net.hedtech.banner.seeddata.PhrecsnDML',
+            'PHRECSC': 'net.hedtech.banner.seeddata.PhrecscDML',
+            'PHRECSI': 'net.hedtech.banner.seeddata.PhrecsiDML',
+            'PHRECRQ': 'net.hedtech.banner.seeddata.PhrecrqDML',
+            'PHRECRS': 'net.hedtech.banner.seeddata.PhrecrsDML',
+            'PHRECDT': 'net.hedtech.banner.seeddata.PhrecdtDML',
     ]
 
 
