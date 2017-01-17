@@ -15,7 +15,7 @@ import java.sql.RowId
 public class FinanceFavoriteBudgetQueryProtoTypesDML {
 
 
-    def fobprtoName, fobprtoType, spridenId, fobprtoViewby
+    def fobprtoName, fobprtoType, spridenId, fobprtoViewby, parentPidm
 
     def InputData connectInfo
     Sql conn
@@ -47,6 +47,7 @@ public class FinanceFavoriteBudgetQueryProtoTypesDML {
         this.fobprtoType = favoriteQueryPrototypeXMLData.FORPRTF_TYPE.text()
         this.spridenId = favoriteQueryPrototypeXMLData.FORPRTF_SPRIDEN_ID.text()
         this.fobprtoViewby = favoriteQueryPrototypeXMLData.FORPRTF_VIEWBY.text()
+        this.parentPidm = favoriteQueryPrototypeXMLData.FOBPRTO_SPRIDEN_ID.text()
     }
 
     /**
@@ -57,9 +58,16 @@ public class FinanceFavoriteBudgetQueryProtoTypesDML {
             final String apiQuery =
                     "DECLARE\n" +
                             "  pidm SPRIDEN.SPRIDEN_PIDM%type;\n" +
+                            "  parentPidm SPRIDEN.SPRIDEN_PIDM%type;\n" +
                             "BEGIN\n" +
                             "BEGIN\n" +
                             "SELECT SPRIDEN_PIDM INTO pidm FROM SPRIDEN WHERE SPRIDEN_ID= ?;\n" +
+                            "EXCEPTION\n" +
+                            "\t\t\tWHEN NO_DATA_FOUND THEN\n" +
+                            "\t\t\tNULL;\n" +
+                            "END;\n" +
+                            "BEGIN\n" +
+                            "SELECT SPRIDEN_PIDM INTO parentPidm FROM SPRIDEN WHERE SPRIDEN_ID= ?;\n" +
                             "EXCEPTION\n" +
                             "\t\t\tWHEN NO_DATA_FOUND THEN\n" +
                             "\t\t\tNULL;\n" +
@@ -73,18 +81,19 @@ public class FinanceFavoriteBudgetQueryProtoTypesDML {
                             "\t\t\tFORPRTF_PIDM, \n" +
                             "\t\t\tFORPRTF_ACTIVITY_DATE,\n" +
                             "\t\t\tFORPRTF_USER_ID,\n" +
-                            "\t\t\tFORPRTF_DATA_ORIGIN)\n" +                            
-                            "\t\t\tVALUES (?, ?, ?, pidm, pidm, sysdate, 'GRAILS', 'GRAILS');\n" +
+                            "\t\t\tFORPRTF_DATA_ORIGIN)\n" +
+                            "\t\t\tVALUES (?, ?, ?, parentPidm, pidm, sysdate, 'GRAILS', 'GRAILS');\n" +
                             "  COMMIT;\n" +
                             "END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
 
             insertCall.setString( 1, this.spridenId )
-            insertCall.setString( 2, this.fobprtoName )
-            insertCall.setString( 3, this.fobprtoType )
-            insertCall.setString( 4, this.fobprtoName )
-            insertCall.setString( 5, this.fobprtoType )
-			insertCall.setString( 6, this.fobprtoViewby )
+            insertCall.setString( 2, this.parentPidm )
+            insertCall.setString( 3, this.fobprtoName )
+            insertCall.setString( 4, this.fobprtoType )
+            insertCall.setString( 5, this.fobprtoName )
+            insertCall.setString( 6, this.fobprtoType )
+            insertCall.setString( 7, this.fobprtoViewby )
             insertCall.execute()
             connectInfo.tableUpdate( "BUDGET_AVAILABILITY_FAVORITE_QUERY_PROTOTYPE", 0, 1, 0, 0, 0 )
 
