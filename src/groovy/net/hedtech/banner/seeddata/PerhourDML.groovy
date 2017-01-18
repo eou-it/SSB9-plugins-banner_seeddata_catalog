@@ -36,24 +36,7 @@ class PerhourDML {
 
     def processPerhour() {
         def apiData = new XmlParser().parseText(xmlData)
-
-        def pidm
-        def selectPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
-        try {
-            this.conn.eachRow(selectPidm, [apiData.BANNERID.text()]) { trow ->
-                pidm = trow.spriden_pidm
-                connectInfo.savePidm = pidm
-            }
-        } catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Pidm in PerhourDML for Banner ID ${apiData.BANNERID.text()} from SPRIDEN. $e.message"
-            }
-        }
-
-        def jobsSeqno
-        if (pidm) {
-            jobsSeqno = findJobsSeqno(apiData, pidm)
-        }
+        def jobsSeqno = findJobsSeqno(apiData)
 
         if (jobsSeqno) {
             // parse the xml  back into  gstring for the dynamic sql loader
@@ -74,14 +57,14 @@ class PerhourDML {
         }
     }
 
-    def findJobsSeqno(apiData, pidm) {
+    def findJobsSeqno(apiData) {
         def jobsSeqno
         def selectJobSeqno = """select * from perjobs
                                  where perjobs_year = ?
                                    and perjobs_pict_code = ?
                                    and perjobs_payno = ?
                                    and perjobs_action_ind = ?
-                                   and perjobs_pidm = ?
+                                   and perjobs_pidm = (select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null)
                                    and perjobs_posn = ?
                                    and perjobs_suff = ?
                                    and NVL(perjobs_coas_code_ts, '*') = NVL(?, '*')
@@ -91,7 +74,7 @@ class PerhourDML {
                                                apiData.PICT_CODE.text(),
                                                apiData.PAYNO.text(),
                                                apiData.ACTION_IND.text(),
-                                               pidm,
+                                               apiData.BANNERID.text(),
                                                apiData.POSN.text(),
                                                apiData.SUFF.text(),
                                                apiData.COAS_CODE_TS.text(),
