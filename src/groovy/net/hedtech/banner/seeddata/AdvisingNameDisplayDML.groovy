@@ -62,14 +62,6 @@ public class AdvisingNameDisplayDML {
             }
         }
 
-        //
-
-        // update the curr rule with the one that is selected
-        if (connectInfo.tableName == "GURNDSP") {
-
-           println apiData.GURNDSP_USAGE?.text()
-        }
-
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() { fields ->
@@ -86,9 +78,12 @@ public class AdvisingNameDisplayDML {
         }
     }
 
+/*
     def deleteData() {
+
         deleteData("GURNHIR", "delete from GURNHIR where GURNHIR_SURROGATE_ID ? ")
         deleteData("GURNDSP", "delete from GURNDSP where GURNDSP_SURROGATE_ID ? ")
+
     }
 
     def deleteData(String tableName, String sql) {
@@ -104,105 +99,6 @@ public class AdvisingNameDisplayDML {
                 println "${sql}"
             }
         }
-    }
-
-    /*
-
-    def getNameDisplayId(String actionItemName) {
-        String asql = """select * from GURNDSP where GCBACTM_NAME = ? """
-        int aId
-        def aRow
-        try {
-            aRow = this.conn.firstRow(asql, [actionItemName])
-            if (aRow) {
-                aId = aRow?.GCBACTM_SURROGATE_ID
-            } else aId = 0
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Action Item ID in GeneralActionItemDML, from GCBACTM for ${connectInfo.tableName}. $e.message"
-            }
-        }
-        return aId
-    }
-    */
-
-    /*
-    def getFolderId(String folderName) {
-        String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
-        int fId
-        def fRow
-
-
-        try {
-            fRow = this.conn.firstRow(fsql, [folderName])
-            if (fRow) {
-                fId = fRow?.GCRFLDR_SURROGATE_ID
-            } else fId = 0
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Folder ID in GeneralActionItemDML, from GCRFLDR for ${connectInfo.tableName}. $e.message"
-            }
-        }
-        return fId
-    }
-
-
-    def getActionItemId(String actionItemName) {
-        String asql = """select * from GCBACTM where GCBACTM_NAME = ? """
-        int aId
-        def aRow
-        try {
-            aRow = this.conn.firstRow(asql, [actionItemName])
-            if (aRow) {
-                aId = aRow?.GCBACTM_SURROGATE_ID
-            } else aId = 0
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Action Item ID in GeneralActionItemDML, from GCBACTM for ${connectInfo.tableName}. $e.message"
-            }
-        }
-        return aId
-    }
-
-    def getTemplateId(String templateName) {
-        String tsql = """select * from GCBPBTR where GCBPBTR_TEMPLATE_NAME= ? """
-        int tId
-        def tRow
-
-        try {
-            tRow = this.conn.firstRow(tsql, [templateName])
-            if (tRow) {
-                tId = tRow?.GCBPBTR_SURROGATE_ID
-            } else tId = 0
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Template ID in GeneralActionItemDML, from GCBPBTR for ${connectInfo.tableName}. $e.message"
-            }
-        }
-        return tId
-    }
-
-    def getStatusId(String statusName) {
-        String ssql = """select * from GCVASTS where GCVASTS_ACTION_ITEM_STATUS= ? """
-        int sId
-        def sRow
-
-        try {
-            sRow = this.conn.firstRow(ssql, [statusName])
-            if (sRow) {
-                sId = sRow?.GCVASTS_SURROGATE_ID
-            } else sId = 0
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Status ID in GeneralActionItemDML, from GCVASTS for ${connectInfo.tableName}. $e.message"
-            }
-        }
-        return sId
     }
     */
 
