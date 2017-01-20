@@ -272,7 +272,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorHolds.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorAdviseeGradeSeed_201410.xml'],
             'ssbadvisorndsp': ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorPersonNameDisplay.xml',
-                               '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorCurriculumNameDisplay.xml',
                                '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorHierarchyNameDisplay.xml'],
             'aip'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
