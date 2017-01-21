@@ -49,7 +49,7 @@ public class PtrecpdDML {
 
     def processPtrecpd(){
         def apiData = new XmlParser().parseText(xmlData)
-        def isValid = false
+        def isValid = true
 
 
         componentId = fetchPtrecpdId(apiData.PTRECPD_COAS_CODE[0]?.value()[0] , apiData.PTRECPD_ECPD_CODE[0]?.value()[0])
