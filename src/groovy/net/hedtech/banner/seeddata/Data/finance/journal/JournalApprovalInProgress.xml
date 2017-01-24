@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<REQUISITION_APPROVAL_IN_PROGRESS>
+    <FOBAINP>
+        <FOBAINP_SUBMISSION_NUM></FOBAINP_SUBMISSION_NUM>
+        <FOBAINP_DOC_TYPE>1</FOBAINP_DOC_TYPE>
+        <FOBAINP_CHG_SEQ_NUM></FOBAINP_CHG_SEQ_NUM>
+        <FOBAINP_LEVEL>1</FOBAINP_LEVEL>
+        <FOBAINP_APPROVAL_SEQUENCE>1</FOBAINP_APPROVAL_SEQUENCE>
+        <FOBAINP_DATA_ORIGIN>GRAILS</FOBAINP_DATA_ORIGIN>
+        <FOBAINP_USER_ID>FORSED21</FOBAINP_USER_ID>
+        <FOBAINP_QUEUE_ID>JV</FOBAINP_QUEUE_ID>
+        <FOBAINP_DOC_NUM>JVTEST04</FOBAINP_DOC_NUM>
+    </FOBAINP>
+</REQUISITION_APPROVAL_IN_PROGRESS>
+
