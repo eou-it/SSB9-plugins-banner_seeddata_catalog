@@ -510,13 +510,13 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/DocumentApprovalQueueDefinition.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantHeader.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/DirectCashReceiptHeader.xml',
-                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantLedger.xml'],
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantLedger.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityViewPendingDocumentsHistory.xml'],
             'registration-student-attribute'   : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml']
     ]
-
     /**
      *  Map of selenium targets
      *  Some of these do not need to appear in the targets because they are for specific actions required for selenium
