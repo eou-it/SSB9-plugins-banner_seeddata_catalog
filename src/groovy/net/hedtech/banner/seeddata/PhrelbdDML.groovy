@@ -81,7 +81,7 @@ public class PhrelbdDML {
     }
 
 
-    private def fetchPhrelbdId(String coasCode, String ecpdCode){
+    private def fetchPhrelbdId(List parmList){
         def id = null
 
         //
@@ -90,7 +90,7 @@ public class PhrelbdDML {
                                                          AND PHRELBD_PAYNO = ? AND PHRELBD_ORGN_CODE_TS = ? AND PHRELBD_TS_ROSTER_IND = ?
                                                          AND PHRELBD_PIDM = ? AND PHRELBD_SEQ_NO = ? AND PHRELBD_POSN = ? AND PHRELBD_SUFF = ?
                                                          AND PHRELBD_EARN_CODE = ? AND PHRELBD_SHIFT = ? AND PHRELBD_GEN_IND = ? """,
-                    [coasCode,ecpdCode])?.ID
+                    parmList)?.ID
         }
         catch (Exception e) {
             if (connectInfo.showErrors) println("Error while checking for existing PHRELBD ID in PhrelbdDML for ${connectInfo.tableName}. $e.message")
