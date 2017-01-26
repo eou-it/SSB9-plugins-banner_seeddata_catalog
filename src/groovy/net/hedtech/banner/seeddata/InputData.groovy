@@ -145,7 +145,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
-                    // Employee Information
+
+                         // Employee Information
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveByJobData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
@@ -158,7 +159,9 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobAssignmentDetailData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobEarningsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrjlbdData.xml',
-                    // Employee History
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrbjobData.xml',
+
+                         // Employee History
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PeretotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjtotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdhisData.xml',
@@ -180,11 +183,17 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml',
-                    //ERLR
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtveccgData.xml',
+
+                         //ERLR
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrlraqData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecrcData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecpdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecpdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecpcData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecerData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecprData.xml',
+
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecrtData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecstData.xml' ,
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecsnData.xml' ,
