@@ -86,7 +86,7 @@ public class PhrelbdDML {
 
         //
         try {
-            id = this.conn.firstRow("""SELECT PHRELBD_ID AS ID FROM PHRELBD WHERE where PHRELBD_YEAR = ? AND PHRELBD_PICT_CODE = ?
+            id = this.conn.firstRow("""SELECT PHRELBD_ID AS ID FROM PHRELBD WHERE  PHRELBD_YEAR = ? AND PHRELBD_PICT_CODE = ?
                                                          AND PHRELBD_PAYNO = ? AND PHRELBD_ORGN_CODE_TS = ? AND PHRELBD_TS_ROSTER_IND = ?
                                                          AND PHRELBD_PIDM = ? AND PHRELBD_SEQ_NO = ? AND PHRELBD_POSN = ? AND PHRELBD_SUFF = ?
                                                          AND PHRELBD_EARN_CODE = ? AND PHRELBD_SHIFT = ? AND PHRELBD_GEN_IND = ? """,
