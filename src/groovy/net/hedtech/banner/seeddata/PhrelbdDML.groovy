@@ -51,9 +51,9 @@ public class PhrelbdDML {
         def isValid = true
 
         if (!(apiData.PHRELBD_ID[0]?.value()[0])) {
-            List parmList = [apiData.PHRELBD_YEAR[0]?.value()[0], apiData.PHRELBD_PICT_CODE[0]?.value()[0],
+            List paramList = [apiData.PHRELBD_YEAR[0]?.value()[0], apiData.PHRELBD_PICT_CODE[0]?.value()[0],
                              apiData.PHRELBD_PAYNO[0]?.value()[0], apiData.PHRELBD_ORGN_CODE_TS[0]?.value()[0],
-                             apiData.PHRELBD_TS_ROSTER_IND[0]?.value()[0], fetchEmployeePidm([apiData.BANNERID?.value()[0]]),
+                             apiData.PHRELBD_TS_ROSTER_IND[0]?.value()[0], fetchEmployeePidm([apiData.BANNERID[0]?.value()[0]]),
                              apiData.PHRELBD_SEQ_NO[0]?.value()[0], apiData.PHRELBD_POSN[0]?.value()[0],
                              apiData.PHRELBD_SUFF[0]?.value()[0], apiData.PHRELBD_EARN_CODE[0]?.value()[0],
                              apiData.PHRELBD_SHIFT[0]?.value()[0], apiData.PHRELBD_GEN_IND[0]?.value()[0]]
