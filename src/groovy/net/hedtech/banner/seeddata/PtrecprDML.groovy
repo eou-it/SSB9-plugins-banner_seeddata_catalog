@@ -61,7 +61,7 @@ public class PtrecprDML {
             apiData.PTRECPR_PTRECPD_ID[0].setValue(componentId?.toString())
             ptrecprId = fetchPtrecprId([componentId,apiData.PTRECPR_PICT_CODE[0]?.value()[0],
                                         apiData.PTRECPR_START_YEAR[0]?.value()[0],
-                                        apiData.START_PAYNO[0]?.value()[0]])
+                                        apiData.PTRECPR_START_PAYNO[0]?.value()[0]])
             apiData.PTRECPR_ID[0].setValue(ptrecprId?.toString())
 
             isValid = true
