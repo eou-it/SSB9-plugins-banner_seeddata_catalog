@@ -23,7 +23,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
 
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>BBATES</BANNERUSER_ORACLE_ID>
+        <BANNERUSER_ORACLE_ID>HOPADM03</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
@@ -46,15 +46,15 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>MFISHER</BANNERUSER_ORACLE_ID>
+        <BANNERUSER_ORACLE_ID>HOPADM02</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>KIJOHNSO</BANNERUSER_ORACLE_ID>
+        <BANNERUSER_ORACLE_ID>HOPADM01</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR> <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>PLEICHLI</BANNERUSER_ORACLE_ID>
+        <BANNERUSER_ORACLE_ID>HOPADM04</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
 
 

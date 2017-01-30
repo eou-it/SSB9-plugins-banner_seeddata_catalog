@@ -121,6 +121,7 @@ public class APIClasses {
             'PURCHASE_ORDER'        : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityCreatePurchaseOrderDML',
             'BA_QUERY_PROTOTYPE'    : 'net.hedtech.banner.seeddata.FinanceBudgetQueryProtoTypesDML',
             'BA_FAV_QUERY_PROTOTYPE': 'net.hedtech.banner.seeddata.FinanceFavoriteBudgetQueryProtoTypesDML',
+            'BA_VIEW_PENDING_DOCS'  : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityViewPendingDocumentsHistoryDML',
             'BA_FORCOMP'            : 'net.hedtech.banner.seeddata.FinanceBudgetComputedColumnsDML',
             'TBBCSTU'               : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PEBEMPL'               : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
@@ -139,6 +140,7 @@ public class APIClasses {
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
             'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML',
+            'PHRELBD'               : 'net.hedtech.banner.seeddata.PhrelbdDML',
             'PTRECPD'               : 'net.hedtech.banner.seeddata.PtrecpdDML',
             'PHRECRT'               : 'net.hedtech.banner.seeddata.PhrecrtDML',
             'PHRECST'               : 'net.hedtech.banner.seeddata.PhrecstDML',
@@ -148,8 +150,12 @@ public class APIClasses {
             'PHRECRQ'               : 'net.hedtech.banner.seeddata.PhrecrqDML',
             'PHRECRS'               : 'net.hedtech.banner.seeddata.PhrecrsDML',
             'PHRECDT'               : 'net.hedtech.banner.seeddata.PhrecdtDML',
-
+            'PTRECER'               : 'net.hedtech.banner.seeddata.PtrecerDML',
+            'PTRECPC'               : 'net.hedtech.banner.seeddata.PtrecpcDML',
+            'PTRECPR'               : 'net.hedtech.banner.seeddata.PtrecprDML',
     ]
+
+
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
             'SOBCURR': 'net.hedtech.banner.seeddata.SoacurrDML',
@@ -192,6 +198,7 @@ public class APIClasses {
             'NBRPTOT': 'net.hedtech.banner.seeddata.NbrptotDML',
             'PERJHIS': 'net.hedtech.banner.seeddata.PerjhisDML',
             'NTRLRAQ': 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'PHRELBD': 'net.hedtech.banner.seeddata.PhrelbdDML',
             'PTRECPD': 'net.hedtech.banner.seeddata.PtrecpdDML',
             'PHRECRT': 'net.hedtech.banner.seeddata.PhrecrtDML',
             'PHRECST': 'net.hedtech.banner.seeddata.PhrecstDML',
@@ -201,6 +208,9 @@ public class APIClasses {
             'PHRECRQ': 'net.hedtech.banner.seeddata.PhrecrqDML',
             'PHRECRS': 'net.hedtech.banner.seeddata.PhrecrsDML',
             'PHRECDT': 'net.hedtech.banner.seeddata.PhrecdtDML',
+            'PTRECER': 'net.hedtech.banner.seeddata.PtrecerDML',
+            'PTRECPC': 'net.hedtech.banner.seeddata.PtrecpcDML',
+            'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
     ]
 
 
