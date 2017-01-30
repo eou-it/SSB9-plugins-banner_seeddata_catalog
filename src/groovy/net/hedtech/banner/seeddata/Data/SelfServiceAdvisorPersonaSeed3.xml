@@ -29,7 +29,7 @@ Copyright 2013-2016 Ellucian Company L.P. and its affiliates.
         <SPRIDEN_SURROGATE_ID/>
         <SPRIDEN_VERSION/>
         <SPRIDEN_USER_ID/>
-    </FACULTY_SPRIDEN>
+    </FACULTY_SPRIDE
     <FACULTY_SPRIDEN>
         <BANNERID>ADVAFSU03</BANNERID>
         <SPRIDEN_PIDM>59103</SPRIDEN_PIDM>
@@ -65892,7 +65892,6 @@ Copyright 2013-2016 Ellucian Company L.P. and its affiliates.
 <GOBTPAC_DATA_ORIGIN>Banner</GOBTPAC_DATA_ORIGIN>
 <GOBTPAC_SALT>NP8EFWV2</GOBTPAC_SALT>
 </GOBTPAC_RECORD>
-
     <STUDENT_SPRIDEN>
         <BANNERID>HOSYS0001</BANNERID>
         <SPRIDEN_ID>HOSYS0001</SPRIDEN_ID>
@@ -65968,5 +65967,4 @@ Copyright 2013-2016 Ellucian Company L.P. and its affiliates.
         <SPBPERS_VERSION/>
         <SPBPERS_VPDI_CODE/>
     </SPBPERS>
-   
 </dataroot>
