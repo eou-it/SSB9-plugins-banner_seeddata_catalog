@@ -286,6 +286,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceAdvisorSecuritySeed2.xml'],
             'aip'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml'],
             'registration-general'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
