@@ -126,11 +126,21 @@ public class FinanceBudgetAvailabilityCreateBudgetJournalVoucherDML {
                             "      SELECT COUNT(1)\n" +
                             "      INTO exit_no\n" +
                             "      FROM FGBJVCH\n" +
-                            "      WHERE fgbjvch_doc_num LIKE '%'\n" +
+                            "      WHERE FGBJVCH_DOC_NUM LIKE '%'\n" +
                             "        ||JV_DOC_NUM\n" +
                             "        ||'%'\n" +
                             "      AND FGBJVCH_SUBMISSION_NUMBER =0;\n" +
-                            "      IF EXIT_NO                    > 0 THEN        \n" +
+                            "      IF EXIT_NO  > 0 THEN        \n" +
+                            "        RETURN;\n" +
+                            "      END IF;\n" +
+                            "      SELECT COUNT(1)\n" +
+                            "      INTO exit_no\n" +
+                            "      FROM FGBTRNH\n" +
+                            "      WHERE FGBTRNH_DOC_CODE LIKE '%'\n" +
+                            "        ||JV_DOC_NUM\n" +
+                            "        ||'%'\n" +
+                            "      AND FGBTRNH_SUBMISSION_NUMBER =0;\n" +
+                            "      IF EXIT_NO  > 0 THEN        \n" +
                             "        RETURN;\n" +
                             "      END IF;\n" +
                             "    EXCEPTION\n" +

@@ -591,12 +591,19 @@ public class EmployeePersonIDDML {
                 deleteData("PABREQU","delete from pabrequ where pabrequ_appr_pidm = ?")
                 deleteData("PABAPPL","delete from pabappl where pabappl_pidm = ?")
              // Employee
+
                 deleteData("PHRECRQ","delete from phrecrq where phrecrq_member_pidm = ?")
                 deleteData("PHRECRQ","delete from phrecrq where phrecrq_user_pidm = ?")
+                deleteData("PHRECRQ","delete from phrecrq where phrecrq_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+
                 deleteData("PHRECDT","delete from phrecdt where phrecdt_pidm = ?")
+                deleteData("PHRECDT","delete from phrecdt where  phrecdt_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+
 
                 deleteData("PHRECST","delete from phrecst where phrecst_acting_employee_pidm = ?")
                 deleteData("PHRECST","delete from phrecst where phrecst_acting_employee_pidm = ?")
+                deleteData("PHRECST","delete from phrecst where phrecst_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+
                 deleteData("PHRECSI","""delete from phrecsi where phrecsi_phrecsn_id in (select phrecsn_id from phrecsn where
                                             phrecsn_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?))""")
 
@@ -609,8 +616,14 @@ public class EmployeePersonIDDML {
                 deleteData("PHRECSN","""delete from phrecsn where
                                             phrecsn_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?)""")
 
+
                 deleteData("PHRECST","delete from phrecst where phrecst_acting_employee_pidm = ?")
+                deleteData("PHRECST","delete from phrecst where phrecst_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?)")
+
                 deleteData("PHRECRS","delete from phrecrs where phrecrs_acting_employee_pidm = ?")
+                deleteData("PHRECRS","delete from phrecrs where phrecrs_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?)")
+
+
                 deleteData("PHRECRT","delete from phrecrt where phrecrt_pidm = ?")
                 deleteData("PEBEMPL","delete from pebempl where pebempl_pidm = ?")
 
@@ -638,10 +651,18 @@ public class EmployeePersonIDDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Problem executing delete for person ${connectInfo.saveStudentPidm} from StudentPersonIDDML.groovy: $e.message"
+                println "Problem executing delete for person ${connectInfo.saveStudentPidm} from EmployeePersonIDDML.groovy: $e.message"
                 println "${sql}"
             }
         }
+    }
+
+
+
+    def countQuery(String sql)
+    {
+        def countRows = conn.firstRow(sql, [connectInfo.saveStudentPidm.toInteger()])
+
     }
 
 }

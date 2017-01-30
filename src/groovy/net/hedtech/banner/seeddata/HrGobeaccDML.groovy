@@ -23,6 +23,7 @@ class HrGobeaccDML {
         this.xmlData = xmlData
 
         deleteHrGobeacc()
+        deleteDuplicateGobeacc()
     }
     def deleteHrGobeacc() {
 
@@ -39,4 +40,23 @@ class HrGobeaccDML {
             }
         }
     }
+
+    def deleteDuplicateGobeacc() {
+
+        def apiData = new XmlParser().parseText( xmlData )
+        def gobeaccDel = """delete from GOBEACC where SPKLIBS.F_GET_SPRIDEN_ID(GOBEACC_PIDM) || '-' || GOBEACC_USERNAME in ('HOPADM005-BBATES',    'HOPADM003-HRUSER01',
+                                        'HOPADM001-KIJOHNSO',    'HOPADM002-MFISHER',    'HOPADM004-PLEICHLI')  """
+        try {
+
+            int delRows = conn.executeUpdate(gobeaccDel)
+            connectInfo.tableUpdate("GOBEACC", 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "${gobeaccDel}"
+            }
+        }
+    }
+
+
 }

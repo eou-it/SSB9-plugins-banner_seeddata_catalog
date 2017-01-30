@@ -145,7 +145,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
-                    // Employee Information
+
+                         // Employee Information
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveByJobData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceEmployees.xml',
@@ -158,7 +159,9 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobAssignmentDetailData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobEarningsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrjlbdData.xml',
-                    // Employee History
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrbjobData.xml',
+
+                         // Employee History
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PeretotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjtotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdhisData.xml',
@@ -180,11 +183,17 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerjlevData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml',
-                    //ERLR
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtveccgData.xml',
+
+                         //ERLR
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrlraqData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecrcData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecpdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecpdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecpcData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecerData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecprData.xml',
+
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecrtData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecstData.xml' ,
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecsnData.xml' ,
@@ -425,9 +434,6 @@ public class InputData {
             'api-general-student'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiGeneralStudentData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentPriorEducationData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApiStudentRegistrationHistoryData.xml'],
-            'direct-deposit'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositUsers.xml',
-                                                  'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml',
-                                                  'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml'],
             'general-ledger'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedger.xml'],
             'general-ledger-clean'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralLedgerClean.xml'],
             'fiscal-period-year'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/FiscalPeriodAndYear.xml'],
@@ -448,6 +454,11 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/general/NonPersonData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/general/GoradrlData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/general/GtvzipcData.xml'],
+            'gender-pronoun'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/GtvgndrData.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/GtvpprnData.xml'],
+            'direct-deposit'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositUsers.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml'],
             'personal-info'                    : ['src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoGtvsdaxData.xml'],
             'general-common'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/GorvisaData.xml',
@@ -510,13 +521,13 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/DocumentApprovalQueueDefinition.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantHeader.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/DirectCashReceiptHeader.xml',
-                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantLedger.xml'],
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantLedger.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityViewPendingDocumentsHistory.xml'],
             'registration-student-attribute'   : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml']
     ]
-
     /**
      *  Map of selenium targets
      *  Some of these do not need to appear in the targets because they are for specific actions required for selenium
