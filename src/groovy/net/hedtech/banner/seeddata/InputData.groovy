@@ -462,7 +462,7 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositValidationData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositData.xml'],
             'personal-info'                    : ['src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoData.xml',
-                                                  'src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoGtvsdaxData.xml'],
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/PersonalInfoDirectoryProfileData.xml'],
             'general-common'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/GorvisaData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/SqlProcessData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/GeneralGtvsdaxData.xml',
