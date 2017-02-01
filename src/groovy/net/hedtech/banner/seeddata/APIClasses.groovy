@@ -135,7 +135,8 @@ public class APIClasses {
             'PEREARN'          : 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR'          : 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO'          : 'net.hedtech.banner.seeddata.PertitoDML',
-            'NBRRJQE'          : 'net.hedtech.banner.seeddata.NbrrjqeDML'
+            'NBRRJQE'          : 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST'          : 'net.hedtech.banner.seeddata.NtrinstDML'
 
     ]
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -180,7 +181,8 @@ public class APIClasses {
             'PEREARN' : 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR' : 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO' : 'net.hedtech.banner.seeddata.PertitoDML',
-            'NBRRJQE' : 'net.hedtech.banner.seeddata.NbrrjqeDML'
+            'NBRRJQE' : 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST' : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
 
 
