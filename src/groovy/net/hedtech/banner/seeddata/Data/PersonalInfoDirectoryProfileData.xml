@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PERSONALINFODATA>
+    <GORDPRF>
+        <GORDPRF_PIDM>30158</GORDPRF_PIDM>
+        <GORDPRF_DIRO_CODE>NAME</GORDPRF_DIRO_CODE>
+        <GORDPRF_DISP_DIRECTORY_IND>Y</GORDPRF_DISP_DIRECTORY_IND>
+        <GORDPRF_USER_ID>IAS_PUBLIC</GORDPRF_USER_ID>
+        <GORDPRF_ACTIVITY_DATE>02-MAY-06</GORDPRF_ACTIVITY_DATE>
+        <GORDPRF_SURROGATE_ID>8</GORDPRF_SURROGATE_ID>
+        <GORDPRF_VERSION>0</GORDPRF_VERSION>
+    </GORDPRF>
+</PERSONALINFODATA>
