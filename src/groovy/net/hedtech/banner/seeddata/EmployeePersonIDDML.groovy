@@ -590,7 +590,7 @@ public class EmployeePersonIDDML {
                 deleteData("PARAPIN","delete from parapin where parapin_pidm = ?")
                 deleteData("PABREQU","delete from pabrequ where pabrequ_appr_pidm = ?")
                 deleteData("PABAPPL","delete from pabappl where pabappl_pidm = ?")
-             // Employee
+             // Employee Effort Reports
 
                 deleteData("PHRECRQ","delete from phrecrq where phrecrq_member_pidm = ?")
                 deleteData("PHRECRQ","delete from phrecrq where phrecrq_user_pidm = ?")
@@ -598,6 +598,7 @@ public class EmployeePersonIDDML {
 
                 deleteData("PHRECDT","delete from phrecdt where phrecdt_pidm = ?")
                 deleteData("PHRECDT","delete from phrecdt where  phrecdt_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+                deleteData("PHRECFD","delete from phrecfd where  phrecfd_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
 
 
                 deleteData("PHRECST","delete from phrecst where phrecst_acting_employee_pidm = ?")
