@@ -90,7 +90,9 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALLocation.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrant.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrantPersonnel.xml',
-                      // Position Control Rules
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrantEffort.xml',
+
+                         // Position Control Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsgrpData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalbData.xml',
@@ -184,6 +186,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtveccgData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvecgrData.xml',
+
 
                          //ERLR
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrlraqData.xml',
