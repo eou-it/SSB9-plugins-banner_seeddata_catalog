@@ -58,15 +58,15 @@ public class InputData {
     // map of run time targets to specify file names
     def targets = [
             'seed-cleanup': ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
+                             '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
+                             '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
             'catalog': ['/src/groovy/net/hedtech/banner/seeddata/Data/genpersonValidationXML.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogValidationSeed.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogValidationSeed.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
             'curriculumdefault' : ['/src/groovy/net/hedtech/banner/seeddata/Data/SobctrlDefaultData.xml'],
             'employee': ['/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
@@ -77,7 +77,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmclData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmskData.xml',
-                       // Finance data
+                         // Finance data
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfsyrData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfspdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobudData.xml',
@@ -99,7 +99,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalaData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrinstData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrfiniData.xml',
-                      // Payroll Rules and Validation
+                         // Payroll Rules and Validation
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml',
@@ -128,7 +128,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvprData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrwstbData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml',
-                    // Benefits and Deductions Rules
+                         // Benefits and Deductions Rules
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/Ptv1099Data.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtvbdtyData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdclData.xml',
@@ -141,7 +141,7 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxdData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdxeData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/benefits/PtrbdldData.xml',
-                    // Position class and Posn budget
+                         // Position class and Posn budget
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
@@ -532,7 +532,8 @@ public class InputData {
             'registration-student-attribute'   : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
-            'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml']
+            'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
+            'financial-aid-fund-classification'                                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/FundClassifications.xml']
     ]
     /**
      *  Map of selenium targets
@@ -664,7 +665,8 @@ public class InputData {
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
-            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
+            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
+            'financial-aid-fund-classification'                                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/FundClassifications.xml']
     ]
 
     def calbTargets = [
@@ -838,11 +840,11 @@ public class InputData {
         def tableCnt = 0
         tableCnts.each {tab ->
             println "Total for Table: ${tab.tableName} " +
-                            " \tRead: ${tab.readCnt.toString().padLeft( 4, ' ' )} " +
-                            " \tInsert: ${tab.insertCnt.toString().padLeft( 4, ' ' )} " +
-                            " \tUpdate: ${tab.updateCnt.toString().padLeft( 4, ' ' )} " +
-                            " \tDeletes: ${tab.deleteCnt.toString().padLeft( 4, ' ' )} " +
-                            " \tErrors: ${tab.errorCnt.toString().padLeft( 4, ' ' )} "
+                    " \tRead: ${tab.readCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tInsert: ${tab.insertCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tUpdate: ${tab.updateCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tDeletes: ${tab.deleteCnt.toString().padLeft( 4, ' ' )} " +
+                    " \tErrors: ${tab.errorCnt.toString().padLeft( 4, ' ' )} "
 
             tableCnt++
             readTot += tab.readCnt
@@ -853,11 +855,11 @@ public class InputData {
         }
 
         println "\nTotal Tables: ${tableCnt.toString().padLeft( 4, ' ' )} " +
-                        " \t\tRead: ${readTot.toString().padLeft( 4, ' ' )} " +
-                        " \tInsert: ${insertTot.toString().padLeft( 4, ' ' )} " +
-                        " \tUpdate: ${updateTot.toString().padLeft( 4, ' ' )} " +
-                        " \tDeletes: ${deleteTot.toString().padLeft( 4, ' ' )} " +
-                        " \tErrors: ${errorTot.toString().padLeft( 4, ' ' )} "
+                " \t\tRead: ${readTot.toString().padLeft( 4, ' ' )} " +
+                " \tInsert: ${insertTot.toString().padLeft( 4, ' ' )} " +
+                " \tUpdate: ${updateTot.toString().padLeft( 4, ' ' )} " +
+                " \tDeletes: ${deleteTot.toString().padLeft( 4, ' ' )} " +
+                " \tErrors: ${errorTot.toString().padLeft( 4, ' ' )} "
     }
 
 
@@ -878,9 +880,9 @@ public class InputData {
         def config = slurper.parse( configFile.toURI().toURL() )
         def url = config.get( "bannerDataSource" ).url
         def db = Sql.newInstance( url,   //  db =  new Sql( connectInfo.url,
-                                  "saturn",
-                                  "u_pick_it",
-                                  'oracle.jdbc.driver.OracleDriver' )
+                "saturn",
+                "u_pick_it",
+                'oracle.jdbc.driver.OracleDriver' )
 
         def rows = db.rows( """SELECT Pnd_Index_Name name, count(*) cnt,
                                      max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
