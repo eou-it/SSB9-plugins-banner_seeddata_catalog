@@ -132,6 +132,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
            Day: 1/2/2017
               Hours: REG, shift 1, special rate 0.0
                  Time in/outs: shift 1, special rate 0.0, 0800-1200, no adjusted time
+           Day: 1/4/2017
+              Hours: REG, shift 1, special rate 0.0
+                 Time in/outs: shift 1, special rate 0.0, 0800- no clockout, no adjusted time
         -->
         <BANNERID>HOPTE0500</BANNERID>
         <BANNERID_USER>HOPTE0500</BANNERID_USER>
