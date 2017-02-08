@@ -147,6 +147,9 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvqprtData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrqprtData.xml',
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrecdqData.xml',
 
                          // Employee Information
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeData.xml',
