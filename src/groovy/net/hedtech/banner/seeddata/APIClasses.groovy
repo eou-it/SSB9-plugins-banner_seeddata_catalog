@@ -139,6 +139,7 @@ public class APIClasses {
             'HRGOBEACCUSER'         : 'net.hedtech.banner.seeddata.HrGobeaccDML',
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML',
             'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML',
             'PHRELBD'               : 'net.hedtech.banner.seeddata.PhrelbdDML',
             'PTRECPD'               : 'net.hedtech.banner.seeddata.PtrecpdDML',
