@@ -199,6 +199,7 @@ public class APIClasses {
             'NBRPTOT': 'net.hedtech.banner.seeddata.NbrptotDML',
             'PERJHIS': 'net.hedtech.banner.seeddata.PerjhisDML',
             'NTRLRAQ': 'net.hedtech.banner.seeddata.NtrlraqDML',
+            'NTRECDQ': 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PHRELBD': 'net.hedtech.banner.seeddata.PhrelbdDML',
             'PTRECPD': 'net.hedtech.banner.seeddata.PtrecpdDML',
             'PHRECRT': 'net.hedtech.banner.seeddata.PhrecrtDML',
