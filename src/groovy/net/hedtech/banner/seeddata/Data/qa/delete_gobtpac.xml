@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>  
+ <!-- ***************************************************************************** 
+ Copyright 2016 Ellucian Company L.P. and its affiliates. 
+ ********************************************************************************* --> 
+<STUDENTDATA>
+ <GOBTPAC>
+  <GOBTPAC_EXTERNAL_USER>pporter1</GOBTPAC_EXTERNAL_USER>
+  <DELETE>YES</DELETE>
+ </GOBTPAC>
+ <GOBTPAC>
+  <GOBTPAC_EXTERNAL_USER>pkolvekar</GOBTPAC_EXTERNAL_USER>
+  <DELETE>YES</DELETE>
+ </GOBTPAC>
+<GOBTPAC>
+  <GOBTPAC_EXTERNAL_USER>mwilliams1</GOBTPAC_EXTERNAL_USER>
+  <DELETE>YES</DELETE>
+ </GOBTPAC> 
+</STUDENTDATA>
