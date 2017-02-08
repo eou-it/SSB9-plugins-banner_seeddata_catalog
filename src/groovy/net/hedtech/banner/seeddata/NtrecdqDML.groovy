@@ -96,7 +96,7 @@ public class NtrecdqDML {
     private def fetchNtrqprtId(List paramList ) {
         def id = null
         try {
-            id = this.conn.firstRow( """SELECT NTRQPRT_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE""" ,  paramList )?.ID
+            id = this.conn.firstRow( """SELECT NTRQPRT_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
         }
         catch (Exception e) {
             if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
