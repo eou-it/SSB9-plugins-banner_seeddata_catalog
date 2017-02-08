@@ -57,7 +57,7 @@ public class NtrecdqDML {
                     apiData.NTRECDQ_ID[0].setValue(componentId?.toString())
                     def ntrqprtId = apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0]
                     def paramList = ntrqprtId.tokenize('-')
-                    apirData.NTRECDQ_NTRQPRT_ID[0].setValue(fetchNtrqprtId(paramList))
+                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(fetchNtrqprtId(paramList))
                     isValid = true
                 }
 
