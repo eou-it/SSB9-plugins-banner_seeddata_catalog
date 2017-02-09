@@ -536,7 +536,8 @@ public class InputData {
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
-            'financial-aid-fund-classification'                                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/FundClassifications.xml']
+            'finaid-validation'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinAidValidationData.xml'],
+            'finaid'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinancialAidData.xml']
     ]
     /**
      *  Map of selenium targets
@@ -668,8 +669,7 @@ public class InputData {
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
-            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
-            'financial-aid-fund-classification'                                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/FundClassifications.xml']
+            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
 
     def calbTargets = [
