@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -528,7 +528,9 @@ public class InputData {
             'registration-student-attribute'   : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
-            'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml']
+            'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
+            'ss-configuration'                 : ['src/groovy/net/hedtech/banner/seeddata/Data/SsConfiguration.xml']
+
     ]
     /**
      *  Map of selenium targets

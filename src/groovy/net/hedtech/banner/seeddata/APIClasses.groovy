@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -153,6 +153,8 @@ public class APIClasses {
             'PTRECER'               : 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC'               : 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR'               : 'net.hedtech.banner.seeddata.PtrecprDML',
+            'GUBAPPL'               : 'net.hedtech.banner.seeddata.GubApplDML',
+            'GUROCFG'               : 'net.hedtech.banner.seeddata.GuroCfgDML',
     ]
 
 
@@ -211,6 +213,8 @@ public class APIClasses {
             'PTRECER': 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC': 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
+            'GUBAPPL': 'net.hedtech.banner.seeddata.GubApplDML',
+            'GUROCFG': 'net.hedtech.banner.seeddata.GuroCfgDML',
     ]
 
 
