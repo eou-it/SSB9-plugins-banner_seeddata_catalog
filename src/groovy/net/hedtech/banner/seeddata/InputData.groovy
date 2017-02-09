@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -669,7 +669,8 @@ public class InputData {
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
-            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
+            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
+            'schedule-registration-status'                                       : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml']
     ]
 
     def calbTargets = [
