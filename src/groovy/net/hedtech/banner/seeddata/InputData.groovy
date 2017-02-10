@@ -538,6 +538,9 @@ public class InputData {
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
             'finaid-validation'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinAidValidationData.xml'],
             'finaid'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinancialAidData.xml'],
+            'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/PTRLREA_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml'],
+            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/FTVHRSN_Data.xml'],
             'schedule-registration-status'                                       : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml']
     ]
     /**
