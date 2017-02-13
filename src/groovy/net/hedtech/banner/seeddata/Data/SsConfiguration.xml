@@ -25,9 +25,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUBAPPL>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>guestAuthenticationEnabled</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>boolean</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>true</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>guestAuthenticationEnabled</GUROCFG_NAME>
+        <GUROCFG_TYPE>boolean</GUROCFG_TYPE>
+        <GUROCFG_VALUE>true</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -35,9 +35,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>ssbPassword.reset.enabled</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>boolean</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>true</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>ssbPassword.reset.enabled</GUROCFG_NAME>
+        <GUROCFG_TYPE>boolean</GUROCFG_TYPE>
+        <GUROCFG_VALUE>true</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -45,9 +45,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>ssbPassword.guest.reset.enabled</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>boolean</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>true</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>ssbPassword.guest.reset.enabled</GUROCFG_NAME>
+        <GUROCFG_TYPE>boolean</GUROCFG_TYPE>
+        <GUROCFG_VALUE>true</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -55,9 +55,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>footerFadeAwayTime</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>string</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>40000</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>footerFadeAwayTime</GUROCFG_NAME>
+        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_VALUE>40000</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -65,9 +65,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>banner.analytics.trackerId</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>boolean</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>true</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>banner.analytics.trackerId</GUROCFG_NAME>
+        <GUROCFG_TYPE>boolean</GUROCFG_TYPE>
+        <GUROCFG_VALUE>true</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -75,9 +75,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>banner.analytics.allowEllucianTracker</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>boolean</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>true</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>banner.analytics.allowEllucianTracker</GUROCFG_NAME>
+        <GUROCFG_TYPE>boolean</GUROCFG_TYPE>
+        <GUROCFG_VALUE>true</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -85,9 +85,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>defaultWebSessionTimeout</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>string</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>15000</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>defaultWebSessionTimeout</GUROCFG_NAME>
+        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_VALUE>15000</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -95,9 +95,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>productName</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>string</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>Banner</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>productName</GUROCFG_NAME>
+        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_VALUE>Banner</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -105,9 +105,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GUROCFG>
-        <GUROCFG_CONFIG_NAME>banner.applicationName</GUROCFG_CONFIG_NAME>
-        <GUROCFG_CONFIG_TYPE>string</GUROCFG_CONFIG_TYPE>
-        <GUROCFG_CONFIG_VALUE>Sandbox</GUROCFG_CONFIG_VALUE>
+        <GUROCFG_NAME>banner.applicationName</GUROCFG_NAME>
+        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_VALUE>Sandbox</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>

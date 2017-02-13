@@ -55,9 +55,9 @@ class GuroCfgDML {
 
     def parseXmlData() {
         def rule = new XmlParser().parseText(xmlData)
-        this.configName = rule.GUROCFG_CONFIG_NAME.text()
-        this.configType = rule.GUROCFG_CONFIG_TYPE.text()
-        this.configValue = rule.GUROCFG_CONFIG_VALUE.text()
+        this.configName = rule.GUROCFG_NAME.text()
+        this.configType = rule.GUROCFG_TYPE.text()
+        this.configValue = rule.GUROCFG_VALUE.text()
         this.appName = rule.GUBAPPL_APP_NAME.text()
         this.userId = rule.GUROCFG_USER_ID.text()
         this.dataOrigin = rule.GUROCFG_DATA_ORIGIN.text()
@@ -91,7 +91,7 @@ class GuroCfgDML {
                         this.appId = trow.seqValue
                 }
         if (this.appId) {
-                String configRuleSql = """select GUROCFG_SURROGATE_ID as configSeqValue from gurocfg  where GUROCFG_GUBAPPL_APP_ID= ? and UPPER(GUROCFG_CONFIG_NAME) = ?  and UPPER(GUROCFG_CONFIG_TYPE) = ?"""
+                String configRuleSql = """select GUROCFG_SURROGATE_ID as configSeqValue from gurocfg  where GUROCFG_GUBAPPL_APP_ID= ? and UPPER(GUROCFG_NAME) = ?  and UPPER(GUROCFG_TYPE) = ?"""
                 def configparams = [this.appId,this.configName.toUpperCase(),this.configType.toUpperCase()]
 
                 if (this.userId) {
@@ -121,7 +121,7 @@ class GuroCfgDML {
                 } else {
                     //Check whether it is a create or update
                     if (this.configSeqNum) {
-                        String configNameExistsSQL = """select 1 as configCount from GUROCFG  where GUROCFG_SURROGATE_ID = ? and GUROCFG_GUBAPPL_APP_ID = ? and UPPER(GUROCFG_CONFIG_NAME) = ? and UPPER(GUROCFG_CONFIG_TYPE) = ?"""
+                        String configNameExistsSQL = """select 1 as configCount from GUROCFG  where GUROCFG_SURROGATE_ID = ? and GUROCFG_GUBAPPL_APP_ID = ? and UPPER(GUROCFG_NAME) = ? and UPPER(GUROCFG_TYPE) = ?"""
                         if (connectInfo.debugThis) println "block rule number ${configNameExistsSQL}"
                         this.conn.eachRow(configNameExistsSQL, [this.configSeqNum, this.appId,this.configName.toUpperCase(),this.configType.toUpperCase()]) {trow ->
                             if (trow.configCount == 1)
@@ -129,7 +129,7 @@ class GuroCfgDML {
                         }
                     }
                     if (this.update) {
-                        def blockUpdatesql = """update GUROCFG set GUROCFG_CONFIG_NAME = ?,GUROCFG_CONFIG_TYPE = ?, GUROCFG_CONFIG_VALUE = ?,GUROCFG_USER_ID=?,GUROCFG_DATA_ORIGIN=?,GUROCFG_ACTIVITY_DATE=to_date(?,'MMDDYYYY')
+                        def blockUpdatesql = """update GUROCFG set GUROCFG_NAME = ?,GUROCFG_TYPE = ?, GUROCFG_VALUE = ?,GUROCFG_USER_ID=?,GUROCFG_DATA_ORIGIN=?,GUROCFG_ACTIVITY_DATE=to_date(?,'MMDDYYYY')
                                         where GUROCFG_GUBAPPL_APP_ID =? and GUROCFG_SURROGATE_ID=?"""
 
                         try {
@@ -144,7 +144,7 @@ class GuroCfgDML {
                             }
                         }
                     } else {
-                        def insertSQL = """insert into GUROCFG (GUROCFG_CONFIG_NAME,GUROCFG_CONFIG_TYPE,GUROCFG_CONFIG_VALUE,GUROCFG_GUBAPPL_APP_ID,GUROCFG_USER_ID,GUROCFG_DATA_ORIGIN,GUROCFG_ACTIVITY_DATE) values (?,?,?,?,?,?,to_date(?,'MMDDYYYY'))"""
+                        def insertSQL = """insert into GUROCFG (GUROCFG_NAME,GUROCFG_TYPE,GUROCFG_VALUE,GUROCFG_GUBAPPL_APP_ID,GUROCFG_USER_ID,GUROCFG_DATA_ORIGIN,GUROCFG_ACTIVITY_DATE) values (?,?,?,?,?,?,to_date(?,'MMDDYYYY'))"""
                         if (connectInfo.debugThis) println insertSQL
                         try {
                             conn.executeUpdate(insertSQL, [this.configName,this.configType,this.configValue,this.appId,this.userId,this.dataOrigin,this.activityDate])
