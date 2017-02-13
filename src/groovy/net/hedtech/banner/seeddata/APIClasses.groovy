@@ -155,6 +155,8 @@ public class APIClasses {
             'PTRECPR'               : 'net.hedtech.banner.seeddata.PtrecprDML',
             'GUBAPPL'               : 'net.hedtech.banner.seeddata.GubApplDML',
             'GUROCFG'               : 'net.hedtech.banner.seeddata.GuroCfgDML',
+            'GURCTLEPP'             : 'net.hedtech.banner.seeddata.GurCtleppDML',
+            'GURAPPR'               : 'net.hedtech.banner.seeddata.GurApprDML',
     ]
 
 
@@ -215,6 +217,9 @@ public class APIClasses {
             'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
             'GUBAPPL': 'net.hedtech.banner.seeddata.GubApplDML',
             'GUROCFG': 'net.hedtech.banner.seeddata.GuroCfgDML',
+            'GURCTLEPP': 'net.hedtech.banner.seeddata.GurCtleppDML',
+            'GURAPPR': 'net.hedtech.banner.seeddata.GurApprDML',
+
     ]
 
 
