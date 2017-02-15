@@ -7,7 +7,7 @@ import groovy.sql.Sql
 
 import java.sql.Connection
 
-class GurCtleppDML {
+class GurctleppDML {
 
     def appName
     def userId
@@ -33,13 +33,13 @@ class GurCtleppDML {
     def statusInd
     def displaySeq
 
-    public GurCtleppDML(InputData connectInfo, Sql conn, Connection connectCall) {
+    public GurctleppDML(InputData connectInfo, Sql conn, Connection connectCall) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
     }
 
-    public GurCtleppDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
+    public GurctleppDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
 
         this.conn = conn
         this.connectInfo = connectInfo
@@ -55,6 +55,7 @@ class GurCtleppDML {
 
     def parseXmlData() {
         def data = new XmlParser().parseText(xmlData)
+        this.delete = data.DELETE?.text()
         this.appName = data.GURCTLEPP_APP_NAME.text()
         this.pageName = data.GURCTLEPP_PAGE_NAME.text()
         this.pageDescription = data.GURCTLEPP_PAGE_DESCRIPTION.text()
@@ -66,23 +67,8 @@ class GurCtleppDML {
     }
 
     def insertGuroCtleppData() {
-        String appNumSql = """select GUBAPPL_APP_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_NAME)= ? """
-        def params = [this.appName.toUpperCase()]
-
-        if (this.userId) {
-            appNumSql += """ and GUBAPPL_USER_ID = ?"""
-            params.add(this.userId)
-        } else {
-            appNumSql += """ and GUBAPPL_USER_ID  is null"""
-        }
-
-        if (this.dataOrigin) {
-            appNumSql += """ and GUBAPPL_DATA_ORIGIN = ?"""
-            params.add(this.dataOrigin)
-        } else {
-            appNumSql += """ and GUBAPPL_DATA_ORIGIN  is null"""
-        }
-
+        String appNumSql = """select GUBAPPL_APP_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_NAME)= ? and GUBAPPL_USER_ID = ? and GUBAPPL_DATA_ORIGIN = ?"""
+        def params = [this.appName.toUpperCase(),this.userId,this.dataOrigin]
         if (connectInfo.debugThis) println appNumSql
         this.conn.eachRow(appNumSql, params)
                 {
@@ -90,25 +76,8 @@ class GurCtleppDML {
                         this.appId = trow.seqValue
                 }
         if (this.appId) {
-        String pageIdSql = """select GURCTLEPP_PAGE_ID as pageIdValue from GURCTLEPP  where GURCTLEPP_GUBAPPL_APP_ID= ? and UPPER(GURCTLEPP_PAGE_NAME) = ? """
-        def pageIdparams = [this.appId,this.pageName.toUpperCase()]
-
-        if (this.userId) {
-            pageIdSql += """ and GURCTLEPP_USER_ID = ?"""
-            pageIdparams.add(this.userId)
-        }
-        else {
-            pageIdSql += """ and GURCTLEPP_USER_ID  is null"""
-        }
-
-        if (this.dataOrigin) {
-            pageIdSql += """ and GURCTLEPP_DATA_ORIGIN = ?"""
-            pageIdparams.add(this.dataOrigin)
-        }
-        else {
-            pageIdSql += """ and GURCTLEPPDATA_ORIGIN  is null"""
-        }
-
+        String pageIdSql = """select GURCTLEPP_PAGE_ID as pageIdValue from GURCTLEPP  where GURCTLEPP_GUBAPPL_APP_ID= ? and UPPER(GURCTLEPP_PAGE_NAME) = ? and GURCTLEPP_USER_ID = ? and GURCTLEPP_DATA_ORIGIN = ?"""
+        def pageIdparams = [this.appId,this.pageName.toUpperCase(),this.userId,this.dataOrigin]
         if (connectInfo.debugThis) println pageIdSql
         this.conn.eachRow(pageIdSql, pageIdparams)
                 {
@@ -128,7 +97,7 @@ class GurCtleppDML {
                 }
             }
             if (this.update) {
-                def updatesql = """update GURCTLEPP set GURCTLEPP_PAGE_NAME = ?,GURCTLEPP_DESCRIPTION = ?, GURCTLEPP_STATUS_INDICATOR = ?,GURCTLEPP_DISPLAY_SEQUENCE=?,GURCTLEPP_USER_ID=?,GURCTLEPP_DATA_ORIGIN=?,GURCTLEPP_ACTIVITY_DATE=to_date(?,'MMDDYYYY')
+                def updatesql = """update GURCTLEPP set GURCTLEPP_PAGE_NAME = ?,GURCTLEPP_DESCRIPTION = ?, GURCTLEPP_STATUS_INDICATOR = ?,GURCTLEPP_DISPLAY_SEQUENCE=?,GURCTLEPP_USER_ID=?,GURCTLEPP_DATA_ORIGIN=?,GURCTLEPP_ACTIVITY_DATE=?
                                         where GURCTLEPP_GUBAPPL_APP_ID =? and GURCTLEPP_PAGE_ID=?"""
 
                 try {
@@ -139,11 +108,11 @@ class GurCtleppDML {
                     connectInfo.tableUpdate("GURCTLEPP", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Update GURCTLEPP ${this.pageName}}"
-                        println "Problem executing update for table GURCTLEPP from GurCtleppDML.groovy: $e.message"
+                        println "Problem executing update for table GURCTLEPP from GurctleppDML.groovy: $e.message"
                     }
                 }
             } else {
-                def insertSQL = """insert into GURCTLEPP (GURCTLEPP_PAGE_ID,GURCTLEPP_GUBAPPL_APP_ID,GURCTLEPP_PAGE_NAME,GURCTLEPP_DESCRIPTION,GURCTLEPP_STATUS_INDICATOR,GURCTLEPP_DISPLAY_SEQUENCE,GURCTLEPP_USER_ID,GURCTLEPP_DATA_ORIGIN,GURCTLEPP_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,to_date(?,'MMDDYYYY'))"""
+                def insertSQL = """insert into GURCTLEPP (GURCTLEPP_PAGE_ID,GURCTLEPP_GUBAPPL_APP_ID,GURCTLEPP_PAGE_NAME,GURCTLEPP_DESCRIPTION,GURCTLEPP_STATUS_INDICATOR,GURCTLEPP_DISPLAY_SEQUENCE,GURCTLEPP_USER_ID,GURCTLEPP_DATA_ORIGIN,GURCTLEPP_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
                 if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.executeUpdate(insertSQL, [this.pageId,this.appId,this.pageName,this.pageDescription,this.statusInd,this.displaySeq,this.userId,this.dataOrigin,this.activityDate])
@@ -153,18 +122,29 @@ class GurCtleppDML {
                     connectInfo.tableUpdate("GURCTLEPP", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Insert GURCTLEPP ${this.appName}}"
-                        println "Problem executing insert  for table GURCTLEPP from GurCtleppDML.groovy: $e.message"
+                        println "Problem executing insert  for table GURCTLEPP from GurctleppDML.groovy: $e.message"
                     }
                 }
             }
         }
     }
-
     }
 
-
     def deleteData(pageId, appId) {
-        deleteData("GURCTLEPP", """delete FROM GURCTLEPP where GURCTLEPP_PAGE_ID=? and GURCTLEPP_GUBAPPL_APP_ID=?""", pageId, appId)
+        int delRows
+        def deleteSql = """delete FROM GURCTLEPP where GURCTLEPP_PAGE_ID=? and GURCTLEPP_GUBAPPL_APP_ID=?"""
+        if (connectInfo.debugThis) println deleteSql
+        try {
+
+            delRows = conn.executeUpdate(deleteSql, [pageId,appId])
+            connectInfo.tableUpdate("GURCTLEPP", 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing delete for GURCTLEPP table with Page Id ${appName} from GurctleppDML.groovy: $e.message"
+                println "${deleteSql}"
+            }
+        }
     }
 
 }

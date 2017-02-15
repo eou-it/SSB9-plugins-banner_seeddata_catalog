@@ -529,7 +529,7 @@ public class InputData {
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
-            'ss-configuration'                 : ['src/groovy/net/hedtech/banner/seeddata/Data/SsConfiguration.xml']
+            'self-service-configuration'       : ['src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml']
 
     ]
     /**
