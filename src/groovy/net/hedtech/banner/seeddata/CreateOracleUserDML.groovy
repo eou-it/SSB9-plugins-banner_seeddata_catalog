@@ -111,7 +111,7 @@ public class CreateOracleUserDML {
                 }
             }
             finally {
-                conn.close()
+                this.conn.close()
             }
         }
 
@@ -126,7 +126,7 @@ public class CreateOracleUserDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
+                println "Could not select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
             }
         }
         if (result.cnt == 0) {
@@ -145,7 +145,7 @@ public class CreateOracleUserDML {
             }
             finally {
 
-                conn.close()
+                this.conn.close()
             }
         }
     }
@@ -179,7 +179,7 @@ public class CreateOracleUserDML {
             }
             finally {
 
-                conn.close()
+                this.conn.close()
             }
         }
     }
