@@ -6,6 +6,7 @@ package net.hedtech.banner.seeddata
 import groovy.sql.Sql
 
 import java.sql.Connection
+import java.sql.RowId
 
 /**
  * General Person ID DML
@@ -25,7 +26,7 @@ public class CreateOracleUserDML {
     def InputData connectInfo
     Sql conn
     Connection connectCall
-    java.sql.RowId tableRow = null
+    RowId tableRow = null
     def xmlData
 
 
