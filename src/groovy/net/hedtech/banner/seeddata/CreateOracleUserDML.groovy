@@ -170,6 +170,10 @@ public class CreateOracleUserDML {
                     println "Could not create access to object,  ${this.oracleId.text()} ${this.objectName.text()}. $e.message"
                 }
             }
+            finally {
+
+                connectCall.close()
+            }
         }
     }
 
