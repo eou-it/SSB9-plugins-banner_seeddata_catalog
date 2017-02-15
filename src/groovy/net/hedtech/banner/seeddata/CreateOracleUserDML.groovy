@@ -40,7 +40,9 @@ public class CreateOracleUserDML {
 
         this.conn = conn
         this.connectInfo = connectInfo
-        this.connectCall = connectCall
+        this.connectInfo.dataSource=null;
+        def newConn = new ConnectDB(connectInfo)
+        this.connectCall = newConn.getSqlConnection().connection
         this.xmlData = xmlData
         parseXmlData()
 
