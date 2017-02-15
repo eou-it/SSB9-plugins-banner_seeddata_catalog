@@ -110,6 +110,9 @@ public class CreateOracleUserDML {
                     println "Could not create Oracle Id,  ${this.newOracleId}. $e.message"
                 }
             }
+            finally {
+                conn.close()
+            }
         }
 
     }
@@ -139,6 +142,10 @@ public class CreateOracleUserDML {
                 if (connectInfo.showErrors) {
                     println "Could not create General Class,  ${this.oracleId} ${this.generalClass}. $e.message"
                 }
+            }
+            finally {
+
+                conn.close()
             }
         }
     }
@@ -172,7 +179,7 @@ public class CreateOracleUserDML {
             }
             finally {
 
-                connectCall.close()
+                conn.close()
             }
         }
     }
