@@ -202,6 +202,7 @@ public class GeneralActionItemDML {
 
         if (connectInfo.saveThis) {
             conn.execute "{ call gb_common.p_commit() }"
+            this.conn.close()
         }
     }
 
