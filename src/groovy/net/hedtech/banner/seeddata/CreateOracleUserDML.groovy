@@ -114,7 +114,7 @@ public class CreateOracleUserDML {
                 }
             }
             finally {
-                this.conn.close()
+                //this.conn.close()
             }
         }
 
@@ -148,7 +148,7 @@ public class CreateOracleUserDML {
             }
             finally {
 
-                this.conn.close()
+               // this.conn.close()
             }
         }
     }
@@ -182,7 +182,7 @@ public class CreateOracleUserDML {
             }
             finally {
 
-                this.conn.close()
+                //this.conn.close()
             }
         }
     }
