@@ -32,7 +32,7 @@ public class ConnectDB {
                 db = Sql.newInstance(connectInfo.url,   //  db =  new Sql( connectInfo.url,
                                      "bansecr",
                                      "u_pick_it",
-                                     'oracle.jdbc.driver.OracleDriver')
+                                     'oracle.jdbc.OracleDriver')
 
                 sessionConnection = db.getConnection()
 
@@ -60,7 +60,7 @@ public class ConnectDB {
                 db = Sql.newInstance(connectInfo.url,   //  db =  new Sql( connectInfo.url,
                                      connectInfo.username,
                                      connectInfo.password,
-                                     'oracle.jdbc.driver.OracleDriver')
+                                     'oracle.jdbc.OracleDriver')
 
                 sessionConnection = db.getConnection()
 
