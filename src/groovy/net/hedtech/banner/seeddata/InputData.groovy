@@ -789,7 +789,7 @@ public class InputData {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
             def configFile = locateConfigFile()
-            def slurper = new ConfigSlurper( GrailsUtil.environment )
+            def slurper = new ConfigSlurper( grails.util.Environment.current.name )
             def config = slurper.parse( configFile.toURI().toURL() )
             url = config.get( "bannerDataSource" ).url
         }
