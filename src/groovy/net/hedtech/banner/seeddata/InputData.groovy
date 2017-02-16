@@ -889,7 +889,7 @@ public class InputData {
         def db = Sql.newInstance( url,   //  db =  new Sql( connectInfo.url,
                 "saturn",
                 "u_pick_it",
-                'oracle.jdbc.driver.OracleDriver' )
+                'oracle.jdbc.OracleDriver' )
 
         def rows = db.rows( """SELECT Pnd_Index_Name name, count(*) cnt,
                                      max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp

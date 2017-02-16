@@ -47,11 +47,6 @@ public class CreateOracleUserDML {
         this.xmlData = xmlData
         parseXmlData()
 
-        this.connectInfo.debugThis = true
-
-        println connectCall
-        //println this.connectInfo
-
         if (this.newOracleId) {
             createUserId()
         }
