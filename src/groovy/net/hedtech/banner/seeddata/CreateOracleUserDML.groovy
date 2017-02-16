@@ -49,7 +49,7 @@ public class CreateOracleUserDML {
 
         this.connectInfo.debugThis = true
 
-        println conn
+        println connectCall
         //println this.connectInfo
 
         if (this.newOracleId) {
