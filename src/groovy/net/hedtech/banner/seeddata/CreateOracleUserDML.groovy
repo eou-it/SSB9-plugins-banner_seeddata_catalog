@@ -47,6 +47,8 @@ public class CreateOracleUserDML {
         this.xmlData = xmlData
         parseXmlData()
 
+        println this.connectInfo
+
         if (this.newOracleId) {
             createUserId()
         }
