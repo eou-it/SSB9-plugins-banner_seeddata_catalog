@@ -300,9 +300,4 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <OBJECT_NAME>SELFSERVICE</OBJECT_NAME>
         <OBJECT_ROLE>BAN_DEFAULT_M</OBJECT_ROLE>
     </ORACLEUSER>
-    <ORACLEUSER>
-        <BANSECR>YES</BANSECR>
-        <CREATE_USER>CSRAOR029</CREATE_USER>
-        <READONLY>NO</READONLY>
-    </ORACLEUSER>
 </dataroot>
