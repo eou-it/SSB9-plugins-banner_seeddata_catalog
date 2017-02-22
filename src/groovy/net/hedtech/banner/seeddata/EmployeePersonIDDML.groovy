@@ -432,8 +432,12 @@ public class EmployeePersonIDDML {
 
                 insertCall.setString(52, this.pebempl_etax_consent_user_id)
                 insertCall.setString(53, this.pebempl_new_hire_ind)
-                insertCall.setString(54, this.pebempl_1095tx_consent_ind)
 
+                if (!this.pebempl_1095tx_consent_ind) {
+                    insertCall.setString(54, "N")
+                } else {
+                    insertCall.setString(54, this.pebempl_1095tx_consent_ind)
+                }
 
                 if ((this.pebempl_1095tx_consent_date == "") || (this.pebempl_1095tx_consent_date == null) ||
                         (!this.pebempl_1095tx_consent_date)) {
@@ -511,9 +515,27 @@ public class EmployeePersonIDDML {
                 deleteData("PHTRETO","delete from phtreto where phtreto_pidm = ?")
                 deleteData("PHRCMNT","delete from phrcmnt where phrcmnt_pidm = ?")
                 deleteData("PHRHIST","delete from phrhist where phrhist_pidm = ?")
+                deleteData("PHRERRL","delete from phrerrl where phrerrl_pidm = ?")
                 deleteData("PERDTOT","delete from perdtot where perdtot_pidm = ?")
                 deleteData("PERJTOT","delete from perjtot where perjtot_pidm = ?")
                 deleteData("PERETOT","delete from peretot where peretot_pidm = ?")
+             // Time Entry
+                deleteData("PERTETH","delete from perteth where perteth_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERROUH","delete from perrouh where perrouh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERELBH","delete from perelbh where perelbh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERTITH","delete from pertith where pertith_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERHOUH","delete from perhouh where perhouh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PEREARH","delete from perearh where perearh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERDAYH","delete from perdayh where perdayh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERJOBH","delete from perjobh where perjobh_seqno      in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERLVTK","delete from perlvtk where perlvtk_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERROUT","delete from perrout where perrout_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERELBD","delete from perelbd where perelbd_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERTITO","delete from pertito where pertito_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERHOUR","delete from perhour where perhour_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PEREARN","delete from perearn where perearn_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERDAYS","delete from perdays where perdays_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+                deleteData("PERJOBS","delete from perjobs where perjobs_pidm = ?")
              // Cobra and Non-Cobra Beneficiary and Dependents
                 deleteData("PCRDEDN","delete from pcrdedn where pcrdedn_pidm = ?")
                 deleteData("PCRBENE","delete from pcrbene where pcrbene_pidm = ?")
