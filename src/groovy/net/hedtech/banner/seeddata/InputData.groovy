@@ -65,6 +65,7 @@ public class InputData {
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
@@ -545,7 +546,8 @@ public class InputData {
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml'],
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/FTVHRSN_Data.xml'],
-            'schedule-registration-status'                                       : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml']
+            'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
+            'scheduleData201410Crn20222'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml']
     ]
     /**
      *  Map of selenium targets
