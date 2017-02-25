@@ -65,6 +65,8 @@ public class InputData {
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20210.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
@@ -218,6 +220,7 @@ public class InputData {
             //TODO Remove SMBPGEN seed for program BA-ECON once it gets added to vagrant
             'program-data'                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramData.xml'],
             'generalstudent'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantQuickEntryRule.xml'],
             'registration-rule'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationManagementControl.xml'],
@@ -301,7 +304,8 @@ public class InputData {
             'registration-general'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatus.xml'],
-            'ssbgeneralstudent'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml'],
+            'ssbgeneralstudent'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'finance-procurement'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFiscalYear.xml',
@@ -325,7 +329,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceApprovalQueueDefinition.xml'],
             'ssbgeneralstudentblockreg'        : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockReg.xml'],
             'blockregistration'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
-            'ssbgeneralstudent2'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml'],
+            'ssbgeneralstudent2'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
             'ssbgeneralstudent3'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew3.xml'],
             'ssbgeneralstudentfa'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataFA.xml'],
             'feeSummaryData'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeSummaryData.xml'],
@@ -546,8 +551,7 @@ public class InputData {
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml'],
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/FTVHRSN_Data.xml'],
-            'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
-            'scheduleData201410Crn20222'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml']
+            'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml']
     ]
     /**
      *  Map of selenium targets
@@ -679,7 +683,13 @@ public class InputData {
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
-            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
+            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
+            'scheduleData201410Crn20202'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml'],
+            'scheduleData201410Crn20210'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20210.xml'],
+            'scheduleData201410Crn20222'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml'],
+            'generalstudenthos00001'                                             : ['/src/groovy/net/hedtech/banner/seeddata/Data/generalStudentDataHos00001.xml'],
+            'ssbgeneralstudent2hosweb007'                                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/generalStudentDataNew2Hosweb007.xml'],
+            'ssbgeneralstudenthosweb001'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/generalStudentDataNewHosweb001.xml']
     ]
 
     def calbTargets = [
