@@ -551,7 +551,14 @@ public class InputData {
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml'],
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/FTVHRSN_Data.xml'],
-            'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml']
+            'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
+            'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
+            'scheduleData201410Crn20202'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201410Crn20202.xml'],
+            'scheduleData201410Crn20210'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201410Crn20210.xml'],
+            'scheduleData201410Crn20222'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201410Crn20222.xml'],
+            'generalstudenthos00001'           : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
+            'ssbgeneralstudent2hosweb007'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
+            'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml']
     ]
     /**
      *  Map of selenium targets
@@ -684,14 +691,7 @@ public class InputData {
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
-            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
-            'scheduleTerm201410'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
-            'scheduleData201410Crn20202'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201410Crn20202.xml'],
-            'scheduleData201410Crn20210'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201410Crn20210.xml'],
-            'scheduleData201410Crn20222'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201410Crn20222.xml'],
-            'generalstudenthos00001'                                             : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
-            'ssbgeneralstudent2hosweb007'                                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
-            'ssbgeneralstudenthosweb001'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml']
+            'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
 
     def calbTargets = [
