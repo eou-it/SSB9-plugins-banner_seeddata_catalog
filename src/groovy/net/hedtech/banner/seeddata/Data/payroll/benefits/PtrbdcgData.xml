@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
-
-<!--***************************************************************************
+<!-- *****************************************************************************
 Copyright 2016 Ellucian Company L.P. and its affiliates.
-****************************************************************************-->
+ ********************************************************************************* -->
 <PTRBDCG_DATA>
- <PTRBDCG>
-  <PTRBDCG_CODE>DN1</PTRBDCG_CODE>
-  <PTRBDCG_BDCA_CODE>MD1</PTRBDCG_BDCA_CODE>
-  <PTRBDCG_USER_ID/>
-  <PTRBDCG_ACTIVITY_DATE>02-JUN-16</PTRBDCG_ACTIVITY_DATE>
-  <PTRBDCG_SURROGATE_ID/>
-  <PTRBDCG_VERSION/>
-  <PTRBDCG_DATA_ORIGIN>SEED_DATA</PTRBDCG_DATA_ORIGIN>
-  <PTRBDCG_VPDI_CODE/>
- </PTRBDCG>
-
+    <PTRBDCG>
+        <PTRBDCG_CODE>DN1</PTRBDCG_CODE>
+        <PTRBDCG_BDCA_CODE>MD1</PTRBDCG_BDCA_CODE>
+        <PTRBDCG_USER_ID/>
+        <PTRBDCG_ACTIVITY_DATE/>
+        <PTRBDCG_SURROGATE_ID/>
+        <PTRBDCG_VERSION/>
+        <PTRBDCG_DATA_ORIGIN/>
+        <PTRBDCG_VPDI_CODE/>
+    </PTRBDCG>
+    <PTRBDCG>
+        <PTRBDCG_CODE>DN2</PTRBDCG_CODE>
+        <PTRBDCG_BDCA_CODE>MD1</PTRBDCG_BDCA_CODE>
+        <PTRBDCG_USER_ID/>
+        <PTRBDCG_ACTIVITY_DATE/>
+        <PTRBDCG_SURROGATE_ID/>
+        <PTRBDCG_VERSION/>
+        <PTRBDCG_DATA_ORIGIN/>
+        <PTRBDCG_VPDI_CODE/>
+    </PTRBDCG>
 </PTRBDCG_DATA>
