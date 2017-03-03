@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016-2016 Ellucian Company L.P. and its affiliates.
+Copyright 2016-2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <GTVICSNDATA>
 
@@ -8,6 +8,25 @@ Copyright 2016-2016 Ellucian Company L.P. and its affiliates.
         <GORICCR_SQPR_CODE>HEDM</GORICCR_SQPR_CODE>
         <DELETE>YES</DELETE>
     </GORICCR>
+
+    <GORICCR>
+        <GORICCR_SQPR_CODE>HEDM_PAYROLL</GORICCR_SQPR_CODE>
+        <DELETE>YES</DELETE>
+    </GORICCR>
+
+    <!-- Added in 9.8 for GTVSQPR -->
+
+    <GTVSQPR>
+        <GTVSQPR_CODE>HEDM_PAYROLL</GTVSQPR_CODE>
+        <GTVSQPR_DESC>Higher Education Payroll Data Model rules</GTVSQPR_DESC>
+        <GTVSQPR_SYS_REQ_IND>Y</GTVSQPR_SYS_REQ_IND>
+        <GTVSQPR_START_DATE>01-JAN-10</GTVSQPR_START_DATE>
+        <GTVSQPR_ACTIVITY_DATE>01-JAN-10</GTVSQPR_ACTIVITY_DATE>
+        <GTVSQPR_USER_ID>GRAILS</GTVSQPR_USER_ID>
+        <GTVSQPR_DATA_ORIGIN>GRAILS</GTVSQPR_DATA_ORIGIN>
+    </GTVSQPR>
+
+    <!-- / Added in 9.8 for GTVSQPR -->
 
     <GTVICSN>
         <GTVICSN_CODE>PERSON.UPDATESSN</GTVICSN_CODE>
@@ -294,6 +313,30 @@ Copyright 2016-2016 Ellucian Company L.P. and its affiliates.
     <GTVICSN>
         <GTVICSN_CODE>PHONES.COUNTRY.DEFAULT</GTVICSN_CODE>
         <GTVICSN_DESC>phones country default value</GTVICSN_DESC>
+        <GTVICSN_ACTIVITY_DATE>01-JAN-10</GTVICSN_ACTIVITY_DATE>
+        <GTVICSN_USER_ID>GRAILS</GTVICSN_USER_ID>
+        <GTVICSN_DATA_ORIGIN>GRAILS</GTVICSN_DATA_ORIGIN>
+    </GTVICSN>
+
+    <GTVICSN>
+        <GTVICSN_CODE>PDA.COMMITMENT.PLEDGE</GTVICSN_CODE>
+        <GTVICSN_DESC>EEDM Commitment Type pledge</GTVICSN_DESC>
+        <GTVICSN_ACTIVITY_DATE>01-JAN-10</GTVICSN_ACTIVITY_DATE>
+        <GTVICSN_USER_ID>GRAILS</GTVICSN_USER_ID>
+        <GTVICSN_DATA_ORIGIN>GRAILS</GTVICSN_DATA_ORIGIN>
+    </GTVICSN>
+
+    <GTVICSN>
+        <GTVICSN_CODE>PDA.COMMITMENT.RECURRDONATION</GTVICSN_CODE>
+        <GTVICSN_DESC>EEDM Commitment Type recurringDonation</GTVICSN_DESC>
+        <GTVICSN_ACTIVITY_DATE>01-JAN-10</GTVICSN_ACTIVITY_DATE>
+        <GTVICSN_USER_ID>GRAILS</GTVICSN_USER_ID>
+        <GTVICSN_DATA_ORIGIN>GRAILS</GTVICSN_DATA_ORIGIN>
+    </GTVICSN>
+
+    <GTVICSN>
+        <GTVICSN_CODE>PDA.COMMITMENT.MEMBERDUES</GTVICSN_CODE>
+        <GTVICSN_DESC>EEDM Commitment Type membershipDues</GTVICSN_DESC>
         <GTVICSN_ACTIVITY_DATE>01-JAN-10</GTVICSN_ACTIVITY_DATE>
         <GTVICSN_USER_ID>GRAILS</GTVICSN_USER_ID>
         <GTVICSN_DATA_ORIGIN>GRAILS</GTVICSN_DATA_ORIGIN>
