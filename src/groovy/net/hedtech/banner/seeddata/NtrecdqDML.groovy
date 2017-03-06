@@ -58,7 +58,11 @@ public class NtrecdqDML {
                     def ntrqprtId = apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0]
                     def paramList = ntrqprtId.tokenize('-')
                     apiData.NTRECDQ_NTRQPRT_ID[0].setValue(fetchNtrqprtId(paramList))
-                    isValid = true
+                    apiData.NTRECDQ_SURROGATE_ID[0].setValue(fetchNtrqprtSurrogateId(paramList))
+                    if(apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0] && apiData.NTRECDQ_SURROGATE_ID[0]?.value()[0])
+                    {
+                        isValid = true
+                    }
                 }
 
 
@@ -97,6 +101,18 @@ public class NtrecdqDML {
         def id = null
         try {
             id = this.conn.firstRow( """SELECT NTRQPRT_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
+        }
+        if (connectInfo.debugThis) println( "NTRQPRT_ID for ${connectInfo.tableName}." )
+        return id
+    }
+
+    private def fetchNtrqprtSurrogateId(List paramList ) {
+        def id = null
+        try {
+            id = this.conn.firstRow( """SELECT NTRQPRT_SURROGATE_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
         }
         catch (Exception e) {
             if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
