@@ -63,7 +63,7 @@ public class NtrecdqDML {
 
                     apiData.NTRECDQ_NTRQPRT_ID[0].setValue(id)
                     apiData.NTRECDQ_SURROGATE_ID[0].setValue(surrogateId)
-                    if(!(id && surrogateId))
+                    if(!id && !surrogateId )
                     {
                         isValid = true
                     }
