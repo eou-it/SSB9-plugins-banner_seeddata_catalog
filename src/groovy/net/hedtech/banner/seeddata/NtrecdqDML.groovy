@@ -57,9 +57,13 @@ public class NtrecdqDML {
                     apiData.NTRECDQ_ID[0].setValue(componentId?.toString())
                     def ntrqprtId = apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0]
                     def paramList = ntrqprtId.tokenize('-')
-                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(fetchNtrqprtId(paramList))
-                    apiData.NTRECDQ_SURROGATE_ID[0].setValue(fetchNtrqprtSurrogateId(paramList))
-                    if(apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0] && apiData.NTRECDQ_SURROGATE_ID[0]?.value()[0])
+
+                    def id = fetchNtrqprtId(paramList)
+                    def surrogateId = fetchNtrqprtSurrogateId(paramList)
+
+                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(id)
+                    apiData.NTRECDQ_SURROGATE_ID[0].setValue(surrogateId)
+                    if(!(id && surrogateId))
                     {
                         isValid = true
                     }
