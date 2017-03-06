@@ -49,7 +49,7 @@ public class NtrecdqDML {
 
     def processNtrecdq( ) {
         def apiData = new XmlParser().parseText( xmlData )
-        def isValid = false
+        def isValid = true
 
                 componentId = fetchNextValFromSequenceGenerator()
 
@@ -58,15 +58,7 @@ public class NtrecdqDML {
                     def ntrqprtId = apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0]
                     def paramList = ntrqprtId.tokenize('-')
 
-                    def id = fetchNtrqprtId(paramList)
-                    def surrogateId = fetchNtrqprtSurrogateId(paramList)
-
-                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(id)
-                    apiData.NTRECDQ_SURROGATE_ID[0].setValue(surrogateId)
-                    if(!id && !surrogateId )
-                    {
-                        isValid = true
-                    }
+                  deleteNtrqprtById(paramList)
                 }
 
 
@@ -101,29 +93,18 @@ public class NtrecdqDML {
     }
 
 
-    private def fetchNtrqprtId(List paramList ) {
-        def id = null
+    private def deleteNtrqprtById(List paramList ) {
+        def count = 0
         try {
-            id = this.conn.firstRow( """SELECT NTRQPRT_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
+            count = this.conn.executeUpdate( """DELETE FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )
         }
         catch (Exception e) {
-            if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
+            if (connectInfo.showErrors) println( "Could not get Delete existing Ntrecdq  record in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
         }
-        if (connectInfo.debugThis) println( "NTRQPRT_ID for ${connectInfo.tableName}." )
-        return id
+        return count
     }
 
-    private def fetchNtrqprtSurrogateId(List paramList ) {
-        def id = null
-        try {
-            id = this.conn.firstRow( """SELECT NTRQPRT_SURROGATE_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
-        }
-        if (connectInfo.debugThis) println( "NTRQPRT_ID for ${connectInfo.tableName}." )
-        return id
-    }
+
 }
 
 
