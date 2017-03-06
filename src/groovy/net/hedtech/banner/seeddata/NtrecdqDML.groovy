@@ -57,8 +57,9 @@ public class NtrecdqDML {
                     apiData.NTRECDQ_ID[0].setValue(componentId?.toString())
                     def ntrqprtId = apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0]
                     def paramList = ntrqprtId.tokenize('-')
+                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(fetchNtrqprtId(paramList))
 
-                  deleteNtrqprtById(paramList)
+                    deleteNtrqprtById(paramList)
                 }
 
 
@@ -92,6 +93,18 @@ public class NtrecdqDML {
         return id
     }
 
+
+    private def fetchNtrqprtId(List paramList ) {
+        def id = null
+        try {
+            id = this.conn.firstRow( """SELECT NTRQPRT_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
+        }
+        if (connectInfo.debugThis) println( "NTRQPRT_ID for ${connectInfo.tableName}." )
+        return id
+    }
 
     private def deleteNtrqprtById(List paramList ) {
         def count = 0
