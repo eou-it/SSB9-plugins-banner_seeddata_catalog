@@ -158,6 +158,7 @@ public class APIClasses {
             'PEREARN'               : 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR'               : 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO'               : 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD'               : 'net.hedtech.banner.seeddata.PerelbdDML',
             'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
@@ -222,6 +223,7 @@ public class APIClasses {
             'PEREARN' : 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR' : 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO' : 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD' : 'net.hedtech.banner.seeddata.PerelbdDML',
             'NBRRJQE' : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST' : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
