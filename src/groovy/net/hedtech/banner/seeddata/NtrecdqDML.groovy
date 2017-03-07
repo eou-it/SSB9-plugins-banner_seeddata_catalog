@@ -110,7 +110,7 @@ public class NtrecdqDML {
     private def deleteNtrqprtById(List paramList ) {
         def count = 0
         try {
-            count = this.conn.executeUpdate( """DELETE FROM NTREDDQ where NTRECDQ_NTRQPRT_ID = ?  """ ,  paramList )
+            count = this.conn.executeUpdate( """DELETE FROM NTRECDQ where NTRECDQ_NTRQPRT_ID = ?  """ ,  paramList )
         }
         catch (Exception e) {
             if (connectInfo.showErrors) println( "Could not get Delete existing Ntrecdq  record in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
