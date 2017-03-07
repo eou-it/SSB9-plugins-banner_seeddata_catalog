@@ -57,9 +57,10 @@ public class NtrecdqDML {
                     apiData.NTRECDQ_ID[0].setValue(componentId?.toString())
                     def ntrqprtId = apiData.NTRECDQ_NTRQPRT_ID[0]?.value()[0]
                     def paramList = ntrqprtId.tokenize('-')
-                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(fetchNtrqprtId(paramList))
+                    def qprtId = fetchNtrqprtId(paramList)
+                    apiData.NTRECDQ_NTRQPRT_ID[0].setValue(qprtId)
 
-                    deleteNtrqprtById(paramList)
+                    deleteNtrqprtById([qprtId])
                 }
 
 
@@ -109,7 +110,7 @@ public class NtrecdqDML {
     private def deleteNtrqprtById(List paramList ) {
         def count = 0
         try {
-            count = this.conn.executeUpdate( """DELETE FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )
+            count = this.conn.executeUpdate( """DELETE FROM NTREDDQ where NTRECDQ_NTRQPRT_ID = ?  """ ,  paramList )
         }
         catch (Exception e) {
             if (connectInfo.showErrors) println( "Could not get Delete existing Ntrecdq  record in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
