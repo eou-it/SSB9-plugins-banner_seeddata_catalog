@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -154,6 +154,13 @@ public class APIClasses {
             'PTRECER'               : 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC'               : 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR'               : 'net.hedtech.banner.seeddata.PtrecprDML',
+            'PERJOBS_EXTRACT'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryExtractDML',
+            'PEREARN'               : 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR'               : 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO'               : 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD'               : 'net.hedtech.banner.seeddata.PerelbdDML',
+            'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
 
 
@@ -213,6 +220,12 @@ public class APIClasses {
             'PTRECER': 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC': 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
+            'PEREARN' : 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR' : 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO' : 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD' : 'net.hedtech.banner.seeddata.PerelbdDML',
+            'NBRRJQE' : 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST' : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
 
 
