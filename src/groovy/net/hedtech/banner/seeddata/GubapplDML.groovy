@@ -13,6 +13,7 @@ class GubapplDML {
     def dataOrigin
     def activityDate
     def appNum
+    def appShortName
 
     def InputData connectInfo
     Sql conn
@@ -53,11 +54,12 @@ class GubapplDML {
         this.userId = rule.GUBAPPL_USER_ID.text()
         this.dataOrigin = rule.GUBAPPL_DATA_ORIGIN.text()
         this.activityDate = rule.GUBAPPL_ACTIVITY_DATE.text()
+        this.appShortName = rule.GUBAPPL_APP_ID.text()
     }
 
     def insertGubApplData() {
-        String appSql = """select GUBAPPL_APP_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_NAME)=? and GUBAPPL_USER_ID= ? and GUBAPPL_DATA_ORIGIN = ?"""
-        def params = [this.appName.toUpperCase(),this.userId,this.dataOrigin]
+        String appSql = """select GUBAPPL_SURROGATE_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_ID)=? and UPPER(GUBAPPL_APP_NAME)=? and GUBAPPL_USER_ID= ? and GUBAPPL_DATA_ORIGIN = ?"""
+        def params = [this.appShortName,this.appName.toUpperCase(),this.userId,this.dataOrigin]
         if (connectInfo.debugThis) println appSql
         this.conn.eachRow(appSql, params)
                 {
@@ -65,23 +67,23 @@ class GubapplDML {
                         this.appNum = trow.seqValue
                 }
         if (this.delete && this.delete == "YES") {
-            deleteData(this.appNum, this.appName)
+            deleteData(this.appNum, this.appName, this.appShortName)
         } else {
             //Check whether it is a create or update
             if (this.appNum) {
-                String appNameExistsSQL = """select 1 as appIdSeq from GUBAPPL  where GUBAPPL_APP_ID = ? and UPPER(GUBAPPL_APP_NAME)= ? """
+                String appNameExistsSQL = """select 1 as appIdSeq from GUBAPPL  where GUBAPPL_SURROGATE_ID = ? and UPPER(GUBAPPL_APP_ID) = ? and UPPER(GUBAPPL_APP_NAME)= ? """
                 if (connectInfo.debugThis) println "Application number ${appNameExistsSQL}"
-                this.conn.eachRow(appNameExistsSQL, [this.appNum, this.appName.toUpperCase()]) {trow ->
+                this.conn.eachRow(appNameExistsSQL, [this.appNum, this.appShortName.toUpperCase(), this.appName.toUpperCase()]) {trow ->
                     if (trow.appIdSeq == 1)
                         this.update = true
                 }
             }
             if (this.update) {
                 def updateSql = """update GUBAPPL set GUBAPPL_USER_ID=?,GUBAPPL_DATA_ORIGIN=?,GUBAPPL_ACTIVITY_DATE=?
-                                        where GUBAPPL_APP_ID =? and GUBAPPL_APP_NAME=?"""
+                                        where GUBAPPL_SURROGATE_ID=? and GUBAPPL_APP_ID =? and GUBAPPL_APP_NAME=?"""
 
                 try {
-                    conn.executeUpdate(updateSql, [this.userId, this.dataOrigin, this.activityDate, this.appNum, this.appName])
+                    conn.executeUpdate(updateSql, [this.userId, this.dataOrigin, this.activityDate, this.appNum, this.appShortName, this.appName])
                     connectInfo.tableUpdate("GUBAPPL", 0, 0, 1, 0, 0)
                 }
                 catch (Exception e) {
@@ -92,11 +94,11 @@ class GubapplDML {
                     }
                 }
             } else {
-                def insertSQL = """insert into GUBAPPL (GUBAPPL_APP_ID,GUBAPPL_APP_NAME,GUBAPPL_USER_ID,GUBAPPL_DATA_ORIGIN,
-                  GUBAPPL_ACTIVITY_DATE) values (?,?,?,?,?)"""
+                def insertSQL = """insert into GUBAPPL (GUBAPPL_SURROGATE_ID,GUBAPPL_APP_ID,GUBAPPL_APP_NAME,GUBAPPL_USER_ID,GUBAPPL_DATA_ORIGIN,
+                  GUBAPPL_ACTIVITY_DATE) values (?,?,?,?,?,?)"""
                 if (connectInfo.debugThis) println insertSQL
                 try {
-                    conn.executeUpdate(insertSQL, [this.appNum, this.appName,this.userId, this.dataOrigin, this.activityDate])
+                    conn.executeUpdate(insertSQL, [this.appNum, this.appShortName, this.appName,this.userId, this.dataOrigin, this.activityDate])
                     connectInfo.tableUpdate("GUBAPPL", 0, 1, 0, 0, 0)
                 }
                 catch (Exception e) {
@@ -110,13 +112,13 @@ class GubapplDML {
         }
     }
 
-    def deleteData(appNum, appName) {
+    def deleteData(appNum, appName, appShortName) {
         int delRows
-        def deleteSql = """delete FROM GUBAPPL where GUBAPPL_APP_ID= ? and UPPER(GUBAPPL_APP_NAME) = ? """
+        def deleteSql = """delete FROM GUBAPPL where GUBAPPL_SURROGATE_ID=? and UPPER(GUBAPPL_APP_ID)= ? and UPPER(GUBAPPL_APP_NAME) = ? """
         if (connectInfo.debugThis) println deleteSql
        try {
 
-            delRows = conn.executeUpdate(deleteSql, [appNum,appName.toUpperCase()])
+            delRows = conn.executeUpdate(deleteSql, [appNum,appShortName?.toUpperCase(),appName.toUpperCase()])
             connectInfo.tableUpdate("GUBAPPL", 0, 0, 0, 0, delRows)
         }
         catch (Exception e) {
