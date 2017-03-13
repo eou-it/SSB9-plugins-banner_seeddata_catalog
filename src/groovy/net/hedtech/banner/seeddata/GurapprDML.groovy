@@ -55,7 +55,7 @@ class GurapprDML {
         this.delete = data.DELETE?.text()
         this.appName = data.GUBAPPL_APP_NAME.text()
         this.pageName = data.GURCTLEPP_PAGE_NAME.text()
-        this.twtvRoleCode = data.GURAPPR_TWTVROLE_CODE.text()
+        this.twtvRoleCode = data.GURAPPR_ROLE_CODE.text()
         this.userId = data.GURAPPR_USER_ID.text()
         this.dataOrigin = data.GURAPPR_DATA_ORIGIN.text()
         this.activityDate = data.GURAPPR_ACTIVITY_DATE.text()
@@ -82,7 +82,7 @@ class GurapprDML {
          }
 
         if (this.appId && this.pageId) {
-            String pageRuleSql = """select GURAPPR_SURROGATE_ID as seqValue from gurappr  where GURAPPR_GUBAPPL_APP_ID= ? and GURAPPR_PAGE_ID = ? and UPPER(GURAPPR_TWTVROLE_CODE) = ?  and GURAPPR_USER_ID = ?  and GURAPPR_DATA_ORIGIN = ?"""
+            String pageRuleSql = """select GURAPPR_SURROGATE_ID as seqValue from gurappr  where GURAPPR_GUBAPPL_APP_ID= ? and GURAPPR_PAGE_ID = ? and UPPER(GURAPPR_ROLE_CODE) = ?  and GURAPPR_USER_ID = ?  and GURAPPR_DATA_ORIGIN = ?"""
             def pageRuleParams = [this.appId,this.pageId,this.twtvRoleCode.toUpperCase(),this.userId,this.dataOrigin]
             if (connectInfo.debugThis) println pageRuleSql
             this.conn.eachRow(pageRuleSql, pageRuleParams)
@@ -104,7 +104,7 @@ class GurapprDML {
                     }
                 }
                 if (this.update) {
-                    def updateSql = """update GURAPPR set GURAPPR_TWTVROLE_CODE=?,GURAPPR_USER_ID=?,GURAPPR_DATA_ORIGIN=?,GURAPPR_ACTIVITY_DATE=?
+                    def updateSql = """update GURAPPR set GURAPPR_ROLE_CODE=?,GURAPPR_USER_ID=?,GURAPPR_DATA_ORIGIN=?,GURAPPR_ACTIVITY_DATE=?
                                         where GURAPPR_SURROGATE_ID=? and GURAPPR_GUBAPPL_APP_ID =? and GURAPPR_PAGE_ID=?"""
 
                     try {
@@ -119,7 +119,7 @@ class GurapprDML {
                         }
                     }
                 } else {
-                    def insertSQL = """insert into GURAPPR (GURAPPR_PAGE_ID,GURAPPR_SURROGATE_ID,GURAPPR_TWTVROLE_CODE,GURAPPR_GUBAPPL_APP_ID,GURAPPR_USER_ID,GURAPPR_DATA_ORIGIN,GURAPPR_ACTIVITY_DATE) values (?,?,?,?,?,?,?)"""
+                    def insertSQL = """insert into GURAPPR (GURAPPR_PAGE_ID,GURAPPR_SURROGATE_ID,GURAPPR_ROLE_CODE,GURAPPR_GUBAPPL_APP_ID,GURAPPR_USER_ID,GURAPPR_DATA_ORIGIN,GURAPPR_ACTIVITY_DATE) values (?,?,?,?,?,?,?)"""
                     if (connectInfo.debugThis) println insertSQL
                     try {
                         conn.executeUpdate(insertSQL, [this.pageId,this.pagePrimaryId,this.twtvRoleCode,this.appId,this.userId,this.dataOrigin,this.activityDate])
