@@ -54,7 +54,7 @@ class GurapprDML {
         def data = new XmlParser().parseText(xmlData)
         this.delete = data.DELETE?.text()
         this.appName = data.GUBAPPL_APP_NAME.text()
-        this.pageName = data.GURCTLEPP_PAGE_NAME.text()
+        this.pageName = data.GURCTLEP_PAGE_NAME.text()
         this.twtvRoleCode = data.GURAPPR_ROLE_CODE.text()
         this.userId = data.GURAPPR_USER_ID.text()
         this.dataOrigin = data.GURAPPR_DATA_ORIGIN.text()
@@ -71,7 +71,7 @@ class GurapprDML {
                         this.appId = trow.seqValue
                 }
         if(this.appId){
-            String pageIdSql = """select GURCTLEPP_PAGE_ID as pageIdValue from GURCTLEPP  where GURCTLEPP_GUBAPPL_APP_ID= ? and UPPER(GURCTLEPP_PAGE_NAME) = ?  and GURCTLEPP_USER_ID = ? and GURCTLEPP_DATA_ORIGIN = ?"""
+            String pageIdSql = """select GURCTLEP_PAGE_ID as pageIdValue from GURCTLEP  where GURCTLEP_GUBAPPL_APP_ID= ? and UPPER(GURCTLEP_PAGE_NAME) = ?  and GURCTLEP_USER_ID = ? and GURCTLEP_DATA_ORIGIN = ?"""
             def pageIdparams = [this.appId,this.pageName.toUpperCase(),this.userId,this.dataOrigin]
             if (connectInfo.debugThis) println pageIdSql
             this.conn.eachRow(pageIdSql, pageIdparams)
