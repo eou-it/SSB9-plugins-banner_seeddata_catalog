@@ -175,7 +175,6 @@ public class GcrfldrDML {
         deleteData("GCBQURY", "delete from GCBQURY where GCBQURY_folder_id  = ? ")
         deleteData("GCRCFLD", "delete from GCRCFLD where GCRCFLD_folder_id = ?  ")
         deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_surrogate_id = ? and  NOT EXISTS (SELECT a.gcbactm_folder_id FROM gcbactm a WHERE a.gcbactm_folder_id = gcrfldr_surrogate_id) ")
-        updateTmplData("GCBTMPL", "update GCBTMPL set GCBTMPL_COMM_CHANNEL = 'LETTER' where GCBTMPL_COMM_CHANNEL in ('NEWSLETTER','NOTICE')  ")
 
     }
 

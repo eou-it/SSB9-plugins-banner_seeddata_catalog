@@ -49,6 +49,7 @@ class EmployeeBenefitsDetailDML {
     def pdrdedn_surrogate_id
     def pdrdedn_version
     def pdrdedn_vpdi_code
+    def pdrdedn_1042s_limit_ben_cde
 
     def InputData connectInfo
     Sql conn
@@ -111,6 +112,7 @@ class EmployeeBenefitsDetailDML {
         this.pdrdedn_surrogate_id = pdrdedn.PDRDEDN_SURROGATE_ID.text()
         this.pdrdedn_version = pdrdedn.PDRDEDN_VERSION.text()
         this.pdrdedn_vpdi_code = pdrdedn.PDRDEDN_VPDI_CODE.text()
+        this.pdrdedn_1042s_limit_ben_cde = pdrdedn.PDRDEDN_1042S_LIMIT_BEN_CDE.text()
     }
 
     def processEmployeeBenefitsDetail() {
@@ -165,7 +167,7 @@ class EmployeeBenefitsDetailDML {
             }
             if (!findY) {
                 try {
-                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
+                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                     CallableStatement insertCall = this.connectCall.prepareCall(API)
 
                     insertCall.setInt(1, this.PIDM.toInteger())
@@ -299,7 +301,9 @@ class EmployeeBenefitsDetailDML {
                         insertCall.setDate(30, sqlDate)
                     }
 
-                    insertCall.registerOutParameter(31, java.sql.Types.ROWID)
+                    insertCall.setString(31, pdrdedn_1042s_limit_ben_cde)
+
+                    insertCall.registerOutParameter(32, java.sql.Types.ROWID)
                     try {
                         insertCall.executeUpdate()
                         connectInfo.tableUpdate("PDRDEDN", 0, 1, 0, 0, 0)
