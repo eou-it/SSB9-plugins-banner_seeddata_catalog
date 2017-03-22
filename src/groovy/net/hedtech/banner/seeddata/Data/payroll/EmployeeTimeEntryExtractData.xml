@@ -72,7 +72,11 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <PERJOBS_EXTRACT>
         <!--
         HOPTE0251 - Bulk hours, hourly, with work schedule
-             future use
+           Time Entry Preview with multiple earnings and shifts
+           Time in/outs: none
+             REG shift 1: Several days defaults from work schedule
+             REG shift 2: Special Rate 0.00 Day 1/2/2017
+             VAC shift 1: Special Rate 0.00 Day 1/9/2017, 1/10/2017
         -->
         <BANNERID>HOPTE0251</BANNERID>
         <BANNERID_USER>HOPTE0251</BANNERID_USER>
