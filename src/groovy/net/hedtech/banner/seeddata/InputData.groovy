@@ -65,6 +65,7 @@ public class InputData {
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
+                        '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataGradeModeWriting103.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml',
                         '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml',
@@ -567,7 +568,8 @@ public class InputData {
             'generalstudenthos00001'           : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
             'ssbgeneralstudent2hosweb007'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
             'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
-            'ssbgeneralstudenthosweb006'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml']
+            'ssbgeneralstudenthosweb006'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
+            'catalogGradeModeWriting103'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataGradeModeWriting103.xml']
     ]
     /**
      *  Map of selenium targets
