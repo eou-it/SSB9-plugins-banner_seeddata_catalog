@@ -60,7 +60,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 
     <GUROCFG>
         <GUROCFG_NAME>footerFadeAwayTime</GUROCFG_NAME>
-        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_TYPE>integer</GUROCFG_TYPE>
         <GUROCFG_VALUE>40000</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
@@ -70,8 +70,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 
     <GUROCFG>
         <GUROCFG_NAME>banner.analytics.trackerId</GUROCFG_NAME>
-        <GUROCFG_TYPE>boolean</GUROCFG_TYPE>
-        <GUROCFG_VALUE>true</GUROCFG_VALUE>
+        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_VALUE></GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_DATA_ORIGIN>GRAILS</GUROCFG_DATA_ORIGIN>
@@ -90,7 +90,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 
     <GUROCFG>
         <GUROCFG_NAME>defaultWebSessionTimeout</GUROCFG_NAME>
-        <GUROCFG_TYPE>string</GUROCFG_TYPE>
+        <GUROCFG_TYPE>integer</GUROCFG_TYPE>
         <GUROCFG_VALUE>15000</GUROCFG_VALUE>
         <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
