@@ -307,7 +307,7 @@ public class FinanceProcurementUserDML {
                     "   'B', " +
                     "   null, " +
                     "   null, " +
-                    "   'N', " +
+                    "   'Y', " +
                     "   'N', " +
                     "   'N', " +
                     "   0, " +

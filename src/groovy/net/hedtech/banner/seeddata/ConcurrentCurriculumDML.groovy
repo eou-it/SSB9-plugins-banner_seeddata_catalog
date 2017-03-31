@@ -125,9 +125,9 @@ public class ConcurrentCurriculumDML {
     def processSorlcur() {
         // turn curriculum checking on
 
-        conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = ?", this.curricCheckingOn)
-        conn.execute "{ call gb_common.p_commit() }"
-        tableRow = null
+//        conn.executeUpdate("update sobctrl set sobctrl_curr_rule_ind = ?", this.curricCheckingOn)
+//        conn.execute "{ call gb_common.p_commit() }"
+       tableRow = null
         conn.call("{? = call sb_curriculum_str.f_outcome()}", [Sql.VARCHAR]) { result -> outcome = result }
 
         String rowSQL = """select rowid table_row from SORLCUR

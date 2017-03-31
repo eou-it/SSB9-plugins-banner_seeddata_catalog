@@ -21,11 +21,13 @@ public class GeneralActionItemDML {
     List indexColumns
     def Batch batch
     def deleteNode
-    int itemSeq
+    //int itemSeq
     int folderId
     int templateId
     int statusId
     int actionItemId
+    int blockId
+
 
     public GeneralActionItemDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                                 def deleteNode) {
@@ -49,6 +51,7 @@ public class GeneralActionItemDML {
         //the xml before it gets parsed by the xml parser
         def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
         def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
+
         def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
 
         def personId = apiData.BANNERID?.text()
@@ -67,24 +70,19 @@ public class GeneralActionItemDML {
         //
 
         if (connectInfo.tableName == "GCVASTS") {
-            itemSeq = 0
-            itemSeq = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
-            println "delete"
-            println itemSeq
+            actionItemId = 0
+            actionItemId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
             deleteData( )
         }
 
         // update the curr rule with the one that is selected
         if (connectInfo.tableName == "GCBACTM") {
 
-            itemSeq = getActionItemId( apiData.GCBACTM_NAME[0]?.text().toString() )
+            actionItemId = getActionItemId( apiData.GCBACTM_NAME[0]?.text().toString() )
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
-
-            // println "folder returned: " + folderId
-
-            if (itemSeq == 0) {
-                itemSeq = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
+            if (actionItemId == 0) {
+                actionItemId = apiData.GCBACTM_SURROGATE_ID[0]?.text().toInteger()
             } else {
                //
             }
@@ -107,11 +105,11 @@ public class GeneralActionItemDML {
 
         if (connectInfo.tableName == "GCRAACT") {
 
-            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
 
-            if (itemSeq == 0) {
-                itemSeq = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
+            if (actionItemId == 0) {
+                actionItemId = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
             }
 
             if (statusId == 0) {
@@ -119,31 +117,32 @@ public class GeneralActionItemDML {
             }
 
             apiData.GCRAACT_PIDM[0].setValue(personPidm)
-            apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
             apiData.GCRAACT_STATUS_ID[0].setValue(statusId.toString())
-
-
         }
 
         if (connectInfo.tableName == "GCRACNT") {
             //replace sequence number with current
-            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
-            // templateId = getTemplateId( apiData.ACTIONITEMTEMPLATE[0]?.text().toString() )
+            actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
 
-            if (itemSeq == 0) {
-                itemSeq = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
+            if (actionItemId == 0) {
+                actionItemId = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
             }
 
+            apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
 
+            if (apiData.TEMPLATENAME[0]?.text()) {
+                templateId = getTemplateId( apiData.TEMPLATENAME[0]?.text().toString() )
 
-            /* --to be added
-            if (templateId == 0) {
-                templateId = apiData.GCBPBTR_TEMPLATE_ID[0]?.text().toInteger()
+                if (templateId == 0) {
+                    templateId = apiData.GCRACNT_TEMPLATE_REFERENCE_ID[0]?.text().toInteger()
+                }
+                apiData.GCRACNT_TEMPLATE_REFERENCE_ID[0].setValue(templateId.toString())
             }
-            apiData.GCBPBTR_TEMPLATE_ID[0].setValue(templateId.toString())
-            */
+        }
 
-            apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+        if (connectInfo.tableName == "GCBPBTR") {
+            //todo: set up pagebuilder records
         }
 
         if (connectInfo.tableName == "GCBAGRP") {
@@ -160,11 +159,11 @@ public class GeneralActionItemDML {
 
         if (connectInfo.tableName == "GCRAISR") {
 
-            itemSeq = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
 
-            if (itemSeq == 0) {
-                itemSeq = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
+            if (actionItemId == 0) {
+                actionItemId = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
             }
 
             if (statusId == 0) {
@@ -172,8 +171,21 @@ public class GeneralActionItemDML {
                 statusId = apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0]?.text().toInteger()
             }
 
-            apiData.GCRAISR_ACTION_ITEM_ID[0].setValue(itemSeq.toString())
+            apiData.GCRAISR_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
             apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0].setValue(statusId.toString())
+
+        }
+
+        if (connectInfo.tableName == "GCRABLK") {
+
+            actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
+            //statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
+
+            if (actionItemId == 0) {
+                actionItemId = apiData.GCRABLK_ACTION_ITEM_ID[0]?.text().toInteger()
+            }
+
+            apiData.GCRABLK_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
 
         }
 
@@ -195,11 +207,13 @@ public class GeneralActionItemDML {
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
-        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
         deleteData("GCRAISR", "delete from GCRAISR where 0 <> ? ")
         deleteData("GCBAGRP", "delete from GCBAGRP where 0 <> ? ")
         deleteData("GCRAACT", "delete from GCRAACT where 0 <> ? ")
-        deleteData("GCRACNT", "delete from GCRACNT where 0 <> ?  ")
+        deleteData("GCRACNT", "delete from GCRACNT where 0 <> ? ")
+        deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
+        deleteData("GCRABLK", "delete from GCRABLK where 0 <> ? ")
+        deleteData("GUROCFG", "delete from GUROCFG where 0 <> ? ")
         deleteData("GCBACTM", "delete from GCBACTM where 0 <> ? ")
         deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }
@@ -207,13 +221,13 @@ public class GeneralActionItemDML {
     def deleteData(String tableName, String sql) {
 
         try {
-            int delRows = conn.executeUpdate(sql, [itemSeq])
+            int delRows = conn.executeUpdate(sql, [actionItemId])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 connectInfo.tableUpdate(tableName, 0, 0, 0, 1, 0)
-                println "Problem executing delete for id ${itemSeq} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "Problem executing delete for id ${actionItemId} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
                 println "${sql}"
             }
         }
@@ -262,8 +276,6 @@ public class GeneralActionItemDML {
         int tId
         def tRow
 
-        //println "getting template id for: " + templateName
-
         try {
             tRow = this.conn.firstRow(tsql, [templateName])
             if (tRow) {
@@ -283,8 +295,6 @@ public class GeneralActionItemDML {
         int sId
         def sRow
 
-        //println "getting status id for: " + statusName
-
         try {
             sRow = this.conn.firstRow(ssql, [statusName])
             if (sRow) {
@@ -298,6 +308,5 @@ public class GeneralActionItemDML {
         }
         return sId
     }
-
 
 }

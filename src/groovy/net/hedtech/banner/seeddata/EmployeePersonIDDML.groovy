@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2016-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -11,9 +11,7 @@ import java.text.SimpleDateFormat
 
 /**
  * Employee Person ID DML for Leave by Employee
- * Save the PIDM in the InputData.saveStudentPidm
  */
-
 public class EmployeePersonIDDML {
     def bannerid
     def pebempl_pidm
@@ -82,10 +80,8 @@ public class EmployeePersonIDDML {
 
     def xmlData
 
-    def PIDM
 
     public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall) {
-
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -93,7 +89,6 @@ public class EmployeePersonIDDML {
 
 
     public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
-
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -101,8 +96,6 @@ public class EmployeePersonIDDML {
         parseXmlData()
         processEmployee()
     }
-
-
 
 
     def parseXmlData() {
@@ -169,52 +162,34 @@ public class EmployeePersonIDDML {
     }
 
 
-
- /*   public EmployeePersonIDDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
-        this.conn = conn
-        this.connectInfo = connectInfo
-        this.connectCall = connectCall
-        this.xmlData = xmlData
-        def pebempl = new XmlParser().parseText(xmlData)
-    }*/
-
-
     def processEmployee() {
-        PIDM = null
-        String pidmsql = """select * from spriden  where spriden_id = ?"""
+        def pidm
+        String pidmsql = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
 
         try {
             this.conn.eachRow(pidmsql, [this.bannerid.text()]) { trow ->
-                PIDM = trow.spriden_pidm
-                connectInfo.savePidm = PIDM
+                pidm = trow.spriden_pidm
+                connectInfo.savePidm = pidm
             }
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could not select ID in EmployeePersonIDDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
+                println "Could not select ID in EmployeePersonIDDML, ${this.bannerid.text()} from SPRIDEN. $e.message"
             }
         }
-
 
         ColumnDateValue ddate
         SimpleDateFormat formatter
         String unfDate
         java.sql.Date sqlDate
 
-        if (PIDM) {
+        if (pidm) {
             try {
-                def cntEmployee = 0
-                String employeeSql = """select * from pebempl  where pebempl_pidm = ?"""
-                this.conn.eachRow(employeeSql, [PIDM]) { trow ->
-                    cntEmployee++
-                }
-                if (cntEmployee) {
-                    deleteData()
-                }
+                deleteData()
 
                 String API = "{call pb_employee.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                 CallableStatement insertCall = this.connectCall.prepareCall(API)
-                insertCall.setInt(1, this.PIDM.toInteger())
+                insertCall.setInt(1, pidm.toInteger())
                 insertCall.setString(2, this.pebempl_empl_status)
                 insertCall.setString(3, this.pebempl_coas_code_home)
                 insertCall.setString(4, this.pebempl_orgn_code_home)
@@ -223,7 +198,6 @@ public class EmployeePersonIDDML {
                 insertCall.setString(7, this.pebempl_ecls_code)
                 insertCall.setString(8, this.pebempl_lcat_code)
                 insertCall.setString(9, this.pebempl_bcat_code)
-
 
                 if ((this.pebempl_first_hire_date == "") || (this.pebempl_first_hire_date == null) ||
                         (!this.pebempl_first_hire_date)) {
@@ -235,7 +209,6 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(10, sqlDate)
                 }
-             //   insertCall.setDate(10, this.pebempl_first_hire_date)
 
                 if ((this.pebempl_current_hire_date == "") || (this.pebempl_current_hire_date == null) ||
                         (!this.pebempl_current_hire_date)) {
@@ -248,9 +221,6 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(11, sqlDate)
                 }
 
-            //    insertCall.setDate(11, this.pebempl_current_hire_date)
-
-
                 if ((this.pebempl_adj_service_date == "") || (this.pebempl_adj_service_date == null) ||
                         (!this.pebempl_adj_service_date)) {
                     insertCall.setNull(12, java.sql.Types.DATE)
@@ -261,8 +231,6 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(12, sqlDate)
                 }
-
-            //    insertCall.setDate(12, this.pebempl_adj_service_date)
 
                 if ((this.pebempl_seniority_date == "") || (this.pebempl_seniority_date == null) ||
                         (!this.pebempl_seniority_date)) {
@@ -275,12 +243,7 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(13, sqlDate)
                 }
 
-              //  insertCall.setDate(13, this.pebempl_seniority_date)
-
-
-
                 insertCall.setString(14, this.pebempl_lrea_code)
-
 
                 if ((this.pebempl_loa_beg_date == "") || (this.pebempl_loa_beg_date == null) ||
                         (!this.pebempl_loa_beg_date)) {
@@ -293,8 +256,6 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(15, sqlDate)
                 }
 
-              //  insertCall.setString(15, this.pebempl_loa_beg_date)
-
                 if ((this.pebempl_loa_end_date == "") || (this.pebempl_loa_end_date == null) ||
                         (!this.pebempl_loa_end_date)) {
                     insertCall.setNull(16, java.sql.Types.DATE)
@@ -305,7 +266,6 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(16, sqlDate)
                 }
-               // insertCall.setString(16, this.pebempl_loa_end_date)
 
                 insertCall.setString(17, this.pebempl_trea_code)
 
@@ -319,7 +279,6 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(18, sqlDate)
                 }
-              //  insertCall.setDate(18, this.pebempl_term_date)
                 insertCall.setString(19, this.pebempl_i9_form_ind)
 
 
@@ -333,7 +292,6 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(20, sqlDate)
                 }
-              //  insertCall.setDate(20, this.pebempl_i9_date)
 
                 if ((this.pebempl_i9_expire_date == "") || (this.pebempl_i9_expire_date == null) ||
                         (!this.pebempl_i9_expire_date)) {
@@ -346,7 +304,6 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(21, sqlDate)
                 }
 
-              //  insertCall.setDate(21, this.pebempl_i9_expire_date)
                 insertCall.setString(22, this.pebempl_wkpr_code)
                 insertCall.setString(23, this.pebempl_flsa_ind)
                 insertCall.setString(24, this.pebempl_stgr_code)
@@ -371,8 +328,6 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(31, sqlDate)
                 }
-              //  insertCall.setDate(31, this.pebempl_first_work_date)
-
 
                 if ((this.pebempl_last_work_date == "") || (this.pebempl_last_work_date == null) ||
                         (!this.pebempl_last_work_date)) {
@@ -385,7 +340,6 @@ public class EmployeePersonIDDML {
                     insertCall.setDate(32, sqlDate)
                 }
 
-              //  insertCall.setDate(32, this.pebempl_last_work_date)
                 insertCall.setString(33, this.pebempl_calif_pension_ind)
                 insertCall.setString(34, this.pebempl_nrsi_code)
                 insertCall.setString(35, this.pebempl_ssn_last_name)
@@ -399,7 +353,6 @@ public class EmployeePersonIDDML {
                 insertCall.setString(43, this.pebempl_data_origin)
                 insertCall.setString(44, this.pebempl_ew2_consent_ind)
 
-
                 if ((this.pebempl_ew2_consent_date == "") || (this.pebempl_ew2_consent_date == null) ||
                         (!this.pebempl_ew2_consent_date)) {
                     insertCall.setNull(45, java.sql.Types.DATE)
@@ -410,14 +363,11 @@ public class EmployeePersonIDDML {
                     sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                     insertCall.setDate(45, sqlDate)
                 }
-            //    insertCall.setDate(44, this.pebempl_ew2_consent_date)
                 insertCall.setString(46, this.pebempl_ew2_consent_user_id)
-                // parm 13 p_rowid_out      spriden_rowid_out VARCHAR2
                 insertCall.registerOutParameter(47, java.sql.Types.ROWID)
                 insertCall.setString(48, this.pebempl_ipeds_primary_function)
                 insertCall.setString(49, this.pebempl_ipeds_med_dental_ind)
                 insertCall.setString(50, this.pebempl_etax_consent_ind)
-
 
                 if ((this.pebempl_etax_consent_date == "") || (this.pebempl_etax_consent_date == null) ||
                         (!this.pebempl_etax_consent_date)) {
@@ -432,8 +382,12 @@ public class EmployeePersonIDDML {
 
                 insertCall.setString(52, this.pebempl_etax_consent_user_id)
                 insertCall.setString(53, this.pebempl_new_hire_ind)
-                insertCall.setString(54, this.pebempl_1095tx_consent_ind)
 
+                if (!this.pebempl_1095tx_consent_ind) {
+                    insertCall.setString(54, "N")
+                } else {
+                    insertCall.setString(54, this.pebempl_1095tx_consent_ind)
+                }
 
                 if ((this.pebempl_1095tx_consent_date == "") || (this.pebempl_1095tx_consent_date == null) ||
                         (!this.pebempl_1095tx_consent_date)) {
@@ -469,151 +423,168 @@ public class EmployeePersonIDDML {
                     println "Problem executing insert for table PEBEMPL from EmployeePersonIDDML.groovy: $e.message"
                 }
             }
-
-
         }
     }
 
 
     def deleteData() {
-        String selectSql = """select pebempl_pidm from pebempl where pebempl_pidm = ?"""
-        try {
-            conn.eachRow(selectSql, [connectInfo.savePidm]) {
-                //deleteData("PERLEAV","""delete from perleav where EXISTS
-                //        (SELECT 'X'
-                //        FROM ptrinst
-                //        WHERE  ptrinst_accrue_leave_method = 'E'
-                //        AND  ptrinst_code = 'PAYROLL')
-                //        and perleav_pidm = ?""")
-                //deleteData("PERLHIS","""delete from perlhis where EXISTS
-                //        (SELECT 'X'
-                //        FROM ptrinst
-                //        WHERE  ptrinst_accrue_leave_method = 'E'
-                //        AND  ptrinst_code = 'PAYROLL')
-                //        and perlhis_pidm = ?""")
-             // Pay History
-                deleteData("PHRACCR","delete from phraccr where phraccr_pidm = ?")
-                deleteData("PHRJACR","delete from phrjacr where phrjacr_pidm = ?")
-                deleteData("PHRDOCM","delete from phrdocm where phrdocm_pidm = ?")
-                deleteData("PHREARN","delete from phrearn where phrearn_pidm = ?")
-                deleteData("PHRELBD","delete from phrelbd where phrelbd_pidm = ?")
-                deleteData("PHRERRL","delete from phrerrl where phrerrl_pidm = ?")
-                deleteData("PHRJOBS","delete from phrjobs where phrjobs_pidm = ?")
-                deleteData("PHRATND","delete from phratnd where phratnd_pidm = ?")
-                deleteData("PHRPENS","delete from phrpens where phrpens_pidm = ?")
-                deleteData("PHRREDS","delete from phrreds where phrreds_pidm = ?")
-                deleteData("PHRFLSA","delete from phrflsa where phrflsa_pidm = ?")
-                deleteData("PHRTERN","delete from phrtern where phrtern_pidm = ?")
-                deleteData("PHRTHRS","delete from phrthrs where phrthrs_pidm = ?")
-                deleteData("PHRTLBD","delete from phrtlbd where phrtlbd_pidm = ?")
-                deleteData("PHRUICW","delete from phruicw where phruicw_pidm = ?")
-                deleteData("PHRPENS","delete from phrpens where phrpens_pidm = ?")
-                deleteData("PHTRETO","delete from phtreto where phtreto_pidm = ?")
-                deleteData("PHRCMNT","delete from phrcmnt where phrcmnt_pidm = ?")
-                deleteData("PHRHIST","delete from phrhist where phrhist_pidm = ?")
-                deleteData("PERDTOT","delete from perdtot where perdtot_pidm = ?")
-                deleteData("PERJTOT","delete from perjtot where perjtot_pidm = ?")
-                deleteData("PERETOT","delete from peretot where peretot_pidm = ?")
-             // Cobra and Non-Cobra Beneficiary and Dependents
-                deleteData("PCRDEDN","delete from pcrdedn where pcrdedn_pidm = ?")
-                deleteData("PCRBENE","delete from pcrbene where pcrbene_pidm = ?")
-                deleteData("PCBPERS","delete from pcbpers where pcbpers_pidm = ?")
-                deleteData("PCRCPAY","delete from pcrcpay where pcrcpay_pidm = ?")
-                deleteData("PCRBCOV","delete from pcrbcov where pcrbcov_pidm = ?")
-                deleteData("PDRBALC","delete from pdrbalc where pdrbalc_pidm = ?")
-                deleteData("PDRBAHS","delete from pdrbahs where pdrbahs_pidm = ?")
-                deleteData("PDRBCHS","delete from pdrbchs where pdrbchs_pidm = ?")
-                deleteData("PDRBCOV","delete from pdrbcov where pdrbcov_pidm = ?")
-                deleteData("PDRBENE","delete from pdrbene where pdrbene_pidm = ?")
-                deleteData("PDRBEHS","delete from pdrbehs where pdrbehs_pidm = ?")
-             // Benefits and Deductions
-                deleteData("PDRFLEX","delete from pdrflex where pdrflex_pidm = ?")
-                deleteData("PDRBFLX","delete from pdrbflx where pdrbflx_pidm = ?")
-                deleteData("PERPCRE","delete from perpcre where perpcre_pidm = ?")
-                deleteData("PDRXPID","delete from pdrxpid where pdrxpid_pidm = ?")
-                deleteData("PDRPERS","delete from pdrpers where pdrpers_pidm = ?")
-                deleteData("PHRDEDN","delete from phrdedn where phrdedn_pidm = ?")
-                deleteData("PERDHIS","delete from perdhis where perdhis_pidm = ?")
-                deleteData("PDRDEDN","delete from pdrdedn where pdrdedn_pidm = ?")
-                deleteData("PDRBDED","delete from pdrbded where pdrbded_pidm = ?")
-            // Employee Jobs
-                deleteData("NBRXDED","delete from nbrxded where nbrxded_pidm = ?")
-                deleteData("NBRJFTE","delete from nbrjfte where nbrjfte_pidm = ?")
-                deleteData("NBRWKSH","delete from nbrwksh where nbrwksh_pidm = ?")
-                deleteData("NBBWKSH","delete from nbbwksh where nbbwksh_pidm = ?")
-                deleteData("NBRJLBD","delete from nbrjlbd where nbrjlbd_pidm = ?")
-                deleteData("NBREARN","delete from nbrearn where nbrearn_pidm = ?")
-                deleteData("NBRJOBS","delete from nbrjobs where nbrjobs_pidm = ?")
-                deleteData("NBRBJLH","delete from nbrjlhs where nbrjlhs_pidm = ?")
-                deleteData("NBRJLHS","delete from nbrjlhs where nbrjlhs_pidm = ?")
-                deleteData("NBRBJOB","delete from nbrbjob where nbrbjob_pidm = ?")
-             // Employee essential data
-                deleteData("PERREVW","delete from perrevw where perrevw_pidm = ?")
-                deleteData("PERRHOL","delete from perrhol where perrhol_pidm = ?")
-                deleteData("PERDIRD","delete from perdird where perdird_pidm = ?")
-                deleteData("PERROTH","delete from perroth where perroth_pidm = ?")
-                deleteData("PERRCMT","delete from perrcmt where perrcmt_pidm = ?")
-                deleteData("PERLEAV","delete from perleav where perleav_pidm = ?")
-                deleteData("PERLHIS","delete from perlhis where perlhis_pidm = ?")
-                deleteData("PEREHIS","delete from perehis where perehis_pidm = ?")
-                deleteData("PERJHIS","delete from perjhis where perjhis_pidm = ?")
-                deleteData("PERJLHS","delete from perjlhs where perjlhs_pidm = ?")
-                deleteData("PERJLEV","delete from perjlev where perjlev_pidm = ?")
-                deleteData("PERJOBH","delete from perjobh where perjobh_pidm = ?")
-             // Others
-                deleteData("PERJBBG","delete from perjbbg where perjbbg_pidm = ?")
-                deleteData("PERBARG","delete from perbarg where perbarg_pidm = ?")
-                deleteData("PERRANK","delete from perrank where perrank_pidm = ?")
-                deleteData("PERROTH","delete from perroth where perroth_pidm = ?")
-                deleteData("PERSAHS","delete from persahs where persahs_pidm = ?")
-                deleteData("PERSABB","delete from persabb where persabb_pidm = ?")
-                deleteData("PERSNBL","delete from persnbl where persnbl_pidm = ?")
-                deleteData("PERSTAN","delete from perstan where perstan_pidm = ?")
-                deleteData("PERTWFA","delete from pertwfa where pertwfa_pidm = ?")
-                deleteData("PERGRPA","delete from pergrpa where pergrpa_pidm = ?")
-                deleteData("PEBPAYM","delete from pebpaym where pebpaym_pidm = ?")
-                deleteData("PERJOBP","delete from perjobp where perjobp_pidm = ?")
-                deleteData("PERINDV","delete from perindv where perindv_pidm = ?")
-                deleteData("PERSNBL","delete from persnbl where persnbl_pidm = ?")
-                deleteData("PERXJOB","delete from perxjob where perxjob_pidm = ?")
-             // Tax
-                deleteData("PXRW2FD","delete from pxrw2fd where pxrw2fd_pidm = ?")
-             // Open Enrollment
-                deleteData("PDRBERR","delete from pdrberr where pdrberr_pidm = ?")
-                deleteData("PDRTCOV","delete from pdrtcov where pdrtcov_pidm = ?")
-                deleteData("PDRTBAL","delete from pdrtbal where pdrtbal_pidm = ?")
-                deleteData("PDRDTOE","delete from pdrdtoe where pdrdtoe_pidm = ?")
-                deleteData("PDRBDOE","delete from pdrbdoe where pdrbdoe_pidm = ?")
-             // Applicant data
-                deleteData("PATRECR","delete from patrecr where patrecr_pidm = ?")
-                deleteData("PARAPST","delete from parapst where parapst_pidm = ?")
-                deleteData("PARAPIN","delete from parapin where parapin_pidm = ?")
-                deleteData("PABREQU","delete from pabrequ where pabrequ_appr_pidm = ?")
-                deleteData("PABAPPL","delete from pabappl where pabappl_pidm = ?")
-             // Employee
-                deleteData("PEBEMPL","delete from pebempl where pebempl_pidm = ?")
-            }
-        }
-        catch (e) {
-            connectInfo.tableUpdate("PEBEMPL", 0, 0, 0, 1, 0)
-            if (connectInfo.showErrors) {
-                println "Problem executing select or delete for table PEBEMPL from EmployeePersonIDDML.groovy: $e.message"
-            }
-        }
+        // Pay History
+        deleteData("PHRACCR", "delete from phraccr where phraccr_pidm = ?")
+        deleteData("PHRJACR", "delete from phrjacr where phrjacr_pidm = ?")
+        deleteData("PHRDOCM", "delete from phrdocm where phrdocm_pidm = ?")
+        deleteData("PHREARN", "delete from phrearn where phrearn_pidm = ?")
+        deleteData("PHRELBD", "delete from phrelbd where phrelbd_pidm = ?")
+        deleteData("PHRERRL", "delete from phrerrl where phrerrl_pidm = ?")
+        deleteData("PHRJOBS", "delete from phrjobs where phrjobs_pidm = ?")
+        deleteData("PHRATND", "delete from phratnd where phratnd_pidm = ?")
+        deleteData("PHRPENS", "delete from phrpens where phrpens_pidm = ?")
+        deleteData("PHRREDS", "delete from phrreds where phrreds_pidm = ?")
+        deleteData("PHRFLSA", "delete from phrflsa where phrflsa_pidm = ?")
+        deleteData("PHRTERN", "delete from phrtern where phrtern_pidm = ?")
+        deleteData("PHRTHRS", "delete from phrthrs where phrthrs_pidm = ?")
+        deleteData("PHRTLBD", "delete from phrtlbd where phrtlbd_pidm = ?")
+        deleteData("PHRUICW", "delete from phruicw where phruicw_pidm = ?")
+        deleteData("PHRPENS", "delete from phrpens where phrpens_pidm = ?")
+        deleteData("PHTRETO", "delete from phtreto where phtreto_pidm = ?")
+        deleteData("PHRCMNT", "delete from phrcmnt where phrcmnt_pidm = ?")
+        deleteData("PHRHIST", "delete from phrhist where phrhist_pidm = ?")
+        deleteData("PHRERRL", "delete from phrerrl where phrerrl_pidm = ?")
+        deleteData("PERDTOT", "delete from perdtot where perdtot_pidm = ?")
+        deleteData("PERJTOT", "delete from perjtot where perjtot_pidm = ?")
+        deleteData("PERETOT", "delete from peretot where peretot_pidm = ?")
+        // Time Entry
+        deleteData("PERTETH", "delete from perteth where perteth_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERROUH", "delete from perrouh where perrouh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERELBH", "delete from perelbh where perelbh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERTITH", "delete from pertith where pertith_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERHOUH", "delete from perhouh where perhouh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PEREARH", "delete from perearh where perearh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERDAYH", "delete from perdayh where perdayh_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERJOBH", "delete from perjobh where perjobh_seqno      in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERLVTK", "delete from perlvtk where perlvtk_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERROUT", "delete from perrout where perrout_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERELBD", "delete from perelbd where perelbd_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERTITO", "delete from pertito where pertito_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERHOUR", "delete from perhour where perhour_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PEREARN", "delete from perearn where perearn_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERDAYS", "delete from perdays where perdays_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_pidm = ?)")
+        deleteData("PERJOBS", "delete from perjobs where perjobs_pidm = ?")
+        // Cobra and Non-Cobra Beneficiary and Dependents
+        deleteData("PCRDEDN", "delete from pcrdedn where pcrdedn_pidm = ?")
+        deleteData("PCRBENE", "delete from pcrbene where pcrbene_pidm = ?")
+        deleteData("PCBPERS", "delete from pcbpers where pcbpers_pidm = ?")
+        deleteData("PCRCPAY", "delete from pcrcpay where pcrcpay_pidm = ?")
+        deleteData("PCRBCOV", "delete from pcrbcov where pcrbcov_pidm = ?")
+        deleteData("PDRBALC", "delete from pdrbalc where pdrbalc_pidm = ?")
+        deleteData("PDRBAHS", "delete from pdrbahs where pdrbahs_pidm = ?")
+        deleteData("PDRBCHS", "delete from pdrbchs where pdrbchs_pidm = ?")
+        deleteData("PDRBCOV", "delete from pdrbcov where pdrbcov_pidm = ?")
+        deleteData("PDRBENE", "delete from pdrbene where pdrbene_pidm = ?")
+        deleteData("PDRBEHS", "delete from pdrbehs where pdrbehs_pidm = ?")
+        // Benefits and Deductions
+        deleteData("PDRFLEX", "delete from pdrflex where pdrflex_pidm = ?")
+        deleteData("PDRBFLX", "delete from pdrbflx where pdrbflx_pidm = ?")
+        deleteData("PERPCRE", "delete from perpcre where perpcre_pidm = ?")
+        deleteData("PDRXPID", "delete from pdrxpid where pdrxpid_pidm = ?")
+        deleteData("PDRPERS", "delete from pdrpers where pdrpers_pidm = ?")
+        deleteData("PHRDEDN", "delete from phrdedn where phrdedn_pidm = ?")
+        deleteData("PERDHIS", "delete from perdhis where perdhis_pidm = ?")
+        deleteData("PDRDEDN", "delete from pdrdedn where pdrdedn_pidm = ?")
+        deleteData("PDRBDED", "delete from pdrbded where pdrbded_pidm = ?")
+        // Employee Jobs
+        deleteData("NBRXDED", "delete from nbrxded where nbrxded_pidm = ?")
+        deleteData("NBRJFTE", "delete from nbrjfte where nbrjfte_pidm = ?")
+        deleteData("NBRWKSH", "delete from nbrwksh where nbrwksh_pidm = ?")
+        deleteData("NBBWKSH", "delete from nbbwksh where nbbwksh_pidm = ?")
+        deleteData("NBRJLBD", "delete from nbrjlbd where nbrjlbd_pidm = ?")
+        deleteData("NBREARN", "delete from nbrearn where nbrearn_pidm = ?")
+        deleteData("NBRJOBS", "delete from nbrjobs where nbrjobs_pidm = ?")
+        deleteData("NBRBJLH", "delete from nbrjlhs where nbrjlhs_pidm = ?")
+        deleteData("NBRJLHS", "delete from nbrjlhs where nbrjlhs_pidm = ?")
+        deleteData("NBRBJOB", "delete from nbrbjob where nbrbjob_pidm = ?")
+        // Employee essential data
+        deleteData("PERREVW", "delete from perrevw where perrevw_pidm = ?")
+        deleteData("PERRHOL", "delete from perrhol where perrhol_pidm = ?")
+        deleteData("PERDIRD", "delete from perdird where perdird_pidm = ?")
+        deleteData("PERROTH", "delete from perroth where perroth_pidm = ?")
+        deleteData("PERRCMT", "delete from perrcmt where perrcmt_pidm = ?")
+        deleteData("PERLEAV", "delete from perleav where perleav_pidm = ?")
+        deleteData("PERLHIS", "delete from perlhis where perlhis_pidm = ?")
+        deleteData("PEREHIS", "delete from perehis where perehis_pidm = ?")
+        deleteData("PERJHIS", "delete from perjhis where perjhis_pidm = ?")
+        deleteData("PERJLHS", "delete from perjlhs where perjlhs_pidm = ?")
+        deleteData("PERJLEV", "delete from perjlev where perjlev_pidm = ?")
+        deleteData("PERJOBH", "delete from perjobh where perjobh_pidm = ?")
+        // Others
+        deleteData("PERJBBG", "delete from perjbbg where perjbbg_pidm = ?")
+        deleteData("PERBARG", "delete from perbarg where perbarg_pidm = ?")
+        deleteData("PERRANK", "delete from perrank where perrank_pidm = ?")
+        deleteData("PERROTH", "delete from perroth where perroth_pidm = ?")
+        deleteData("PERSAHS", "delete from persahs where persahs_pidm = ?")
+        deleteData("PERSABB", "delete from persabb where persabb_pidm = ?")
+        deleteData("PERSNBL", "delete from persnbl where persnbl_pidm = ?")
+        deleteData("PERSTAN", "delete from perstan where perstan_pidm = ?")
+        deleteData("PERTWFA", "delete from pertwfa where pertwfa_pidm = ?")
+        deleteData("PERGRPA", "delete from pergrpa where pergrpa_pidm = ?")
+        deleteData("PEBPAYM", "delete from pebpaym where pebpaym_pidm = ?")
+        deleteData("PERJOBP", "delete from perjobp where perjobp_pidm = ?")
+        deleteData("PERINDV", "delete from perindv where perindv_pidm = ?")
+        deleteData("PERSNBL", "delete from persnbl where persnbl_pidm = ?")
+        deleteData("PERXJOB", "delete from perxjob where perxjob_pidm = ?")
+        // Tax
+        deleteData("PXRW2FD", "delete from pxrw2fd where pxrw2fd_pidm = ?")
+        // Open Enrollment
+        deleteData("PDRBERR", "delete from pdrberr where pdrberr_pidm = ?")
+        deleteData("PDRTCOV", "delete from pdrtcov where pdrtcov_pidm = ?")
+        deleteData("PDRTBAL", "delete from pdrtbal where pdrtbal_pidm = ?")
+        deleteData("PDRDTOE", "delete from pdrdtoe where pdrdtoe_pidm = ?")
+        deleteData("PDRBDOE", "delete from pdrbdoe where pdrbdoe_pidm = ?")
+        // Applicant data
+        deleteData("PATRECR", "delete from patrecr where patrecr_pidm = ?")
+        deleteData("PARAPST", "delete from parapst where parapst_pidm = ?")
+        deleteData("PARAPIN", "delete from parapin where parapin_pidm = ?")
+        deleteData("PABREQU", "delete from pabrequ where pabrequ_appr_pidm = ?")
+        deleteData("PABAPPL", "delete from pabappl where pabappl_pidm = ?")
+        // Employee Effort Reports
+        deleteData("PHRECRQ", "delete from phrecrq where phrecrq_member_pidm = ?")
+        deleteData("PHRECRQ", "delete from phrecrq where phrecrq_user_pidm = ?")
+        deleteData("PHRECRQ", "delete from phrecrq where phrecrq_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+        deleteData("PHRECDT", "delete from phrecdt where phrecdt_pidm = ?")
+        deleteData("PHRECDT", "delete from phrecdt where  phrecdt_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+        deleteData("PHRECFD", "delete from phrecfd where  phrecfd_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+        deleteData("PHRECST", "delete from phrecst where phrecst_acting_employee_pidm = ?")
+        deleteData("PHRECST", "delete from phrecst where phrecst_acting_employee_pidm = ?")
+        deleteData("PHRECST", "delete from phrecst where phrecst_phrecrt_id in ( select phrecrt_id from phrecrt where phrecrt_pidm = ? )")
+        deleteData("PHRECSI", """delete from phrecsi where phrecsi_phrecsn_id in (select phrecsn_id from phrecsn where
+                                            phrecsn_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?))""")
 
+        deleteData("PHRECSC", """delete from phrecsc where phrecsc_phrecsn_id in (select phrecsn_id from phrecsn where
+                                            phrecsn_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?))""")
 
+        deleteData("PHRECAL", """delete from phrecal where phrecal_phrecsn_id in (select phrecsn_id from phrecsn where
+                                            phrecsn_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?))""")
+
+        deleteData("PHRECSN", """delete from phrecsn where
+                                            phrecsn_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?)""")
+        deleteData("PHRECST", "delete from phrecst where phrecst_acting_employee_pidm = ?")
+        deleteData("PHRECST", "delete from phrecst where phrecst_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?)")
+
+        deleteData("PHRECRS", "delete from phrecrs where phrecrs_acting_employee_pidm = ?")
+        deleteData("PHRECRS", "delete from phrecrs where phrecrs_phrecrt_id in (select phrecrt_id from phrecrt where phrecrt_pidm = ?)")
+        deleteData("PHRECRT", "delete from phrecrt where phrecrt_pidm = ?")
+        // Employee
+        deleteData("PEBEMPL", "delete from pebempl where pebempl_pidm = ?")
     }
 
 
     def deleteData(String tableName, String sql) {
         try {
-
-            int delRows = conn.executeUpdate(sql, [connectInfo.saveStudentPidm.toInteger()])
+            int delRows = conn.executeUpdate(sql, [connectInfo.savePidm.toInteger()])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Problem executing delete for person ${connectInfo.saveStudentPidm} from StudentPersonIDDML.groovy: $e.message"
+                println "Problem executing ${tableName} delete for ${connectInfo.savePidm} from EmployeePersonIDDML.groovy: $e.message"
                 println "${sql}"
             }
         }
