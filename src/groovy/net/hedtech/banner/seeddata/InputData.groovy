@@ -443,7 +443,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CappStructureRule.xml'],
             'generalstudentcappregKW1028'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationKW1028.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CappStructureRule.xml'],
-            'studentcappstructureruledreg'         : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCappStructureRuledRegistration.xml'],
+            'studentcappstructuredreg'         : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCappStructuredRegistration.xml'],
             'studentApiData'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/ApiDeriveTerm.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApiPersonMatchData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApiSecurityData.xml',
