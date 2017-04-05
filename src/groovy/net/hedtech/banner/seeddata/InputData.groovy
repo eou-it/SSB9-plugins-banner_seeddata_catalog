@@ -626,6 +626,7 @@ public class InputData {
             'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'ssbgeneralstudenthosweb006'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
             'catalogGradeModeWriting103'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataGradeModeWriting103.xml'],
+            'regqaautomated-CAPP'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/qa/GeneralStudentWithCompliance_RegModelR.xml'],
             'regqaautomated-terms'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101610.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101615.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/qa/01Term101620.xml',
