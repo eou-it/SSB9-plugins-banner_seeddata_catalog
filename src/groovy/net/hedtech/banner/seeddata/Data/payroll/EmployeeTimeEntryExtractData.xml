@@ -95,7 +95,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <PERJOBS_EXTRACT>
         <!--
         HOPTE0252 - Bulk hours, hourly, with work schedule
-             future use
+             Time sheet with Error messages
         -->
         <BANNERID>HOPTE0252</BANNERID>
         <BANNERID_USER>HOPTE0252</BANNERID_USER>
@@ -114,7 +114,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <PERJOBS_EXTRACT>
         <!--
         HOPTE0350 - Bulk hours, exception time
-           future use
+           Time sheet with Warning message
         -->
         <BANNERID>HOPTE0350</BANNERID>
         <BANNERID_USER>HOPTE0350</BANNERID_USER>
