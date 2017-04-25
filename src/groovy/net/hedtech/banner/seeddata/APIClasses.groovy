@@ -157,6 +157,14 @@ public class APIClasses {
             'GUROCFG'               : 'net.hedtech.banner.seeddata.GurocfgDML',
             'GURCTLEP'             : 'net.hedtech.banner.seeddata.GurctleppDML',
             'GURAPPR'               : 'net.hedtech.banner.seeddata.GurapprDML',
+            'PERJOBS_EXTRACT'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryExtractDML',
+            'PEREARN'               : 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR'               : 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO'               : 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD'               : 'net.hedtech.banner.seeddata.PerelbdDML',
+            'PERJOBS_MESSAGE'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryMessageDML',
+            'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
 
 
@@ -220,6 +228,12 @@ public class APIClasses {
             'GURCTLEP': 'net.hedtech.banner.seeddata.GurctleppDML',
             'GURAPPR': 'net.hedtech.banner.seeddata.GurapprDML',
 
+            'PEREARN': 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR': 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO': 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD': 'net.hedtech.banner.seeddata.PerelbdDML',
+            'NBRRJQE': 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST': 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
 
 

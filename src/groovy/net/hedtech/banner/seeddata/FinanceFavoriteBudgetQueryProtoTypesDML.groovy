@@ -72,9 +72,9 @@ public class FinanceFavoriteBudgetQueryProtoTypesDML {
                             "\t\t\tWHEN NO_DATA_FOUND THEN\n" +
                             "\t\t\tNULL;\n" +
                             "END;\n" +
-                            "DELETE FROM FORPRTF WHERE FORPRTF_NAME= ? AND FORPRTF_PRTO_TYPE = ?;\n" +
+                            "DELETE FROM FORPRTF WHERE FORPRTF_PRTO_NAME= ? AND FORPRTF_PRTO_TYPE = ?;\n" +
                             "INSERT INTO FORPRTF(\n" +
-                            "\t\t\tFORPRTF_NAME, \n" +
+                            "\t\t\tFORPRTF_PRTO_NAME, \n" +
                             "\t\t\tFORPRTF_PRTO_TYPE, \n" +
                             "\t\t\tFORPRTF_PRTO_VIEWBY, \n" +
                             "\t\t\tFORPRTF_PRTO_PIDM,\n" +
