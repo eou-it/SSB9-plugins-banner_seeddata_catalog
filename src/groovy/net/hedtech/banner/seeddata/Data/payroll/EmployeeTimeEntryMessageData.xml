@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<EMPLOYEE_TIME_ENTRY_MESSAGE_DATA>
+    <PERJOBS_MESSAGE>
+        <!--
+        HOPTE0252 - Bulk hours, hourly, with work schedule
+           Time sheet with multiple Error messages.
+        -->
+        <BANNERID>HOPTE0252</BANNERID>
+        <BANNERID_USER>HOPTE0252</BANNERID_USER>
+        <BANNERID_PROXY></BANNERID_PROXY>
+        <PERJOBS_ACTION_IND>T</PERJOBS_ACTION_IND>
+        <PERJOBS_YEAR>2017</PERJOBS_YEAR>
+        <PERJOBS_PICT_CODE>SB</PERJOBS_PICT_CODE>
+        <PERJOBS_PAYNO>2</PERJOBS_PAYNO>
+        <PERJOBS_POSN>BTE122</PERJOBS_POSN>
+        <PERJOBS_SUFF>00</PERJOBS_SUFF>
+        <PERJOBS_COAS_CODE_TS>B</PERJOBS_COAS_CODE_TS>
+        <PERJOBS_ORGN_CODE_TS>12201</PERJOBS_ORGN_CODE_TS>
+        <USER_ROLE>E</USER_ROLE>
+        <SOURCE>W</SOURCE>
+    </PERJOBS_MESSAGE>
+    <PERJOBS_MESSAGE>
+        <!--
+        HOPTE0350 - Bulk hours, exception time
+           Time sheet with a Warning message
+        -->
+        <BANNERID>HOPTE0350</BANNERID>
+        <BANNERID_USER>HOPTE0350</BANNERID_USER>
+        <BANNERID_PROXY></BANNERID_PROXY>
+        <PERJOBS_ACTION_IND>T</PERJOBS_ACTION_IND>
+        <PERJOBS_YEAR>2017</PERJOBS_YEAR>
+        <PERJOBS_PICT_CODE>SY</PERJOBS_PICT_CODE>
+        <PERJOBS_PAYNO>1</PERJOBS_PAYNO>
+        <PERJOBS_POSN>BTE140</PERJOBS_POSN>
+        <PERJOBS_SUFF>00</PERJOBS_SUFF>
+        <PERJOBS_COAS_CODE_TS>B</PERJOBS_COAS_CODE_TS>
+        <PERJOBS_ORGN_CODE_TS>12503</PERJOBS_ORGN_CODE_TS>
+        <USER_ROLE>E</USER_ROLE>
+        <SOURCE>W</SOURCE>
+    </PERJOBS_MESSAGE>
+</EMPLOYEE_TIME_ENTRY_MESSAGE_DATA>

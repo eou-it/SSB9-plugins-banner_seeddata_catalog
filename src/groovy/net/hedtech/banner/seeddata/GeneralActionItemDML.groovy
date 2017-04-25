@@ -51,6 +51,7 @@ public class GeneralActionItemDML {
         //the xml before it gets parsed by the xml parser
         def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
         def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
+
         def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
 
         def personId = apiData.BANNERID?.text()
