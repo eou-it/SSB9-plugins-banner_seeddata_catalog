@@ -751,7 +751,11 @@ public class InputData {
             'regqaautomated-student-errors':     ['/src/groovy/net/hedtech/banner/seeddata/Data/qa/delete_gobtpac.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/qa/05StudentAT0000009.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/qa/05StudentAT0000011.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/qa/05StudentAT0000029.xml']
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/qa/05StudentAT0000029.xml'],
+            'addauth'                          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentAddAuthData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml']
+
     ]
     /**
      *  Map of selenium targets
