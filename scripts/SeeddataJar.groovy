@@ -10,12 +10,10 @@ target(seeddataJar: "The description of the script goes here!") {
     print " .........Executing Seeddata-Jar Target"
 
     print "  basedir  is "+basedir
-
-
-    def sourceStagingDir = new File( "${basedir}")
-
+	ant.delete(file: "${basedir}/banner_seeddata_catalog.jar")
+	ant.delete(file: "${basedir}/SeedDataUtility.zip.jar")
+	
     Ant.jar(destfile: "${basedir}/banner_seeddata_catalog.jar", basedir: "${basedir}/target/classes"){
-
         manifest {
             attribute( name: 'Main-Class', value: net.hedtech.banner.seeddata.SeedDataLoader )
             attribute( name: 'Class-Path', value: 'lib/grails-core-2.5.0.jar lib/groovy-all-2.4.3.jar lib/ojdbc6.jar lib/commons-logging-1.0.4.jar lib/grails-bootstrap-2.5.0.jar lib/xdb6-11.2.0.4.jar' )
