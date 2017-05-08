@@ -3,14 +3,14 @@
  **********************************************************************************/
 
 // Support Hibernate annotations
-import org.codehaus.groovy.grails.orm.hibernate.cfg.GrailsAnnotationConfiguration
+
 
 
 // Note: Most of the dataSource configuration resides in resources.groovy and in the
 // installation-specific configuration file (see Config.groovy for the include).
 
 dataSource {
-    configClass = GrailsAnnotationConfiguration.class
+   
     dialect = "org.hibernate.dialect.Oracle10gDialect"
     loggingSql = false
 

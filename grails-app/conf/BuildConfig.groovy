@@ -6,7 +6,7 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
-grails.plugin.location.'banner-core'="../banner_core.git"
+
 
 grails.project.dependency.resolver = "maven" // or maven
 
@@ -39,8 +39,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-
-
+        compile  ":hibernate:3.6.10.19"
     }
 
     dependencies {
