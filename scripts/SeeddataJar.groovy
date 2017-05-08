@@ -14,9 +14,6 @@ target(seeddataJar: "The description of the script goes here!") {
 
     def sourceStagingDir = new File( "${basedir}")
 
-    Ant.copy( todir: "${basedir}/target/classes/lib" ) {
-        fileset( dir: "${basedir}/lib" )
-    }
     Ant.jar(destfile: "${basedir}/banner_seeddata_catalog.jar", basedir: "${basedir}/target/classes"){
 
         manifest {
