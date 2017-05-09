@@ -221,7 +221,8 @@ public class InputData {
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerhourData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PertitoData.xml',
                          '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerelbdData.xml',
-                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntryMessageData.xml'
+                         '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntryMessageData.xml',
+						 '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PprhnawData.xml',
             ],
             'functionaltest': ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation': ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
