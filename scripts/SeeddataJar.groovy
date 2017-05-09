@@ -24,6 +24,8 @@ target(seeddataJar: "The description of the script goes here!") {
         fileset( dir: "${basedir}" ) {
             include( name:"banner_seeddata_catalog.jar" )
             include( name:"lib/*.jar" )
+			include( name:"SeedData.bat" )
+			include( name:"SeedData.sh" )
         }
     }
 }
