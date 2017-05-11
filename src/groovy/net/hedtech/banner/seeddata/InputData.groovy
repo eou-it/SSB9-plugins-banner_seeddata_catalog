@@ -615,7 +615,8 @@ public class InputData {
             'finaid-validation'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinAidValidationData.xml'],
             'finaid'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinancialAidData.xml'],
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/PTRLREA_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PPRREFE_Data.xml'],
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/FTVHRSN_Data.xml'],
             'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
             'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
@@ -754,6 +755,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/qa/05StudentAT0000011.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/qa/05StudentAT0000029.xml'],
             'addauth'                          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentAddAuthData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml']
 
