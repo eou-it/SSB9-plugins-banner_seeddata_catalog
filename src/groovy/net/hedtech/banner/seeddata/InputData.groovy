@@ -13,6 +13,8 @@ public class InputData {
 
     // Seed data files
     def xmlFile
+    String batchSeed
+    String baseDirectory
 
     // Database configuration. Note: if dataSource is available, the remaining database configuration fields are not used
     def dataSource
@@ -820,11 +822,19 @@ public class InputData {
                 instance = prompts[8]
             }
         } else {
-
             BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
-            print "Enter path and file name of XML file take 3: "
-            xmlFile = br.readLine()
+            print "Seed  BULK XML's: >> seed-data all "
+            print "Seed  BULK XML's: Press 'Y' to seed multiple XML files , 'N' to seed Single XML file : "
+            batchSeed = br.readLine()
 
+            if(batchSeed.equalsIgnoreCase("Y")){
+                print "Enter Root directory containing the seed data XML files: "
+                baseDirectory = br.readLine()
+            }else if(batchSeed.equalsIgnoreCase("N")) {
+                //BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
+                print "Enter path and file name of XML file take 3: "
+                xmlFile = br.readLine()
+            }
             print "Enter Y or N to save your transaction [${saveThis ? 'Y' : 'N'}]: "
             def inSaveThis = br.readLine()
             saveThis = ("N" == inSaveThis ? false : true)
