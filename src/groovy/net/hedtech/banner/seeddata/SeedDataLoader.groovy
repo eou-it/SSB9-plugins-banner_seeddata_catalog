@@ -34,6 +34,7 @@ public class  SeedDataLoader {
         println "Seed data loader beginning at ${new Date()}  version 2.0"
         def inputData = new InputData([username: 'BANINST1', password: 'u_pick_it', hostname: 'localhost', instance: 'BAN83'])
         if (args.size()) inputData.prompts = args
+        print '>>>>>> inputData.prompts os '+inputData.prompts
         inputData.promptUserForInputData()
         if(inputData.batchSeed.equalsIgnoreCase("Y") && inputData.baseDirectory != null){
             listSeedDataXMLFiles(inputData.baseDirectory)
