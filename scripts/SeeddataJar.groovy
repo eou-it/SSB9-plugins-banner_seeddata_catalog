@@ -39,9 +39,7 @@ target(seeddataJar: "The description of the script goes here!") {
 			include( name:"SeedData.sh" )
         }
     }
-    ant.delete(dir: "${basedir}/target/lib")
-    ant.delete(file: "${basedir}/target/SeedData.bat")
-    ant.delete(file: "${basedir}/target/SeedData.sh")
+
 
 }
 

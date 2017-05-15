@@ -806,20 +806,26 @@ public class InputData {
     public def promptUserForInputData( args ) {
         setCurrentDate()
         if (prompts) {
-            xmlFile = prompts[0]
-            def argSaveThis = prompts[1]
+            batchSeed = prompts[0]
+
+            if(batchSeed.equalsIgnoreCase("Y")){
+                 baseDirectory = prompts[1]
+            }else if(batchSeed.equalsIgnoreCase("N")) {
+                 xmlFile = prompts[1]
+            }
+            def argSaveThis = prompts[2]
             saveThis = ("N" == argSaveThis ? false : true)
-            def argReplaceData = prompts[2]
+            def argReplaceData = prompts[3]
             replaceData = ("Y" == argReplaceData ? true : false)
-            def argDebugThis = prompts[3]
+            def argDebugThis = prompts[4]
             debugThis = ("Y" == argDebugThis ? true : false)
-            def argShowErrors = prompts[4]
+            def argShowErrors = prompts[5]
             showErrors = ("N" == argShowErrors ? false : true)
             if (!dataSource) {
-                username = prompts[5]
-                password = prompts[6]
-                hostname = prompts[7]
-                instance = prompts[8]
+                username = prompts[7]
+                password = prompts[8]
+                hostname = prompts[8]
+                instance = prompts[10]
             }
         } else {
             BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
@@ -876,6 +882,10 @@ public class InputData {
         println "Debug: ${this.debugThis}"
         def dbConf = dataSource ? "Will use DataSource: $dataSource" : "Database connect info: $username/$password, url: $url"
         println "XML file: ${xmlFile} "
+        println "batchSeed : ${batchSeed} "
+        println "baseDirectory : ${baseDirectory} "
+
+
 
 
     }
