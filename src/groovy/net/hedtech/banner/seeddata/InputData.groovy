@@ -829,8 +829,8 @@ public class InputData {
             }
         } else {
             BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
-            print "Seed  BULK XML's: >> seed-data all "
-            print "Seed  BULK XML's: Press 'Y' to seed multiple XML files , 'N' to seed Single XML file : "
+            println "Seed  BULK XML's: >> seed-data all "
+            println "Seed  BULK XML's: Press 'Y' to seed multiple XML files , 'N' to seed Single XML file : "
             batchSeed = br.readLine()
 
             if(batchSeed.equalsIgnoreCase("Y")){

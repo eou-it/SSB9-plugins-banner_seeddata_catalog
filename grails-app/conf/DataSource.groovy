@@ -1,4 +1,4 @@
-import org.codehaus.groovy.grails.orm.hibernate.cfg.GrailsAnnotationConfiguration
+
 
 
 // environment specific settings
