@@ -411,7 +411,7 @@
   <SSBSECT_SEATS_AVAIL>10</SSBSECT_SEATS_AVAIL>
   <SSBSECT_TOT_CREDIT_HRS>0</SSBSECT_TOT_CREDIT_HRS>
   <SSBSECT_CENSUS_ENRL>0</SSBSECT_CENSUS_ENRL>
-  <SSBSECT_CENSUS_ENRL_DATE>12/13/2016</SSBSECT_CENSUS_ENRL_DATE>
+  <SSBSECT_CENSUS_ENRL_DATE>01/01/2025</SSBSECT_CENSUS_ENRL_DATE> 
   <SSBSECT_ACTIVITY_DATE>01-JAN-10</SSBSECT_ACTIVITY_DATE> 
   <SSBSECT_PTRM_START_DATE/>
   <SSBSECT_PTRM_END_DATE/>
@@ -427,9 +427,9 @@
   <SSBSECT_ACCT_CODE/>
   <SSBSECT_ACCL_CODE/>
   <SSBSECT_CENSUS_2_DATE/>
-  <SSBSECT_ENRL_CUT_OFF_DATE/>
-  <SSBSECT_ACAD_CUT_OFF_DATE>12/27/2016</SSBSECT_ACAD_CUT_OFF_DATE>
-  <SSBSECT_DROP_CUT_OFF_DATE>12/28/2016</SSBSECT_DROP_CUT_OFF_DATE>
+  <SSBSECT_ENRL_CUT_OFF_DATE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  <SSBSECT_ACAD_CUT_OFF_DATE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  <SSBSECT_DROP_CUT_OFF_DATE/> 
   <SSBSECT_CENSUS_2_ENRL>0</SSBSECT_CENSUS_2_ENRL>
   <SSBSECT_VOICE_AVAIL>Y</SSBSECT_VOICE_AVAIL>
   <SSBSECT_CAPP_PREREQ_TEST_IND>N</SSBSECT_CAPP_PREREQ_TEST_IND>
@@ -437,10 +437,10 @@
   <SSBSECT_BEST_OF_COMP/>
   <SSBSECT_SUBSET_OF_COMP/>
   <SSBSECT_INSM_CODE>TR</SSBSECT_INSM_CODE>
-  <SSBSECT_REG_FROM_DATE>01/01/2016</SSBSECT_REG_FROM_DATE>
-  <SSBSECT_REG_TO_DATE>12/31/2099</SSBSECT_REG_TO_DATE>
-  <SSBSECT_LEARNER_REGSTART_FDATE>01/01/2016</SSBSECT_LEARNER_REGSTART_FDATE>
-  <SSBSECT_LEARNER_REGSTART_TDATE>12/31/2099</SSBSECT_LEARNER_REGSTART_TDATE>
+  <SSBSECT_REG_FROM_DATE>01/01/2016</SSBSECT_REG_FROM_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  <SSBSECT_REG_TO_DATE>12/31/2099</SSBSECT_REG_TO_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  <SSBSECT_LEARNER_REGSTART_FDATE>01/01/2016</SSBSECT_LEARNER_REGSTART_FDATE>                                                                                                                                                                                                                                                                                                                                                                                                                                        
+  <SSBSECT_LEARNER_REGSTART_TDATE>12/31/2099</SSBSECT_LEARNER_REGSTART_TDATE>     
   <SSBSECT_DUNT_CODE>MTHS</SSBSECT_DUNT_CODE>
   <SSBSECT_NUMBER_OF_UNITS>3</SSBSECT_NUMBER_OF_UNITS>
   <SSBSECT_NUMBER_OF_EXTENSIONS>0</SSBSECT_NUMBER_OF_EXTENSIONS>
