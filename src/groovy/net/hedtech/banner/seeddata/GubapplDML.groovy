@@ -58,8 +58,8 @@ class GubapplDML {
     }
 
     def insertGubApplData() {
-        String appSql = """select GUBAPPL_SURROGATE_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_ID)=? and UPPER(GUBAPPL_APP_NAME)=? and GUBAPPL_USER_ID= ? and GUBAPPL_DATA_ORIGIN = ?"""
-        def params = [this.appShortName,this.appName.toUpperCase(),this.userId,this.dataOrigin]
+        String appSql = """select GUBAPPL_SURROGATE_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_ID)=? and UPPER(GUBAPPL_APP_NAME)=?"""
+        def params = [this.appShortName,this.appName.toUpperCase()]
         if (connectInfo.debugThis) println appSql
         this.conn.eachRow(appSql, params)
                 {
