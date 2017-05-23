@@ -57,7 +57,7 @@ class GurctleppDML {
         def data = new XmlParser().parseText(xmlData)
         this.delete = data.DELETE?.text()
         this.appName = data.GURCTLEP_APP_NAME.text()
-        this.pageName = data.GURCTLEP_PAGE_NAME.text()
+        this.pageName = data.GURCTLEP_PAGE_URL.text()
         this.pageDescription = data.GURCTLEP_PAGE_DESCRIPTION.text()
         this.statusInd = data.GURCTLEP_STATUS_INDICATOR.text()
         this.displaySeq = data.GURCTLEP_DISPLAY_SEQUENCE.text()
@@ -76,7 +76,7 @@ class GurctleppDML {
                         this.appId = trow.seqValue
                 }
         if (this.appId) {
-        String pageIdSql = """select GURCTLEP_PAGE_ID as pageIdValue from GURCTLEP  where GURCTLEP_GUBAPPL_APP_ID= ? and UPPER(GURCTLEP_PAGE_NAME) = ? and GURCTLEP_USER_ID = ? and GURCTLEP_DATA_ORIGIN = ?"""
+        String pageIdSql = """select GURCTLEP_PAGE_ID as pageIdValue from GURCTLEP  where GURCTLEP_GUBAPPL_APP_ID= ? and UPPER(GURCTLEP_PAGE_URL) = ? and GURCTLEP_USER_ID = ? and GURCTLEP_DATA_ORIGIN = ?"""
         def pageIdparams = [this.appId,this.pageName.toUpperCase(),this.userId,this.dataOrigin]
         if (connectInfo.debugThis) println pageIdSql
         this.conn.eachRow(pageIdSql, pageIdparams)
@@ -89,7 +89,7 @@ class GurctleppDML {
         } else {
             //Check whether it is a create or update
             if (this.pageId) {
-                String pageNameExistsSQL = """select 1 as pageCount from GURCTLEP  where GURCTLEP_PAGE_ID = ? and GURCTLEP_GUBAPPL_APP_ID = ? and UPPER(GURCTLEP_PAGE_NAME) = ? """
+                String pageNameExistsSQL = """select 1 as pageCount from GURCTLEP  where GURCTLEP_PAGE_ID = ? and GURCTLEP_GUBAPPL_APP_ID = ? and UPPER(GURCTLEP_PAGE_URL) = ? """
                 if (connectInfo.debugThis) println "Page ID Exists Query${pageNameExistsSQL}"
                 this.conn.eachRow(pageNameExistsSQL, [this.pageId, this.appId,this.pageName.toUpperCase()]) {trow ->
                     if (trow.pageCount == 1)
@@ -97,7 +97,7 @@ class GurctleppDML {
                 }
             }
             if (this.update) {
-                def updatesql = """update GURCTLEP set GURCTLEP_PAGE_NAME = ?,GURCTLEP_DESCRIPTION = ?, GURCTLEP_STATUS_INDICATOR = ?,GURCTLEP_DISPLAY_SEQUENCE=?,GURCTLEP_USER_ID=?,GURCTLEP_DATA_ORIGIN=?,GURCTLEP_ACTIVITY_DATE=?
+                def updatesql = """update GURCTLEP set GURCTLEP_PAGE_URL = ?,GURCTLEP_DESCRIPTION = ?, GURCTLEP_STATUS_INDICATOR = ?,GURCTLEP_DISPLAY_SEQUENCE=?,GURCTLEP_USER_ID=?,GURCTLEP_DATA_ORIGIN=?,GURCTLEP_ACTIVITY_DATE=?
                                         where GURCTLEP_GUBAPPL_APP_ID =? and GURCTLEP_PAGE_ID=?"""
 
                 try {
@@ -112,7 +112,7 @@ class GurctleppDML {
                     }
                 }
             } else {
-                def insertSQL = """insert into GURCTLEP (GURCTLEP_PAGE_ID,GURCTLEP_GUBAPPL_APP_ID,GURCTLEP_PAGE_NAME,GURCTLEP_DESCRIPTION,GURCTLEP_STATUS_INDICATOR,GURCTLEP_DISPLAY_SEQUENCE,GURCTLEP_USER_ID,GURCTLEP_DATA_ORIGIN,GURCTLEP_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
+                def insertSQL = """insert into GURCTLEP (GURCTLEP_PAGE_ID,GURCTLEP_GUBAPPL_APP_ID,GURCTLEP_PAGE_URL,GURCTLEP_DESCRIPTION,GURCTLEP_STATUS_INDICATOR,GURCTLEP_DISPLAY_SEQUENCE,GURCTLEP_USER_ID,GURCTLEP_DATA_ORIGIN,GURCTLEP_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
                 if (connectInfo.debugThis) println insertSQL
                 try {
                     conn.executeUpdate(insertSQL, [this.pageId,this.appId,this.pageName,this.pageDescription,this.statusInd,this.displaySeq,this.userId,this.dataOrigin,this.activityDate])
