@@ -515,6 +515,7 @@ public class InputData {
             'droproster'                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/GTVDICD.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFRRORL.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFRSECH.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterDropStatusData.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterScheduleData.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_PTUCHMAN.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_ARTHINC.xml',
