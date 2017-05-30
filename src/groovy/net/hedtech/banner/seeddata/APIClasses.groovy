@@ -159,10 +159,10 @@ public class APIClasses {
             'PERHOUR'               : 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO'               : 'net.hedtech.banner.seeddata.PertitoDML',
             'PERELBD'               : 'net.hedtech.banner.seeddata.PerelbdDML',
+            'PERJOBS_MESSAGE'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryMessageDML',
             'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
-
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -199,7 +199,7 @@ public class APIClasses {
             'GCRAISR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GUROCFG': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GURNDSP' : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
+            'GURNDSP': 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'TBBCSTU': 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS': 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN': 'net.hedtech.banner.seeddata.NbbposnDML',
@@ -220,12 +220,12 @@ public class APIClasses {
             'PTRECER': 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC': 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
-            'PEREARN' : 'net.hedtech.banner.seeddata.PerearnDML',
-            'PERHOUR' : 'net.hedtech.banner.seeddata.PerhourDML',
-            'PERTITO' : 'net.hedtech.banner.seeddata.PertitoDML',
-            'PERELBD' : 'net.hedtech.banner.seeddata.PerelbdDML',
-            'NBRRJQE' : 'net.hedtech.banner.seeddata.NbrrjqeDML',
-            'NTRINST' : 'net.hedtech.banner.seeddata.NtrinstDML'
+            'PEREARN': 'net.hedtech.banner.seeddata.PerearnDML',
+            'PERHOUR': 'net.hedtech.banner.seeddata.PerhourDML',
+            'PERTITO': 'net.hedtech.banner.seeddata.PertitoDML',
+            'PERELBD': 'net.hedtech.banner.seeddata.PerelbdDML',
+            'NBRRJQE': 'net.hedtech.banner.seeddata.NbrrjqeDML',
+            'NTRINST': 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
 
 
