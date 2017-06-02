@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<PTRCERT_DATA>
+    <PTRCERT>
+        <PTRCERT_CODE>PLU</PTRCERT_CODE>
+        <PTRCERT_DESC>Plumber s License</PTRCERT_DESC>
+        <PTRCERT_DATE_REQD_IND>Y</PTRCERT_DATE_REQD_IND>
+        <PTRCERT_ACTIVITY_DATE>01041995</PTRCERT_ACTIVITY_DATE>
+    </PTRCERT>
+    <PTRCERT>
+        <PTRCERT_CODE>CPA</PTRCERT_CODE>
+        <PTRCERT_DESC>Certified Public Accountant</PTRCERT_DESC>
+        <PTRCERT_DATE_REQD_IND>N</PTRCERT_DATE_REQD_IND>
+        <PTRCERT_ACTIVITY_DATE>06101994</PTRCERT_ACTIVITY_DATE>
+    </PTRCERT>
+    <PTRCERT>
+        <PTRCERT_CODE>CPR</PTRCERT_CODE>
+        <PTRCERT_DESC>Cardiopulmonary Resuscitation</PTRCERT_DESC>
+        <PTRCERT_DATE_REQD_IND>Y</PTRCERT_DATE_REQD_IND>
+        <PTRCERT_ACTIVITY_DATE>06101994</PTRCERT_ACTIVITY_DATE>
+    </PTRCERT>
+    <PTRCERT>
+        <PTRCERT_CODE>ELE</PTRCERT_CODE>
+        <PTRCERT_DESC>Electrician s License</PTRCERT_DESC>
+        <PTRCERT_DATE_REQD_IND>Y</PTRCERT_DATE_REQD_IND>
+        <PTRCERT_ACTIVITY_DATE>06101994</PTRCERT_ACTIVITY_DATE>
+    </PTRCERT>
+    <PTRCERT>
+        <PTRCERT_CODE>NUR</PTRCERT_CODE>
+        <PTRCERT_DESC>Nursing License</PTRCERT_DESC>
+        <PTRCERT_DATE_REQD_IND>Y</PTRCERT_DATE_REQD_IND>
+        <PTRCERT_ACTIVITY_DATE>06101994</PTRCERT_ACTIVITY_DATE>
+    </PTRCERT>
+</PTRCERT_DATA>
