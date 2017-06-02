@@ -2,6 +2,7 @@
 target/classes/*
 target/logs/*
 target/test-reports/*
+target/test-classes/*
 target/stacktrace.log
 web-app/WEB-INF/classes
 web-app/WEB-INF/classes/**/*
