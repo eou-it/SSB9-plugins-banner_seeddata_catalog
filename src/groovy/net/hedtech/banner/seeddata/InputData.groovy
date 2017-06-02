@@ -831,10 +831,10 @@ public class InputData {
             def argShowErrors = prompts[5]
             showErrors = ("N" == argShowErrors ? false : true)
             if (!dataSource) {
-                username = prompts[7]
-                password = prompts[8]
+                username = prompts[6]
+                password = prompts[7]
                 hostname = prompts[8]
-                instance = prompts[10]
+                instance = prompts[9]
             }
         } else {
             BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
