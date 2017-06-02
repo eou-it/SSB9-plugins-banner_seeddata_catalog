@@ -1,6 +1,8 @@
 .DS_Store
-target
-target/**/*
+target/classes/*
+target/logs/*
+target/test-reports/*
+target/stacktrace.log
 web-app/WEB-INF/classes
 web-app/WEB-INF/classes/**/*
 web-app/WEB-INF/tld/*.tld
