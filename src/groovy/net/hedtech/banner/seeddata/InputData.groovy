@@ -17,7 +17,7 @@ public class InputData {
     String baseDirectory
 
     // Database configuration. Note: if dataSource is available, the remaining database configuration fields are not used
-    def dataSource
+    def dataSource = null
     def username
     def password
     def url
@@ -889,11 +889,12 @@ public class InputData {
         println "Save: ${this.saveThis}"
         println "Replace: ${this.replaceData}"
         println "Debug: ${this.debugThis}"
+        url = "jdbc:oracle:thin:@${hostname}:1521/${instance}"
         def dbConf = dataSource ? "Will use DataSource: $dataSource" : "Database connect info: $username/$password, url: $url"
         println "XML file: ${xmlFile} "
         println "batchSeed : ${batchSeed} "
         println "baseDirectory : ${baseDirectory} "
-
+        println "URL: ${url}"
 
 
 
@@ -904,6 +905,7 @@ public class InputData {
 
 
     public String getUrl() {
+        println "Get url: ${url}"
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
@@ -1001,11 +1003,14 @@ public class InputData {
 
 
     public syncSsbSectOracleTextIndex() {
-        def configFile = locateConfigFile()
-        def slurper = new ConfigSlurper( GrailsUtil.environment )
-        def config = slurper.parse( configFile.toURI().toURL() )
-        def url = config.get( "bannerDataSource" ).url
-        def db = Sql.newInstance( url,   //  db =  new Sql( connectInfo.url,
+        def localurl = url
+        if (!url) {
+            def configFile = locateConfigFile()
+            def slurper = new ConfigSlurper(GrailsUtil.environment)
+            def config = slurper.parse(configFile.toURI().toURL())
+            localurl = config.get("bannerDataSource").url
+        }
+        def db = Sql.newInstance( localurl,   //  db =  new Sql( connectInfo.url,
                 "saturn",
                 "u_pick_it",
                 'oracle.jdbc.driver.OracleDriver' )
