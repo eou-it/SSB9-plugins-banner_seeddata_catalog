@@ -23,6 +23,7 @@ import java.sql.Statement
 public class  SeedDataLoader {
 
     def inputData
+    static ArrayList<String> seedDataFiles = new ArrayList<String>();
 
     /**
      * Command line support for loading seed data outside of a grails project.
@@ -33,9 +34,24 @@ public class  SeedDataLoader {
         println "Seed data loader beginning at ${new Date()}  version 2.0"
         def inputData = new InputData([username: 'BANINST1', password: 'u_pick_it', hostname: 'localhost', instance: 'BAN83'])
         if (args.size()) inputData.prompts = args
+        print '>>>>>> inputData.prompts os '+inputData.prompts
         inputData.promptUserForInputData()
-        def seedDataLoader = new SeedDataLoader(inputData)
-        seedDataLoader.execute()
+        if(inputData.batchSeed.equalsIgnoreCase("Y") && inputData.baseDirectory != null){
+            listSeedDataXMLFiles(inputData.baseDirectory)
+            println "Getting Ready to Seed Data from :: " +seedDataFiles.size() +":: XML Files"
+            Iterator fileIterator = seedDataFiles.iterator();
+            while (fileIterator.hasNext()){
+                String seedDataXMLPath = fileIterator.next()
+                inputData.xmlFile= seedDataXMLPath
+                System.out.println("   File path is >>>>"+seedDataXMLPath);
+                def seedDataLoader = new SeedDataLoader(inputData)
+                seedDataLoader.execute()
+            }
+        }else if(inputData.batchSeed.equalsIgnoreCase("N")){
+            def seedDataLoader = new SeedDataLoader(inputData)
+            seedDataLoader.execute()
+        }
+
     }
 
 
@@ -100,5 +116,24 @@ public class  SeedDataLoader {
                   ex.printStackTrace()
               }
         }
+    }
+
+    public static void listSeedDataXMLFiles(String directoryName){
+        File directory = new File(directoryName);
+        //get all the files from a directory
+
+        File[] fList = directory.listFiles();
+        for (File file : fList){
+            if (file.isFile()){
+
+                //System.out.println(file.getAbsolutePath());
+                if(file.getAbsolutePath().endsWith(".xml")){
+                    seedDataFiles.add(file.getAbsolutePath());
+                }
+            } else if (file.isDirectory()){
+                listSeedDataXMLFiles(file.getAbsolutePath());
+            }
+        }
+
     }
 }
