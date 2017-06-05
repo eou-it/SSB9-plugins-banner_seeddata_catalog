@@ -4,8 +4,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <SSCONFIG>
     <GUBAPPL>
-        <GUBAPPL_APP_ID>PSA</GUBAPPL_APP_ID>
-        <GUBAPPL_APP_NAME>PlatformSandboxApp</GUBAPPL_APP_NAME>
+        <GUBAPPL_APP_ID>TEST</GUBAPPL_APP_ID>
+        <GUBAPPL_APP_NAME>TEST_APP</GUBAPPL_APP_NAME>
         <GUBAPPL_USER_ID>GRAILS</GUBAPPL_USER_ID>
         <GUBAPPL_DATA_ORIGIN>GRAILS</GUBAPPL_DATA_ORIGIN>
         <GUBAPPL_ACTIVITY_DATE>01-JAN-10</GUBAPPL_ACTIVITY_DATE>
@@ -103,6 +103,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GUROCFG>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>Home</GURCTLEP_PAGE_DESCRIPTION>
@@ -114,6 +115,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/login/**</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/login/**</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>Login Resources</GURCTLEP_PAGE_DESCRIPTION>
@@ -126,6 +128,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 
     <GURCTLEP>
         <!--<DELETE>YES</DELETE>-->
+        <GURCTLEP_PAGE_ID>/logout/**</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/logout/**</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>Logout Resources</GURCTLEP_PAGE_DESCRIPTION>
@@ -137,6 +140,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/ssb/uiCatalog/index</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/ssb/uiCatalog/index</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>UI Catalog index</GURCTLEP_PAGE_DESCRIPTION>
@@ -148,6 +152,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/ssb/AuthenticationTesting</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/ssb/AuthenticationTesting</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>Authentication Testing resources</GURCTLEP_PAGE_DESCRIPTION>
@@ -159,6 +164,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/ssb/survey/**</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/ssb/survey/**</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>Survey Resources</GURCTLEP_PAGE_DESCRIPTION>
@@ -170,6 +176,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/ssb/userAgreement/**</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/ssb/userAgreement/**</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>User Agreement Resources</GURCTLEP_PAGE_DESCRIPTION>
@@ -181,6 +188,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/ssb/securityQA/**</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/ssb/securityQA/**</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>Security QA resources</GURCTLEP_PAGE_DESCRIPTION>
@@ -192,6 +200,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GURCTLEP>
 
     <GURCTLEP>
+        <GURCTLEP_PAGE_ID>/**</GURCTLEP_PAGE_ID>
         <GURCTLEP_APP_NAME>PlatformSandboxApp</GURCTLEP_APP_NAME>
         <GURCTLEP_PAGE_URL>/**</GURCTLEP_PAGE_URL>
         <GURCTLEP_PAGE_DESCRIPTION>All resources</GURCTLEP_PAGE_DESCRIPTION>
