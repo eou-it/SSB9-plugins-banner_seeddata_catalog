@@ -56,6 +56,7 @@ class GurctleppDML {
     def parseXmlData() {
         def data = new XmlParser().parseText(xmlData)
         this.delete = data.DELETE?.text()
+        this.pageId = data.GURCTLEP_PAGE_ID.text()
         this.appName = data.GURCTLEP_APP_NAME.text()
         this.pageName = data.GURCTLEP_PAGE_URL.text()
         this.pageDescription = data.GURCTLEP_PAGE_DESCRIPTION.text()
