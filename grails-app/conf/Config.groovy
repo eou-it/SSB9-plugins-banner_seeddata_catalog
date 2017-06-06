@@ -2,7 +2,7 @@
   Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 
-import net.hedtech.banner.configuration.ApplicationConfigurationUtils as ConfigFinder
+import net.hedtech.banner.configuration.SeedDataConfigurationUtils as ConfigFinder
 
 
 // ******************************************************************************

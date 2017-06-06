@@ -409,7 +409,7 @@ public class EmployeePersonIDDML {
                     connectInfo.tableUpdate("PEBEMPL", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Insert PEBEMPL ${this.bannerid}}"
-                        println "Problem executing insert for table PEBEMPL from EMployeePersonIDDML.groovy: $e.message"
+                        println "Problem executing insert for table PEBEMPL from EMployeePersonIDDML.groovy: $e.message" + this.pebempl_ecls_code + this.pebempl_bcat_code + this.pebempl_lcat_code
                     }
                 }
                 finally {
