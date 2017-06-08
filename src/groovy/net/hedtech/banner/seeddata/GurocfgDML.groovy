@@ -65,19 +65,20 @@ class GurocfgDML {
     }
 
     def insertGuroCfgData() {
-        String appSql = """select GUBAPPL_APP_ID as seqValue from gubappl  where UPPER(GUBAPPL_APP_NAME)= ? and GUBAPPL_USER_ID = ? and GUBAPPL_DATA_ORIGIN = ?"""
+        deleteOldData()
+        String appSql = """select GUBAPPL_APP_ID as appID from gubappl  where UPPER(GUBAPPL_APP_NAME)= ? and GUBAPPL_USER_ID = ? and GUBAPPL_DATA_ORIGIN = ?"""
         def params = [this.appName.toUpperCase(),this.userId,this.dataOrigin]
         if (connectInfo.debugThis) println appSql
         this.conn.eachRow(appSql, params)
                 {
                     trow ->
-                        this.appId = trow.seqValue
+                        this.appId = trow.appID
                 }
         if (this.appId) {
-                String configRuleSql = """select GUROCFG_SURROGATE_ID as configSeqValue from gurocfg  where GUROCFG_GUBAPPL_APP_ID= ? and UPPER(GUROCFG_NAME) = ?  and UPPER(GUROCFG_TYPE) = ? and GUROCFG_USER_ID= ? and GUROCFG_DATA_ORIGIN = ?"""
+                String configSql = """select GUROCFG_SURROGATE_ID as configSeqValue from gurocfg  where GUROCFG_GUBAPPL_APP_ID= ? and UPPER(GUROCFG_NAME) = ?  and UPPER(GUROCFG_TYPE) = ? and GUROCFG_USER_ID= ? and GUROCFG_DATA_ORIGIN = ?"""
                 def configparams = [this.appId,this.configName.toUpperCase(),this.configType.toUpperCase(),this.userId,this.dataOrigin]
-                if (connectInfo.debugThis) println configRuleSql
-                this.conn.eachRow(configRuleSql, configparams)
+                if (connectInfo.debugThis) println configSql
+                this.conn.eachRow(configSql, configparams)
                         {
                             trow ->
                                 this.configSeqNum = trow.configSeqValue
@@ -127,6 +128,8 @@ class GurocfgDML {
                 }
             }
         }
+
+
     def deleteData(configSeqNum, appId) {
         int delRows
         def deleteSql = """delete FROM GUROCFG where GUROCFG_SURROGATE_ID=? and GUROCFG_GUBAPPL_APP_ID = ?"""
@@ -139,6 +142,24 @@ class GurocfgDML {
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Problem executing delete for GUROCFG table with Config Seq number ${configSeqNum} from GurocfgDML.groovy: $e.message"
+                println "${deleteSql}"
+            }
+        }
+    }
+
+
+    def deleteOldData() {
+        int delRows
+        def deleteSql = """delete FROM GUROCFG """
+        if (connectInfo.debugThis) println deleteSql
+        try {
+
+            delRows = conn.executeUpdate(deleteSql)
+            connectInfo.tableUpdate("GUROCFG", 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing delete for GUROCFG table from GurocfgDML.groovy: $e.message"
                 println "${deleteSql}"
             }
         }
