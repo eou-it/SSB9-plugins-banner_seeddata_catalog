@@ -98,7 +98,6 @@ public class APIClasses {
             'GCBAGRP'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAISR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GUROCFG'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GURNDSP'               : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'FINANCEFISCAYEAR'      : 'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
@@ -139,7 +138,6 @@ public class APIClasses {
             'HRGOBEACCUSER'         : 'net.hedtech.banner.seeddata.HrGobeaccDML',
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
-            'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML',
             'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML',
             'PHRELBD'               : 'net.hedtech.banner.seeddata.PhrelbdDML',
             'PTRECPD'               : 'net.hedtech.banner.seeddata.PtrecpdDML',
@@ -154,6 +152,10 @@ public class APIClasses {
             'PTRECER'               : 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC'               : 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR'               : 'net.hedtech.banner.seeddata.PtrecprDML',
+            'GUBAPPL'               : 'net.hedtech.banner.seeddata.GubapplDML',
+            'GUROCFG'               : 'net.hedtech.banner.seeddata.GurocfgDML',
+            'GURCTLEP'             : 'net.hedtech.banner.seeddata.GurctleppDML',
+            'GURAPPR'               : 'net.hedtech.banner.seeddata.GurapprDML',
             'PERJOBS_EXTRACT'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryExtractDML',
             'PEREARN'               : 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR'               : 'net.hedtech.banner.seeddata.PerhourDML',
@@ -163,6 +165,7 @@ public class APIClasses {
             'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML'
     ]
+
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
     def both = [
@@ -197,16 +200,14 @@ public class APIClasses {
             'GCBAGRP': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAISR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GUROCFG': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GURNDSP': 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
+            'GURNDSP' : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'TBBCSTU': 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS': 'net.hedtech.banner.seeddata.PerdhisDML',
             'NBBPOSN': 'net.hedtech.banner.seeddata.NbbposnDML',
             'NBRPTOT': 'net.hedtech.banner.seeddata.NbrptotDML',
             'PERJHIS': 'net.hedtech.banner.seeddata.PerjhisDML',
             'NTRLRAQ': 'net.hedtech.banner.seeddata.NtrlraqDML',
-            'NTRECDQ': 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PHRELBD': 'net.hedtech.banner.seeddata.PhrelbdDML',
             'PTRECPD': 'net.hedtech.banner.seeddata.PtrecpdDML',
             'PHRECRT': 'net.hedtech.banner.seeddata.PhrecrtDML',
@@ -220,6 +221,11 @@ public class APIClasses {
             'PTRECER': 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC': 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
+            'GUBAPPL': 'net.hedtech.banner.seeddata.GubapplDML',
+            'GUROCFG': 'net.hedtech.banner.seeddata.GurocfgDML',
+            'GURCTLEP': 'net.hedtech.banner.seeddata.GurctleppDML',
+            'GURAPPR': 'net.hedtech.banner.seeddata.GurapprDML',
+
             'PEREARN': 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR': 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO': 'net.hedtech.banner.seeddata.PertitoDML',
