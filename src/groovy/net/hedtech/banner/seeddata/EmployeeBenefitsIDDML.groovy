@@ -4,7 +4,7 @@
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
-import oracle.net.aso.e
+
 
 import java.sql.CallableStatement
 import java.sql.Connection

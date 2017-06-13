@@ -111,7 +111,8 @@ public class FinanceBudgetAvailabilityViewPendingDocumentsHistoryDML {
 			FGRBAKO_RSRV_AMT,
 			FGRBAKO_ACTIVITY_DATE,
 			FGRBAKO_DATA_ORIGIN,
-			FGRBAKO_USER_ID)
+			FGRBAKO_USER_ID,
+			FGRBAKO_FSPD_ORIG)
 			values(
 			?,
 			?,
@@ -134,7 +135,8 @@ public class FinanceBudgetAvailabilityViewPendingDocumentsHistoryDML {
 			?,
 			sysdate,
 			'GRAILS',
-			'GRAILS');
+			'GRAILS',
+			'01');
 			COMMIT;
 			END;
 			"""
