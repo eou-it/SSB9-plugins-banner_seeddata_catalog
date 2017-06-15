@@ -1,3 +1,6 @@
+import grails.util.Holders as CH
+import org.apache.commons.dbcp.BasicDataSource
+
 /*********************************************************************************
  Copyright 2009-2016 Ellucian Company L.P. and its affiliates.
  ****************************************************************************** */
@@ -48,6 +51,16 @@ class BannerSeeddataCatalogGrailsPlugin {
 
 
     def doWithSpring = {
+        //initializing Datasource for runnin the grails target "seed-data"
+        dataSource(BasicDataSource) {
+            maxActive = 5
+            maxIdle = 2
+            defaultAutoCommit = "false"
+            driverClassName = "${CH.config.bannerDataSource.driver}"
+            url = "${CH.config.bannerDataSource.url}"
+            password = "${CH.config.bannerDataSource.password}"
+            username = "${CH.config.bannerDataSource.username}"
+        }
     }
 
 

@@ -738,7 +738,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <SPBPERS_MRTL_CODE>D</SPBPERS_MRTL_CODE>
         <SPBPERS_RELG_CODE/>
         <SPBPERS_SEX>M</SPBPERS_SEX>
-        <SPBPERS_CONFID_IND>N</SPBPERS_CONFID_IND>
+        <SPBPERS_CONFID_IND>Y</SPBPERS_CONFID_IND>
         <SPBPERS_DEAD_IND/>
         <SPBPERS_VETC_FILE_NUMBER/>
         <SPBPERS_LEGAL_NAME/>
@@ -21103,4 +21103,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PEBEMPL_VERSION/>
         <PEBEMPL_VPDI_CODE/>
     </PEBEMPL>
+
+
+
 </EMPLOYEE_DATA>

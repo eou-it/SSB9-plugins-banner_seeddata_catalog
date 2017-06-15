@@ -13,9 +13,11 @@ public class InputData {
 
     // Seed data files
     def xmlFile
+    String batchSeed
+    String baseDirectory
 
     // Database configuration. Note: if dataSource is available, the remaining database configuration fields are not used
-    def dataSource
+    def dataSource = null
     def username
     def password
     def url
@@ -571,6 +573,18 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024937.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListStudentData_A00024919.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ClassListAdministrator.xml'],
+            'droproster'                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/GTVDICD.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFRRORL.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFRSECH.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterDropStatusData.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterScheduleData.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_PTUCHMAN.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_ARTHINC.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFBDRTC.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFBDRSC.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU01.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU02.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU03.xml'],
             'registration-planning-region'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml'],
             'GrailsReadOnly'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GrailsSAMLUser.xml'],
@@ -612,18 +626,20 @@ public class InputData {
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
+
+            'self-service-configuration'       : ['src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml'],
             'finaid-validation'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinAidValidationData.xml'],
             'finaid'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinancialAidData.xml'],
-            'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/PTRLREA_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTRBREA_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PPRREFE_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PPRCERT_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PPREXAM_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PPRSKIL_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTRCERT_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTREXAM_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PTRSKIL_Data.xml'],
-            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/FTVHRSN_Data.xml'],
+            'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRBREA_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRCERT_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTREXAM_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRSKIL_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPRREFE_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPRCERT_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPREXAM_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPRSKIL_Data.xml'],
+            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml'],
             'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
             'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
             'scheduleData201410Crn20201'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml'],
@@ -938,27 +954,41 @@ public class InputData {
     public def promptUserForInputData( args ) {
         setCurrentDate()
         if (prompts) {
-            xmlFile = prompts[0]
-            def argSaveThis = prompts[1]
+            batchSeed = prompts[0]
+
+            if(batchSeed.equalsIgnoreCase("Y")){
+                 baseDirectory = prompts[1]
+            }else if(batchSeed.equalsIgnoreCase("N")) {
+                 xmlFile = prompts[1]
+            }
+            def argSaveThis = prompts[2]
             saveThis = ("N" == argSaveThis ? false : true)
-            def argReplaceData = prompts[2]
+            def argReplaceData = prompts[3]
             replaceData = ("Y" == argReplaceData ? true : false)
-            def argDebugThis = prompts[3]
+            def argDebugThis = prompts[4]
             debugThis = ("Y" == argDebugThis ? true : false)
-            def argShowErrors = prompts[4]
+            def argShowErrors = prompts[5]
             showErrors = ("N" == argShowErrors ? false : true)
             if (!dataSource) {
-                username = prompts[5]
-                password = prompts[6]
-                hostname = prompts[7]
-                instance = prompts[8]
+                username = prompts[6]
+                password = prompts[7]
+                hostname = prompts[8]
+                instance = prompts[9]
             }
         } else {
-
             BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
-            print "Enter path and file name of XML file take 3: "
-            xmlFile = br.readLine()
+            println "Seed  BULK XML's: >> seed-data all "
+            print "Seed  BULK XML's: Press 'Y' to seed multiple XML files , 'N' to seed Single XML file : "
+            batchSeed = br.readLine()
 
+            if(batchSeed.equalsIgnoreCase("Y")){
+                print "Enter Root directory containing the seed data XML files: "
+                baseDirectory = br.readLine()
+            }else if(batchSeed.equalsIgnoreCase("N")) {
+                //BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) )
+                print "Enter path and file name of XML file take 3: "
+                xmlFile = br.readLine()
+            }
             print "Enter Y or N to save your transaction [${saveThis ? 'Y' : 'N'}]: "
             def inSaveThis = br.readLine()
             saveThis = ("N" == inSaveThis ? false : true)
@@ -998,8 +1028,13 @@ public class InputData {
         println "Save: ${this.saveThis}"
         println "Replace: ${this.replaceData}"
         println "Debug: ${this.debugThis}"
+        url = "jdbc:oracle:thin:@${hostname}:1521/${instance}"
         def dbConf = dataSource ? "Will use DataSource: $dataSource" : "Database connect info: $username/$password, url: $url"
         println "XML file: ${xmlFile} "
+        println "batchSeed : ${batchSeed} "
+        println "baseDirectory : ${baseDirectory} "
+        println "URL: ${url}"
+
 
 
     }
@@ -1009,6 +1044,7 @@ public class InputData {
 
 
     public String getUrl() {
+        println "Get url: ${url}"
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
@@ -1106,11 +1142,14 @@ public class InputData {
 
 
     public syncSsbSectOracleTextIndex() {
-        def configFile = locateConfigFile()
-        def slurper = new ConfigSlurper( GrailsUtil.environment )
-        def config = slurper.parse( configFile.toURI().toURL() )
-        def url = config.get( "bannerDataSource" ).url
-        def db = Sql.newInstance( url,   //  db =  new Sql( connectInfo.url,
+        def localurl = url
+        if (!url) {
+            def configFile = locateConfigFile()
+            def slurper = new ConfigSlurper(GrailsUtil.environment)
+            def config = slurper.parse(configFile.toURI().toURL())
+            localurl = config.get("bannerDataSource").url
+        }
+        def db = Sql.newInstance( localurl,   //  db =  new Sql( connectInfo.url,
                 "saturn",
                 "u_pick_it",
                 'oracle.jdbc.driver.OracleDriver' )
