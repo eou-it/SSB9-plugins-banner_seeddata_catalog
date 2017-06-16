@@ -49,7 +49,7 @@ public class NtrecdqDML {
 
     def processNtrecdq( ) {
         def apiData = new XmlParser().parseText( xmlData )
-        def isValid = true
+        def isValid = false
 
                 componentId = fetchNextValFromSequenceGenerator()
 
@@ -61,6 +61,7 @@ public class NtrecdqDML {
                     apiData.NTRECDQ_NTRQPRT_ID[0].setValue(qprtId)
 
                     deleteNtrqprtById([qprtId])
+                    isValid = true;
                 }
 
 
