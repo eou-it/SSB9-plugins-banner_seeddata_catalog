@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<NBRBHIS_DATA>
+    <NBRBHIS>
+        <NBRBHIS_POSN>XA0009</NBRBHIS_POSN>
+        <NBRBHIS_CAPTURE_DATE>06/14/2017</NBRBHIS_CAPTURE_DATE>
+        <NBRBHIS_FISC_CODE>2014</NBRBHIS_FISC_CODE>
+        <NBRBHIS_COAS_CODE>B</NBRBHIS_COAS_CODE>
+        <NBRBHIS_ORGN_CODE>11001</NBRBHIS_ORGN_CODE>
+        <NBRBHIS_BUDGET_FRNG/>
+        <NBRBHIS_BUDGET_FTOT/>
+        <NBRBHIS_BUDGET_PTOT>250000</NBRBHIS_BUDGET_PTOT>
+        <NBRBHIS_BUDGET_RTOT/>
+        <NBRBHIS_ENCUMB_FRNG/>
+        <NBRBHIS_ENCUMB_PTOT/>
+        <NBRBHIS_EXPEND_FRNG/>
+        <NBRBHIS_EXPEND_FTOT/>
+        <NBRBHIS_EXPEND_PTOT/>
+        <NBRBHIS_EXPEND_RTOT/>
+        <NBRBHIS_FTE>1</NBRBHIS_FTE>
+        <NBRBHIS_OBUD_CODE>FY14</NBRBHIS_OBUD_CODE>
+        <NBRBHIS_OBPH_CODE>POSN</NBRBHIS_OBPH_CODE>
+        <NBRBHIS_SGRP_CODE/>
+        <NBRBHIS_BDCA_CODE/>
+        <NBRBHIS_EARN_CODE/>
+        <NBRBHIS_ACTIVITY_DATE/>
+        <NBRBHIS_BUDG_BASIS>12</NBRBHIS_BUDG_BASIS>
+        <NBRBHIS_ANN_BASIS>12</NBRBHIS_ANN_BASIS>
+        <NBRBHIS_BASE_UNITS>12</NBRBHIS_BASE_UNITS>
+        <NBRBHIS_APPT_PCT>100</NBRBHIS_APPT_PCT>
+        <NBRBHIS_SURROGATE_ID/>
+        <NBRBHIS_VERSION/>
+        <NBRBHIS_USER_ID/>
+        <NBRBHIS_DATA_ORIGIN/>
+        <NBRBHIS_VPDI_CODE/>
+    </NBRBHIS>
+</NBRBHIS_DATA>
