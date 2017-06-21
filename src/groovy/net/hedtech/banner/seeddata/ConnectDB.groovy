@@ -41,7 +41,7 @@ public class ConnectDB {
                 db
             }
             else if (connectInfo.dataSource) {
-                println "datasource: ${connectInfo.dataSource}"
+               // println "datasource: ${connectInfo.dataSource}"
                 sessionConnection = connectInfo.dataSource.getConnection()
                 db = new Sql(sessionConnection)
 
@@ -58,7 +58,7 @@ public class ConnectDB {
                 }
                 db
             } else {
-                println "sql datasource: ${connectInfo.dataSource}"
+               // println "sql datasource: ${connectInfo.dataSource}"
                 db = Sql.newInstance(connectInfo.url,   //  db =  new Sql( connectInfo.url,
                                      connectInfo.username,
                                      connectInfo.password,
