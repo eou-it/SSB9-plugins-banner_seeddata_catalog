@@ -830,12 +830,20 @@ public class InputData {
     public def promptUserForInputData(args) {
         setCurrentDate()
         if (prompts) {
-            batchSeed = prompts[0]
+            batchSeed = prompts[0] 
 
-            if (batchSeed.equalsIgnoreCase("Y")) {
-                baseDirectory = prompts[1]
-            } else if (batchSeed.equalsIgnoreCase("N")) {
-                xmlFile = prompts[1]
+            switch (batchSeed.toUpperCase()) {
+                case "Y":
+                    baseDirectory = prompts[1]
+                    break
+                case "N":
+                    xmlFile = prompts[1]
+                    break
+                case "I":
+                    xmlControlFile = prompts[1]
+                    break
+                default:
+                    break;
             }
             def argSaveThis = prompts[2]
             saveThis = ("N" == argSaveThis ? false : true)
