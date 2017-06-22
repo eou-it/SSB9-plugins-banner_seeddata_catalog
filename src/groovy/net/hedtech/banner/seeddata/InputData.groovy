@@ -830,7 +830,7 @@ public class InputData {
     public def promptUserForInputData(args) {
         setCurrentDate()
         if (prompts) {
-            batchSeed = prompts[0] 
+            batchSeed = prompts[0]
 
             switch (batchSeed.toUpperCase()) {
                 case "Y":
