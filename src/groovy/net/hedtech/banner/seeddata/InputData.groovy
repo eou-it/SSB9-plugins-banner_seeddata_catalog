@@ -163,6 +163,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbposnData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrptotData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrplbdData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrbhisData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbrposhData.xml',
                                                   // Employee Information
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtruserData.xml',
@@ -956,10 +958,18 @@ public class InputData {
         if (prompts) {
             batchSeed = prompts[0]
 
-            if (batchSeed.equalsIgnoreCase("Y")) {
-                baseDirectory = prompts[1]
-            } else if (batchSeed.equalsIgnoreCase("N")) {
-                xmlFile = prompts[1]
+            switch (batchSeed.toUpperCase()) {
+                case "Y":
+                    baseDirectory = prompts[1]
+                    break
+                case "N":
+                    xmlFile = prompts[1]
+                    break
+                case "I":
+                    xmlControlFile = prompts[1]
+                    break
+                default:
+                    break;
             }
             def argSaveThis = prompts[2]
             saveThis = ("N" == argSaveThis ? false : true)
