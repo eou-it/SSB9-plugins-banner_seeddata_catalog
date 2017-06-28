@@ -164,7 +164,8 @@ public class APIClasses {
             'PERELBD'               : 'net.hedtech.banner.seeddata.PerelbdDML',
             'PERJOBS_MESSAGE'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryMessageDML',
             'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
-            'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML'
+            'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML',
+            'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML'
     ]
 
 
@@ -233,7 +234,8 @@ public class APIClasses {
             'PERTITO': 'net.hedtech.banner.seeddata.PertitoDML',
             'PERELBD': 'net.hedtech.banner.seeddata.PerelbdDML',
             'NBRRJQE': 'net.hedtech.banner.seeddata.NbrrjqeDML',
-            'NTRINST': 'net.hedtech.banner.seeddata.NtrinstDML'
+            'NTRINST': 'net.hedtech.banner.seeddata.NtrinstDML',
+            'NTRECDQ': 'net.hedtech.banner.seeddata.NtrecdqDML'
     ]
 
 
