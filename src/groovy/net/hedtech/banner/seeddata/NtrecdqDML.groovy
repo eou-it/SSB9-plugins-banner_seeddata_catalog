@@ -52,7 +52,6 @@ public class NtrecdqDML {
         def isValid = false
 
                 componentId = fetchNextValFromSequenceGenerator()
-        println "componentId for NTRECDQ :: "+componentId
 
                 if (componentId ) {
                     apiData.NTRECDQ_ID[0].setValue(componentId?.toString())
@@ -60,7 +59,6 @@ public class NtrecdqDML {
                     def paramList = ntrqprtId.tokenize('-')
                     def qprtId = fetchNtrqprtId(paramList)
                     apiData.NTRECDQ_NTRQPRT_ID[0].setValue(qprtId)
-                    println "NTRQPRT_ID :: qprtId :: "+qprtId
 
                     deleteNtrqprtById([qprtId])
                     isValid = true;
