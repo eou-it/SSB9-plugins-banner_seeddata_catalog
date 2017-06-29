@@ -354,7 +354,6 @@ public class InputData {
             'feeSummaryDataRemove'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/FeeSummaryDataRemove.xml'],
             'ssbgeneralstudentblock'           : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlock.xml'],
             'ssbgeneralstudentblockrule'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockWithRule.xml'],
-            'attr-remove'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingRuleRemoveSelenium.xml'],
             'attr'                             : ['/src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingAdminRuleSetupSeed.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AttendanceTrackingStudentAttendanceSeed8001.xml'],
             'ssb-curriculumarea-display'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/AreaLibrary_smralib.xml',
