@@ -70,9 +70,9 @@ public class FinanceBudgetAvailabilityFoapalAccountDML {
                             "  predefined_normalBalance varchar2(1);\n" +
                             "  \n" +
                             "\tbegin\n" +
-                            "  select decode(?, 51, 'Revenue Act ',61, 'Labor Act ', 71, 'Expenditure Act - Pool ', 82, 'Transfer Out ', 81, 'Transfer In ', 11, 'Assets Act ', 21, 'Liabilities Act ', 31, 'Control Act ', 41, 'Fund Balance Act ', '') into predefined_acctdesc from dual;\n" +
-                            "  select decode(?, 51, 5175,61, 6121, 71, 7130, 81, 8100, 82, 8200, 11, 1007, 21, 2101, 31, 3011, 41, 3081, 0) into predefined_acctpred from dual;\n" +
-                            "  select decode(?, 51, 'C',61, 'D', 71, 'D', 81, 'C', 82, 'D', 11, 'D', 21, 'C', 31, 'C', 41, 'C', '') into predefined_normalBalance from dual;\n" +
+                            "  select decode(?, 51, 'Revenue Act ', 60, 'Labor Act', 61, 'Labor Act ', 71, 'Expenditure Act - Pool ', 82, 'Transfer Out ', 81, 'Transfer In ', 11, 'Assets Act ', 21, 'Liabilities Act ', 31, 'Control Act ', 41, 'Fund Balance Act ', '') into predefined_acctdesc from dual;\n" +
+                            "  select decode(?, 51, 5175, 60, 6021, 61, 6121, 71, 7130, 81, 8100, 82, 8200, 11, 1007, 21, 2101, 31, 3011, 41, 3081, 0) into predefined_acctpred from dual;\n" +
+                            "  select decode(?, 51, 'C', 60, 'D', 61, 'D', 71, 'D', 81, 'C', 82, 'D', 11, 'D', 21, 'C', 31, 'C', 41, 'C', '') into predefined_normalBalance from dual;\n" +
                             "  IF ? IS NOT NULL THEN\n" +
                             "\tDELETE FROM ftvacct where FTVACCT_ACCT_CODE=? AND FTVACCT_COAS_CODE = ?;\n" +
                             "\tINSERT INTO FTVACCT\n" +
