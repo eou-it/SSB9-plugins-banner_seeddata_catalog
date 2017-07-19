@@ -25,22 +25,28 @@ public class PlsqlDML {
         this.connectInfo = connectInfo
         this.connectCall = connectCall
         this.xmlData = xmlData
+
         parseXmlData()
-        processSql()
+        if (this.sqlcode ) {
+            processSql()
+        }
     }
 
 
     def parseXmlData() {
-        def apiData = new XmlParser().parseText(xmlData)
-        this.sqlcode = apiData.SQL_CODE.text()
-        println "sql code ${this.sqlcode}"
-        this.sqlcode..replaceAll("&quot;", "\'")
-      //  this.sqlcode.replaceAll("&lt;", "<").replaceAll("&gt;", ">")
+
+        def posOfSql = -1
+        posOfSql = xmlData.values?.findIndexOf{it == "SQL_CODE"}
+        if (posOfSql > -1){
+            posOfSql += 1
+            this.sqlcode = xmlData.values[posOfSql]
+        }
+
+
 
     }
 
     def processSql(){
-        println "${this.sqlcode}"
         try {
 
             conn.call(this.sqlcode)
