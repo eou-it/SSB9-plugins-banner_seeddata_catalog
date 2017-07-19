@@ -52,7 +52,7 @@ public class TableDriver {
                 def xmlRec = "<${node.name()}>\n"
                 node.children().each() {fields ->
                     def value
-                   
+
                     if (fields.name() == "SQL_CODE"){
                         value = fields.text().replaceAll(/"/, /'/)
                     }
