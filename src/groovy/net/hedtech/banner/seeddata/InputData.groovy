@@ -33,7 +33,7 @@ public class InputData {
     def mepUserId = false
 
     def saveThis = true
-    def debugThis = false
+    def debugThis = true
     def showErrors = true
     def replaceData = true
     def sqlTrace = false
@@ -657,7 +657,8 @@ public class InputData {
             'addauth'                          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentAddAuthData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml']
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml'],
+            'projectionperformance'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/performancetest/student_projection_reg.xml']
     ]
     /**
      *  Map of selenium targets

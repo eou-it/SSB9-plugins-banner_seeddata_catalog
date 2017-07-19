@@ -165,7 +165,8 @@ public class APIClasses {
             'PERJOBS_MESSAGE'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryMessageDML',
             'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML',
-            'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML'
+            'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML',
+            'PERFORMANCE_SQL'       : 'net.hedtech.banner.seeddata.PlsqlDML'
     ]
 
 
