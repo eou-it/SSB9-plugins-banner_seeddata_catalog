@@ -33,7 +33,7 @@ public class InputData {
     def mepUserId = false
 
     def saveThis = true
-    def debugThis = true
+    def debugThis = false
     def showErrors = true
     def replaceData = true
     def sqlTrace = false
