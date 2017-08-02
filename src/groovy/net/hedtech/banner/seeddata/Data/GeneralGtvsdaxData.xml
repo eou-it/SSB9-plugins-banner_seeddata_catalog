@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2015 Ellucian Company L.P. and its affiliates.
+Copyright 2015 - 2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <GTVSDAXDATA>
     <GTVSDAX>
@@ -10,9 +10,25 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <GTVSDAX_DESC>Dynamic Schedule by Date Range</GTVSDAX_DESC>
         <GTVSDAX_SYSREQ_IND>N</GTVSDAX_SYSREQ_IND>
         <GTVSDAX_SYSI_CODE>SW</GTVSDAX_SYSI_CODE>
-        <GTVSDAX_COMMENTS>"Use this concept to specify whether the class schedule can be searched by date ranges. Enter a Y or N in the External Code field.
-
-            Effective Release Banner Student 6.0
-            "</GTVSDAX_COMMENTS>
+        <GTVSDAX_COMMENTS>"Use this concept to specify whether the class schedule can be searched by date ranges. Enter a Y or N in the External Code field. Effective Release Banner Student 6.0 "</GTVSDAX_COMMENTS>
     </GTVSDAX>
+    <GTVSDAX>
+        <GTVSDAX_EXTERNAL_CODE>UPDATE_ME</GTVSDAX_EXTERNAL_CODE>
+        <GTVSDAX_INTERNAL_CODE>REGACCTIME</GTVSDAX_INTERNAL_CODE>
+        <GTVSDAX_INTERNAL_CODE_SEQNO>1</GTVSDAX_INTERNAL_CODE_SEQNO>
+        <GTVSDAX_INTERNAL_CODE_GROUP>REGISTRATION</GTVSDAX_INTERNAL_CODE_GROUP>
+        <DELETE>YES</DELETE>
+    </GTVSDAX>
+    <GTVSDAX>
+        <GTVSDAX_EXTERNAL_CODE>0</GTVSDAX_EXTERNAL_CODE>
+        <GTVSDAX_INTERNAL_CODE>REGACCTIME</GTVSDAX_INTERNAL_CODE>
+        <GTVSDAX_INTERNAL_CODE_GROUP>REGISTRATION</GTVSDAX_INTERNAL_CODE_GROUP>
+        <GTVSDAX_INTERNAL_CODE_SEQNO>1</GTVSDAX_INTERNAL_CODE_SEQNO>
+        <GTVSDAX_DESC>Reg Access Time Out</GTVSDAX_DESC>
+        <GTVSDAX_SYSI_CODE>S</GTVSDAX_SYSI_CODE>
+        <GTVSDAX_COMMENTS>Use this concept to specify the amount of time in which a student must enter registration data after the last activity has occurred. If no activity occurs in the number of minutes specified in this row, the system automatically times out and any unsaved changes are not saved. If the External Code field is left blank, the default value of 60 minutes is used.</GTVSDAX_COMMENTS>
+        <GTVSDAX_CONCEPT>Registration Access Time Out - Registration</GTVSDAX_CONCEPT>
+        <GTVSDAX_ACTIVITY_DATE>01-JAN-2010</GTVSDAX_ACTIVITY_DATE>
+        <GTVSDAX_USER_ID>GRAILS_USER</GTVSDAX_USER_ID>
+    </GTVSDAX>    
 </GTVSDAXDATA>
