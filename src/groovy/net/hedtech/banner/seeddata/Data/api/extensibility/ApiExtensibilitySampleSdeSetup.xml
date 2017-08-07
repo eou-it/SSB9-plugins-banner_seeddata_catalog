@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SQL_PROCESS_RULES_CONFIG>
+    <PERFORMANCE_SQL>
+        <SQL_CODE><![CDATA[DECLARE
+    sde_value_result VARCHAR2(1);
+BEGIN
+    GOKHEDM.p_create_sde_col('SLBBLDG', 'HEDM_BLDG_LANDMARK', 'N', 'VARCHAR2'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', 'N', 'NUMBER'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', 'N', 'DATE'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'INGLE', SYS.ANYDATA.convertVarchar2('BIG OAK TREE'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'TECH', SYS.ANYDATA.convertVarchar2('SMALL RED TREE'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'LAUREN', SYS.ANYDATA.convertVarchar2('MEXICAN RESTAURANT'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'NURS', SYS.ANYDATA.convertVarchar2('BLUE SIGN'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'HUM', SYS.ANYDATA.convertVarchar2('NO GRASS'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'SCI', SYS.ANYDATA.convertVarchar2('STONE WALKWAY'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'MATH', SYS.ANYDATA.convertVarchar2('WATER TOWER'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'PHIL', SYS.ANYDATA.convertVarchar2('BILLBOARD'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'LAW', SYS.ANYDATA.convertVarchar2('FLOWERS'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'LEROY', SYS.ANYDATA.convertVarchar2('GARDEN'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'MOR', SYS.ANYDATA.convertVarchar2('POND'));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'INGLE', SYS.ANYDATA.convertNumber(20));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'TECH', SYS.ANYDATA.convertNumber(10));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'LAUREN', SYS.ANYDATA.convertNumber(12));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'NURS', SYS.ANYDATA.convertNumber(23));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'HUM', SYS.ANYDATA.convertNumber(32));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'SCI', SYS.ANYDATA.convertNumber(8));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'MATH', SYS.ANYDATA.convertNumber(15));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'PHIL', SYS.ANYDATA.convertNumber(17));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'WILSON', SYS.ANYDATA.convertNumber(21));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'VILAGE', SYS.ANYDATA.convertNumber(7));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', NULL, 'WALDRF', SYS.ANYDATA.convertNumber(9));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'INGLE', SYS.ANYDATA.convertDate(to_date('2016-03-20','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'TECH', SYS.ANYDATA.convertDate(to_date('2013-06-24','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'LAUREN', SYS.ANYDATA.convertDate(to_date('2014-04-20','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'NURS', SYS.ANYDATA.convertDate(to_date('2016-10-06','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'HUM', SYS.ANYDATA.convertDate(to_date('2013-10-02','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'SCI', SYS.ANYDATA.convertDate(to_date('2012-02-10','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'MURRAY', SYS.ANYDATA.convertDate(to_date('2012-12-06','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'RAYMON', SYS.ANYDATA.convertDate(to_date('2017-07-13','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'VILAGE', SYS.ANYDATA.convertDate(to_date('2014-07-29','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'WALDRF', SYS.ANYDATA.convertDate(to_date('2014-11-06','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'WILSON', SYS.ANYDATA.convertDate(to_date('2015-09-02','YYYY-MM-DD')));
+    COMMIT;
+END;]]></SQL_CODE>
+    </PERFORMANCE_SQL>
+</SQL_PROCESS_RULES_CONFIG>

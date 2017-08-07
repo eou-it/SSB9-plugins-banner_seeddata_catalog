@@ -50,13 +50,14 @@ public class PlsqlDML {
         try {
 
             conn.call(this.sqlcode)
-            connectInfo.tableUpdate("PLSQL", 0, 0, 1, 0, 0)
+            connectInfo.tableUpdate("PERFORMANCE_SQL", 0, 0, 1, 0, 0)
 
 
         }
         catch (Exception e) {
+            connectInfo.tableUpdate("PERFORMANCE_SQL", 0, 0, 0, 1, 0)
             if (connectInfo.showErrors) {
-                println "Problem executing PLsqlCode from PlsqlDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "Problem executing PERFORMANCE_SQL from PlsqlDML.groovy for ${connectInfo.tableName}: $e.message"
             }
         }
     }
