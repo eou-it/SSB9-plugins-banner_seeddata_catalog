@@ -105,8 +105,8 @@ public class ColumnValue {
                     valsql = "null"
                 } else {  // reduce to smaller size
                     String col = columnValue.toString()
-                    if (col.length() > 3000) {
-                        //  column is too big ${columnName} ${columnValue.length()} 
+                    if (col.length() > 3000 && !(columnName in ["GORRSQL_WHERE_CLAUSE", "GORRSQL_PARSED_SQL"])) {
+                        //  column is too big ${columnName} ${columnValue.length()}
                         def colv = col.substring(0, 3000)
                         col = colv
                     }
