@@ -10,6 +10,10 @@ BEGIN
     GOKHEDM.p_create_sde_col('SLBBLDG', 'HEDM_BLDG_LANDMARK', 'N', 'VARCHAR2'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
     GOKHEDM.p_create_sde_col('SLBBLDG', 'HEDM_BLDG_ROOM_COUNT', 'N', 'NUMBER'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
     GOKHEDM.p_create_sde_col('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', 'N', 'DATE'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_DURATION', 'N', 'NUMBER'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_INSTRUCTOR', 'N', 'VARCHAR2'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_START_DATE', 'N', 'DATE'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_END_DATE', 'N', 'DATE'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'INGLE', SYS.ANYDATA.convertVarchar2('BIG OAK TREE'));
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'TECH', SYS.ANYDATA.convertVarchar2('SMALL RED TREE'));
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'LAUREN', SYS.ANYDATA.convertVarchar2('MEXICAN RESTAURANT'));
@@ -43,6 +47,22 @@ BEGIN
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'VILAGE', SYS.ANYDATA.convertDate(to_date('2014-07-29','YYYY-MM-DD')));
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'WALDRF', SYS.ANYDATA.convertDate(to_date('2014-11-06','YYYY-MM-DD')));
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_CONSTR_DATE', NULL, 'WILSON', SYS.ANYDATA.convertDate(to_date('2015-09-02','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_DURATION', NULL, 'DC', SYS.ANYDATA.convertNumber(21));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_DURATION', NULL, 'IND', SYS.ANYDATA.convertNumber(14));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_DURATION', NULL, 'WLB', SYS.ANYDATA.convertNumber(55));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_DURATION', NULL, 'SEM', SYS.ANYDATA.convertNumber(74));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_INSTRUCTOR', NULL, 'DC', SYS.ANYDATA.convertVarchar2('Smith'));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_INSTRUCTOR', NULL, 'IND', SYS.ANYDATA.convertVarchar2('Jones'));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_INSTRUCTOR', NULL, 'WLB', SYS.ANYDATA.convertVarchar2('Johnson'));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_INSTRUCTOR', NULL, 'SEM', SYS.ANYDATA.convertVarchar2('Nelson'));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_START_DATE', NULL, 'DC', SYS.ANYDATA.convertDate(to_date('2000-12-06','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_START_DATE', NULL, 'IND', SYS.ANYDATA.convertDate(to_date('1995-10-12','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_START_DATE', NULL, 'WLB', SYS.ANYDATA.convertDate(to_date('1997-07-16','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_START_DATE', NULL, 'SEM', SYS.ANYDATA.convertDate(to_date('1985-08-03','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'DC', SYS.ANYDATA.convertDate(to_date('2008-02-09','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'IND', SYS.ANYDATA.convertDate(to_date('2009-05-19','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'WLB', SYS.ANYDATA.convertDate(to_date('2015-03-17','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'SEM', SYS.ANYDATA.convertDate(to_date('2003-06-15','YYYY-MM-DD')));
     COMMIT;
 END;]]></SQL_CODE>
     </PERFORMANCE_SQL>
