@@ -645,6 +645,7 @@ public class InputData {
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml'],
             'api-extensibility'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilityConfiguration.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlProcessRules.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlValidation.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySampleSdeSetup.xml'],
             'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
             'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
