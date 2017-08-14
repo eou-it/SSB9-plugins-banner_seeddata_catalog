@@ -531,9 +531,9 @@ select gorguid_guid as guid,
 --
 begin
   if :HTTP_METHOD in ("POST","PUT") then
-    update stvmrtl
+    update stvschd
            set stvschd_insm_code = decode(:STVSCHD_INSM_CODE,dml_common.unspecified_string,stvschd_insm_code,:STVSCHD_INSM_CODE),
-               stvmrtl_activity_date = SYSDATE
+               stvschd_activity_date = SYSDATE
      where stvschd_surrogate_id = (select gorguid_domain_surrogate_id
                                      from gorguid
                                     where gorguid_ldm_name = "instructional-methods"
