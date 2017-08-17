@@ -2383,6 +2383,20 @@ Copyright 2014-2017 Ellucian Company L.P. and its affiliates.
 
     <!-- / Added in 9.9 -->
 
+    <!-- / Added in 9.10 -->
+    <GORICCR>
+        <GORICCR_SQPR_CODE>HEDM</GORICCR_SQPR_CODE>
+        <GORICCR_ICSN_CODE>HOUSING.APPLICATION.TYPE</GORICCR_ICSN_CODE>
+        <GORICCR_VALUE>HOME</GORICCR_VALUE>
+        <GORICCR_ACTIVITY_DATE>01-JAN-10</GORICCR_ACTIVITY_DATE>
+        <GORICCR_USER_ID>GRAILS</GORICCR_USER_ID>
+        <GORICCR_VALUE_DESC>Housing Application Type</GORICCR_VALUE_DESC>
+        <GORICCR_SEQ_NO></GORICCR_SEQ_NO>
+        <GORICCR_TRANSLATION_VALUE></GORICCR_TRANSLATION_VALUE>
+        <GORICCR_DATA_ORIGIN>GRAILS</GORICCR_DATA_ORIGIN>
+    </GORICCR>
+    <!-- / Added in 9.10 -->
+
     <!-- Deleted from Ethos API 9.10 -->
 
     <GORICCR>
