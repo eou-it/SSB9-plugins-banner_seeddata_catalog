@@ -5,7 +5,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 <EMPLOYEE_TIME_ENTRY_EXTRACT_DATA>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0200 - Time In/Out, no shift definitions.
+        HOPTE0200 - Time In/Out, no shift code, no shift definitions.
            Day: 1/2/2017
               Hours: REG, shift 1, special rate 0.0
                  Time in/outs: 0800-1700, shift 1, special rate 0.0
@@ -26,7 +26,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </PERJOBS_EXTRACT>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0205 - Time In/Out, shift code UNIO.
+        HOPTE0205 - Time In/Out, with shift code UNIO, with shift definitions.
            Day: 1/2/2017
               Hours: REG, shift 1, special rate 0.0
                  Time in/outs: 0800-1700, shift null, special rate null
@@ -47,7 +47,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </PERJOBS_EXTRACT>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0250 - Bulk hours, hourly, with work schedule
+        HOPTE0250 - Bulk hours, hourly, with work schedule, with shift code SECR, with shift definitions
            Day: several, defaulted from work schedule
               Hours: REG, shift 1 defaulted from work schedule
                  Time in/outs: none
@@ -71,7 +71,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </PERJOBS_EXTRACT>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0251 - Bulk hours, hourly, with work schedule
+        HOPTE0251 - Bulk hours, hourly, with work schedule, with shift code SECR, with shift definitions
            Time Entry Preview with multiple earnings and shifts
            Time in/outs: none
              REG shift 1: Several days defaults from work schedule
@@ -94,7 +94,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </PERJOBS_EXTRACT>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0252 - Bulk hours, hourly, with work schedule
+        HOPTE0252 - Bulk hours, hourly, with work schedule, with shift code SECR, with shift definitions
              Time sheet with Error messages
         -->
         <BANNERID>HOPTE0252</BANNERID>
@@ -113,7 +113,26 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </PERJOBS_EXTRACT>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0350 - Bulk hours, exception time
+        HOPTE0255 - Bulk hours, hourly, with work schedule, with shift code SECR, with shift definitions
+             Time sheet with Error messages
+        -->
+        <BANNERID>HOPTE0255</BANNERID>
+        <BANNERID_USER>HOPTE0255</BANNERID_USER>
+        <BANNERID_PROXY></BANNERID_PROXY>
+        <PERJOBS_ACTION_IND>T</PERJOBS_ACTION_IND>
+        <PERJOBS_YEAR>2017</PERJOBS_YEAR>
+        <PERJOBS_PICT_CODE>SB</PERJOBS_PICT_CODE>
+        <PERJOBS_PAYNO>2</PERJOBS_PAYNO>
+        <PERJOBS_POSN>BTE125</PERJOBS_POSN>
+        <PERJOBS_SUFF>00</PERJOBS_SUFF>
+        <PERJOBS_COAS_CODE_TS>B</PERJOBS_COAS_CODE_TS>
+        <PERJOBS_ORGN_CODE_TS>1103</PERJOBS_ORGN_CODE_TS>
+        <USER_ROLE>E</USER_ROLE>
+        <SOURCE>W</SOURCE>
+    </PERJOBS_EXTRACT>
+    <PERJOBS_EXTRACT>
+        <!--
+        HOPTE0350 - Bulk hours, exception time, no shift code, no shift definitions
            Time sheet with Warning message
         -->
         <BANNERID>HOPTE0350</BANNERID>
@@ -132,7 +151,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </PERJOBS_EXTRACT>
     <PERJOBS_EXTRACT>
         <!--
-        HOPTE0500 - Clock in/out, no shift definitions
+        HOPTE0500 - Clock in/out, no shift code, no shift definitions
            Day: 1/2/2017
               Hours: REG, shift 1, special rate 0.0
                  Time in/outs: shift 1, special rate 0.0, 0800-1200, no adjusted time
@@ -151,6 +170,45 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <PERJOBS_SUFF>00</PERJOBS_SUFF>
         <PERJOBS_COAS_CODE_TS>B</PERJOBS_COAS_CODE_TS>
         <PERJOBS_ORGN_CODE_TS>12604</PERJOBS_ORGN_CODE_TS>
+        <USER_ROLE>E</USER_ROLE>
+        <SOURCE>W</SOURCE>
+    </PERJOBS_EXTRACT>
+    <PERJOBS_EXTRACT>
+        <!--
+        HOPTE0505 - Clock in/out, wiht shift code UNIO, with shift definitions
+        -->
+        <BANNERID>HOPTE0505</BANNERID>
+        <BANNERID_USER>HOPTE0505</BANNERID_USER>
+        <BANNERID_PROXY></BANNERID_PROXY>
+        <PERJOBS_ACTION_IND>T</PERJOBS_ACTION_IND>
+        <PERJOBS_YEAR>2017</PERJOBS_YEAR>
+        <PERJOBS_PICT_CODE>SB</PERJOBS_PICT_CODE>
+        <PERJOBS_PAYNO>2</PERJOBS_PAYNO>
+        <PERJOBS_POSN>BTE115</PERJOBS_POSN>
+        <PERJOBS_SUFF>00</PERJOBS_SUFF>
+        <PERJOBS_COAS_CODE_TS>B</PERJOBS_COAS_CODE_TS>
+        <PERJOBS_ORGN_CODE_TS>11004</PERJOBS_ORGN_CODE_TS>
+        <USER_ROLE>E</USER_ROLE>
+        <SOURCE>W</SOURCE>
+    </PERJOBS_EXTRACT>
+
+    <!-- LEAVE REPORTS -->
+
+    <PERJOBS_EXTRACT>
+        <!--
+        HOPTE0300 - Leave report
+        -->
+        <BANNERID>HOPTE0300</BANNERID>
+        <BANNERID_USER>HOPTE0300</BANNERID_USER>
+        <BANNERID_PROXY></BANNERID_PROXY>
+        <PERJOBS_ACTION_IND>L</PERJOBS_ACTION_IND>
+        <PERJOBS_YEAR>2017</PERJOBS_YEAR>
+        <PERJOBS_PICT_CODE>SY</PERJOBS_PICT_CODE>
+        <PERJOBS_PAYNO>2</PERJOBS_PAYNO>
+        <PERJOBS_POSN>BTE130</PERJOBS_POSN>
+        <PERJOBS_SUFF>00</PERJOBS_SUFF>
+        <PERJOBS_COAS_CODE_TS>B</PERJOBS_COAS_CODE_TS>
+        <PERJOBS_ORGN_CODE_TS>11203</PERJOBS_ORGN_CODE_TS>
         <USER_ROLE>E</USER_ROLE>
         <SOURCE>W</SOURCE>
     </PERJOBS_EXTRACT>

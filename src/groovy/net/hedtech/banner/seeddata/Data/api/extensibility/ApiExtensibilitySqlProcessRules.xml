@@ -38,6 +38,20 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GTVSQRU_START_DATE>01-JAN-2010</GTVSQRU_START_DATE>
         <GTVSQRU_USER_ID>GRAILS</GTVSQRU_USER_ID>
     </GTVSQRU>
+    <GTVSQRU>
+        <GTVSQRU_CODE>INSTR_METHODS_READ</GTVSQRU_CODE>
+        <GTVSQRU_DESC>Extensions for instructional-methods model</GTVSQRU_DESC>
+        <GTVSQRU_SYS_REQ_IND>N</GTVSQRU_SYS_REQ_IND>
+        <GTVSQRU_START_DATE>01-JAN-2010</GTVSQRU_START_DATE>
+        <GTVSQRU_USER_ID>GRAILS</GTVSQRU_USER_ID>
+    </GTVSQRU>
+    <GTVSQRU>
+        <GTVSQRU_CODE>INSTR_METHODS_WRITE</GTVSQRU_CODE>
+        <GTVSQRU_DESC>Extensions for instructional-methods model</GTVSQRU_DESC>
+        <GTVSQRU_SYS_REQ_IND>N</GTVSQRU_SYS_REQ_IND>
+        <GTVSQRU_START_DATE>01-JAN-2010</GTVSQRU_START_DATE>
+        <GTVSQRU_USER_ID>GRAILS</GTVSQRU_USER_ID>
+    </GTVSQRU>
     <GTVSQPA>
         <GTVSQPA_CODE>GUID_LIST</GTVSQPA_CODE>
         <GTVSQPA_DESC>List of Global Unique Identifier for an integration resource</GTVSQPA_DESC>
@@ -94,6 +108,41 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GTVSQPA_START_DATE>01-JAN-2010</GTVSQPA_START_DATE>
         <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
     </GTVSQPA>
+    <GTVSQPA>
+        <GTVSQPA_CODE>STVSCHD_INSM_CODE</GTVSQPA_CODE>
+        <GTVSQPA_DESC>Instrctnl method value of an instructional-methods resource</GTVSQPA_DESC>
+        <GTVSQPA_DATA_TYPE_CDE>C</GTVSQPA_DATA_TYPE_CDE>
+        <GTVSQPA_START_DATE>01-JAN-2010</GTVSQPA_START_DATE>
+        <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
+    </GTVSQPA>
+    <GTVSQPA>
+        <GTVSQPA_CODE>HEDM_DURATION</GTVSQPA_CODE>
+        <GTVSQPA_DESC>SDE column for duration</GTVSQPA_DESC>
+        <GTVSQPA_DATA_TYPE_CDE>N</GTVSQPA_DATA_TYPE_CDE>
+        <GTVSQPA_START_DATE>01-JAN-2010</GTVSQPA_START_DATE>
+        <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
+    </GTVSQPA>
+    <GTVSQPA>
+        <GTVSQPA_CODE>HEDM_INSTRUCTOR</GTVSQPA_CODE>
+        <GTVSQPA_DESC>SDE column for instructor</GTVSQPA_DESC>
+        <GTVSQPA_DATA_TYPE_CDE>C</GTVSQPA_DATA_TYPE_CDE>
+        <GTVSQPA_START_DATE>01-JAN-2010</GTVSQPA_START_DATE>
+        <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
+    </GTVSQPA>
+    <GTVSQPA>
+        <GTVSQPA_CODE>HEDM_START_DATE</GTVSQPA_CODE>
+        <GTVSQPA_DESC>SDE column for start date</GTVSQPA_DESC>
+        <GTVSQPA_DATA_TYPE_CDE>D</GTVSQPA_DATA_TYPE_CDE>
+        <GTVSQPA_START_DATE>01-JAN-2010</GTVSQPA_START_DATE>
+        <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
+    </GTVSQPA>
+    <GTVSQPA>
+        <GTVSQPA_CODE>HEDM_END_DATE</GTVSQPA_CODE>
+        <GTVSQPA_DESC>SDE column for end date</GTVSQPA_DESC>
+        <GTVSQPA_DATA_TYPE_CDE>D</GTVSQPA_DATA_TYPE_CDE>
+        <GTVSQPA_START_DATE>01-JAN-2010</GTVSQPA_START_DATE>
+        <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
+    </GTVSQPA>
     <GORSQPA>
         <GORSQPA_SQPR_CODE>HEDM_EXTENSIONS</GORSQPA_SQPR_CODE>
         <GORSQPA_SQPA_CODE>GUID_LIST</GORSQPA_SQPA_CODE>
@@ -142,6 +191,36 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
         <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
     </GORSQPA>
+    <GORSQPA>
+        <GORSQPA_SQPR_CODE>HEDM_EXTENSIONS</GORSQPA_SQPR_CODE>
+        <GORSQPA_SQPA_CODE>STVSCHD_INSM_CODE</GORSQPA_SQPA_CODE>
+        <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
+        <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
+    </GORSQPA>
+    <GORSQPA>
+        <GORSQPA_SQPR_CODE>HEDM_EXTENSIONS</GORSQPA_SQPR_CODE>
+        <GORSQPA_SQPA_CODE>HEDM_DURATION</GORSQPA_SQPA_CODE>
+        <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
+        <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
+    </GORSQPA>
+    <GORSQPA>
+        <GORSQPA_SQPR_CODE>HEDM_EXTENSIONS</GORSQPA_SQPR_CODE>
+        <GORSQPA_SQPA_CODE>HEDM_INSTRUCTOR</GORSQPA_SQPA_CODE>
+        <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
+        <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
+    </GORSQPA>
+        <GORSQPA>
+        <GORSQPA_SQPR_CODE>HEDM_EXTENSIONS</GORSQPA_SQPR_CODE>
+        <GORSQPA_SQPA_CODE>HEDM_START_DATE</GORSQPA_SQPA_CODE>
+        <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
+        <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
+    </GORSQPA>
+    <GORSQPA>
+        <GORSQPA_SQPR_CODE>HEDM_EXTENSIONS</GORSQPA_SQPR_CODE>
+        <GORSQPA_SQPA_CODE>HEDM_END_DATE</GORSQPA_SQPA_CODE>
+        <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
+        <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
+    </GORSQPA>
     <GORRSQL>
         <GORRSQL_SQPR_CODE>HEDM_EXTENSIONS</GORRSQL_SQPR_CODE>
         <GORRSQL_SQRU_CODE>BUILDINGS_READ</GORRSQL_SQRU_CODE>
@@ -152,6 +231,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
         <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
         <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the buildings model. Data will be selected from
 -- the list of guids passed in the GUID_LISt parameter. The result set
@@ -175,6 +255,7 @@ select gorguid_guid as guid,
         <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
         <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
         <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the buildings model. Data will be selected from
 -- the list of guids passed in the GUID_LISt parameter. The result set
@@ -209,6 +290,7 @@ select gorguid_guid as guid,
         <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
         <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
         <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- Anonymous PL/SQL block used to update fields in the buildings
 -- model. The specific model to be updated is identified by the GUID
@@ -239,6 +321,7 @@ end;]]></GORRSQL_WHERE_CLAUSE>
         <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
         <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
         <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- Anonymous PL/SQL block used to update fields in the buildings
 -- model which reside in SDE. The specific model to be updated is identified by the GUID
@@ -321,6 +404,7 @@ END;]]></GORRSQL_WHERE_CLAUSE>
         <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
         <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
         <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the marital-statuses model. Data will be selected from
 -- the list of guids passed in the GUID_LISt parameter. The result set
@@ -345,6 +429,7 @@ select gorguid_guid as guid,
         <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
         <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
         <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- Anonymous PL/SQL block used to update fields in the marital-statuses
 -- model. The specific model to be updated is identified by the GUID
@@ -364,64 +449,166 @@ begin
   end if;
 end;]]></GORRSQL_WHERE_CLAUSE>
     </GORRSQL>
-    <PERFORMANCE_SQL>
-        <SQL_CODE><![CDATA[-- copy where clause to parsed sql for all HEDM_EXTENSIONS that have not been validated
+    <GORRSQL>
+        <GORRSQL_SQPR_CODE>HEDM_EXTENSIONS</GORRSQL_SQPR_CODE>
+        <GORRSQL_SQRU_CODE>INSTR_METHODS_READ</GORRSQL_SQRU_CODE>
+        <GORRSQL_SEQ_NO>1</GORRSQL_SEQ_NO>
+        <GORRSQL_ACTIVE_IND>Y</GORRSQL_ACTIVE_IND>
+        <GORRSQL_VALIDATED_IND>N</GORRSQL_VALIDATED_IND>
+        <GORRSQL_START_DATE>01-JAN-2010</GORRSQL_START_DATE>
+        <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
+        <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
+        <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
+        <GORRSQL_WHERE_CLAUSE><![CDATA[--
+-- SQL used to extend the instructional methods model. Data will be selected from
+-- the list of guids passed in the GUID_LISt parameter. The result set
+-- must contain a column named GUID for matching the extended data to
+-- the correct model entry.
+--
+select gorguid_guid as guid,
+       stvschd_insm_code
+  from gorguid, stvschd
+ where gorguid_ldm_name = "instructional-methods"
+   and gorguid_domain_surrogate_id = stvschd_surrogate_id
+   and gorguid_guid in (:GUID_LIST)]]></GORRSQL_WHERE_CLAUSE>
+    </GORRSQL>
+    <GORRSQL>
+        <GORRSQL_SQPR_CODE>HEDM_EXTENSIONS</GORRSQL_SQPR_CODE>
+        <GORRSQL_SQRU_CODE>INSTR_METHODS_READ</GORRSQL_SQRU_CODE>
+        <GORRSQL_SEQ_NO>2</GORRSQL_SEQ_NO>
+        <GORRSQL_ACTIVE_IND>Y</GORRSQL_ACTIVE_IND>
+        <GORRSQL_VALIDATED_IND>N</GORRSQL_VALIDATED_IND>
+        <GORRSQL_START_DATE>01-JAN-2010</GORRSQL_START_DATE>
+        <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
+        <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
+        <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
+        <GORRSQL_WHERE_CLAUSE><![CDATA[--
+-- SQL used to extend the instructional-methods model using SDE. Data will be selected from
+-- the list of guids passed in the GUID_LISt parameter. The result set
+-- must contain a column named GUID for matching the extended data to
+-- the correct model entry.
+--
+select gorguid_guid as guid,
+       sys.anydata.accessNumber(g1.gorsdav_value) as HEDM_DURATION,
+       sys.anydata.accessVarchar2(g2.gorsdav_value) as HEDM_INSTRUCTOR,
+       sys.anydata.accessDate(g3.gorsdav_value) as HEDM_START_DATE,
+       sys.anydata.accessDate(g4.gorsdav_value) as HEDM_END_DATE
+  from gorguid g, stvschd s, gorsdav g1, gorsdav g2, gorsdav g3, gorsdav g4
+ where gorguid_ldm_name = "instructional-methods"
+   and g.gorguid_domain_surrogate_id = s.stvschd_surrogate_id
+   and g1.gorsdav_table_name(+) = "STVSCHD"
+   and g2.gorsdav_table_name(+) = "STVSCHD"
+   and g3.gorsdav_table_name(+) = "STVSCHD"
+   and g4.gorsdav_table_name(+) = "STVSCHD"
+   and g1.gorsdav_attr_name(+) = "HEDM_DURATION"
+   and g2.gorsdav_attr_name(+) = "HEDM_INSTRUCTOR"
+   and g3.gorsdav_attr_name(+) = "HEDM_START_DATE"
+   and g4.gorsdav_attr_name(+) = "HEDM_END_DATE"
+   and g1.gorsdav_pk_parenttab(+) = s.stvschd_code
+   and g2.gorsdav_pk_parenttab(+) = s.stvschd_code
+   and g3.gorsdav_pk_parenttab(+) = s.stvschd_code
+   and g4.gorsdav_pk_parenttab(+) = s.stvschd_code
+   and gorguid_guid in (:GUID_LIST)]]></GORRSQL_WHERE_CLAUSE>
+    </GORRSQL>
+    <GORRSQL>
+        <GORRSQL_SQPR_CODE>HEDM_EXTENSIONS</GORRSQL_SQPR_CODE>
+        <GORRSQL_SQRU_CODE>INSTR_METHODS_WRITE</GORRSQL_SQRU_CODE>
+        <GORRSQL_SEQ_NO>1</GORRSQL_SEQ_NO>
+        <GORRSQL_ACTIVE_IND>Y</GORRSQL_ACTIVE_IND>
+        <GORRSQL_VALIDATED_IND>N</GORRSQL_VALIDATED_IND>
+        <GORRSQL_START_DATE>01-JAN-2010</GORRSQL_START_DATE>
+        <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
+        <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
+        <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
+        <GORRSQL_WHERE_CLAUSE><![CDATA[--
+-- Anonymous PL/SQL block used to update fields in the instructional-methods
+-- model. The specific model to be updated is identified by the GUID
+-- passed in the GUID parameter. The HTTP_METHOD parameter will indicate
+-- the HTTP method (POST,PUT,DELETE) for which this SQL is called.
+--
+begin
+  if :HTTP_METHOD in ("POST","PUT") then
+    update stvschd
+           set stvschd_insm_code = decode(:STVSCHD_INSM_CODE,dml_common.unspecified_string,stvschd_insm_code,:STVSCHD_INSM_CODE),
+               stvschd_activity_date = SYSDATE
+     where stvschd_surrogate_id = (select gorguid_domain_surrogate_id
+                                     from gorguid
+                                    where gorguid_ldm_name = "instructional-methods"
+                                      and gorguid_guid = :GUID);
+  end if;
+end;]]></GORRSQL_WHERE_CLAUSE>
+    </GORRSQL>
+    <GORRSQL>
+        <GORRSQL_SQPR_CODE>HEDM_EXTENSIONS</GORRSQL_SQPR_CODE>
+        <GORRSQL_SQRU_CODE>INSTR_METHODS_WRITE</GORRSQL_SQRU_CODE>
+        <GORRSQL_SEQ_NO>2</GORRSQL_SEQ_NO>
+        <GORRSQL_ACTIVE_IND>Y</GORRSQL_ACTIVE_IND>
+        <GORRSQL_VALIDATED_IND>N</GORRSQL_VALIDATED_IND>
+        <GORRSQL_START_DATE>01-JAN-2010</GORRSQL_START_DATE>
+        <GORRSQL_SELECT_FROM>FROM</GORRSQL_SELECT_FROM>
+        <GORRSQL_USER_ID>GRAILS</GORRSQL_USER_ID>
+        <GORRSQL_SYS_REQ_IND>N</GORRSQL_SYS_REQ_IND>
+        <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
+        <GORRSQL_WHERE_CLAUSE><![CDATA[--
+-- Anonymous PL/SQL block used to update fields in the instructional-methods
+-- model which resides in SDE. The specific model to be updated is identified by the GUID
+-- passed in the GUID parameter.  The SDE fields updated in this example are
+-- HEDM_DURATION, HEDM_INSTRUCTOR, HEDM_START_DATE, and HEDM_END_DATE.
+--
 DECLARE
-  lv_secure       VARCHAR2(01);
-  lv_err_msg      VARCHAR2(500);
-  lv_sqpr_code    gorrsql.gorrsql_sqpr_code%TYPE;
-  lv_sqru_code    gorrsql.gorrsql_sqru_code%TYPE;
-  lv_seq_no       gorrsql.gorrsql_seq_no%TYPE;
-  lv_where_clause gorrsql.gorrsql_where_clause%TYPE;
-  lv_owner        VARCHAR2(30);
-  lv_table        VARCHAR2(30);
-  lv_err          VARCHAR2(01);
-  CURSOR guruobj_c IS
-    SELECT NVL(MAX('Y'),'N')
-      FROM bansecr.guruobj
-     WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
-       AND guruobj_userid = USER;
-  CURSOR gorrsql_c IS
-    SELECT gorrsql_sqpr_code,
-           gorrsql_sqru_code,
-           gorrsql_seq_no,
-           REPLACE(gorrsql_where_clause, CHR(34), CHR(39))
-      FROM gorrsql
-     WHERE gorrsql_sqpr_code = 'HEDM_EXTENSIONS'
-       AND gorrsql_validated_ind = 'N';
+  CURSOR rowid_c (p_guid VARCHAR2) IS
+    SELECT s.rowid
+      FROM gorguid g, stvschd s
+     WHERE g.gorguid_ldm_name = "instructional-methods"
+       AND g.gorguid_domain_surrogate_id = s.stvschd_surrogate_id
+       AND g.gorguid_guid = p_guid;
+  lv_rowid   VARCHAR2(18);
+  lv_result  VARCHAR2(500);
+  lv_pk      gorsdav.gorsdav_pk_parenttab%TYPE;
+  lv_anydata SYS.ANYDATA;
 BEGIN
-  OPEN guruobj_c;
-  FETCH guruobj_c INTO lv_secure;
-  CLOSE guruobj_c;
-  IF lv_secure = 'N' THEN
-    INSERT INTO BANSECR.GURUOBJ (GURUOBJ_OBJECT, GURUOBJ_ROLE, GURUOBJ_USERID, GURUOBJ_ACTIVITY_DATE, GURUOBJ_USER_ID)
-    VALUES ('ENABLE_GORRSQL_DML', 'BAN_DEFAULT_M', USER, SYSDATE, USER);
-  END IF;
-  OPEN gorrsql_c;
-  LOOP
-    lv_err := 'N';
-    FETCH gorrsql_c INTO lv_sqpr_code, lv_sqru_code, lv_seq_no, lv_where_clause;
-    EXIT WHEN gorrsql_c%NOTFOUND;
-    IF GOKRSQL.F_Validate_SQL_Rule (lv_sqpr_code, lv_where_clause, lv_err_msg) THEN
-      UPDATE gorrsql
-         SET gorrsql_validated_ind = 'Y',
-             gorrsql_where_clause = lv_where_clause,
-             gorrsql_parsed_sql = lv_where_clause,
-             gorrsql_activity_date = sysdate
-       WHERE gorrsql_sqpr_code = lv_sqpr_code
-         AND gorrsql_sqru_code = lv_sqru_code
-         AND gorrsql_seq_no = lv_seq_no;
-    ELSE
-      IF lv_secure = 'N' THEN
-        DELETE FROM BANSECR.GURUOBJ WHERE GURUOBJ_OBJECT = 'ENABLE_GORRSQL_DML' AND GURUOBJ_USERID = USER;
-      END IF;
-      raise_application_error (-20001,'Invalid SQL for '||lv_sqpr_code||'/'||lv_sqru_code||'/'||lv_seq_no||': '||lv_err_msg);
+  OPEN rowid_c(:GUID);
+  FETCH rowid_c INTO lv_rowid;
+  CLOSE rowid_c;
+  IF :HTTP_METHOD = "POST" THEN
+    select gp_goksdif.f_get_pk("STVSCHD", lv_rowid) into lv_pk from dual;
+    IF :HEDM_DURATION != dml_common.UNSPECIFIED_NUMBER THEN
+      lv_anydata := SYS.ANYDATA.convertNumber(:HEDM_DURATION);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_DURATION", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
     END IF;
-  END LOOP;
-  CLOSE gorrsql_c;
-  IF lv_secure = 'N' THEN
-    DELETE FROM BANSECR.GURUOBJ WHERE GURUOBJ_OBJECT = 'ENABLE_GORRSQL_DML' AND GURUOBJ_USERID = USER;
+    IF :HEDM_INSTRUCTOR != dml_common.UNSPECIFIED_STRING THEN
+      lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_INSTRUCTOR);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_INSTRUCTOR", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+    END IF;
+    IF :HEDM_START_DATE != dml_common.UNSPECIFIED_DATE THEN
+      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_START_DATE);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_START_DATE", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+    END IF;
+    IF :HEDM_END_DATE != dml_common.UNSPECIFIED_DATE THEN
+      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_END_DATE);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_END_DATE", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+    END IF;
+  ELSIF :HTTP_METHOD = "PUT" THEN
+    IF :HEDM_DURATION != dml_common.UNSPECIFIED_NUMBER THEN
+      lv_anydata := SYS.ANYDATA.convertNumber(:HEDM_DURATION);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_DURATION", p_rowid => lv_rowid, p_value => lv_anydata);
+    END IF;
+    IF :HEDM_INSTRUCTOR != dml_common.UNSPECIFIED_STRING THEN
+      lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_INSTRUCTOR);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_INSTRUCTOR", p_rowid => lv_rowid, p_value => lv_anydata);
+    END IF;
+    IF :HEDM_START_DATE != dml_common.UNSPECIFIED_DATE THEN
+      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_START_DATE);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_START_DATE", p_rowid => lv_rowid, p_value => lv_anydata);
+    END IF;
+    IF :HEDM_END_DATE != dml_common.UNSPECIFIED_DATE THEN
+      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_END_DATE);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_END_DATE", p_rowid => lv_rowid, p_value => lv_anydata);
+    END IF;
   END IF;
-END;]]></SQL_CODE>
-    </PERFORMANCE_SQL>
+END;]]></GORRSQL_WHERE_CLAUSE>
+    </GORRSQL>
 </SQL_PROCESS_RULES_CONFIG>
