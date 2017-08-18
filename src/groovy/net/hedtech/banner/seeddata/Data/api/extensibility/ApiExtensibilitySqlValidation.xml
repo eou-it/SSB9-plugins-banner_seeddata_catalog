@@ -6,7 +6,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <PERFORMANCE_SQL>
         <!-- copy where clause to parsed sql for all HEDM_EXTENSIONS that have not been validated -->
         <SQL_CODE><![CDATA[DECLARE
-  lv_validated  BOOLEAN;
   lv_err        VARCHAR2(500);
   CURSOR gorrsql_c(p_sqpr_code VARCHAR2) IS
     SELECT gorrsql_sqpr_code AS sqpr_code,
@@ -17,20 +16,15 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
      WHERE gorrsql_sqpr_code = p_sqpr_code
        AND gorrsql_validated_ind = 'N';
 BEGIN
+  INSERT INTO bansecr.guruobj (guruobj_object, guruobj_role, guruobj_userid, guruobj_activity_date, guruobj_user_id)
+    SELECT 'ENABLE_GORRSQL_DML', 'BAN_DEFAULT_M', USER, SYSDATE, USER
+      FROM DUAL
+     WHERE NOT EXISTS (SELECT 1
+                         FROM bansecr.guruobj
+                        WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
+                          AND guruobj_userid = USER);
   FOR results IN gorrsql_c('HEDM_EXTENSIONS') LOOP
-    INSERT INTO bansecr.guruobj (guruobj_object, guruobj_role, guruobj_userid, guruobj_activity_date, guruobj_user_id)
-      SELECT 'ENABLE_GORRSQL_DML', 'BAN_DEFAULT_M', USER, SYSDATE, USER
-        FROM DUAL
-       WHERE NOT EXISTS (SELECT 1
-                           FROM bansecr.guruobj
-                          WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
-                            AND guruobj_userid = USER);
-    lv_validated := gokrsql.f_validate_sql_rule(results.sqpr_code, results.where_clause, lv_err);
-    DELETE
-      FROM bansecr.guruobj
-     WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
-       AND guruobj_userid = USER;
-    IF lv_validated THEN
+    IF gokrsql.f_validate_sql_rule(results.sqpr_code, results.where_clause, lv_err) THEN
       UPDATE gorrsql
          SET gorrsql_validated_ind = 'Y',
              gorrsql_where_clause = results.where_clause,
@@ -43,6 +37,10 @@ BEGIN
       raise_application_error(-20001,'Invalid SQL for '||results.sqpr_code||'/'||results.sqru_code||'/'||results.seq_no||': '||lv_err);
     END IF;
   END LOOP;
+  DELETE
+    FROM bansecr.guruobj
+   WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
+     AND guruobj_userid = USER;
   COMMIT;
 END;]]></SQL_CODE>
     </PERFORMANCE_SQL>
