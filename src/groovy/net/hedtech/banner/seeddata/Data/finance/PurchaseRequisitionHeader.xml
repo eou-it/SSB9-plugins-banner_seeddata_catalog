@@ -331,7 +331,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
     </FPBREQH>
     <FPBREQH><!--CLA Requisition Header that has NSF Error with accounting item-->
         <FPBREQH_CODE>RSEDNSFE</FPBREQH_CODE>
-        <FPBREQH_ACTIVITY_DATE>23-AUG-17</FPBREQH_ACTIVITY_DATE>
+        <FPBREQH_ACTIVITY_DATE/>
         <FPBREQH_USER_ID>FORSED21</FPBREQH_USER_ID>
         <FPBREQH_REQH_DATE>23-AUG-17</FPBREQH_REQH_DATE>
         <FPBREQH_TRANS_DATE>23-AUG-17</FPBREQH_TRANS_DATE>
