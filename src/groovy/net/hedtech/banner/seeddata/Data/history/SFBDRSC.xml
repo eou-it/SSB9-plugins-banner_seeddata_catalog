@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--******************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+******************************************************************************-->
+<SFBDRSC>
+    <SFBDRSC>
+        <SFBDRSC_TERM_CODE>201620</SFBDRSC_TERM_CODE>
+        <SFBDRSC_CRN>20003</SFBDRSC_CRN>
+        <SFBDRSC_ENABLE_DROP_ROSTER_IND>N</SFBDRSC_ENABLE_DROP_ROSTER_IND>
+        <SFBDRSC_ACTIVITY_DATE>01-JAN-10</SFBDRSC_ACTIVITY_DATE>
+        <SFBDRSC_USER_ID>GRAILS</SFBDRSC_USER_ID>
+        <SFBDRSC_SURROGATE_ID>1</SFBDRSC_SURROGATE_ID>
+        <SFBDRSC_VERSION/>
+        <SFBDRSC_DATA_ORIGIN>GRAILS</SFBDRSC_DATA_ORIGIN>
+        <SFBDRSC_VPDI_CODE/>
+    </SFBDRSC>
+</SFBDRSC>
