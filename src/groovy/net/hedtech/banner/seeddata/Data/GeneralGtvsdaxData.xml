@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2015 Ellucian Company L.P. and its affiliates.
+Copyright 2015 - 2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <GTVSDAXDATA>
     <GTVSDAX>
@@ -10,9 +10,6 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
         <GTVSDAX_DESC>Dynamic Schedule by Date Range</GTVSDAX_DESC>
         <GTVSDAX_SYSREQ_IND>N</GTVSDAX_SYSREQ_IND>
         <GTVSDAX_SYSI_CODE>SW</GTVSDAX_SYSI_CODE>
-        <GTVSDAX_COMMENTS>"Use this concept to specify whether the class schedule can be searched by date ranges. Enter a Y or N in the External Code field.
-
-            Effective Release Banner Student 6.0
-            "</GTVSDAX_COMMENTS>
+        <GTVSDAX_COMMENTS>"Use this concept to specify whether the class schedule can be searched by date ranges. Enter a Y or N in the External Code field. Effective Release Banner Student 6.0 "</GTVSDAX_COMMENTS>
     </GTVSDAX>
-</GTVSDAXDATA>
+ </GTVSDAXDATA>

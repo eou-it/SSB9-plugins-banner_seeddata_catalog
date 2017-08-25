@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="Windows-1252" ?>  
  <!-- ***************************************************************************** 
- Copyright 2016 Ellucian Company L.P. and its affiliates. 
+ Copyright 2016 - 2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* --> 
 <SCHEDULED>
 <STVRSTS>
 <STVRSTS_CODE>ZZ</STVRSTS_CODE>
-<STVRSTS_DESC>Calcualted Drop</STVRSTS_DESC>
+<STVRSTS_DESC>Calculated Drop</STVRSTS_DESC>
 <STVRSTS_ENTERABLE_IND>Y</STVRSTS_ENTERABLE_IND>
 <STVRSTS_INCL_SECT_ENRL>Y</STVRSTS_INCL_SECT_ENRL>
 <STVRSTS_INCL_ASSESS>Y</STVRSTS_INCL_ASSESS>

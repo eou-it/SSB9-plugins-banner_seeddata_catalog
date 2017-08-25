@@ -214,7 +214,6 @@ public class GeneralActionItemDML {
         deleteData("GCRACNT", "delete from GCRACNT where 0 <> ? ")
         deleteData("GCBPBTR", "delete from GCBPBTR where 0 <> ? ")
         deleteData("GCRABLK", "delete from GCRABLK where 0 <> ? ")
-        deleteData("GUROCFG", "delete from GUROCFG where 0 <> ? ")
         deleteData("GCBACTM", "delete from GCBACTM where 0 <> ? ")
         deleteData("GCVASTS", "delete from GCVASTS where 0 <> ? ")
     }

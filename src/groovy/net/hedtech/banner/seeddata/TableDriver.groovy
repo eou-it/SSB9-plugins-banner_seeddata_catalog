@@ -51,7 +51,17 @@ public class TableDriver {
                 connectInfo.tableName = newTable
                 def xmlRec = "<${node.name()}>\n"
                 node.children().each() {fields ->
-                    def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
+                    def value
+
+                    if (fields.name() == "SQL_CODE"){
+                        value = fields.text().replaceAll(/"/, /'/)
+                    }
+                    else if (fields.name() in ["GORRSQL_WHERE_CLAUSE", "GORRSQL_PARSED_SQL"]){
+                        value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
+                    }
+                    else {
+                        value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
+                    }
                     xmlRec += "<${fields.name()}>${value}</${fields.name()}>\n"
                 }
                 xmlRec += "</${node.name()}>\n"

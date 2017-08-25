@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<AUTHORIZATION>
+<SOBAUTH>
+    <SOBAUTH_TERM_CODE>201410</SOBAUTH_TERM_CODE>
+    <SOBAUTH_REG_AUTH_ACTIVE_IND>N</SOBAUTH_REG_AUTH_ACTIVE_IND>
+    <SOBAUTH_REG_AUTH_CLOSED_IND>N</SOBAUTH_REG_AUTH_CLOSED_IND>
+    <SOBAUTH_DAYS_REQUIRED>5</SOBAUTH_DAYS_REQUIRED>
+    <SOBAUTH_DAYS_REUSABLE>2</SOBAUTH_DAYS_REUSABLE>
+    <SOBAUTH_DATA_ORIGIN>GRAILS</SOBAUTH_DATA_ORIGIN>
+    <SOBAUTH_USER_ID>GRAILS</SOBAUTH_USER_ID>
+    <SOBAUTH_ACTIVITY_DATE>01/01/2010</SOBAUTH_ACTIVITY_DATE>
+    <SOBAUTH_SURROGATE_ID/>
+    <SOBAUTH_VERSION/>
+</SOBAUTH>
+</AUTHORIZATION>
