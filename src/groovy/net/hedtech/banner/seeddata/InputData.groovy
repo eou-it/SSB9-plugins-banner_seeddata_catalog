@@ -662,7 +662,8 @@ public class InputData {
             'addauth'                          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentAddAuthData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml']
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml'],
+            'addauth-planning'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthPlanningData.xml']
     ]
     /**
      *  Map of selenium targets
