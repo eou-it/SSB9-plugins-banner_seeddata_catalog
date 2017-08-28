@@ -1011,7 +1011,8 @@ Copyright 2014-2016 Ellucian Company L.P. and its affiliates.
     </GOBUMAP>
 
     <GOBSRID>
-        <GOBSRID_SOURCED_ID>forTest2</GOBSRID_SOURCED_ID>
+        <BANNERID>A00000671</BANNERID>
+        <GOBSRID_PIDM>2134</GOBSRID_PIDM>
         <DELETE>YES</DELETE>
     </GOBSRID>
 
@@ -1033,7 +1034,8 @@ Copyright 2014-2016 Ellucian Company L.P. and its affiliates.
     </GOBUMAP>
 
     <GOBSRID>
-        <GOBSRID_SOURCED_ID>forTest3</GOBSRID_SOURCED_ID>
+        <BANNERID>SJGRIM</BANNERID>
+        <GOBSRID_PIDM>2503</GOBSRID_PIDM>
         <DELETE>YES</DELETE>
     </GOBSRID>
 
