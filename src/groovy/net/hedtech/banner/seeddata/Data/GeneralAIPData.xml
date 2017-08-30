@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="Windows-1252" ?>
 <!--*******************************************************************************
 Copyright 2017 Ellucian Company L.P. and its affiliates.
 *******************************************************************************-->
@@ -4298,5 +4297,4 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             <GCRABLK_VERSION></GCRABLK_VERSION>
             <GCRABLK_VPDI_CODE></GCRABLK_VPDI_CODE>
         </GCRABLK>
-
 </dataroot>
