@@ -338,7 +338,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_SURROGATE_ID>13</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>All staff: Prepare for winter snow</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>1</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending </GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft </GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>With the winter season fast approaching. Please prepare yourself for the upcoming snow by reviewing the Facilities Department Winter Season and Snow Removal FAQ’s and the 2013-2014 Snow Removal Grounds Care Assignment Chart.</GCBACTM_DESCRIPTION>
@@ -362,7 +362,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_SURROGATE_ID>15</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>School staff: Register for Yoga Calm training</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>3</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending</GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Yoga Calm is a program that teaches the scientific practices of mindfulness, social/emotional learning and yoga-based movement. Learn and apply practical, research-based interventions that impact student focus, attention and connection to others. These 3-hour sessions will provide hands-on skills and activities to reduce stress, prepare students to learn, and foster a calm and more productive learning environment and classroom culture. This opportunity is funded by Statewide Health Improvement Plan (SHIP) in a grant from Saint Paul Ramsey County Public Health.</GCBACTM_DESCRIPTION>
@@ -471,7 +471,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_SURROGATE_ID>20</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>Inspection Notice</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>1</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending</GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>You are hereby notified of an upcoming inspection of something, by someone, for some reason.  It will probably occur on some date, so please be ready before then!  That is all!!!</GCBACTM_DESCRIPTION>
@@ -657,7 +657,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_SURROGATE_ID>23</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>3</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending</GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>1</GCBACTM_DESCRIPTION>
@@ -1424,7 +1424,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_TITLE>Community Facilities</GCBAGRP_TITLE>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>If you can dodge a wrench, you can dodge a ball. - Patches OHoulihan.</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>Pending</GCBAGRP_STATUS>
+        <GCBAGRP_STATUS>Draft</GCBAGRP_STATUS>
         <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>15-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
