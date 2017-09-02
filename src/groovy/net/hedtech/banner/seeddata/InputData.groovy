@@ -793,14 +793,12 @@ public class InputData {
             'crn20116-reset'                                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20116.xml'],
             'crn20441-reset'                                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20441.xml'],
             'schedule-reset'                                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset.xml'],
+            'ssbgeneralstudenthosweb001'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'schedule-20151-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Reset.xml'],
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
-            'generalstudenthos00001'                                             : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
-            'ssbgeneralstudent2hosweb007'                                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
-            'ssbgeneralstudenthosweb001'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
-            'ssbgeneralstudenthosweb006'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
             'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml']
     ]
 
