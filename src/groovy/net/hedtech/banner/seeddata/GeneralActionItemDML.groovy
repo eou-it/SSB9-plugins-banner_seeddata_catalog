@@ -199,12 +199,7 @@ public class GeneralActionItemDML {
 
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
-/*
-        if (connectInfo.saveThis) {
-            conn.execute "{ call gb_common.p_commit() }"
-            this.conn.close()
-        }
-        */
+
     }
 
     def deleteData() {
