@@ -63,6 +63,10 @@ public class InputData {
             'seed-cleanup'                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
+            'api-extensibility'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilityConfiguration.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlProcessRules.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlValidation.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySampleSdeSetup.xml'],
             'catalog'                          : ['/src/groovy/net/hedtech/banner/seeddata/Data/genpersonValidationXML.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogValidationSeed.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm.xml',
@@ -70,11 +74,14 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataGradeModeWriting103.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20009.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20116.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20210.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20211.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20441.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/StudentValidation.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
@@ -227,6 +234,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerhourData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PertitoData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerelbdData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerlvtkData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntryMessageData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PprhnawData.xml',
             ],
@@ -324,6 +332,9 @@ public class InputData {
             'ssbgeneralstudent'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
+            //TODO Need to revisit; this is a duplicate call
+            'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'finance-procurement'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFiscalYear.xml',
@@ -643,10 +654,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPREXAM_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPRSKIL_Data.xml'],
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml'],
-            'api-extensibility'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilityConfiguration.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlProcessRules.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlValidation.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySampleSdeSetup.xml'],
             'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
             'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
             'scheduleData201410Crn20201'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml'],
@@ -656,7 +663,9 @@ public class InputData {
             'scheduleData201410Crn20222'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml'],
             'generalstudenthos00001'           : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
             'ssbgeneralstudent2hosweb007'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
-            'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
+            //TODO Need to revisit; this is a duplicate call
+            'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'ssbgeneralstudenthosweb006'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
             'catalogGradeModeWriting103'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogDataGradeModeWriting103.xml'],
             'regqaautomated-CAPP'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/qa/GeneralStudentWithCompliance_RegModelR.xml'],
@@ -786,7 +795,8 @@ public class InputData {
             'addauth'                          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentAddAuthData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml']
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml'],
+            'addauth-planning'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthPlanningData.xml']
     ]
     /**
      *  Map of selenium targets
@@ -914,6 +924,20 @@ public class InputData {
             'gpa-rules-round'                                                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesRound.xml'],
             'gpa-rules-truncate'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesTruncate.xml'],
             'gpa-rules-delete'                                                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesDelete.xml'],
+            'scheduleTerm201410'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
+            'scheduleData201410Crn20201'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml'],
+            'scheduleData201410Crn20202'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml'],
+            'scheduleData201410Crn20210'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20210.xml'],
+            'scheduleData201410Crn20211'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20211.xml'],
+            'scheduleData201410Crn20222'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml'],
+            'scheduleData201410Crn20009'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20009.xml'],
+            'crn20116-reset'                                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20116.xml'],
+            'crn20441-reset'                                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20441.xml'],
+            'generalstudenthos00001'                                             : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
+            'ssbgeneralstudent2hosweb007'                                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
+            'ssbgeneralstudenthosweb001'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
+            'ssbgeneralstudenthosweb006'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
             'schedule-reset'                                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset.xml'],
             'schedule-20151-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Reset.xml'],
             'schedule-20151-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/Schedule20151Approval.xml'],
@@ -1010,6 +1034,7 @@ public class InputData {
                 default:
                     break;
             }
+
             print "Enter Y or N to save your transaction [${saveThis ? 'Y' : 'N'}]: "
             def inSaveThis = br.readLine()
             saveThis = ("N" == inSaveThis ? false : true)
@@ -1055,7 +1080,6 @@ public class InputData {
         println "batchSeed : ${batchSeed} "
         println "baseDirectory : ${baseDirectory} "
         println "URL: ${url}"
-
 
 
     }
