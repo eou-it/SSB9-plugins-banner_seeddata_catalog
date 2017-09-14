@@ -672,7 +672,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml'],
-            'addauth-planning'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthPlanningData.xml']
+            'addauth-planning'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthPlanningData.xml'],
+            'jobsub'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/jobsub.xml']
     ]
     /**
      *  Map of selenium targets
