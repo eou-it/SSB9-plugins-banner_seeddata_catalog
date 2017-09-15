@@ -42,6 +42,10 @@ class JobsubSavedOutputDml {
     def processGjrjlis() {
         def apiData = new XmlParser().parseText(xmlData)
 
+        // clear out print date
+        def printDateUpdate = "update gjrjlis set gjrjlis_print_date = null where gjrjlis_job = ? and gjrjlis_one_up_no = ? and gjrjlis_file_name = ?"
+        conn.executeUpdate(printDateUpdate, [apiData.GJRJLIS_JOB.text(), apiData.GJRJLIS_ONE_UP_NO.text(), apiData.GJRJLIS_FILE_NAME.text()])
+
         // parse the data using dynamic sql for inserts and updates
         def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlData, columns, indexColumns, batch, deleteNode)
         def xmlFileParent = new File(connectInfo.xmlFilePath).getParent().toString()
