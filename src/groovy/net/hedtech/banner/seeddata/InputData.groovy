@@ -16,6 +16,7 @@ public class InputData {
     def xmlControlFile
     String batchSeed
     String baseDirectory
+    def xmlFilePath
 
     // Database configuration. Note: if dataSource is available, the remaining database configuration fields are not used
     def dataSource = null
