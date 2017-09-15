@@ -1,9 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--*******************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+*******************************************************************************-->
 <dataroot>
     <GCVASTS>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCVASTS_SURROGATE_ID>1</GCVASTS_SURROGATE_ID>
         <GCVASTS_ACTION_ITEM_STATUS>Pending</GCVASTS_ACTION_ITEM_STATUS>
-        <GCVASTS_BLOCK_PROCESS_IND>Y</GCVASTS_BLOCK_PROCESS_IND>
+        <GCVASTS_BLOCK_PROCESS_IND>N</GCVASTS_BLOCK_PROCESS_IND>
         <GCVASTS_USER_ID>CSRADM001</GCVASTS_USER_ID>
         <GCVASTS_SYSTEM_REQUIRED>Y</GCVASTS_SYSTEM_REQUIRED>
         <GCVASTS_ACTIVE_IND>Y</GCVASTS_ACTIVE_IND>
@@ -29,7 +33,7 @@
         <ACTIONITEMSTATUS>Rejected</ACTIONITEMSTATUS>
         <GCVASTS_SURROGATE_ID>2</GCVASTS_SURROGATE_ID>
         <GCVASTS_ACTION_ITEM_STATUS>Rejected</GCVASTS_ACTION_ITEM_STATUS>
-        <GCVASTS_BLOCK_PROCESS_IND>Y</GCVASTS_BLOCK_PROCESS_IND>
+        <GCVASTS_BLOCK_PROCESS_IND>N</GCVASTS_BLOCK_PROCESS_IND>
         <GCVASTS_USER_ID>CSRADM001</GCVASTS_USER_ID>
         <GCVASTS_SYSTEM_REQUIRED>Y</GCVASTS_SYSTEM_REQUIRED>
         <GCVASTS_ACTIVE_IND>Y</GCVASTS_ACTIVE_IND>
@@ -334,7 +338,7 @@
         <GCBACTM_SURROGATE_ID>13</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>All staff: Prepare for winter snow</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>1</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending </GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft </GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>With the winter season fast approaching. Please prepare yourself for the upcoming snow by reviewing the Facilities Department Winter Season and Snow Removal FAQ’s and the 2013-2014 Snow Removal Grounds Care Assignment Chart.</GCBACTM_DESCRIPTION>
@@ -358,7 +362,7 @@
         <GCBACTM_SURROGATE_ID>15</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>School staff: Register for Yoga Calm training</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>3</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending</GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Yoga Calm is a program that teaches the scientific practices of mindfulness, social/emotional learning and yoga-based movement. Learn and apply practical, research-based interventions that impact student focus, attention and connection to others. These 3-hour sessions will provide hands-on skills and activities to reduce stress, prepare students to learn, and foster a calm and more productive learning environment and classroom culture. This opportunity is funded by Statewide Health Improvement Plan (SHIP) in a grant from Saint Paul Ramsey County Public Health.</GCBACTM_DESCRIPTION>
@@ -467,7 +471,7 @@
         <GCBACTM_SURROGATE_ID>20</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>Inspection Notice</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>1</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending</GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>You are hereby notified of an upcoming inspection of something, by someone, for some reason.  It will probably occur on some date, so please be ready before then!  That is all!!!</GCBACTM_DESCRIPTION>
@@ -653,7 +657,7 @@
         <GCBACTM_SURROGATE_ID>23</GCBACTM_SURROGATE_ID>
         <GCBACTM_NAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</GCBACTM_NAME>
         <GCBACTM_FOLDER_ID>3</GCBACTM_FOLDER_ID>
-        <GCBACTM_STATUS>Pending</GCBACTM_STATUS>
+        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>1</GCBACTM_DESCRIPTION>
@@ -686,7 +690,7 @@
     <GCBPBTR>
         <ACTIONITEMTEMPLATE>ActionItemPolicy</ACTIONITEMTEMPLATE>
         <GCBPBTR_SURROGATE_ID>1</GCBPBTR_SURROGATE_ID>
-        <GCBPBTR_TEMPLATE_NAME>Action Item Policy</GCBPBTR_TEMPLATE_NAME>
+        <GCBPBTR_TEMPLATE_NAME>Master Template</GCBPBTR_TEMPLATE_NAME>
         <GCBPBTR_PAGE_ID>ActionItemPolicy</GCBPBTR_PAGE_ID>
         <GCBPBTR_SOURCE_IND>B</GCBPBTR_SOURCE_IND>
         <GCBPBTR_USER_ID>CSRADM001</GCBPBTR_USER_ID>
@@ -698,7 +702,7 @@
     </GCBPBTR>
     <GCRACNT>
         <ACTIONITEMNAME>بيت الشمس المشرقة</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>26</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>26</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>
@@ -744,7 +748,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>منحنى الرجل الميت</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>27</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>27</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>
@@ -780,7 +784,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Drug and Alcohol Policy</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>1</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>1</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Sample Alcohol and Drug Abuse Policy
@@ -868,7 +872,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Registration Process Training</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>2</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>2</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>1. Registration Training
@@ -903,7 +907,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Personal Information</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>3</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>3</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Instructions for completing Consent for Personal Information Release
@@ -925,7 +929,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Meet with Advisor</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>4</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>4</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Meet with an Academic Advisor/Success Coach
@@ -942,7 +946,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Proof of Residence</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>5</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>5</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Proof of Identity &amp;amp; AddressTop ↑
@@ -980,7 +984,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Policy Handbook</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>6</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>6</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>A policy is a deliberate system of principles to guide decisions and achieve rational outcomes. A policy is a statement of intent, and is implemented as a procedure or protocol. Policies are generally adopted by the Board of or senior governance body within an organization whereas procedures or protocols would be developed and adopted by senior executive officers. Policies can assist in both subjective and objective decision making. Policies to assist in subjective decision making would usually assist senior management with decisions that must consider the relative merits of a number of factors before making decisions and as a result are often hard to objectively test e.g. work-life balance policy. In contrast policies to assist in objective decision making are usually operational in nature and can be objectively tested e.g. password policy.
@@ -994,7 +998,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Notice of Right to Change Requirements</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>7</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>7</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>NOTICE OF PRIVACY PRACTICES
@@ -1057,7 +1061,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Notice of Non-Discrimination Policy</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>8</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>8</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>NOTICE OF NONDISCRIMINATION
@@ -1074,7 +1078,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Please Review the University Mission Statement</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>9</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>9</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>ellucian Universityprovides access to higher education opportunities that enable students to develop knowledge and skills necessary to achieve their professional goals, improve the performance of their organizations, and provide leadership and service to their communities.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1084,7 +1088,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Please Review the Attendance Policy</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>10</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>10</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>The College recognizes the correlation between attendance and both student retention and achievement. Any class session or activity missed, regardless of cause, reduces the opportunity for learning and may adversely affect a student's achievement in the course. Class attendance is required beginning with the first class meeting, and students are expected to attend all class sessions for which they are registered. It is the responsibility of the student to arrange to make up all course work missed because of legitimate class absences and to notify the instructor when an absence will occur. The instructor determines the effect of absences on grades. Students who are reported as never attending a course may be withdrawn from the class by the College. Funds may be adjusted or rescinded for students who are receiving financial aid or veterans' benefits.
@@ -1100,7 +1104,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>11</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>11</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>In early September 1805, Captain Richard Keats, commanding officer of the 74-gun battleship HMS Superb, called at Merton Place in Surrey, the home of Vice Admiral Lord Nelson and his mistress Emma, Lady Hamilton. Keats and Nelson had served together for over a year in the Mediterranean and had recently taken part in the remarkable chase of the combined French and Spanish fleets to the West Indies and back during July and August of 1805. Now Nelson was enjoying a brief spell of leave in England and Keats had brought his worn-out ship home for a much-needed refit.
@@ -1153,7 +1157,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>All staff: Prepare for winter snow</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>13</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>13</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>The best known naval battles of the War of 1812 were single ship duels between US Navy frigates and ships of the Royal Navy.  Nevertheless, the two most important American naval victories of the War of 1812 were fought in fresh water, hundreds of  miles from the ocean. Neither involved large fleets of ships, yet each was critical to the outcome of the war.
@@ -1172,7 +1176,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>School staff: Register for Yoga Calm training</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>15</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>15</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>One year and one day after the Battle of Lake Erie, an American squadron, under the command of Master Commandant Thomas Macdonough, defeated the Royal Navy on Lake Champlain in a bloody battle at Plattsburgh Bay.  The Battle of Plattsburgh turned back an invasion force of 11,000 British troops which was intended to do nothing less than redraw the map of the United States. Like the Battle of Lake Erie, the Battle of Plattsburg was fought in fresh water hundreds of miles from the ocean.  It was not a large fleet battle, and yet, was probably the most important naval victory of the war.
@@ -1194,7 +1198,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Teachers: Fund for Teachers deadline is January 30, 2014</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>16</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>16</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Reuben Garrett Lucius &amp;quot;Rube&amp;quot; Goldberg ( San Francisco July 4, 1883 – Hawthorne New York December 7, 1970) was an American cartoonist, sculptor, author, engineer, and inventor.
@@ -1208,7 +1212,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Teachers: Register for service-learning and We Act trainings</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>17</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>17</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Sarah L. Winchester (Around 1840; September 5, 1922) was the wife of William Wirt Winchester and heiress to his estate and a 50 percent holding in the Winchester Repeating Arms Company following his death from tuberculosis in 1881. It has been theorized she was convinced she was cursed and the only way to alleviate it was to add on to her California home. Mrs Winchester used her vast fortune to continue construction on the San Jose mansion for 38 consecutive years.[1] Since her death, the sprawling Winchester Mystery House has become a popular tourist attraction, known for its many staircases and corridors leading nowhere.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1218,7 +1222,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children's Museum</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>18</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>18</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Salmon is an excellent source of vitamin B12, vitamin D, and selenium. It is a good source of niacin, omega-3 fatty acids, protein, phosphorus, and vitamin B6. It is also a good source of choline, pantothenic acid, biotin, and potassium.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1228,7 +1232,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Please read the Minimum GPA requirements</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>19</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>19</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Feel guilty about drinking a beer or two? Don't feel guilty. Contrary to what you might expect, moderate beer consumption is actually good for you. Science has shown that beer can bring many surprising health benefits even though it's usually perceived as unhealthy. Just remember, we're talking moderate consumption (one drink per day for women, and up to two for men), not all-night drinking sprees. Here are some remarkable and surprising beer benefits that might change your perception of the drink.
@@ -1277,7 +1281,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>!@#$%^&amp;*()_+=-1234567890-[}{]\|</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>21</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>21</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>There are several sports teams that have amassed overall winning percentages of over 55% of their games. Some of these famous teams include the Dallas Cowboys, Chicago Bears, New York Yankees, Green Bay Packers, Boston Celtics, and San Antonio Spurs. One team, though has won over 60% of its games: the Los Angeles Lakers.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1287,7 +1291,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>22</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>22</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Sources say that Einstein was plagued by speech difficulty and could not speak until he turned 4 years old.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1297,7 +1301,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>23</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>23</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>During his study at the polytechnic school, Einstein went through the electromagnetic theories that were developed by James Maxwell – a Scottish Physicist.  Einstein, through the studies of those theories, had found out that speed of light was constant and this fact was not known to Maxwell. Einstein's discovery was a direct violation of Newton's laws of motion. This led Einstein to develop the relativity principle.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1307,7 +1311,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>One Long Word</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>24</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>24</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Rumors have been spread that Einstein actually failed in mathematics. This is absolutely incorrect. Einstein was brilliant in mathematics and by the age of 15 he actually mastered calculus.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1317,7 +1321,7 @@
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>@</ACTIONITEMNAME>
-        <TEMPLATENAME>Action Item Policy</TEMPLATENAME>
+        <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>25</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>25</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>After Einstein's death, the pathologist who was in charge of the autopsy of Einstein's body actually stole Einstein's brain and kept in a jar. He denied to return the brain and was eventually fired from his job. He still did not give up the jar but finally returned the brain after 20 years of possession.</GCRACNT_ACTION_ITEM_TEXT>
@@ -1420,7 +1424,7 @@
         <GCBAGRP_TITLE>Community Facilities</GCBAGRP_TITLE>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>If you can dodge a wrench, you can dodge a ball. - Patches OHoulihan.</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>Pending</GCBAGRP_STATUS>
+        <GCBAGRP_STATUS>Draft</GCBAGRP_STATUS>
         <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>15-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -4189,7 +4193,26 @@
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
         <GCRAISR_SURROGATE_ID></GCRAISR_SURROGATE_ID>
     </GCRAISR>
-
+	<GUBAPPL>
+        <GUBAPPL_APP_ID>GENERAL_SS</GUBAPPL_APP_ID>
+        <GUBAPPL_APP_NAME>GENERAL SS</GUBAPPL_APP_NAME>
+        <GUBAPPL_DATA_ORIGIN>AIP</GUBAPPL_DATA_ORIGIN>
+        <GUBAPPL_ACTIVITY_DATE>14-JAN-2016</GUBAPPL_ACTIVITY_DATE>
+        <GUBAPPL_USER_ID>GRAILS</GUBAPPL_USER_ID>
+        <GUBAPPL_VPDI_CODE></GUBAPPL_VPDI_CODE>
+    </GUBAPPL>
+    <GUROCFG>
+        <GUROCFG_GUBAPPL_APP_ID>GENERAL_SS</GUROCFG_GUBAPPL_APP_ID>
+        <GUROCFG_NAME>BCMLOCATION</GUROCFG_NAME>
+        <GUROCFG_TYPE>location</GUROCFG_TYPE>
+        <GUROCFG_VALUE>csr-daily-1.ellucian.com:8080/CommunicationManagement</GUROCFG_VALUE>
+        <GUROCFG_ACTIVITY_DATE>14-JAN-2016</GUROCFG_ACTIVITY_DATE>
+        <GUROCFG_SURROGATE_ID>1</GUROCFG_SURROGATE_ID>
+        <GUROCFG_VERSION>0</GUROCFG_VERSION>
+        <GUROCFG_DATA_ORIGIN>AIP</GUROCFG_DATA_ORIGIN>
+        <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
+        <GUROCFG_VPDI_CODE></GUROCFG_VPDI_CODE>
+    </GUROCFG>
     <!-- fixme:  changes to for recent updates to gurocfg for future aip work. currently not needed.
         <GUBAPPL>
             <GUBAPPL_APP_ID>AIPTEST</GUBAPPL_APP_ID>
@@ -4275,5 +4298,4 @@
             <GCRABLK_VERSION></GCRABLK_VERSION>
             <GCRABLK_VPDI_CODE></GCRABLK_VPDI_CODE>
         </GCRABLK>
-
 </dataroot>
