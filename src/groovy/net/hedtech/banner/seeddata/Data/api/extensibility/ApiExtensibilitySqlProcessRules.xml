@@ -234,14 +234,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the buildings model. Data will be selected from
--- the list of guids passed in the GUID_LISt parameter. The result set
+-- the list of guids passed in the GUID_LIST parameter. The result set
 -- must contain a column named GUID for matching the extended data to
 -- the correct model entry.
 --
 select gorguid_guid as guid,
        slbbldg_maximum_capacity
   from gorguid, slbbldg
- where gorguid_ldm_name = "buildings"
+ where gorguid_ldm_name = gokhedm.f_buildings
    and gorguid_domain_surrogate_id = slbbldg_surrogate_id
    and gorguid_guid in (:GUID_LIST)]]></GORRSQL_WHERE_CLAUSE>
     </GORRSQL>
@@ -258,7 +258,7 @@ select gorguid_guid as guid,
         <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the buildings model. Data will be selected from
--- the list of guids passed in the GUID_LISt parameter. The result set
+-- the list of guids passed in the GUID_LIST parameter. The result set
 -- must contain a column named GUID for matching the extended data to
 -- the correct model entry.
 --
@@ -267,7 +267,7 @@ select gorguid_guid as guid,
        sys.anydata.accessNumber(g2.gorsdav_value) as HEDM_BLDG_ROOM_COUNT,
        sys.anydata.accessDate(g3.gorsdav_value) as HEDM_BLDG_CONSTR_DATE
   from gorguid g, slbbldg s, gorsdav g1, gorsdav g2, gorsdav g3
- where gorguid_ldm_name = "buildings"
+ where gorguid_ldm_name = gokhedm.f_buildings
    and g.gorguid_domain_surrogate_id = s.slbbldg_surrogate_id
    and g1.gorsdav_table_name(+) = "SLBBLDG"
    and g2.gorsdav_table_name(+) = "SLBBLDG"
@@ -305,7 +305,7 @@ begin
                  slbbldg_activity_date = SYSDATE
        where slbbldg_surrogate_id = (select gorguid_domain_surrogate_id
                                        from gorguid
-                                      where gorguid_ldm_name = "buildings"
+                                      where gorguid_ldm_name = gokhedm.f_buildings
                                         and gorguid_guid = :GUID);
     end if;
   end if;
@@ -332,7 +332,7 @@ DECLARE
   CURSOR rowid_c (p_guid VARCHAR2) IS
     SELECT s.rowid
       FROM gorguid g, slbbldg s
-     WHERE g.gorguid_ldm_name = "buildings"
+     WHERE g.gorguid_ldm_name = gokhedm.f_buildings
        AND g.gorguid_domain_surrogate_id = s.slbbldg_surrogate_id
        AND g.gorguid_guid = p_guid;
   lv_rowid   VARCHAR2(18);
@@ -343,7 +343,7 @@ BEGIN
   OPEN rowid_c(:GUID);
   FETCH rowid_c INTO lv_rowid;
   CLOSE rowid_c;
-  IF :HTTP_METHOD = "POST" THEN
+  IF :HTTP_METHOD IN ("POST","PUT") THEN
     select gp_goksdif.f_get_pk("SLBBLDG", lv_rowid) into lv_pk from dual;
     IF :HEDM_BLDG_LANDMARK != dml_common.UNSPECIFIED_STRING THEN
       lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_BLDG_LANDMARK);
@@ -369,28 +369,6 @@ BEGIN
                                            p_pk      => lv_pk,
                                            p_value   => lv_anydata);
     END IF;
-  ELSIF :HTTP_METHOD = "PUT" THEN
-    IF :HEDM_BLDG_LANDMARK != dml_common.UNSPECIFIED_STRING THEN
-      lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_BLDG_LANDMARK);
-      lv_result := gokhedm.f_save_sde_data(p_table   => "SLBBLDG",
-                                           p_column  => "HEDM_BLDG_LANDMARK",
-                                           p_rowid   => lv_rowid,
-                                           p_value   => lv_anydata);
-    END IF;
-    IF :HEDM_BLDG_ROOM_COUNT != dml_common.UNSPECIFIED_NUMBER THEN
-      lv_anydata := SYS.ANYDATA.convertNumber(:HEDM_BLDG_ROOM_COUNT);
-      lv_result := gokhedm.f_save_sde_data(p_table   => "SLBBLDG",
-                                           p_column  => "HEDM_BLDG_ROOM_COUNT",
-                                           p_rowid   => lv_rowid,
-                                           p_value   => lv_anydata);
-    END IF;
-    IF :HEDM_BLDG_CONSTR_DATE != dml_common.UNSPECIFIED_DATE THEN
-      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_BLDG_CONSTR_DATE);
-      lv_result := gokhedm.f_save_sde_data(p_table   => "SLBBLDG",
-                                           p_column  => "HEDM_BLDG_CONSTR_DATE",
-                                           p_rowid   => lv_rowid,
-                                           p_value   => lv_anydata);
-    END IF;
   END IF;
 END;]]></GORRSQL_WHERE_CLAUSE>
     </GORRSQL>
@@ -407,7 +385,7 @@ END;]]></GORRSQL_WHERE_CLAUSE>
         <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the marital-statuses model. Data will be selected from
--- the list of guids passed in the GUID_LISt parameter. The result set
+-- the list of guids passed in the GUID_LIST parameter. The result set
 -- must contain a column named GUID for matching the extended data to
 -- the correct model entry.
 --
@@ -415,7 +393,7 @@ select gorguid_guid as guid,
        stvmrtl_fa_conv_code,
        stvmrtl_edi_equiv
   from gorguid, stvmrtl
- where gorguid_ldm_name = "marital-status"
+ where gorguid_ldm_name = gokhedm.f_marital_status
    and gorguid_domain_surrogate_id = stvmrtl_surrogate_id
    and gorguid_guid in (:GUID_LIST)]]></GORRSQL_WHERE_CLAUSE>
     </GORRSQL>
@@ -444,7 +422,7 @@ begin
                stvmrtl_activity_date = SYSDATE
      where stvmrtl_surrogate_id = (select gorguid_domain_surrogate_id
                                      from gorguid
-                                    where gorguid_ldm_name = "marital-status"
+                                    where gorguid_ldm_name = gokhedm.f_marital_status
                                       and gorguid_guid = :GUID);
   end if;
 end;]]></GORRSQL_WHERE_CLAUSE>
@@ -462,14 +440,14 @@ end;]]></GORRSQL_WHERE_CLAUSE>
         <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the instructional methods model. Data will be selected from
--- the list of guids passed in the GUID_LISt parameter. The result set
+-- the list of guids passed in the GUID_LIST parameter. The result set
 -- must contain a column named GUID for matching the extended data to
 -- the correct model entry.
 --
 select gorguid_guid as guid,
        stvschd_insm_code
   from gorguid, stvschd
- where gorguid_ldm_name = "instructional-methods"
+ where gorguid_ldm_name = gokhedm.f_instructional_methods
    and gorguid_domain_surrogate_id = stvschd_surrogate_id
    and gorguid_guid in (:GUID_LIST)]]></GORRSQL_WHERE_CLAUSE>
     </GORRSQL>
@@ -486,7 +464,7 @@ select gorguid_guid as guid,
         <GORRSQL_PARSED_SQL>null</GORRSQL_PARSED_SQL>
         <GORRSQL_WHERE_CLAUSE><![CDATA[--
 -- SQL used to extend the instructional-methods model using SDE. Data will be selected from
--- the list of guids passed in the GUID_LISt parameter. The result set
+-- the list of guids passed in the GUID_LIST parameter. The result set
 -- must contain a column named GUID for matching the extended data to
 -- the correct model entry.
 --
@@ -494,22 +472,30 @@ select gorguid_guid as guid,
        sys.anydata.accessNumber(g1.gorsdav_value) as HEDM_DURATION,
        sys.anydata.accessVarchar2(g2.gorsdav_value) as HEDM_INSTRUCTOR,
        sys.anydata.accessDate(g3.gorsdav_value) as HEDM_START_DATE,
-       sys.anydata.accessDate(g4.gorsdav_value) as HEDM_END_DATE
-  from gorguid g, stvschd s, gorsdav g1, gorsdav g2, gorsdav g3, gorsdav g4
- where gorguid_ldm_name = "instructional-methods"
+       sys.anydata.accessDate(g4.gorsdav_value) as HEDM_END_DATE,
+       sys.anydata.accessVarchar2(g5.gorsdav_value) as HEDM_EXTERNAL_CODE,
+       sys.anydata.accessVarchar2(g6.gorsdav_value) as HEDM_EXTERNAL_HISTORY
+  from gorguid g, stvschd s, gorsdav g1, gorsdav g2, gorsdav g3, gorsdav g4, gorsdav g5, gorsdav g6
+ where gorguid_ldm_name = gokhedm.f_instructional_methods
    and g.gorguid_domain_surrogate_id = s.stvschd_surrogate_id
    and g1.gorsdav_table_name(+) = "STVSCHD"
    and g2.gorsdav_table_name(+) = "STVSCHD"
    and g3.gorsdav_table_name(+) = "STVSCHD"
    and g4.gorsdav_table_name(+) = "STVSCHD"
+   and g5.gorsdav_table_name(+) = "STVSCHD"
+   and g6.gorsdav_table_name(+) = "STVSCHD"
    and g1.gorsdav_attr_name(+) = "HEDM_DURATION"
    and g2.gorsdav_attr_name(+) = "HEDM_INSTRUCTOR"
    and g3.gorsdav_attr_name(+) = "HEDM_START_DATE"
    and g4.gorsdav_attr_name(+) = "HEDM_END_DATE"
+   and g5.gorsdav_attr_name(+) = "HEDM_EXTERNAL_CODE"
+   and g6.gorsdav_attr_name(+) = "HEDM_EXTERNAL_HISTORY"
    and g1.gorsdav_pk_parenttab(+) = s.stvschd_code
    and g2.gorsdav_pk_parenttab(+) = s.stvschd_code
    and g3.gorsdav_pk_parenttab(+) = s.stvschd_code
    and g4.gorsdav_pk_parenttab(+) = s.stvschd_code
+   and g5.gorsdav_pk_parenttab(+) = s.stvschd_code
+   and g6.gorsdav_pk_parenttab(+) = s.stvschd_code
    and gorguid_guid in (:GUID_LIST)]]></GORRSQL_WHERE_CLAUSE>
     </GORRSQL>
     <GORRSQL>
@@ -536,7 +522,7 @@ begin
                stvschd_activity_date = SYSDATE
      where stvschd_surrogate_id = (select gorguid_domain_surrogate_id
                                      from gorguid
-                                    where gorguid_ldm_name = "instructional-methods"
+                                    where gorguid_ldm_name = gokhedm.f_instructional_methods
                                       and gorguid_guid = :GUID);
   end if;
 end;]]></GORRSQL_WHERE_CLAUSE>
@@ -562,7 +548,7 @@ DECLARE
   CURSOR rowid_c (p_guid VARCHAR2) IS
     SELECT s.rowid
       FROM gorguid g, stvschd s
-     WHERE g.gorguid_ldm_name = "instructional-methods"
+     WHERE g.gorguid_ldm_name = gokhedm.f_instructional_methods
        AND g.gorguid_domain_surrogate_id = s.stvschd_surrogate_id
        AND g.gorguid_guid = p_guid;
   lv_rowid   VARCHAR2(18);
@@ -573,40 +559,55 @@ BEGIN
   OPEN rowid_c(:GUID);
   FETCH rowid_c INTO lv_rowid;
   CLOSE rowid_c;
-  IF :HTTP_METHOD = "POST" THEN
+  IF :HTTP_METHOD IN ("POST","PUT") THEN
     select gp_goksdif.f_get_pk("STVSCHD", lv_rowid) into lv_pk from dual;
     IF :HEDM_DURATION != dml_common.UNSPECIFIED_NUMBER THEN
       lv_anydata := SYS.ANYDATA.convertNumber(:HEDM_DURATION);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_DURATION", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD",
+                                           p_column => "HEDM_DURATION",
+                                           p_rowid => lv_rowid,
+                                           p_pk => lv_pk,
+                                           p_value => lv_anydata);
     END IF;
     IF :HEDM_INSTRUCTOR != dml_common.UNSPECIFIED_STRING THEN
       lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_INSTRUCTOR);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_INSTRUCTOR", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD",
+                                           p_column => "HEDM_INSTRUCTOR",
+                                           p_rowid => lv_rowid,
+                                           p_pk => lv_pk,
+                                           p_value => lv_anydata);
     END IF;
     IF :HEDM_START_DATE != dml_common.UNSPECIFIED_DATE THEN
       lv_anydata := SYS.ANYDATA.convertDate(:HEDM_START_DATE);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_START_DATE", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD",
+                                           p_column => "HEDM_START_DATE",
+                                           p_rowid => lv_rowid,
+                                           p_pk => lv_pk,
+                                           p_value => lv_anydata);
     END IF;
     IF :HEDM_END_DATE != dml_common.UNSPECIFIED_DATE THEN
       lv_anydata := SYS.ANYDATA.convertDate(:HEDM_END_DATE);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_END_DATE", p_rowid => lv_rowid, p_pk => lv_pk, p_value => lv_anydata);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD",
+                                           p_column => "HEDM_END_DATE",
+                                           p_rowid => lv_rowid,
+                                           p_pk => lv_pk,
+                                           p_value => lv_anydata);
     END IF;
-  ELSIF :HTTP_METHOD = "PUT" THEN
-    IF :HEDM_DURATION != dml_common.UNSPECIFIED_NUMBER THEN
-      lv_anydata := SYS.ANYDATA.convertNumber(:HEDM_DURATION);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_DURATION", p_rowid => lv_rowid, p_value => lv_anydata);
+    IF :HEDM_EXTERNAL_CODE != dml_common.UNSPECIFIED_STRING THEN
+      lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_EXTERNAL_CODE);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD",
+                                           p_column => "HEDM_EXTERNAL_CODE",
+                                           p_rowid => lv_rowid,
+                                           p_pk => lv_pk,
+                                           p_value => lv_anydata);
     END IF;
-    IF :HEDM_INSTRUCTOR != dml_common.UNSPECIFIED_STRING THEN
-      lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_INSTRUCTOR);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_INSTRUCTOR", p_rowid => lv_rowid, p_value => lv_anydata);
-    END IF;
-    IF :HEDM_START_DATE != dml_common.UNSPECIFIED_DATE THEN
-      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_START_DATE);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_START_DATE", p_rowid => lv_rowid, p_value => lv_anydata);
-    END IF;
-    IF :HEDM_END_DATE != dml_common.UNSPECIFIED_DATE THEN
-      lv_anydata := SYS.ANYDATA.convertDate(:HEDM_END_DATE);
-      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD", p_column => "HEDM_END_DATE", p_rowid => lv_rowid, p_value => lv_anydata);
+    IF :HEDM_EXTERNAL_HISTORY != dml_common.UNSPECIFIED_STRING THEN
+      lv_anydata := SYS.ANYDATA.convertVarchar2(:HEDM_EXTERNAL_HISTORY);
+      lv_result := gokhedm.f_save_sde_data(p_table => "STVSCHD",
+                                           p_column => "HEDM_EXTERNAL_HISTORY",
+                                           p_rowid => lv_rowid,
+                                           p_pk => lv_pk,
+                                           p_value => lv_anydata);
     END IF;
   END IF;
 END;]]></GORRSQL_WHERE_CLAUSE>

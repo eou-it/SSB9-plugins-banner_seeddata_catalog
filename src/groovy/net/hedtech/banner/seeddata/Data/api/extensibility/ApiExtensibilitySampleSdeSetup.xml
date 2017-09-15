@@ -14,6 +14,8 @@ BEGIN
     GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_INSTRUCTOR', 'N', 'VARCHAR2'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
     GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_START_DATE', 'N', 'DATE'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
     GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_END_DATE', 'N', 'DATE'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_EXTERNAL_CODE', 'N', 'VARCHAR2'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
+    GOKHEDM.p_create_sde_col('STVSCHD', 'HEDM_EXTERNAL_HISTORY', 'N', 'VARCHAR2'); -- ONLY CALL THIS PROC ONCE FOR EACH FIELD ADDED.
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'INGLE', SYS.ANYDATA.convertVarchar2('BIG OAK TREE'));
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'TECH', SYS.ANYDATA.convertVarchar2('SMALL RED TREE'));
     sde_value_result := GOKHEDM.f_save_sde_data('SLBBLDG', 'HEDM_BLDG_LANDMARK', NULL, 'LAUREN', SYS.ANYDATA.convertVarchar2('MEXICAN RESTAURANT'));
@@ -63,6 +65,8 @@ BEGIN
     sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'IND', SYS.ANYDATA.convertDate(to_date('2009-05-19','YYYY-MM-DD')));
     sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'WLB', SYS.ANYDATA.convertDate(to_date('2015-03-17','YYYY-MM-DD')));
     sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_END_DATE', NULL, 'SEM', SYS.ANYDATA.convertDate(to_date('2003-06-15','YYYY-MM-DD')));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_EXTERNAL_CODE', NULL, 'DC', SYS.ANYDATA.convertVarchar2('A12365427'));
+    sde_value_result := GOKHEDM.f_save_sde_data('STVSCHD', 'HEDM_EXTERNAL_HISTORY', NULL, 'DC', SYS.ANYDATA.convertVarchar2('[{'||CHR(34)||'date'||CHR(34)||':'||CHR(34)||'2002-01-13'||CHR(34)||','||CHR(34)||'status'||CHR(34)||':'||CHR(34)||'FT'||CHR(34)||','||CHR(34)||'level'||CHR(34)||':7'||'},{'||CHR(34)||'date'||CHR(34)||':'||CHR(34)||'2000-12-06'||CHR(34)||','||CHR(34)||'status'||CHR(34)||':'||CHR(34)||'PT'||CHR(34)||','||CHR(34)||'level'||CHR(34)||':5'||'}]'));
     COMMIT;
 END;]]></SQL_CODE>
     </PERFORMANCE_SQL>
