@@ -356,7 +356,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceAccountIndex.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyCode.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyRate.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceApprovalQueueDefinition.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceApprovalQueueDefinition.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/VendorEmail.xml'],
             'ssbgeneralstudentblockreg'        : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockReg.xml'],
             'blockregistration'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'ssbgeneralstudent2'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml',
@@ -967,7 +968,7 @@ public class InputData {
 
 
     public String getUrl() {
-       // println "Get url: ${url}"
+        // println "Get url: ${url}"
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
