@@ -66,7 +66,7 @@ class JobsubSavedOutputDml {
 
             def jobRecord = "select gjrjlis_surrogate_id jlis from gjrjlis where gjrjlis_job = ? and gjrjlis_one_up_no = ? and gjrjlis_file_name = ?"
             def jobrec = conn.firstRow(jobRecord, [apiData.GJRJLIS_JOB.text(), apiData.GJRJLIS_ONE_UP_NO.text(), apiData.GJRJLIS_FILE_NAME.text()])
-            println "surrogate ID: ${jobrec.jlis}"
+            
             def updateSql
             try {
                 String updateRec = "update gjrjlis set gjrjlis_file = ? where gjrjlis_surrogate_id = ?"
