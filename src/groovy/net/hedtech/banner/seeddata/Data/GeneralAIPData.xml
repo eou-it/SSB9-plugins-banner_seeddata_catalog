@@ -1360,6 +1360,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>1</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Enrollment</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Enrollment</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>Crimson flames tied through my ears, rollin high and mighty traps
             Pounced with fire on flaming roads using ideas as my maps
@@ -1394,6 +1395,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>2</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>advanced Studies</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>advanced Studies</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>!@#$%^{}*()_+[]~/*</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1405,6 +1407,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>3</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Graduation</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Graduation</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>Oh, I dont think Im a lot dumber than you think that I thought that I thought I was once.</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1416,6 +1419,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPgeneral</FOLDER>
         <GCBAGRP_SURROGATE_ID>4</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>International Students</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>International Students</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis.</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1427,6 +1431,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPgeneral</FOLDER>
         <GCBAGRP_SURROGATE_ID>5</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Parks and Recreation</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Parks and Recreation</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>It is.</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1438,6 +1443,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPgeneral</FOLDER>
         <GCBAGRP_SURROGATE_ID>6</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Cultural and Entertainment Facilities</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Cultural and Entertainment Facilities</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>Remember the 5 Ds of dodgeball: Dodge, duck, dip, dive and dodge. - Patches Ohoulihan</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1449,6 +1455,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>7</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Community Facilities</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Community Facilities</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>If you can dodge a wrench, you can dodge a ball. - Patches OHoulihan.</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Draft</GCBAGRP_STATUS>
@@ -1460,6 +1467,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPgeneral</FOLDER>
         <GCBAGRP_SURROGATE_ID>8</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Security, Police and Fire</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Security, Police and Fire</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>England expects that every man will do his duty</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Inactive</GCBAGRP_STATUS>
@@ -1471,6 +1479,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>9</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>TitleWithSIXTYCharacterLongTesting1234567890!@#$%^*()_+/!</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>TitleWithSIXTYCharacterLongTesting1234567890!@#$%^*()_+/!</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>ShehidesinanatticconcealedonashelfBehindvolumesofliteraturebasedonherselfAndrunsacrossthepageslikesometinyelfKnowingthatitshardtofindStuffwaybackinhermind,WindsupspendingallofhertimeTryingtomemorizeeveryline</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1482,6 +1491,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPgeneral</FOLDER>
         <GCBAGRP_SURROGATE_ID>10</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>@</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>@</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>A</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1493,6 +1503,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>11</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>1234567890</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>1234567890</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>IN CONGRESS, July 4, 1776.
 
@@ -1629,6 +1640,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>AIPstudent</FOLDER>
         <GCBAGRP_SURROGATE_ID>12</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Testing AlphaNumeric 1234567890 !@#$%^*()_+[\]{}|;:&quot;?,./</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>Testing AlphaNumeric 1234567890 !@#$%^*()_+[\]{}|;:&quot;?,./</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>Thank you so much. It’s so great to be here in Iowa. We’re here just thawing out. Todd and I and a couple of our friends here from Alaska, lending our support for the next president of our great United States of America, Donald J. Trump.
             “Mr. Trump, you’re right, look back there in the press box. Heads are spinning, media heads are spinning. This is going to be so much fun.
@@ -1659,6 +1671,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>قبول الوكالة</FOLDER>
         <GCBAGRP_SURROGATE_ID>13</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>مسابقة سنوية الفن الرصيف</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>مسابقة سنوية الفن الرصيف</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>3</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>أنها تخفي في عليه أخفى على رف خلف كميات من الأدب تعتمد على نفسها ويمتد عبر الصفحات مثل بعض قزم صغير مع العلم أنه من الصعب العثور على الأشياء في طريق العودة في ذهنها، رياح تصل تنفق كل وقتها في محاولة لإحياء ذكرى كل سطر لورين الحلو، آه، لورين الحلو. حلوة سيدة من الموت يريد مني أن يموت حتى أنها يمكن أن تأتي تجلس بالسرير وتحسر بي ومسح بعيداً من الدموع من عيني أصدقاء ثم بهدوء وقالت أنها سوف يشرح فقط بالضبط الذي كان اللوم لتسبب لي الذهاب مجنون وأخيراً تفجير ذهني، لورين الحلو، آه، لورين الحلو.  تعلمون جيدا أنه من عار ومن مؤسف الذي أثيرت حتى في المدينة وتعلمت ابدأ أي شيء بوت طرق البلاد، آه، طرق البلد نوبة.  فرحة الحياة أنها فساتين باللون الأسود مع الأسرار السماوية محفورة في ظهرها ووجهها يبقى اللمعان أن قالت أنها حصلت على الموهبة، ولكن أنت تعرف عندما تنظر في عينيها كل من علمت أنها اضطرت إلى أحياء ذكرى والطريقة الوحيدة التي سوف تحصل من أي وقت مضى لها عالية السماح لها</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
@@ -1670,6 +1683,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDER>قبول الوكالة</FOLDER>
         <GCBAGRP_SURROGATE_ID>14</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>حملة التوعية العامة</GCBAGRP_TITLE>
+        <GCBAGRP_NAME>حملة التوعية العامة</GCBAGRP_NAME>
         <GCBAGRP_FOLDER_ID>3</GCBAGRP_FOLDER_ID>
         <GCBAGRP_DESCRIPTION>ذهب سريعة جوي الصغيرة على الجدار مع كرة هو سلسلة وراءه جوي سريع صغير ذهب أكثر من الجدار إرسال الكلاب الحق بها للعثور عليه. في السجن شريطية تناسب مع لا مساحة للتحرك اتجه للطريق السريع ببلدة دراجن لا تزال سلسلة  أنه إعجابه أسفل عربة قال كذلك يمكنك أنت ذاهب طريقي. ويقول الآن الامتناع عن تشغيل جوي، جوي تشغيل تشغيل كلاب الصيد وهم على درب الخاص بك القفز إلى أعلى قفزة إلى أعلى تشغيل جوي، وتشغيل تشغيل جوي أنهم ذاهبون لإرسال لك العودة إلى السجن. شريف حصلت على بندقية، هل قال أنه سوف ملء لكم كامل نجل الرائدة، كان صحيحاً. وقد حصل أيضا لعبة ورق، ومرض جنون قال أن التمثال راسك مع الصديق واحد، وهنا اذهب الآن. تشغيل جوي، تشغيل تشغيل جوي كلاب الصيد على درب الخاص بك. جين ماري الحلو كان ذاهب مجنون</GCBAGRP_DESCRIPTION>
         <GCBAGRP_STATUS>Active</GCBAGRP_STATUS>
