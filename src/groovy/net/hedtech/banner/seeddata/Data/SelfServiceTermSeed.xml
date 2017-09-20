@@ -760,7 +760,6 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
   <SOBTERM_COND_ADD_DROP_CDE/>
   <SOBTERM_AUTO_DROP_CDE/>
   <SOBTERM_ADMIN_DROP_CDE/>
-  <SOBTERM_DROP_LAST_CLASS_CDE/>
 </SOBTERM>
 <SOBTERM>
   <SOBTERM_TERM_CODE>200310</SOBTERM_TERM_CODE>
@@ -856,7 +855,6 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
   <SOBTERM_COND_ADD_DROP_CDE/>
   <SOBTERM_AUTO_DROP_CDE/>
   <SOBTERM_ADMIN_DROP_CDE/>
-  <SOBTERM_DROP_LAST_CLASS_CDE/>
 </SOBTERM>
 <SOBPTRM>
   <SOBPTRM_TERM_CODE>201110</SOBPTRM_TERM_CODE>
@@ -1554,7 +1552,19 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
  <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
  <SFBESTS_VPDI_CODE>INST</SFBESTS_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-</SFBESTS>   
+</SFBESTS>
+ <SFBESTS>
+ <SFBESTS_TERM_CODE>201620</SFBESTS_TERM_CODE>
+ <SFBESTS_ESTS_CODE>EL</SFBESTS_ESTS_CODE>
+ <SFBESTS_START_DATE>07-SEP-2010</SFBESTS_START_DATE>
+ <SFBESTS_END_DATE>21-DEC-2020</SFBESTS_END_DATE>
+ <SFBESTS_ACTIVITY_DATE>01-JAN-2010</SFBESTS_ACTIVITY_DATE>
+ <SFBESTS_SURROGATE_ID/>
+ <SFBESTS_VERSION/>
+ <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>
+ <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>
+ <SFBESTS_VPDI_CODE>INST</SFBESTS_VPDI_CODE>
+</SFBESTS>
 <SFBESTS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
  <SFBESTS_TERM_CODE>203010</SFBESTS_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  <SFBESTS_ESTS_CODE>AC</SFBESTS_ESTS_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
@@ -1605,7 +1615,7 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
 </SFBESTS>
 <SFBESTS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
  <SFBESTS_TERM_CODE>203010</SFBESTS_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
- <SFBESTS_ESTS_CODE>IZ</SFBESTS_ESTS_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ <SFBESTS_ESTS_CODE>IZ</SFBESTS_ESTS_CODE>
  <SFBESTS_START_DATE>27-JUN-2011</SFBESTS_START_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
  <SFBESTS_END_DATE>29-JUN-2012</SFBESTS_END_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
  <SFBESTS_ACTIVITY_DATE>01-JAN-2010</SFBESTS_ACTIVITY_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
@@ -1615,17 +1625,17 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
  <SFBESTS_VPDI_CODE>INST</SFBESTS_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 </SFBESTS>
-<SFBESTS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
- <SFBESTS_TERM_CODE>203010</SFBESTS_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
- <SFBESTS_ESTS_CODE>NS</SFBESTS_ESTS_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
- <SFBESTS_START_DATE>27-JUN-2011</SFBESTS_START_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
- <SFBESTS_END_DATE>29-JUN-2012</SFBESTS_END_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
- <SFBESTS_ACTIVITY_DATE>01-JAN-2010</SFBESTS_ACTIVITY_DATE>                                                                                                                                                                                                                                                                                                                                                                                                                                                          
- <SFBESTS_SURROGATE_ID/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
- <SFBESTS_VERSION/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
- <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
- <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
- <SFBESTS_VPDI_CODE>INST</SFBESTS_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+<SFBESTS>
+ <SFBESTS_TERM_CODE>203010</SFBESTS_TERM_CODE>
+ <SFBESTS_ESTS_CODE>NS</SFBESTS_ESTS_CODE>
+ <SFBESTS_START_DATE>27-JUN-2011</SFBESTS_START_DATE>
+ <SFBESTS_END_DATE>29-JUN-2012</SFBESTS_END_DATE>
+ <SFBESTS_ACTIVITY_DATE>01-JAN-2010</SFBESTS_ACTIVITY_DATE>
+ <SFBESTS_SURROGATE_ID/>
+ <SFBESTS_VERSION/>
+ <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>
+ <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>
+ <SFBESTS_VPDI_CODE>INST</SFBESTS_VPDI_CODE>
 </SFBESTS>
 <SFBESTS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
  <SFBESTS_TERM_CODE>203010</SFBESTS_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
@@ -1806,7 +1816,7 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
  <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
  <SFBESTS_VPDI_CODE>INST</SFBESTS_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-</SFBESTS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+</SFBESTS>
 <SFBESTS>
  <SFBESTS_TERM_CODE>204010</SFBESTS_TERM_CODE>
  <SFBESTS_ESTS_CODE>AC</SFBESTS_ESTS_CODE>
@@ -1883,13 +1893,22 @@ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  <SFBESTS_TERM_CODE>204010</SFBESTS_TERM_CODE>
  <SFBESTS_ESTS_CODE>WD</SFBESTS_ESTS_CODE>
  <SFBESTS_START_DATE>7/25/2011</SFBESTS_START_DATE>
- <SFBESTS_END_DATE>7/20/2012</SFBESTS_END_DATE>
+ <SFBESTS_END_DATE>7/20/2020</SFBESTS_END_DATE>
  <SFBESTS_ACTIVITY_DATE>01-JAN-2010</SFBESTS_ACTIVITY_DATE>
  <SFBESTS_SURROGATE_ID/>
  <SFBESTS_VERSION/>
  <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
  <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>
  <SFBESTS_VPDI_CODE/>
+</SFBESTS>
+<SFBESTS>
+ <SFBESTS_TERM_CODE>201440</SFBESTS_TERM_CODE>
+ <SFBESTS_ESTS_CODE>AC</SFBESTS_ESTS_CODE>
+ <SFBESTS_START_DATE>25-JUL-2011</SFBESTS_START_DATE>
+ <SFBESTS_END_DATE>20-JUL-2012</SFBESTS_END_DATE>
+ <SFBESTS_ACTIVITY_DATE>01-JAN-2010</SFBESTS_ACTIVITY_DATE>
+ <SFBESTS_USER_ID>GRAILS</SFBESTS_USER_ID>
+ <SFBESTS_DATA_ORIGIN>GRAILS</SFBESTS_DATA_ORIGIN>
 </SFBESTS>
 <SFRRSTS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
  <SFRRSTS_TERM_CODE>201110</SFRRSTS_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

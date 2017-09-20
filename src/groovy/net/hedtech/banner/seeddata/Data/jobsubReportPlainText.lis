@@ -1,0 +1,136 @@
+08-SET-2017     07:55:50                                  margys database                                                 PAGE 1
+MANHÃ
+201610                                             Admissions Application Report                                          SARADMS
+
+                                           Applications by Name, Term, Application Number
+
+Id                       Name              Term    Appl            Title       Code            Description
+
+
+MHTRAN002  جاميسون ماري سميث               201610  1
+                                                       Appl:       Stdnt Type  A               Student Studying Abroad
+                                                                   Admit Type  ST              Standard
+                                                                   Recr Type
+                                                                   Recruiter
+                                                                   Residence   R               Resident
+                                                                   Session
+                                                                   F/P
+                                                                   Site
+                                                                   App Status  D               Decision Made
+                                                                   Decision    31              Quick Entry/Non-Matriculated
+                                                                   Ed Levl
+                                                                   Ed Goal
+                                                                   Interview
+                                                                   Rate
+                                                                   Wthd Reas
+                                                                   Inst Attd
+
+                                                                   Priority    1
+                                                                   Level       UG              Undergraduate
+                                                                   Degree      BA              Bachelor of Arts
+                                                                   Program     BA-HIST         B.A.  History
+                                                                   College     AS              Arts Science
+                                                                   Campus      M               Main
+                                                                   Major       HIST            History
+
+                                                       Checklist:  Code        Mandatory       Description              Received
+
+                                                                   AP25        Y               $25 Application Fee
+                                                                   TSTS        Y               Official SAT/ACT Scores
+
+
+MHTRAN003  Abbï¿½Cï¿½tï¿½,           Josï¿½201610  1
+           AbbÃ¦CÃ´tÃ©, Jo
+                                                       Appl:       Stdnt Type  A               Student Studying Abroad
+                                                                   Admit Type  ST              Standard
+                                                                   Recr Type
+                                                                   Recruiter
+                                                                   Residence   R               Resident
+                                                                   Session
+                                                                   F/P
+                                                                   Site
+                                                                   App Status  D               Decision Made
+                                                                   Decision    31              Quick Entry/Non-Matriculated
+                                                                   Ed Levl
+                                                                   Ed Goal
+                                                                   Interview
+                                                                   Rate
+                                                                   Wthd Reas
+08-SET-2017     07:55:50                                  margys database                                                 PAGE 2
+MANHÃ
+201610                                             Admissions Application Report                                          SARADMS
+
+                                           Applications by Name, Term, Application Number
+
+Id                       Name              Term    Appl            Title       Code            Description
+(Continued)
+MHTRAN003  Abbï¿½Cï¿½tï¿½,           Josï¿½201610  1
+           AbbÃ¦CÃ´tÃ©, Jo
+                                                                   Inst Attd
+
+                                                                   Priority    1
+                                                                   Level       UG              Undergraduate
+                                                                   Degree      BA              Bachelor of Arts
+                                                                   Program     BA-HIST         B.A.  History
+                                                                   College     AS              Arts Science
+                                                                   Campus      M               Main
+                                                                   Major       HIST            History
+
+                                                       Checklist:  Code        Mandatory       Description              Received
+
+                                                                   AP25        Y               $25 Application Fee
+                                                                   TSTS        Y               Official SAT/ACT Scores
+
+
+MHTRAN001  JosÃ© Abbï¿½Cï¿½tï¿½            201610  1
+                                                       Appl:       Stdnt Type  A               Student Studying Abroad
+                                                                   Admit Type  ST              Standard
+                                                                   Recr Type
+                                                                   Recruiter
+                                                                   Residence   M               Military Out of State
+                                                                   Session
+                                                                   F/P
+                                                                   Site
+                                                                   App Status  D               Decision Made
+                                                                   Decision    31              Quick Entry/Non-Matriculated
+                                                                   Ed Levl
+                                                                   Ed Goal
+                                                                   Interview
+                                                                   Rate
+                                                                   Wthd Reas
+                                                                   Inst Attd
+
+                                                                   Priority    1
+                                                                   Level       UG              Undergraduate
+                                                                   Degree      BA              Bachelor of Arts
+                                                                   Program     BA-ARTS         BA - Arts
+                                                                   College     AS              Arts Science
+                                                                   Campus
+                                                                   Major       ART             Art
+
+                                                       Checklist:  Code        Mandatory       Description              Received
+
+                                                                   AP25        Y               $25 Application Fee
+                                                                   TSTS        Y               Official SAT/ACT Scores
+08-SET-2017     07:55:50                                  margys database                                                 PAGE 3
+MANHÃ
+201610                                             Admissions Application Report                                          SARADMS
+
+                                           Applications by Name, Term, Application Number
+
+                                   * * * REPORT CONTROL INFORMATION - SARADMS - Release 8.9 * * *
+
+RPTNAME: SARADMS
+TERM: 201610
+ADMISSIONS TYPE:
+STUDENT TYPE:
+MAJOR CODE:
+DEGREE CODE:
+COLLEGE CODE:
+LEVEL CODE:
+RESIDENCE CODE:
+APPLICATION STATUS CODE:
+APPLICATION DECISION CODE:
+REPORT SEQUENCE: N
+
+RECORD COUNT: 3

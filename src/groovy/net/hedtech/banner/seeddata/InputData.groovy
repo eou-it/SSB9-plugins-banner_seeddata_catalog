@@ -16,6 +16,7 @@ public class InputData {
     def xmlControlFile
     String batchSeed
     String baseDirectory
+    def xmlFilePath
 
     // Database configuration. Note: if dataSource is available, the remaining database configuration fields are not used
     def dataSource = null
@@ -355,7 +356,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceAccountIndex.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyCode.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/PurchaseRequisitionCurrencyRate.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceApprovalQueueDefinition.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceApprovalQueueDefinition.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/VendorEmail.xml'],
             'ssbgeneralstudentblockreg'        : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataBlockReg.xml'],
             'blockregistration'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/BlockRegistration.xml'],
             'ssbgeneralstudent2'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2.xml',
@@ -599,7 +601,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SFBDRSC.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU01.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU02.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU03.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/DropRosterStudentData_DROPSTU03.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ReRegisterHOSH00023.xml'],
             'registration-planning-region'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml'],
             'GrailsReadOnly'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GrailsSAMLUser.xml'],
@@ -796,7 +799,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSectionAddAuthData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthValidationSetupData.xml'],
-            'addauth-planning'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthPlanningData.xml']
+            'addauth-planning'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/AddAuthPlanningData.xml'],
+            'jobsub'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/jobsub.xml']
     ]
     /**
      *  Map of selenium targets
@@ -1089,7 +1093,7 @@ public class InputData {
 
 
     public String getUrl() {
-       // println "Get url: ${url}"
+        // println "Get url: ${url}"
         if (!url) {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "

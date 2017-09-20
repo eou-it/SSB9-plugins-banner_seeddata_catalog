@@ -6,6 +6,7 @@ package net.hedtech.banner.seeddata
 import groovy.sql.Sql
 
 import java.sql.Connection
+import java.sql.RowId
 
 /**
  * General Person ID DML
@@ -25,7 +26,7 @@ public class CreateOracleUserDML {
     def InputData connectInfo
     Sql conn
     Connection connectCall
-    java.sql.RowId tableRow = null
+    RowId tableRow = null
     def xmlData
 
 
@@ -40,7 +41,9 @@ public class CreateOracleUserDML {
 
         this.conn = conn
         this.connectInfo = connectInfo
-        this.connectCall = connectCall
+        this.connectInfo.dataSource=null;
+        def newConn = new ConnectDB(connectInfo)
+        this.connectCall = newConn.getSqlConnection().connection
         this.xmlData = xmlData
         parseXmlData()
 
@@ -110,6 +113,9 @@ public class CreateOracleUserDML {
                     println "Could not create Oracle Id,  ${this.newOracleId}. $e.message"
                 }
             }
+            finally {
+                //this.conn.close()
+            }
         }
 
     }
@@ -123,7 +129,7 @@ public class CreateOracleUserDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
+                println "Could not select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
             }
         }
         if (result.cnt == 0) {
@@ -139,6 +145,10 @@ public class CreateOracleUserDML {
                 if (connectInfo.showErrors) {
                     println "Could not create General Class,  ${this.oracleId} ${this.generalClass}. $e.message"
                 }
+            }
+            finally {
+
+               // this.conn.close()
             }
         }
     }
@@ -169,6 +179,10 @@ public class CreateOracleUserDML {
                 if (connectInfo.showErrors) {
                     println "Could not create access to object,  ${this.oracleId.text()} ${this.objectName.text()}. $e.message"
                 }
+            }
+            finally {
+
+                //this.conn.close()
             }
         }
     }

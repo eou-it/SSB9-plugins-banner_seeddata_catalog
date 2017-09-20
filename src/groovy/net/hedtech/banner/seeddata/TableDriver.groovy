@@ -46,6 +46,7 @@ public class TableDriver {
 
         try {
             def xmlTable = new XmlParser().parse(new File("${fileName}"))
+            connectInfo.xmlFilePath = fileName
             xmlTable.each() {node ->
                 def newTable = node.name()
                 connectInfo.tableName = newTable
