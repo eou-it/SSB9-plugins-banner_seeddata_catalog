@@ -99,7 +99,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>بيت الشمس المشرقة</GCBACTM_NAME>
         <GCBACTM_TITLE>بيت الشمس المشرقة</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>4</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRRTLA01</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>
@@ -135,7 +135,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>منحنى الرجل الميت</GCBACTM_NAME>
         <GCBACTM_TITLE>منحنى الرجل الميت</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>4</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Inactive</GCBACTM_STATUS>
+        <gcbactm_status_code>I</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRRTLA01</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>كنت cruisin &apos;في بلدي ستينج راي أواخر ليلة واحدة
@@ -186,7 +186,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Drug and Alcohol Policy</GCBACTM_NAME>
         <GCBACTM_TITLE>Drug and Alcohol Policy</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>GRAILS</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>You must review and confirm the Ellucian University Campus Drug and Alcohol policy prior to registering for classes.</GCBACTM_DESCRIPTION>
@@ -199,7 +199,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Registration Process Training</GCBACTM_NAME>
         <GCBACTM_TITLE>Registration Process Training</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>It takes just 10 minutes, review the training video provided to help expedite your registration experience.</GCBACTM_DESCRIPTION>
@@ -212,7 +212,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Personal Information</GCBACTM_NAME>
         <GCBACTM_TITLE>Personal Information</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>It is important that we have your current information such as your name, and contact information therefore it is required that you review, update and confirm your personal information.</GCBACTM_DESCRIPTION>
@@ -225,7 +225,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Meet with Advisor</GCBACTM_NAME>
         <GCBACTM_TITLE>Meet with Advisor</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_CREATOR_ID>CSRADM001</GCBACTM_CREATOR_ID>
@@ -237,7 +237,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Proof of Residence</GCBACTM_NAME>
         <GCBACTM_TITLE>Proof of GCBACTM_TITLE</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>All incoming students are required to submit an approved document as proof of residency.</GCBACTM_DESCRIPTION>
@@ -250,7 +250,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Policy Handbook</GCBACTM_NAME>
         <GCBACTM_TITLE>Policy Handbook</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The Ellucian University Policy Handbook provides information including graduation requirements, degree programs offered, admission requirements and general academic regulations.</GCBACTM_DESCRIPTION>
@@ -263,7 +263,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Notice of Right to Change Requirements</GCBACTM_NAME>
         <GCBACTM_TITLE>Notice of Right to Change Requirements</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Please review the Ellucian University Right to Change Requirements policy statement</GCBACTM_DESCRIPTION>
@@ -276,7 +276,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Notice of Non-Discrimination Policy</GCBACTM_NAME>
         <GCBACTM_TITLE>Notice of Non-Discrimination Policy</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Ellucian University prohibits discrimination, including any form of harassment, by employees, faculty, students, contractors, or agents
@@ -292,7 +292,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Please Review the University Mission Statement</GCBACTM_NAME>
         <GCBACTM_TITLE>Please Review the University Mission Statement</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Inactive</GCBACTM_STATUS>
+        <gcbactm_status_code>I</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Ellucian University prepares learners to become global citizens, critical thinkers, effective communicators, and responsible leaders by
@@ -306,7 +306,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Please Review the Attendance Policy</GCBACTM_NAME>
         <GCBACTM_TITLE>Please Review the Attendance Policy</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>A student who is not officially registered may not attend a university course.
@@ -327,7 +327,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Notice of Scholastic Standards</GCBACTM_NAME>
         <GCBACTM_TITLE>Notice of Scholastic Standards</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active </GCBACTM_STATUS>
+        <gcbactm_status_code>Active </gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The University’s regulations on academic standards are established by the University Senate and implemented by the Academic Evaluation and Standards Committee. This committee has assigned the responsibility of monitoring the academic progress of under­graduate students to University College Advising.</GCBACTM_DESCRIPTION>
@@ -340,7 +340,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Deans List</GCBACTM_NAME>
         <GCBACTM_TITLE>Deans List</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active </GCBACTM_STATUS>
+        <gcbactm_status_code>Active </gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Students who earn a 3.5 GPA or better for at least 12 graded credit hours for an academic term are placed on the deans list. Students receive notification of this honor on the Campus Information System and it is noted on their transcript.</GCBACTM_DESCRIPTION>
@@ -353,7 +353,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>All staff: Prepare for winter snow</GCBACTM_NAME>
         <GCBACTM_TITLE>All staff: Prepare for winter snow</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Draft </GCBACTM_STATUS>
+        <gcbactm_status_code>Draft </gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>With the winter season fast approaching. Please prepare yourself for the upcoming snow by reviewing the Facilities Department Winter Season and Snow Removal FAQ’s and the 2013-2014 Snow Removal Grounds Care Assignment Chart.</GCBACTM_DESCRIPTION>
@@ -366,7 +366,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>All staff: Time to encourage your friends to Give to the Max</GCBACTM_NAME>
         <GCBACTM_TITLE>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Click the DONATE button on your school website, and what do you see? Photos of smiling students engaged in learning? A few words making the case for supporting the special place that is your school? If so, you’re ready to invite staff members, families and local business people to contribute to your school via www.GiveMN.org. You can find Give to the Max Day materials in Hmong, Karen, Somali and Spanish by checking out the right-hand column at http://www.spps.org/toolkit.</GCBACTM_DESCRIPTION>
@@ -379,7 +379,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>School staff: Register for Yoga Calm training</GCBACTM_NAME>
         <GCBACTM_TITLE>School staff: Register for Yoga Calm training</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
+        <gcbactm_status_code>D</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Yoga Calm is a program that teaches the scientific practices of mindfulness, social/emotional learning and yoga-based movement. Learn and apply practical, research-based interventions that impact student focus, attention and connection to others. These 3-hour sessions will provide hands-on skills and activities to reduce stress, prepare students to learn, and foster a calm and more productive learning environment and classroom culture. This opportunity is funded by Statewide Health Improvement Plan (SHIP) in a grant from Saint Paul Ramsey County Public Health.</GCBACTM_DESCRIPTION>
@@ -392,7 +392,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Teachers: Fund for Teachers deadline is January 30, 2014</GCBACTM_NAME>
         <GCBACTM_TITLE>Teachers: Fund for Teachers deadline is January 30, 2014</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Inactive</GCBACTM_STATUS>
+        <gcbactm_status_code>I</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Fund for Teachers (FFT) provides educators who possess a broad vision of what it means to teach and learn with resources to pursue self-designed professional learning experiences. FFT grants can be used for a variety of projects, all designed to create enhanced learning environments for teachers, their students and their school communities. We believe that supporting teachers&apos; active participation in their own professional growth positively impacts student learning and achievement. To learn more about the Fund for Teachers, visit: http://www.fundforteachers.org/
@@ -413,7 +413,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Teachers: Register for service-learning and We Act trainings</GCBACTM_NAME>
         <GCBACTM_TITLE>Teachers: Register for service-learning and We Act trainings</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Inactive</GCBACTM_STATUS>
+        <gcbactm_status_code>I</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>On November 15, the SPPS Community Education Service-Learning Program is hosting two training opportunities about service-learning that will include information on organizations that offer great partnership opportunities. Register now on PD Express by searching for “Service Learning.”
@@ -432,7 +432,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>2nd grade teachers: Schedule a trip at Minnesota Museum</GCBACTM_NAME>
         <GCBACTM_TITLE>2nd grade teachers: Schedule a free science field trip at the Minnesota Children&apos;s Museum</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Inactive</GCBACTM_STATUS>
+        <gcbactm_status_code>I</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The 2nd grade Strategic Science and Engineering Initiative (SSEI) trip for 2013 is to Minnesota Children’s Museum (MCM). This trip is fully funded by a grant from 3M.
@@ -478,7 +478,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Please read the Minimum GPA requirements</GCBACTM_NAME>
         <GCBACTM_TITLE>Please read the Minimum GPA requirements</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>All undergraduate students are required to maintain a cumulative GPA of at least 2.0 (C average): Transfer students should be aware that the cumulative GPA is computed only on the basis of University of Utah course work. For detailed information about the grading system, see Grading Policies.
@@ -493,7 +493,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>Inspection Notice</GCBACTM_NAME>
         <GCBACTM_TITLE>Inspection Notice</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
+        <gcbactm_status_code>D</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>You are hereby notified of an upcoming inspection of something, by someone, for some reason.  It will probably occur on some date, so please be ready before then!  That is all!!!</GCBACTM_DESCRIPTION>
@@ -506,7 +506,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>!@#$%^&amp;*()_+=-1234567890-[}{]\|</GCBACTM_NAME>
         <GCBACTM_TITLE>!@#$%^&amp;*()_+=-1234567890-[}{]\|</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>There is a house in New Orleans
@@ -542,7 +542,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>The Declaration of Independence</GCBACTM_NAME>
         <GCBACTM_TITLE>The Declaration of Independence</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The Declaration of Independence: A Transcription
@@ -682,7 +682,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>123456789101112131415161718192021222324252627282930313233343</GCBACTM_NAME>
         <GCBACTM_TITLE>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
+        <gcbactm_status_code>D</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>1</GCBACTM_DESCRIPTION>
@@ -695,7 +695,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>One Long Word</GCBACTM_NAME>
         <GCBACTM_TITLE>One Long Word</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>3</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>ASDFGHJKLQWERTYUUUUUUIIIIIIIIIOOOOOOPPPPPPPPPPPPPPZXCVBNMasdfghjklqwertyuiiiopzxcvbnm</GCBACTM_DESCRIPTION>
@@ -708,7 +708,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_NAME>@</GCBACTM_NAME>
         <GCBACTM_TITLE>@</GCBACTM_TITLE>
         <GCBACTM_GCRAFLDR_ID>1</GCBACTM_GCRAFLDR_ID>
-        <GCBACTM_STATUS>Active</GCBACTM_STATUS>
+        <gcbactm_status_code>A</gcbactm_status_code>
         <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_CREATOR_ID>CSRADM005</GCBACTM_CREATOR_ID>
