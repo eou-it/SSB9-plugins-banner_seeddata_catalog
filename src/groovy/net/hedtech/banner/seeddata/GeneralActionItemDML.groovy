@@ -88,10 +88,10 @@ public class GeneralActionItemDML {
             }
 
             if (folderId == 0) {
-                folderId = apiData.GCBACTM_FOLDER_ID[0]?.text().toInteger()
+                folderId = apiData.GCBACTM_GCRAFLDR_ID[0]?.text().toInteger()
             }
 
-            apiData.GCBACTM_FOLDER_ID[0].setValue(folderId.toString())
+            apiData.GCBACTM_GCRAFLDR_ID[0].setValue(folderId.toString())
 
         }
 
