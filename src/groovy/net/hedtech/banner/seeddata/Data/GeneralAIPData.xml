@@ -363,7 +363,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <GCBACTM>
         <FOLDER>AIPstudent</FOLDER>
         <GCBACTM_SURROGATE_ID>14</GCBACTM_SURROGATE_ID>
-        <GCBACTM_NAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</GCBACTM_NAME>
+        <GCBACTM_NAME>All staff: Time to encourage your friends to Give to the Max</GCBACTM_NAME>
         <GCBACTM_TITLE>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</GCBACTM_TITLE>
         <GCBACTM_FOLDER_ID>1</GCBACTM_FOLDER_ID>
         <GCBACTM_STATUS>Active</GCBACTM_STATUS>
@@ -429,7 +429,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <GCBACTM>
         <FOLDER>AIPstudent</FOLDER>
         <GCBACTM_SURROGATE_ID>18</GCBACTM_SURROGATE_ID>
-        <GCBACTM_NAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children&apos;s Museum</GCBACTM_NAME>
+        <GCBACTM_NAME>2nd grade teachers: Schedule a trip at Minnesota Museum</GCBACTM_NAME>
         <GCBACTM_TITLE>2nd grade teachers: Schedule a free science field trip at the Minnesota Children&apos;s Museum</GCBACTM_TITLE>
         <GCBACTM_FOLDER_ID>1</GCBACTM_FOLDER_ID>
         <GCBACTM_STATUS>Inactive</GCBACTM_STATUS>
@@ -679,7 +679,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     <GCBACTM>
         <FOLDER>AIPgeneral</FOLDER>
         <GCBACTM_SURROGATE_ID>23</GCBACTM_SURROGATE_ID>
-        <GCBACTM_NAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</GCBACTM_NAME>
+        <GCBACTM_NAME>123456789101112131415161718192021222324252627282930313233343</GCBACTM_NAME>
         <GCBACTM_TITLE>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</GCBACTM_TITLE>
         <GCBACTM_FOLDER_ID>3</GCBACTM_FOLDER_ID>
         <GCBACTM_STATUS>Draft</GCBACTM_STATUS>
@@ -1195,7 +1195,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
-        <ACTIONITEMNAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</ACTIONITEMNAME>
+        <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>14</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>14</GCRACNT_ACTION_ITEM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
@@ -1248,7 +1248,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
-        <ACTIONITEMNAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children's Museum</ACTIONITEMNAME>
+        <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>18</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>18</GCRACNT_ACTION_ITEM_ID>
@@ -1327,7 +1327,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
-        <ACTIONITEMNAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</ACTIONITEMNAME>
+        <ACTIONITEMNAME>123456789101112131415161718192021222324252627282930313233343</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>23</GCRACNT_SURROGATE_ID>
         <GCRACNT_ACTION_ITEM_ID>23</GCRACNT_ACTION_ITEM_ID>
@@ -1891,7 +1891,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>09-03-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</ACTIONITEMNAME>
+        <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <BANNERID>CSRSTU003</BANNERID>
         <ACTIONITEMSTATUS>Completed</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>14</GCRAACT_SURROGATE_ID>
@@ -2127,7 +2127,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>15-02-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</ACTIONITEMNAME>
+        <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <BANNERID>CSRSTU004</BANNERID>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>29</GCRAACT_SURROGATE_ID>
@@ -2542,7 +2542,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>26-03-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</ACTIONITEMNAME>
+        <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <BANNERID>CSRSTU013</BANNERID>
         <ACTIONITEMSTATUS>Completed</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>55</GCRAACT_SURROGATE_ID>
@@ -2608,7 +2608,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_VPDI_CODE></GCRAACT_VPDI_CODE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children's Museum</ACTIONITEMNAME>
+        <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
         <BANNERID>CSRSTU014</BANNERID>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>59</GCRAACT_SURROGATE_ID>
@@ -2692,7 +2692,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>10-04-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</ACTIONITEMNAME>
+        <ACTIONITEMNAME>123456789101112131415161718192021222324252627282930313233343</ACTIONITEMNAME>
         <BANNERID>CSRSTU015</BANNERID>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>64</GCRAACT_SURROGATE_ID>
@@ -2961,7 +2961,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>14-03-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</ACTIONITEMNAME>
+        <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <BANNERID>CSRSTU016</BANNERID>
         <ACTIONITEMSTATUS>Completed</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>80</GCRAACT_SURROGATE_ID>
@@ -3025,7 +3025,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>24-03-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children's Museum</ACTIONITEMNAME>
+        <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
         <BANNERID>CSRSTU016</BANNERID>
         <ACTIONITEMSTATUS>Completed</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>84</GCRAACT_SURROGATE_ID>
@@ -3105,7 +3105,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>08-04-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</ACTIONITEMNAME>
+        <ACTIONITEMNAME>123456789101112131415161718192021222324252627282930313233343</ACTIONITEMNAME>
         <BANNERID>CSRSTU016</BANNERID>
         <ACTIONITEMSTATUS>Completed</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>89</GCRAACT_SURROGATE_ID>
@@ -3348,7 +3348,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_VPDI_CODE></GCRAACT_VPDI_CODE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>All staff: There&apos;s still time to encourage your friends and family to Give to the Max for your school</ACTIONITEMNAME>
+        <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <BANNERID>CSRSTU017</BANNERID>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>105</GCRAACT_SURROGATE_ID>
@@ -3408,7 +3408,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_VPDI_CODE></GCRAACT_VPDI_CODE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children's Museum</ACTIONITEMNAME>
+        <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
         <BANNERID>CSRSTU017</BANNERID>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>109</GCRAACT_SURROGATE_ID>
@@ -3484,7 +3484,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_COMPLETED_DATE>18-04-2016</GCRAACT_COMPLETED_DATE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>2nd grade teachers: Schedule a free science field trip at the Minnesota Children's Museum</ACTIONITEMNAME>
+        <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
         <BANNERID>CSRSTU018</BANNERID>
         <ACTIONITEMSTATUS>Pending</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>114</GCRAACT_SURROGATE_ID>
@@ -3561,7 +3561,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAACT_VPDI_CODE></GCRAACT_VPDI_CODE>
     </GCRAACT>
     <GCRAACT>
-        <ACTIONITEMNAME>12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686</ACTIONITEMNAME>
+        <ACTIONITEMNAME>123456789101112131415161718192021222324252627282930313233343</ACTIONITEMNAME>
         <BANNERID>CSRSTU018</BANNERID>
         <ACTIONITEMSTATUS>Completed</ACTIONITEMSTATUS>
         <GCRAACT_SURROGATE_ID>119</GCRAACT_SURROGATE_ID>
@@ -4248,8 +4248,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GUROCFG_TYPE>location</GUROCFG_TYPE>
         <GUROCFG_VALUE>csr-daily-1.ellucian.com:8080/CommunicationManagement</GUROCFG_VALUE>
         <GUROCFG_ACTIVITY_DATE>14-JAN-2016</GUROCFG_ACTIVITY_DATE>
-        <GUROCFG_SURROGATE_ID>1</GUROCFG_SURROGATE_ID>
-        <GUROCFG_VERSION>0</GUROCFG_VERSION>
+        <GUROCFG_SURROGATE_ID/>
+        <GUROCFG_VERSION/>
         <GUROCFG_DATA_ORIGIN>AIP</GUROCFG_DATA_ORIGIN>
         <GUROCFG_USER_ID>GRAILS</GUROCFG_USER_ID>
         <GUROCFG_VPDI_CODE></GUROCFG_VPDI_CODE>
