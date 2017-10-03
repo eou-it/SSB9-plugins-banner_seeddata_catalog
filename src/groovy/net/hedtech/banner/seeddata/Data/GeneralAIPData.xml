@@ -1361,8 +1361,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>1</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Enrollment</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Enrollment</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>Crimson flames tied through my ears, rollin high and mighty traps
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>Crimson flames tied through my ears, rollin high and mighty traps
             Pounced with fire on flaming roads using ideas as my maps
             Well meet on edges, soon,  said I, proud neath heated brow
             Ah, but I was so much older then, Im younger than that now
@@ -1385,8 +1385,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Yes, my guard stood hard when abstract threats too noble to neglect
             Deceived me into thinking I had something to protect
             Good and bad, I define these terms quite clear, no doubt, somehow
-            Ah, but I was so much older then Im younger than that now</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+            Ah, but I was so much older then Im younger than that now</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1396,9 +1396,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>2</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>advanced Studies</GCBAGRP_TITLE>
         <GCBAGRP_NAME>advanced Studies</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>!@#$%^{}*()_+[]~/*</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>!@#$%^{}*()_+[]~/*</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>28-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1408,9 +1408,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>3</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Graduation</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Graduation</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>Oh, I dont think Im a lot dumber than you think that I thought that I thought I was once.</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>Oh, I dont think Im a lot dumber than you think that I thought that I thought I was once.</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM002</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>27-03-2015</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1420,9 +1420,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>4</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>International Students</GCBAGRP_TITLE>
         <GCBAGRP_NAME>International Students</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis.</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis.</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM002</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>30-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1432,9 +1432,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>5</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Parks and Recreation</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Parks and Recreation</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>It is.</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>It is.</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2014</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1444,9 +1444,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>6</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Cultural and Entertainment Facilities</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Cultural and Entertainment Facilities</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>Remember the 5 Ds of dodgeball: Dodge, duck, dip, dive and dodge. - Patches Ohoulihan</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>Remember the 5 Ds of dodgeball: Dodge, duck, dip, dive and dodge. - Patches Ohoulihan</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2013</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1456,9 +1456,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>7</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Community Facilities</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Community Facilities</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>If you can dodge a wrench, you can dodge a ball. - Patches OHoulihan.</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>D</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>If you can dodge a wrench, you can dodge a ball. - Patches OHoulihan.</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>D</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>15-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1468,9 +1468,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>8</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Security, Police and Fire</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Security, Police and Fire</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>England expects that every man will do his duty</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>I</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>England expects that every man will do his duty</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>I</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM004</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>01-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1480,9 +1480,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>9</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>TitleWithSIXTYCharacterLongTesting1234567890!@#$%^*()_+/!</GCBAGRP_TITLE>
         <GCBAGRP_NAME>TitleWithSIXTYCharacterLongTesting1234567890!@#$%^*()_+/!</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>ShehidesinanatticconcealedonashelfBehindvolumesofliteraturebasedonherselfAndrunsacrossthepageslikesometinyelfKnowingthatitshardtofindStuffwaybackinhermind,WindsupspendingallofhertimeTryingtomemorizeeveryline</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>ShehidesinanatticconcealedonashelfBehindvolumesofliteraturebasedonherselfAndrunsacrossthepageslikesometinyelfKnowingthatitshardtofindStuffwaybackinhermind,WindsupspendingallofhertimeTryingtomemorizeeveryline</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM004</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>16-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1492,9 +1492,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>10</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>@</GCBAGRP_TITLE>
         <GCBAGRP_NAME>@</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>2</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>A</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>A</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM004</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1504,8 +1504,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>11</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>1234567890</GCBAGRP_TITLE>
         <GCBAGRP_NAME>1234567890</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>IN CONGRESS, July 4, 1776.
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>IN CONGRESS, July 4, 1776.
 
             The unanimous Declaration of the thirteen united States of America,
 
@@ -1630,8 +1630,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             William Williams
             Oliver Wolcott
             New Hampshire:
-            Matthew Thornton</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+            Matthew Thornton</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1641,8 +1641,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>12</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>Testing AlphaNumeric 1234567890 !@#$%^*()_+[\]{}|;:&quot;?,./</GCBAGRP_TITLE>
         <GCBAGRP_NAME>Testing AlphaNumeric 1234567890 !@#$%^*()_+[\]{}|;:&quot;?,./</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>1</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>Thank you so much. It’s so great to be here in Iowa. We’re here just thawing out. Todd and I and a couple of our friends here from Alaska, lending our support for the next president of our great United States of America, Donald J. Trump.
+        <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>Thank you so much. It’s so great to be here in Iowa. We’re here just thawing out. Todd and I and a couple of our friends here from Alaska, lending our support for the next president of our great United States of America, Donald J. Trump.
             “Mr. Trump, you’re right, look back there in the press box. Heads are spinning, media heads are spinning. This is going to be so much fun.
             “Are you ready to make America great again? We all have a part in this. We all have a responsibility. Looking around at all of you, you hard-working Iowa families. You farm families, and teachers, and teamsters, and cops, and cooks. You rock n’ rollers. And holy rollers! All of you who work so hard. You full-time moms. You with the hands that rock the cradle. You all make the world go round, and now our cause is one.
             “When asked why I would jump into a primary — kind of stirring it up a little bit maybe — and choose one over some friends who are running and I’ve endorsed a couple others in their races before they decided to run for president, I was told left and right, You are going to get so clobbered in the press. You are just going to get beat up, and chewed up, and spit out. You know, I’m thinking, and? You know, like you guys haven’t tried to do that every day since that night in 08, when I was on stage nominated for VP, and I got to say, Yeah, I’ll go, send me, you betcha. I’ll serve. And, like you all, I’m still standing. So those of us who’ve kind of gone through the ringer as Mr. Trump has, makes me respect you even more. That you’re here, and you’re putting your efforts, you’re putting reputations, you’re putting relationships on the line to do the right thing for this country. Because you are ready to make America great again.
@@ -1661,8 +1661,8 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             “Let me say something really positive about one of those individuals: Rand Paul. I’m going to tell you about that libertarian streak in him that is healthy, because he knows, you only go to war if you’re determined to win the war! And you quit footin’ the bill for these nations who are oil-rich; we’re paying for some of their squirmishes that have been going on for centuries. Where they’re fightin’ each other and yellin’ “Allah Akbar” calling Jihad on each other’s heads forever and ever. Like I’ve said before, let them duke it out and let Allah sort it out. We’ll fight for American interests, and as Donald Trump has said, other nations where we have been footin’ the bill, but we haven’t prioritized our own domestic budgets well enough to be able to afford what we’re doing overseas. Things are gonna change under President Trump.
             “So it can be an unbeatable team with fighters there in the House and the Senate. Yeah, our leader is a little bit different. He’s a multi-billionaire. Not that there’s anything wrong with that. But, it’s amazing, he is not elitist at all. Oh, I just hope you guys get to know him more and more as a person, and a family man. What he’s been able to accomplish, with his, um, it’s kind of this quiet generosity. Yeah, maybe his largess kind of, I don’t know, some would say, gets in the way of that quiet generosity, and, uh, his compassion, but if you know him as a person and you’ll get to know him more and more, you’ll have even more respect. Not just for his record of success, and the good intentions for America, but who he is as a person. He’s not an elitist. And yes, as a multi-billionaire, we still root him on, because he roots us on. And he has, he’s spent his life with the workin’ man. And he tells us Joe Sixpacks, he said, You know, I’ve worked very, very hard. And I’ve succeeded. Hugely I’ve succeeded, he says. And he says, I want you to succeed too. And that is refreshing, because he, as he builds things, he builds big things, things that touch the sky, big infrastructure that puts other people to work. He has spent his life looking up and respecting the hard-hats and the steel-toed boots and the work ethic that you all have within you. He, being an optimist, passionate about equal-opportunity to work. The self-made success of his, you know that he doesn’t get his power, his high, off of OPM, other people’s money, like a lot of dopes in Washington do. They’re addicted to OPM, where they take other people’s money, and then their high is getting to redistribute it, right? And then they get to be really popular people when they get to give out your hard money. Well, he doesn’t do that. His power, his passion, is the fabric of America. And it’s woven by work ethic and dreams and drive and faith in the Almighty. What a combination.
             “Are you ready to share in that again, Iowa? Because that’s what’s going to let you make America great again. He’s going to be able to empower you to look out for one another again instead of relying on bankrupt government to supposedly be looking out for you. No, and I think you’re ready for that. And Iowa, I believe too that you’re ready to see that our vets are treated better than illegal immigrants are treated in this country. And you’re ready for the tax reform he talks about to open up Main Street again. And you’re ready to stop the race-baiting and the division based on color and zip code, to unify around the right issues. The issues important to me, or I wouldn’t be endorsing him. Pro-life, pro-Second Amendment, strict constitutionality. Those things that are unifying values and their time-tested truths involved. These are unifying values from big cities to tiny towns, from big mountain states and the Big Apple, to the big, beautiful heartland that’s in between.
-            “Now, finally friends, I want you to try to picture this; it’s a nice thing to picture. Exactly one year from tomorrow, former president Barack Obama. He packs up the teleprompters and the selfie-sticks, and the Greek columns, and all that hopey, changey stuff and he heads on back to Chicago, where I’m sure he can find some community there to organize again. There, he can finally look up, President Obama will be able to look up, and there, over his head, he’ll be able to see that shining, towering, Trump tower. Yes, Barack, he built that, and that says a lot. Iowa, you say a lot, being here tonight, supporting the right man who will allow you to make America great again. God bless you! God bless the United States of America and our next president of the United States, Donald J. Trump!”</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+            “Now, finally friends, I want you to try to picture this; it’s a nice thing to picture. Exactly one year from tomorrow, former president Barack Obama. He packs up the teleprompters and the selfie-sticks, and the Greek columns, and all that hopey, changey stuff and he heads on back to Chicago, where I’m sure he can find some community there to organize again. There, he can finally look up, President Obama will be able to look up, and there, over his head, he’ll be able to see that shining, towering, Trump tower. Yes, Barack, he built that, and that says a lot. Iowa, you say a lot, being here tonight, supporting the right man who will allow you to make America great again. God bless you! God bless the United States of America and our next president of the United States, Donald J. Trump!”</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1672,9 +1672,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>13</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>مسابقة سنوية الفن الرصيف</GCBAGRP_TITLE>
         <GCBAGRP_NAME>مسابقة سنوية الفن الرصيف</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>3</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>أنها تخفي في عليه أخفى على رف خلف كميات من الأدب تعتمد على نفسها ويمتد عبر الصفحات مثل بعض قزم صغير مع العلم أنه من الصعب العثور على الأشياء في طريق العودة في ذهنها، رياح تصل تنفق كل وقتها في محاولة لإحياء ذكرى كل سطر لورين الحلو، آه، لورين الحلو. حلوة سيدة من الموت يريد مني أن يموت حتى أنها يمكن أن تأتي تجلس بالسرير وتحسر بي ومسح بعيداً من الدموع من عيني أصدقاء ثم بهدوء وقالت أنها سوف يشرح فقط بالضبط الذي كان اللوم لتسبب لي الذهاب مجنون وأخيراً تفجير ذهني، لورين الحلو، آه، لورين الحلو.  تعلمون جيدا أنه من عار ومن مؤسف الذي أثيرت حتى في المدينة وتعلمت ابدأ أي شيء بوت طرق البلاد، آه، طرق البلد نوبة.  فرحة الحياة أنها فساتين باللون الأسود مع الأسرار السماوية محفورة في ظهرها ووجهها يبقى اللمعان أن قالت أنها حصلت على الموهبة، ولكن أنت تعرف عندما تنظر في عينيها كل من علمت أنها اضطرت إلى أحياء ذكرى والطريقة الوحيدة التي سوف تحصل من أي وقت مضى لها عالية السماح لها</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>3</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>أنها تخفي في عليه أخفى على رف خلف كميات من الأدب تعتمد على نفسها ويمتد عبر الصفحات مثل بعض قزم صغير مع العلم أنه من الصعب العثور على الأشياء في طريق العودة في ذهنها، رياح تصل تنفق كل وقتها في محاولة لإحياء ذكرى كل سطر لورين الحلو، آه، لورين الحلو. حلوة سيدة من الموت يريد مني أن يموت حتى أنها يمكن أن تأتي تجلس بالسرير وتحسر بي ومسح بعيداً من الدموع من عيني أصدقاء ثم بهدوء وقالت أنها سوف يشرح فقط بالضبط الذي كان اللوم لتسبب لي الذهاب مجنون وأخيراً تفجير ذهني، لورين الحلو، آه، لورين الحلو.  تعلمون جيدا أنه من عار ومن مؤسف الذي أثيرت حتى في المدينة وتعلمت ابدأ أي شيء بوت طرق البلاد، آه، طرق البلد نوبة.  فرحة الحياة أنها فساتين باللون الأسود مع الأسرار السماوية محفورة في ظهرها ووجهها يبقى اللمعان أن قالت أنها حصلت على الموهبة، ولكن أنت تعرف عندما تنظر في عينيها كل من علمت أنها اضطرت إلى أحياء ذكرى والطريقة الوحيدة التي سوف تحصل من أي وقت مضى لها عالية السماح لها</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRRTLA01</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
@@ -1684,9 +1684,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_SURROGATE_ID>14</GCBAGRP_SURROGATE_ID>
         <GCBAGRP_TITLE>حملة التوعية العامة</GCBAGRP_TITLE>
         <GCBAGRP_NAME>حملة التوعية العامة</GCBAGRP_NAME>
-        <GCBAGRP_FOLDER_ID>3</GCBAGRP_FOLDER_ID>
-        <GCBAGRP_DESCRIPTION>ذهب سريعة جوي الصغيرة على الجدار مع كرة هو سلسلة وراءه جوي سريع صغير ذهب أكثر من الجدار إرسال الكلاب الحق بها للعثور عليه. في السجن شريطية تناسب مع لا مساحة للتحرك اتجه للطريق السريع ببلدة دراجن لا تزال سلسلة  أنه إعجابه أسفل عربة قال كذلك يمكنك أنت ذاهب طريقي. ويقول الآن الامتناع عن تشغيل جوي، جوي تشغيل تشغيل كلاب الصيد وهم على درب الخاص بك القفز إلى أعلى قفزة إلى أعلى تشغيل جوي، وتشغيل تشغيل جوي أنهم ذاهبون لإرسال لك العودة إلى السجن. شريف حصلت على بندقية، هل قال أنه سوف ملء لكم كامل نجل الرائدة، كان صحيحاً. وقد حصل أيضا لعبة ورق، ومرض جنون قال أن التمثال راسك مع الصديق واحد، وهنا اذهب الآن. تشغيل جوي، تشغيل تشغيل جوي كلاب الصيد على درب الخاص بك. جين ماري الحلو كان ذاهب مجنون</GCBAGRP_DESCRIPTION>
-        <GCBAGRP_STATUS>A</GCBAGRP_STATUS>
+        <GCBAGRP_GCRFLDR_ID>3</GCBAGRP_GCRFLDR_ID>
+        <GCBAGRP_INSTRUCTION>ذهب سريعة جوي الصغيرة على الجدار مع كرة هو سلسلة وراءه جوي سريع صغير ذهب أكثر من الجدار إرسال الكلاب الحق بها للعثور عليه. في السجن شريطية تناسب مع لا مساحة للتحرك اتجه للطريق السريع ببلدة دراجن لا تزال سلسلة  أنه إعجابه أسفل عربة قال كذلك يمكنك أنت ذاهب طريقي. ويقول الآن الامتناع عن تشغيل جوي، جوي تشغيل تشغيل كلاب الصيد وهم على درب الخاص بك القفز إلى أعلى قفزة إلى أعلى تشغيل جوي، وتشغيل تشغيل جوي أنهم ذاهبون لإرسال لك العودة إلى السجن. شريف حصلت على بندقية، هل قال أنه سوف ملء لكم كامل نجل الرائدة، كان صحيحاً. وقد حصل أيضا لعبة ورق، ومرض جنون قال أن التمثال راسك مع الصديق واحد، وهنا اذهب الآن. تشغيل جوي، تشغيل تشغيل جوي كلاب الصيد على درب الخاص بك. جين ماري الحلو كان ذاهب مجنون</GCBAGRP_INSTRUCTION>
+        <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
         <GCBAGRP_USER_ID>CSRRTLA01</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
