@@ -151,10 +151,10 @@ public class GeneralActionItemDML {
             folderId = getFolderId( apiData.FOLDER[0]?.text().toString() )
 
             if (folderId == 0) {
-                folderId = apiData.GCBAGRP_FOLDER_ID[0]?.text().toInteger()
+                folderId = apiData.GCBAGRP_GCRFLDR_ID[0]?.text().toInteger()
             }
 
-            apiData.GCBAGRP_FOLDER_ID[0].setValue(folderId.toString())
+            apiData.GCBAGRP_GCRFLDR_ID[0].setValue(folderId.toString())
         }
 
         if (connectInfo.tableName == "GCRAISR") {
