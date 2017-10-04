@@ -109,16 +109,16 @@ public class GeneralActionItemDML {
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
 
             if (actionItemId == 0) {
-                actionItemId = apiData.GCRAACT_ACTION_ITEM_ID[0]?.text().toInteger()
+                actionItemId = apiData.GCRAACT_GCBACTM_ID[0]?.text().toInteger()
             }
 
             if (statusId == 0) {
-                statusId = apiData.GCRAACT_STATUS_ID[0]?.text().toInteger()
+                statusId = apiData.GCRAACT_GCVASTS_ID[0]?.text().toInteger()
             }
 
             apiData.GCRAACT_PIDM[0].setValue(personPidm)
-            apiData.GCRAACT_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
-            apiData.GCRAACT_STATUS_ID[0].setValue(statusId.toString())
+            apiData.GCRAACT_GCBACTM_ID[0].setValue(actionItemId.toString())
+            apiData.GCRAACT_GCVASTS_ID[0].setValue(statusId.toString())
         }
 
         if (connectInfo.tableName == "GCRACNT") {
