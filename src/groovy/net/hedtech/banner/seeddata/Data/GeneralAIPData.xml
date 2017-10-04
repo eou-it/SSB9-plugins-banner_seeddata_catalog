@@ -731,7 +731,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>بيت الشمس المشرقة</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>26</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>26</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>26</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>
             >مرحبا الظلام، صديقي القديم
             جئت للحديث معك مرة أخرى
@@ -769,7 +769,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             لالنيون الله جعلوا
             وتومض علامة التحذير من انها
         </GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRRORA01</GCRACNT_USER_ID>
     </GCRACNT>
@@ -777,7 +777,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>منحنى الرجل الميت</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>27</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>27</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>27</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>
             كان مكبر الصوت والرجل القرد عكاس للنقد
             بقوا مستيقظين طوال الليل بيع الكوكايين والتجزئة
@@ -805,7 +805,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             سحبت شرطي سري صعودا وقال ;كل واحد منكم هو كاذب
             إذا كنت لا يستسلم الآن انها تذهب ستعمل حتى اللحظة الأخيرة
         </GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRRORA01</GCRACNT_USER_ID>
     </GCRACNT>
@@ -813,7 +813,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Drug and Alcohol Policy</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>1</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>1</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>1</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Sample Alcohol and Drug Abuse Policy
             _________________ (company) is a drug-free workplace. The purpose of this policy is
             to ensure the safety of all employees and to promote productivity. This policy applies to
@@ -893,7 +893,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Employee signature Date
             ______________________________ _______________________
             Witness signature Date</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR001</GCRACNT_USER_ID>
     </GCRACNT>
@@ -901,7 +901,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Registration Process Training</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>2</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>2</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>2</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>1. Registration Training
             1. Please register for Registration Training here.
             2. After completion of your Registration Training registration, you will receive an email with
@@ -928,7 +928,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Questions or Concerns
             Please contact the School Support Team at 801.555.1234 or at schoolsupport@ellucian.edu with
             any registration questions or concerns.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR001</GCRACNT_USER_ID>
     </GCRACNT>
@@ -936,7 +936,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Personal Information</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>3</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>3</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>3</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Instructions for completing Consent for Personal Information Release
             The release form must be completed and signed before personal information can be added to the website roster.
             1. Please provide language(s) that you interpret, and check certified or qualified status. Be
@@ -950,7 +950,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             posted on the website.
             5.  E-mail addresses will not be posted on the Michigan Court Interpreters' website and will be used for internal administrative purposes only.
             7. Check appropriate box, fill in name, sign and date the form.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR001</GCRACNT_USER_ID>
     </GCRACNT>
@@ -958,7 +958,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Meet with Advisor</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>4</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>4</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>4</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Meet with an Academic Advisor/Success Coach
             Academic advising can make the difference between success and failure in college. Advisors are available to meet with you to begin your academic journey at ellucian University.
             To get you started, an advisor/success coach will:
@@ -967,7 +967,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Explain academic program options as well as potential career or transfer information.
             Inform you on important ellucian resources available to you.
             To meet with an advisor/success coach, visit https://appointments.advisors.ellucian</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR001</GCRACNT_USER_ID>
     </GCRACNT>
@@ -975,7 +975,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Proof of Residence</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>5</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>5</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>5</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Proof of Identity &amp;amp; AddressTop ↑
             Birth Certificates
             You must be a Nevada resident and provide a Nevada street address to obtain any driver&amp;apos;s license, instruction permit or ID card. You must also surrender any existing U.S.-issued license or ID card.
@@ -1005,7 +1005,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Foreign birth certificates
             Border crossing cards
             Consular identification cards</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR001</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1013,13 +1013,13 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Policy Handbook</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>6</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>6</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>6</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>A policy is a deliberate system of principles to guide decisions and achieve rational outcomes. A policy is a statement of intent, and is implemented as a procedure or protocol. Policies are generally adopted by the Board of or senior governance body within an organization whereas procedures or protocols would be developed and adopted by senior executive officers. Policies can assist in both subjective and objective decision making. Policies to assist in subjective decision making would usually assist senior management with decisions that must consider the relative merits of a number of factors before making decisions and as a result are often hard to objectively test e.g. work-life balance policy. In contrast policies to assist in objective decision making are usually operational in nature and can be objectively tested e.g. password policy.
 
             The term may apply to government, private sector organizations and groups, as well as individuals. Presidential executive orders, corporate privacy policies, and parliamentary rules of order are all examples of policy. Policy differs from rules or law. While law can compel or prohibit behaviors (e.g. a law requiring the payment of taxes on income), policy merely guides actions toward those that are most likely to achieve a desired outcome.[citation needed]
 
             Policy or policy study may also refer to the process of making important organizational decisions, including the identification of different alternatives such as programs or spending priorities, and choosing among them on the basis of the impact they will have. Policies can be understood as political, management, financial, and administrative mechanisms arranged to reach explicit goals. In public corporate finance, a critical accounting policy is a policy for a firm/company or an industry which is considered to have a notably high subjective element, and that has a material impact on the financial statements.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1027,7 +1027,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Notice of Right to Change Requirements</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>7</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>7</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>7</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>NOTICE OF PRIVACY PRACTICES
 
 
@@ -1082,7 +1082,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 
             Documentation
             A group health plan must retain copies of its notice for six years following the date that the notice was last in effect.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1090,7 +1090,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Notice of Non-Discrimination Policy</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>8</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>8</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>8</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>NOTICE OF NONDISCRIMINATION
             ellucian University is committed to maintaining a diverse community in an atmosphere of mutual respect and appreciation of differences.
 
@@ -1099,7 +1099,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             ellucian University&amp;apos;s admission policies and practices are guided by the same principle, concerning women applying to the undergraduate program and all applicants to the graduate programs.
 
             For more information, please contact the adviser for equity complaints at (801) 555-4321.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1107,9 +1107,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Please Review the University Mission Statement</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>9</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>9</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>9</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>ellucian Universityprovides access to higher education opportunities that enable students to develop knowledge and skills necessary to achieve their professional goals, improve the performance of their organizations, and provide leadership and service to their communities.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1117,7 +1117,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Please Review the Attendance Policy</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>10</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>10</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>10</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>The College recognizes the correlation between attendance and both student retention and achievement. Any class session or activity missed, regardless of cause, reduces the opportunity for learning and may adversely affect a student's achievement in the course. Class attendance is required beginning with the first class meeting, and students are expected to attend all class sessions for which they are registered. It is the responsibility of the student to arrange to make up all course work missed because of legitimate class absences and to notify the instructor when an absence will occur. The instructor determines the effect of absences on grades. Students who are reported as never attending a course may be withdrawn from the class by the College. Funds may be adjusted or rescinded for students who are receiving financial aid or veterans' benefits.
 
             In order to obtain credit for a course a student must attend at least 85% of the contact hours for a particular course. However, instructors are given the option of allowing a student to complete the course based on the student's documented circumstances and his or her progress in the course.
@@ -1125,7 +1125,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             In online courses, instructors define expected interaction between themselves, students and the class learning management system (and/or media). Inconsistent interaction and/or inconsistent use of the learning management system or course materials, regardless of cause, reduce the opportunity for learning.
 
             The instructor may withdraw any student from the course if the student misses more than 15% of the scheduled class sessions and activities.  In the case of online courses, any student who is not interactive or responsive in a timely manner, as specified by the instructor, may be withdrawn. Students must be enrolled before they can attend class.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1133,7 +1133,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>11</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>11</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>11</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>In early September 1805, Captain Richard Keats, commanding officer of the 74-gun battleship HMS Superb, called at Merton Place in Surrey, the home of Vice Admiral Lord Nelson and his mistress Emma, Lady Hamilton. Keats and Nelson had served together for over a year in the Mediterranean and had recently taken part in the remarkable chase of the combined French and Spanish fleets to the West Indies and back during July and August of 1805. Now Nelson was enjoying a brief spell of leave in England and Keats had brought his worn-out ship home for a much-needed refit.
 
             The two men were not lifelong friends: they had met for the first time in July 1803, when Nelson took command of the Mediterranean fleet. But they had quickly come to admire each other and less than a year later Nelson wrote to their mutual friend the Duke of Clarence, ‘…the more I know of him the more excellent qualities I find not only as a Sea Officer but as a Man who knows much of the World.'1 By 1805, Keats had become one of Nelson's most trusted subordinates and, as the two men walked together in the Merton grounds, Nelson began explaining how he proposed to fight his next battle, whenever it might happen. Many years later, in 1829, Keats told the story of that memorable walk to Edward Hawke Locker, an assiduous collector of naval anecdotes, who wrote it down:
@@ -1171,14 +1171,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             The Aftermath
 
             Just before his column engaged the allied forces, Collingwood said to his officers, “Now, gentlemen, let us do something today which the world may talk of hereafter.” And so the world has been. The Battle of Trafalgar was not the first time a strategy like Nelson's had ever been used; Rodney was the admitted influence, and the intention of going straight at the enemy echoed the tactics used successfully by Admiral Duncan at the Battle of Camperdown and Admiral Jervis at the Battle of Cape St. Vincent, both in 1797. Still, it was the first time a tactic of the kind was planned with such foresight and used to such glorious advantage. Instead of leaving England with a questionable victory, Nelson's strategy ensured that Britain would dominate the oceans of the world for 100 years, and changed everything the world thought it knew about successful naval tactics.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Deans List</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>12</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>12</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>12</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1186,18 +1186,18 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>All staff: Prepare for winter snow</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>13</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>13</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>13</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>The best known naval battles of the War of 1812 were single ship duels between US Navy frigates and ships of the Royal Navy.  Nevertheless, the two most important American naval victories of the War of 1812 were fought in fresh water, hundreds of  miles from the ocean. Neither involved large fleets of ships, yet each was critical to the outcome of the war.
 
             One hundred and ninety nine years ago today, on September 10, 1813, in what has become known as the Battle of Lake Erie,  five schooners, three brigs and a sloop, under the command of Oliver Hazard Perry defeated and captured two ships, two schooners, a brig and a sloop of the Royal Navy at Put-in-Bay in Lake Erie off the coast of Ohio.  The victory gave the Americans control of Lake Erie for the rest of the war, denying the British and Canadians a key supply line and allowing the Americans to retake Detroit and win the Battle of the Thames to break the Indian confederation of Tecumseh.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>14</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>14</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>14</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1205,7 +1205,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>School staff: Register for Yoga Calm training</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>15</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>15</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>15</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>One year and one day after the Battle of Lake Erie, an American squadron, under the command of Master Commandant Thomas Macdonough, defeated the Royal Navy on Lake Champlain in a bloody battle at Plattsburgh Bay.  The Battle of Plattsburgh turned back an invasion force of 11,000 British troops which was intended to do nothing less than redraw the map of the United States. Like the Battle of Lake Erie, the Battle of Plattsburg was fought in fresh water hundreds of miles from the ocean.  It was not a large fleet battle, and yet, was probably the most important naval victory of the war.
 
             The War of 1812 was ending. British and American negotiators were working on a the peace treaty in the Belgian city of Ghent. Nevertheless, the British still wanted to punish the Americans. With the abdication of Napolean, the British sent an additional 16,000 troops to America.  On August 31, 1814, 11,000 British troops marched south into New York state.  The only American troops ready to face them were around 1,500 regulars, many old and infirm, at the village of Plattsburg on Lake Champlain.  “Uti possidetis” is a principle in international law that states that at the end of a war, territory remains in hands of those who control it, unless otherwise provided for by treaty.  If the British could sweep the Americans aside at Plattsburgh and occupy a significant swath of American soil, they could give vast leverage to their negotiators in Ghent to dictate the terms of the settlement.
@@ -1219,7 +1219,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             When Prévost learned of the Royal Navy defeat at Plattsburgh Bay, he abandoned his attack on Plattsburg and marched his troops back to Canada.  Three days later the British attack on Baltimore also failed at the siege of Fort McHenry.   In Ghent, the American negotiators used the victory at Plattsburg to demand exclusive rights to Lake Champlain and to deny the British exclusive rights to the Great Lakes as well as to end the British attempt to establish a buffer zone between the United States and Canada.
 
             Plattsburg is only about five miles from Valcour Island in Lake Champlain, where an American fleet under the command of Benedict Arnold were routed by a British fleet on October 11, 1776.  While the battle was an American defeat, it delayed the British move down Lake Champlain for a year.  When the British under General Burgoyne did invade in 1777, they were defeated by a newly formed Continental Army at Saratoga.  The victory at Saratoga lead France to join the war on the side of the Americans, leading ultimately to the loss of a second British Army at Yorktown in 1781. The Battle of Valcour Island is considered by many to be the defeat that won the war.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1227,13 +1227,13 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Teachers: Fund for Teachers deadline is January 30, 2014</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>16</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>16</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>16</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Reuben Garrett Lucius &amp;quot;Rube&amp;quot; Goldberg ( San Francisco July 4, 1883 – Hawthorne New York December 7, 1970) was an American cartoonist, sculptor, author, engineer, and inventor.
 
             He is best known for a series of popular cartoons depicting complicated gadgets that perform simple tasks in indirect, convoluted ways, similar to Heath Robinson devices in the UK, as well as the Storm P devices in Denmark. Goldberg received many honors in his lifetime, including a Pulitzer Prize for his political cartooning in 1948 and the Banshees&amp;apos; Silver Lady Award in 1959.
 
             Goldberg was a founding member and the first president of the National Cartoonists Society,[2] and he is the namesake of the Reuben Award, which the organization awards to the Cartoonist of the Year. He is the inspiration for various international competitions, known as Rube Goldberg Machine Contests, which challenge participants to make a complicated machine to perform a simple task.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1241,9 +1241,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Teachers: Register for service-learning and We Act trainings</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>17</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>17</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>17</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Sarah L. Winchester (Around 1840; September 5, 1922) was the wife of William Wirt Winchester and heiress to his estate and a 50 percent holding in the Winchester Repeating Arms Company following his death from tuberculosis in 1881. It has been theorized she was convinced she was cursed and the only way to alleviate it was to add on to her California home. Mrs Winchester used her vast fortune to continue construction on the San Jose mansion for 38 consecutive years.[1] Since her death, the sprawling Winchester Mystery House has become a popular tourist attraction, known for its many staircases and corridors leading nowhere.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1251,9 +1251,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>18</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>18</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>18</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Salmon is an excellent source of vitamin B12, vitamin D, and selenium. It is a good source of niacin, omega-3 fatty acids, protein, phosphorus, and vitamin B6. It is also a good source of choline, pantothenic acid, biotin, and potassium.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1261,7 +1261,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>Please read the Minimum GPA requirements</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>19</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>19</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>19</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Feel guilty about drinking a beer or two? Don't feel guilty. Contrary to what you might expect, moderate beer consumption is actually good for you. Science has shown that beer can bring many surprising health benefits even though it's usually perceived as unhealthy. Just remember, we're talking moderate consumption (one drink per day for women, and up to two for men), not all-night drinking sprees. Here are some remarkable and surprising beer benefits that might change your perception of the drink.
 
             1. It can help reduce risk of heart disease
@@ -1295,14 +1295,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Studies by the American Stroke Association have shown that people who drink moderate amounts of beer can cut their risk of strokes by – get this – a whopping 50% compared to non-drinkers. Researchers at Harvard School of Public Health explain that moderate amounts of beer daily helps prevent blood clots that block blood flow to the heart, neck and brain, which is a leading cause of ischemic stroke. However, when you drink beer moderately, your arteries become flexible and blood flow improves significantly.
 
             Remember the key to reaping these amazing health benefits of beer is moderate consumption. Overindulgence in beer and other alcoholic drinks can be disastrous to your health.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Inspection Notice</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>20</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>20</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>20</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1310,9 +1310,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>!@#$%^&amp;*()_+=-1234567890-[}{]\|</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>21</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>21</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>21</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>There are several sports teams that have amassed overall winning percentages of over 55% of their games. Some of these famous teams include the Dallas Cowboys, Chicago Bears, New York Yankees, Green Bay Packers, Boston Celtics, and San Antonio Spurs. One team, though has won over 60% of its games: the Los Angeles Lakers.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1320,9 +1320,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>22</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>22</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>22</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Sources say that Einstein was plagued by speech difficulty and could not speak until he turned 4 years old.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1330,9 +1330,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>123456789101112131415161718192021222324252627282930313233343</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>23</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>23</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>23</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>During his study at the polytechnic school, Einstein went through the electromagnetic theories that were developed by James Maxwell – a Scottish Physicist.  Einstein, through the studies of those theories, had found out that speed of light was constant and this fact was not known to Maxwell. Einstein's discovery was a direct violation of Newton's laws of motion. This led Einstein to develop the relativity principle.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1340,9 +1340,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>One Long Word</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>24</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>24</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>24</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>Rumors have been spread that Einstein actually failed in mathematics. This is absolutely incorrect. Einstein was brilliant in mathematics and by the age of 15 he actually mastered calculus.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
     </GCRACNT>
@@ -1350,9 +1350,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONITEMNAME>@</ACTIONITEMNAME>
         <TEMPLATENAME>Master Template</TEMPLATENAME>
         <GCRACNT_SURROGATE_ID>25</GCRACNT_SURROGATE_ID>
-        <GCRACNT_ACTION_ITEM_ID>25</GCRACNT_ACTION_ITEM_ID>
+        <GCRACNT_GCBACTM_ID>25</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTION_ITEM_TEXT>After Einstein's death, the pathologist who was in charge of the autopsy of Einstein's body actually stole Einstein's brain and kept in a jar. He denied to return the brain and was eventually fired from his job. He still did not give up the jar but finally returned the brain after 20 years of possession.</GCRACNT_ACTION_ITEM_TEXT>
-        <GCRACNT_TEMPLATE_REFERENCE_ID>1</GCRACNT_TEMPLATE_REFERENCE_ID>
+        <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
         <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
     </GCRACNT>
