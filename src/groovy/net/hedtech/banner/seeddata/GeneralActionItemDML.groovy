@@ -126,18 +126,18 @@ public class GeneralActionItemDML {
             actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
 
             if (actionItemId == 0) {
-                actionItemId = apiData.GCRACNT_ACTION_ITEM_ID[0]?.text().toInteger()
+                actionItemId = apiData.GCRACNT_GCBACTM_ID[0]?.text().toInteger()
             }
 
-            apiData.GCRACNT_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
+            apiData.GCRACNT_GCBACTM_ID[0].setValue(actionItemId.toString())
 
             if (apiData.TEMPLATENAME[0]?.text()) {
                 templateId = getTemplateId( apiData.TEMPLATENAME[0]?.text().toString() )
 
                 if (templateId == 0) {
-                    templateId = apiData.GCRACNT_TEMPLATE_REFERENCE_ID[0]?.text().toInteger()
+                    templateId = apiData.GCRACNT_GCBPBTR_ID[0]?.text().toInteger()
                 }
-                apiData.GCRACNT_TEMPLATE_REFERENCE_ID[0].setValue(templateId.toString())
+                apiData.GCRACNT_GCBPBTR_ID[0].setValue(templateId.toString())
             }
         }
 
