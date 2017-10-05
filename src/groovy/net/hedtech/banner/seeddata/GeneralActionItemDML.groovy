@@ -163,16 +163,16 @@ public class GeneralActionItemDML {
             statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
 
             if (actionItemId == 0) {
-                actionItemId = apiData.GCRAISR_ACTION_ITEM_ID[0]?.text().toInteger()
+                actionItemId = apiData.GCRAISR_GCBACTM_ID[0]?.text().toInteger()
             }
 
             if (statusId == 0) {
                 println "Problem getting status id from GeneralActionItemDML.groovy for ${connectInfo.tableName}"
-                statusId = apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0]?.text().toInteger()
+                statusId = apiData.GCRAISR_GCVASTS_ID[0]?.text().toInteger()
             }
 
-            apiData.GCRAISR_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
-            apiData.GCRAISR_ACTION_ITEM_STATUS_ID[0].setValue(statusId.toString())
+            apiData.GCRAISR_GCBACTM_ID[0].setValue(actionItemId.toString())
+            apiData.GCRAISR_GCVASTS_ID[0].setValue(statusId.toString())
 
         }
 
