@@ -287,7 +287,7 @@ public class GeneralActionItemDML {
     }
 
     def getStatusId(String statusName) {
-        String ssql = """select * from GCVASTS where GCVASTS_ACTION_ITEM_STATUS= ? """
+        String ssql = """select * from GCVASTS where GCVASTS_STATUS_RULE_NAME= ? """
         int sId
         def sRow
 
