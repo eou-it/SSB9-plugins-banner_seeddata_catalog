@@ -182,10 +182,10 @@ public class GeneralActionItemDML {
             //statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
 
             if (actionItemId == 0) {
-                actionItemId = apiData.GCRABLK_ACTION_ITEM_ID[0]?.text().toInteger()
+                actionItemId = apiData.GCRABLK_GCBACTM_ID[0]?.text().toInteger()
             }
 
-            apiData.GCRABLK_ACTION_ITEM_ID[0].setValue(actionItemId.toString())
+            apiData.GCRABLK_GCBACTM_ID[0].setValue(actionItemId.toString())
 
         }
 
