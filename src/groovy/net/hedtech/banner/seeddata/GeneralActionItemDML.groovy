@@ -108,18 +108,23 @@ public class GeneralActionItemDML {
 
             actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
+            actionGroupId = getActionGroupId( apiData.ACTIONGROUPNAME[0]?.text().toString() )
 
             if (actionItemId == 0) {
                 actionItemId = apiData.GCRAACT_GCBACTM_ID[0]?.text().toInteger()
             }
-
             if (statusId == 0) {
                 statusId = apiData.GCRAACT_GCVASTS_ID[0]?.text().toInteger()
             }
-
+            if (actionGroupId == 0 && apiData.GCRAACT_GCBAGRP_ID[0]) {
+                actionGroupId = apiData.GCRAACT_GCBAGRP_ID[0]?.text()?.toInteger()
+            }
             apiData.GCRAACT_PIDM[0].setValue( personPidm )
             apiData.GCRAACT_GCBACTM_ID[0].setValue( actionItemId.toString() )
             apiData.GCRAACT_GCVASTS_ID[0].setValue( statusId.toString() )
+            if (apiData.GCRAACT_GCBAGRP_ID[0]) {
+                apiData.GCRAACT_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
+            }
         }
 
         if (connectInfo.tableName == "GCRACNT") {
