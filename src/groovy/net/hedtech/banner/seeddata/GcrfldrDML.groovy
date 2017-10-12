@@ -10,7 +10,7 @@ import java.sql.Connection
 
 /**
  * Gcrfldr tables
- * replace the curr rule in the xml 
+ * replace the curr rule in the xml
  */
 
 public class GcrfldrDML {
@@ -174,7 +174,7 @@ public class GcrfldrDML {
         deleteData("GCBTMPL", "delete from GCBTMPL where GCBTMPL_folder_id  = ?   ")
         deleteData("GCBQURY", "delete from GCBQURY where GCBQURY_folder_id  = ? ")
         deleteData("GCRCFLD", "delete from GCRCFLD where GCRCFLD_folder_id = ?  ")
-        deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_surrogate_id = ? and  NOT EXISTS (SELECT a.gcbactm_folder_id FROM gcbactm a WHERE a.gcbactm_folder_id = gcrfldr_surrogate_id) ")
+        deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_surrogate_id = ? and  NOT EXISTS (SELECT a.gcbactm_gcrfldr_id FROM gcbactm a WHERE a.gcbactm_gcrfldr_id = gcrfldr_surrogate_id) ")
 
     }
 
