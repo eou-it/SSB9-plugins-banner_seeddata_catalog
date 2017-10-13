@@ -116,15 +116,13 @@ public class GeneralActionItemDML {
             if (statusId == 0) {
                 statusId = apiData.GCRAACT_GCVASTS_ID[0]?.text().toInteger()
             }
-            if (actionGroupId == 0 && apiData.GCRAACT_GCBAGRP_ID[0]) {
+            if (actionGroupId == 0) {
                 actionGroupId = apiData.GCRAACT_GCBAGRP_ID[0]?.text()?.toInteger()
             }
             apiData.GCRAACT_PIDM[0].setValue( personPidm )
             apiData.GCRAACT_GCBACTM_ID[0].setValue( actionItemId.toString() )
             apiData.GCRAACT_GCVASTS_ID[0].setValue( statusId.toString() )
-            if (apiData.GCRAACT_GCBAGRP_ID[0]) {
-                apiData.GCRAACT_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
-            }
+            apiData.GCRAACT_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
         }
 
         if (connectInfo.tableName == "GCRACNT") {
@@ -219,10 +217,10 @@ public class GeneralActionItemDML {
 
     def deleteData() {
         //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
-        deleteData( "GCRAISR", "delete from GCRAISR where 0 <> ? " )
-        deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
-        deleteData( "GCBAGRP", "delete from GCBAGRP where 0 <> ? " )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )
+        deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
+        deleteData( "GCRAISR", "delete from GCRAISR where 0 <> ? " )
+        deleteData( "GCBAGRP", "delete from GCBAGRP where 0 <> ? " )
         deleteData( "GCRACNT", "delete from GCRACNT where 0 <> ? " )
         deleteData( "GCBPBTR", "delete from GCBPBTR where 0 <> ? " )
         deleteData( "GCRABLK", "delete from GCRABLK where 0 <> ? " )
