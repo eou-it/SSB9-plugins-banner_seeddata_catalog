@@ -158,11 +158,11 @@ public class CreateOracleUserDML {
         def sqlf = "select count(*) cnt from  guruobj  Where Guruobj_Userid = ? And Guruobj_Object = ?"
         def result
         try {
-            result = conn.firstRow(sqlf, [this.oracleId, this.generalClass])
+            result = conn.firstRow(sqlf, [this.oracleId, this.objectName.toString()])
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could select GURUOBJ,  ${this.oracleId} ${this.generalClass}. $e.message"
+                println "Could select GURUOBJ,  ${this.oracleId} ${this.objectName.toString()}. $e.message"
             }
         }
         if (result.cnt == 0) {
