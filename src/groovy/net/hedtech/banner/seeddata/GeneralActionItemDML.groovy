@@ -28,6 +28,8 @@ public class GeneralActionItemDML {
     int actionItemId
     int actionGroupId
     int blockId
+    int populationId
+    int queryId
 
 
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
@@ -195,12 +197,54 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRAGRA") {
             actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             actionGroupId = getActionGroupId( apiData.ACTIONGROUPNAME[0]?.text().toString() )
-            //statusId = getStatusId( apiData.STATUSNAME[0]?.text().toString() )
             apiData.GCRAGRA_GCBACTM_ID[0].setValue( actionItemId.toString() )
             apiData.GCRAGRA_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
 
         }
+        if (connectInfo.tableName == "GCBPOPL") {
+            folderId = getFolderId( apiData.FOLDERNAME[0]?.text().toString() )
+            apiData.GCBPOPL_FOLDER_ID[0].setValue( folderId.toString() )
+        }
 
+        if (connectInfo.tableName == "GCRPOPV") {
+            def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
+            apiData.GCRPOPV_POPL_ID[0].setValue( populationId.toString() )
+        }
+        if (connectInfo.tableName == "GCBQURY") {
+            queryId = getQueryId( apiData.GCBQURY_NAME[0]?.text().toString() )
+            deleteQuery()
+            def folderId = getFolderId( apiData.FOLDERNAME[0]?.text().toString() )
+            apiData.GCBQURY_FOLDER_ID[0].setValue( folderId.toString() )
+        }
+        if (connectInfo.tableName == "GCRQRYV") {
+            def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
+            apiData.GCRQRYV_QUERY_ID[0].setValue( queryId.toString() )
+        }
+        if (connectInfo.tableName == "GCRPQID") {
+            def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
+            def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
+            apiData.GCRPQID_POPL_ID[0].setValue( populationId.toString() )
+            apiData.GCRPQID_QURY_ID[0].setValue( queryId.toString() )
+        }
+
+        if (connectInfo.tableName == "GCRPVID") {
+            def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
+            def populationValueId = getPopulationValueId( apiData.POPULATIONNAME[0]?.text().toString() )
+            apiData.GCRPVID_POPV_ID[0].setValue( populationValueId.toString() )
+            apiData.GCRPVID_QUERY_ID[0].setValue( queryId.toString() )
+        }
+        if (connectInfo.tableName == "GCRLENT") {
+            def queryId = getSelectionId()
+            apiData.GCRLENT_SLIS_ID[0].setValue( queryId.toString() )
+        }
+        if (connectInfo.tableName == "GCRPOPC") {
+            def populationValueId = getPopulationValueId( apiData.POPULATIONNAME[0]?.text().toString() )
+            def queryValueId = getQueryValueId( apiData.QUERYNAME[0]?.text().toString() )
+            def selectionId = getSelectionId()
+            apiData.GCRPOPC_SLIS_ID[0].setValue( selectionId.toString() )
+            apiData.GCRPOPC_POPV_ID[0].setValue( populationValueId.toString() )
+            apiData.GCRPOPC_QRYV_ID[0].setValue( queryValueId.toString() )
+        }
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() {fields ->
@@ -215,8 +259,82 @@ public class GeneralActionItemDML {
     }
 
 
+    def getSelectionId() {
+        String fsql = """select * from GCRSLIS WHERE ROWNUM = 1 """
+        int fId
+        def fRow
+        try {
+            fRow = this.conn.firstRow( fsql )
+            if (fRow) {
+                fId = fRow?.GCRSLIS_SURROGATE_ID
+            } else fId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Selection ID in GeneralActionItemDML, from GCRSLIS for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return fId
+    }
+
+
+    def getQueryValueId( String queryName ) {
+        String fsql = """select * from GCRQRYV where GCRQRYV_QUERY_ID= (select GCBQURY_SURROGATE_ID FROM GCBQURY WHERE GCBQURY_NAME=?) """
+        int fId
+        def fRow
+
+
+        try {
+            fRow = this.conn.firstRow( fsql, [queryName] )
+            if (fRow) {
+                fId = fRow?.GCRQRYV_SURROGATE_ID
+            } else fId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Query Value ID in GeneralActionItemDML, from GCRQRYV for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return fId
+    }
+
+
+    def getPopulationValueId( String queryName ) {
+        String fsql = """select * from GCRPOPV where GCRPOPV_POPL_ID= (select GCBPOPL_SURROGATE_ID FROM GCBPOPL WHERE GCBPOPL_NAME=?) """
+        int fId
+        def fRow
+
+
+        try {
+            fRow = this.conn.firstRow( fsql, [queryName] )
+            if (fRow) {
+                fId = fRow?.GCRPOPV_SURROGATE_ID
+            } else fId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Population Value ID in GeneralActionItemDML, from GCRPOPV for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return fId
+    }
+
+
+    def deleteQuery() {
+        deleteQueryData( "GCRQRYV", "delete from GCRQRYV where GCRQRYV_SURROGATE_ID = ? " )
+        deleteQueryData( "GCBQURY", "delete from GCBQURY where GCBQURY_SURROGATE_ID = ? " )
+    }
+
+
     def deleteData() {
-        //deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_NAME like 'AIP%' and 0 <> ?")
+        deleteData( "GCRPQID", "delete from GCRPQID where 0 <> ? " )
+        deleteData( "GCRPVID", "delete from GCRPVID where 0 <> ? " )
+        deleteData( "GCRPOPC", "delete from GCRPOPC where 0 <> ? " )
+        deleteData( "GCRPOPV", "delete from GCRPOPV where 0 <> ? " )
+        deleteData( "GCBPOPL", "delete from GCBPOPL where 0 <> ? " )
+        deleteData( "GCRQRYV", "delete from GCRQRYV where 0 <> ? " )
+        deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
+        deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? " )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )
         deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
         deleteData( "GCRAISR", "delete from GCRAISR where 0 <> ? " )
@@ -227,6 +345,21 @@ public class GeneralActionItemDML {
         deleteData( "GCBACTM", "delete from GCBACTM where 0 <> ? " )
         deleteData( "GCVASTS", "delete from GCVASTS where 0 <> ? " )
 
+    }
+
+
+    def deleteQueryData( String tableName, String sql ) {
+        try {
+            int delRows = conn.executeUpdate( sql, queryId )
+            connectInfo.tableUpdate( tableName, 0, 0, 0, 0, delRows )
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                connectInfo.tableUpdate( tableName, 0, 0, 0, 1, 0 )
+                println "Problem executing delete for query ${sql} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
+            }
+        }
     }
 
 
@@ -261,6 +394,48 @@ public class GeneralActionItemDML {
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Could not select Folder ID in GeneralActionItemDML, from GCRFLDR for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return fId
+    }
+
+
+    def getQueryId( String queryName ) {
+        String fsql = """select * from GCBQURY where GCBQURY_NAME= ? """
+        int fId
+        def fRow
+
+
+        try {
+            fRow = this.conn.firstRow( fsql, [queryName] )
+            if (fRow) {
+                fId = fRow?.GCBQURY_SURROGATE_ID
+            } else fId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Query ID in GeneralActionItemDML, from GCBQURY for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return fId
+    }
+
+
+    def getPopulationId( String populationName ) {
+        String fsql = """select * from GCBPOPL where GCBPOPL_NAME= ? """
+        int fId
+        def fRow
+
+
+        try {
+            fRow = this.conn.firstRow( fsql, [populationName] )
+            if (fRow) {
+                fId = fRow?.GCBPOPL_SURROGATE_ID
+            } else fId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Population ID in GeneralActionItemDML, from GCBPOPL for ${connectInfo.tableName}. $e.message"
             }
         }
         return fId
