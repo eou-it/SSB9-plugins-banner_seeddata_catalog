@@ -8,11 +8,11 @@ import groovy.sql.Sql
 import java.sql.Connection
 
 /**
- * Phrecrq DML tables
- * fetch associated ID for PHRECRQ_PHRECRT_ID
+ * Phrecfd DML tables
+ * fetch associated ID for PHRECFD_PHRECRT_ID
  */
 
-public class PhrecrqDML {
+public class PhrecfdDML {
     int currRule = 0
     def componentId = null
     def subComponentId = null
@@ -28,7 +28,7 @@ public class PhrecrqDML {
     def deleteNode
 
 
-    public PhrecrqDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
+    public PhrecfdDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                       def deleteNode){
 
         this.conn = conn
@@ -38,32 +38,25 @@ public class PhrecrqDML {
         this.columns = columns
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
-        processPhrecrq()
+        processPhrecfd()
 
     }
 
     /**
-     * Process the phrecrq records.  The PHRECRQ_PTRECPD_ID is generated from a sequence and has to be fetched for any
+     * Process the phrecfd records.  The PHRECFD_PTRECPD_ID is generated from a sequence and has to be fetched for any
      * new database so it does not conflict with existing data.
      */
 
-    def processPhrecrq(){
+    def processPhrecfd(){
         def apiData = new XmlParser().parseText(xmlData)
         def isValid = false
-        def combinedCode = apiData.PHRECRQ_PHRECRT_ID[0]?.value()[0]
+        def combinedCode = apiData.PHRECFD_PHRECRT_ID[0]?.value()[0];
         def paramList = combinedCode.tokenize('-')
         Map idMap = [:]
-
-
         componentId = fetchPhrecrtId(paramList)
-        paramList << [apiData.PHRECRQ_MEMBER_ACTION[0]?.value()[0],apiData.PHRECRQ_MEMBER_ROLE[0]?.value()[0],
-                      apiData.PHRECRQ_MEMBER_TYPE[0]?.value()[0]]
 
         if (componentId) {
-            apiData.PHRECRQ_PHRECRT_ID[0].setValue(componentId?.toString())
-            apiData.PHRECRQ_MEMBER_PIDM[0]?.setValue(fetchEmployeePidm([apiData.PHRECRQ_MEMBER_PIDM[0]?.value()[0]]))
-            apiData.PHRECRQ_USER_PIDM[0]?.setValue(fetchEmployeePidm([apiData.PHRECRQ_USER_PIDM[0]?.value()[0]]))
-
+            apiData.PHRECFD_PHRECRT_ID[0].setValue(componentId?.toString())
             isValid = true
         }
 
@@ -89,31 +82,14 @@ public class PhrecrqDML {
         //
         try {
             id = this.conn.firstRow("""SELECT e.PHRECRT_ID as ID FROM PTRECPD p , phrecrt e WHERE PTRECPD_COAS_CODE = ?  AND PTRECPD_ECPD_CODE = ? and p.ptrecpd_id = E.PHRECRT_PTRECPD_ID
-                                        AND SPKLIBS.F_GET_SPRIDEN_ID(E.PHRECRT_PIDM) = ? """,
+                                        and SPKLIBS.F_GET_SPRIDEN_ID(E.PHRECRT_PIDM) = ? """,
                     paramList)?.ID
         }
         catch (Exception e) {
-            if (connectInfo.showErrors) println("Error while checking for existing PHRECRQ ID in PhrecrqDML for ${connectInfo.tableName}. $e.message")
+            if (connectInfo.showErrors) println("Error while checking for existing PHRECFD ID in PhrecfdDML for ${connectInfo.tableName}. $e.message")
         }
-        if (connectInfo.debugThis) println("Checking for existing PHRECRQ ID for ${connectInfo.tableName}.")
+        if (connectInfo.debugThis) println("Checking for existing PHRECFD ID for ${connectInfo.tableName}.")
         return id
     }
-
-
-
-    private def fetchEmployeePidm(List paramList){
-        def id = null
-        //
-        try {
-            id = this.conn.firstRow("""SELECT SPRIDEN_PIDM as PIDM from SPRIDEN where SPRIDEN_ID = ? and SPRIDEN_CHANGE_IND is null """,
-                    paramList)?.PIDM
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) println("Error while checking for Employee Pidm in PhrecrqDML for ${connectInfo.tableName}. $e.message")
-        }
-        if (connectInfo.debugThis) println("Checking for Employee Pidm for ${connectInfo.tableName}.")
-        return id
-    }
-    
 
 }
