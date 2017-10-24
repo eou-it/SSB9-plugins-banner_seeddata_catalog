@@ -868,7 +868,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBPBTR>
-        <ACTIONITEMTEMPLATE>aip.MasterTemplateSystemRequired</ACTIONITEMTEMPLATE>
+        <ACTIONITEMTEMPLATE>AIPMasterTemplateSystemRequired</ACTIONITEMTEMPLATE>
         <GCBPBTR_SURROGATE_ID>1</GCBPBTR_SURROGATE_ID>
         <GCBPBTR_TEMPLATE_NAME>Master Template</GCBPBTR_TEMPLATE_NAME>
         <GCBPBTR_PAGE_ID>aip.MasterTemplateSystemRequired</GCBPBTR_PAGE_ID>
