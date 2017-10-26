@@ -181,7 +181,8 @@ public class APIClasses {
             'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PERFORMANCE_SQL'       : 'net.hedtech.banner.seeddata.PlsqlDML',
             'PCRBENE': 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
-            'GJRJLIS'               : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml'
+            'GJRJLIS'               : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
+            'SHBCGPA'               : 'net.hedtech.banner.seeddata.ShbcgpaDML'
     ]
 
 
@@ -266,7 +267,8 @@ public class APIClasses {
             'NTRINST': 'net.hedtech.banner.seeddata.NtrinstDML',
             'NTRECDQ': 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PCRBENE': 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
-            'GJRJLIS' : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml'
+            'GJRJLIS' : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
+            'SHBCGPA': 'net.hedtech.banner.seeddata.ShbcgpaDML'
     ]
 
 
