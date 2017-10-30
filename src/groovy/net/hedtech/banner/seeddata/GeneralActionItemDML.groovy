@@ -58,6 +58,7 @@ public class GeneralActionItemDML {
         def apiData = new XmlParser().parseText( StringUtils.replaceEach( xmlData, fromstring, tostring ) )
 
         def personId = apiData.BANNERID?.text()
+        def wtRole = apiData.WEBTAILOR_ROLE?.text()
         def personPidm
 
         // connectInfo.debugThis = true
@@ -67,6 +68,10 @@ public class GeneralActionItemDML {
             def spridenRow = conn.firstRow( findPidm, [personId] )
             if (spridenRow) {
                 personPidm = spridenRow.SPRIDEN_PIDM.toString()
+            }
+            if (wtRole) {
+                println "testing webtailor"
+                addWebtailorRole( personPidm )
             }
         }
 
@@ -517,6 +522,34 @@ public class GeneralActionItemDML {
             }
         }
         return sId
+    }
+
+    def addWebtailorRole( def personPidm ) {
+        println "banner pidm ${personPidm}"
+        def message="attempted to call GeneralActionItemDML.addWebtailorRole with values ${personPidm}"
+        try {
+            conn.call("""
+             Declare
+             Begin
+              Delete from TWGRROLE WHERE a.TWGRROLE_ROLE = 'ACTIONITEMADMIN';
+              Insert Into TWGRROLE ( Twgrrole_Pidm, Twgrrole_Role, Twgrrole_Activity_Date, TWGRROLE_USER_ID)
+              select  ${personPidm},
+                'ACTIONITEMADMIN',
+                 sysdate,
+                 user
+                 from dual where not exists ( select 1 from TWGRROLE a where a.TWGRROLE_ROLE = 'ACTIONITEMADMIN' 
+                 and a.TWGRROLE_PIDM =  ${personPidm});
+             End;
+            """
+            )
+            connectInfo.tableUpdate("TWGRROLE", 0, 1, 0, 0, 0)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Status ID in GeneralActionItemDML, from TWGRROLE for ${connectInfo.tableName}. $e.message"
+                println "${message}"
+            }
+        }
     }
 
 }
