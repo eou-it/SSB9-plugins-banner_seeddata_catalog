@@ -329,7 +329,9 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity3.xml'],
+
             'registration-general'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationGeneral.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentCentricPeriod.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatus.xml'],
