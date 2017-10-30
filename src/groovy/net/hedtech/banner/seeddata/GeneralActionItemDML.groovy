@@ -41,6 +41,13 @@ public class GeneralActionItemDML {
         this.columns = columns
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
+
+
+
+
+
+
+
         processData()
     }
 
@@ -531,7 +538,7 @@ public class GeneralActionItemDML {
             conn.call("""
              Declare
              Begin
-              Delete from TWGRROLE WHERE a.TWGRROLE_ROLE = 'ACTIONITEMADMIN';
+              Delete from TWGRROLE WHERE TWGRROLE_ROLE = 'ACTIONITEMADMIN';
               Insert Into TWGRROLE ( Twgrrole_Pidm, Twgrrole_Role, Twgrrole_Activity_Date, TWGRROLE_USER_ID)
               select  ${personPidm},
                 'ACTIONITEMADMIN',
@@ -542,7 +549,7 @@ public class GeneralActionItemDML {
              End;
             """
             )
-            connectInfo.tableUpdate("TWGRROLE", 0, 1, 0, 0, 0)
+            connectInfo.tableUpdate("AIPWEBTAILOR", 0, 1, 0, 0, 0)
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
