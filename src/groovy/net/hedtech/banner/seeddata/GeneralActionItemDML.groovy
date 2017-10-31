@@ -22,6 +22,7 @@ public class GeneralActionItemDML {
     def Batch batch
     def deleteNode
     //int itemSeq
+    def wtRole
     int folderId
     int templateId
     int statusId
@@ -30,7 +31,6 @@ public class GeneralActionItemDML {
     int blockId
     int populationId
     int queryId
-
 
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                                  def deleteNode ) {
@@ -41,12 +41,6 @@ public class GeneralActionItemDML {
         this.columns = columns
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
-
-
-
-
-
-
 
         processData()
     }
@@ -65,7 +59,6 @@ public class GeneralActionItemDML {
         def apiData = new XmlParser().parseText( StringUtils.replaceEach( xmlData, fromstring, tostring ) )
 
         def personId = apiData.BANNERID?.text()
-        def wtRole = apiData.WEBTAILOR_ROLE?.text()
         def personPidm
 
         // connectInfo.debugThis = true
@@ -76,13 +69,13 @@ public class GeneralActionItemDML {
             if (spridenRow) {
                 personPidm = spridenRow.SPRIDEN_PIDM.toString()
             }
-            if (wtRole) {
-                println "testing webtailor"
-                addWebtailorRole( personPidm )
-            }
         }
 
-        //
+        if (connectInfo.tableName == "TWGRROLE") {
+            wtRole = apiData.TWGRROLE_ROLE?.text()
+            apiData.TWGRROLE_PIDM[0].setValue( personPidm.toString() )
+            deleteWTRole(personPidm)
+        }
 
         if (connectInfo.tableName == "GCVASTS") {
             actionItemId = 0
@@ -206,6 +199,7 @@ public class GeneralActionItemDML {
             apiData.GCRABLK_GCBACTM_ID[0].setValue( actionItemId.toString() )
 
         }
+
         if (connectInfo.tableName == "GCRAGRA") {
             actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             actionGroupId = getActionGroupId( apiData.ACTIONGROUPNAME[0]?.text().toString() )
@@ -269,8 +263,7 @@ public class GeneralActionItemDML {
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
 
     }
-
-
+    
     def getSelectionId() {
         String fsql = """select * from GCRSLIS WHERE ROWNUM = 1 """
         int fId
@@ -359,8 +352,12 @@ public class GeneralActionItemDML {
 
     }
 
+    def deleteWTRole(personPidm) {
+        deleteWTRole(personPidm, "TWGRROLE", "delete from TWGRROLE where TWGRROLE_PIDM = ? AND TWGRROLE_ROLE = '${wtRole}' "   )
+    }
 
-    def deleteQueryData( String tableName, String sql ) {
+
+    def deleteQueryData(String tableName, String sql ) {
         try {
             int delRows = conn.executeUpdate( sql, queryId )
             connectInfo.tableUpdate( tableName, 0, 0, 0, 0, delRows )
@@ -388,6 +385,22 @@ public class GeneralActionItemDML {
                 println "${sql}"
             }
         }
+    }
+
+    def deleteWTRole (def personPidm, String tableName, String sql) {
+
+        try {
+            int delRows = conn.executeUpdate( sql, [personPidm] )
+            connectInfo.tableUpdate( tableName, 0, 0, 0, 0, delRows )
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                connectInfo.tableUpdate( tableName, 0, 0, 0, 1, 0 )
+                println "Problem executing delete for id ${personPidm} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
+            }
+        }
+
     }
 
 
@@ -529,34 +542,6 @@ public class GeneralActionItemDML {
             }
         }
         return sId
-    }
-
-    def addWebtailorRole( def personPidm ) {
-        println "banner pidm ${personPidm}"
-        def message="attempted to call GeneralActionItemDML.addWebtailorRole with values ${personPidm}"
-        try {
-            conn.call("""
-             Declare
-             Begin
-              Delete from TWGRROLE WHERE TWGRROLE_ROLE = 'ACTIONITEMADMIN';
-              Insert Into TWGRROLE ( Twgrrole_Pidm, Twgrrole_Role, Twgrrole_Activity_Date, TWGRROLE_USER_ID)
-              select  ${personPidm},
-                'ACTIONITEMADMIN',
-                 sysdate,
-                 user
-                 from dual where not exists ( select 1 from TWGRROLE a where a.TWGRROLE_ROLE = 'ACTIONITEMADMIN' 
-                 and a.TWGRROLE_PIDM =  ${personPidm});
-             End;
-            """
-            )
-            connectInfo.tableUpdate("AIPWEBTAILOR", 0, 1, 0, 0, 0)
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select Status ID in GeneralActionItemDML, from TWGRROLE for ${connectInfo.tableName}. $e.message"
-                println "${message}"
-            }
-        }
     }
 
 }
