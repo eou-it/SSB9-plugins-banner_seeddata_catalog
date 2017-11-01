@@ -109,7 +109,7 @@ public class APIClasses {
             'GCRPQID'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPVID'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRLENT'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'TWGRROLE':'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'TWGRROLE'              : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GURNDSP'               : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'FINANCEFISCAYEAR'      : 'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'           : 'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
