@@ -109,6 +109,7 @@ public class APIClasses {
             'GCRPQID'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPVID'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRLENT'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'TWGRROLE'              : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GURNDSP'               : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'FINANCEFISCAYEAR'      : 'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'           : 'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
@@ -225,6 +226,7 @@ public class APIClasses {
             'GCBPOPL': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPOPV': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBQURY': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'TWGRROLE':'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRQRYV': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPOPC': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPQID': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
@@ -257,7 +259,6 @@ public class APIClasses {
             'GUROCFG': 'net.hedtech.banner.seeddata.GurocfgDML',
             'GURCTLEP': 'net.hedtech.banner.seeddata.GurctleppDML',
             'GURAPPR': 'net.hedtech.banner.seeddata.GurapprDML',
-
             'PEREARN': 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR': 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO': 'net.hedtech.banner.seeddata.PertitoDML',

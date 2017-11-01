@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -41,7 +41,7 @@ public class CreateOracleUserDML {
 
         this.conn = conn
         this.connectInfo = connectInfo
-        this.connectInfo.dataSource=null;
+        this.connectInfo.dataSource=null
         def newConn = new ConnectDB(connectInfo)
         this.connectCall = newConn.getSqlConnection().connection
         this.xmlData = xmlData
