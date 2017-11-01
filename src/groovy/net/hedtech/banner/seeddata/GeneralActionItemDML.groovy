@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -22,6 +22,7 @@ public class GeneralActionItemDML {
     def Batch batch
     def deleteNode
     //int itemSeq
+    def wtRole
     int folderId
     int templateId
     int statusId
@@ -30,7 +31,6 @@ public class GeneralActionItemDML {
     int blockId
     int populationId
     int queryId
-
 
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                                  def deleteNode ) {
@@ -41,6 +41,7 @@ public class GeneralActionItemDML {
         this.columns = columns
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
+
         processData()
     }
 
@@ -70,7 +71,11 @@ public class GeneralActionItemDML {
             }
         }
 
-        //
+        if (connectInfo.tableName == "TWGRROLE") {
+            wtRole = apiData.TWGRROLE_ROLE?.text()
+            apiData.TWGRROLE_PIDM[0].setValue( personPidm.toString() )
+            deleteWTRole(personPidm)
+        }
 
         if (connectInfo.tableName == "GCVASTS") {
             actionItemId = 0
@@ -194,6 +199,7 @@ public class GeneralActionItemDML {
             apiData.GCRABLK_GCBACTM_ID[0].setValue( actionItemId.toString() )
 
         }
+
         if (connectInfo.tableName == "GCRAGRA") {
             actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             actionGroupId = getActionGroupId( apiData.ACTIONGROUPNAME[0]?.text().toString() )
@@ -257,8 +263,7 @@ public class GeneralActionItemDML {
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
 
     }
-
-
+    
     def getSelectionId() {
         String fsql = """select * from GCRSLIS WHERE ROWNUM = 1 """
         int fId
@@ -347,8 +352,12 @@ public class GeneralActionItemDML {
 
     }
 
+    def deleteWTRole(personPidm) {
+        deleteWTRole(personPidm, "TWGRROLE", "delete from TWGRROLE where TWGRROLE_PIDM = ? AND TWGRROLE_ROLE = '${wtRole}' "   )
+    }
 
-    def deleteQueryData( String tableName, String sql ) {
+
+    def deleteQueryData(String tableName, String sql ) {
         try {
             int delRows = conn.executeUpdate( sql, queryId )
             connectInfo.tableUpdate( tableName, 0, 0, 0, 0, delRows )
@@ -376,6 +385,22 @@ public class GeneralActionItemDML {
                 println "${sql}"
             }
         }
+    }
+
+    def deleteWTRole (def personPidm, String tableName, String sql) {
+
+        try {
+            int delRows = conn.executeUpdate( sql, [personPidm] )
+            connectInfo.tableUpdate( tableName, 0, 0, 0, 0, delRows )
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                connectInfo.tableUpdate( tableName, 0, 0, 0, 1, 0 )
+                println "Problem executing delete for id ${personPidm} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
+            }
+        }
+
     }
 
 
