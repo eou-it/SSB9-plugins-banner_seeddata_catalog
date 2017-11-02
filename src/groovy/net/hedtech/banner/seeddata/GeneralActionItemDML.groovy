@@ -22,7 +22,6 @@ public class GeneralActionItemDML {
     def Batch batch
     def deleteNode
     //int itemSeq
-    def wtRole
     int folderId
     int templateId
     int statusId
@@ -69,12 +68,6 @@ public class GeneralActionItemDML {
             if (spridenRow) {
                 personPidm = spridenRow.SPRIDEN_PIDM.toString()
             }
-        }
-
-        if (connectInfo.tableName == "TWGRROLE") {
-            wtRole = apiData.TWGRROLE_ROLE?.text()
-            apiData.TWGRROLE_PIDM[0].setValue( personPidm.toString() )
-            deleteWTRole(personPidm)
         }
 
         if (connectInfo.tableName == "GCVASTS") {
@@ -352,10 +345,6 @@ public class GeneralActionItemDML {
 
     }
 
-    def deleteWTRole(personPidm) {
-        deleteWTRole(personPidm, "TWGRROLE", "delete from TWGRROLE where TWGRROLE_PIDM = ? AND TWGRROLE_ROLE = '${wtRole}' "   )
-    }
-
 
     def deleteQueryData(String tableName, String sql ) {
         try {
@@ -386,23 +375,6 @@ public class GeneralActionItemDML {
             }
         }
     }
-
-    def deleteWTRole (def personPidm, String tableName, String sql) {
-
-        try {
-            int delRows = conn.executeUpdate( sql, [personPidm] )
-            connectInfo.tableUpdate( tableName, 0, 0, 0, 0, delRows )
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                connectInfo.tableUpdate( tableName, 0, 0, 0, 1, 0 )
-                println "Problem executing delete for id ${personPidm} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
-                println "${sql}"
-            }
-        }
-
-    }
-
 
     def getFolderId( String folderName ) {
         String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
