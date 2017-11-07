@@ -386,9 +386,6 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
-        println folderName
-
-
         try {
             fRow = this.conn.firstRow( fsql, [folderName] )
             if (fRow) {
