@@ -209,12 +209,14 @@ public class GeneralActionItemDML {
             def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
             apiData.GCRPOPV_POPL_ID[0].setValue( populationId.toString() )
         }
+        /*
         if (connectInfo.tableName == "GCBQURY") {
             queryId = getQueryId( apiData.GCBQURY_NAME[0]?.text().toString() )
             deleteQuery()
             def folderId = getFolderId( apiData.FOLDERNAME[0]?.text().toString() )
             apiData.GCBQURY_FOLDER_ID[0].setValue( folderId.toString() )
         }
+        */
         if (connectInfo.tableName == "GCRQRYV") {
             def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
             apiData.GCRQRYV_QUERY_ID[0].setValue( queryId.toString() )
@@ -317,11 +319,13 @@ public class GeneralActionItemDML {
         return fId
     }
 
+    /*
 
     def deleteQuery() {
         deleteQueryData( "GCRQRYV", "delete from GCRQRYV where GCRQRYV_SURROGATE_ID = ? " )
         deleteQueryData( "GCBQURY", "delete from GCBQURY where GCBQURY_SURROGATE_ID = ? " )
     }
+    */
 
 
     def deleteData() {
@@ -331,7 +335,7 @@ public class GeneralActionItemDML {
         deleteData( "GCRPOPV", "delete from GCRPOPV where 0 <> ? " )
         deleteData( "GCBPOPL", "delete from GCBPOPL where 0 <> ? " )
         deleteData( "GCRQRYV", "delete from GCRQRYV where 0 <> ? " )
-        deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
+       // deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
         deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? " )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )
         deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
@@ -345,7 +349,7 @@ public class GeneralActionItemDML {
 
     }
 
-
+/*
     def deleteQueryData(String tableName, String sql ) {
         try {
             int delRows = conn.executeUpdate( sql, queryId )
@@ -359,6 +363,7 @@ public class GeneralActionItemDML {
             }
         }
     }
+    */
 
 
     def deleteData( String tableName, String sql ) {
@@ -381,6 +386,8 @@ public class GeneralActionItemDML {
         int fId
         def fRow
 
+        println folderName
+
 
         try {
             fRow = this.conn.firstRow( fsql, [folderName] )
@@ -395,6 +402,7 @@ public class GeneralActionItemDML {
         }
         return fId
     }
+
 
 
     def getQueryId( String queryName ) {
