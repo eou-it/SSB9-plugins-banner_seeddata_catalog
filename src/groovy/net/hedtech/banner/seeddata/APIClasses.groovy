@@ -101,6 +101,14 @@ public class APIClasses {
             'GCRAISR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAGRA'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCBPOPL'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPOPV'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            //'GCBQURY'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRQRYV'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPOPC'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPQID'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPVID'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRLENT'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GURNDSP'               : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'FINANCEFISCAYEAR'      : 'net.hedtech.banner.seeddata.FinanceProcurementFiscalYearDML',
             'FINANCEUSER'           : 'net.hedtech.banner.seeddata.FinanceProcurementUserDML',
@@ -139,6 +147,7 @@ public class APIClasses {
             'BANNERUSER'            : 'net.hedtech.banner.seeddata.BannerUserDML',
             'HRGOBEACCUSER'         : 'net.hedtech.banner.seeddata.HrGobeaccDML',
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
+            'WEBTAILORUSER'         : 'net.hedtech.banner.seeddata.CreateWebtailorUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
             'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML',
             'PHRELBD'               : 'net.hedtech.banner.seeddata.PhrelbdDML',
@@ -153,6 +162,9 @@ public class APIClasses {
             'PHRECDT'               : 'net.hedtech.banner.seeddata.PhrecdtDML',
             'PTRECER'               : 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC'               : 'net.hedtech.banner.seeddata.PtrecpcDML',
+            'PHRECAL'               : 'net.hedtech.banner.seeddata.PhrecalDML',
+            'PHRECFD'               : 'net.hedtech.banner.seeddata.PhrecfdDML',
+            'PTRECEC'               : 'net.hedtech.banner.seeddata.PtrececDML',
             'PTRECPR'               : 'net.hedtech.banner.seeddata.PtrecprDML',
             'GUBAPPL'               : 'net.hedtech.banner.seeddata.GubapplDML',
             'GUROCFG'               : 'net.hedtech.banner.seeddata.GurocfgDML',
@@ -170,7 +182,8 @@ public class APIClasses {
             'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PERFORMANCE_SQL'       : 'net.hedtech.banner.seeddata.PlsqlDML',
             'PCRBENE': 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
-            'GJRJLIS'               : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml'
+            'GJRJLIS'               : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
+            'SHBCGPA'               : 'net.hedtech.banner.seeddata.ShbcgpaDML'
     ]
 
 
@@ -210,6 +223,14 @@ public class APIClasses {
             'GCRAISR': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAGRA': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCBPOPL': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPOPV': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            //'GCBQURY': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRQRYV': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPOPC': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPQID': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRPVID': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCRLENT': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GURNDSP' : 'net.hedtech.banner.seeddata.AdvisingNameDisplayDML',
             'TBBCSTU': 'net.hedtech.banner.seeddata.TbbcstuDML',
             'PERDHIS': 'net.hedtech.banner.seeddata.PerdhisDML',
@@ -230,11 +251,13 @@ public class APIClasses {
             'PTRECER': 'net.hedtech.banner.seeddata.PtrecerDML',
             'PTRECPC': 'net.hedtech.banner.seeddata.PtrecpcDML',
             'PTRECPR': 'net.hedtech.banner.seeddata.PtrecprDML',
+            'PHRECAL': 'net.hedtech.banner.seeddata.PhrecalDML',
+            'PHRECFD': 'net.hedtech.banner.seeddata.PhrecfdDML',
+            'PTRECEC': 'net.hedtech.banner.seeddata.PtrececDML',
             'GUBAPPL': 'net.hedtech.banner.seeddata.GubapplDML',
             'GUROCFG': 'net.hedtech.banner.seeddata.GurocfgDML',
             'GURCTLEP': 'net.hedtech.banner.seeddata.GurctleppDML',
             'GURAPPR': 'net.hedtech.banner.seeddata.GurapprDML',
-
             'PEREARN': 'net.hedtech.banner.seeddata.PerearnDML',
             'PERHOUR': 'net.hedtech.banner.seeddata.PerhourDML',
             'PERTITO': 'net.hedtech.banner.seeddata.PertitoDML',
@@ -244,7 +267,8 @@ public class APIClasses {
             'NTRINST': 'net.hedtech.banner.seeddata.NtrinstDML',
             'NTRECDQ': 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PCRBENE': 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
-            'GJRJLIS' : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml'
+            'GJRJLIS' : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
+            'SHBCGPA': 'net.hedtech.banner.seeddata.ShbcgpaDML'
     ]
 
 

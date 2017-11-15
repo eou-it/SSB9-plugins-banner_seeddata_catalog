@@ -103,7 +103,8 @@ public class PtrecpdDML {
                                 ptrecpd p
                               WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                               AND ptrecpd_coas_code                         = 'B'
-                              AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                              AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115'
+                                                                               ,'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                               AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                             )""")
 
@@ -117,7 +118,8 @@ public class PtrecpdDML {
                                         ptrecpd p
                                       WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                                       AND ptrecpd_coas_code                         = 'B'
-                                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115',
+                                                                                        'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                                       AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                                       )""")
 
@@ -131,7 +133,8 @@ public class PtrecpdDML {
                                                 ptrecpd p
                                               WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                                               AND ptrecpd_coas_code                         = 'B'
-                                              AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                                              AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115',
+                                                                                                'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                                               AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                                               )""")
 
@@ -147,7 +150,8 @@ public class PtrecpdDML {
                                               ptrecpd p
                                             WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                                             AND ptrecpd_coas_code                         = 'B'
-                                            AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                                            AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115',
+                                                                                             'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')  
                                             AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                                             )
                                           )""")
@@ -164,7 +168,8 @@ public class PtrecpdDML {
                                               ptrecpd p
                                             WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                                             AND ptrecpd_coas_code                         = 'B'
-                                            AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                                            AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115',
+                                                                                             'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                                             AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                                             )
                                           )""")
@@ -178,7 +183,8 @@ public class PtrecpdDML {
                                                 ptrecpd p
                                               WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                                               AND ptrecpd_coas_code                         = 'B'
-                                              AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                                              AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115',
+                                                                                               'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                                               AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                                               )""")
 
@@ -192,7 +198,8 @@ public class PtrecpdDML {
                         ptrecpd p
                       WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                       AND ptrecpd_coas_code                         = 'B'
-                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115',
+                                                                        'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                       AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                       )""")
 
@@ -205,7 +212,8 @@ public class PtrecpdDML {
                             ptrecpd p
                           WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                           AND ptrecpd_coas_code                         = 'B'
-                          AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                          AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115'
+                                                                           ,'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                           AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
                           )""")
 
@@ -217,8 +225,20 @@ public class PtrecpdDML {
                                         ptrecpd p
                                       WHERE e.phrecrt_ptrecpd_id                    = ptrecpd_id
                                       AND ptrecpd_coas_code                         = 'B'
-                                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115')
+                                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115'
+                                                                                        ,'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                                       AND SPKLIBS.F_GET_SPRIDEN_ID(e.PHRECRT_PIDM) IN ('HOPSD0001','HOPSD0002','HOPSD0003','HOPSD0004','HOPSD0005','HOPSD0006')
+                                      )""")
+
+
+            count =  this.conn.executeUpdate("""DELETE
+                                    FROM ptrecec
+                                    WHERE ptrecec_ptrecpd_id IN
+                                      (SELECT ptrecpd_id
+                                      FROM  ptrecpd p
+                                      WHERE ptrecpd_coas_code                         = 'B'
+                                      AND ptrecpd_ecpd_code                        IN ('FA0115','FA0215','RS0115','RS0215','GR0115','GR0215','GS1115'
+                                                                                        ,'GS0416','MN1215','MN0715','MN0216','GS0815','SA0616')
                                       )""")
 
 
