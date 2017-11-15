@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2015 Ellucian Company L.P. and its affiliates.
+  Copyright 2015-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -80,6 +80,8 @@ public class ScheduleDML {
     def ssbsect_reas_score_open_date
     def ssbsect_reas_score_ctof_date
     def ssbsect_override_dur_ind
+    def ssbsect_refund_cutoff_date
+    def ssbsect_reg_auth_active_cde
 
     java.sql.RowId ssbsectRow = null
     // database connection information
@@ -174,6 +176,8 @@ public class ScheduleDML {
         this.ssbsect_reas_score_open_date = sch.SSBSECT_REAS_SCORE_OPEN_DATE.text()
         this.ssbsect_reas_score_ctof_date = sch.SSBSECT_REAS_SCORE_CTOF_DATE.text()
         this.ssbsect_override_dur_ind =  sch.SSBSECT_OVERRIDE_DUR_IND.text()
+        this.ssbsect_refund_cutoff_date = sch.SSBSECT_REFUND_CUTOFF_DATE.text()
+        this.ssbsect_reg_auth_active_cde = sch.SSBSECT_REG_AUTH_ACTIVE_CDE.text()
     }
 
 
@@ -727,7 +731,7 @@ public class ScheduleDML {
 
 
     def updateSchedule() {
-        //  parm count is 63
+        //  parm count is 71
         try {
             String API = "{call  sb_section.p_update(?,?,?,?,?," +
                     "?,?,?,?,?," +
@@ -741,8 +745,9 @@ public class ScheduleDML {
                     "?,?,?,?,?," +
                     "?,?,?,?,?," +
                     "?,?,?,?,?," +
-                    "?,?,?,?," +
-                    "?,?,?,?,?)}"
+                    "?,?,?,?,?," +
+                    "?,?,?,?,?," +
+                    "?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
             // parm 1 p_term_code        ssbsect_term_code VARCHAR2
             insertCall.setString(1, this.ssbsect_term_code)
@@ -1074,15 +1079,14 @@ public class ScheduleDML {
             // parm 62 p_intg_cde        ssbsect_intg_cde VARCHAR2
             insertCall.setString(62, this.ssbsect_intg_cde)
 
-            // parm 63 p_rowid        ssbsect_rowid VARCHAR2
-
+            // parm 63 p_prereq_chk_method_cde   ssbsect_prereq_chk_method_cde VARCHAR2
             if (!this.ssbsect_prereq_chk_method_cde)
                 insertCall.setString(63, "B")
             else insertCall.setString(63, this.ssbsect_prereq_chk_method_cde)
 
+            // parm 64 p_rowid        ssbsect_rowid VARCHAR2
             // do not send the rowid because setRowId is broken
             insertCall.setNull(64, java.sql.Types.ROWID)
-            //  insertCall.setRowId(63,ssbsectRow)
 
             // parm 65 p_score_open_date        ssbsect_score_open_date DATE
             if ((this.ssbsect_score_open_date == "") || (this.ssbsect_score_open_date == null) || (!this.ssbsect_score_open_date)) { insertCall.setNull(65, java.sql.Types.DATE) }
@@ -1130,6 +1134,21 @@ public class ScheduleDML {
                 insertCall.setString(69, this.ssbsect_override_dur_ind)
             }
 
+            // parm 70 p_refund_cutoff_date             ssbsect.ssbsect_refund_cutoff_date%TYPE DEFAULT NULL
+            if ((this.ssbsect_refund_cutoff_date == "") || (this.ssbsect_refund_cutoff_date == null) || (!this.ssbsect_refund_cutoff_date)) { insertCall.setNull(70, java.sql.Types.DATE) }
+            else {
+                def ddate = new ColumnDateValue(this.ssbsect_refund_cutoff_date)
+                String unfDate = ddate.formatJavaDate()
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
+                insertCall.setDate(70, sqlDate)
+            }
+
+            // param 71 p_reg_auth_active_cde   ssbsect_reg_auth_active_cde varchar2
+            if ((this.ssbsect_reg_auth_active_cde == "") || (this.ssbsect_reg_auth_active_cde == null) || (!this.ssbsect_reg_auth_active_cde)) { insertCall.setString(71,'N') }
+            else {
+                insertCall.setString(71, this.ssbsect_reg_auth_active_cde)
+            }
 
             if (connectInfo.debugThis) {
                 println "Update SSBSECT ${this.ssbsect_term_code} ${this.ssbsect_crn} ${this.ssbsect_ptrm_code}"
@@ -1163,7 +1182,7 @@ public class ScheduleDML {
 
     def insertSchedule() {
 
-        //  parm count is 63
+        //  parm count is 71
         try {
             String API = "{call  sb_section.p_create(?,?,?,?,?," +
                     "?,?,?,?,?," +
@@ -1177,8 +1196,9 @@ public class ScheduleDML {
                     "?,?,?,?,?," +
                     "?,?,?,?,?," +
                     "?,?,?,?,?," +
-                    "?,?,?,?," +
-                    "?,?,?,?,?)}"
+                    "?,?,?,?,?," +
+                    "?,?,?,?,?," +
+                    "?)}"
             CallableStatement insertCall = this.connectCall.prepareCall(API)
 
             // parm 1 p_term_code  ssbsect_term_code VARCHAR2
@@ -1513,10 +1533,12 @@ public class ScheduleDML {
             insertCall.setString(61, connectInfo.userID)
             // parm 62 p_intg_cde  ssbsect_intg_cde VARCHAR2
             insertCall.setString(62, this.ssbsect_intg_cde)
+            //parm 63 p_prereq_chk_method_cde ssbsect_prerw_chk_method_cde VARCHAR2
             if (!this.ssbsect_prereq_chk_method_cde)
                 insertCall.setString(63, "B")
             else insertCall.setString(63, this.ssbsect_prereq_chk_method_cde)
-            // parm 63 p_rowid_out  ssbsect_rowid_out VARCHAR2
+
+            // parm 64 p_rowid_out  ssbsect_rowid_out VARCHAR2
             insertCall.registerOutParameter(64, java.sql.Types.ROWID)
 
             // parm 65 p_score_open_date        ssbsect_score_open_date DATE
@@ -1563,6 +1585,22 @@ public class ScheduleDML {
             if ((this.ssbsect_override_dur_ind == "") || (this.ssbsect_override_dur_ind == null) || (!this.ssbsect_override_dur_ind)) { insertCall.setString(69,'N') }
             else {
                 insertCall.setString(69, this.ssbsect_override_dur_ind)
+            }
+
+            // parm 70 p_refund_cutoff_date             ssbsect.ssbsect_refund_cutoff_date%TYPE DEFAULT NULL
+            if ((this.ssbsect_refund_cutoff_date == "") || (this.ssbsect_refund_cutoff_date == null) || (!this.ssbsect_refund_cutoff_date)) { insertCall.setNull(70, java.sql.Types.DATE) }
+            else {
+                def ddate = new ColumnDateValue(this.ssbsect_refund_cutoff_date)
+                String unfDate = ddate.formatJavaDate()
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+                java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
+                insertCall.setDate(70, sqlDate)
+            }
+
+            // param 71 p_reg_auth_active_cde   ssbsect_reg_auth_active_cde varchar2
+            if ((this.ssbsect_reg_auth_active_cde == "") || (this.ssbsect_reg_auth_active_cde == null) || (!this.ssbsect_reg_auth_active_cde)) { insertCall.setString(71,'N') }
+            else {
+                insertCall.setString(71, this.ssbsect_reg_auth_active_cde)
             }
 
             if (connectInfo.debugThis) {
