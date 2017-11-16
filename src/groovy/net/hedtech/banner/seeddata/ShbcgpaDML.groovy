@@ -123,5 +123,20 @@ class ShbcgpaDML {
                 }
             }
         }
+        else {
+            def updateSql = """update SHBCGPA set SHBCGPA_STUDY_PATH_GPA_CDE=?"""
+
+            try {
+                conn.executeUpdate(updateSql, [this.studyPathGpaCde])
+                connectInfo.tableUpdate("SHBCGPA", 0, 0, 1, 0, 0)
+            }
+            catch (Exception e) {
+                connectInfo.tableUpdate("SHBCGPA", 0, 0, 0, 1, 0)
+                if (connectInfo.showErrors) {
+                    println "Update SHBCGPA ${this.xmlHostName}}"
+                    println "Problem executing update for table SHBCGPA from ShbcgpaDML.groovy: $e.message"
+                }
+            }
+        }
     }
 }
