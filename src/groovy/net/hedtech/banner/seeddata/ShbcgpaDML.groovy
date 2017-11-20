@@ -37,17 +37,10 @@ class ShbcgpaDML {
     Connection connectCall
     def xmlData
 
-    def insert = true
     List columns
     List indexColumns
     def Batch batch
     def deleteNode
-
-    public ShbcgpaDML(InputData connectInfo, Sql conn, Connection connectCall) {
-        this.conn = conn
-        this.connectInfo = connectInfo
-        this.connectCall = connectCall
-    }
 
     public ShbcgpaDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode) {
 
@@ -59,7 +52,7 @@ class ShbcgpaDML {
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
         parseXmlData()
-        insertShbcgpaData()
+        processShbcgpaData()
 
     }
     def parseXmlData() {
@@ -89,53 +82,53 @@ class ShbcgpaDML {
         this.studyPathGpaCde = rule.SHBCGPA_STUDY_PATH_GPA_CDE.text()
     }
 
+    def processShbcgpaData() {
+        String entryExistsSQL = """select * from SHBCGPA """
+
+        if (connectInfo.debugThis) println "Row count number ${entryExistsSQL}"
+
+        int count = conn.executeUpdate(entryExistsSQL, [])
+
+        if (count) {
+            def deleteSQL = """DELETE FROM SHBCGPA """
+
+            try {
+                int delRows = conn.executeUpdate(deleteSQL, [])
+                connectInfo.tableUpdate("SHBCGPA", 0, 0, 0, 0, delRows)
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    System.out.println("Problem executing delete from ShbcgpaDML.groovy: $e.message")
+                    System.out.println("${deleteSQL}")
+                }
+            }
+        }
+
+        insertShbcgpaData()
+    }
+
     def insertShbcgpaData() {
 
-        String entryExistsSQL = """select count(*) as rowCount from SHBCGPA """
-        if (connectInfo.debugThis) println "Row count number ${entryExistsSQL}"
-        this.conn.eachRow(entryExistsSQL, []) { trow ->
-            if (trow.rowCount > 0)
-                this.insert = false
+        def insertSQL = """insert into SHBCGPA (SHBCGPA_CAMP_GPA_IND, SHBCGPA_ACTIVITY_DATE, SHBCGPA_TPRT_CODE, SHBCGPA_TRMT_CODE, SHBCGPA_INST_FICE,
+                                                SHBCGPA_GSCALE_WEB_IND, SHBCGPA_XML_HOST_NAME, SHBCGPA_XML_USERNAME, SHBCGPA_XML_PASSWORD, SHBCGPA_AWARD_PREV_IND,
+                                                SHBCGPA_ROLL_STUDY_PATH_IND, SHBCGPA_ROLL_LEVEL_IND, SHBCGPA_ROLL_DEGREE_IND, SHBCGPA_ROLL_COLLEGE_IND, SHBCGPA_ROLL_PROGRAM_IND,
+                                                SHBCGPA_ROLL_PRIME_MAJOR_IND, SHBCGPA_SURROGATE_ID, SHBCGPA_VERSION, SHBCGPA_USER_ID, SHBCGPA_DATA_ORIGIN,
+                                                SHBCGPA_GRADTERM_CDE, SHBCGPA_STUDY_PATH_GPA_CDE)
+                                       values  (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+        if (connectInfo.debugThis) println insertSQL
+        try {
+            conn.executeUpdate(insertSQL, [this.campGpaInd, this.activityDate, this.tprtCode, this.trmtCode, this.instFice,
+                                           this.gscaleWebInd, this.xmlHostName, this.xmlUsername, this.xmlPassword, this.awardPrevInd,
+                                           this.rollStudyPathInd, this.rollLevelInd, this.rollDegreeInd, this.rollCollegeInd, this.rollProgramInd,
+                                           this.rollPrimeMajorInd, this.surrogateId, this.version, this.userId, this.dataOrigin,
+                                           this.gradtermCde, this.studyPathGpaCde])
+            connectInfo.tableUpdate("SHBCGPA", 0, 1, 0, 0, 0)
         }
-
-        if (this.insert) {
-
-            def insertSQL = """insert into SHBCGPA (SHBCGPA_CAMP_GPA_IND, SHBCGPA_ACTIVITY_DATE, SHBCGPA_TPRT_CODE, SHBCGPA_TRMT_CODE, SHBCGPA_INST_FICE,
-                                                    SHBCGPA_GSCALE_WEB_IND, SHBCGPA_XML_HOST_NAME, SHBCGPA_XML_USERNAME, SHBCGPA_XML_PASSWORD, SHBCGPA_AWARD_PREV_IND,
-                                                    SHBCGPA_ROLL_STUDY_PATH_IND, SHBCGPA_ROLL_LEVEL_IND, SHBCGPA_ROLL_DEGREE_IND, SHBCGPA_ROLL_COLLEGE_IND, SHBCGPA_ROLL_PROGRAM_IND,
-                                                    SHBCGPA_ROLL_PRIME_MAJOR_IND, SHBCGPA_SURROGATE_ID, SHBCGPA_VERSION, SHBCGPA_USER_ID, SHBCGPA_DATA_ORIGIN,
-                                                    SHBCGPA_GRADTERM_CDE, SHBCGPA_STUDY_PATH_GPA_CDE)
-                                           values  (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
-            if (connectInfo.debugThis) println insertSQL
-            try {
-                conn.executeUpdate(insertSQL, [this.campGpaInd, this.activityDate, this.tprtCode, this.trmtCode, this.instFice,
-                                               this.gscaleWebInd, this.xmlHostName, this.xmlUsername, this.xmlPassword, this.awardPrevInd,
-                                               this.rollStudyPathInd, this.rollLevelInd, this.rollDegreeInd, this.rollCollegeInd, this.rollProgramInd,
-                                               this.rollPrimeMajorInd, this.surrogateId, this.version, this.userId, this.dataOrigin,
-                                               this.gradtermCde, this.studyPathGpaCde])
-                connectInfo.tableUpdate("SHBCGPA", 0, 1, 0, 0, 0)
-            }
-            catch (Exception e) {
-                connectInfo.tableUpdate("SHBCGPA", 0, 0, 0, 1, 0)
-                if (connectInfo.showErrors) {
-                    println "Insert SHBCGPA ${this.xmlHostName}}"
-                    println "Problem executing insert  for table SHBCGPA from ShbcgpaDML.groovy: $e.message"
-                }
-            }
-        }
-        else {
-            def updateSql = """update SHBCGPA set SHBCGPA_STUDY_PATH_GPA_CDE=?"""
-
-            try {
-                conn.executeUpdate(updateSql, [this.studyPathGpaCde])
-                connectInfo.tableUpdate("SHBCGPA", 0, 0, 1, 0, 0)
-            }
-            catch (Exception e) {
-                connectInfo.tableUpdate("SHBCGPA", 0, 0, 0, 1, 0)
-                if (connectInfo.showErrors) {
-                    println "Update SHBCGPA ${this.xmlHostName}}"
-                    println "Problem executing update for table SHBCGPA from ShbcgpaDML.groovy: $e.message"
-                }
+        catch (Exception e) {
+            connectInfo.tableUpdate("SHBCGPA", 0, 0, 0, 1, 0)
+            if (connectInfo.showErrors) {
+                println "Insert SHBCGPA ${this.xmlHostName}}"
+                println "Problem executing insert  for table SHBCGPA from ShbcgpaDML.groovy: $e.message"
             }
         }
     }
