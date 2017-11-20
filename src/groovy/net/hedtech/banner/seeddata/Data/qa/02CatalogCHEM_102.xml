@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- *****************************************************************************
+Copyright 2016-2017 Ellucian Company L.P. and its affiliates.
+********************************************************************************* -->
 <CATALOGSELENIUM>
  <SCBCDEP>
   <SCBCDEP_COLL_CODE>00</SCBCDEP_COLL_CODE>
@@ -933,7 +936,7 @@
   <SCRCDTX_DEPT_CODE/>
   <SCRCDTX_EFF_TERM>200813</SCRCDTX_EFF_TERM>
   <SCRCDTX_SEQNO>1</SCRCDTX_SEQNO>
-  <SCRCDTX_TEXT>testing college text   ææææææ</SCRCDTX_TEXT>
+  <SCRCDTX_TEXT>testing college text   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</SCRCDTX_TEXT>
   <SCRCDTX_TEXT_CODE>A</SCRCDTX_TEXT_CODE>
   <SCRCDTX_ACTIVITY_DATE>12/12/2007</SCRCDTX_ACTIVITY_DATE>
   <SCRCDTX_SURROGATE_ID>33</SCRCDTX_SURROGATE_ID>
@@ -1717,7 +1720,7 @@
   <SCRCDTX_DEPT_CODE/>
   <SCRCDTX_EFF_TERM>200910</SCRCDTX_EFF_TERM>
   <SCRCDTX_SEQNO>1</SCRCDTX_SEQNO>
-  <SCRCDTX_TEXT>testing college text   ææææææ</SCRCDTX_TEXT>
+  <SCRCDTX_TEXT>testing college text   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</SCRCDTX_TEXT>
   <SCRCDTX_TEXT_CODE>A</SCRCDTX_TEXT_CODE>
   <SCRCDTX_ACTIVITY_DATE>02/24/2012</SCRCDTX_ACTIVITY_DATE>
   <SCRCDTX_SURROGATE_ID>364</SCRCDTX_SURROGATE_ID>
@@ -1955,7 +1958,7 @@
   <SCRCDTX_DEPT_CODE/>
   <SCRCDTX_EFF_TERM>202520</SCRCDTX_EFF_TERM>
   <SCRCDTX_SEQNO>1</SCRCDTX_SEQNO>
-  <SCRCDTX_TEXT>testing college text   ææææææ</SCRCDTX_TEXT>
+  <SCRCDTX_TEXT>testing college text   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</SCRCDTX_TEXT>
   <SCRCDTX_TEXT_CODE>A</SCRCDTX_TEXT_CODE>
   <SCRCDTX_ACTIVITY_DATE>09/20/2011</SCRCDTX_ACTIVITY_DATE>
   <SCRCDTX_SURROGATE_ID>164</SCRCDTX_SURROGATE_ID>
