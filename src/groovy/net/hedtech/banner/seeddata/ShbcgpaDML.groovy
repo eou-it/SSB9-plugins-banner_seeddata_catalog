@@ -98,8 +98,8 @@ class ShbcgpaDML {
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
-                    System.out.println("Problem executing delete from ShbcgpaDML.groovy: $e.message")
-                    System.out.println("${deleteSQL}")
+                    println "Problem executing delete from ShbcgpaDML.groovy: $e.message"
+                    println "${deleteSQL}"
                 }
             }
         }
