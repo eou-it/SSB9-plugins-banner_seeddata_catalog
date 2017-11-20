@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="Windows-1252" ?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 <!-- *****************************************************************************
-Copyright 2015 Ellucian Company L.P. and its affiliates.
+Copyright 2015-2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
-<SCHEDULED> 
-
+<SCHEDULED>
+<SOBODTE>
+ <SOBODTE_TERM_CODE>201410</SOBODTE_TERM_CODE>
+ <SOBODTE_INSM_CODE>TR</SOBODTE_INSM_CODE>
+ <SOBODTE_REG_START_DATE>01-SEP-10</SOBODTE_REG_START_DATE>
+ <SOBODTE_REG_END_DATE>31-DEC-25</SOBODTE_REG_END_DATE>
+ <SOBODTE_CENSUS_DATE_ONE>31-OCT-13</SOBODTE_CENSUS_DATE_ONE>
+ <SOBODTE_OVERRIDE_IND>Y</SOBODTE_OVERRIDE_IND>
+ <SOBODTE_ACTIVITY_DATE>01-JAN-10</SOBODTE_ACTIVITY_DATE>
+ <SOBODTE_USER_ID>GRAILS</SOBODTE_USER_ID>
+ <SOBODTE_DEPT_CODE/>
+ <SOBODTE_CAMP_CODE/>
+ <SOBODTE_COLL_CODE/>
+ <SOBODTE_SCHD_CODE>L</SOBODTE_SCHD_CODE>
+ <SOBODTE_CENSUS_DATE_TWO/>
+ <SOBODTE_DATA_ORIGIN>GRAILS</SOBODTE_DATA_ORIGIN>
+</SOBODTE>
 <SSBSECT>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
  <SSBSECT_TERM_CODE>201410</SSBSECT_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  <SSBSECT_CRN>20442</SSBSECT_CRN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
