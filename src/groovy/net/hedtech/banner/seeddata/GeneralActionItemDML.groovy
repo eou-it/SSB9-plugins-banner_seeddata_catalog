@@ -31,6 +31,7 @@ public class GeneralActionItemDML {
     int populationId
     int queryId
 
+
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
                                  def deleteNode ) {
         this.conn = conn
@@ -246,6 +247,9 @@ public class GeneralActionItemDML {
             apiData.GCRPOPC_POPV_ID[0].setValue( populationValueId.toString() )
             apiData.GCRPOPC_QRYV_ID[0].setValue( queryValueId.toString() )
         }
+        if (connectInfo.tableName == "MARKACTIONITEMPOSTED") {
+            conn.executeUpdate( "UPDATE GCBACTM SET GCBACTM_POSTED_IND = 'Y' WHERE GCBACTM_SURROGATE_ID  IN ( SELECT GCRAACT_GCBACTM_ID FROM GCRAACT) AND GCBACTM.GCBACTM_POSTED_IND='N'" )
+        }
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() {fields ->
@@ -258,7 +262,8 @@ public class GeneralActionItemDML {
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
 
     }
-    
+
+
     def getSelectionId() {
         String fsql = """select * from GCRSLIS WHERE ROWNUM = 1 """
         int fId
@@ -335,7 +340,7 @@ public class GeneralActionItemDML {
         deleteData( "GCRPOPV", "delete from GCRPOPV where 0 <> ? " )
         deleteData( "GCBPOPL", "delete from GCBPOPL where 0 <> ? " )
         deleteData( "GCRQRYV", "delete from GCRQRYV where 0 <> ? " )
-       // deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
+        // deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
         deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? " )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )
         deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
@@ -381,6 +386,7 @@ public class GeneralActionItemDML {
         }
     }
 
+
     def getFolderId( String folderName ) {
         String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
         int fId
@@ -399,7 +405,6 @@ public class GeneralActionItemDML {
         }
         return fId
     }
-
 
 
     def getQueryId( String queryName ) {
