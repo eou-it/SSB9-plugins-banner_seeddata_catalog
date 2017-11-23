@@ -250,6 +250,9 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "MARKACTIONITEMPOSTED") {
             conn.executeUpdate( "UPDATE GCBACTM SET GCBACTM_POSTED_IND = 'Y' WHERE GCBACTM_SURROGATE_ID  IN ( SELECT GCRAACT_GCBACTM_ID FROM GCRAACT) AND GCBACTM.GCBACTM_POSTED_IND='N'" )
         }
+        if (connectInfo.tableName == "MARKACTIONITEMGROUPPOSTED") {
+            conn.executeUpdate( "UPDATE GCBAGRP SET GCBAGRP_POSTED_IND = 'Y' WHERE GCBAGRP_SURROGATE_ID  IN ( SELECT GCRAACT_GCBAGRP_ID FROM GCRAACT) AND GCBAGRP_POSTED_IND='N'" )
+        }
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() {fields ->
