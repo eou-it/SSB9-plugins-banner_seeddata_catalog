@@ -15,7 +15,8 @@ class GurocfgDML {
     def userId
     def dataOrigin
     def activityDate
-    def ruleSeqNum
+    def userPreferenceIndicator
+    def configComment
     def version
 
     def InputData connectInfo
@@ -67,6 +68,8 @@ class GurocfgDML {
         this.userId = rule.GUROCFG_USER_ID.text()
         this.dataOrigin = rule.GUROCFG_DATA_ORIGIN.text()
         this.activityDate = rule.GUROCFG_ACTIVITY_DATE.text()
+        this.userPreferenceIndicator = rule.GUROCFG_USERPREF_IND.text()
+        this.configComment = rule.GUROCFG_COMMENTS.text()
     }
 
     def insertGuroCfgData() {
@@ -100,11 +103,11 @@ class GurocfgDML {
                     }
                 }
                 if (this.update) {
-                    def updateSql = """update GUROCFG set GUROCFG_NAME = ?, GUROCFG_VERSION =? , GUROCFG_TYPE = ?, GUROCFG_VALUE = ?,GUROCFG_USER_ID=?,GUROCFG_DATA_ORIGIN=?,GUROCFG_ACTIVITY_DATE=?
+                    def updateSql = """update GUROCFG set GUROCFG_NAME = ?,GUROCFG_TYPE = ?, GUROCFG_VALUE = ?,GUROCFG_USER_ID=?,GUROCFG_DATA_ORIGIN=?,GUROCFG_ACTIVITY_DATE=?, GUROCFG_USERPREF_IND = ?, GUROCFG_COMMENTS =?
                                         where GUROCFG_GUBAPPL_APP_ID =? and GUROCFG_SURROGATE_ID=?"""
 
                     try {
-                        conn.executeUpdate(updateSql, [this.configName, this.version, this.configType, this.configValue, this.userId, this.dataOrigin, this.activityDate, this.appId, this.configSeqNum])
+                        conn.executeUpdate(updateSql, [this.configName, this.configType, this.configValue, this.userId, this.dataOrigin, this.activityDate, this.userPreferenceIndicator, this.configComment, this.appId, this.configSeqNum])
                         connectInfo.tableUpdate("GUROCFG", 0, 0, 1, 0, 0)
                     }
                     catch (Exception e) {
@@ -115,11 +118,11 @@ class GurocfgDML {
                         }
                     }
                 } else {
-                    def insertSQL = """insert into GUROCFG (GUROCFG_SURROGATE_ID, GUROCFG_VERSION, GUROCFG_NAME,GUROCFG_TYPE,GUROCFG_VALUE,GUROCFG_GUBAPPL_APP_ID,GUROCFG_USER_ID,GUROCFG_DATA_ORIGIN,GUROCFG_ACTIVITY_DATE) values (?,?,?,?,?,?,?,?,?)"""
+                    def insertSQL = """insert into GUROCFG (GUROCFG_SURROGATE_ID, GUROCFG_VERSION, GUROCFG_NAME,GUROCFG_TYPE,GUROCFG_VALUE,GUROCFG_GUBAPPL_APP_ID,GUROCFG_USER_ID,GUROCFG_DATA_ORIGIN,GUROCFG_ACTIVITY_DATE,GUROCFG_USERPREF_IND, GUROCFG_COMMENTS) values (?,?,?,?,?,?,?,?,?,?,?)"""
                     if (connectInfo.debugThis) println insertSQL
                     try {
                         this.configSeqNum =
-                                conn.executeUpdate(insertSQL, [this.configSeqNum, this.version, this.configName, this.configType, this.configValue, this.appId, this.userId, this.dataOrigin, this.activityDate])
+                                conn.executeUpdate(insertSQL, [this.configSeqNum, this.version, this.configName, this.configType, this.configValue, this.appId, this.userId, this.dataOrigin, this.activityDate, this.userPreferenceIndicator, this.configComment])
                         connectInfo.tableUpdate("GUROCFG", 0, 1, 0, 0, 0)
                     }
                     catch (Exception e) {
