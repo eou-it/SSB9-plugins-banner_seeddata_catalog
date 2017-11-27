@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <BLOCKREGISTRATION>
 
@@ -344,7 +344,7 @@ Copyright 2010-2016 Ellucian Company L.P. and its affiliates.
 	</SFRBRDB>
     <SOBTERM>
         <SOBTERM_TERM_CODE>201620</SOBTERM_TERM_CODE>
-        <SOBTERM_CRN_ONEUP>20000</SOBTERM_CRN_ONEUP>
+        <SOBTERM_CRN_ONEUP>20020</SOBTERM_CRN_ONEUP>
         <SOBTERM_REG_ALLOWED>Y</SOBTERM_REG_ALLOWED>
         <SOBTERM_READM_REQ></SOBTERM_READM_REQ>
         <SOBTERM_FEE_ASSESSMENT>Y</SOBTERM_FEE_ASSESSMENT>
