@@ -327,6 +327,8 @@ public class InputData {
             'aip'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
+												  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData3.xml',
+												  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData4.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
