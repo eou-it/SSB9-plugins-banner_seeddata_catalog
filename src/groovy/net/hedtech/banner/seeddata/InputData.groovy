@@ -246,6 +246,8 @@ public class InputData {
             'curriculum-validation'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
             'sde'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
+            'extensibility'                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData3.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData4.xml'],
             //TODO Remove SMBPGEN seed for program BA-ECON once it gets added to vagrant
             'program-data'                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramData.xml'],
             'generalstudent'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentData.xml',
@@ -327,8 +329,6 @@ public class InputData {
             'aip'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
-												  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData3.xml',
-												  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData4.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
