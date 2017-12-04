@@ -246,8 +246,8 @@ public class InputData {
             'curriculum-validation'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],
             'catalog-selenium'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSelenium.xml'],
             'sde'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
-            'extensibility'                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData3.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderseedData4.xml'],
+            'extensibility'                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderData1.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderData2.xml'],
             //TODO Remove SMBPGEN seed for program BA-ECON once it gets added to vagrant
             'program-data'                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramData.xml'],
             'generalstudent'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentData.xml',
