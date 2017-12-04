@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ Copyright 2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -8,7 +8,7 @@ import groovy.sql.Sql
 import java.sql.Connection
 
 /**
- * General Person ID DML
+ * PageBuilder DML
  */
 
 public class CreatePageBuilderUserDML {
