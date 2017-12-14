@@ -8,7 +8,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCVASTS_SURROGATE_ID>1</GCVASTS_SURROGATE_ID>
         <GCVASTS_STATUS_RULE_NAME>Pending</GCVASTS_STATUS_RULE_NAME>
         <GCVASTS_BLOCK_PROCESS_IND>N</GCVASTS_BLOCK_PROCESS_IND>
-        <GCVASTS_USER_ID>CSRADM001</GCVASTS_USER_ID>
+        <GCVASTS_USER_ID>AIPADM001</GCVASTS_USER_ID>
         <GCVASTS_SYSTEM_REQUIRED>Y</GCVASTS_SYSTEM_REQUIRED>
         <GCVASTS_ACTIVE_IND>Y</GCVASTS_ACTIVE_IND>
         <GCVASTS_DEFAULT_IND>Y</GCVASTS_DEFAULT_IND>
@@ -21,7 +21,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCVASTS_SURROGATE_ID>2</GCVASTS_SURROGATE_ID>
         <GCVASTS_STATUS_RULE_NAME>Completed</GCVASTS_STATUS_RULE_NAME>
         <GCVASTS_BLOCK_PROCESS_IND>N</GCVASTS_BLOCK_PROCESS_IND>
-        <GCVASTS_USER_ID>CSRADM001</GCVASTS_USER_ID>
+        <GCVASTS_USER_ID>AIPADM001</GCVASTS_USER_ID>
         <GCVASTS_SYSTEM_REQUIRED>Y</GCVASTS_SYSTEM_REQUIRED>
         <GCVASTS_ACTIVE_IND>Y</GCVASTS_ACTIVE_IND>
         <GCVASTS_ACTIVITY_DATE>29-03-2016</GCVASTS_ACTIVITY_DATE>
@@ -34,7 +34,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCVASTS_SURROGATE_ID>2</GCVASTS_SURROGATE_ID>
         <GCVASTS_STATUS_RULE_NAME>Rejected</GCVASTS_STATUS_RULE_NAME>
         <GCVASTS_BLOCK_PROCESS_IND>N</GCVASTS_BLOCK_PROCESS_IND>
-        <GCVASTS_USER_ID>CSRADM001</GCVASTS_USER_ID>
+        <GCVASTS_USER_ID>AIPADM001</GCVASTS_USER_ID>
         <GCVASTS_SYSTEM_REQUIRED>Y</GCVASTS_SYSTEM_REQUIRED>
         <GCVASTS_ACTIVE_IND>Y</GCVASTS_ACTIVE_IND>
         <GCVASTS_ACTIVITY_DATE>29-03-2016</GCVASTS_ACTIVITY_DATE>
@@ -47,7 +47,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRFLDR_SURROGATE_ID>1</GCRFLDR_SURROGATE_ID>
         <GCRFLDR_INTERNAL>0</GCRFLDR_INTERNAL>
         <GCRFLDR_NAME>AIPstudent</GCRFLDR_NAME>
-        <GCRFLDR_USER_ID>CSRADM001</GCRFLDR_USER_ID>
+        <GCRFLDR_USER_ID>AIPADM001</GCRFLDR_USER_ID>
         <GCRFLDR_ACTIVITY_DATE>01-01-2016</GCRFLDR_ACTIVITY_DATE>
         <GCRFLDR_DESCRIPTION>AIPSTudent</GCRFLDR_DESCRIPTION>
         <GCRFLDR_DATA_ORIGIN>AIP</GCRFLDR_DATA_ORIGIN>
@@ -59,7 +59,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRFLDR_SURROGATE_ID>2</GCRFLDR_SURROGATE_ID>
         <GCRFLDR_INTERNAL>0</GCRFLDR_INTERNAL>
         <GCRFLDR_NAME>AIPbanner</GCRFLDR_NAME>
-        <GCRFLDR_USER_ID>CSRADM001</GCRFLDR_USER_ID>
+        <GCRFLDR_USER_ID>AIPADM001</GCRFLDR_USER_ID>
         <GCRFLDR_ACTIVITY_DATE>01-01-2016</GCRFLDR_ACTIVITY_DATE>
         <GCRFLDR_DESCRIPTION>AIPbanner</GCRFLDR_DESCRIPTION>
         <GCRFLDR_DATA_ORIGIN>AIP</GCRFLDR_DATA_ORIGIN>
@@ -71,7 +71,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRFLDR_SURROGATE_ID>3</GCRFLDR_SURROGATE_ID>
         <GCRFLDR_INTERNAL>0</GCRFLDR_INTERNAL>
         <GCRFLDR_NAME>AIPgeneral</GCRFLDR_NAME>
-        <GCRFLDR_USER_ID>CSRADM001</GCRFLDR_USER_ID>
+        <GCRFLDR_USER_ID>AIPADM001</GCRFLDR_USER_ID>
         <GCRFLDR_ACTIVITY_DATE>01-01-2016</GCRFLDR_ACTIVITY_DATE>
         <GCRFLDR_DESCRIPTION>AIPGeneral</GCRFLDR_DESCRIPTION>
         <GCRFLDR_DATA_ORIGIN>AIP</GCRFLDR_DATA_ORIGIN>
@@ -83,7 +83,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRFLDR_SURROGATE_ID>4</GCRFLDR_SURROGATE_ID>
         <GCRFLDR_INTERNAL>0</GCRFLDR_INTERNAL>
         <GCRFLDR_NAME>قبول الوكالة</GCRFLDR_NAME>
-        <GCRFLDR_USER_ID>CSRADM001</GCRFLDR_USER_ID>
+        <GCRFLDR_USER_ID>AIPADM001</GCRFLDR_USER_ID>
         <GCRFLDR_ACTIVITY_DATE>01-01-2016</GCRFLDR_ACTIVITY_DATE>
         <GCRFLDR_DESCRIPTION>قبول الوكالة</GCRFLDR_DESCRIPTION>
         <GCRFLDR_DATA_ORIGIN>Banner</GCRFLDR_DATA_ORIGIN>
@@ -202,12 +202,12 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Registration Process Training</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>It takes just 10 minutes, review the training video provided to help expedite your
             registration experience.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM001</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM001</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -217,12 +217,12 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Personal Information</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>It is important that we have your current information such as your name, and contact
             information therefore it is required that you review, update and confirm your personal information.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM001</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM001</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -232,9 +232,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Meet with Advisor</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
-        <GCBACTM_CREATOR_ID>CSRADM001</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM001</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -244,11 +244,11 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Proof of GCBACTM_TITLE</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM001</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM001</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>All incoming students are required to submit an approved document as proof of residency.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM001</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM001</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -258,12 +258,12 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Policy Handbook</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The Ellucian University Policy Handbook provides information including graduation
             requirements, degree programs offered, admission requirements and general academic regulations.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM002</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM002</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -273,11 +273,11 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Notice of Right to Change Requirements</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Please review the Ellucian University Right to Change Requirements policy statement
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM002</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM002</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -287,7 +287,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Notice of Non-Discrimination Policy</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Ellucian University prohibits discrimination, including any form of harassment, by
             employees, faculty, students, contractors, or agents
@@ -297,7 +297,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Title IX regulations require nondiscrimination
             on the basis of sex or gender.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM002</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM002</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -307,13 +307,13 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Please Review the University Mission Statement</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>I</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Ellucian University prepares learners to become global citizens, critical thinkers,
             effective communicators, and responsible leaders by
             providing an academically challenging, values-based curriculum.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM002</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM002</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -323,7 +323,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Please Review the Attendance Policy</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM002</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM002</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>A student who is not officially registered may not attend a university course.
 
@@ -344,7 +344,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             instructors requiring mandatory make-up sessions may not penalize students if they are unable to attend due
             to time conflicts, etc.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM002</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM002</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -354,14 +354,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Notice of Scholastic Standards</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The University’s regulations on academic standards are established by the University Senate
             and implemented by the Academic Evaluation and Standards Committee. This committee has assigned the
             responsibility of monitoring the academic progress of under­graduate students to University College
             Advising.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM003</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM003</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -371,13 +371,13 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Deans List</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Students who earn a 3.5 GPA or better for at least 12 graded credit hours for an academic
             term are placed on the deans list. Students receive notification of this honor on the Campus Information
             System and it is noted on their transcript.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM003</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM003</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -387,13 +387,13 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>All staff: Prepare for winter snow</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>D</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>With the winter season fast approaching. Please prepare yourself for the upcoming snow by
             reviewing the Facilities Department Winter Season and Snow Removal FAQ’s and the 2013-2014 Snow Removal
             Grounds Care Assignment Chart.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM003</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM003</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -405,7 +405,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Click the DONATE button on your school website, and what do you see? Photos of smiling
             students engaged in learning? A few words making the case for supporting the special place that is your
@@ -413,7 +413,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             your school via www.GiveMN.org. You can find Give to the Max Day materials in Hmong, Karen, Somali and
             Spanish by checking out the right-hand column at http://www.spps.org/toolkit.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM003</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM003</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -423,7 +423,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>School staff: Register for Yoga Calm training</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>D</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM003</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM003</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Yoga Calm is a program that teaches the scientific practices of mindfulness,
             social/emotional learning and yoga-based movement. Learn and apply practical, research-based interventions
@@ -432,7 +432,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             learning environment and classroom culture. This opportunity is funded by Statewide Health Improvement Plan
             (SHIP) in a grant from Saint Paul Ramsey County Public Health.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM003</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM003</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -442,7 +442,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Teachers: Fund for Teachers deadline is January 30, 2014</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>I</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>Fund for Teachers (FFT) provides educators who possess a broad vision of what it means to
             teach and learn with resources to pursue self-designed professional learning experiences. FFT grants can be
@@ -461,7 +461,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             eligibility criteria). To confirm eligibility, please contact Kathy Weyandt, kathy.weyandt@spps.org, 7-8373.
             The Saint Paul Fund For Teachers is sponsored by the SPPS Foundation.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM004</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM004</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -471,7 +471,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Teachers: Register for service-learning and We Act trainings</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>I</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>On November 15, the SPPS Community Education Service-Learning Program is hosting two
             training opportunities about service-learning that will include information on organizations that offer
@@ -490,7 +490,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 
             For more information call the Service-Learning Program at 651-487-7383 or email service-learning@spps.org.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM004</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM004</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -501,7 +501,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>I</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The 2nd grade Strategic Science and Engineering Initiative (SSEI) trip for 2013 is to
             Minnesota Children’s Museum (MCM). This trip is fully funded by a grant from 3M.
@@ -552,7 +552,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Enter Campus enrollments for students transferring from one SPPS school to another.
             Please contact Erin Moline 651-632-3740 or Jayné Williams 651-632-3722 with questions.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM004</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM004</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -562,7 +562,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Please read the Minimum GPA requirements</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>All undergraduate students are required to maintain a cumulative GPA of at least 2.0 (C
             average): Transfer students should be aware that the cumulative GPA is computed only on the basis of
@@ -571,7 +571,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Specific departments or colleges may have more stringent requirements for retention in their programs than
             the overall University requirements.
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM004</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM004</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -581,12 +581,12 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>Inspection Notice</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>D</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM004</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM004</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>You are hereby notified of an upcoming inspection of something, by someone, for some
             reason. It will probably occur on some date, so please be ready before then! That is all!!!
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM004</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM004</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -596,7 +596,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>!@#$%^&amp;*()_+=-1234567890-[}{]\|</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>There is a house in New Orleans
             They call the Rising Sun
@@ -623,7 +623,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             And it&apos;s been the ruin of many a poor boy
             And God I know I&apos;m one
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM005</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM005</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -633,7 +633,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>The Declaration of Independence</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>The Declaration of Independence: A Transcription
 
@@ -823,7 +823,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             New Hampshire:
             Matthew Thornton
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM005</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM005</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -835,10 +835,10 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>D</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>1</GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM005</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM005</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -848,11 +848,11 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>One Long Word</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>3</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
         <GCBACTM_DESCRIPTION>ASDFGHJKLQWERTYUUUUUUIIIIIIIIIOOOOOOPPPPPPPPPPPPPPZXCVBNMasdfghjklqwertyuiiiopzxcvbnm
         </GCBACTM_DESCRIPTION>
-        <GCBACTM_CREATOR_ID>CSRADM005</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM005</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBACTM>
@@ -862,9 +862,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBACTM_TITLE>@</GCBACTM_TITLE>
         <GCBACTM_GCRFLDR_ID>1</GCBACTM_GCRFLDR_ID>
         <GCBACTM_STATUS_CODE>A</GCBACTM_STATUS_CODE>
-        <GCBACTM_USER_ID>CSRADM005</GCBACTM_USER_ID>
+        <GCBACTM_USER_ID>AIPADM005</GCBACTM_USER_ID>
         <GCBACTM_ACTIVITY_DATE>28-01-2016</GCBACTM_ACTIVITY_DATE>
-        <GCBACTM_CREATOR_ID>CSRADM005</GCBACTM_CREATOR_ID>
+        <GCBACTM_CREATOR_ID>AIPADM005</GCBACTM_CREATOR_ID>
         <GCBACTM_CREATE_DATE>28-01-2016</GCBACTM_CREATE_DATE>
     </GCBACTM>
     <GCBPBTR>
@@ -873,7 +873,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBPBTR_TEMPLATE_NAME>Master Template</GCBPBTR_TEMPLATE_NAME>
         <GCBPBTR_PAGE_ID>AIPMasterTemplateSystemRequired</GCBPBTR_PAGE_ID>
         <GCBPBTR_SOURCE_IND>B</GCBPBTR_SOURCE_IND>
-        <GCBPBTR_USER_ID>CSRADM001</GCBPBTR_USER_ID>
+        <GCBPBTR_USER_ID>AIPADM001</GCBPBTR_USER_ID>
         <GCBPBTR_SYSTEM_REQUIRED>Y</GCBPBTR_SYSTEM_REQUIRED>
         <GCBPBTR_ACTIVE_IND>Y</GCBPBTR_ACTIVE_IND>
         <GCBPBTR_ACTIVITY_DATE>29-03-2016</GCBPBTR_ACTIVITY_DATE>
@@ -1212,7 +1212,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM002</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Notice of Right to Change Requirements</ACTIONITEMNAME>
@@ -1320,7 +1320,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM002</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Notice of Non-Discrimination Policy</ACTIONITEMNAME>
@@ -1342,7 +1342,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM002</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Please Review the University Mission Statement</ACTIONITEMNAME>
@@ -1355,7 +1355,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM002</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Please Review the Attendance Policy</ACTIONITEMNAME>
@@ -1387,7 +1387,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR002</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM002</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
@@ -1520,14 +1520,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Deans List</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>12</GCRACNT_SURROGATE_ID>
         <GCRACNT_GCBACTM_ID>12</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>All staff: Prepare for winter snow</ACTIONITEMNAME>
@@ -1548,14 +1548,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>All staff: Time to encourage your friends to Give to the Max</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>14</GCRACNT_SURROGATE_ID>
         <GCRACNT_GCBACTM_ID>14</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>School staff: Register for Yoga Calm training</ACTIONITEMNAME>
@@ -1620,7 +1620,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR003</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM003</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Teachers: Fund for Teachers deadline is January 30, 2014</ACTIONITEMNAME>
@@ -1642,7 +1642,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Teachers: Register for service-learning and We Act trainings</ACTIONITEMNAME>
@@ -1659,7 +1659,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>2nd grade teachers: Schedule a trip at Minnesota Museum</ACTIONITEMNAME>
@@ -1672,7 +1672,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Please read the Minimum GPA requirements</ACTIONITEMNAME>
@@ -1753,14 +1753,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>Inspection Notice</ACTIONITEMNAME>
         <GCRACNT_SURROGATE_ID>20</GCRACNT_SURROGATE_ID>
         <GCRACNT_GCBACTM_ID>20</GCRACNT_GCBACTM_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR004</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM004</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>!@#$%^&amp;*()_+=-1234567890-[}{]\|</ACTIONITEMNAME>
@@ -1774,7 +1774,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM005</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
@@ -1786,7 +1786,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM005</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>123456789101112131415161718192021222324252627282930313233343</ACTIONITEMNAME>
@@ -1801,7 +1801,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM005</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>One Long Word</ACTIONITEMNAME>
@@ -1814,7 +1814,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM005</GCRACNT_USER_ID>
     </GCRACNT>
     <GCRACNT>
         <ACTIONITEMNAME>@</ACTIONITEMNAME>
@@ -1828,7 +1828,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRACNT_ACTION_ITEM_TEXT>
         <GCRACNT_GCBPBTR_ID>1</GCRACNT_GCBPBTR_ID>
         <GCRACNT_ACTIVITY_DATE>28-01-2016</GCRACNT_ACTIVITY_DATE>
-        <GCRACNT_USER_ID>CSRAOR005</GCRACNT_USER_ID>
+        <GCRACNT_USER_ID>AIPADM005</GCRACNT_USER_ID>
     </GCRACNT>
     <GCBAGRP>
         <FOLDER>AIPstudent</FOLDER>
@@ -1862,7 +1862,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Ah, but I was so much older then Im younger than that now
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1874,7 +1874,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
         <GCBAGRP_INSTRUCTION>!@#$%^{}*()_+[]~/*</GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>28-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1887,7 +1887,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_INSTRUCTION>Oh, I dont think Im a lot dumber than you think that I thought that I thought I was once.
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM002</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM002</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>27-03-2015</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1902,7 +1902,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             the same as silicosis.
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM002</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM002</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>30-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1914,7 +1914,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
         <GCBAGRP_INSTRUCTION>It is.</GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2014</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1927,7 +1927,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_INSTRUCTION>Remember the 5 Ds of dodgeball: Dodge, duck, dip, dive and dodge. - Patches Ohoulihan
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2013</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1939,7 +1939,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_GCRFLDR_ID>1</GCBAGRP_GCRFLDR_ID>
         <GCBAGRP_INSTRUCTION>If you can dodge a wrench, you can dodge a ball. - Patches OHoulihan.</GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>D</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM003</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM003</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>15-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1951,7 +1951,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
         <GCBAGRP_INSTRUCTION>England expects that every man will do his duty</GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>I</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM004</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM004</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>01-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1965,7 +1965,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             ShehidesinanatticconcealedonashelfBehindvolumesofliteraturebasedonherselfAndrunsacrossthepageslikesometinyelfKnowingthatitshardtofindStuffwaybackinhermind,WindsupspendingallofhertimeTryingtomemorizeeveryline
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM004</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM004</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>16-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -1977,7 +1977,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBAGRP_GCRFLDR_ID>2</GCBAGRP_GCRFLDR_ID>
         <GCBAGRP_INSTRUCTION>A</GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM004</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM004</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -2174,7 +2174,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             Matthew Thornton
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -2343,7 +2343,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             president of the United States, Donald J. Trump!”
         </GCBAGRP_INSTRUCTION>
         <GCBAGRP_STATUS_CODE>A</GCBAGRP_STATUS_CODE>
-        <GCBAGRP_USER_ID>CSRADM001</GCBAGRP_USER_ID>
+        <GCBAGRP_USER_ID>AIPADM001</GCBAGRP_USER_ID>
         <GCBAGRP_ACTIVITY_DATE>29-03-2016</GCBAGRP_ACTIVITY_DATE>
         <GCBAGRP_DATA_ORIGIN>AIP</GCBAGRP_DATA_ORIGIN>
     </GCBAGRP>
@@ -5225,7 +5225,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5245,7 +5245,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5265,7 +5265,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5285,7 +5285,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5304,7 +5304,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5323,7 +5323,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5343,7 +5343,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5363,7 +5363,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5382,7 +5382,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5401,7 +5401,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <ACTIONGROUPNAME>Enrollment</ACTIONGROUPNAME>
         <GCRAACT_GCBAGRP_ID>1</GCRAACT_GCBAGRP_ID>
         <GCRAACT_GCVASTS_ID>1</GCRAACT_GCVASTS_ID>
-        <GCRAACT_USER_ID>CSRADM001</GCRAACT_USER_ID>
+        <GCRAACT_USER_ID>AIPADM001</GCRAACT_USER_ID>
         <GCRAACT_ACTIVITY_DATE>12-05-2016</GCRAACT_ACTIVITY_DATE>
         <GCRAACT_CREATOR_ID>AIP</GCRAACT_CREATOR_ID>
         <GCRAACT_VERSION></GCRAACT_VERSION>
@@ -5418,7 +5418,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>That is absurd.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5432,7 +5432,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I do not think so.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5446,7 +5446,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>When pigs fly.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5460,7 +5460,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>Not in my life time.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5474,7 +5474,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>It&apos;s not going to happen.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5488,7 +5488,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I beg to differ.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5502,7 +5502,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>Are you out of my mind.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5516,7 +5516,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>You can’t be serious</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5530,7 +5530,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>No Way</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5544,7 +5544,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>Bad idea</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5558,7 +5558,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I disagree.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5572,7 +5572,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I do not agree.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5586,7 +5586,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>Not on my watch.</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5600,7 +5600,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>2</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I do not agree at all</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5614,7 +5614,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I need more time</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5628,7 +5628,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I&apos;ll decide later</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5642,7 +5642,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I have to research this</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5656,7 +5656,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I need to consult with someone before I decide</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5670,7 +5670,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>Unknown</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5684,7 +5684,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>I don&apos;t know</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5698,7 +5698,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRAISR_SEQ_ORDER>3</GCRAISR_SEQ_ORDER>
         <GCRAISR_LABEL_TEXT>Pending</GCRAISR_LABEL_TEXT>
         <GCRAISR_ACTIVITY_DATE>27-10-2016</GCRAISR_ACTIVITY_DATE>
-        <GCRAISR_USER_ID>CSRADM001</GCRAISR_USER_ID>
+        <GCRAISR_USER_ID>AIPADM001</GCRAISR_USER_ID>
         <GCRAISR_VERSION>0</GCRAISR_VERSION>
         <GCRAISR_VPDI_CODE></GCRAISR_VPDI_CODE>
         <GCRAISR_DATA_ORIGIN></GCRAISR_DATA_ORIGIN>
@@ -5723,7 +5723,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             <GUROCFG_VERSION></GUROCFG_VERSION>
             <GUROCFG_DATA_ORIGIN>AIP</GUROCFG_DATA_ORIGIN>
             <GUROCFG_ACTIVITY_DATE>14-2-2016</GUROCFG_ACTIVITY_DATE>
-            <GUROCFG_USER_ID>CSRADM001</GUROCFG_USER_ID>
+            <GUROCFG_USER_ID>AIPADM001</GUROCFG_USER_ID>
             <GUROCFG_VPDI_CODE></GUROCFG_VPDI_CODE>
         </GUROCFG>
 
@@ -5737,7 +5737,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
             <GUROCFG_VERSION></GUROCFG_VERSION>
             <GUROCFG_DATA_ORIGIN>AIP</GUROCFG_DATA_ORIGIN>
             <GUROCFG_ACTIVITY_DATE>14-2-2016</GUROCFG_ACTIVITY_DATE>
-            <GUROCFG_USER_ID>CSRADM001</GUROCFG_USER_ID>
+            <GUROCFG_USER_ID>AIPADM001</GUROCFG_USER_ID>
             <GUROCFG_VPDI_CODE></GUROCFG_VPDI_CODE>
         </GUROCFG>
 -->
@@ -5995,6 +5995,61 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <FOLDERNAME>AIPstudent</FOLDERNAME>
         <GCBPOPL_FOLDER_ID>-1</GCBPOPL_FOLDER_ID>
         <GCBPOPL_CREATE_DATE>09-OCT-17</GCBPOPL_CREATE_DATE>
+        <GCBPOPL_NAME>CSR Student Population</GCBPOPL_NAME>
+        <GCBPOPL_DESCRIPTION>All Students with ID beginning with CSRSTU</GCBPOPL_DESCRIPTION>
+        <GCBPOPL_USER_ID>AIPADM001</GCBPOPL_USER_ID>
+        <GCBPOPL_ACTIVITY_DATE>09-OCT-17</GCBPOPL_ACTIVITY_DATE>
+        <GCBPOPL_CHANGED_IND>N</GCBPOPL_CHANGED_IND>
+    </GCBPOPL>
+    <GCBPOPL>
+        <GCBPOPL_CREATOR_ID>AIPADM002</GCBPOPL_CREATOR_ID>
+        <FOLDERNAME>AIPstudent</FOLDERNAME>
+        <GCBPOPL_FOLDER_ID>-1</GCBPOPL_FOLDER_ID>
+        <GCBPOPL_CREATE_DATE>09-OCT-17</GCBPOPL_CREATE_DATE>
+        <GCBPOPL_NAME>CSR Student Population</GCBPOPL_NAME>
+        <GCBPOPL_DESCRIPTION>All Students with ID beginning with CSRSTU</GCBPOPL_DESCRIPTION>
+        <GCBPOPL_USER_ID>AIPADM002</GCBPOPL_USER_ID>
+        <GCBPOPL_ACTIVITY_DATE>09-OCT-17</GCBPOPL_ACTIVITY_DATE>
+        <GCBPOPL_CHANGED_IND>N</GCBPOPL_CHANGED_IND>
+    </GCBPOPL>
+    <GCBPOPL>
+        <GCBPOPL_CREATOR_ID>AIPADM003</GCBPOPL_CREATOR_ID>
+        <FOLDERNAME>AIPstudent</FOLDERNAME>
+        <GCBPOPL_FOLDER_ID>-1</GCBPOPL_FOLDER_ID>
+        <GCBPOPL_CREATE_DATE>09-OCT-17</GCBPOPL_CREATE_DATE>
+        <GCBPOPL_NAME>CSR Student Population</GCBPOPL_NAME>
+        <GCBPOPL_DESCRIPTION>All Students with ID beginning with CSRSTU</GCBPOPL_DESCRIPTION>
+        <GCBPOPL_USER_ID>AIPADM003</GCBPOPL_USER_ID>
+        <GCBPOPL_ACTIVITY_DATE>09-OCT-17</GCBPOPL_ACTIVITY_DATE>
+        <GCBPOPL_CHANGED_IND>N</GCBPOPL_CHANGED_IND>
+    </GCBPOPL>
+    <GCBPOPL>
+        <GCBPOPL_CREATOR_ID>AIPADM004</GCBPOPL_CREATOR_ID>
+        <FOLDERNAME>AIPstudent</FOLDERNAME>
+        <GCBPOPL_FOLDER_ID>-1</GCBPOPL_FOLDER_ID>
+        <GCBPOPL_CREATE_DATE>09-OCT-17</GCBPOPL_CREATE_DATE>
+        <GCBPOPL_NAME>CSR Student Population</GCBPOPL_NAME>
+        <GCBPOPL_DESCRIPTION>All Students with ID beginning with CSRSTU</GCBPOPL_DESCRIPTION>
+        <GCBPOPL_USER_ID>AIPADM004</GCBPOPL_USER_ID>
+        <GCBPOPL_ACTIVITY_DATE>09-OCT-17</GCBPOPL_ACTIVITY_DATE>
+        <GCBPOPL_CHANGED_IND>N</GCBPOPL_CHANGED_IND>
+    </GCBPOPL>
+    <GCBPOPL>
+        <GCBPOPL_CREATOR_ID>AIPADM005</GCBPOPL_CREATOR_ID>
+        <FOLDERNAME>AIPstudent</FOLDERNAME>
+        <GCBPOPL_FOLDER_ID>-1</GCBPOPL_FOLDER_ID>
+        <GCBPOPL_CREATE_DATE>09-OCT-17</GCBPOPL_CREATE_DATE>
+        <GCBPOPL_NAME>CSR Student Population</GCBPOPL_NAME>
+        <GCBPOPL_DESCRIPTION>All Students with ID beginning with CSRSTU</GCBPOPL_DESCRIPTION>
+        <GCBPOPL_USER_ID>AIPADM005</GCBPOPL_USER_ID>
+        <GCBPOPL_ACTIVITY_DATE>09-OCT-17</GCBPOPL_ACTIVITY_DATE>
+        <GCBPOPL_CHANGED_IND>N</GCBPOPL_CHANGED_IND>
+    </GCBPOPL>
+    <GCBPOPL>
+        <GCBPOPL_CREATOR_ID>AIPADM001</GCBPOPL_CREATOR_ID>
+        <FOLDERNAME>AIPstudent</FOLDERNAME>
+        <GCBPOPL_FOLDER_ID>-1</GCBPOPL_FOLDER_ID>
+        <GCBPOPL_CREATE_DATE>09-OCT-17</GCBPOPL_CREATE_DATE>
         <GCBPOPL_NAME>Quinley Student Population</GCBPOPL_NAME>
         <GCBPOPL_DESCRIPTION>Quinley Student Population</GCBPOPL_DESCRIPTION>
         <GCBPOPL_USER_ID>AIPADM001</GCBPOPL_USER_ID>
@@ -6013,25 +6068,76 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBPOPL_CHANGED_IND>N</GCBPOPL_CHANGED_IND>
     </GCBPOPL>
     <GCRPOPV>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
+        <GCRPOPV_CREATOR_ID>AIPADM001</GCRPOPV_CREATOR_ID>
+        <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
+        <GCRPOPV_USER_ID>AIPADM001</GCRPOPV_USER_ID>
+        <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
+    </GCRPOPV>
+    <GCRPOPV>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
+        <GCRPOPV_CREATOR_ID>AIPADM002</GCRPOPV_CREATOR_ID>
+        <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
+        <GCRPOPV_USER_ID>AIPADM002</GCRPOPV_USER_ID>
+        <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
+    </GCRPOPV>
+    <GCRPOPV>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
+        <GCRPOPV_CREATOR_ID>AIPADM003</GCRPOPV_CREATOR_ID>
+        <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
+        <GCRPOPV_USER_ID>AIPADM003</GCRPOPV_USER_ID>
+        <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
+    </GCRPOPV>
+    <GCRPOPV>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
+        <GCRPOPV_CREATOR_ID>AIPADM004</GCRPOPV_CREATOR_ID>
+        <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
+        <GCRPOPV_USER_ID>AIPADM004</GCRPOPV_USER_ID>
+        <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
+    </GCRPOPV>
+    <GCRPOPV>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
+        <GCRPOPV_CREATOR_ID>AIPADM005</GCRPOPV_CREATOR_ID>
+        <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
+        <GCRPOPV_USER_ID>AIPADM005</GCRPOPV_USER_ID>
+        <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
+    </GCRPOPV>
+    <GCRPOPV>
         <POPULATIONNAME>Quinley Student Population</POPULATIONNAME>
         <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
         <GCRPOPV_CREATOR_ID>AIPADM001</GCRPOPV_CREATOR_ID>
         <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
-        <GCRPOPV_USER_ID>BCMADMIN</GCRPOPV_USER_ID>
+        <GCRPOPV_USER_ID>AIPADM001</GCRPOPV_USER_ID>
         <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
-
     </GCRPOPV>
     <GCRPOPV>
         <POPULATIONNAME>Quinley Population 1</POPULATIONNAME>
         <GCRPOPV_POPL_ID>-1</GCRPOPV_POPL_ID>
         <GCRPOPV_CREATOR_ID>AIPADM001</GCRPOPV_CREATOR_ID>
         <GCRPOPV_CREATE_DATE>09-OCT-17</GCRPOPV_CREATE_DATE>
-        <GCRPOPV_USER_ID>BCMADMIN</GCRPOPV_USER_ID>
+        <GCRPOPV_USER_ID>AIPADM001</GCRPOPV_USER_ID>
         <GCRPOPV_ACTIVITY_DATE>09-OCT-17</GCRPOPV_ACTIVITY_DATE>
-
     </GCRPOPV>
-
-
+    <GCBQURY>
+        <GCBQURY_NAME>CSR Student List - AIP</GCBQURY_NAME>
+        <FOLDERNAME>AIPstudent</FOLDERNAME>
+        <FOLDER>AIPstudent</FOLDER>
+        <GCBQURY_FOLDER_ID>-1</GCBQURY_FOLDER_ID>
+        <GCBQURY_CREATOR_ID>AIPADM001</GCBQURY_CREATOR_ID>
+        <GCBQURY_CREATE_DATE>05-DEC-14</GCBQURY_CREATE_DATE>
+        <GCBQURY_ACTIVITY_DATE>01-JAN-10</GCBQURY_ACTIVITY_DATE>
+        <GCBQURY_DESCRIPTION>Students with IDs beginning with CSRTU</GCBQURY_DESCRIPTION>
+        <GCBQURY_QUERY_STRING>select spriden_pidm from spriden
+            where spriden_id like &apos;CSRSTU%&apos;
+        </GCBQURY_QUERY_STRING>
+        <GCBQURY_TYPE>SQL_STATEMENT</GCBQURY_TYPE>
+        <GCBQURY_CHANGED_IND>N</GCBQURY_CHANGED_IND>
+    </GCBQURY>
     <GCBQURY>
         <GCBQURY_NAME>Class List- AIP</GCBQURY_NAME>
         <FOLDERNAME>AIPstudent</FOLDERNAME>
@@ -6063,7 +6169,17 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCBQURY_CHANGED_IND>N</GCBQURY_CHANGED_IND>
     </GCBQURY>
 
-
+    <GCRQRYV>
+        <GCRQRYV_CREATOR_ID>AIPADM001</GCRQRYV_CREATOR_ID>
+        <GCRQRYV_CREATE_DATE>09-OCT-17</GCRQRYV_CREATE_DATE>
+        <GCRQRYV_ACTIVITY_DATE>09-OCT-17</GCRQRYV_ACTIVITY_DATE>
+        <QUERYNAME>CSR Student List - AIP</QUERYNAME>
+        <GCRQRYV_QUERY_ID>20</GCRQRYV_QUERY_ID>
+        <GCRQRYV_TYPE>SQL_STATEMENT</GCRQRYV_TYPE>
+        <GCRQRYV_QUERY_STRING>select spriden_pidm from spriden
+            where spriden_id like &apos;CSRSTU%&apos;
+        </GCRQRYV_QUERY_STRING>
+    </GCRQRYV>
     <GCRQRYV>
         <GCRQRYV_CREATOR_ID>AIPADM001</GCRQRYV_CREATOR_ID>
         <GCRQRYV_CREATE_DATE>09-OCT-17</GCRQRYV_CREATE_DATE>
@@ -6087,6 +6203,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         </GCRQRYV_QUERY_STRING>
     </GCRQRYV>
     <GCRPQID>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPQID_POPL_ID>39</GCRPQID_POPL_ID>
+        <QUERYNAME>CSR Student List - AIP</QUERYNAME>
+        <GCRPQID_QURY_ID>123</GCRPQID_QURY_ID>
+        <GCRPQID_USER_ID>AIPADM001</GCRPQID_USER_ID>
+        <GCRPQID_ACTIVITY_DATE>17-OCT-17</GCRPQID_ACTIVITY_DATE>
+    </GCRPQID>
+    <GCRPQID>
         <POPULATIONNAME>Quinley Population 1</POPULATIONNAME>
         <GCRPQID_POPL_ID>39</GCRPQID_POPL_ID>
         <QUERYNAME>Quinley Query 1-AIP</QUERYNAME>
@@ -6094,6 +6218,14 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GCRPQID_USER_ID>AIPADM001</GCRPQID_USER_ID>
         <GCRPQID_ACTIVITY_DATE>17-OCT-17</GCRPQID_ACTIVITY_DATE>
     </GCRPQID>
+    <GCRPVID>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPVID_POPV_ID>39</GCRPVID_POPV_ID>
+        <QUERYNAME>CSR Student List - AIP</QUERYNAME>
+        <GCRPVID_QUERY_ID>123</GCRPVID_QUERY_ID>
+        <GCRPVID_USER_ID>AIPADM001</GCRPVID_USER_ID>
+        <GCRPVID_ACTIVITY_DATE>17-OCT-17</GCRPVID_ACTIVITY_DATE>
+    </GCRPVID>
     <GCRPVID>
         <POPULATIONNAME>Quinley Population 1</POPULATIONNAME>
         <GCRPVID_POPV_ID>39</GCRPVID_POPV_ID>
@@ -6142,6 +6274,23 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <POPULATIONNAME>Quinley Student Population</POPULATIONNAME>
         <GCRPOPC_POPV_ID>-2</GCRPOPC_POPV_ID>
         <QUERYNAME>Class List- AIP</QUERYNAME>
+        <GCRPOPC_QRYV_ID>25</GCRPOPC_QRYV_ID>
+        <GCRPOPC_CREATOR_ID>AIPADM001</GCRPOPC_CREATOR_ID>
+        <GCRPOPC_CREATE_DATE>09-OCT-17</GCRPOPC_CREATE_DATE>
+        <GCRPOPC_USER_REQUESTED>Y</GCRPOPC_USER_REQUESTED>
+        <GCRPOPC_CALC_COUNT>10</GCRPOPC_CALC_COUNT>
+        <GCRPOPC_CALC_BY>AIPADM001</GCRPOPC_CALC_BY>
+        <GCRPOPC_STATUS>AVAILABLE</GCRPOPC_STATUS>
+        <GCRPOPC_SLIS_ID>1</GCRPOPC_SLIS_ID>
+        <GCRPOPC_USER_ID>AIPADM001</GCRPOPC_USER_ID>
+        <GCRPOPC_ACTIVITY_DATE>09-OCT-17</GCRPOPC_ACTIVITY_DATE>
+        <GCRPOPC_VERSION>1</GCRPOPC_VERSION>
+        <GCRPOPC_DATA_ORIGIN>Banner</GCRPOPC_DATA_ORIGIN>
+    </GCRPOPC>
+    <GCRPOPC>
+        <POPULATIONNAME>CSR Student Population</POPULATIONNAME>
+        <GCRPOPC_POPV_ID>-2</GCRPOPC_POPV_ID>
+        <QUERYNAME>CSR Student List - AIP</QUERYNAME>
         <GCRPOPC_QRYV_ID>25</GCRPOPC_QRYV_ID>
         <GCRPOPC_CREATOR_ID>AIPADM001</GCRPOPC_CREATOR_ID>
         <GCRPOPC_CREATE_DATE>09-OCT-17</GCRPOPC_CREATE_DATE>
