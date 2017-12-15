@@ -56,6 +56,9 @@ public class GeneralAIPOracleUserDML {
         if (this.objectName) {
             createObject()
         }
+        if (this.newClass) {
+            createNewClass()
+        }
     }
 
 
@@ -149,6 +152,22 @@ public class GeneralAIPOracleUserDML {
             finally {
 
                 // this.conn.close()
+            }
+        }
+    }
+
+    def createNewClass() {
+        def sqlc = "select count(*) cnt from gtvclas where gtvclas_class_code = ?"
+        def resultc
+
+        // this.conn.close()
+        /* check to see if class exists. added to allow for test class creation */
+        try {
+            resultc = conn.firstRow(sqlc, [this.newClass])
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select GTVCLAS, ${this.newClass}. $e.message"
             }
         }
     }
