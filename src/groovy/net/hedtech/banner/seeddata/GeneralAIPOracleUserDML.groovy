@@ -165,7 +165,6 @@ public class GeneralAIPOracleUserDML {
         def sqlc = "select count(*) cnt from gtvclas where gtvclas_class_code = ?"
         def resultc
 
-        // this.conn.close()
         /* check to see if class exists. added to allow for test class creation */
         try {
             resultc = conn.firstRow(sqlc, [this.newClass])
@@ -173,6 +172,23 @@ public class GeneralAIPOracleUserDML {
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Could not select GTVCLAS, ${this.newClass}. $e.message"
+            }
+        }
+
+        /*if class doesn't exist, then add it */
+        if (resultc.cnt == 0) {
+            def sql1 = """insert into gtvclas ( gtvclas_class_code, gtvclas_activity_date,
+                                              gtvclas_user_id, gtvclas_owner)
+                          values(  ?, sysdate, user, 'PUBLIC')  """
+
+            try {
+                conn.executeInsert(sql1, [this.newClass.toString()])
+                connectInfo.tableUpdate('GTVCLAS', 0, 1, 0, 0, 0)
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Could not create New Class, ${this.newClass}. $e.message"
+                }
             }
         }
     }
