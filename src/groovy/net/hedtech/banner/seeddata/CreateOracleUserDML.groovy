@@ -18,7 +18,6 @@ public class CreateOracleUserDML {
     def newOracleId
     def oracleId
     def generalClass
-    def newClass
     def objectName
     def objectRole
     def readonly
@@ -57,9 +56,6 @@ public class CreateOracleUserDML {
         if (this.objectName) {
             createObject()
         }
-        if (this.newClass) {
-            createNewClass()
-        }
     }
 
 
@@ -77,9 +73,6 @@ public class CreateOracleUserDML {
             this.oracleId = oracleUser.ORACLEID.text()
             this.objectName = oracleUser.OBJECT.text()
             this.objectRole = oracleUser.OBJECT_ROLE.text()
-        }
-        if (oracleUser.NEW_CLASS?.text()) {
-            this.newClass = oracleUser.NEW_CLASS.text();
         }
     }
 
@@ -124,70 +117,42 @@ public class CreateOracleUserDML {
                 //this.conn.close()
             }
         }
+
     }
+
 
     def createGeneralClass() {
         def sqlf = "select count(*) cnt from gurucls where gurucls_userid = ? and gurucls_class_code = ?"
-        def resultf
-
-            /* check to see if class exists for the user */
-            try {
-                resultf = conn.firstRow(sqlf, [this.oracleId, this.generalClass])
-            }
-            catch (Exception e) {
-                if (connectInfo.showErrors) {
-                    println "Could not select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
-                }
-            }
-            /* insert user class record if none exists */
-            if (resultf.cnt == 0) {
-                def sql2 = """insert into gurucls ( gurucls_userid, gurucls_class_code, gurucls_activity_date,
-                                              gurucls_user_id)
-                          values(  ?, ?, sysdate, user)  """
-
-                try {
-                    conn.executeInsert(sql2, [this.oracleId.toString(), this.generalClass.toString()])
-                    connectInfo.tableUpdate('GURUCLS', 0, 1, 0, 0, 0)
-                }
-                catch (Exception e) {
-                    if (connectInfo.showErrors) {
-                        println "Could not create General Class,  ${this.oracleId} ${this.generalClass}. $e.message"
-                    }
-                }
-            }
-    }
-
-    def createNewClass() {
-        def sqlc = "select count(*) cnt from gtvclas where gtvclas_class_code = ?"
-        def resultc
-
-        /* check to see if class exists. added to allow for test class creation */
+        def result
         try {
-            resultc = conn.firstRow(sqlc, [this.newClass])
+            result = conn.firstRow(sqlf, [this.oracleId, this.generalClass])
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could not select GTVCLAS, ${this.newClass}. $e.message"
+                println "Could not select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
             }
         }
-
-        /*if class doesn't exist, then add it */
-        if (resultc.cnt == 0) {
-            def sql1 = """insert into gtvclas ( gtvclas_class_code, gtvclas_activity_date,
-                                              gtvclas_user_id, gtvclas_owner)
-                          values(  ?, sysdate, user, 'PUBLIC')  """
+        if (result.cnt == 0) {
+            def sql1 = """insert into gurucls ( gurucls_userid, gurucls_class_code, gurucls_activity_date,
+                                              gurucls_user_id)
+                          values(  ?, ?, sysdate, user)  """
 
             try {
-                conn.executeInsert(sql1, [this.newClass.toString()])
-                connectInfo.tableUpdate('GTVCLAS', 0, 1, 0, 0, 0)
+                conn.executeInsert(sql1, [this.oracleId.toString(), this.generalClass.toString()])
+                connectInfo.tableUpdate('GURUCLS', 0, 1, 0, 0, 0)
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
-                    println "Could not create New Class, ${this.newClass}. $e.message"
+                    println "Could not create General Class,  ${this.oracleId} ${this.generalClass}. $e.message"
                 }
+            }
+            finally {
+
+                // this.conn.close()
             }
         }
     }
+
 
     def createObject() {
         def sqlf = "select count(*) cnt from  guruobj  Where Guruobj_Userid = ? And Guruobj_Object = ?"
@@ -221,4 +186,5 @@ public class CreateOracleUserDML {
             }
         }
     }
+
 }
