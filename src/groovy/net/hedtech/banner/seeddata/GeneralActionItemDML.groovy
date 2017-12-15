@@ -24,7 +24,7 @@ public class GeneralActionItemDML {
     def deleteNode
 
     int folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId
-    
+
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode ) {
         this.conn = conn
         this.connectInfo = connectInfo
