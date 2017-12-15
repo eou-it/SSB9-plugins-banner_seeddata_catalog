@@ -24,8 +24,7 @@ public class GeneralActionItemDML {
     def deleteNode
 
     int folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId
-
-
+    
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode ) {
         this.conn = conn
         this.connectInfo = connectInfo
@@ -63,7 +62,7 @@ public class GeneralActionItemDML {
                 personPidm = spridenRow.SPRIDEN_PIDM.toString()
             }
         }
-        
+
         if (connectInfo.tableName == "GCVASTS") {
             actionItemId = 0
             actionItemId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
