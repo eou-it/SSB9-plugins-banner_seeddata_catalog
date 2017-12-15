@@ -18,6 +18,7 @@ public class GeneralAIPOracleUserDML {
     def newOracleId
     def oracleId
     def generalClass
+    def newClass
     def objectName
     def objectRole
     def readonly
@@ -77,6 +78,10 @@ public class GeneralAIPOracleUserDML {
             this.objectName = oracleUser.OBJECT.text()
             this.objectRole = oracleUser.OBJECT_ROLE.text()
         }
+        if (oracleUser.NEW_CLASS?.text()) {
+            this.newClass = oracleUser.NEW_CLASS.text();
+        }
+
     }
 
 

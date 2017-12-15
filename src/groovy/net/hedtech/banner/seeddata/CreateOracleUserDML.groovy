@@ -18,10 +18,10 @@ public class CreateOracleUserDML {
     def newOracleId
     def oracleId
     def generalClass
-    def newClass
     def objectName
     def objectRole
     def readonly
+
 
     def InputData connectInfo
     Sql conn
@@ -74,9 +74,6 @@ public class CreateOracleUserDML {
             this.objectName = oracleUser.OBJECT.text()
             this.objectRole = oracleUser.OBJECT_ROLE.text()
         }
-        if (oracleUser.NEW_CLASS?.text()) {
-            this.newClass = oracleUser.NEW_CLASS.text();
-        }
     }
 
 
@@ -99,9 +96,9 @@ public class CreateOracleUserDML {
             def sql1 = "create user " + newOracleId + "  identified by u_pick_it"
             def sql2
             if (readonly == "YES") {
-                sql2 = "grant USR_DEFAULT_CONNECT, connect, resource, ban_default_q to " + newOracleId
+                sql2 = "grant connect, resource, ban_default_q to " + newOracleId
             } else {
-                sql2 = "grant USR_DEFAULT_CONNECT, connect, resource, ban_default_m to " + newOracleId
+                sql2 = "grant connect, resource, ban_default_q, ban_default_m to " + newOracleId
             }
 
             def sql3 = "alter user " + newOracleId + " grant connect through banproxy "
