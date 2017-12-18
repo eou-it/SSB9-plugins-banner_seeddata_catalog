@@ -231,7 +231,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRLENT") {
             def userId = apiData.GCRLENT_USER_ID[0]?.text().toString()
             def selectionId = getSelectionId()
-            //updateUserId(userId)
+            updateUserId(userId)
             apiData.GCRLENT_PIDM[0].setValue( personPidm )
             apiData.GCRLENT_SLIS_ID[0].setValue( selectionId.toString() )
         }
@@ -524,9 +524,13 @@ public class GeneralActionItemDML {
     }
 
     def updateUserId(userId) {
-            updateUserId( "GCRSLIS", "update GCRSLIS set GCRSLIS_USER_ID = '${userId}' where GCRSLIS_SURROGATE_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
-    }
 
+        updateUserId( "GCBPOPL", "update GCBPOPL set GCBPOPL_USER_ID = '${userId}' where GCBPOPL_SURROGATE_ID = (select max(GCBPOPL_SURROGATE_ID) from GCBPOPL)" )
+
+        updateUserId( "GCRSLIS", "update GCRSLIS set GCRSLIS_USER_ID = '${userId}' where GCRSLIS_SURROGATE_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
+
+        updateUserId( "GCRLENT", "update GCRLENT set GCRLENT_USER_ID = '${userId}' where GCRLENT_SLIS_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
+    }
 
     def updateUserId(String tableName, String sql ) {
 
