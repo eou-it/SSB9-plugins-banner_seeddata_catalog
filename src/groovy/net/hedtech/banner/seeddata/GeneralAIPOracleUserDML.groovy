@@ -12,12 +12,13 @@ import java.sql.RowId
  * General Person ID DML
  */
 
-public class CreateOracleUserDML {
+public class GeneralAIPOracleUserDML {
 
     def bannerid
     def newOracleId
     def oracleId
     def generalClass
+    def newClass
     def objectName
     def objectRole
     def readonly
@@ -30,14 +31,14 @@ public class CreateOracleUserDML {
     def xmlData
 
 
-    public CreateOracleUserDML(InputData connectInfo, Sql conn, Connection connectCall) {
+    public GeneralAIPOracleUserDML(InputData connectInfo, Sql conn, Connection connectCall) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
     }
 
 
-    public CreateOracleUserDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
+    public GeneralAIPOracleUserDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
 
         this.conn = conn
         this.connectInfo = connectInfo
@@ -55,6 +56,9 @@ public class CreateOracleUserDML {
         }
         if (this.objectName) {
             createObject()
+        }
+        if (this.newClass) {
+            createNewClass()
         }
     }
 
@@ -74,8 +78,11 @@ public class CreateOracleUserDML {
             this.objectName = oracleUser.OBJECT.text()
             this.objectRole = oracleUser.OBJECT_ROLE.text()
         }
-    }
+        if (oracleUser.NEW_CLASS?.text()) {
+            this.newClass = oracleUser.NEW_CLASS.text();
+        }
 
+    }
 
 
     def createUserId() {
@@ -118,35 +125,38 @@ public class CreateOracleUserDML {
                 //this.conn.close()
             }
         }
+
     }
+
 
     def createGeneralClass() {
         def sqlf = "select count(*) cnt from gurucls where gurucls_userid = ? and gurucls_class_code = ?"
-        def resultf
-
-        /* check to see if class exists for the user */
+        def result
         try {
-            resultf = conn.firstRow(sqlf, [this.oracleId, this.generalClass])
+            result = conn.firstRow(sqlf, [this.oracleId, this.generalClass])
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Could not select GURUCLS,  ${this.oracleId} ${this.generalClass}. $e.message"
             }
         }
-        /* insert user class record if none exists */
-        if (resultf.cnt == 0) {
-            def sql2 = """insert into gurucls ( gurucls_userid, gurucls_class_code, gurucls_activity_date,
+        if (result.cnt == 0) {
+            def sql1 = """insert into gurucls ( gurucls_userid, gurucls_class_code, gurucls_activity_date,
                                               gurucls_user_id)
                           values(  ?, ?, sysdate, user)  """
 
             try {
-                conn.executeInsert(sql2, [this.oracleId.toString(), this.generalClass.toString()])
+                conn.executeInsert(sql1, [this.oracleId.toString(), this.generalClass.toString()])
                 connectInfo.tableUpdate('GURUCLS', 0, 1, 0, 0, 0)
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
                     println "Could not create General Class,  ${this.oracleId} ${this.generalClass}. $e.message"
                 }
+            }
+            finally {
+
+                // this.conn.close()
             }
         }
     }
@@ -183,6 +193,7 @@ public class CreateOracleUserDML {
         }
     }
 
+
     def createObject() {
         def sqlf = "select count(*) cnt from  guruobj  Where Guruobj_Userid = ? And Guruobj_Object = ?"
         def result
@@ -215,4 +226,5 @@ public class CreateOracleUserDML {
             }
         }
     }
+
 }

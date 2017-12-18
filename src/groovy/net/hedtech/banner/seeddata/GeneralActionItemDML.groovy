@@ -7,6 +7,7 @@ import groovy.sql.Sql
 import org.apache.commons.lang.StringUtils
 import java.sql.Connection
 
+
 /**
  * Action Item tables
  * replace the curr rule in the xml
@@ -21,19 +22,10 @@ public class GeneralActionItemDML {
     List indexColumns
     def Batch batch
     def deleteNode
-    //int itemSeq
-    int folderId
-    int templateId
-    int statusId
-    int actionItemId
-    int actionGroupId
-    int blockId
-    int populationId
-    int queryId
 
+    int folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId
 
-    public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
-                                 def deleteNode ) {
+    public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode ) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
