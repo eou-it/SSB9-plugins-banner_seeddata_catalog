@@ -525,11 +525,12 @@ public class GeneralActionItemDML {
 
     def updateUserId(userId) {
 
-        updateUserId( "GCBPOPL", "update GCBPOPL set GCBPOPL_USER_ID = '${userId}' where GCBPOPL_SURROGATE_ID = (select max(GCBPOPL_SURROGATE_ID) from GCBPOPL)" )
+        updateUserId( "GCBPOPL", "update GCBPOPL set GCBPOPL_USER_ID = '${userId}', GCBPOPL_INCLUDE_LIST_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS) where GCBPOPL_SURROGATE_ID = (select max(GCBPOPL_SURROGATE_ID) from GCBPOPL)" )
+
+        updateUserId( "GCRLENT", "update GCRLENT set GCRLENT_USER_ID = '${userId}' where GCRLENT_SLIS_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
 
         updateUserId( "GCRSLIS", "update GCRSLIS set GCRSLIS_USER_ID = '${userId}' where GCRSLIS_SURROGATE_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
 
-        updateUserId( "GCRLENT", "update GCRLENT set GCRLENT_USER_ID = '${userId}' where GCRLENT_SLIS_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
     }
 
     def updateUserId(String tableName, String sql ) {
