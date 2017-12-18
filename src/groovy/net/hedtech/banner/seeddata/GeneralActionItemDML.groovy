@@ -25,6 +25,7 @@ public class GeneralActionItemDML {
 
     int folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId
 
+
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode ) {
         this.conn = conn
         this.connectInfo = connectInfo
@@ -49,7 +50,6 @@ public class GeneralActionItemDML {
         def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
 
         def apiData = new XmlParser().parseText( StringUtils.replaceEach( xmlData, fromstring, tostring ) )
-
         def personId = apiData.BANNERID?.text()
         def personPidm
 
@@ -210,6 +210,7 @@ public class GeneralActionItemDML {
             apiData.GCBQURY_FOLDER_ID[0].setValue( folderId.toString() )
         }
         */
+
         if (connectInfo.tableName == "GCRQRYV") {
             def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
             apiData.GCRQRYV_QUERY_ID[0].setValue( queryId.toString() )
@@ -228,8 +229,11 @@ public class GeneralActionItemDML {
             apiData.GCRPVID_QUERY_ID[0].setValue( queryId.toString() )
         }
         if (connectInfo.tableName == "GCRLENT") {
-            def queryId = getSelectionId()
-            apiData.GCRLENT_SLIS_ID[0].setValue( queryId.toString() )
+            def userId = apiData.GCRLENT_USER_ID[0]?.text().toString()
+            def selectionId = getSelectionId()
+            updateUserId(userId)
+            apiData.GCRLENT_PIDM[0].setValue( personPidm )
+            apiData.GCRLENT_SLIS_ID[0].setValue( selectionId.toString() )
         }
         if (connectInfo.tableName == "GCRPOPC") {
             def populationValueId = getPopulationValueId( apiData.POPULATIONNAME[0]?.text().toString() )
@@ -258,9 +262,8 @@ public class GeneralActionItemDML {
 
     }
 
-
     def getSelectionId() {
-        String fsql = """select * from GCRSLIS WHERE ROWNUM = 1 """
+        String fsql = """select * from GCRSLIS WHERE GCRSLIS_SURROGATE_ID = (select max(gcrslis_surrogate_id) from gcrslis) """
         int fId
         def fRow
         try {
@@ -303,7 +306,6 @@ public class GeneralActionItemDML {
         String fsql = """select * from GCRPOPV where GCRPOPV_POPL_ID= (select GCBPOPL_SURROGATE_ID FROM GCBPOPL WHERE GCBPOPL_NAME=?) """
         int fId
         def fRow
-
 
         try {
             fRow = this.conn.firstRow( fsql, [queryName] )
@@ -520,5 +522,26 @@ public class GeneralActionItemDML {
         }
         return sId
     }
+
+    def updateUserId(userId) {
+            updateUserId( "GCRSLIS", "update GCRSLIS set GCRSLIS_USER_ID = '${userId}' where GCRSLIS_SURROGATE_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS)" )
+    }
+
+
+    def updateUserId(String tableName, String sql ) {
+
+        try {
+            int updateRows = conn.executeUpdate( sql )
+            connectInfo.tableUpdate( tableName, 0, 0, 0, 0, updateRows )
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                connectInfo.tableUpdate( tableName, 0, 0, 0, 1, 0 )
+                println "Problem executing update for query ${sql} from GeneralActionItemDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
+            }
+        }
+    }
+
 
 }
