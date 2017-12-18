@@ -231,7 +231,7 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRLENT") {
             def userId = apiData.GCRLENT_USER_ID[0]?.text().toString()
             def selectionId = getSelectionId()
-            updateUserId(userId)
+            //updateUserId(userId)
             apiData.GCRLENT_PIDM[0].setValue( personPidm )
             apiData.GCRLENT_SLIS_ID[0].setValue( selectionId.toString() )
         }
