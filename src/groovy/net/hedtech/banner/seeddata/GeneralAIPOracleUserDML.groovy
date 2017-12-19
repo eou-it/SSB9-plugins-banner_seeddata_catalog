@@ -53,6 +53,7 @@ public class GeneralAIPOracleUserDML {
         }
         if (this.generalClass) {
             createGeneralClass()
+            grantRole()
         }
         if (this.objectName) {
             createObject()
@@ -132,6 +133,7 @@ public class GeneralAIPOracleUserDML {
     def createGeneralClass() {
         def sqlf = "select count(*) cnt from gurucls where gurucls_userid = ? and gurucls_class_code = ?"
         def result
+
         try {
             result = conn.firstRow(sqlf, [this.oracleId, this.generalClass])
         }
@@ -154,12 +156,32 @@ public class GeneralAIPOracleUserDML {
                     println "Could not create General Class,  ${this.oracleId} ${this.generalClass}. $e.message"
                 }
             }
-            finally {
 
-                // this.conn.close()
-            }
+
         }
     }
+
+    def grantRole() {
+
+        def sqlGetRole = "select guruobj_role  from guruobj  Where Guruobj_Userid = ?"
+        def role
+        def sqlGrantRole
+
+        //grant the role in the class
+        try {
+            role = conn.firstRow(sqlGetRole, [this.generalClass])[0].toString()
+            sqlGrantRole = "grant " + role + " to " +  this.oracleId
+            conn.executeUpdate(sqlGrantRole)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not grant role for class ${this.generalClass} to Oracle Id,  ${this.oracleId}. $e.message"
+            }
+        }
+
+
+    }
+
 
     def createNewClass() {
         def sqlc = "select count(*) cnt from gtvclas where gtvclas_class_code = ?"
