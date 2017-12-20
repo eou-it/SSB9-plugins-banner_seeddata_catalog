@@ -201,7 +201,6 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRPOPV") {
             def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
             def slisId = getSelectionId()
-            println slisId
             apiData.GCRPOPV_POPL_ID[0].setValue( populationId.toString() )
             apiData.GCRPOPV_INCLUDE_LIST_ID[0].setValue (slisId.toString())
         }
@@ -541,7 +540,6 @@ public class GeneralActionItemDML {
         try {
             int updateRows = conn.executeUpdate( sql )
             connectInfo.tableUpdate( tableName, 0, 0, 0, 0, updateRows )
-            println sql
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
