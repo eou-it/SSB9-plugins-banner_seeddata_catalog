@@ -200,7 +200,10 @@ public class GeneralActionItemDML {
 
         if (connectInfo.tableName == "GCRPOPV") {
             def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
+            def slisId = getSelectionId()
+            println slisId
             apiData.GCRPOPV_POPL_ID[0].setValue( populationId.toString() )
+            apiData.GCRPOPV_INCLUDE_LIST_ID[0].setValue (slisId.toString())
         }
         /*
         if (connectInfo.tableName == "GCBQURY") {
@@ -231,9 +234,9 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "GCRLENT") {
             def userId = apiData.GCRLENT_USER_ID[0]?.text().toString()
             def selectionId = getSelectionId()
-            updateUserId(userId)
             apiData.GCRLENT_PIDM[0].setValue( personPidm )
             apiData.GCRLENT_SLIS_ID[0].setValue( selectionId.toString() )
+            updateUserId(userId)
         }
         if (connectInfo.tableName == "GCRPOPC") {
             def populationValueId = getPopulationValueId( apiData.POPULATIONNAME[0]?.text().toString() )
@@ -538,6 +541,7 @@ public class GeneralActionItemDML {
         try {
             int updateRows = conn.executeUpdate( sql )
             connectInfo.tableUpdate( tableName, 0, 0, 0, 0, updateRows )
+            println sql
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
