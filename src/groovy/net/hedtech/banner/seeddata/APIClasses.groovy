@@ -189,6 +189,10 @@ public class APIClasses {
             'PCRBENE'               : 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
             'GJRJLIS'               : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
             'SHBCGPA'               : 'net.hedtech.banner.seeddata.ShbcgpaDML'
+            'FINANCECIFOAPALCLEAN'  : 'net.hedtech.banner.seeddata.FinanceCifoapalpCleanUpDML',
+            'FGBJVCH'               : 'net.hedtech.banner.seeddata.FinanceJournalHeaderCreateDML',
+            'FGBJVCD'               : 'net.hedtech.banner.seeddata.FinanceJournalDetailCreateDML'
+
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process

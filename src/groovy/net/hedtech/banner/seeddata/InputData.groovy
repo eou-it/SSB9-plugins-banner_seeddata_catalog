@@ -648,6 +648,17 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantLedger.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityViewPendingDocumentsHistory.xml'],
             'registration-student-attribute'   : ['src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
+
+            'finance-journals' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalApprovalHistory.xml' ,
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalApprovalInProgress.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalCommodity.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalHeader.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalDetail.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceText.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/JournalUnApprovedDocument.xml',
+                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToRuleClass.xml'
+            ],
+
             'projection-used-courses'          : ['src/groovy/net/hedtech/banner/seeddata/Data/CurriculumComplianceUsedCourses_Data.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/ProjectionTermData.xml'],
             'finance-cifoapal-cleanup'         : ['src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceCifoapalpClean.xml'],
