@@ -56,7 +56,7 @@ public class FinanceProcurementFiscalYearDML {
                     " user_id varchar2(30)   := ?; " +
                     " update_mode varchar2(1):= 'U';" +
                     " coas varchar2(1)       := 'B';" +
-                    " fsyr_start_yr number   := TO_CHAR(SYSDATE, 'YYYY');" +
+                    " fsyr_start_yr number   := TO_CHAR(SYSDATE, 'YYYY')-1;" +
                     " FSYR_END_YR   NUMBER   := TO_CHAR(SYSDATE, 'YYYY');" +
                     " PD_START   VARCHAR2(6) := '01-JUL';" +
                     " PD_INCR    NUMBER      := 1;" +
