@@ -118,7 +118,7 @@ class EmployeeTimeEntryExtractDML {
         CallableStatement sqlCall
 
         if (!setupFailure) {
-            sqlCall = this.connectCall.prepareCall("{ call pekteex.p_extract_time(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) }")
+            sqlCall = this.connectCall.prepareCall("{ call pekteex.p_extract_time(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) }")
 
             sqlCall.setString(1, this.perjobs_year)
             sqlCall.setString(2, this.perjobs_pict_code)
@@ -152,6 +152,7 @@ class EmployeeTimeEntryExtractDML {
             sqlCall.registerOutParameter(14, java.sql.Types.INTEGER)
             sqlCall.registerOutParameter(15, java.sql.Types.VARCHAR)
             sqlCall.registerOutParameter(16, java.sql.Types.VARCHAR)
+            sqlCall.registerOutParameter(17, java.sql.Types.NUMERIC)
 
             try {
                 sqlCall.executeUpdate()

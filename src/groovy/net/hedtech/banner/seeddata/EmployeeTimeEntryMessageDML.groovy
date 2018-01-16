@@ -144,7 +144,7 @@ class EmployeeTimeEntryMessageDML {
 
         if (!setupFailure) {
             if (jobSequenceNo) {
-                sqlCall = this.connectCall.prepareCall("{ call pekteap.p_submit_time(?,?,?,?,?,?,?) }")
+                sqlCall = this.connectCall.prepareCall("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?) }")
 
                 if (jobSequenceNo) {
                     sqlCall.setLong(1, jobSequenceNo.toInteger())
@@ -165,6 +165,7 @@ class EmployeeTimeEntryMessageDML {
                 sqlCall.setString(5, this.source)
                 sqlCall.registerOutParameter(6, java.sql.Types.VARCHAR)
                 sqlCall.registerOutParameter(7, java.sql.Types.VARCHAR)
+                sqlCall.registerOutParameter(8, java.sql.Types.NUMERIC)
 
                 try {
                     sqlCall.executeUpdate()
