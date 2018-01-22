@@ -26,7 +26,8 @@ public class GeneralActionItemDML {
     int folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId
 
 
-    public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch, def deleteNode ) {
+    public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
+                                 def deleteNode ) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -181,8 +182,10 @@ public class GeneralActionItemDML {
             if (actionItemId == 0) {
                 actionItemId = apiData.GCRABLK_GCBACTM_ID[0]?.text().toInteger()
             }
-
             apiData.GCRABLK_GCBACTM_ID[0].setValue( actionItemId.toString() )
+
+            def processId = getProcessId( apiData.PROCESSNAME[0]?.text().toString() )
+            apiData.GCRABLK_GCBBPRC_ID[0].setValue( processId.toString() )
 
         }
 
@@ -202,7 +205,7 @@ public class GeneralActionItemDML {
             def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
             def slisId = getSelectionId()
             apiData.GCRPOPV_POPL_ID[0].setValue( populationId.toString() )
-            apiData.GCRPOPV_INCLUDE_LIST_ID[0].setValue (slisId.toString())
+            apiData.GCRPOPV_INCLUDE_LIST_ID[0].setValue( slisId.toString() )
         }
         /*
         if (connectInfo.tableName == "GCBQURY") {
@@ -235,7 +238,7 @@ public class GeneralActionItemDML {
             def selectionId = getSelectionId()
             apiData.GCRLENT_PIDM[0].setValue( personPidm )
             apiData.GCRLENT_SLIS_ID[0].setValue( selectionId.toString() )
-            updateUserId(userId)
+            updateUserId( userId )
         }
         if (connectInfo.tableName == "GCRPOPC") {
             def populationValueId = getPopulationValueId( apiData.POPULATIONNAME[0]?.text().toString() )
@@ -263,6 +266,7 @@ public class GeneralActionItemDML {
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
 
     }
+
 
     def getSelectionId() {
         String fsql = """select * from GCRSLIS WHERE GCRSLIS_SURROGATE_ID = (select max(gcrslis_surrogate_id) from gcrslis) """
@@ -467,6 +471,25 @@ public class GeneralActionItemDML {
     }
 
 
+    def getProcessId( String processName ) {
+        String asql = """select * from GCBBPRC where GCBBPRC_PROCESS_NAME = ? """
+        int aId
+        def aRow
+        try {
+            aRow = this.conn.firstRow( asql, [processName] )
+            if (aRow) {
+                aId = aRow?.GCBBPRC_SURROGATE_ID
+            } else aId = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Process ID in GeneralActionItemDML, from GCBBPRC for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return aId
+    }
+
+
     def getActionGroupId( String actionGroupName ) {
         String asql = """select * from GCBAGRP where GCBAGRP_NAME = ? """
         int agd
@@ -525,7 +548,8 @@ public class GeneralActionItemDML {
         return sId
     }
 
-    def updateUserId(userId) {
+
+    def updateUserId( userId ) {
 
         updateUserId( "GCBPOPL", "update GCBPOPL set GCBPOPL_USER_ID = '${userId}', GCBPOPL_INCLUDE_LIST_ID = (select max(GCRSLIS_SURROGATE_ID) from GCRSLIS) where GCBPOPL_SURROGATE_ID = (select max(GCBPOPL_SURROGATE_ID) from GCBPOPL)" )
 
@@ -535,7 +559,8 @@ public class GeneralActionItemDML {
 
     }
 
-    def updateUserId(String tableName, String sql ) {
+
+    def updateUserId( String tableName, String sql ) {
 
         try {
             int updateRows = conn.executeUpdate( sql )
