@@ -5743,7 +5743,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
 -->
     <GCRABLK>
         <ACTIONITEMNAME>The Declaration of Independence</ACTIONITEMNAME>
-        <PROCESSNAME>Prepare for Registration</PROCESSNAME>
+        <PROCESSNAME>Register for Classes</PROCESSNAME>
         <GCRABLK_GCBACTM_ID>22</GCRABLK_GCBACTM_ID>
         <GCRABLK_GCBBPRC_ID>22</GCRABLK_GCBBPRC_ID>
         <GCRABLK_SURROGATE_ID>1</GCRABLK_SURROGATE_ID>
@@ -5779,7 +5779,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </GCRABLK>
     <GCRABLK>
         <ACTIONITEMNAME>Notice of Scholastic Standards</ACTIONITEMNAME>
-        <PROCESSNAME>Prepare for Registration</PROCESSNAME>
+        <PROCESSNAME>Plan Ahead</PROCESSNAME>
         <GCRABLK_GCBACTM_ID>11</GCRABLK_GCBACTM_ID>
         <GCRABLK_GCBBPRC_ID>22</GCRABLK_GCBBPRC_ID>
         <GCRABLK_SURROGATE_ID>4</GCRABLK_SURROGATE_ID>
