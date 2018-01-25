@@ -255,7 +255,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantQuickEntryRule.xml'],
             'registration-rule'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationManagementControl.xml'],
-            'selfserviceuser'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceUserData.xml','/src/groovy/net/hedtech/banner/seeddata/Data/Surveyflow.xml'],
+            'selfserviceuser'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceUserData.xml','/src/groovy/net/hedtech/banner/seeddata/Data/surveyflow.xml'],
             'schedule-selenium'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleSelenium.xml'],
             'courseDetail-selenium'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/CourseDetailSelenium.xml'],
             'courseRestriction-selenium'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogRestrictionSelenium.xml'],
