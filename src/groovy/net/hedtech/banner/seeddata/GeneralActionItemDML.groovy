@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2017 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -117,6 +117,21 @@ public class GeneralActionItemDML {
             apiData.GCRAACT_GCBACTM_ID[0].setValue( actionItemId.toString() )
             apiData.GCRAACT_GCVASTS_ID[0].setValue( statusId.toString() )
             apiData.GCRAACT_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
+        }
+        if (connectInfo.tableName == "GCBAPST") {
+
+           actionGroupId = getActionGroupId( apiData.ACTIONGROUPNAME[0]?.text().toString() )
+            populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
+
+
+            if (actionGroupId == 0) {
+                actionGroupId = apiData.GCBAPST_GCBAGRP_ID[0]?.text()?.toInteger()
+            }
+            if (populationId == 0) {
+                populationId = apiData.GCBAPST_POPLIST_ID[0]?.text()?.toInteger()
+            }
+            apiData.GCBAPST_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
+            apiData.GCBAPST_POPLIST_ID[0].setValue( populationId.toString() )
         }
 
         if (connectInfo.tableName == "GCRACNT") {
@@ -346,6 +361,7 @@ public class GeneralActionItemDML {
         // deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
         deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? " )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )
+        deleteData( "GCBAPST", "delete from GCBAPST where 0 <> ? " )
         deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
         deleteData( "GCRAISR", "delete from GCRAISR where 0 <> ? " )
         deleteData( "GCBAGRP", "delete from GCBAGRP where 0 <> ? " )
