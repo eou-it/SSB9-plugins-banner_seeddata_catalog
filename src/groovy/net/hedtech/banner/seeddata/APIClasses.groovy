@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -95,7 +95,6 @@ public class APIClasses {
             'GCBACTM'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCVASTS'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAACT'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCBAPST'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRACNT'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBAGRP'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
@@ -225,7 +224,6 @@ public class APIClasses {
             'GCBACTM' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAACT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCBAPST' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRACNT' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBAGRP' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCBPBTR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
