@@ -48,6 +48,8 @@ public class FinanceJournalHeaderCreateDML {
      */
     def createFinanceJournalHeader() {
         try {
+            final String updateToAutoJournal = headerData.FGBJVCH_AUTO_JRNL_ID.text()=='A1'?
+                    " UPDATE FGBJVCH set FGBJVCH_AUTO_JRNL_ID = 'A1' WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" : ""
             final String updateToCompleted = headerData.FGBJVCH_STATUS_IND.text()=='C'?
                     " UPDATE FGBJVCH set FGBJVCH_STATUS_IND = 'C' WHERE FGBJVCH_DOC_NUM = '" + headerData.FGBJVCH_DOC_NUM.text() + "' ;" : ""
             final String updateToApproved =  headerData.FGBJVCH_APPROVAL_IND.text() =='Y'?
@@ -62,7 +64,7 @@ public class FinanceJournalHeaderCreateDML {
                             "   VALUES (" +
                             "   ?, ?, sysdate, 'FORSED21', ?," +
                             "   ?,  ?, ?, 'I', 'N', " +
-                            "   'GRAILS','Banner', 0);" + updateToCompleted + updateToApproved +
+                            "   'GRAILS','Banner', 0);" + updateToCompleted + updateToApproved + updateToAutoJournal +
                             "   commit;" +
                             "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
