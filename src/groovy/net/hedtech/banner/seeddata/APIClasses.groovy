@@ -190,7 +190,8 @@ public class APIClasses {
             'GJRJLIS'               : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
             'SHBCGPA'               : 'net.hedtech.banner.seeddata.ShbcgpaDML',
             'FGBJVCH'               : 'net.hedtech.banner.seeddata.FinanceJournalHeaderCreateDML',
-            'FGBJVCD'               : 'net.hedtech.banner.seeddata.FinanceJournalDetailCreateDML'
+            'FGBJVCD'               : 'net.hedtech.banner.seeddata.FinanceJournalDetailCreateDML',
+            'NTRQGRP'               : 'net.hedtech.banner.seeddata.NtrqgrpDML'
 
     ]
 
@@ -278,7 +279,8 @@ public class APIClasses {
             'NTRECDQ' : 'net.hedtech.banner.seeddata.NtrecdqDML',
             'PCRBENE' : 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
             'GJRJLIS' : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
-            'SHBCGPA' : 'net.hedtech.banner.seeddata.ShbcgpaDML'
+            'SHBCGPA' : 'net.hedtech.banner.seeddata.ShbcgpaDML',
+            'NTRQGRP' : 'net.hedtech.banner.seeddata.NtrqgrpDML'
     ]
 
 
