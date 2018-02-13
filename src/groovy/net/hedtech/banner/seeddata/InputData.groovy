@@ -125,6 +125,7 @@ public class InputData {
                                                   // HR Rules
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrqprtData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrqgrpData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrecdqData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsgrpData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrsalbData.xml',
