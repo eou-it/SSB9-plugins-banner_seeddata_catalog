@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="Windows-1252" ?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 <!-- *****************************************************************************
-Copyright 2015 Ellucian Company L.P. and its affiliates.
+Copyright 2015-2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <SCHEDULED>
+<SSRRESV>
+   <SSRRESV_TERM_CODE>201410</SSRRESV_TERM_CODE>
+   <SSRRESV_CRN>20151</SSRRESV_CRN>
+   <DELETE>YES</DELETE>
+</SSRRESV>
 <SSBSECT>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
   <SSBSECT_TERM_CODE>201410</SSBSECT_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
   <SSBSECT_CRN>20151</SSBSECT_CRN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
