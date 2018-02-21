@@ -4,6 +4,17 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
 ******************************************************************************-->
 
 <TERMDATA>
+    <STVTRMT>
+        <STVTRMT_CODE>1</STVTRMT_CODE>
+        <STVTRMT_DESC>Full Year</STVTRMT_DESC>
+        <STVTRMT_ACTIVITY_DATE>01-JAN-10</STVTRMT_ACTIVITY_DATE>
+        <STVTRMT_SURROGATE_ID/>
+        <STVTRMT_VERSION/>
+        <STVTRMT_USER_ID>GRAILS</STVTRMT_USER_ID>
+        <STVTRMT_DATA_ORIGIN>GRAILS</STVTRMT_DATA_ORIGIN>
+        <STVTRMT_VPDI_CODE/>
+    </STVTRMT>
+
     <STVTERM>
         <STVTERM_CODE>201763</STVTERM_CODE>
         <STVTERM_DESC>Test Term Audit</STVTERM_DESC>
