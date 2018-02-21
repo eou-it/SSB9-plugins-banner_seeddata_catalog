@@ -565,6 +565,8 @@ public class InputData {
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/general/NonPersonData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/general/GoradrlData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/general/GtvzipcData.xml'],
+            'general-auto'                     : ['src/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsers1.xml',
+                                                  'src/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsers2.xml'],
             'gender-pronoun'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/GtvgndrData.xml',
                                                   'src/groovy/net/hedtech/banner/seeddata/Data/GtvpprnData.xml'],
             'direct-deposit'                   : ['src/groovy/net/hedtech/banner/seeddata/Data/DirectDepositUsers.xml',
