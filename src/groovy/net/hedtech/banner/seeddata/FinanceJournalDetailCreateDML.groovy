@@ -53,12 +53,12 @@ public class FinanceJournalDetailCreateDML {
                             "   INSERT INTO FGBJVCD (FGBJVCD_DOC_NUM, FGBJVCD_SUBMISSION_NUMBER, FGBJVCD_SEQ_NUM, FGBJVCD_RUCL_CODE, FGBJVCD_TRANS_AMT," +
                             "   FGBJVCD_TRANS_DESC, FGBJVCD_DR_CR_IND, FGBJVCD_FSYR_CODE, FGBJVCD_COAS_CODE, FGBJVCD_FUND_CODE," +
                             "   FGBJVCD_ORGN_CODE, FGBJVCD_ACCT_CODE, FGBJVCD_PROG_CODE, FGBJVCD_BANK_CODE, FGBJVCD_POSTING_PERIOD," +
-                            "   FGBJVCD_BUDGET_PERIOD, FGBJVCD_STATUS_IND, FGBJVCD_ABAL_OVERRIDE, FGBJVCD_POST_BAVL, FGBJVCD_USER_ID,FGBJVCD_ACTIVITY_DATE) " +
+                            "   FGBJVCD_BUDGET_PERIOD, FGBJVCD_STATUS_IND, FGBJVCD_ABAL_OVERRIDE, FGBJVCD_POST_BAVL, FGBJVCD_USER_ID,FGBJVCD_ACTIVITY_DATE,FGBJVCD_DIST_PCT) " +
                             "   VALUES (" +
                             "   ?, ?, ?, ?, ?," +
                             "   ?, ?, ?, ?, ?," +
                             "   ?, ?, ?, ?, ?," +
-                            "   ?, ?, ?, ?, 'FORSED21',sysdate);" +
+                            "   ?, ?, ?, ?, 'FORSED21',sysdate,?);" +
                             "   commit;" +
                             "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
@@ -85,6 +85,7 @@ public class FinanceJournalDetailCreateDML {
                 insertCall.setString( 17, headerData.FGBJVCD_STATUS_IND.text() )
                 insertCall.setString( 18, headerData.FGBJVCD_ABAL_OVERRIDE.text() )
                 insertCall.setString( 19, headerData.FGBJVCD_POST_BAVL?.text() )
+                insertCall.setString( 20, headerData.FGBJVCD_DIST_PCT?.text())
                 insertCall.execute()
 
                 connectInfo.tableUpdate( "FV_FGBJVCD", 0, 1, 0, 0, 0 )
