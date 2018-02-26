@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTVEGRP_DATA>
     <PTVEGRP>
         <PTVEGRP_CODE>1234</PTVEGRP_CODE>
         <PTVEGRP_DESC>Employee Group 1</PTVEGRP_DESC>
-        <PTVEGRP_ACTIVITY_DATE/>
-        <PTVEGRP_SURROGATE_ID/>
-        <PTVEGRP_VERSION/>
-        <PTVEGRP_USER_ID/>
-        <PTVEGRP_DATA_ORIGIN/>
-        <PTVEGRP_VPDI_CODE/>
+        <PTVEGRP_DATA_ORIGIN>SEED_DATA</PTVEGRP_DATA_ORIGIN>
     </PTVEGRP>
 </PTVEGRP_DATA>
 

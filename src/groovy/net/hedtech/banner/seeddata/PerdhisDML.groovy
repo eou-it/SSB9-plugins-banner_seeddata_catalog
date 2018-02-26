@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -9,7 +9,7 @@ import java.sql.Connection
 
 /**
  * Created by apoliski on 6/8/2016.
- * Get Banner ID for W-4 Signed ID from BANNERID_W4_SIGNED_PIDM attribute
+ * Get Banner ID for W-4 Signed ID from W4_SIGNED_BANNERID attribute
  */
 class PerdhisDML {
     def InputData connectInfo
@@ -41,7 +41,7 @@ class PerdhisDML {
     def processPerdhis() {
         def apiData = new XmlParser().parseText(xmlData)
 
-        def w4Id = apiData.BANNERID_W4_SIGNED_PIDM?.text()
+        def w4Id = apiData?.W4_SIGNED_BANNERID?.text()
         def spridenRow
         if (w4Id) {
             String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """

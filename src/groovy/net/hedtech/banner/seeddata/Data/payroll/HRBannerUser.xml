@@ -1,104 +1,8 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016-2017 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <HR_BANNER_USER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <BANNERUSER_ORACLE_ID>HRUTEST</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <BANNERUSER_ORACLE_ID>HRUTEST1</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <BANNERUSER_ORACLE_ID>HRUTEST2</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <BANNERUSER_ORACLE_ID>HRUTEST4</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HOPADM03</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ECL006</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ESSPI02</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HRUSER01</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ECL005</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HOPADM02</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HOPADM01</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>HOPADM04</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ESSPI01</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ESSPI05</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ECL003</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ECL004</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ECL001</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ECL002</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ESSPI04</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
-    <BANNERUSER>
-        <BANSECR>YES</BANSECR>
-        <!-- This is required to use db connection logged in with bansecr user-->
-        <BANNERUSER_ORACLE_ID>ESSPI03</BANNERUSER_ORACLE_ID>
-    </BANNERUSER>
     <BANNERUSER>
         <BANSECR>YES</BANSECR>
         <BANNERUSER_ORACLE_ID>BTE001</BANNERUSER_ORACLE_ID>
@@ -139,4 +43,81 @@ Copyright 2016-2017 Ellucian Company L.P. and its affiliates.
         <BANSECR>YES</BANSECR>
         <BANNERUSER_ORACLE_ID>BTE010</BANNERUSER_ORACLE_ID>
     </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ECL001</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ECL002</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ECL003</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ECL004</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ECL005</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ECL006</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ESSPI01</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ESSPI02</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ESSPI03</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ESSPI04</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>ESSPI05</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HOPADM01</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HOPADM02</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HOPADM03</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HOPADM04</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HRUTEST</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HRUTEST1</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HRUTEST2</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
+    <BANNERUSER>
+        <BANSECR>YES</BANSECR>
+        <BANNERUSER_ORACLE_ID>HRUTEST4</BANNERUSER_ORACLE_ID>
+    </BANNERUSER>
 </HR_BANNER_USER>
+

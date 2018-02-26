@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTVSHCD_DATA>
     <PTVSHCD>
-        <PTVSHCD_CODE>NTME</PTVSHCD_CODE>
-        <PTVSHCD_DESC>No shift hours defined</PTVSHCD_DESC>
-    </PTVSHCD>
-    <PTVSHCD>
         <PTVSHCD_CODE>SECR</PTVSHCD_CODE>
         <PTVSHCD_DESC>Security Shift Pay</PTVSHCD_DESC>
+        <PTVSHCD_DATA_ORIGIN>SEED_DATA</PTVSHCD_DATA_ORIGIN>
     </PTVSHCD>
     <PTVSHCD>
         <PTVSHCD_CODE>UNIO</PTVSHCD_CODE>
         <PTVSHCD_DESC>Union Shift Pay</PTVSHCD_DESC>
+        <PTVSHCD_DATA_ORIGIN>SEED_DATA</PTVSHCD_DATA_ORIGIN>
     </PTVSHCD>
 </PTVSHCD_DATA>
+
