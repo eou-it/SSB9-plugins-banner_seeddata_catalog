@@ -1,0 +1,1782 @@
+|Loading Grails 2.5.0
+|Configuring classpath
+.
+|Environment set to development
+......base dir: C:\Banner9Workspace\dev2\banner_employee_ssb_app\plugins\banner_seeddata_catalog.git target employee
+..Using configuration: file:C:\Users\mfisher/.grails/banner_configuration.groovy
+.....Seed data loader execution of all targets starting at Fri Feb 23 10:50:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/GtvemalData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:32 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: GTVEMAL  	Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:32 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/GtvdicdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:32 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: GTVDICD  	Read:   20  	Insert:    0  	Update:   20  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   20  	Insert:    0  	Update:   20  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:33 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/StvteleData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:33 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: STVTELE  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:33 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/StvatypData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:33 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: STVATYP  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:33 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/GordmclData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:33 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: GORDMCL  	Read:  115  	Insert:    0  	Update:  115  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  115  	Insert:    0  	Update:  115  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:35 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/general/GordmskData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:35 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: GORDMSK  	Read:   74  	Insert:    0  	Update:   74  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   74  	Insert:    0  	Update:   74  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvfsyrData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVFSYR  	Read:   21  	Insert:    0  	Update:   21  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   21  	Insert:    0  	Update:   21  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvfspdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVFSPD  	Read:  264  	Insert:    0  	Update:  264  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  264  	Insert:    0  	Update:  264  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvobudData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVOBUD  	Read:   21  	Insert:    0  	Update:   21  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   21  	Insert:    0  	Update:   21  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvobphData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVOBPH  	Read:   25  	Insert:    0  	Update:   25  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   25  	Insert:    0  	Update:   25  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:40 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALFund.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:40 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVFUND  	Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:41 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALOrganization.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:41 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVORGN  	Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALAccount.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVACCT  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALProgram.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVPROG  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:44 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALActivity.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:44 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVACTV  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:45 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALLocation.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:45 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FTVLOCN  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:45 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrant.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:45 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FRBGRNT  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:45 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrantPersonnel.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:45 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FRRGRPI  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:47 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrantEffort.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:47 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: FRRGREC  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:48 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtveccgData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:48 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTVECCG  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:48 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvecgrData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:48 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTVECGR  	Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:49 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvqprtData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:49 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTVQPRT  	Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:49 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvwkshData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:49 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTVWKSH  	Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:49 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecipData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:49 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVECIP  	Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:49 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtveeogData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:49 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVEEOG  	Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:52 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvegrpData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:52 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVEGRP  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:52 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvesklData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:52 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVESKL  	Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:53 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvshcdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:53 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVSHCD  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:53 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvlcatData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:53 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVLCAT  	Read:   20  	Insert:    0  	Update:   20  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   20  	Insert:    0  	Update:   20  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:53 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvjctyData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:53 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVJCTY  	Read:    5  	Insert:    0  	Update:    5  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    5  	Insert:    0  	Update:    5  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:53 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:53 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVRQST  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:53 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/Ptv1099Data.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:53 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTV1099  	Read:   63  	Insert:    0  	Update:   63  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   63  	Insert:    0  	Update:   63  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:50:54 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvbdtyData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:50:54 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVBDTY  	Read:   42  	Insert:    0  	Update:   42  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   42  	Insert:    0  	Update:   42  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:00 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:00 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRALVL  	Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:00 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrqprtData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:00 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRQPRT  	Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    0  	Update:    6  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:01 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrqgrpData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:01 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRQGRP  	Read:    3  	Insert:    3  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    3  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:01 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrecdqData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:01 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRECDQ  	Read:    3  	Insert:    3  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    3  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:01 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/SalaryGroupData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:01 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRSGRP  	Read:   27  	Insert:    0  	Update:   27  	Deletes:    0  	Errors:    0 
+Total for Table: NTRSALB  	Read:  106  	Insert:    0  	Update:  106  	Deletes:    0  	Errors:    0 
+Total for Table: NTRSALA  	Read:  462  	Insert:    0  	Update:  462  	Deletes:    0  	Errors:    0 
+
+Total Tables:    3  		Read:  595  	Insert:    0  	Update:  595  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:07 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrinstData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:07 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRINST  	Read:    1  	Insert:    1  	Update:    0  	Deletes:    1  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    1  	Update:    0  	Deletes:    1  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:07 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrfiniData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:07 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRFINI  	Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:07 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrrqueData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:07 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRRQUE  	Read:  108  	Insert:    0  	Update:  108  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  108  	Insert:    0  	Update:  108  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:08 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrwkshData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:08 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRWKSH  	Read:   44  	Insert:    0  	Update:   44  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   44  	Insert:    0  	Update:   44  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:09 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbcatData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:09 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBCAT  	Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:09 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtremprData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:09 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTREMPR  	Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    3  	Insert:    0  	Update:    3  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:09 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrpictData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:09 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRPICT  	Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:09 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrcalnData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:09 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRCALN  	Read: 1587  	Insert:    0  	Update: 1587  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 1587  	Insert:    0  	Update: 1587  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:30 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrdfprData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:30 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRDFPR  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:30 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclsData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:30 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECLS  	Read:   25  	Insert:    0  	Update:   25  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   25  	Insert:    0  	Update:   25  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:30 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclcData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:30 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECLC  	Read:   33  	Insert:    0  	Update:   33  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   33  	Insert:    0  	Update:   33  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrearnData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:31 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTREARN  	Read:   37  	Insert:    0  	Update:   37  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   37  	Insert:    0  	Update:   37  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreernData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:31 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTREERN  	Read:  238  	Insert:    0  	Update:  238  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  238  	Insert:    0  	Update:  238  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:33 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecbcData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:33 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECBC  	Read:   24  	Insert:    0  	Update:   24  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   24  	Insert:    0  	Update:   24  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:34 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreholData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:34 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTREHOL  	Read:  228  	Insert:    0  	Update:  228  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  228  	Insert:    0  	Update:  228  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjblnData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRJBLN  	Read:    5  	Insert:    0  	Update:    5  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    5  	Insert:    0  	Update:    5  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrjcreData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRJCRE  	Read:   25  	Insert:    0  	Update:   25  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   25  	Insert:    0  	Update:   25  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrleavData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRLEAV  	Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    7  	Insert:    0  	Update:    7  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvasData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRLVAS  	Read:   64  	Insert:    0  	Update:   64  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   64  	Insert:    0  	Update:   64  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:37 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrtreaData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:37 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRTREA  	Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   10  	Insert:    0  	Update:   10  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:37 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrshftData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:37 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRSHFT  	Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:37 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrteshData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:37 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRTESH  	Read:   42  	Insert:    0  	Update:   42  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   42  	Insert:    0  	Update:   42  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:38 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtresocData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:38 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRESOC  	Read:   29  	Insert:    0  	Update:   29  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   29  	Insert:    0  	Update:   29  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:38 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrinstData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:38 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRINST  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:38 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvacData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:38 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRLVAC  	Read:  109  	Insert:    0  	Update:  109  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  109  	Insert:    0  	Update:  109  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrlvprData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRLVPR  	Read:   26  	Insert:    0  	Update:   26  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   26  	Insert:    0  	Update:   26  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrwstbData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRWSTB  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdclData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDCL  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:40 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PxrtxcdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:40 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PXRTXCD  	Read:  228  	Insert:    0  	Update:  228  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  228  	Insert:    0  	Update:  228  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:41 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdcaData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:41 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDCA  	Read:   11  	Insert:    0  	Update:   11  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   11  	Insert:    0  	Update:   11  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdpdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDPD  	Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdplData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDPL  	Read:   23  	Insert:    0  	Update:   23  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   23  	Insert:    0  	Update:   23  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdcgData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDCG  	Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    0  	Update:    2  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdidData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDID  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:42 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdxdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:42 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDXD  	Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    9  	Insert:    0  	Update:    9  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:43 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdxeData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:43 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDXE  	Read:   67  	Insert:    0  	Update:   67  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   67  	Insert:    0  	Update:   67  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:43 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrbdldData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:43 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRBDLD  	Read:  180  	Insert:    0  	Update:  180  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  180  	Insert:    0  	Update:  180  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:45 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:45 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRPCLS  	Read:   23  	Insert:    0  	Update:   23  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   23  	Insert:    0  	Update:   23  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:45 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NbbfiscData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:45 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NBBFISC  	Read:   12  	Insert:    0  	Update:   12  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   12  	Insert:    0  	Update:   12  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:45 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/PositionData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:45 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NBBPOSN  	Read:  123  	Insert:    0  	Update:  123  	Deletes:    0  	Errors:    0 
+Total for Table: NBRPOSH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   38  	Errors:    0 
+Total for Table: NBRPTOT  	Read:  124  	Insert:  124  	Update:    0  	Deletes:  124  	Errors:    0 
+Total for Table: NBRPLBD  	Read:  132  	Insert:  132  	Update:    0  	Deletes:  132  	Errors:    0 
+Total for Table: NBRBHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   28  	Errors:    0 
+
+Total Tables:    5  		Read:  379  	Insert:  256  	Update:  123  	Deletes:  322  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:51 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/PositionHistoryData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:51 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NBRPOSH  	Read:   25  	Insert:   25  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: NBRBHIS  	Read:   28  	Insert:   28  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read:   53  	Insert:   53  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:52 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:52 EST 2018
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Committing  seed data
+completed commit
+Total for Table: BANNERUSER  	Read:   29  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: ORACLEUSER  	Read:    0  	Insert:   29  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read:   29  	Insert:   29  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:51:57 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeBasicData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:51:57 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: SPRIDEN  	Read:  185  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: SPBPERS  	Read:  185  	Insert:    0  	Update:  185  	Deletes:    0  	Errors:    0 
+Total for Table: SPRADDR  	Read:  185  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: SPREMRG  	Read:   11  	Insert:    0  	Update:   11  	Deletes:    0  	Errors:    0 
+Total for Table: SPRTELE  	Read:  163  	Insert:    0  	Update:  163  	Deletes:    0  	Errors:    0 
+Total for Table: GOREMAL  	Read:  108  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: GXRDIRD  	Read:    5  	Insert:    0  	Update:    5  	Deletes:    0  	Errors:    0 
+Total for Table: PEBEMPL  	Read:  185  	Insert:  185  	Update:    0  	Deletes:  185  	Errors:    0 
+Total for Table: PHRACCR  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  830  	Errors:    0 
+Total for Table: PHRDOCM  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  822  	Errors:    0 
+Total for Table: PHREARN  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 1483  	Errors:    0 
+Total for Table: PHRELBD  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 1194  	Errors:    0 
+Total for Table: PHRJOBS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  842  	Errors:    0 
+Total for Table: PHRHIST  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 1078  	Errors:    0 
+Total for Table: PERDTOT  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 5250  	Errors:    0 
+Total for Table: PERJTOT  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 1014  	Errors:    0 
+Total for Table: PERETOT  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  525  	Errors:    0 
+Total for Table: PERJOBS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   23  	Errors:    0 
+Total for Table: PDRBENE  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  185  	Errors:    0 
+Total for Table: PDRBEHS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  370  	Errors:    0 
+Total for Table: PHRDEDN  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 2608  	Errors:    0 
+Total for Table: PERDHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  684  	Errors:    0 
+Total for Table: PDRDEDN  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  683  	Errors:    0 
+Total for Table: PDRBDED  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  666  	Errors:    0 
+Total for Table: NBRJFTE  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   32  	Errors:    0 
+Total for Table: NBRJLBD  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  175  	Errors:    0 
+Total for Table: NBREARN  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   60  	Errors:    0 
+Total for Table: NBRJOBS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  107  	Errors:    0 
+Total for Table: NBRBJOB  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  176  	Errors:    0 
+Total for Table: PERLEAV  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  777  	Errors:    0 
+Total for Table: PERLHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes: 1791  	Errors:    0 
+Total for Table: PEREHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  185  	Errors:    0 
+Total for Table: PERJHIS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   94  	Errors:    0 
+Total for Table: PERLVTK  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   15  	Errors:    0 
+Total for Table: PHRECRQ  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  335  	Errors:    0 
+Total for Table: PHRECST  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   22  	Errors:    0 
+Total for Table: PHRECRS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  129  	Errors:    0 
+Total for Table: PHRECDT  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   56  	Errors:    0 
+Total for Table: PHRECSI  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   63  	Errors:    0 
+Total for Table: PHRECSC  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  286  	Errors:    0 
+Total for Table: PHRECSN  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   66  	Errors:    0 
+Total for Table: PHRECRT  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   22  	Errors:    0 
+Total for Table: NBRWKSH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   71  	Errors:    0 
+Total for Table: NBBWKSH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    4  	Errors:    0 
+Total for Table: PERTETH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   11  	Errors:    0 
+Total for Table: PERDAYH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  202  	Errors:    0 
+Total for Table: PERJOBH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   11  	Errors:    0 
+Total for Table: PERELBD  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    6  	Errors:    0 
+Total for Table: PERTITO  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    4  	Errors:    0 
+Total for Table: PERHOUR  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   39  	Errors:    0 
+Total for Table: PEREARN  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   15  	Errors:    0 
+Total for Table: PERDAYS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  171  	Errors:    0 
+Total for Table: PERHOUH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   31  	Errors:    0 
+Total for Table: PEREARH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    7  	Errors:    0 
+Total for Table: PERROUT  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    5  	Errors:    0 
+Total for Table: PHRERRL  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    2  	Errors:    0 
+Total for Table: PERROUH  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    1  	Errors:    0 
+Total for Table: PHRJACR  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  199  	Errors:    0 
+Total for Table: PERJLHS  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  517  	Errors:    0 
+Total for Table: PERJLEV  	Read:    0  	Insert:    0  	Update:    0  	Deletes:   20  	Errors:    0 
+Total for Table: PXRW2FD  	Read:    0  	Insert:    0  	Update:    0  	Deletes:    1  	Errors:    0 
+
+Total Tables:   61  		Read: 1027  	Insert:  185  	Update:  364  	Deletes: 24150  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:52:18 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:52:18 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NBRBJOB  	Read:  176  	Insert:  176  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: NBRJOBS  	Read:  181  	Insert:  181  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: PTRINST  	Read:    0  	Insert:    0  	Update:    8  	Deletes:   16  	Errors:    0 
+Total for Table: NBREARN  	Read:  129  	Insert:  129  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: NBRJLBD  	Read:  175  	Insert:  175  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: NBBWKSH  	Read:    4  	Insert:    4  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: NBRWKSH  	Read:   71  	Insert:   71  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: NBRRJQE  	Read:   54  	Insert:    0  	Update:   54  	Deletes:    0  	Errors:    0 
+
+Total Tables:    8  		Read:  790  	Insert:  736  	Update:   62  	Deletes:   16  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:52:30 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobHistoryData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:52:30 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERJHIS  	Read:   94  	Insert:   94  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   94  	Insert:   94  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:52:33 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeDeductionData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:52:33 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PDRBDED  	Read:  666  	Insert:  666  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: PDRDEDN  	Read:  683  	Insert:  683  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read: 1349  	Insert: 1349  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:52:43 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeDeductionHistoryData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:52:43 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERDHIS  	Read:  684  	Insert:  684  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  684  	Insert:  684  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:52:52 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:52:52 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERLEAV  	Read:  757  	Insert:   56  	Update:  701  	Deletes:    0  	Errors:    0 
+Total for Table: PERJLEV  	Read:   20  	Insert:   20  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read:  777  	Insert:   76  	Update:  701  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:52:59 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveHistoryData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:52:59 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERLHIS  	Read: 1070  	Insert: 1070  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: PERJLHS  	Read:  517  	Insert:  517  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read: 1587  	Insert: 1587  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:53:16 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeHrAccessData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:53:16 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: GOBTPAC_RECORD  	Read:  185  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: GOBTPAC  	Read:    0  	Insert:  185  	Update:    0  	Deletes:  185  	Errors:    0 
+Total for Table: GORPAUD  	Read:    0  	Insert:    0  	Update:    0  	Deletes:  370  	Errors:    0 
+
+Total Tables:    3  		Read:  185  	Insert:  185  	Update:    0  	Deletes:  555  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:53:19 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrAdminUserData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:53:19 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRUSER  	Read:   29  	Insert:    0  	Update:   29  	Deletes:    0  	Errors:    0 
+Total for Table: HRGOBEACCUSER  	Read:   29  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: GOBEACC  	Read:   29  	Insert:   29  	Update:    0  	Deletes:   29  	Errors:    0 
+
+Total Tables:    3  		Read:   87  	Insert:   29  	Update:   29  	Deletes:   29  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:53:20 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PeretotData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:53:20 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERETOT  	Read:  525  	Insert:  525  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  525  	Insert:  525  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:53:24 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjtotData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:53:24 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERJTOT  	Read: 1014  	Insert: 1014  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 1014  	Insert: 1014  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:53:34 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerdtotData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:53:34 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERDTOT  	Read: 5250  	Insert: 5250  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 5250  	Insert: 5250  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:54:23 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrhistData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:54:23 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRHIST  	Read: 1128  	Insert: 1078  	Update:   50  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 1128  	Insert: 1078  	Update:   50  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:54:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhraccrData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:54:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRACCR  	Read:  830  	Insert:  830  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  830  	Insert:  830  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:54:44 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjacrData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:54:44 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRJACR  	Read:  199  	Insert:  199  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  199  	Insert:  199  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:54:46 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrjobsData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:54:46 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRJOBS  	Read:  873  	Insert:  842  	Update:   31  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  873  	Insert:  842  	Update:   31  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:55:01 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrearnData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:55:01 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHREARN  	Read: 1483  	Insert: 1483  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 1483  	Insert: 1483  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:55:19 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrelbdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:55:19 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRELBD  	Read: 1644  	Insert: 1194  	Update:  450  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 1644  	Insert: 1194  	Update:  450  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:55:44 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdednData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:55:44 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRDEDN  	Read: 2608  	Insert: 2608  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read: 2608  	Insert: 2608  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:14 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PhrdocmData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:14 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRDOCM  	Read:  822  	Insert:  822  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  822  	Insert:  822  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:22 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerjobsData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:22 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERJOBS  	Read:   13  	Insert:   13  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   13  	Insert:   13  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:23 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PerlvtkData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:23 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERLVTK  	Read:   13  	Insert:   13  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   13  	Insert:   13  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:23 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/Pxrw2fdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:23 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PXRW2FD  	Read:    1  	Insert:    1  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    1  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:23 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrlraqData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:23 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: NTRLRAQ  	Read:    6  	Insert:    6  	Update:    0  	Deletes:    6  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    6  	Update:    0  	Deletes:    6  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:23 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecrcData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:23 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECRC  	Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    1  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:23 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvecpdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:23 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTVECPD  	Read:   12  	Insert:    0  	Update:   12  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   12  	Insert:    0  	Update:   12  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:24 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecpdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:24 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECPD  	Read:   12  	Insert:    0  	Update:   12  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   12  	Insert:    0  	Update:   12  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:24 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecpcData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:24 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECPC  	Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    8  	Insert:    0  	Update:    8  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:24 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecerData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:24 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECER  	Read:   44  	Insert:    0  	Update:   44  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   44  	Insert:    0  	Update:   44  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:25 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecprData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:25 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECPR  	Read:   17  	Insert:    0  	Update:   17  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   17  	Insert:    0  	Update:   17  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:25 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecrtData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:25 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECRT  	Read:   24  	Insert:   22  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   24  	Insert:   22  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:25 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecstData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:25 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECST  	Read:   52  	Insert:   22  	Update:   18  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   52  	Insert:   22  	Update:   18  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:26 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecsnData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:26 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECSN  	Read:   72  	Insert:   66  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   72  	Insert:   66  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:27 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecscData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:27 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECSC  	Read:  312  	Insert:  286  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  312  	Insert:  286  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:30 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecsiData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:30 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECSI  	Read:   69  	Insert:   63  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   69  	Insert:   63  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecalData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:31 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECAL  	Read:    6  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecfdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:31 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECFD  	Read:    1  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    1  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrececData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:31 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PTRECEC  	Read:    4  	Insert:    4  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    4  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:31 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecrqData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:31 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECRQ  	Read:  371  	Insert:  335  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  371  	Insert:  335  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:36 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecrsData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:36 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECRS  	Read:  131  	Insert:  129  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:  131  	Insert:  129  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:37 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecdtData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:37 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PHRECDT  	Read:   62  	Insert:   56  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   62  	Insert:   56  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:38 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntryExtractData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:38 EST 2018
+Created timesheet job seqno: 41
+Created timesheet job seqno: 42
+Created timesheet job seqno: 43
+Created timesheet job seqno: 44
+Created timesheet job seqno: 45
+Created timesheet job seqno: 46
+Created timesheet job seqno: 47
+Created timesheet job seqno: 48
+Created timesheet job seqno: 49
+Created timesheet job seqno: 50
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERJOBS_EXTRACT  	Read:   10  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: PERJOBS  	Read:    0  	Insert:   10  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read:   10  	Insert:   10  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerearnData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PEREARN  	Read:    9  	Insert:    9  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    9  	Insert:    9  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerhourData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERHOUR  	Read:   10  	Insert:   10  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:   10  	Insert:   10  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PertitoData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERTITO  	Read:    4  	Insert:    4  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    4  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:39 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerelbdData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:39 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERELBD  	Read:    6  	Insert:    6  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    6  	Insert:    6  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:40 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerlvtkData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:40 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERLVTK  	Read:    2  	Insert:    2  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    2  	Insert:    2  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:40 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntryMessageData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:40 EST 2018
+Created timesheet messages for job seqno: 45
+Created timesheet messages for job seqno: 47
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PERJOBS_MESSAGE  	Read:    2  	Insert:    0  	Update:    0  	Deletes:    0  	Errors:    0 
+Total for Table: PHRERRL  	Read:    0  	Insert:    2  	Update:    0  	Deletes:    0  	Errors:    0 
+
+Total Tables:    2  		Read:    2  	Insert:    2  	Update:    0  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:40 EST 2018
+C:/Banner9Workspace/dev2/banner_employee_ssb_app/plugins/banner_seeddata_catalog.git//src/groovy/net/hedtech/banner/seeddata/Data/payroll/PprhnawData.xml
+
+
+Seed data loader starting at Fri Feb 23 10:56:40 EST 2018
+Committing  seed data
+completed commit
+using configuration: C:\Users\mfisher\.grails\banner_configuration.groovy
+Total for Table: PPRHNAW  	Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+Total Tables:    1  		Read:    4  	Insert:    0  	Update:    4  	Deletes:    0  	Errors:    0 
+
+
+Seed data loader completed at Fri Feb 23 10:56:40 EST 2018
+Seed data loader execution started Fri Feb 23 10:50:31 EST 2018 of all targets ended Fri Feb 23 10:56:40 EST 2018
+Total execution time: 0 hours, 6 minutes, 8 secs

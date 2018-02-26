@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTRWSTB_DATA>
     <PTRWSTB>
@@ -17,12 +17,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRWSTB_DISP_JOB_TITLE_IND>Y</PTRWSTB_DISP_JOB_TITLE_IND>
         <PTRWSTB_DISP_EMPR_AMT_IND>Y</PTRWSTB_DISP_EMPR_AMT_IND>
         <PTRWSTB_DISP_FED_LOCAL_WH_IND>Y</PTRWSTB_DISP_FED_LOCAL_WH_IND>
-        <PTRWSTB_ACTIVITY_DATE/>
-        <PTRWSTB_USER_ID/>
         <PTRWSTB_DATA_ORIGIN>SEED_DATA</PTRWSTB_DATA_ORIGIN>
-        <PTRWSTB_SURROGATE_ID/>
-        <PTRWSTB_VERSION/>
-        <PTRWSTB_VPDI_CODE/>
         <PTRWSTB_ID_LABEL>Banner ID</PTRWSTB_ID_LABEL>
         <PTRWSTB_SSN_LABEL>SSN/SIN/TIN</PTRWSTB_SSN_LABEL>
         <PTRWSTB_DISP_PAYSUM_EMPR_IND>Y</PTRWSTB_DISP_PAYSUM_EMPR_IND>
@@ -33,3 +28,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRWSTB_DISP_PAYSTUB_IND>P</PTRWSTB_DISP_PAYSTUB_IND>
     </PTRWSTB>
 </PTRWSTB_DATA>
+

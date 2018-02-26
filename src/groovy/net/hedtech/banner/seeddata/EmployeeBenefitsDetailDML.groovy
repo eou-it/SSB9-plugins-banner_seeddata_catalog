@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat
  */
 class EmployeeBenefitsDetailDML {
     def bannerid
-    def bannerid_w4_signed_pidm
+    def w4_signed_bannerid
     def pdrdedn_pidm
     def pdrdedn_bdca_code
     def pdrdedn_effective_date
@@ -78,7 +78,7 @@ class EmployeeBenefitsDetailDML {
     def parseXmlData() {
         def pdrdedn = new XmlParser().parseText(xmlData)
         this.bannerid = pdrdedn.BANNERID
-        this.bannerid_w4_signed_pidm = pdrdedn.BANNERID_W4_SIGNED_PIDM
+        this.w4_signed_bannerid = pdrdedn.W4_SIGNED_BANNERID
         this.pdrdedn_bdca_code = pdrdedn.PDRDEDN_BDCA_CODE.text()
         this.pdrdedn_effective_date = pdrdedn.PDRDEDN_EFFECTIVE_DATE.text()
         this.pdrdedn_status = pdrdedn.PDRDEDN_STATUS.text()
@@ -130,16 +130,16 @@ class EmployeeBenefitsDetailDML {
                 println "Could not select ID in EmployeeBenefitsDetailDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
             }
         }
-        if (this.bannerid_w4_signed_pidm) {
+        if (this.w4_signed_bannerid) {
             String w4pidmsql = """select * from spriden  where spriden_id = ? and spriden_change_ind is null"""
             try {
-                this.conn.eachRow(w4pidmsql, [this.bannerid_w4_signed_pidm.text()]) { t2row ->
+                this.conn.eachRow(w4pidmsql, [this.w4_signed_bannerid.text()]) { t2row ->
                     W4_SIGNED_PIDM = t2row.spriden_pidm
                 }
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
-                   println "Could not select W4 ID in EmployeeBenefitsDetailDML,  ${this.bannerid_w4_signed_pidm.text()}  from SPRIDEN. $e.message"
+                   println "Could not select W4 ID in EmployeeBenefitsDetailDML,  ${this.w4_signed_bannerid.text()}  from SPRIDEN. $e.message"
                 }
             }
         }

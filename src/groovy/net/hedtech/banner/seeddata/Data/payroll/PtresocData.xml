@@ -1,325 +1,181 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTRESOC_DATA>
     <PTRESOC>
         <PTRESOC_CODE>11-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Management Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Management Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>13-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Business and Financial Operations Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Business and Financial Operations Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>15-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Computer, Engineering, and Science Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Computer and Mathematical Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>17-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Computer, Engineering, and Science Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Architecture and Engineering Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>19-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Computer, Engineering, and Science Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Life, Physical, and Social Science Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>21-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Community, Social Service, Legal, Arts, Design, Entertainment, Sports, and Media Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Community and Social Service Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>23-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Community, Social Service, Legal, Arts, Design, Entertainment, Sports, and Media Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Legal Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-1000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Primary Function</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Postsecondary Teachers</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-1191</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Primary Function</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Graduate teaching assistants</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-2000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Student and Academic Affairs and Other Education Services Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Pre-school, Primary, Secondary, and Special Education School Teachers</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-3000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Student and Academic Affairs and Other Education Services Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Other Teachers and Instructors</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-4010</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Archivists, Curators, and Museum Technicians</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Archivists, Curators, and Museum Technicians</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-4020</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Librarians</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Librarians</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-4030</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Library Technicians</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Library Technicians</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>25-9000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Student and Academic Affairs and Other Education Services Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Other Education, Training, and Library Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>27-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Community, Social Service, Legal, Arts, Design, Entertainment, Sports, and Media Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Arts, Design, Entertainment, Sports, and Media Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>29-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Healthcare Practitioners and Technical Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Healthcare Practitioners and Technical Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>31-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Service Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Healthcare Support Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>33-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Service Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Protective Service Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>35-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Service Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Food Prep and Serving Related Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>37-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Service Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Building and Grounds Cleaning and Maintenance Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>39-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Service Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Personal Care and Service Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>41-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Sales and Related Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Sales and Related Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>43-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Office and Administrative Support Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Office and Administrative Support Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>45-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Natural Resources, Construction, and Maintenance Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Farming, Fishing, and Forestry Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>47-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Natural Resources, Construction, and Maintenance Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Construction and Extraction Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>49-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Natural Resources, Construction, and Maintenance Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Installation, Maintenance, and Repair Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>51-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Production, Transportation, and Material Moving Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Production Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
     <PTRESOC>
         <PTRESOC_CODE>53-0000</PTRESOC_CODE>
         <PTRESOC_CATEGORY>Production, Transportation, and Material Moving Occupations</PTRESOC_CATEGORY>
         <PTRESOC_DESC>Transportation and Material Moving Occupations</PTRESOC_DESC>
-        <PTRESOC_ACTIVITY_DATE/>
-        <PTRESOC_USER_ID/>
         <PTRESOC_DATA_ORIGIN>SEED_DATA</PTRESOC_DATA_ORIGIN>
-        <PTRESOC_SURROGATE_ID/>
-        <PTRESOC_VERSION/>
-        <PTRESOC_VPDI_CODE/>
     </PTRESOC>
 </PTRESOC_DATA>
+

@@ -9,7 +9,7 @@ import java.sql.Connection
 
 /**
  * Created by apoliski on 6/7/2016.
- * get supervisor ID from bannerid_supervisor_pidm attribute
+ * get supervisor ID from SUPERVISOR_BANNERID attribute
  */
 class PerjhisDML {
     def InputData connectInfo
@@ -41,7 +41,7 @@ class PerjhisDML {
     def processPerjhis() {
         def apiData = new XmlParser().parseText(xmlData)
 
-        def supervisorId = apiData.BANNERID_SUPERVISOR_PIDM?.text()
+        def supervisorId = apiData?.SUPERVISOR_BANNERID?.text()
         def spridenRow
         if (supervisorId) {
             String findPidm = """select spriden_pidm from spriden where spriden_id = ? and spriden_change_ind is null """

@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat
  */
 class EmployeeJobAssignmentDetailDML {
     def bannerid
-    def bannerid_supervisor_pidm
+    def supervisor_bannerid
     def nbrjobs_pidm
     def nbrjobs_posn
     def nbrjobs_suff
@@ -99,7 +99,7 @@ class EmployeeJobAssignmentDetailDML {
     def parseXmlData() {
         def nbrjobs = new XmlParser().parseText(xmlData)
         this.bannerid = nbrjobs.BANNERID
-        this.bannerid_supervisor_pidm = nbrjobs.BANNERID_SUPERVISOR_PIDM
+        this.supervisor_bannerid = nbrjobs.SUPERVISOR_BANNERID
         this.nbrjobs_posn = nbrjobs.NBRJOBS_POSN.text()
         this.nbrjobs_suff = nbrjobs.NBRJOBS_SUFF.text()
         this.nbrjobs_effective_date = nbrjobs.NBRJOBS_EFFECTIVE_DATE.text()
@@ -170,16 +170,16 @@ class EmployeeJobAssignmentDetailDML {
                 println "Could not select ID in EmployeeJobAssignmentDetailDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
             }
         }
-        if (this.bannerid_supervisor_pidm) {
+        if (this.supervisor_bannerid) {
             String supvpidmsql = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
             try {
-                this.conn.eachRow(supvpidmsql, [this.bannerid_supervisor_pidm.text()]) { t2row ->
+                this.conn.eachRow(supvpidmsql, [this.supervisor_bannerid.text()]) { t2row ->
                     SUPERVISOR_PIDM = t2row.spriden_pidm
                 }
             }
             catch (Exception e) {
                 if (connectInfo.showErrors) {
-                    println "Could not select Supervisor ID in EmployeeJobAssignmentDetailDML,  ${this.bannerid_supervisor_pidm.text()}  from SPRIDEN. $e.message"
+                    println "Could not select Supervisor ID in EmployeeJobAssignmentDetailDML,  ${this.supervisor_bannerid.text()}  from SPRIDEN. $e.message"
                 }
             }
         }

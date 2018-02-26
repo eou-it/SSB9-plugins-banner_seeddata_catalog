@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -41,15 +41,15 @@ class NbrrjqeDML {
         def apprPidm = null
         def selectPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
 
-        if (apiData.BANNERID_APPR.text()) {
+        if (apiData?.APPR_BANNERID?.text()) {
             try {
-                this.conn.eachRow(selectPidm, [apiData.BANNERID_APPR.text()]) { t2row ->
+                this.conn.eachRow(selectPidm, [apiData.APPR_BANNERID.text()]) { t2row ->
                     apprPidm = t2row.spriden_pidm
                 }
             } catch (Exception e) {
                 setupFailure = true
                 if (connectInfo.showErrors) {
-                    println "Could not select User Pidm in EmployeeTimeEntryExtractDML for Banner ID ${this.bannerid_user} from SPRIDEN. $e.message"
+                    println "Could not select User Pidm in EmployeeTimeEntryExtractDML for Banner ID ${this.bannerid} from SPRIDEN. $e.message"
                 }
             }
         }

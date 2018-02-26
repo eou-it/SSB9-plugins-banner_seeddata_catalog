@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTRECLC_DATA>
     <PTRECLC>
         <PTRECLC_CODE>05</PTRECLC_CODE>
         <PTRECLC_LCAT_CODE>M1</PTRECLC_LCAT_CODE>
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
+    </PTRECLC>
+    <PTRECLC>
+        <PTRECLC_CODE>BK</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>C1</PTRECLC_LCAT_CODE>
     </PTRECLC>
     <PTRECLC>
         <PTRECLC_CODE>T0</PTRECLC_CODE>
@@ -79,6 +83,10 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
     <PTRECLC>
+        <PTRECLC_CODE>T7</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>P2</PTRECLC_LCAT_CODE>
+    </PTRECLC>
+    <PTRECLC>
         <PTRECLC_CODE>T8</PTRECLC_CODE>
         <PTRECLC_LCAT_CODE>A1</PTRECLC_LCAT_CODE>
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
@@ -99,12 +107,18 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
     <PTRECLC>
+        <PTRECLC_CODE>T9</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>P1</PTRECLC_LCAT_CODE>
+    </PTRECLC>
+    <PTRECLC>
         <PTRECLC_CODE>TA</PTRECLC_CODE>
         <PTRECLC_LCAT_CODE>C1</PTRECLC_LCAT_CODE>
+        <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
     <PTRECLC>
         <PTRECLC_CODE>TA</PTRECLC_CODE>
         <PTRECLC_LCAT_CODE>M1</PTRECLC_LCAT_CODE>
+        <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
     <PTRECLC>
         <PTRECLC_CODE>XA</PTRECLC_CODE>
@@ -114,11 +128,6 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
     <PTRECLC>
         <PTRECLC_CODE>XA</PTRECLC_CODE>
         <PTRECLC_LCAT_CODE>F1</PTRECLC_LCAT_CODE>
-        <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
-    </PTRECLC>
-    <PTRECLC>
-        <PTRECLC_CODE>XS</PTRECLC_CODE>
-        <PTRECLC_LCAT_CODE>IN</PTRECLC_LCAT_CODE>
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
     <PTRECLC>
@@ -132,9 +141,18 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
     <PTRECLC>
+        <PTRECLC_CODE>XS</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>IN</PTRECLC_LCAT_CODE>
+        <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
+    </PTRECLC>
+    <PTRECLC>
         <PTRECLC_CODE>XU</PTRECLC_CODE>
         <PTRECLC_LCAT_CODE>01</PTRECLC_LCAT_CODE>
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
+    </PTRECLC>
+    <PTRECLC>
+        <PTRECLC_CODE>XU</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>M1</PTRECLC_LCAT_CODE>
     </PTRECLC>
     <PTRECLC>
         <PTRECLC_CODE>XW</PTRECLC_CODE>
@@ -147,3 +165,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
     </PTRECLC>
 </PTRECLC_DATA>
+

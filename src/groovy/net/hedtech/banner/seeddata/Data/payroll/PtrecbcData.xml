@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016 Ellucian Company L.P. and its affiliates.
+Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTRECBC_DATA>
     <PTRECBC>
         <PTRECBC_CODE>05</PTRECBC_CODE>
         <PTRECBC_BCAT_CODE>UN</PTRECBC_BCAT_CODE>
         <PTRECBC_DATA_ORIGIN>SEED_DATA</PTRECBC_DATA_ORIGIN>
+    </PTRECBC>
+    <PTRECBC>
+        <PTRECBC_CODE>BK</PTRECBC_CODE>
+        <PTRECBC_BCAT_CODE>F1</PTRECBC_BCAT_CODE>
     </PTRECBC>
     <PTRECBC>
         <PTRECBC_CODE>T0</PTRECBC_CODE>
@@ -61,10 +65,12 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
     <PTRECBC>
         <PTRECBC_CODE>TA</PTRECBC_CODE>
         <PTRECBC_BCAT_CODE>CF</PTRECBC_BCAT_CODE>
+        <PTRECBC_DATA_ORIGIN>SEED_DATA</PTRECBC_DATA_ORIGIN>
     </PTRECBC>
     <PTRECBC>
         <PTRECBC_CODE>TA</PTRECBC_CODE>
         <PTRECBC_BCAT_CODE>F1</PTRECBC_BCAT_CODE>
+        <PTRECBC_DATA_ORIGIN>SEED_DATA</PTRECBC_DATA_ORIGIN>
     </PTRECBC>
     <PTRECBC>
         <PTRECBC_CODE>XA</PTRECBC_CODE>
@@ -80,7 +86,7 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRECBC_CODE>XA</PTRECBC_CODE>
         <PTRECBC_BCAT_CODE>IN</PTRECBC_BCAT_CODE>
         <PTRECBC_DATA_ORIGIN>SEED_DATA</PTRECBC_DATA_ORIGIN>
-     </PTRECBC>
+    </PTRECBC>
     <PTRECBC>
         <PTRECBC_CODE>XA</PTRECBC_CODE>
         <PTRECBC_BCAT_CODE>P1</PTRECBC_BCAT_CODE>
@@ -117,3 +123,4 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
         <PTRECBC_DATA_ORIGIN>SEED_DATA</PTRECBC_DATA_ORIGIN>
     </PTRECBC>
 </PTRECBC_DATA>
+
