@@ -108,6 +108,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrantPersonnel.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceGrantEffort.xml',
                                                   // HR Validation
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvacatData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtveccgData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvecgrData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvqprtData.xml',
