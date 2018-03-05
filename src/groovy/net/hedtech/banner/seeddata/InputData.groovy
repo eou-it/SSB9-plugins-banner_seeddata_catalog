@@ -94,10 +94,10 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmclData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/general/GordmskData.xml',
                                                   // Finance data
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvfsyrData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvfspdData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvobudData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/FtvobphData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfsyrData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvfspdData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobudData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvobphData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALFund.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALOrganization.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALAccount.xml',
@@ -181,6 +181,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeLeaveHistoryData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeHrAccessData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeRoleData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrAdminUserData.xml',
                                                   // Employee History
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/history/PeretotData.xml',
