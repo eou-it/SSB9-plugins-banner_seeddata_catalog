@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -613,6 +613,14 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_201764_Schedule.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_A00017091.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_A00010069.xml'],
+			'zero-textbook-cost'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCGoriccrCodes.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCTerm_201840.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCStudent_A00017137.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCWebUser_A00017136.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCFaculty_A00017133.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCFacultyAndAdvisor_A00017135.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCAdvisorData_A00017134.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ZTCScheduleData.xml'],
             'registration-planning-region'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml'],
             'GrailsReadOnly'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GrailsSAMLUser.xml'],
