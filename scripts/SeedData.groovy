@@ -61,7 +61,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
                     //def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
                     seedDataLoader.execute()
-                    reportErrors += inputData.totalErrors
+                    reportErrors += xmlInputData.totalErrors
                 }
             }
 
@@ -85,7 +85,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
                     //def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
                     seedDataLoader.execute()
-                    reportErrors += inputData.totalErrors
+                    reportErrors += xmlInputData.totalErrors
                 }
             }
         }
@@ -108,7 +108,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     println xmlInputData.xmlFile
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
                     seedDataLoader.execute()
-                    reportErrors += inputData.totalErrors
+                    reportErrors += xmlInputData.totalErrors
                 }
             }
         }

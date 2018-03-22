@@ -1087,7 +1087,7 @@ public class InputData {
                 " \tErrors: ${errorTot.toString().padLeft(4, ' ')} "
         totalErrors = errorTot
         if (errorTot > 0){
-            println "\n Errors are present"
+            println "\n Errors are present in file ${xmlFile}"
         }
     }
 
