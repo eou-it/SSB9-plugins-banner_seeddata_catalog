@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- *****************************************************************************Copyright 2010-2016 Ellucian Company L.P. and its affiliates. ********************************************************************************* -->
-<FINAIDVALIDATION>
-  <?xml version="1.0" encoding="UTF-8"?>
+<FINAIDVALIDATION> 
   <RTVAPRD>
     <RTVAPRD_CODE>FA/SPR</RTVAPRD_CODE>
     <RTVAPRD_DESC>Fall-Spring Semesters</RTVAPRD_DESC>
@@ -937,7 +936,7 @@
   <RFRBASE_VR_MSG_NO>3262</RFRBASE_VR_MSG_NO>
   <RFRBASE_ACTIVE_IND>Y</RFRBASE_ACTIVE_IND>
   <RFRBASE_XREF_VALUE/>
-  <RFRBASE_FUND_TITLE_LONG>Federal Unsub. Stafford Loan</RFRBASE_FUND_TITLE_LONG>                                       
+  <RFRBASE_FUND_TITLE_LONG>Federal Unsub. Stafford Loan</RFRBASE_FUND_TITLE_LONG>
   <RFRBASE_USER_ID>FAISMGR</RFRBASE_USER_ID>
   <RFRBASE_INFO_ACCESS_IND>Y</RFRBASE_INFO_ACCESS_IND>
   <RFRBASE_SURROGATE_ID>6</RFRBASE_SURROGATE_ID>

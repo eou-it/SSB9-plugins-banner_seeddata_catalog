@@ -45,6 +45,7 @@ public class InputData {
 
     def tableCnts = []
     def tableSize = 0
+    def totalErrors = 0
 
     List prompts
     // save the PIDM value for the general person view processing
@@ -1084,6 +1085,10 @@ public class InputData {
                 " \tUpdate: ${updateTot.toString().padLeft(4, ' ')} " +
                 " \tDeletes: ${deleteTot.toString().padLeft(4, ' ')} " +
                 " \tErrors: ${errorTot.toString().padLeft(4, ' ')} "
+        totalErrors = errorTot
+        if (errorTot > 0){
+            println "\n Errors are present"
+        }
     }
 
 
