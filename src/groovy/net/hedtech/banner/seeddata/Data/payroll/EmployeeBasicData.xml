@@ -3,7 +3,6 @@
 Copyright 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <EMPLOYEE_BASIC_DATA>
-<?xml version="1.0" encoding="UTF-8"?>
 <GXVDIRD>
   <GXVDIRD_CODE_BANK_ROUT_NUM>123478902</GXVDIRD_CODE_BANK_ROUT_NUM>
   <GXVDIRD_DESC>First Fidelity</GXVDIRD_DESC>
@@ -64,7 +63,7 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
   <GXVDIRD_DATA_ORIGIN/>
   <GXVDIRD_VPDI_CODE/>
 </GXVDIRD>
-      
+
     <SPRIDEN>
         <BANNERID>HOP510001</BANNERID>
         <SPRIDEN_PIDM/>
