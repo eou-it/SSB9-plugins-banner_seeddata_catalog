@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="WINDOWS-1252"?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<INCOME-CLASS>
+  <FTVINCL>
+    <FTVINCL_CODE>SC</FTVINCL_CODE>
+    <FTVINCL_INC_CLASS_DESC>Scholarships</FTVINCL_INC_CLASS_DESC>
+    <FNVENDW_DATA_ORIGIN>GRAILS</FNVENDW_DATA_ORIGIN>
+  </FTVINCL>
+</INCOME-CLASS>
