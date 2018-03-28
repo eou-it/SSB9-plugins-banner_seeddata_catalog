@@ -329,6 +329,8 @@ public class InputData {
             //TODO Need to revisit; this is a duplicate call
             'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
+            'finance-validation'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvshipData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvbuyrData.xml'],
             'finance-procurement'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToOrganization.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceUserToFund.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceFiscalYear.xml',
