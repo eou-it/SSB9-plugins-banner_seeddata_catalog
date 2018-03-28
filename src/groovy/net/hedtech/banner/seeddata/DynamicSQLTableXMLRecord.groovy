@@ -79,7 +79,7 @@ public class DynamicSQLTableXMLRecord {
                     println "${matchSQL}"
                 }
             }
-
+            if (connectInfo.debugThis) { println "Rows return from matchSql: ${ rowCount } " }
             if (rowCount > 0) {
                 if (this.connectInfo.replaceData) {
                     try {
