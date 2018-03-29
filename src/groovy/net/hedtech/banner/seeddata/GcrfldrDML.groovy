@@ -15,6 +15,9 @@ import java.sql.Connection
 
 public class GcrfldrDML {
     int folderSeq
+    int querySeq
+    int templateSeq
+    int fieldSeq
     def folder = null
 
     def InputData connectInfo
@@ -93,7 +96,25 @@ public class GcrfldrDML {
             if (apiData.GCRCFLD_FOLDER_ID.text().toInteger() != folderSeq) {
                 apiData.GCRCFLD_FOLDER_ID[0].setValue(folderSeq.toString())
             }
-        } else if (connectInfo.tableName == "GCBEMTL") {
+        }  else if (connectInfo.tableName == "GCRITPE") {
+            if (apiData.GCRITPE_FOLDER_ID.text().toInteger() != folderSeq) {
+                apiData.GCRITPE_FOLDER_ID[0].setValue(folderSeq.toString())
+            }
+        } else if(connectInfo.tableName == "GCRQRYV") {
+            querySeq = getQueryValueId(apiData.QUERY_NAME.text(), folderSeq)
+            if (apiData.GCRQRYV_QUERY_ID.text().toInteger() != querySeq) {
+                apiData.GCRQRYV_QUERY_ID[0].setValue(querySeq.toString())
+            }
+        }  else if(connectInfo.tableName == "GCRTPFL") {
+            templateSeq = getTemplateSurrogateId(apiData.TEMPLATE_NAME.text(), apiData.TEMPLATE_FOLDER.text())
+            if (apiData.GCRTPFL_TEMPLATE_ID.text().toInteger() != templateSeq) {
+                apiData.GCRTPFL_TEMPLATE_ID[0].setValue(templateSeq.toString())
+            }
+            fieldSeq = getFieldSurrogateId(apiData.FIELD_NAME.text(), apiData.FIELD_FOLDER.text())
+            if (apiData.GCRTPFL_FIELD_ID.text().toInteger() != fieldSeq) {
+                apiData.GCRTPFL_FIELD_ID[0].setValue(fieldSeq.toString())
+            }
+        }  else if (connectInfo.tableName == "GCBEMTL") {
             def templateSeq
             def tsql = """select * from gcbtmpl where gcbtmpl_folder_id = ? and GCBTMPL_NAME = ?"""
             try {
@@ -146,6 +167,45 @@ public class GcrfldrDML {
                     }
                 }
             }
+        } else if (connectInfo.tableName == "GCBMNTL") {
+            templateSeq = getTemplateSurrogateId(apiData.TEMPLATE.text(), apiData.FOLDER.text())
+            if (apiData.GCBMNTL_SURROGATE_ID.text().toInteger() != templateSeq) {
+                apiData.GCBMNTL_SURROGATE_ID[0].setValue(templateSeq.toString())
+            }
+            def isql
+            try {
+                isql = """insert into GCBMNTL
+                ( GCBMNTL_SURROGATE_ID
+                , GCBMNTL_PUSH
+                , GCBMNTL_STICKY
+                , GCBMNTL_EXPIRATION_POLICY
+                , GCBMNTL_DURATION_UNIT
+                , GCBMNTL_MOBILE_HEADLINE
+                , GCBMNTL_HEADLINE
+                , GCBMNTL_DESCRIPTION
+                , GCBMNTL_DESTINATION_LINK
+                , GCBMNTL_DESTINATION_LABEL) values (?,?,?,?,?,?,?,?,?,? ) """
+                this.conn.executeInsert(isql, [
+                        apiData.GCBMNTL_SURROGATE_ID.text().toInteger(),
+                        apiData.GCBMNTL_PUSH.text(),
+                        apiData.GCBMNTL_STICKY.text(),
+                        apiData.GCBMNTL_EXPIRATION_POLICY.text(),
+                        apiData.GCBMNTL_DURATION_UNIT.text(),
+                        apiData.GCBMNTL_MOBILE_HEADLINE.text(),
+                        apiData.GCBMNTL_HEADLINE.text(),
+                        apiData.GCBMNTL_DESCRIPTION.text(),
+                        apiData.GCBMNTL_DESTINATION_LINK.text(),
+                        apiData.GCBMNTL_DESTINATION_LABEL.text()])
+                connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 0, 1, 0)
+                    println isql
+                    println apiData
+                    println "Could not insert into GCBMNTL  in GcrfldrDML, ${apiData.FOLDER.text()} ${apiData.TEMPLATE.text()} for ${connectInfo.tableName}. $e.message"
+                }
+            }
         }
         // update the concentration  rule and the curr rule
 
@@ -170,10 +230,15 @@ public class GcrfldrDML {
 
 
     def deleteData() {
+        deleteData("GCRTPFL", "delete from GCRTPFL where GCRTPFL_TEMPLATE_ID in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
+        deleteData("GCRTPFL", "delete from GCRTPFL where GCRTPFL_FIELD_ID in ( select GCRCFLD_surrogate_id from GCRCFLD where GCRCFLD_folder_id  = ?  )  ")
         deleteData("GCBEMTL", "delete from GCBEMTL where GCBEMTL_surrogate_id in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
+        deleteData("GCBMNTL", "delete from GCBMNTL where GCBMNTL_surrogate_id in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
         deleteData("GCBTMPL", "delete from GCBTMPL where GCBTMPL_folder_id  = ?   ")
+        deleteData("GCRQRYV", "delete from GCRQRYV where GCRQRYV_QUERY_ID in ( select GCBQURY_SURROGATE_ID from GCBQURY where GCBQURY_folder_id  = ?  )  ")
         deleteData("GCBQURY", "delete from GCBQURY where GCBQURY_folder_id  = ? ")
         deleteData("GCRCFLD", "delete from GCRCFLD where GCRCFLD_folder_id = ?  ")
+        deleteData("GCRITPE", "delete from GCRITPE where GCRITPE_folder_id = ? ")
         deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_surrogate_id = ? and  NOT EXISTS (SELECT a.gcbactm_gcrfldr_id FROM gcbactm a WHERE a.gcbactm_gcrfldr_id = gcrfldr_surrogate_id) ")
 
     }
@@ -209,4 +274,81 @@ public class GcrfldrDML {
         }
     }
 
+    def getQueryValueId( String queryName, def folderSeq ) {
+
+        String qsql = """ select * FROM GCBQURY WHERE GCBQURY_NAME=? and GCBQURY_FOLDER_ID = ?"""
+
+        try {
+            def querySeqR = this.conn.firstRow(qsql, queryName, folderSeq)
+            if ( querySeqR) {
+                querySeq = querySeqR?.GCBQURY_SURROGATE_ID
+            }
+            else querySeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Query ID in GcrfldrDML,  ${apiData.QUERY_NAME.text()} from GCBQURY for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return querySeq
+    }
+
+    def getTemplateSurrogateId(String templateName, def templateFolder) {
+
+        def templateSeq
+        def folderId
+        String ssql = """select * from gcrfldr  where GCRFLDR_NAME = ? """
+        def tsql = """select * from gcbtmpl where GCBTMPL_NAME = ? and gcbtmpl_folder_id = ? """
+
+        try {
+            def folderSeqR = this.conn.firstRow(ssql, templateFolder)
+            if ( folderSeqR) {
+                folderId = folderSeqR?.GCRFLDR_SURROGATE_ID
+            }
+            else folderId = 0
+
+            def templateSeqRows = this.conn.firstRow(tsql, templateName, folderId)
+            if ( templateSeqRows) {
+                templateSeq = templateSeqRows?.GCBTMPL_SURROGATE_ID
+            }
+            else templateSeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcbtmpl for gcrtpfl in GcrfldrDML,  ${templateFolder} ${templateName} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return templateSeq
+    }
+
+    def getFieldSurrogateId(String fieldName, def fieldFolder) {
+
+        def fieldSeq
+        def folderId
+        String ssql = """select * from gcrfldr  where GCRFLDR_NAME = ? """
+        def tsql = """select * from gcrcfld where gcrcfld_name = ? and gcrcfld_folder_id = ? """
+
+        try {
+            def folderSeqR = this.conn.firstRow(ssql, fieldFolder)
+            if ( folderSeqR) {
+                folderId = folderSeqR?.GCRFLDR_SURROGATE_ID
+            }
+            else folderId = 0
+
+            def fieldSeqRows = this.conn.firstRow(tsql, fieldName, folderId)
+            if ( fieldSeqRows) {
+                fieldSeq = fieldSeqRows?.GCRCFLD_SURROGATE_ID
+            }
+            else fieldSeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcrcfld for gcrtpfl in GcrfldrDML,  ${fieldFolder} ${fieldName} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return fieldSeq
+    }
 }
