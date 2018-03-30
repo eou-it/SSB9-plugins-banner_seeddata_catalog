@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2015-2016 Ellucian Company L.P. and its affiliates.
+Copyright 2015-2018 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 
 <CURRICRULE>
@@ -11105,7 +11105,7 @@ Copyright 2015-2016 Ellucian Company L.P. and its affiliates.
         <SMBARUL_REQ_COURSES_COND/>
         <SMBARUL_MAX_CRED_COND/>
         <SMBARUL_MAX_COURSES_COND/>
-        <SMBARUL_REQ_NUMB_COND/>
+        <SMBARUL_REQ_NUMB_COND>1</SMBARUL_REQ_NUMB_COND>
         <SMBARUL_REQ_CREDITS/>
         <SMBARUL_REQ_COURSES/>
         <SMBARUL_MAX_CREDITS/>
@@ -17199,7 +17199,7 @@ Copyright 2015-2016 Ellucian Company L.P. and its affiliates.
         <SMRACAA_MAX_CREDITS/>
         <SMRACAA_MAX_COURSES/>
         <SMRACAA_MIN_CRED_CRSE>4</SMRACAA_MIN_CRED_CRSE>
-        <SMRACAA_MAX_CRED_CRSE>4</SMRACAA_MAX_CRED_CRSE>
+        <SMRACAA_MAX_CRED_CRSE/>
         <SMRACAA_COMPL_CREDITS/>
         <SMRACAA_COMPL_COURSES/>
         <SMRACAA_GRDE_CODE_MIN/>
@@ -29902,7 +29902,7 @@ Copyright 2015-2016 Ellucian Company L.P. and its affiliates.
   <SMBGRUL_MAX_COURSES_COND/>
   <SMBGRUL_REQ_NUMB_COND>1</SMBGRUL_REQ_NUMB_COND>
   <SMBGRUL_REQ_CREDITS/>
-  <SMBGRUL_REQ_COURSES/>
+  <SMBGRUL_REQ_COURSES>2</SMBGRUL_REQ_COURSES>
   <SMBGRUL_MAX_CREDITS/>
   <SMBGRUL_MAX_COURSES/>
   <SMBGRUL_SURROGATE_ID>517</SMBGRUL_SURROGATE_ID>
@@ -29938,7 +29938,7 @@ Copyright 2015-2016 Ellucian Company L.P. and its affiliates.
   <SMRGRUL_TERM_CODE_FROM/>
   <SMRGRUL_TERM_CODE_TO/>
   <SMRGRUL_REQ_CREDITS/>
-  <SMRGRUL_REQ_COURSES/>
+  <SMRGRUL_REQ_COURSES>2</SMRGRUL_REQ_COURSES>
   <SMRGRUL_MAX_CREDITS/>
   <SMRGRUL_MAX_COURSES/>
   <SMRGRUL_MIN_CRED_CRSE/>
@@ -31901,7 +31901,7 @@ Copyright 2015-2016 Ellucian Company L.P. and its affiliates.
   <SMRGCAA_MAX_CREDITS/>
   <SMRGCAA_MAX_COURSES/>
   <SMRGCAA_MIN_CRED_CRSE>4</SMRGCAA_MIN_CRED_CRSE>
-  <SMRGCAA_MAX_CRED_CRSE>4</SMRGCAA_MAX_CRED_CRSE>
+  <SMRGCAA_MAX_CRED_CRSE/>
   <SMRGCAA_COMPL_CREDITS/>
   <SMRGCAA_COMPL_COURSES/>
   <SMRGCAA_GRDE_CODE_MIN/>
