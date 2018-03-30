@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2015 Ellucian Company L.P. and its affiliates.
+Copyright 2015-2018 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 <CURRICRULE>
     <SMRPRLE>
@@ -7823,7 +7823,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
           <SMRACAA_MAX_CREDITS/>
           <SMRACAA_MAX_COURSES/>
           <SMRACAA_MIN_CRED_CRSE>4</SMRACAA_MIN_CRED_CRSE>
-          <SMRACAA_MAX_CRED_CRSE>4</SMRACAA_MAX_CRED_CRSE>
+          <SMRACAA_MAX_CRED_CRSE/>
           <SMRACAA_COMPL_CREDITS/>
           <SMRACAA_COMPL_COURSES/>
           <SMRACAA_GRDE_CODE_MIN/>
@@ -10636,7 +10636,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
           <SMRACAA_TERM_CODE_FROM/>
           <SMRACAA_TERM_CODE_TO/>
           <SMRACAA_REQ_CREDITS/>
-          <SMRACAA_REQ_COURSES/>
+          <SMRACAA_REQ_COURSES>1</SMRACAA_REQ_COURSES>
           <SMRACAA_MAX_CREDITS/>
           <SMRACAA_MAX_COURSES/>
           <SMRACAA_MIN_CRED_CRSE/>
@@ -10684,7 +10684,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
           <SMRACAA_TERM_CODE_FROM/>
           <SMRACAA_TERM_CODE_TO/>
           <SMRACAA_REQ_CREDITS/>
-          <SMRACAA_REQ_COURSES/>
+          <SMRACAA_REQ_COURSES>2</SMRACAA_REQ_COURSES>
           <SMRACAA_MAX_CREDITS/>
           <SMRACAA_MAX_COURSES/>
           <SMRACAA_MIN_CRED_CRSE/>
@@ -10837,7 +10837,7 @@ Copyright 2015 Ellucian Company L.P. and its affiliates.
           <SMBARUL_CONNECTOR_REQ>N</SMBARUL_CONNECTOR_REQ>
           <SMBARUL_CONNECTOR_MAX>N</SMBARUL_CONNECTOR_MAX>
           <SMBARUL_ACTIVITY_DATE>18-FEB-15</SMBARUL_ACTIVITY_DATE>
-          <SMBARUL_REQ_CRED_COND/>
+          <SMBARUL_REQ_CRED_COND>3</SMBARUL_REQ_CRED_COND>
           <SMBARUL_REQ_COURSES_COND/>
           <SMBARUL_MAX_CRED_COND/>
           <SMBARUL_MAX_COURSES_COND/>
