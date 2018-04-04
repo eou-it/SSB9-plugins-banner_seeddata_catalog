@@ -210,21 +210,21 @@ public class GcrfldrDML {
         // update the concentration  rule and the curr rule
 
         // parse the xml  back into  gstring for the dynamic sql loader
-        if (connectInfo.tableName != "GCBEMTL") {
-            def xmlRecNew = "<${apiData.name()}>\n"
-            apiData.children().each() { fields ->
-                def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
-                xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
-            }
-            xmlRecNew += "</${apiData.name()}>\n"
-
-            // parse the data using dynamic sql for inserts and updates
-            def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
-
-
-            if (connectInfo.saveThis) {
-                conn.execute "{ call gb_common.p_commit() }"
-            }
+        switch(connectInfo.tableName) {
+            case "GCBEMTL" : break;
+            case "GCBMNTL" : break;
+            default :   def xmlRecNew = "<${apiData.name()}>\n"
+                    apiData.children().each() { fields ->
+                        def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
+                        xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
+                    }
+                    xmlRecNew += "</${apiData.name()}>\n"
+                    // parse the data using dynamic sql for inserts and updates
+                    def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
+                    if (connectInfo.saveThis) {
+                        conn.execute "{ call gb_common.p_commit() }"
+                    }
+                    break;
         }
     }
 
