@@ -5647,10 +5647,21 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
   <GOBTPAC_SALT>3YO2W2YN</GOBTPAC_SALT>
   <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
  </GOBTPAC_RECORD>
-<SMRPRLE>
+ <SMRPRLE>
   <SMRPRLE_PROGRAM>SRPGM9-GRP</SMRPRLE_PROGRAM>
-  <SMRPRLE_PROGRAM_DESC>Structured group reg pgm 9</SMRPRLE_PROGRAM_DESC>                                                                                                                                                                  
-  <SMRPRLE_ACTIVITY_DATE>01-JAN-10</SMRPRLE_ACTIVITY_DATE>                                                                                                                                                                                 <SMRPRLE_LEVL_CODE>UG</SMRPRLE_LEVL_CODE>                                                                                                                                                                                                <SMRPRLE_CURR_IND>Y</SMRPRLE_CURR_IND>                                                                                                                                                                                                   <SMRPRLE_LOCKED_IND>N</SMRPRLE_LOCKED_IND>                                                                                                                                                                                               <SMRPRLE_CURR_RULE_IND>N</SMRPRLE_CURR_RULE_IND>                                                                                                                                                                                         <SMRPRLE_CAMP_CODE>M</SMRPRLE_CAMP_CODE>                                                                                                                                                                                                 <SMRPRLE_COLL_CODE>AS</SMRPRLE_COLL_CODE>                                                                                                                                                                                                <SMRPRLE_DEGC_CODE>BS</SMRPRLE_DEGC_CODE>
+  <SMRPRLE_PROGRAM_DESC>Structured group reg pgm 9</SMRPRLE_PROGRAM_DESC>
+  <SMRPRLE_ACTIVITY_DATE>01-JAN-10</SMRPRLE_ACTIVITY_DATE>
+  <SMRPRLE_LEVL_CODE>UG</SMRPRLE_LEVL_CODE>
+  <SMRPRLE_CURR_IND>Y</SMRPRLE_CURR_IND>
+  <SMRPRLE_LOCKED_IND>N</SMRPRLE_LOCKED_IND>
+  <SMRPRLE_CURR_RULE_IND>N</SMRPRLE_CURR_RULE_IND>
+  <SMRPRLE_CAMP_CODE>M</SMRPRLE_CAMP_CODE>
+  <SMRPRLE_COLL_CODE>AS</SMRPRLE_COLL_CODE>
+  <SMRPRLE_DEGC_CODE>BS</SMRPRLE_DEGC_CODE>
+  <SMRPRLE_LEVL_CODE_STU>UG</SMRPRLE_LEVL_CODE_STU>
+  <SMRPRLE_WEB_IND>Y</SMRPRLE_WEB_IND>
+  <SMRPRLE_USER_ID>GRAILS</SMRPRLE_USER_ID>
+  <SMRPRLE_DATA_ORIGIN>GRAILS</SMRPRLE_DATA_ORIGIN>
  </SMRPRLE>
  <SMBPGEN>                                                                                                                                                                                                                                 
   <SMBPGEN_PROGRAM>SRPGM9-GRP</SMBPGEN_PROGRAM>                                                                                                                                                                                            
