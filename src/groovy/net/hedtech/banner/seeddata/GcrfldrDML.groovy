@@ -15,10 +15,18 @@ import java.sql.Connection
 
 public class GcrfldrDML {
     int folderSeq
+    int orgSeq
     int querySeq
     int templateSeq
     int fieldSeq
+    int paramSeq
+    def senderPropSeq
+    def receivePropSeq
+    def senderMailBoxSeq
+    def replyMailBoxSeq
+    def parentOrgSeq
     def folder = null
+    def organization = null
 
     def InputData connectInfo
     Sql conn
@@ -96,6 +104,15 @@ public class GcrfldrDML {
             if (apiData.GCRCFLD_FOLDER_ID.text().toInteger() != folderSeq) {
                 apiData.GCRCFLD_FOLDER_ID[0].setValue(folderSeq.toString())
             }
+        }  else if (connectInfo.tableName == "GCRFLPM") {
+            fieldSeq = getFieldSurrogateId(apiData.FIELD_NAME.text(), apiData.FIELD_FOLDER.text())
+            if (apiData.GCRFLPM_FIELD_ID.text().toInteger() != fieldSeq) {
+                apiData.GCRFLPM_FIELD_ID[0].setValue(fieldSeq.toString())
+            }
+            paramSeq = getParameterSurrogateId(apiData.PARAMETER_NAME.text())
+            if (apiData.GCRFLPM_PARAMETER_ID.text().toInteger() != paramSeq) {
+                apiData.GCRFLPM_PARAMETER_ID[0].setValue(paramSeq.toString())
+            }
         }  else if (connectInfo.tableName == "GCRITPE") {
             if (apiData.GCRITPE_FOLDER_ID.text().toInteger() != folderSeq) {
                 apiData.GCRITPE_FOLDER_ID[0].setValue(folderSeq.toString())
@@ -113,6 +130,26 @@ public class GcrfldrDML {
             fieldSeq = getFieldSurrogateId(apiData.FIELD_NAME.text(), apiData.FIELD_FOLDER.text())
             if (apiData.GCRTPFL_FIELD_ID.text().toInteger() != fieldSeq) {
                 apiData.GCRTPFL_FIELD_ID[0].setValue(fieldSeq.toString())
+            }
+        }  else if(connectInfo.tableName == "GCRORAN") {
+            processGcroran()
+            senderPropSeq = getServerPropertiesSurrogateId(apiData.SEND_EMAILPROP_NAME.text(), apiData.SEND_EMAILPROP_HOST.text(), apiData.SEND_EMAILPROP_PORT.text())
+            if (apiData.GCRORAN_SEND_EMAILPROP_ID.text().toInteger() != senderPropSeq) {
+                apiData.GCRORAN_SEND_EMAILPROP_ID[0].setValue(senderPropSeq.toString())
+            }
+            senderMailBoxSeq = getMailBoxSurrogateId(apiData.SEND_MAILBOX_NAME.text())
+            if (apiData.GCRORAN_SEND_MAILBOX_ID.text().toInteger() != senderMailBoxSeq) {
+                apiData.GCRORAN_SEND_MAILBOX_ID[0].setValue(senderMailBoxSeq.toString())
+            }
+            replyMailBoxSeq = getMailBoxSurrogateId(apiData.REPLY_MAILBOX_NAME.text())
+            if (apiData.GCRORAN_REPLY_MAILBOX_ID.text().toInteger() != replyMailBoxSeq) {
+                apiData.GCRORAN_REPLY_MAILBOX_ID[0].setValue(replyMailBoxSeq.toString())
+            }
+            if(apiData.PARENT_NAME.text()) {
+                parentOrgSeq = getParentOrgId(apiData.PARENT_NAME.text())
+                if (apiData.GCRORAN_PARENT_ID.text().toInteger() != parentOrgSeq) {
+                    apiData.GCRORAN_PARENT_ID[0].setValue(parentOrgSeq.toString())
+                }
             }
         }  else if (connectInfo.tableName == "GCBEMTL") {
             def templateSeq
@@ -206,11 +243,39 @@ public class GcrfldrDML {
                     println "Could not insert into GCBMNTL  in GcrfldrDML, ${apiData.FOLDER.text()} ${apiData.TEMPLATE.text()} for ${connectInfo.tableName}. $e.message"
                 }
             }
+        } else if (connectInfo.tableName == "GCBLTPL") {
+            templateSeq = getTemplateSurrogateId(apiData.TEMPLATE.text(), apiData.FOLDER.text())
+            if (apiData.GCBLTPL_SURROGATE_ID.text().toInteger() != templateSeq) {
+                apiData.GCBLTPL_SURROGATE_ID[0].setValue(templateSeq.toString())
+            }
+            def isql
+            try {
+                isql = """insert into GCBLTPL
+                ( GCBLTPL_SURROGATE_ID
+                , GCBLTPL_TOADDRESS
+                , GCBLTPL_STYLE
+                , GCBLTPL_CONTENT) values ( ?,?,?,? ) """
+                this.conn.executeInsert(isql, [
+                        apiData.GCBLTPL_SURROGATE_ID.text().toInteger(),
+                        apiData.GCBLTPL_TOADDRESS.text(),
+                        apiData.GCBLTPL_STYLE.text(),
+                        apiData.GCBLTPL_CONTENT.text()])
+                connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 0, 1, 0)
+                    println isql
+                    println apiData
+                    println "Could not insert into GCBLTPL  in GcrfldrDML, ${apiData.FOLDER.text()} ${apiData.TEMPLATE.text()} for ${connectInfo.tableName}. $e.message"
+                }
+            }
         }
         // update the concentration  rule and the curr rule
 
         // parse the xml  back into  gstring for the dynamic sql loader
         switch(connectInfo.tableName) {
+            case "GCBLTPL" : break;
             case "GCBEMTL" : break;
             case "GCBMNTL" : break;
             default :   def xmlRecNew = "<${apiData.name()}>\n"
@@ -228,15 +293,50 @@ public class GcrfldrDML {
         }
     }
 
+    def processGcroran() {
+        //special xml characters are getting scrubbed from the xml for some reason. So doing this hack to re-introduce them into
+        //the xml before it gets parsed by the xml parser
+        def String[] fromstring = ["LesserThanCHAR", "GreaterThanCHAR", "AmpersandCHAR", "DoubleQuoteCHAR", "ApostropheCHAR"]
+        def String[] tostring = ["&lt;", "&gt;", "&amp;", "&quot;", "&apos;"]
+
+        def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
+
+
+        String ssql = """select * from gcroran  where gcroran_name = ? """
+        // find if the FOLDER already exists in the database and use it's curr_rule for inserting into the db
+        try {
+            def orgSeqR = this.conn.firstRow(ssql, [apiData.GCRORAN_NAME.text()])
+            if ( orgSeqR) {
+                orgSeq = orgSeqR?.GCRORAN_SURROGATE_ID
+            }
+            else orgSeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select Organization ID in GcrfldrDML,  ${apiData.GCRORAN_NAME.text()} from GCRORAN for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        if (connectInfo.debugThis) {
+            println "Selected from GCRORAN ${orgSeq} for organization  ${apiData.GCRORAN_NAME.text()} for ${connectInfo.tableName}."
+        }
+
+        // update the curr rule with the one that is selected
+        if (connectInfo.tableName == "GCRORAN") {
+            // delete data so we can re-add instead of update so all children data is refreshed
+            deleteOrganizationRelatedData()
+        }
+    }
 
     def deleteData() {
         deleteData("GCRTPFL", "delete from GCRTPFL where GCRTPFL_TEMPLATE_ID in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
         deleteData("GCRTPFL", "delete from GCRTPFL where GCRTPFL_FIELD_ID in ( select GCRCFLD_surrogate_id from GCRCFLD where GCRCFLD_folder_id  = ?  )  ")
         deleteData("GCBEMTL", "delete from GCBEMTL where GCBEMTL_surrogate_id in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
         deleteData("GCBMNTL", "delete from GCBMNTL where GCBMNTL_surrogate_id in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
+        deleteData("GCBLTPL", "delete from GCBLTPL where GCBLTPL_surrogate_id in ( select gcbtmpl_surrogate_id from gcbtmpl where gcbtmpl_folder_id  = ?  )  ")
         deleteData("GCBTMPL", "delete from GCBTMPL where GCBTMPL_folder_id  = ?   ")
         deleteData("GCRQRYV", "delete from GCRQRYV where GCRQRYV_QUERY_ID in ( select GCBQURY_SURROGATE_ID from GCBQURY where GCBQURY_folder_id  = ?  )  ")
         deleteData("GCBQURY", "delete from GCBQURY where GCBQURY_folder_id  = ? ")
+        deleteData("GCRFLPM", "delete from gcrflpm where GCRFLPM_FIELD_ID in ( select gcrcfld_surrogate_id from gcrcfld where GCRCFLD_FOLDER_ID = ? )")
         deleteData("GCRCFLD", "delete from GCRCFLD where GCRCFLD_folder_id = ?  ")
         deleteData("GCRITPE", "delete from GCRITPE where GCRITPE_folder_id = ? ")
         deleteData("GCRFLDR", "delete from GCRFLDR where GCRFLDR_surrogate_id = ? and  NOT EXISTS (SELECT a.gcbactm_gcrfldr_id FROM gcbactm a WHERE a.gcbactm_gcrfldr_id = gcrfldr_surrogate_id) ")
@@ -254,6 +354,27 @@ public class GcrfldrDML {
             if (connectInfo.showErrors) {
                 connectInfo.tableUpdate(tableName, 0, 0, 0, 1,0)
                 println "Problem executing delete for folder ${folder} ${folderSeq} from GcrfldrDML.groovy for ${connectInfo.tableName}: $e.message"
+                println "${sql}"
+            }
+        }
+    }
+
+    def deleteOrganizationRelatedData() {
+        deleteOrganizationRelatedData("GCBSPRP", "delete from gcbsprp where gcbsprp_surrogate_id in (select GCRORAN_SEND_EMAILPROP_ID from gcroran where gcroran_surrogate_id = ?)")
+        deleteOrganizationRelatedData("GCBSPRP", "delete from gcbsprp where gcbsprp_surrogate_id in (select GCRORAN_RECEIVE_EMAILPROP_ID from gcroran where gcroran_surrogate_id = ?)")
+        deleteOrganizationRelatedData("GCRMBAC", "delete from gcrmbac where gcrmbac_surrogate_id in (select GCRORAN_SEND_MAILBOX_ID from gcroran where gcroran_surrogate_id = ?)")
+        deleteOrganizationRelatedData("GCRMBAC", "delete from gcrmbac where gcrmbac_surrogate_id in (select GCRORAN_REPLY_MAILBOX_ID from gcroran where gcroran_surrogate_id = ?)")
+    }
+
+    def deleteOrganizationRelatedData(String tableName, String sql) {
+        try {
+            int delRows = conn.executeUpdate(sql, [orgSeq])
+            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                connectInfo.tableUpdate(tableName, 0, 0, 0, 1,0)
+                println "Problem executing delete for organization ${organization} ${orgSeq} from GcrfldrDML.groovy for ${connectInfo.tableName}: $e.message"
                 println "${sql}"
             }
         }
@@ -350,5 +471,85 @@ public class GcrfldrDML {
         }
 
         return fieldSeq
+    }
+
+    def getParameterSurrogateId(String parameterName) {
+
+        def parameterSeq
+        def tsql = """select * from gcrparm where gcrparm_NAME = ? """
+
+        try {
+            def paramSeqRows = this.conn.firstRow(tsql, parameterName)
+            if ( paramSeqRows) {
+                parameterSeq = paramSeqRows?.GCRPARM_SURROGATE_ID
+            }
+            else parameterSeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcrparm for gcrflpm in GcrfldrDML,  ${parameterName} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return parameterSeq
+    }
+
+    def getServerPropertiesSurrogateId(String propertyType, String host, String port) {
+
+        def seq
+        def tsql = """select * from gcbsprp where gcbsprp_type = ? and gcbsprp_host = ? and gcbsprp_port = ?"""
+
+        try {
+            def rows = this.conn.firstRow(tsql, propertyType, host, port)
+            if ( rows) {
+                seq = rows?.GCBSPRP_SURROGATE_ID
+            }
+            else seq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcbsprp for gcroran in GcrfldrDML,  ${propertyType} ${host} {$port} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return seq
+    }
+
+    def getMailBoxSurrogateId(String displayName) {
+
+        def seq
+        def tsql = """select * from gcrmbac where gcrmbac_email_display_name = ? """
+
+        try {
+            def rows = this.conn.firstRow(tsql, displayName)
+            if ( rows) {
+                seq = rows?.GCRMBAC_SURROGATE_ID
+            }
+            else seq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcrmbac for gcroran in GcrfldrDML,  ${displayName} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return seq
+    }
+
+    def getParentOrgId(String parentName) {
+        def seq
+        def tsql = """select * from gcroran where gcroran_name = ? """
+
+        try {
+            def rows = this.conn.firstRow(tsql, parentName)
+            if ( rows) {
+                seq = rows?.GCRORAN_SURROGATE_ID
+            }
+            else seq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcroran for gcroran in GcrfldrDML,  ${parentName} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+        return seq
     }
 }
