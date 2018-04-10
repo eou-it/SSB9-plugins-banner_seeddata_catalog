@@ -161,6 +161,7 @@ public class APIClasses {
             'ORACLEUSER'            : 'net.hedtech.banner.seeddata.CreateOracleUserDML',
             'PAGEBUILDERUSER'       : 'net.hedtech.banner.seeddata.CreatePageBuilderUserDML',
             'GENERALAUTOUSER'       : 'net.hedtech.banner.seeddata.CreateGeneralAutoUserDML',
+            'GENERALAUTONEWPAGES'   : 'net.hedtech.banner.seeddata.GeneralAutoNewPagesDML',
             'AIPORACLEUSER'         : 'net.hedtech.banner.seeddata.GeneralAIPOracleUserDML',
             'WEBTAILORUSER'         : 'net.hedtech.banner.seeddata.CreateWebtailorUserDML',
             'NTRLRAQ'               : 'net.hedtech.banner.seeddata.NtrlraqDML',
