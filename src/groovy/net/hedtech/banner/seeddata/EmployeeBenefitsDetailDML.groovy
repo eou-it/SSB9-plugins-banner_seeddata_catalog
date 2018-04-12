@@ -76,7 +76,6 @@ class EmployeeBenefitsDetailDML {
     }
 
     def parseXmlData() {
-
         def pdrdedn = new XmlParser().parseText(xmlData)
         this.bannerid = pdrdedn.BANNERID
         this.w4_signed_bannerid = pdrdedn.W4_SIGNED_BANNERID
