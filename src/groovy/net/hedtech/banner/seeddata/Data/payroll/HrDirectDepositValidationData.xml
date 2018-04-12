@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<GXVDIRD_DATA>
+    <GXVDIRD>
+        <GXVDIRD_CODE_BANK_ROUT_NUM>678508423</GXVDIRD_CODE_BANK_ROUT_NUM>
+        <GXVDIRD_DESC>Meridian Bank</GXVDIRD_DESC>
+        <GXVDIRD_USER_ID>GRAILS</GXVDIRD_USER_ID>
+    </GXVDIRD>
+    <GXVDIRD>
+        <GXVDIRD_CODE_BANK_ROUT_NUM>234798944</GXVDIRD_CODE_BANK_ROUT_NUM>
+        <GXVDIRD_DESC>First National Bank</GXVDIRD_DESC>
+        <GXVDIRD_USER_ID>GRAILS</GXVDIRD_USER_ID>
+    </GXVDIRD>
+    <GXVDIRD>
+        <GXVDIRD_CODE_BANK_ROUT_NUM>123478902</GXVDIRD_CODE_BANK_ROUT_NUM>
+        <GXVDIRD_DESC>First Fidelity</GXVDIRD_DESC>
+        <GXVDIRD_USER_ID>GRAILS</GXVDIRD_USER_ID>
+    </GXVDIRD>
+    <GXVDIRD>
+        <GXVDIRD_CODE_BANK_ROUT_NUM>578978787</GXVDIRD_CODE_BANK_ROUT_NUM>
+        <GXVDIRD_DESC>Mellon Bank</GXVDIRD_DESC>
+    </GXVDIRD>
+    <GXVDIRD>
+        <GXVDIRD_CODE_BANK_ROUT_NUM>748972234</GXVDIRD_CODE_BANK_ROUT_NUM>
+        <GXVDIRD_DESC>Chase Manhattan Bank</GXVDIRD_DESC>
+    </GXVDIRD>
+    <GXVDIRD>
+        <GXVDIRD_CODE_BANK_ROUT_NUM>897410987</GXVDIRD_CODE_BANK_ROUT_NUM>
+        <GXVDIRD_DESC>Chemical Bank</GXVDIRD_DESC>
+    </GXVDIRD>
+</GXVDIRD_DATA>
