@@ -1332,7 +1332,7 @@
         </GCBEMTL_CONTENT>
         <GCBEMTL_FROMLIST/>
         <GCBEMTL_SUBJECT>Missing Documentation - Acknowledgement</GCBEMTL_SUBJECT>
-        <GCBEMTL_TOLIST/>
+        <GCBEMTL_TOLIST>$Email$</GCBEMTL_TOLIST>
     </GCBEMTL>
 
     <GCRTPFL>
@@ -2037,7 +2037,7 @@
         </GCBEMTL_CONTENT>
         <GCBEMTL_FROMLIST/>
         <GCBEMTL_SUBJECT>Reunion Letter</GCBEMTL_SUBJECT>
-        <GCBEMTL_TOLIST/>
+        <GCBEMTL_TOLIST>$Email$</GCBEMTL_TOLIST>
     </GCBEMTL>
 
     <GCRTPFL>
@@ -2283,7 +2283,7 @@
         </GCBEMTL_CONTENT>
         <GCBEMTL_FROMLIST/>
         <GCBEMTL_SUBJECT>Open Enrollment Reminder</GCBEMTL_SUBJECT>
-        <GCBEMTL_TOLIST/>
+        <GCBEMTL_TOLIST>$Email$</GCBEMTL_TOLIST>
     </GCBEMTL>
 
     <GCBTMPL>
