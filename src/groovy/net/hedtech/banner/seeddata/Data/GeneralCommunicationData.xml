@@ -808,7 +808,7 @@
         <GCRCFLD_FORMATSTRING>$goremal_email_address$</GCRCFLD_FORMATSTRING>
         <GCRCFLD_RULE_URI/>
         <GCRCFLD_GROOVY_FORMATTER/>
-        <GCRCFLD_PREVIEW_VALUE>capusemail@luci.edu</GCRCFLD_PREVIEW_VALUE>
+        <GCRCFLD_PREVIEW_VALUE>campusemail@university.edu</GCRCFLD_PREVIEW_VALUE>
         <GCRCFLD_RENDER_AS_HTML>N</GCRCFLD_RENDER_AS_HTML>
         <GCRCFLD_CREATED_BY/>
         <GCRCFLD_RETURNS_ARRAY>N</GCRCFLD_RETURNS_ARRAY>
@@ -1923,8 +1923,8 @@
             LesserThanCHAR/htmlGreaterThanCHAR
         </GCBEMTL_CONTENT>
         <GCBEMTL_FROMLIST/>
-        <GCBEMTL_SUBJECT>Registration Holds</GCBEMTL_SUBJECT>
-        <GCBEMTL_TOLIST>$Email$</GCBEMTL_TOLIST>
+        <GCBEMTL_SUBJECT>Sample test automation template</GCBEMTL_SUBJECT>
+        <GCBEMTL_TOLIST>autotest@university.edu</GCBEMTL_TOLIST>
     </GCBEMTL>
 
     <GCRTPFL>
@@ -2340,8 +2340,8 @@
             LesserThanCHAR/htmlGreaterThanCHAR
         </GCBEMTL_CONTENT>
         <GCBEMTL_FROMLIST/>
-        <GCBEMTL_SUBJECT/>
-        <GCBEMTL_TOLIST/>
+        <GCBEMTL_SUBJECT>Sample test automation template</GCBEMTL_SUBJECT>
+        <GCBEMTL_TOLIST>autotest@university.edu</GCBEMTL_TOLIST>
     </GCBEMTL>
 
     <GCRTPFL>
