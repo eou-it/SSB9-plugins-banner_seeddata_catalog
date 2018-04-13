@@ -165,7 +165,7 @@ class EmployeeTimeEntryExtractDML {
                     }
                 } else {
                     connectInfo.tableUpdate("PERJOBS", 0, 1, 0, 0, 0)
-                    println "Created timesheet job seqno: ${sqlCall.getLong(14).toString()}"
+                    println "Created timesheet job seqno: ${sqlCall.getLong(14).toString()} for ${this.perjobs_action_ind} "
                 }
             }
             catch (Exception e) {

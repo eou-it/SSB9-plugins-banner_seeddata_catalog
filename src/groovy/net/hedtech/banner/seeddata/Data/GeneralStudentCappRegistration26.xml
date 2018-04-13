@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017-2018 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 <CURRICRULE>
 <SMRPRLE>
@@ -222,7 +222,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <SMRACAA_MAX_CREDITS/>
         <SMRACAA_MAX_COURSES/>
         <SMRACAA_MIN_CRED_CRSE>4</SMRACAA_MIN_CRED_CRSE>
-        <SMRACAA_MAX_CRED_CRSE>4</SMRACAA_MAX_CRED_CRSE>
+        <SMRACAA_MAX_CRED_CRSE/>
         <SMRACAA_COMPL_CREDITS/>
         <SMRACAA_COMPL_COURSES/>
         <SMRACAA_GRDE_CODE_MIN/>
