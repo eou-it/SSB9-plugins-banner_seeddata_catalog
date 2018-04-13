@@ -52,13 +52,17 @@ public class FinanceJournalDetailCreateDML {
                     "   BEGIN" +
                             "   INSERT INTO FGBJVCD (FGBJVCD_DOC_NUM, FGBJVCD_SUBMISSION_NUMBER, FGBJVCD_SEQ_NUM, FGBJVCD_RUCL_CODE, FGBJVCD_TRANS_AMT," +
                             "   FGBJVCD_TRANS_DESC, FGBJVCD_DR_CR_IND, FGBJVCD_FSYR_CODE, FGBJVCD_COAS_CODE, FGBJVCD_FUND_CODE," +
-                            "   FGBJVCD_ORGN_CODE, FGBJVCD_ACCT_CODE, FGBJVCD_PROG_CODE, FGBJVCD_BANK_CODE, FGBJVCD_POSTING_PERIOD," +
-                            "   FGBJVCD_BUDGET_PERIOD, FGBJVCD_STATUS_IND, FGBJVCD_ABAL_OVERRIDE, FGBJVCD_POST_BAVL, FGBJVCD_USER_ID,FGBJVCD_ACTIVITY_DATE,FGBJVCD_DIST_PCT) " +
+                            "   FGBJVCD_ORGN_CODE, FGBJVCD_ACCT_CODE, FGBJVCD_PROG_CODE, FGBJVCD_BANK_CODE, FGBJVCD_ACCT_CODE_CASH," +
+                            "   FGBJVCD_POSTING_PERIOD, FGBJVCD_BUDGET_PERIOD, FGBJVCD_STATUS_IND, FGBJVCD_ABAL_OVERRIDE, FGBJVCD_POST_BAVL," +
+                            "   FGBJVCD_DIST_PCT, FGBJVCD_GIFT_DATE," +
+                            "   FGBJVCD_ACTIVITY_DATE, FGBJVCD_USER_ID) " +
                             "   VALUES (" +
                             "   ?, ?, ?, ?, ?," +
                             "   ?, ?, ?, ?, ?," +
                             "   ?, ?, ?, ?, ?," +
-                            "   ?, ?, ?, ?, 'FORSED21',sysdate,?);" +
+                            "   ?, ?, ?, ?, ?," +
+                            "   ?, ?," +
+                            "   sysdate, 'FORSED21');" +
                             "   commit;" +
                             "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
@@ -79,13 +83,16 @@ public class FinanceJournalDetailCreateDML {
                 insertCall.setString( 12, headerData.FGBJVCD_ACCT_CODE.text() )
                 insertCall.setString( 13, headerData.FGBJVCD_PROG_CODE.text() )
                 insertCall.setString( 14, headerData.FGBJVCD_BANK_CODE.text() )
-                insertCall.setString( 15, headerData.FGBJVCD_POSTING_PERIOD.text() )
+                insertCall.setString( 15, headerData.FGBJVCD_ACCT_CODE_CASH.text() )
 
-                insertCall.setString( 16, headerData.FGBJVCD_BUDGET_PERIOD.text() )
-                insertCall.setString( 17, headerData.FGBJVCD_STATUS_IND.text() )
-                insertCall.setString( 18, headerData.FGBJVCD_ABAL_OVERRIDE.text() )
-                insertCall.setString( 19, headerData.FGBJVCD_POST_BAVL?.text() )
-                insertCall.setString( 20, headerData.FGBJVCD_DIST_PCT?.text())
+                insertCall.setString( 16, headerData.FGBJVCD_POSTING_PERIOD.text() )
+                insertCall.setString( 17, headerData.FGBJVCD_BUDGET_PERIOD.text() )
+                insertCall.setString( 18, headerData.FGBJVCD_STATUS_IND.text() )
+                insertCall.setString( 19, headerData.FGBJVCD_ABAL_OVERRIDE.text() )
+                insertCall.setString( 20, headerData.FGBJVCD_POST_BAVL?.text() )
+
+                insertCall.setString( 21, headerData.FGBJVCD_DIST_PCT?.text())
+                insertCall.setString( 22, headerData.FGBJVCD_GIFT_DATE?.text())
                 insertCall.execute()
 
                 connectInfo.tableUpdate( "FV_FGBJVCD", 0, 1, 0, 0, 0 )

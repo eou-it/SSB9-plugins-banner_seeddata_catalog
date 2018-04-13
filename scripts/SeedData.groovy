@@ -35,6 +35,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
 
     def pluginDirPath = getPluginDirectoryPathString()
 
+    def reportErrors = 0
     def startDate = new Date()
     println "Seed data loader execution of all targets starting at ${new Date()}"
     
@@ -60,8 +61,10 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
                     //def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
                     seedDataLoader.execute()
+                    reportErrors += xmlInputData.totalErrors
                 }
             }
+
         }
 
        else if (args.toUpperCase() == "CALB") {
@@ -82,6 +85,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
                     //def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
                     seedDataLoader.execute()
+                    reportErrors += xmlInputData.totalErrors
                 }
             }
         }
@@ -104,6 +108,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
                     println xmlInputData.xmlFile
                     def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
                     seedDataLoader.execute()
+                    reportErrors += xmlInputData.totalErrors
                 }
             }
         }
@@ -115,6 +120,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
 
         def seedDataLoader = clazzSeedDataLoader.newInstance(inputData)
         seedDataLoader.execute()
+        reportErrors += inputData.totalErrors
 
     }
 
@@ -134,6 +140,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
     diff = diff % minuteInMillis;
     long elapsedSeconds = diff / secondInMillis;
 
+    println "Total errors reported: ${reportErrors}"
     println "Seed data loader execution started ${startDate} of all targets ended ${endDate}"
     println "Total execution time: ${elapsedHours} hours, ${elapsedMinutes} minutes, ${elapsedSeconds} secs"
 }

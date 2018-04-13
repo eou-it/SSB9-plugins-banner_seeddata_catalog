@@ -216,10 +216,10 @@ public class GeneralActionItemDML {
         }
         */
 
-        if (connectInfo.tableName == "GCRQRYV") {
+        /*if (connectInfo.tableName == "GCRQRYV") {
             def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
             apiData.GCRQRYV_QUERY_ID[0].setValue( queryId.toString() )
-        }
+        }*/
         if (connectInfo.tableName == "GCRPQID") {
             def queryId = getQueryId( apiData.QUERYNAME[0]?.text().toString() )
             def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
@@ -287,7 +287,7 @@ public class GeneralActionItemDML {
     }
 
 
-    def getQueryValueId( String queryName ) {
+    /*def getQueryValueId( String queryName ) {
         String fsql = """select * from GCRQRYV where GCRQRYV_QUERY_ID= (select GCBQURY_SURROGATE_ID FROM GCBQURY WHERE GCBQURY_NAME=?) """
         int fId
         def fRow
@@ -305,7 +305,7 @@ public class GeneralActionItemDML {
             }
         }
         return fId
-    }
+    }*/
 
 
     def getPopulationValueId( String queryName ) {
@@ -342,7 +342,7 @@ public class GeneralActionItemDML {
         deleteData( "GCRPOPC", "delete from GCRPOPC where 0 <> ? " )
         deleteData( "GCRPOPV", "delete from GCRPOPV where 0 <> ? " )
         deleteData( "GCBPOPL", "delete from GCBPOPL where 0 <> ? " )
-        deleteData( "GCRQRYV", "delete from GCRQRYV where 0 <> ? " )
+//        deleteData( "GCRQRYV", "delete from GCRQRYV where 0 <> ? " )
         // deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
         deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? " )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )

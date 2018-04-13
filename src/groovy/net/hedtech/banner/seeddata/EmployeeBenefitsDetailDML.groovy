@@ -127,7 +127,8 @@ class EmployeeBenefitsDetailDML {
         }
         catch (Exception e) {
             if (connectInfo.showErrors) {
-                println "Could not select ID in EmployeeBenefitsDetailDML,  ${this.bannerid.text()}  from SPRIDEN. $e.message"
+                println "Could not select ID in EmployeeBenefitsDetailDML,  ${this.bannerid.text() ${this.pdrdedn_bdca_code}}  from SPRIDEN. $e.message"
+                println "${xmlData.toString()}"
             }
         }
         if (this.w4_signed_bannerid) {
@@ -322,8 +323,9 @@ class EmployeeBenefitsDetailDML {
                 catch (Exception e) {
                     connectInfo.tableUpdate("PDRDEDN", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
-                        println "Insert PDRDEDN ${this.bannerid} ${this.pdrdedn_bdca_code} ${this.pdrdedn_effective_date}"
+                        println "Insert PDRDEDN ${this.bannerid} ${this.pdrdedn_bdca_code} ${this.pdrdedn_effective_date} ${this.pdrdedn_opt_code1}"
                         println "Problem executing insert for table PDRDEDN from EmployeeBenefitsDetailDML.groovy: $e.message"
+                        println "${this.xmlData.toString()}"
                     }
                 }
             }

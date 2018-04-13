@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017-2018 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 <CURRICRULE>
     <SMRPRLE>
@@ -358,7 +358,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <SMBARUL_CONNECTOR_REQ>N</SMBARUL_CONNECTOR_REQ>
         <SMBARUL_CONNECTOR_MAX>N</SMBARUL_CONNECTOR_MAX>
         <SMBARUL_ACTIVITY_DATE>01-JAN-10</SMBARUL_ACTIVITY_DATE>
-        <SMBARUL_REQ_CRED_COND/>
+        <SMBARUL_REQ_CRED_COND>3</SMBARUL_REQ_CRED_COND>
         <SMBARUL_REQ_COURSES_COND/>
         <SMBARUL_MAX_CRED_COND/>
         <SMBARUL_MAX_COURSES_COND/>

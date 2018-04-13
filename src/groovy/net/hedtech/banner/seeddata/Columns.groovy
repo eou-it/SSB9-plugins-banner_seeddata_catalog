@@ -71,7 +71,7 @@ public class Columns {
         data.each { table ->
             table.children().each() { fields ->
                 def value
-                if ((this.tableName in ['GCBQURY','GCRCFLD','GCBTMPL']))
+                if ((this.tableName in ['GCBQURY','GCRQRYV','GCRCFLD','GCBTMPL']))
                     value = fields.text()
                 else
                         value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
