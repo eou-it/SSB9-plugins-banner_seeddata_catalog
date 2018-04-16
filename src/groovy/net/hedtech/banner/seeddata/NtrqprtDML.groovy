@@ -56,6 +56,12 @@ public class NtrqprtDML {
                 if (componentId ) {
                     apiData.NTRQPRT_ID[0].setValue(componentId?.toString())
                     isValid = true;
+                    List paramList = [apiData.NTRQPRT_COAS_CODE[0]?.value()[0],apiData.NTRQPRT_QPRT_CODE[0]?.value()[0]]
+                    if(fetchNtrqprtId(paramList))
+                    {
+                        isValid = false;
+                    }
+
                 }
 
 
@@ -84,6 +90,20 @@ public class NtrqprtDML {
         if (connectInfo.debugThis) println( "Next val selected from NTRQPRT_SEQUENCE for ${connectInfo.tableName}." )
         return id
     }
+
+
+    private def fetchNtrqprtId(List paramList ) {
+        def id = null
+        try {
+            id = this.conn.firstRow( """SELECT NTRQPRT_ID as ID FROM NTRQPRT where NTRQPRT_COAS_CODE = ? and NTRQPRT_QPRT_CODE = ? """ ,  paramList )?.ID
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) println( "Could not get NTRQPRT_ID in NtrecdqDML for ${connectInfo.tableName}. $e.message" )
+        }
+        if (connectInfo.debugThis) println( "NTRQPRT_ID for ${connectInfo.tableName}." )
+        return id
+    }
+
 
 }
 
