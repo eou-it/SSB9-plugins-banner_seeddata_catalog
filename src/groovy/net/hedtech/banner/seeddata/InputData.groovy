@@ -126,6 +126,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvrqstData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/Ptv1099Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvbdtyData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvorgnData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtvcdesData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HrDirectDepositValidationData.xml',
                                                   // HR Rules
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtralvlData.xml',
