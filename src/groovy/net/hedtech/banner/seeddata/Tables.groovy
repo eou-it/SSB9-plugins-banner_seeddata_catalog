@@ -116,7 +116,8 @@ public class Tables {
                   ind.index_name like  'UK_%'  or
                   ind.index_name like  'UK2_%'  or
                   ind.index_name like  ind.table_name || '_KEY_INDEX1'  or
-                  ind.index_name like  ind.table_name || '_KEY1_INDEX')
+                  ind.index_name like  ind.table_name || '_KEY1_INDEX' or
+                  ind.index_name like  ind.table_name || '_PUBLISHED_INDEX' )
                   order by ind.index_name, cc.column_position  """
             if (connectInfo.debugThis) {
                 println "${selIndexSQL}"
