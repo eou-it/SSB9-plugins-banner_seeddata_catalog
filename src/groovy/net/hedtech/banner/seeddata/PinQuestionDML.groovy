@@ -55,7 +55,10 @@ class PinQuestionDML {
 
     //Always call delete of GOBQSTN before insert because, the question description is not a unique field & question id is generated.
     def insertQuestionData() {
-        if (this.delete && this.delete == "YES") {
+        if(this.delete && this.delete == "ALL"){
+            deleteOldData()
+        }
+        else if (this.delete && this.delete == "YES") {
             deleteData('GOBQSTN', 'delete from GOBQSTN where GOBQSTN_DESC=?', this.questionDescription)
         } else {
             def questionidSql = "SELECT NVL((max(To_NUMBER(GOBQSTN.GOBQSTN_ID))+1),1) as questionId from GOBQSTN"
@@ -101,6 +104,22 @@ class PinQuestionDML {
             if (connectInfo.showErrors) {
                 println "Problem executing delete for ${tableName} ${questionDescription} from PinQuestionDML.groovy: $e.message"
                 println "${sql}"
+            }
+        }
+    }
+
+    def deleteOldData() {
+        int delRows
+        def deleteSql = """delete FROM GOBQSTN """
+        if (connectInfo.debugThis) println deleteSql
+        try {
+            delRows = conn.executeUpdate(deleteSql)
+            connectInfo.tableUpdate("GOBQSTN", 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing delete for GOBQSTN table from PinQuestionDML.groovy: $e.message"
+                println "${deleteSql}"
             }
         }
     }

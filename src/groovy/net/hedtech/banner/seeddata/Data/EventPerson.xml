@@ -1928,10 +1928,18 @@ Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
         <DELETE>YES</DELETE>
     </GOBANSR>
 
+    <!-- This Delete is to delete the old orphaned record from both table -->
+    <GOBANSR>
+        <DELETE>ALL</DELETE>
+    </GOBANSR>
     <GOBQSTN>
         <GOBQSTN_DESC>Pet Name?</GOBQSTN_DESC>
         <DELETE>YES</DELETE>
     </GOBQSTN>
+    <GOBQSTN>
+        <DELETE>ALL</DELETE>
+    </GOBQSTN>
+
     <GOBQSTN>
         <GOBQSTN_DESC>Pet Name?</GOBQSTN_DESC>
         <GOBQSTN_DISPLAY_IND>Y</GOBQSTN_DISPLAY_IND>

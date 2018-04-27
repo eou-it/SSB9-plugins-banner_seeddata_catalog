@@ -65,7 +65,10 @@ class PersonPinResponseDML {
             this.conn.eachRow(pidmsql, [this.bannerid]) {trow ->
                 this.pidm = trow.pidmValue
             }
-        if (this.delete && this.delete == "YES") {
+        if(this.delete && this.delete == "ALL"){
+            deleteOldData()
+        }
+        else if (this.delete && this.delete == "YES") {
             deleteData('GOBANSR', 'delete from GOBANSR where GOBANSR_PIDM=?', this.pidm)
         } else {
 
@@ -136,6 +139,23 @@ class PersonPinResponseDML {
             if (connectInfo.showErrors) {
                 println "Problem executing delete for ${tableName} ${questionDescription} from PersonPinResponseDML.groovy: $e.message"
                 println "${sql}"
+            }
+        }
+    }
+
+    def deleteOldData() {
+        int delRows
+        def deleteSql = """delete FROM GOBANSR """
+        if (connectInfo.debugThis) println deleteSql
+        try {
+
+            delRows = conn.executeUpdate(deleteSql)
+            connectInfo.tableUpdate("GOBANSR", 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing delete for GOBANSR table from PersonPinResponseDML.groovy: $e.message"
+                println "${deleteSql}"
             }
         }
     }
