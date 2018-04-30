@@ -160,6 +160,11 @@ public class GcrfldrDML {
             if (apiData.GCRTPFL_FIELD_ID.text().toInteger() != fieldSeq) {
                 apiData.GCRTPFL_FIELD_ID[0].setValue(fieldSeq.toString())
             }
+        }  else if(connectInfo.tableName == "GCBEVMP") {
+            templateSeq = getTemplateSurrogateId(apiData.TEMPLATE_NAME.text(), apiData.TEMPLATE_FOLDER.text())
+            if (apiData.GCBEVMP_TEMPLATE_ID.text().toInteger() != templateSeq) {
+                apiData.GCBEVMP_TEMPLATE_ID[0].setValue(templateSeq.toString())
+            }
         } else if(connectInfo.tableName == "GCRORAN") {
             if(apiData.GCRORAN_UPDATE_MODE) {
                 //Organization is in update mode to set the srevr properties and mailbox accounts
