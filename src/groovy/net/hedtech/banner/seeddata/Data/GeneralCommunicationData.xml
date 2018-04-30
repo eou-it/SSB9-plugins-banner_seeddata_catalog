@@ -5062,7 +5062,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Approve Leave Report Reminder</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry approve leave report reminder</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry leave report approval reminder</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5079,7 +5079,7 @@
         <GCBEVMP_SURROGATE_ID>2</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Approve Leave Request Reminder</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry approve leave request reminder</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry leave request approval reminder</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>535</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5096,7 +5096,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Approve Timesheet Reminder</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry approve timesheet reminder</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry timesheet approval reminder</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5113,7 +5113,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Return Leave Report</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry returned leave report</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry returned leave report</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5130,7 +5130,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Return Leave Request</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry returned leave request</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry returned leave request</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5147,7 +5147,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Return Timesheet</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry returned timesheet</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry returned timesheet</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5164,7 +5164,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Submit Leave Report Reminder</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry submit leave report reminder</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry leave report submission reminder</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5181,7 +5181,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Submit Leave Request Reminder</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry submit leave request reminder</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry leave request submission reminder</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
@@ -5198,7 +5198,7 @@
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Submit Timesheet Reminder</GCBEVMP_EVENT_NAME>
         <GCBEVMP_ORGANIZATION_ID/>
-        <TEMPLATE_NAME>HR Time Entry submit timesheet reminder</TEMPLATE_NAME>
+        <TEMPLATE_NAME>HR Time entry timesheet submission reminder</TEMPLATE_NAME>
         <TEMPLATE_FOLDER>HR</TEMPLATE_FOLDER>
         <GCBEVMP_TEMPLATE_ID>533</GCBEVMP_TEMPLATE_ID>
         <GCBEVMP_QUERY_ID/>
