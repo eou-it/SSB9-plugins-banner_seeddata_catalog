@@ -3431,14 +3431,15 @@
         <GCBLTPL_SURROGATE_ID>87</GCBLTPL_SURROGATE_ID>
         <GCBLTPL_TOADDRESS>$Street$ $City_Address$</GCBLTPL_TOADDRESS>
         <GCBLTPL_STYLE>{DoubleQuoteCHARunitOfMeasureDoubleQuoteCHAR:DoubleQuoteCHARINCHDoubleQuoteCHAR,DoubleQuoteCHARtopMarginDoubleQuoteCHAR:DoubleQuoteCHAR1DoubleQuoteCHAR,DoubleQuoteCHARleftMarginDoubleQuoteCHAR:DoubleQuoteCHAR1DoubleQuoteCHAR,DoubleQuoteCHARbottomMarginDoubleQuoteCHAR:DoubleQuoteCHAR1DoubleQuoteCHAR,DoubleQuoteCHARrightMarginDoubleQuoteCHAR:DoubleQuoteCHAR1DoubleQuoteCHAR,DoubleQuoteCHARpageSizeDoubleQuoteCHAR:DoubleQuoteCHARLETTERDoubleQuoteCHAR}</GCBLTPL_STYLE>
-        <GCBLTPL_CONTENT>LesserThanCHARpre courier=DoubleQuoteCHARDoubleQuoteCHAR font-size:=DoubleQuoteCHARDoubleQuoteCHAR style=DoubleQuoteCHARcolor: rgb(0, 0, 0); font-family: DoubleQuoteCHARGreaterThanCHAR
-            $Date_Current$
-            Dear $First_Name$ $Last_Name$
+        <GCBLTPL_CONTENT>LesserThanCHARp>$Date_Current$LesserThanCHAR/pGreaterThanCHAR
 
-            This is a sample letter for testing purposes
+            LesserThanCHARpGreaterThanCHARDear $First_Name$ $Last_Name$LesserThanCHAR/pGreaterThanCHAR
 
-            Sincerely,
-            Test AutomationLesserThanCHAR/preGreaterThanCHAR
+            LesserThanCHARpGreaterThanCHARThis is a sample letter for testing purposesLesserThanCHAR/pGreaterThanCHAR
+
+            LesserThanCHARpGreaterThanCHARSincerely,LesserThanCHAR/pGreaterThanCHAR
+
+            LesserThanCHARpGreaterThanCHARTest AutomationLesserThanCHAR/pGreaterThanCHAR
         </GCBLTPL_CONTENT>
         <GCBLTPL_USER_ID>BCMADMIN</GCBLTPL_USER_ID>
         <GCBLTPL_ACTIVITY_DATE>05-APR-18</GCBLTPL_ACTIVITY_DATE>
