@@ -1,11 +1,10 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
 
-import java.sql.CallableStatement
 import java.sql.Connection
 
 /**
@@ -140,48 +139,30 @@ class EmployeeTimeEntryMessageDML {
             }
         }
 
-        CallableStatement sqlCall
-
         if (!setupFailure) {
-            if (jobSequenceNo) {
-                sqlCall = this.connectCall.prepareCall("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?) }")
+            List inputList = [Sql.in(Sql.INTEGER.type, (jobSequenceNo ? jobSequenceNo.toInteger() : null)),
+                              Sql.in(Sql.VARCHAR.type, this.user_role),
+                              Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
+                              Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
+                              Sql.in(Sql.VARCHAR.type, this.source),
+                              Sql.out(Sql.VARCHAR.type),
+                              Sql.out(Sql.VARCHAR.type),
+                              Sql.out(Sql.NUMERIC.type)]
 
-                if (jobSequenceNo) {
-                    sqlCall.setLong(1, jobSequenceNo.toInteger())
-                } else {
-                    sqlCall.setNull(1, java.sql.Types.INTEGER)
-                }
-                sqlCall.setString(2, this.user_role)
-                if (userPidm) {
-                    sqlCall.setInt(3, userPidm.toInteger())
-                } else {
-                    sqlCall.setNull(3, java.sql.Types.INTEGER)
-                }
-                if (proxyPidm) {
-                    sqlCall.setInt(4, proxyPidm.toInteger())
-                } else {
-                    sqlCall.setNull(4, java.sql.Types.INTEGER)
-                }
-                sqlCall.setString(5, this.source)
-                sqlCall.registerOutParameter(6, java.sql.Types.VARCHAR)
-                sqlCall.registerOutParameter(7, java.sql.Types.VARCHAR)
-                sqlCall.registerOutParameter(8, java.sql.Types.NUMERIC)
-
-                try {
-                    sqlCall.executeUpdate()
+            try {
+                this.conn.call("{ call gb_common.p_set_context(?,?,?,?) }", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
+                this.conn.call("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?) }", inputList) { msgType, msgText, errorNum ->
                     connectInfo.tableUpdate("PHRERRL", 0, 1, 0, 0, 0)
                     println "Created timesheet messages for job seqno: ${jobSequenceNo.toString()}"
                 }
-                catch (Exception e) {
-                    connectInfo.tableUpdate("PHRERRL", 0, 0, 0, 1, 0)
-                    if (connectInfo.showErrors) {
-                        println "Insert PHRERRL for Banner ID ${this.bannerid}, pidm ${pidm.toString()}"
-                        println "Problem creating timesheet messages from EmployeeTimeEntryMessageDML.groovy: $e.message"
-                    }
+            } catch (Exception e) {
+                connectInfo.tableUpdate("PHRERRL", 0, 0, 0, 1, 0)
+                if (connectInfo.showErrors) {
+                    println "Insert PHRERRL for Banner ID ${this.bannerid}, pidm ${pidm.toString()}"
+                    println "Problem creating timesheet messages from EmployeeTimeEntryMessageDML.groovy: $e.message"
                 }
-                finally {
-                    sqlCall.close()
-                }
+            } finally {
+                this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'N', 'N'])
             }
         }
     }

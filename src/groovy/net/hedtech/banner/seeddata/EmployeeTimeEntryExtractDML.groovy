@@ -1,13 +1,11 @@
 /*********************************************************************************
- Copyright 2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
 
-import java.sql.CallableStatement
 import java.sql.Connection
-import java.text.SimpleDateFormat
 
 /**
  * Creates time sheet data for employees using a PL/SQL api
@@ -115,68 +113,47 @@ class EmployeeTimeEntryExtractDML {
             }
         }
 
-        CallableStatement sqlCall
-
         if (!setupFailure) {
-            sqlCall = this.connectCall.prepareCall("{ call pekteex.p_extract_time(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) }")
-
-            sqlCall.setString(1, this.perjobs_year)
-            sqlCall.setString(2, this.perjobs_pict_code)
-            if (this.perjobs_payno) {
-                sqlCall.setInt(3, this.perjobs_payno.toInteger())
-            } else {
-                sqlCall.setNull(3, java.sql.Types.INTEGER)
-            }
-            sqlCall.setString(4, this.perjobs_action_ind)
-            if (pidm) {
-                sqlCall.setInt(5, pidm.toInteger())
-            } else {
-                sqlCall.setNull(5, java.sql.Types.INTEGER)
-            }
-            sqlCall.setString(6, this.perjobs_posn)
-            sqlCall.setString(7, this.perjobs_suff)
-            sqlCall.setString(8, this.perjobs_coas_code_ts)
-            sqlCall.setString(9, this.perjobs_orgn_code_ts)
-            sqlCall.setString(10, this.user_role)
-            if (userPidm) {
-                sqlCall.setInt(11, userPidm.toInteger())
-            } else {
-                sqlCall.setNull(11, java.sql.Types.INTEGER)
-            }
-            if (proxyPidm) {
-                sqlCall.setInt(12, proxyPidm.toInteger())
-            } else {
-                sqlCall.setNull(12, java.sql.Types.INTEGER)
-            }
-            sqlCall.setString(13, this.source)
-            sqlCall.registerOutParameter(14, java.sql.Types.INTEGER)
-            sqlCall.registerOutParameter(15, java.sql.Types.VARCHAR)
-            sqlCall.registerOutParameter(16, java.sql.Types.VARCHAR)
-            sqlCall.registerOutParameter(17, java.sql.Types.NUMERIC)
+            List inputList = [Sql.in(Sql.VARCHAR.type, this.perjobs_year),
+                              Sql.in(Sql.VARCHAR.type, this.perjobs_pict_code),
+                              Sql.in(Sql.INTEGER.type, (this.perjobs_payno ? this.perjobs_payno.toInteger() : null)),
+                              Sql.in(Sql.VARCHAR.type, this.perjobs_action_ind),
+                              Sql.in(Sql.INTEGER.type, (pidm ? pidm.toInteger() : null)),
+                              Sql.in(Sql.VARCHAR.type, this.perjobs_posn),
+                              Sql.in(Sql.VARCHAR.type, this.perjobs_suff),
+                              Sql.in(Sql.VARCHAR.type, this.perjobs_coas_code_ts),
+                              Sql.in(Sql.VARCHAR.type, this.perjobs_orgn_code_ts),
+                              Sql.in(Sql.VARCHAR.type, this.user_role),
+                              Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
+                              Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
+                              Sql.in(Sql.VARCHAR.type, this.source),
+                              Sql.out(Sql.INTEGER.type),
+                              Sql.out(Sql.VARCHAR.type),
+                              Sql.out(Sql.VARCHAR.type),
+                              Sql.out(Sql.NUMERIC.type)]
 
             try {
-                sqlCall.executeUpdate()
-
-                if (sqlCall.getString(15) == 'ERROR') {
+                this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
+                this.conn.call("{call pekteex.p_extract_time(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}", inputList) { seqno, msgType, msgText, errorNum ->
+                    if (msgType == 'ERROR') {
+                        connectInfo.tableUpdate("PERJOBS", 0, 0, 0, 1, 0)
+                        if (connectInfo.showErrors) {
+                            println "Insert PERJOBS for Banner ID ${this.bannerid}, pidm ${pidm.toString()}"
+                            println "Problem creating timesheets from EmployeeTimeEntryExtractDML.groovy: ${msgText}"
+                        }
+                    } else {
+                        connectInfo.tableUpdate("PERJOBS", 0, 1, 0, 0, 0)
+                        println "Created timesheet job seqno: ${seqno} for ${this.perjobs_action_ind} "
+                    }
+                }
+            } catch (Exception e) {
                     connectInfo.tableUpdate("PERJOBS", 0, 0, 0, 1, 0)
                     if (connectInfo.showErrors) {
                         println "Insert PERJOBS for Banner ID ${this.bannerid}, pidm ${pidm.toString()}"
-                        println "Problem creating timesheets from EmployeeTimeEntryExtractDML.groovy: ${sqlCall.getString(16)}"
+                        println "Problem creating timesheets from EmployeeTimeEntryExtractDML.groovy: $e.message"
                     }
-                } else {
-                    connectInfo.tableUpdate("PERJOBS", 0, 1, 0, 0, 0)
-                    println "Created timesheet job seqno: ${sqlCall.getLong(14).toString()} for ${this.perjobs_action_ind} "
-                }
-            }
-            catch (Exception e) {
-                connectInfo.tableUpdate("PERJOBS", 0, 0, 0, 1, 0)
-                if (connectInfo.showErrors) {
-                    println "Insert PERJOBS for Banner ID ${this.bannerid}, pidm ${pidm.toString()}"
-                    println "Problem creating timesheets from EmployeeTimeEntryExtractDML.groovy: $e.message"
-                }
-            }
-            finally {
-                sqlCall.close()
+            } finally {
+                this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'N', 'N'])
             }
         }
     }
