@@ -38,7 +38,16 @@ class PerhourDML {
         def apiData = new XmlParser().parseText(xmlData)
         def jobsSeqno = findJobsSeqno(apiData)
 
+
         if (jobsSeqno) {
+
+            if(!apiData.PERHOUR_TIME_ENTRY_DATE[0]?.value()[0])
+            {
+               def startDate  = fetchPayPeriodStartDate(apiData)
+                apiData.PERHOUR_TIME_ENTRY_DATE[0].setValue(startDate?.toString())
+            }
+
+
             // parse the xml  back into  gstring for the dynamic sql loader
             def xmlRecNew = "<${apiData.name()}>\n"
             apiData.children().each() { fields ->
@@ -88,5 +97,29 @@ class PerhourDML {
         }
 
         return jobsSeqno
+    }
+
+
+    
+    def fetchPayPeriodStartDate(apiData) {
+        def startDate
+        def selectStartDate = """select TO_CHAR(ptrcaln_start_date,'MM/DD/YYYY') startDate from ptrcaln
+                                 where ptrcaln_year = ?
+                                   and ptrcaln_pict_code = ?
+                                   and ptrcaln_payno = ?    """
+        try {
+            this.conn.eachRow(selectStartDate, [apiData.YEAR.text(),
+                                               apiData.PICT_CODE.text(),
+                                               apiData.PAYNO.text()]) { trow ->
+                startDate = trow.startDate
+            }
+        } catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not pick startDate from ptrcaln in PerhourDML for PayPeriod " +
+                        "${apiData.YEAR.text()} ${apiData.PICT_CODE.text()} ${apiData.PAYNO.text()} $e.message"
+            }
+        }
+
+        return startDate
     }
 }
