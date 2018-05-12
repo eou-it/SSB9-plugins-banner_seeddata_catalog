@@ -28,18 +28,19 @@ public class PtrcalnLeaveReqDML {
     def deleteNode
 
 
-    public PtrcalnLeaveReqDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
-                              def deleteNode){
+    public PtrcalnLeaveReqDML(InputData connectInfo, Sql conn, Connection connectCall) {
+        this.conn = conn
+        this.connectInfo = connectInfo
+        this.connectCall = connectCall
+    }
 
+
+    public PtrcalnLeaveReqDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
         this.xmlData = xmlData
-        this.columns = columns
-        this.indexColumns = indexColumns
-        this.deleteNode = deleteNode
         processPtrcaln()
-
     }
 
     /**
