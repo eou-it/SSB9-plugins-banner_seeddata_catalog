@@ -77,7 +77,7 @@ public class PtrcalnLeaveReqDML {
                             update ptrcaln set ptrcaln_start_date = ADD_MONTHS((LAST_DAY(SYSDATE)+1),?) ,
                             ptrcaln_end_date = ADD_MONTHS((LAST_DAY(SYSDATE)+1),? )-1
                             where ptrcaln_year = ? and ptrcaln_pict_code = ? and ptrcaln_payno = ?
-                            and (ptrcaln_start_day is null or ptrcaln_start_day < SYSDATE)""",
+                            and (ptrcaln_start_date is null or ptrcaln_start_date < SYSDATE)""",
                     paramList)
         }
         catch (Exception e) {
@@ -95,11 +95,11 @@ public class PtrcalnLeaveReqDML {
         //
         try {
             count = this.conn.executeUpdate("""
-                            update perhour set perhour_time_entry_date = ADD_MONTHS((LAST_DAY(SYSDATE)+1),?) ,
+                            update perhour set perhour_time_entry_date = ADD_MONTHS((LAST_DAY(SYSDATE)+1),?) 
                             where perhour_jobs_seqno in (select perjobs_seqno from perjobs where perjobs_year = ? 
                                     and perjobs_pict_code = ? and perjobs_payno = ?
                                     and (perhour_time_entry_date is null or perhour_time_entry_date < SYSDATE)
-                                    and perjobs_action_ind = 'R'""",
+                                    and perjobs_action_ind = 'R')""",
                     paramList)
         }
         catch (Exception e) {
