@@ -126,11 +126,17 @@ class EmployeeTimeEntryMessageDML {
                and perjobs_action_ind = ?"""
 
             try {
+
                 this.conn.eachRow(selectJobSequenceNo, [this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn, this.perjobs_suff,
                                                         this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind,]) { t4row ->
                     jobSequenceNo = t4row.perjobs_seqno
                     connectInfo.savePidm = pidm
                 }
+
+                println "fetchJobSeqNo for ${jobSequenceNo} :: "+[this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn, this.perjobs_suff,
+                                             this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind,]
+
+
             } catch (Exception e) {
                 setupFailure = true
                 if (connectInfo.showErrors) {
@@ -150,11 +156,16 @@ class EmployeeTimeEntryMessageDML {
                               Sql.out(Sql.NUMERIC.type)]
 
             try {
+
+
                 this.conn.call("{ call gb_common.p_set_context(?,?,?,?) }", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
                 this.conn.call("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?) }", inputList) { msgType, msgText, errorNum ->
                     connectInfo.tableUpdate("PHRERRL", 0, 1, 0, 0, 0)
                     println "Created timesheet messages for job seqno: ${jobSequenceNo.toString()}"
+                    println "Submitted timesheet response : ${msgType} ${msgText}  ${errorNum}"
+
                 }
+
             } catch (Exception e) {
                 connectInfo.tableUpdate("PHRERRL", 0, 0, 0, 1, 0)
                 if (connectInfo.showErrors) {
