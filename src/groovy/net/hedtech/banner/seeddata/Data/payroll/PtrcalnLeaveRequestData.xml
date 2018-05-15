@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PTRCALN_LEAVEREQ_DATA>
+    <PTRCALN_LEAVEREQ>
+        <PTRCALN_YEAR>2018</PTRCALN_YEAR>
+        <PTRCALN_PICT_CODE>SB</PTRCALN_PICT_CODE>
+        <PTRCALN_PAYNO>22</PTRCALN_PAYNO>
+        <ADD_MONTH>1</ADD_MONTH>
+    </PTRCALN_LEAVEREQ>
+    <PTRCALN_LEAVEREQ>
+        <PTRCALN_YEAR>2018</PTRCALN_YEAR>
+        <PTRCALN_PICT_CODE>SB</PTRCALN_PICT_CODE>
+        <PTRCALN_PAYNO>23</PTRCALN_PAYNO>
+        <ADD_MONTH>2</ADD_MONTH>
+    </PTRCALN_LEAVEREQ>
+</PTRCALN_LEAVEREQ_DATA>
+
