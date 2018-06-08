@@ -189,6 +189,8 @@ public class PersonIDDML {
                 try {
                     String API = """{call  gb_identification.p_update(p_pidm => ?,
                                                                         p_id => ?,
+                                                                        p_last_name => ?,
+                                                                        p_first_name => ?,
                                                                         p_user => ?,
                                                                         p_data_origin => ?,
                                                                         p_rowid => ?)}"""
@@ -200,14 +202,20 @@ public class PersonIDDML {
                     // parm 2 p_id  New Spriden Id
                     updateCall.setString(2, this.spriden_alternate_id)
 
-                    // parm 3 p_user  spriden_user VARCHAR2
-                    updateCall.setString(3, this.spriden_user)
+                    // parm 3 p_last_name  spriden_user VARCHAR2
+                    updateCall.setString(3, this.spriden_last_name)
 
-                    // parm 4 p_origin  spriden_origin VARCHAR2
-                    updateCall.setString(4, this.spriden_origin)
+                    // parm 4 p_first_name  New Spriden Id
+                    updateCall.setString(4, this.spriden_first_name)
 
-                    // parm 5 p_rowid_out      spriden_rowid_out VARCHAR2
-                    updateCall.registerOutParameter(5, java.sql.Types.ROWID)
+                    // parm 5 p_user  spriden_user VARCHAR2
+                    updateCall.setString(5, this.spriden_user)
+
+                    // parm 6 p_origin  spriden_origin VARCHAR2
+                    updateCall.setString(6, this.spriden_origin)
+
+                    // parm 7 p_rowid_out      spriden_rowid_out VARCHAR2
+                    updateCall.registerOutParameter(7, java.sql.Types.ROWID)
 
                     if (connectInfo.debugThis) {
                         println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
