@@ -95,6 +95,8 @@ public class TableDriver {
                         connectCall = newConn.getSessionConnection()
                     }
 
+                    conn.execute "{ call gfksjpa.setId('') }"
+
                     if (programNode) {
                         def currRule = node.children().find { it.name() =~ "CURR_RULE"}
                         if (!currRule) {
