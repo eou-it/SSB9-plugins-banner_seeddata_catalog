@@ -643,6 +643,7 @@ public class InputData {
 												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201841.xml',
 												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201842.xml',
 												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201830.xml',
+												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201830.xml',
 												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00017869.xml',
 												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00017871.xml',
 												  '/src/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00017897.xml',
