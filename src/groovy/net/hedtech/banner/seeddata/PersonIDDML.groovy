@@ -88,10 +88,18 @@ public class PersonIDDML {
 
     def insertSpriden() {
         PIDM = null
-        String rowSQL = "select spriden_pidm from SPRIDEN  where spriden_id = ? "
+        String rowSQL = "select spriden_pidm, spriden_id, spriden_last_name, spriden_first_name, spriden_mi from SPRIDEN  where spriden_id = ? "
+        String spridenId
+        String firstName
+        String lastName
+        String midName
         try {
             conn.eachRow(rowSQL, [this.spriden_id]) {row ->
                 PIDM = row.spriden_pidm
+                spridenId = row.spriden_id
+                firstName = row.spriden_first_name
+                lastName = row.spriden_last_name
+                midName = row.spriden_mi
             }
         }
         catch (Exception e) {
@@ -185,44 +193,61 @@ public class PersonIDDML {
         } else {
 
             if (this.spriden_alternate_id) {
-
-                try {
-                    String API = """{call  gb_identification.p_update(p_pidm => ?,
-                                                                        p_id => ?,
-                                                                        p_last_name => ?,
-                                                                        p_first_name => ?,
-                                                                        p_user => ?,
-                                                                        p_data_origin => ?,
-                                                                        p_rowid => ?)}"""
-                    CallableStatement updateCall = this.connectCall.prepareCall(API)
-
-                    // parm 1 p_pidm  old records pidm
-                    updateCall.setInt(1, this.PIDM.toInteger())
-
-                    // parm 2 p_id  New Spriden Id
-                    updateCall.setString(2, this.spriden_alternate_id)
-
-                    // parm 3 p_last_name  spriden_user VARCHAR2
-                    updateCall.setString(3, this.spriden_last_name)
-
-                    // parm 4 p_first_name  New Spriden Id
-                    updateCall.setString(4, this.spriden_first_name)
-
-                    // parm 5 p_user  spriden_user VARCHAR2
-                    updateCall.setString(5, this.spriden_user)
-
-                    // parm 6 p_origin  spriden_origin VARCHAR2
-                    updateCall.setString(6, this.spriden_origin)
-
-                    // parm 7 p_rowid_out      spriden_rowid_out VARCHAR2
-                    updateCall.registerOutParameter(7, java.sql.Types.ROWID)
-
-                    if (connectInfo.debugThis) {
-                        println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
-                    }
+                if (this.spriden_alternate_id == spridenId || this.spriden_first_name == firstName ||
+                        this.spriden_last_name == lastName || this.spriden_mi == midName) {
+                    println "No SPRIDEN change detected. Update not performed"
+                    println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
+                    println "Update SPRIDEN name ${firstName} ${midName} ${lastName} to ${this.spriden_first_name} ${this.spriden_mi} ${this.spriden_last_name}"
+                }
+                else {
                     try {
-                        updateCall.executeUpdate()
-                        connectInfo.tableUpdate("SPRIDEN", 0, 0, 1, 0, 0)
+                        String API = """{call  gb_identification.p_update(p_pidm => ?,
+                                                                            p_id => ?,
+                                                                            p_last_name => ?,
+                                                                            p_first_name => ?,
+                                                                            p_user => ?,
+                                                                            p_data_origin => ?,
+                                                                            p_rowid => ?)}"""
+                        CallableStatement updateCall = this.connectCall.prepareCall(API)
+
+                        // parm 1 p_pidm  old records pidm
+                        updateCall.setInt(1, this.PIDM.toInteger())
+
+                        // parm 2 p_id  New Spriden Id
+                        updateCall.setString(2, this.spriden_alternate_id)
+
+                        // parm 3 p_last_name  spriden_user VARCHAR2
+                        updateCall.setString(3, this.spriden_last_name)
+
+                        // parm 4 p_first_name  New Spriden Id
+                        updateCall.setString(4, this.spriden_first_name)
+
+                        // parm 5 p_user  spriden_user VARCHAR2
+                        updateCall.setString(5, this.spriden_user)
+
+                        // parm 6 p_origin  spriden_origin VARCHAR2
+                        updateCall.setString(6, this.spriden_origin)
+
+                        // parm 7 p_rowid_out      spriden_rowid_out VARCHAR2
+                        updateCall.registerOutParameter(7, java.sql.Types.ROWID)
+
+                        if (connectInfo.debugThis) {
+                            println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
+                        }
+                        try {
+                            updateCall.executeUpdate()
+                            connectInfo.tableUpdate("SPRIDEN", 0, 0, 1, 0, 0)
+                        }
+                        catch (Exception e) {
+                            connectInfo.tableUpdate("SPRIDEN", 0, 0, 0, 1, 0)
+                            if (connectInfo.showErrors) {
+                                println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
+                                println "Problem executing Update for table SPRIDEN from PersonIDDML.groovy: $e.message"
+                            }
+                        }
+                        finally {
+                            updateCall.close()
+                        }
                     }
                     catch (Exception e) {
                         connectInfo.tableUpdate("SPRIDEN", 0, 0, 0, 1, 0)
@@ -230,16 +255,6 @@ public class PersonIDDML {
                             println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
                             println "Problem executing Update for table SPRIDEN from PersonIDDML.groovy: $e.message"
                         }
-                    }
-                    finally {
-                        updateCall.close()
-                    }
-                }
-                catch (Exception e) {
-                    connectInfo.tableUpdate("SPRIDEN", 0, 0, 0, 1, 0)
-                    if (connectInfo.showErrors) {
-                        println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
-                        println "Problem executing Update for table SPRIDEN from PersonIDDML.groovy: $e.message"
                     }
                 }
 
