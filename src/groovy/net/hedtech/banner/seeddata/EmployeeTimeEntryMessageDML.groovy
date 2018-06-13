@@ -72,6 +72,7 @@ class EmployeeTimeEntryMessageDML {
         boolean setupFailure = false
         def pidm = null
         def userPidm = null
+        def apidm = null
         def proxyPidm = null
         def jobSequenceNo = null
         def selectPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
@@ -133,8 +134,8 @@ class EmployeeTimeEntryMessageDML {
                     connectInfo.savePidm = pidm
                 }
 
-                println "fetchJobSeqNo for ${jobSequenceNo} :: "+[this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn, this.perjobs_suff,
-                                             this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind,]
+                println "fetchJobSeqNo for ${jobSequenceNo} :: " + [this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn, this.perjobs_suff,
+                                                                    this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind,]
 
 
             } catch (Exception e) {
@@ -160,6 +161,34 @@ class EmployeeTimeEntryMessageDML {
 
                 this.conn.call("{ call gb_common.p_set_context(?,?,?,?) }", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
                 this.conn.call("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?) }", inputList) { msgType, msgText, errorNum ->
+                    if (errorNum) {
+                        def approverPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
+
+                        try {
+                            this.conn.eachRow(approverPidm, ["HOPTE0600"]) { trow ->
+                                apidm = trow.spriden_pidm
+                            }
+                        } catch (Exception e) {
+                            setupFailure = true
+                            if (connectInfo.showErrors) {
+                                println "Could not select Pidm in EmployeeTimeEntryExtractDML for Banner ID HOPTE0600 from SPRIDEN. $e.message"
+                            }
+                        }
+
+                        List newInputList = [Sql.in(Sql.INTEGER.type, (jobSequenceNo ? jobSequenceNo.toInteger() : null)),
+                                             Sql.in(Sql.INTEGER.type, apidm),
+                                             Sql.in(Sql.INTEGER.type, 1),
+                                             Sql.in(Sql.VARCHAR.type, "E"),
+                                             Sql.in(Sql.VARCHAR.type, this.user_role),
+                                             Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
+                                             Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
+                                             Sql.in(Sql.VARCHAR.type, this.source),
+                                             Sql.out(Sql.VARCHAR.type)]
+                        this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
+                        this.conn.call("{call pektecm.p_create_additional_queue(?,?,?,?,?,?,?,?,?)}", newInputList) { errorMsgOut ->
+                            println "Additional Approver Added for: ${jobSequenceNo}"
+                        }
+                    }
                     connectInfo.tableUpdate("PHRERRL", 0, 1, 0, 0, 0)
                     println "Created timesheet messages for job seqno: ${jobSequenceNo.toString()}"
                     println "Submitted timesheet response : ${msgType} ${msgText}  ${errorNum}"
