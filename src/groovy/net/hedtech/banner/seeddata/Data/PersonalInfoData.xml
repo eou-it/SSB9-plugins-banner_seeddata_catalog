@@ -97,6 +97,10 @@ Copyright 2016 Ellucian Company L.P. and its affiliates.
     </STVCNTY>
 
     <STVNATN>
+        <STVNATN_CODE>PM</STVNATN_CODE>
+        <DELETE>YES</DELETE>
+    </STVNATN>
+    <STVNATN>
         <STVNATN_CODE>WWWWW</STVNATN_CODE>
         <STVNATN_NATION>5 Character Test</STVNATN_NATION>
         <STVNATN_CAPITAL></STVNATN_CAPITAL>
