@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017 - 2018 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 <CURRICRULE>
+    <!-- student with olr classes -->
     <SMRPRLE>
         <SMRPRLE_PROGRAM>BA_ENGL_OLR</SMRPRLE_PROGRAM>
         <SMRPRLE_PROGRAM_DESC>OLR English</SMRPRLE_PROGRAM_DESC>
@@ -14,7 +15,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <SMRPRLE_CAMP_CODE/>
         <SMRPRLE_COLL_CODE>AS</SMRPRLE_COLL_CODE>
         <SMRPRLE_DEGC_CODE>BFA</SMRPRLE_DEGC_CODE>
-        <SMRPRLE_PIDM/>
         <SMRPRLE_LEVL_CODE_STU>UG</SMRPRLE_LEVL_CODE_STU>
         <SMRPRLE_WEB_IND>Y</SMRPRLE_WEB_IND>
         <SMRPRLE_SURROGATE_ID>1390</SMRPRLE_SURROGATE_ID>
@@ -265,7 +265,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SMRACAA>
     <STUDENT_SPRIDEN>
         <BANNERID>HOSCPR004</BANNERID>
-        <SPRIDEN_PIDM>50748</SPRIDEN_PIDM>
         <SPRIDEN_ID>HOSCPR004</SPRIDEN_ID>
         <SPRIDEN_LAST_NAME>Adams</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>OMalley</SPRIDEN_FIRST_NAME>
@@ -293,7 +292,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </STUDENT_SPRIDEN>
     <SGBSTDN>
         <BANNERID>HOSCPR004</BANNERID>
-        <SGBSTDN_PIDM>50748</SGBSTDN_PIDM>
         <SGBSTDN_TERM_CODE_EFF>201410</SGBSTDN_TERM_CODE_EFF>
         <SGBSTDN_STST_CODE>AS</SGBSTDN_STST_CODE>
         <SGBSTDN_LEVL_CODE>UG</SGBSTDN_LEVL_CODE>
@@ -409,7 +407,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SGBSTDN>
     <SORLCUR>
         <BANNERID>HOSCPR004</BANNERID>
-        <SORLCUR_PIDM>50748</SORLCUR_PIDM>
         <SORLCUR_SEQNO>1</SORLCUR_SEQNO>
         <SORLCUR_LMOD_CODE>LEARNER</SORLCUR_LMOD_CODE>
         <SORLCUR_TERM_CODE>201410</SORLCUR_TERM_CODE>
@@ -455,7 +452,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SORLCUR>
     <SORLFOS>
         <BANNERID>HOSCPR004</BANNERID>
-        <SORLFOS_PIDM>50748</SORLFOS_PIDM>
         <SORLFOS_LCUR_SEQNO>1</SORLFOS_LCUR_SEQNO>
         <SORLFOS_SEQNO>1</SORLFOS_SEQNO>
         <SORLFOS_LFST_CODE>MAJOR</SORLFOS_LFST_CODE>
@@ -492,7 +488,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </CURRICULUMBACK>
     <GOBTPAC_RECORD>
         <BANNERID>HOSCPR004</BANNERID>
-        <GOBTPAC_PIDM>50748</GOBTPAC_PIDM>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>N</GOBTPAC_USAGE_ACCEPT_IND>
         <GOBTPAC_ACTIVITY_DATE>01-JAN-10</GOBTPAC_ACTIVITY_DATE>
@@ -510,5 +505,5 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_VERSION/>
         <GOBTPAC_USER_ID/>
         <GOBTPAC_VPDI_CODE/>
-    </GOBTPAC_RECORD>	
+    </GOBTPAC_RECORD>
 </CURRICRULE>	
