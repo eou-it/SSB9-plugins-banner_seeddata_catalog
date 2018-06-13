@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017 - 2018 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 <CURRICRULE>
+
     <SMRPRLE>
         <SMRPRLE_PROGRAM>BAREG1</SMRPRLE_PROGRAM>
         <SMRPRLE_PROGRAM_DESC>Reg Test 1</SMRPRLE_PROGRAM_DESC>
@@ -14,7 +15,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <SMRPRLE_CAMP_CODE/>
         <SMRPRLE_COLL_CODE>AS</SMRPRLE_COLL_CODE>
         <SMRPRLE_DEGC_CODE>BA</SMRPRLE_DEGC_CODE>
-        <SMRPRLE_PIDM/>
         <SMRPRLE_LEVL_CODE_STU>UG</SMRPRLE_LEVL_CODE_STU>
         <SMRPRLE_WEB_IND>Y</SMRPRLE_WEB_IND>
         <SMRPRLE_SURROGATE_ID>1359</SMRPRLE_SURROGATE_ID>
@@ -325,7 +325,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SMRACAA>
     <STUDENT_SPRIDEN>
         <BANNERID>HOSCPR001</BANNERID>
-        <SPRIDEN_PIDM>50700</SPRIDEN_PIDM>
         <SPRIDEN_ID>HOSCPR001</SPRIDEN_ID>
         <SPRIDEN_LAST_NAME>Reggie</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Max</SPRIDEN_FIRST_NAME>
@@ -353,7 +352,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </STUDENT_SPRIDEN>
     <SGBSTDN>
         <BANNERID>HOSCPR001</BANNERID>
-        <SGBSTDN_PIDM>50700</SGBSTDN_PIDM>
         <SGBSTDN_TERM_CODE_EFF>201410</SGBSTDN_TERM_CODE_EFF>
         <SGBSTDN_STST_CODE>AS</SGBSTDN_STST_CODE>
         <SGBSTDN_LEVL_CODE>UG</SGBSTDN_LEVL_CODE>
@@ -469,7 +467,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SGBSTDN>
     <SGRSTSP>
         <BANNERID>HOSCPR001</BANNERID>
-        <SGRSTSP_PIDM>50700</SGRSTSP_PIDM>
         <SGRSTSP_TERM_CODE_EFF>201410</SGRSTSP_TERM_CODE_EFF>
         <SGRSTSP_KEY_SEQNO>1</SGRSTSP_KEY_SEQNO>
         <SGRSTSP_STSP_CODE>AS</SGRSTSP_STSP_CODE>
@@ -501,7 +498,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SGRSTSP>
     <SORLCUR>
         <BANNERID>HOSCPR001</BANNERID>
-        <SORLCUR_PIDM>50700</SORLCUR_PIDM>
         <SORLCUR_SEQNO>1</SORLCUR_SEQNO>
         <SORLCUR_LMOD_CODE>LEARNER</SORLCUR_LMOD_CODE>
         <SORLCUR_TERM_CODE>201410</SORLCUR_TERM_CODE>
@@ -547,7 +543,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </SORLCUR>
     <SORLFOS>
         <BANNERID>HOSCPR001</BANNERID>
-        <SORLFOS_PIDM>50700</SORLFOS_PIDM>
         <SORLFOS_LCUR_SEQNO>1</SORLFOS_LCUR_SEQNO>
         <SORLFOS_SEQNO>1</SORLFOS_SEQNO>
         <SORLFOS_LFST_CODE>MAJOR</SORLFOS_LFST_CODE>
@@ -584,7 +579,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </CURRICULUMBACK>
     <GOBTPAC_RECORD>
         <BANNERID>HOSCPR001</BANNERID>
-        <GOBTPAC_PIDM>50700</GOBTPAC_PIDM>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>N</GOBTPAC_USAGE_ACCEPT_IND>
         <GOBTPAC_ACTIVITY_DATE>01-JAN-10</GOBTPAC_ACTIVITY_DATE>
@@ -602,5 +596,5 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_VERSION/>
         <GOBTPAC_USER_ID/>
         <GOBTPAC_VPDI_CODE/>
-    </GOBTPAC_RECORD>	
+    </GOBTPAC_RECORD>
 </CURRICRULE>	
