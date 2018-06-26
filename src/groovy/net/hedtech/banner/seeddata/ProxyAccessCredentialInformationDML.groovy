@@ -31,7 +31,7 @@ class ProxyAccessCredentialInformationDML {
     def salt
     def createdBy
     def creationDate
-    def userId
+    def lastModifiedBy
     def optOutDate
     def middleName
     def proxyID
@@ -106,7 +106,7 @@ class ProxyAccessCredentialInformationDML {
         this.noOfInvalidAttempts = geniden.GENIDEN_INV_LOGIN_CNT.text() ? geniden.GENIDEN_INV_LOGIN_CNT.text().toInteger() : null
         this.createdBy = geniden.GENIDEN_CREATE_USER.text()
         this.creationDate = geniden.GENIDEN_CREATE_DATE.text()
-        this.userId = geniden.GENIDEN_USER_ID.text()
+        this.lastModifiedBy = geniden.GENIDEN_USER_ID.text()
         this.optOutDate = geniden.GENIDEN_OPT_OUT_ADV_DATE.text()
         this.entityCode = geniden.GENIDEN_ENTITY_CDE.text() ? geniden.GENIDEN_ENTITY_CDE.text() : 'P'
         this.middleName = geniden.GENIDEN_MI.text()
@@ -230,7 +230,7 @@ class ProxyAccessCredentialInformationDML {
         insertCallGENIDEN.setNull(32, java.sql.Types.VARCHAR)
         insertCallGENIDEN.setNull(33, java.sql.Types.VARCHAR)
         insertCallGENIDEN.setNull(34, java.sql.Types.VARCHAR)
-        insertCallGENIDEN.setString(35, this.userId)
+        insertCallGENIDEN.setString(35, this.lastModifiedBy)
         insertCallGENIDEN.setString(36, this.namePrefix)
         insertCallGENIDEN.setString(37, this.nameSuffix)
         insertCallGENIDEN.setString(38, this.prefferedFirstName)
@@ -346,7 +346,7 @@ class ProxyAccessCredentialInformationDML {
                 java.sql.Date sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
                 insertCallGPBPRXY.setDate(14, sqlDate)
             }
-            insertCallGPBPRXY.setString(15, this.userId)
+            insertCallGPBPRXY.setString(15, this.lastModifiedBy)
             if (this.optOutDate == "") { insertCallGPBPRXY.setNull(16, java.sql.Types.DATE) }
             else {
                 def ddate = new ColumnDateValue(this.optOutDate)
