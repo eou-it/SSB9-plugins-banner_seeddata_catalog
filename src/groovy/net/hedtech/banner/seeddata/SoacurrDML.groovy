@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -45,31 +45,48 @@ public class SoacurrDML {
      * are one up across all records.
      *
      */
-
     def processSoacurr() {
         def apiData = new XmlParser().parseText(xmlData)
+        def ssql = null
 
-        String ssql = """select * from sobcurr  where sobcurr_program = ? """
-        // find if the program already exists in the database and use it's curr_rule for inserting into the db
-        try {
-            program = this.conn.firstRow(ssql, [apiData.PROGRAM.text()])
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Could not select ID in SoacurrDML,  ${apiData.PROGRAM.text()} from sobcurr for ${connectInfo.tableName}. $e.message"
+        //Determine the seed data we are working with
+        if ( apiData.SOBCURR_LEVL_CODE.text() )   //SOBCURR requires level code
+        {
+            //Working with SOBCURR data
+            ssql = """select * from sobcurr where sobcurr_levl_code=? and NVL(sobcurr_camp_code,'x')=NVL(?,'x') and NVL(sobcurr_coll_code,'x')=NVL(?,'x') 
+                             and NVL(sobcurr_degc_code,'x')=NVL(?,'x') and NVL(sobcurr_program,'x')=NVL(?,'x') """
+            // find if the program already exists in the database and use it's curr_rule for inserting into the db
+            try {
+                program = this.conn.firstRow(ssql, [apiData.SOBCURR_LEVL_CODE.text(), apiData.SOBCURR_CAMP_CODE.text(), apiData.SOBCURR_COLL_CODE.text(),
+                                                    apiData.SOBCURR_DEGC_CODE.text(), apiData.PROGRAM.text()])
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Could not select ID in SoacurrDML,  ${apiData.PROGRAM.text()} from sobcurr for ${connectInfo.tableName}. $e.message"
+                }
             }
         }
-        if (connectInfo.debugThis) {
-            println "Curric Rule Selected from SOBCURR ${currRule} for program  ${apiData.PROGRAM.text()} for ${connectInfo.tableName}."
+        else {
+            //Working with SOBCURR child data which, for seed purposes, requires a Program value
+            ssql = """select * from sobcurr  where sobcurr_program = ? """
+            try {
+                program = this.conn.firstRow(ssql, [apiData.PROGRAM.text()])
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Could not select ID in SoacurrDML,  ${apiData.PROGRAM.text()} from sobcurr for ${connectInfo.tableName}. $e.message"
+                }
+            }
         }
+
         if (!program) {
             ssql = """SELECT nvl(MAX(SOBCURR_CURR_RULE),0) + 1 rule  FROM sobcurr """
             currRule = this.conn.firstRow(ssql).RULE
-
         }
         else {
             currRule = program.SOBCURR_CURR_RULE
         }
+
         if (connectInfo.debugThis) {
             println "Curric Rule for ${currRule} for program  ${apiData.PROGRAM.text()} from sobcurr for ${connectInfo.tableName}."
         }
@@ -101,8 +118,7 @@ public class SoacurrDML {
                 apiData.SORCCON_CURR_RULE[0].setValue(currRule.toString())
             }
             if (apiData.MAJOR.text()) {
-                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where sorcmjr_majr_code = ?
-                and sorcmjr_curr_rule = ? """
+                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where sorcmjr_majr_code = ?   and sorcmjr_curr_rule = ? """
                 def cmjr_rule = this.conn.firstRow(ssql, [apiData.MAJOR.text(), currRule])
                 apiData.SORCCON_CMJR_RULE[0].setValue(cmjr_rule?.sorcmjr_cmjr_rule?.toString())
             }
@@ -133,8 +149,7 @@ public class SoacurrDML {
         else if (connectInfo.tableName == "SARWAPC") {
             apiData.SARWAPC_CURR_RULE[0].setValue(currRule.toString())
             if (apiData.MAJOR.text()) {
-                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where  sorcmjr_majr_code = ?
-                and sorcmjr_curr_rule = ? """
+                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where  sorcmjr_majr_code = ?  and sorcmjr_curr_rule = ? """
                 def cmjr_rule = this.conn.firstRow(ssql, [apiData.MAJOR.text(), currRule])
                 apiData.SARWAPC_CMJR_RULE[0].setValue(cmjr_rule?.sorcmjr_cmjr_rule?.toString())
             }
@@ -143,8 +158,7 @@ public class SoacurrDML {
           else if (connectInfo.tableName == "SARWADF") {
             apiData.SARWADF_CURR_RULE[0].setValue(currRule.toString())
             if (apiData.MAJOR.text()) {
-                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where  sorcmjr_majr_code = ?
-                and sorcmjr_curr_rule = ? """
+                ssql = """SELECT sorcmjr_cmjr_rule  FROM sorcmjr where  sorcmjr_majr_code = ?   and sorcmjr_curr_rule = ? """
                 def cmjr_rule = this.conn.firstRow(ssql, [apiData.MAJOR.text(), currRule])
                 apiData.SARWADF_CMJR_RULE[0].setValue(cmjr_rule?.sorcmjr_cmjr_rule?.toString())
             }
@@ -164,24 +178,20 @@ public class SoacurrDML {
 
 
     def deleteData() {
-
-
         String selectSql = """delete from sormcrl where sorcmrl_curr_rule = ? """
 
+        deleteData("SARWADF", "delete from sarwadf where  exists ( select 1 from sorcmjr where sorcmjr_cmjr_rule = sarwadf_cmjr_rule and sorcmjr_curr_rule = ? ) ")
         deleteData("SARWAPC", "delete from sarwapc where  exists ( select 1 from sorcmjr where sorcmjr_cmjr_rule = sarwapc_cmjr_rule and sorcmjr_curr_rule = ? ) ")
-        deleteData("SORMCRL", "delete from sormcrl where sormcrl_curr_rule = ?  ")
+        deleteData("SORMCRL", "delete from sormcrl where sormcrl_curr_rule = ? ")
         deleteData("SORCMJR", "delete from sorcmjr where sorcmjr_curr_rule = ? ")
         deleteData("SORCMNR", "delete from sorcmnr where sorcmnr_curr_rule = ? ")
         deleteData("SORCCON", "delete from sorccon where sorccon_curr_rule = ? ")
         deleteData("SOBCURR", "delete from sobcurr where sobcurr_curr_rule = ? ")
-
-
     }
 
 
     def deleteData(String tableName, String sql) {
         try {
-
             int delRows = conn.executeUpdate(sql, [currRule])
             connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
         }
