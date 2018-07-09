@@ -8345,8 +8345,8 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
   <SMRGRUL_CONNECTOR_MAX>N</SMRGRUL_CONNECTOR_MAX>                                        
   <SMRGRUL_CONNECTOR_TRANSFER>N</SMRGRUL_CONNECTOR_TRANSFER>                              
   <SMRGRUL_CNT_IN_GPA_IND>Y</SMRGRUL_CNT_IN_GPA_IND>                                      
-  <SMRGRUL_SET>A</SMRGRUL_SET>                                                            
-  <SMRGRUL_SUBSET>2</SMRGRUL_SUBSET>                                                      
+  <SMRGRUL_SET>B</SMRGRUL_SET>
+  <SMRGRUL_SUBSET>1</SMRGRUL_SUBSET>
   <SMRGRUL_RULE/>                                                                         
   <SMRGRUL_SUBJ_CODE>ENGL</SMRGRUL_SUBJ_CODE>                                             
   <SMRGRUL_CRSE_NUMB_LOW/>                                                                
@@ -8390,8 +8390,8 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
   <SMRGRUL_CONNECTOR_MAX>N</SMRGRUL_CONNECTOR_MAX>                                        
   <SMRGRUL_CONNECTOR_TRANSFER>N</SMRGRUL_CONNECTOR_TRANSFER>                              
   <SMRGRUL_CNT_IN_GPA_IND>Y</SMRGRUL_CNT_IN_GPA_IND>                                      
-  <SMRGRUL_SET>A</SMRGRUL_SET>                                                            
-  <SMRGRUL_SUBSET>3</SMRGRUL_SUBSET>                                                      
+  <SMRGRUL_SET>C</SMRGRUL_SET>
+  <SMRGRUL_SUBSET>1</SMRGRUL_SUBSET>
   <SMRGRUL_RULE/>                                                                         
   <SMRGRUL_SUBJ_CODE>CHEM</SMRGRUL_SUBJ_CODE>                                             
   <SMRGRUL_CRSE_NUMB_LOW/>                                                                
@@ -11350,7 +11350,7 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
   <SMRGCAA_TERM_CODE_FROM/>
   <SMRGCAA_TERM_CODE_TO/>
   <SMRGCAA_REQ_CREDITS/>
-  <SMRGCAA_REQ_COURSES>1</SMRGCAA_REQ_COURSES>
+  <SMRGCAA_REQ_COURSES/>
   <SMRGCAA_MAX_CREDITS/>
   <SMRGCAA_MAX_COURSES/>
   <SMRGCAA_MIN_CRED_CRSE/>
@@ -11395,7 +11395,7 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
   <SMRGCAA_TERM_CODE_FROM/>
   <SMRGCAA_TERM_CODE_TO/>
   <SMRGCAA_REQ_CREDITS/>
-  <SMRGCAA_REQ_COURSES>2</SMRGCAA_REQ_COURSES>
+  <SMRGCAA_REQ_COURSES/>
   <SMRGCAA_MAX_CREDITS/>
   <SMRGCAA_MAX_COURSES/>
   <SMRGCAA_MIN_CRED_CRSE/>
@@ -11672,8 +11672,8 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
   <SMRGRUL_CONNECTOR_MAX>N</SMRGRUL_CONNECTOR_MAX>
   <SMRGRUL_CONNECTOR_TRANSFER>N</SMRGRUL_CONNECTOR_TRANSFER>
   <SMRGRUL_CNT_IN_GPA_IND>Y</SMRGRUL_CNT_IN_GPA_IND>
-  <SMRGRUL_SET/>
-  <SMRGRUL_SUBSET/>
+  <SMRGRUL_SET>A01</SMRGRUL_SET>
+  <SMRGRUL_SUBSET>100</SMRGRUL_SUBSET>
   <SMRGRUL_RULE/>
   <SMRGRUL_SUBJ_CODE>BIOL</SMRGRUL_SUBJ_CODE>
   <SMRGRUL_CRSE_NUMB_LOW>101</SMRGRUL_CRSE_NUMB_LOW>
@@ -14100,7 +14100,7 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
         <SMRGRUL_SUBSET>100</SMRGRUL_SUBSET>
         <SMRGRUL_RULE/>
         <SMRGRUL_SUBJ_CODE>BIOL</SMRGRUL_SUBJ_CODE>
-        <SMRGRUL_CRSE_NUMB_LOW>015</SMRGRUL_CRSE_NUMB_LOW>
+        <SMRGRUL_CRSE_NUMB_LOW>101</SMRGRUL_CRSE_NUMB_LOW>
         <SMRGRUL_CRSE_NUMB_HIGH/>
         <SMRGRUL_ATTR_CODE/>
         <SMRGRUL_ATTS_CODE/>
@@ -14370,7 +14370,7 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
         <SMRGRUL_SUBSET/>
         <SMRGRUL_RULE/>
         <SMRGRUL_SUBJ_CODE>MATH</SMRGRUL_SUBJ_CODE>
-        <SMRGRUL_CRSE_NUMB_LOW>1230</SMRGRUL_CRSE_NUMB_LOW>
+        <SMRGRUL_CRSE_NUMB_LOW>104</SMRGRUL_CRSE_NUMB_LOW>
         <SMRGRUL_CRSE_NUMB_HIGH/>
         <SMRGRUL_ATTR_CODE/>
         <SMRGRUL_ATTS_CODE/>
@@ -14415,7 +14415,7 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
         <SMRGRUL_SUBSET/>
         <SMRGRUL_RULE/>
         <SMRGRUL_SUBJ_CODE>MATH</SMRGRUL_SUBJ_CODE>
-        <SMRGRUL_CRSE_NUMB_LOW>201</SMRGRUL_CRSE_NUMB_LOW>
+        <SMRGRUL_CRSE_NUMB_LOW>105</SMRGRUL_CRSE_NUMB_LOW>
         <SMRGRUL_CRSE_NUMB_HIGH/>
         <SMRGRUL_ATTR_CODE/>
         <SMRGRUL_ATTS_CODE/>
@@ -14460,7 +14460,7 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
         <SMRGRUL_SUBSET>100</SMRGRUL_SUBSET>
         <SMRGRUL_RULE/>
         <SMRGRUL_SUBJ_CODE>BIOL</SMRGRUL_SUBJ_CODE>
-        <SMRGRUL_CRSE_NUMB_LOW>1105</SMRGRUL_CRSE_NUMB_LOW>
+        <SMRGRUL_CRSE_NUMB_LOW>100</SMRGRUL_CRSE_NUMB_LOW>
         <SMRGRUL_CRSE_NUMB_HIGH/>
         <SMRGRUL_ATTR_CODE/>
         <SMRGRUL_ATTS_CODE/>
@@ -14505,8 +14505,8 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
         <SMRGRUL_SUBSET>100</SMRGRUL_SUBSET>
         <SMRGRUL_RULE/>
         <SMRGRUL_SUBJ_CODE>CHEM</SMRGRUL_SUBJ_CODE>
-        <SMRGRUL_CRSE_NUMB_LOW>1000</SMRGRUL_CRSE_NUMB_LOW>
-        <SMRGRUL_CRSE_NUMB_HIGH>1500</SMRGRUL_CRSE_NUMB_HIGH>
+        <SMRGRUL_CRSE_NUMB_LOW>200</SMRGRUL_CRSE_NUMB_LOW>
+        <SMRGRUL_CRSE_NUMB_HIGH>299</SMRGRUL_CRSE_NUMB_HIGH>
         <SMRGRUL_ATTR_CODE/>
         <SMRGRUL_ATTS_CODE/>
         <SMRGRUL_CAMP_CODE/>
