@@ -904,6 +904,11 @@ public class InputData {
             'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
             'structured-reg-functional-data'                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/CappProgramSRPGMGroup.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml'],
+            //corrections made to integration data to keep it in sync with functional data are being added to a new target so that they can be run in Daily environment for review
+            //as more corrections are made, those data files may be added to this target as needed
+            'structured-reg-integration-data'                                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration17.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml']
     ]
 
     def calbTargets = [
