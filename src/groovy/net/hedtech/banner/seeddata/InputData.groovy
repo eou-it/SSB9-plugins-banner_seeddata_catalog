@@ -466,6 +466,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CappStructureRule.xml'],
             'generalstudentcappreg37'          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CappStructureRule.xml'],
+            'generalstudentcappreg38'          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/CappStructureRule.xml'],
             'generalstudentcappregKW1023'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationKW1023.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CappStructureRule.xml'],
             'generalstudentcappregKW1028'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationKW1028.xml',
@@ -914,7 +916,8 @@ public class InputData {
             //as more corrections are made, those data files may be added to this target as needed
             'structured-reg-integration-data'                                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration17.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml']
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml']
     ]
 
     def calbTargets = [
