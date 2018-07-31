@@ -1,0 +1,25 @@
+<?xml version='1.0'  encoding='windows-1252' ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+********************************************************************************* -->
+<ATTENDANCETRACKING_DATA>
+    <GTVSQPA>
+        <GTVSQPA_CODE>TERM_CODE</GTVSQPA_CODE>
+        <GTVSQPA_DESC>Term code</GTVSQPA_DESC>
+        <GTVSQPA_DATA_TYPE_CDE>C</GTVSQPA_DATA_TYPE_CDE>
+        <GTVSQPA_START_DATE>01-JUL-03</GTVSQPA_START_DATE>
+        <GTVSQPA_ACTIVITY_DATE>01-JAN-10</GTVSQPA_ACTIVITY_DATE>
+        <GTVSQPA_USER_ID>GRAILS</GTVSQPA_USER_ID>
+        <GTVSQPA_DATA_ORIGIN>GRAILS</GTVSQPA_DATA_ORIGIN>
+        <GTVSQPA_VPDI_CODE/>
+    </GTVSQPA>
+    <GORSQPA>
+        <GORSQPA_SQPR_CODE>ATTENDANCE_TRACKING</GORSQPA_SQPR_CODE>
+        <GORSQPA_SQPA_CODE>TERM_CODE</GORSQPA_SQPA_CODE>
+        <GORSQPA_SYS_REQ_IND>N</GORSQPA_SYS_REQ_IND>
+        <GORSQPA_ACTIVITY_DATE>24-JUN-14</GORSQPA_ACTIVITY_DATE>
+        <GORSQPA_USER_ID>GRAILS</GORSQPA_USER_ID>
+        <GORSQPA_DATA_ORIGIN>GRAILS</GORSQPA_DATA_ORIGIN>
+        <GORSQPA_VPDI_CODE/>
+    </GORSQPA>
+</ATTENDANCETRACKING_DATA>
