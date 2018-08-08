@@ -8,7 +8,7 @@ import groovy.sql.Sql
 import java.sql.Connection
 
 /**
- * Creates time sheet with messages logged in the PHRERRL table for employees using a PL/SQL package call
+ * Submits timesheets with messages logged in the PHRERRL table for employees using a PL/SQL package call.
  */
 class EmployeeTimeEntryMessageDML {
 
@@ -75,6 +75,8 @@ class EmployeeTimeEntryMessageDML {
         def apidm = null
         def proxyPidm = null
         def jobSequenceNo = null
+        def queueErrorNumber = null
+        def queueErrorMessage = null
         def selectPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
 
         try {
@@ -127,17 +129,11 @@ class EmployeeTimeEntryMessageDML {
                and perjobs_action_ind = ?"""
 
             try {
-
                 this.conn.eachRow(selectJobSequenceNo, [this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn, this.perjobs_suff,
                                                         this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind,]) { t4row ->
                     jobSequenceNo = t4row.perjobs_seqno
                     connectInfo.savePidm = pidm
                 }
-
-                println "fetchJobSeqNo for ${jobSequenceNo} :: " + [this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn, this.perjobs_suff,
-                                                                    this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind,]
-
-
             } catch (Exception e) {
                 setupFailure = true
                 if (connectInfo.showErrors) {
@@ -147,62 +143,93 @@ class EmployeeTimeEntryMessageDML {
         }
 
         if (!setupFailure) {
-            List inputList = [Sql.in(Sql.INTEGER.type, (jobSequenceNo ? jobSequenceNo.toInteger() : null)),
-                              Sql.in(Sql.VARCHAR.type, this.user_role),
-                              Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
-                              Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
-                              Sql.in(Sql.VARCHAR.type, this.source),
-                              Sql.out(Sql.VARCHAR.type),
-                              Sql.out(Sql.VARCHAR.type),
-                              Sql.out(Sql.NUMERIC.type)]
+            def timeData = [this.bannerid, this.perjobs_year, this.perjobs_pict_code, this.perjobs_payno, pidm, this.perjobs_posn,
+                            this.perjobs_suff, this.perjobs_orgn_code_ts, this.perjobs_coas_code_ts, this.perjobs_action_ind]
+
+            List extractInput = [Sql.in(Sql.INTEGER.type, (jobSequenceNo ? jobSequenceNo.toInteger() : null)),
+                                 Sql.in(Sql.VARCHAR.type, this.user_role),
+                                 Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
+                                 Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
+                                 Sql.in(Sql.VARCHAR.type, this.source),
+                                 Sql.in(Sql.VARCHAR.type, 'N'),
+                                 Sql.out(Sql.VARCHAR.type),
+                                 Sql.out(Sql.VARCHAR.type),
+                                 Sql.out(Sql.NUMERIC.type)]
 
             try {
-
-
                 this.conn.call("{ call gb_common.p_set_context(?,?,?,?) }", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
-                this.conn.call("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?) }", inputList) { msgType, msgText, errorNum ->
-                    if (errorNum) {
-                        def approverPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
-
-                        try {
-                            this.conn.eachRow(approverPidm, ["HOPTE0600"]) { trow ->
-                                apidm = trow.spriden_pidm
-                            }
-                        } catch (Exception e) {
-                            setupFailure = true
-                            if (connectInfo.showErrors) {
-                                println "Could not select Pidm in EmployeeTimeEntryExtractDML for Banner ID HOPTE0600 from SPRIDEN. $e.message"
-                            }
+                this.conn.call("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?,?) }", extractInput) { msgType, msgText, errorNum ->
+                    if (errorNum != null) {
+                        queueErrorNumber = errorNum
+                        queueErrorMessage = "     Routing queue error: ${msgType} ${msgText}  errorNum: ${errorNum}  jobSequenceNumber: ${jobSequenceNo.toString()}"
+                    } else if (msgType == 'ERROR') {
+                        connectInfo.tableUpdate("PHRERRL", 0, 1, 0, 0, 0)
+                        if (connectInfo.showErrors) {
+                            println "Submitted time response: $msgText  jobSequenceNumber: ${jobSequenceNo.toString()}  data: " + timeData
                         }
-
-                        List newInputList = [Sql.in(Sql.INTEGER.type, (jobSequenceNo ? jobSequenceNo.toInteger() : null)),
-                                             Sql.in(Sql.INTEGER.type, apidm),
-                                             Sql.in(Sql.INTEGER.type, 1),
-                                             Sql.in(Sql.VARCHAR.type, "E"),
-                                             Sql.in(Sql.VARCHAR.type, this.user_role),
-                                             Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
-                                             Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
-                                             Sql.in(Sql.VARCHAR.type, this.source),
-                                             Sql.out(Sql.VARCHAR.type)]
-                        this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
-                        this.conn.call("{call pektecm.p_create_additional_queue(?,?,?,?,?,?,?,?,?)}", newInputList) { errorMsgOut ->
-                            println "Additional Approver Added for: ${jobSequenceNo}"
-                        }
+                    } else {
+                        connectInfo.tableUpdate("PERJOBS", 0, 0, 1, 0, 0)
+                        println "Submitted time for job seqno: ${jobSequenceNo.toString()}  data: " + timeData
                     }
-                    connectInfo.tableUpdate("PHRERRL", 0, 1, 0, 0, 0)
-                    println "Created timesheet messages for job seqno: ${jobSequenceNo.toString()}"
-                    println "Submitted timesheet response : ${msgType} ${msgText}  ${errorNum}"
-
                 }
-
             } catch (Exception e) {
-                connectInfo.tableUpdate("PHRERRL", 0, 0, 0, 1, 0)
                 if (connectInfo.showErrors) {
-                    println "Insert PHRERRL for Banner ID ${this.bannerid}, pidm ${pidm.toString()}"
-                    println "Problem creating timesheet messages from EmployeeTimeEntryMessageDML.groovy: $e.message"
+                    println "Problem submitting time from EmployeeTimeEntryMessageDML.groovy: $e.message"
                 }
             } finally {
                 this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'N', 'N'])
+            }
+
+            if (queueErrorNumber) {
+                // Routing queue was not built.  Attempt a submit with a specified approver.
+                def approverPidm = """select * from spriden where spriden_id = ? and spriden_change_ind is null"""
+
+                try {
+                    this.conn.eachRow(approverPidm, ["HOPTE0600"]) { trow ->
+                        apidm = trow.spriden_pidm
+                    }
+                } catch (Exception e) {
+                    if (connectInfo.showErrors) {
+                        println "Could not select Pidm in EmployeeTimeEntryExtractDML for Banner ID HOPTE0600 from SPRIDEN. $e.message"
+                    }
+                }
+
+                extractInput = [Sql.in(Sql.INTEGER.type, (jobSequenceNo ? jobSequenceNo.toInteger() : null)),
+                                Sql.in(Sql.VARCHAR.type, this.user_role),
+                                Sql.in(Sql.INTEGER.type, (userPidm ? userPidm.toInteger() : null)),
+                                Sql.in(Sql.INTEGER.type, (proxyPidm ? proxyPidm.toInteger() : null)),
+                                Sql.in(Sql.VARCHAR.type, this.source),
+                                Sql.in(Sql.VARCHAR.type, 'Y'),
+                                Sql.out(Sql.VARCHAR.type),
+                                Sql.out(Sql.VARCHAR.type),
+                                Sql.out(Sql.NUMERIC.type)]
+
+                List approverInput = [Sql.in(Sql.INTEGER.type, apidm),
+                                      Sql.in(Sql.INTEGER.type, 1)]
+
+                try {
+                    this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'Y', 'N'])
+                    this.conn.call("{call pektecm.p_add_queue_member_context(?,?)}", approverInput)
+                    this.conn.call("{ call pekteap.p_submit_time(?,?,?,?,?,?,?,?,?) }", extractInput) { msgType2, msgText2, errorNum2 ->
+                        if (msgType2 == 'ERROR') {
+                            connectInfo.tableUpdate("PHRERRL", 0, 1, 0, 0, 0)
+                            if (connectInfo.showErrors) {
+                                println "Submitted time response: $msgText2  jobSequenceNumber: ${jobSequenceNo.toString()}  data: " + timeData
+                                println queueErrorMessage
+                            }
+                        } else {
+                            connectInfo.tableUpdate("PERJOBS", 0, 0, 1, 0, 0)
+                            println "Submitted time for job seqno: ${jobSequenceNo.toString()}  data: " + timeData
+                        }
+                    }
+                } catch (Exception e) {
+                    if (connectInfo.showErrors) {
+                        println "Problem submitting time from v.groovy: $e.message"
+                    }
+                } finally {
+                    this.conn.call("{call pektecm.p_delete_queue_member_context()}", [])
+                    this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'N', 'N'])
+                }
             }
         }
     }
