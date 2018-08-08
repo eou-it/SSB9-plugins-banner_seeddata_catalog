@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017 - 2018 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <!--This is term data specific to term 201410.  Required validation records remain in ScheduleTerm.xml. -->
 <TERM>
@@ -25,7 +25,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
     </STVTERM>
     <SOBTERM>
         <SOBTERM_TERM_CODE>201410</SOBTERM_TERM_CODE>
-        <SOBTERM_CRN_ONEUP>20800</SOBTERM_CRN_ONEUP>
+        <SOBTERM_CRN_ONEUP>20824</SOBTERM_CRN_ONEUP>
         <SOBTERM_REG_ALLOWED>Y</SOBTERM_REG_ALLOWED>
         <SOBTERM_READM_REQ>201310</SOBTERM_READM_REQ>
         <SOBTERM_FEE_ASSESSMENT>Y</SOBTERM_FEE_ASSESSMENT>
