@@ -768,6 +768,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StvtermData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StvtrmtData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvcompData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvsaprData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvcompData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvsaprData.xml'],
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRBREA_Data.xml',
