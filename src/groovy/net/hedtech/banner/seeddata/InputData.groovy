@@ -897,6 +897,7 @@ public class InputData {
             'gpa-rules-truncate'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesTruncate.xml'],
             'gpa-rules-delete'                                                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/history/AcademicHistoryGpaRulesDelete.xml'],
             'scheduleTerm201410'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
+            'scheduleData201410'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410.xml'],
             'scheduleData201410Crn20201'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml'],
             'scheduleData201410Crn20202'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml'],
             'scheduleData201410Crn20210'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20210.xml'],
