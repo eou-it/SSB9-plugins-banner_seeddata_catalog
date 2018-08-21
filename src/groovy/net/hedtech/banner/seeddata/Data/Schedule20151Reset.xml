@@ -158,6 +158,17 @@ Copyright 2015-2018 Ellucian Company L.P. and its affiliates.
   <SSRMEET_VERSION>0</SSRMEET_VERSION>                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
   <SSRMEET_VPDI_CODE>INST</SSRMEET_VPDI_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
  </SSRMEET>
+ <SSRRARE>
+  <SSRRARE_TERM_CODE>201410</SSRRARE_TERM_CODE>
+  <SSRRARE_CRN>20151</SSRRARE_CRN>
+  <SSRRARE_ACTIVITY_DATE>01/01/2010</SSRRARE_ACTIVITY_DATE>
+  <SSRRARE_AREA>HORZNREGPQ</SSRRARE_AREA>
+  <SSRRARE_SURROGATE_ID>3964</SSRRARE_SURROGATE_ID>
+  <SSRRARE_VERSION>0</SSRRARE_VERSION>
+  <SSRRARE_USER_ID>GRAILS</SSRRARE_USER_ID>
+  <SSRRARE_DATA_ORIGIN>GRAILS</SSRRARE_DATA_ORIGIN>
+  <SSRRARE_VPDI_CODE></SSRRARE_VPDI_CODE>
+ </SSRRARE>
 <SIRASGN>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
   <BANNERID>HOF00743</BANNERID>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
   <SIRASGN_TERM_CODE>201410</SIRASGN_TERM_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
