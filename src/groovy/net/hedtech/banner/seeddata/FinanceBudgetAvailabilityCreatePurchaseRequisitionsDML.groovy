@@ -148,25 +148,6 @@ public class FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML {
                             "  IF EXIT_NO > 0 THEN\n" +
                             "    RETURN;\n" +
                             "  END IF;\n" +
-                            "  SELECT FOBSYSC_REQ_NSF_ON_OFF_IND\n" +
-                            "  INTO EXisting_fobsysc\n" +
-                            "  FROM FOBSYSC FINANCESYSTEMCONTROL\n" +
-                            "  WHERE TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_EFF_DATE) <= sysdate\n" +
-                            "  AND FINANCESYSTEMCONTROL.FOBSYSC_STATUS_IND         ='A'\n" +
-                            "  AND (TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE) >= sysdate\n" +
-                            "  OR FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE          IS NULL)\n" +
-                            "  AND (FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE        IS NULL\n" +
-                            "  OR TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE)    > sysdate);\n" +
-                            "  IF EXisting_fobsysc                                 ='Y' THEN\n" +
-                            "    UPDATE FOBSYSC FINANCESYSTEMCONTROL\n" +
-                            "    SET FOBSYSC_REQ_NSF_ON_OFF_IND                      ='N'\n" +
-                            "    WHERE TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_EFF_DATE) <= sysdate\n" +
-                            "    AND FINANCESYSTEMCONTROL.FOBSYSC_STATUS_IND         ='A'\n" +
-                            "    AND (TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE) >= sysdate\n" +
-                            "    OR FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE          IS NULL)\n" +
-                            "    AND (FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE        IS NULL\n" +
-                            "    OR TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE)    > sysdate);\n" +
-                            "  END IF;\n" +
                             "  l_start_date       := to_date('01-JUL-'||TO_CHAR(l_start_fsyr_code-1),'DD-MON-YYYY');\n" +
                             "  l_end_date         := to_date('30-JUN-'||TO_CHAR(l_end_fsyr_code),'DD-MON-YYYY');\n" +
                             "  l_d_increment      := l_start_date;\n" +
@@ -174,6 +155,25 @@ public class FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML {
                             "  WHILE l_d_increment<=l_end_date\n" +
                             "  LOOP\n" +
                             "    lv_trans_date := l_d_increment;\n" +
+                            "  SELECT FOBSYSC_REQ_NSF_ON_OFF_IND\n" +
+                            "  INTO EXisting_fobsysc\n" +
+                            "  FROM FOBSYSC FINANCESYSTEMCONTROL\n" +
+                            "  WHERE TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_EFF_DATE) <= lv_trans_date\n" +
+                            "  AND FINANCESYSTEMCONTROL.FOBSYSC_STATUS_IND         ='A'\n" +
+                            "  AND (TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE) >= lv_trans_date\n" +
+                            "  OR FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE          IS NULL)\n" +
+                            "  AND (FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE        IS NULL\n" +
+                            "  OR TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE)    > lv_trans_date);\n" +
+                            "  IF EXisting_fobsysc                                 ='Y' THEN\n" +
+                            "    UPDATE FOBSYSC FINANCESYSTEMCONTROL\n" +
+                            "    SET FOBSYSC_REQ_NSF_ON_OFF_IND                      ='N'\n" +
+                            "    WHERE TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_EFF_DATE) <= lv_trans_date\n" +
+                            "    AND FINANCESYSTEMCONTROL.FOBSYSC_STATUS_IND         ='A'\n" +
+                            "    AND (TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE) >= lv_trans_date\n" +
+                            "    OR FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE          IS NULL)\n" +
+                            "    AND (FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE        IS NULL\n" +
+                            "    OR TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE)    > lv_trans_date);\n" +
+                            "  END IF;\n" +
                             "    FOR i IN 1..l_doc_cnt\n" +
                             "    LOOP\n" +
                             "      BEGIN\n" +
@@ -244,16 +244,16 @@ public class FinanceBudgetAvailabilityCreatePurchaseRequisitionsDML {
                             "      END IF;\n" +
                             "      REQ_DOC_NUM :=?;----EXTERNAL\n" +
                             "    END LOOP;\n" +
-                            "    l_d_increment := l_d_increment+lv_increment_days;\n" +
-                            "  END LOOP;\n" +
                             "  UPDATE FOBSYSC FINANCESYSTEMCONTROL\n" +
                             "  SET FOBSYSC_REQ_NSF_ON_OFF_IND                      = EXisting_fobsysc\n" +
-                            "  WHERE TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_EFF_DATE) <= sysdate\n" +
+                            "  WHERE TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_EFF_DATE) <= lv_trans_date\n" +
                             "  AND FINANCESYSTEMCONTROL.FOBSYSC_STATUS_IND         ='A'\n" +
-                            "  AND (TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE) >= sysdate\n" +
+                            "  AND (TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE) >= lv_trans_date\n" +
                             "  OR FINANCESYSTEMCONTROL.FOBSYSC_TERM_DATE          IS NULL)\n" +
                             "  AND (FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE        IS NULL\n" +
-                            "  OR TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE)    > sysdate);\n" +
+                            "  OR TRUNC(FINANCESYSTEMCONTROL.FOBSYSC_NCHG_DATE)    > lv_trans_date);\n" +
+                            "    l_d_increment := l_d_increment+lv_increment_days;\n" +
+                            "  END LOOP;\n" +
                             "  COMMIT;\n" +
                             "END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
