@@ -806,7 +806,15 @@ public class InputData {
             'jobsub'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/jobsub.xml'],
             'self-service-configuration'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml'],
             'reset-password':['/src/groovy/net/hedtech/banner/seeddata/Data/resetPasswordUserSetupData.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml']
+                              '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
+            'StudentSeedData' :['/src/groovy/net/hedtech/banner/seeddata/Data/GobqstnData',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbgpData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbgpData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbtpData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbtpData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrbcatData.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbcpData.xml',
+                           '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StudentSeedData.xml']
     ]
     /**
      *  Map of selenium targets
