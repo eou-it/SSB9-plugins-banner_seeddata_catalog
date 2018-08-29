@@ -2630,7 +2630,7 @@
         </GCBEMTL_CONTENT>
         <GCBEMTL_FROMLIST/>
         <GCBEMTL_SUBJECT>Sample test automation template</GCBEMTL_SUBJECT>
-        <GCBEMTL_TOLIST>autotestfail@test.com</GCBEMTL_TOLIST>
+        <GCBEMTL_TOLIST>failtest</GCBEMTL_TOLIST>
     </GCBEMTL>
 
     <GCRTPFL>
