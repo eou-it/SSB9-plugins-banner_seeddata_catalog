@@ -4792,7 +4792,7 @@
         <GCRORAN_DATE_FORMAT>MMMM dd,yyyy</GCRORAN_DATE_FORMAT>
         <GCRORAN_DAYOFWEEK_FORMAT>EEEE, MMMM, dd, yyyy</GCRORAN_DAYOFWEEK_FORMAT>
         <GCRORAN_TIMEOFDAY_FORMAT>hh:mma</GCRORAN_TIMEOFDAY_FORMAT>
-        <GCRORAN_NOTFN_ENDPOINT_URL>http://mobiledev3.ellucian.com/colleague-internal-mobileserver/api/notification/notifications/</GCRORAN_NOTFN_ENDPOINT_URL>
+        <GCRORAN_NOTFN_ENDPOINT_URL>http://mobiledev1.ellucian.com/colleague-internal-mobileserver/api/notification/notifications/</GCRORAN_NOTFN_ENDPOINT_URL>
         <GCRORAN_NOTFN_APPL_NAME>StudentSuccess</GCRORAN_NOTFN_APPL_NAME>
         <GCRORAN_NOTFN_APPL_KEY>26EA0504F153F5BE4FF4CD1603DD4082</GCRORAN_NOTFN_APPL_KEY>
         <GCRORAN_VERSION>1</GCRORAN_VERSION>
