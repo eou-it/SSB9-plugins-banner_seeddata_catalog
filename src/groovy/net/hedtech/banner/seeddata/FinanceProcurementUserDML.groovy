@@ -287,7 +287,7 @@ public class FinanceProcurementUserDML {
                     "   null, " +
                     "   null, " +
                     "   null, " +
-                    "   'seed user', " +
+                    "   'seeduser@ellucian.edu', " +
                     "   '252', " +
                     "   '6597777', " +
                     "   null, " +
