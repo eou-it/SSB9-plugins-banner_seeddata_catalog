@@ -181,6 +181,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/PositionHistoryData.xml',
                                                   // Employee Information
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/HRBannerUser.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralUsers.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeBasicData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/posnctl/EmployeeJobHistoryData.xml',
@@ -590,7 +591,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralGtvsdaxData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/CommonMatchingData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GtvduntData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralUsers.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/AuthenticationUserData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/LetterGenerationData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/TabBasedSecurity.xml',
