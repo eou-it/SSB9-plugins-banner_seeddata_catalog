@@ -205,7 +205,8 @@ public class APIClasses {
             'FGBJVCH'               : 'net.hedtech.banner.seeddata.FinanceJournalHeaderCreateDML',
             'FGBJVCD'               : 'net.hedtech.banner.seeddata.FinanceJournalDetailCreateDML',
             'NTRQGRP'               : 'net.hedtech.banner.seeddata.NtrqgrpDML',
-            'PTRCALN_LEAVEREQ'      : 'net.hedtech.banner.seeddata.PtrcalnLeaveReqDML'
+            'PTRCALN_LEAVEREQ'      : 'net.hedtech.banner.seeddata.PtrcalnLeaveReqDML',
+			'FPBPOHD'               : 'net.hedtech.banner.seeddata.FinancePurchaseOrderHeaderCreateDML'
 
     ]
 
