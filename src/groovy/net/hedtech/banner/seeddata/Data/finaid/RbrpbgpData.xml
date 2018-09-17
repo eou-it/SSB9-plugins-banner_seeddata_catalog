@@ -43,12 +43,10 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RBRPBGP_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     </RBRPBGP>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     <RBRPBGP>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-        <RBRPBGP_AIDY_CODE>1819</RBRPBGP_AIDY_CODE>
-        <RBRPBGP_PBGP_CODE>PCD1</RBRPBGP_PBGP_CODE>
         <RBRPBGP_AIDY_CODE>1718</RBRPBGP_AIDY_CODE>
         <RBRPBGP_PBGP_CODE>PBG_JS</RBRPBGP_PBGP_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         <RBRPBGP_PRIORITY>1</RBRPBGP_PRIORITY>
-        <RBRPBGP_LONG_DESC>Period budget group</RBRPBGP_LONG_DESC>                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        <RBRPBGP_LONG_DESC>Period budget group</RBRPBGP_LONG_DESC>
         <RBRPBGP_COMMENT/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         <RBRPBGP_ACTIVITY_DATE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         <RBRPBGP_USER_ID/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
@@ -57,7 +55,19 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RBRPBGP_VERSION/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         <RBRPBGP_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     </RBRPBGP>
-
+    <RBRPBGP>
+        <RBRPBGP_AIDY_CODE>1819</RBRPBGP_AIDY_CODE>
+        <RBRPBGP_PBGP_CODE>PCD1</RBRPBGP_PBGP_CODE>
+        <RBRPBGP_PRIORITY>1</RBRPBGP_PRIORITY>
+        <RBRPBGP_LONG_DESC>Period budget group</RBRPBGP_LONG_DESC>
+        <RBRPBGP_COMMENT/>
+        <RBRPBGP_ACTIVITY_DATE/>
+        <RBRPBGP_USER_ID/>
+        <RBRPBGP_DATA_ORIGIN>SEED_DATA</RBRPBGP_DATA_ORIGIN>
+        <RBRPBGP_SURROGATE_ID/>
+        <RBRPBGP_VERSION/>
+        <RBRPBGP_VPDI_CODE/>
+    </RBRPBGP>
     <RBRPBGP>
         <RBRPBGP_AIDY_CODE>1819</RBRPBGP_AIDY_CODE>
         <RBRPBGP_PBGP_CODE>PCD2</RBRPBGP_PBGP_CODE>
@@ -111,4 +121,3 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RBRPBGP_VPDI_CODE/>
     </RBRPBGP>
 </RBRPBGP_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-
