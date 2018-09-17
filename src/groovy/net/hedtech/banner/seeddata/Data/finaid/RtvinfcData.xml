@@ -274,6 +274,22 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RTVINFC_VERSION/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         <RTVINFC_DATA_ORIGIN/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         <RTVINFC_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    </RTVINFC>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    </RTVINFC>
+    <RTVINFC>
+        <RTVINFC_CODE>PCSS</RTVINFC_CODE>
+        <RTVINFC_DESC>CSS Tape</RTVINFC_DESC>
+        <RTVINFC_ACTIVITY_DATE/>
+        <RTVINFC_CTYP_CODE>FIN</RTVINFC_CTYP_CODE>
+        <RTVINFC_SBGI_CODE>F00005</RTVINFC_SBGI_CODE>
+        <RTVINFC_TREQ_CODE/>
+        <RTVINFC_TRST_CODE>S</RTVINFC_TRST_CODE>
+        <RTVINFC_SYSTEM_REQ_IND>Y</RTVINFC_SYSTEM_REQ_IND>
+        <RTVINFC_TREQ_CODE_SUPP/>
+        <RTVINFC_USER_ID/>
+        <RTVINFC_SURROGATE_ID/>
+        <RTVINFC_VERSION/>
+        <RTVINFC_DATA_ORIGIN/>
+        <RTVINFC_VPDI_CODE/>
+    </RTVINFC>
 </RTVINFC_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

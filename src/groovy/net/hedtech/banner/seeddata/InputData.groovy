@@ -770,7 +770,18 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvcompData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvsaprData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvcompData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvsaprData.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvsaprData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvbtypData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbtpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbtpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbgpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbgpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbcpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RormvalData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorprstData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass500002StudentReq.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass500003StudentHoldsData.xml'],
+
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRBREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRCERT_Data.xml',
@@ -806,7 +817,12 @@ public class InputData {
             'jobsub'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/jobsub.xml'],
             'self-service-configuration'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml'],
             'reset-password':['/src/groovy/net/hedtech/banner/seeddata/Data/resetPasswordUserSetupData.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml']
+                              '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
+
+            //Pankaj Target
+            'student-data-target'       : [
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RormvalData.xml'
+                    ]
     ]
     /**
      *  Map of selenium targets

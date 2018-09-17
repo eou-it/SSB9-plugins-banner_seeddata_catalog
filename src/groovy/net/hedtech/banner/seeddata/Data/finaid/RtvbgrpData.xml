@@ -218,6 +218,18 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RTVBGRP_VERSION/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         <RTVBGRP_DATA_ORIGIN>SEED_DATA</RTVBGRP_DATA_ORIGIN>                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         <RTVBGRP_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    </RTVBGRP>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    </RTVBGRP>
+    <RTVBGRP>
+        <RTVBGRP_CODE>PCODE</RTVBGRP_CODE>
+        <RTVBGRP_DESC>Test Budgeting group</RTVBGRP_DESC>
+        <RTVBGRP_PRIORITY>1</RTVBGRP_PRIORITY>
+        <RTVBGRP_ACTIVITY_DATE/>
+        <RTVBGRP_USER_ID/>
+        <RTVBGRP_ACTIVE_IND>Y</RTVBGRP_ACTIVE_IND>
+        <RTVBGRP_SURROGATE_ID/>
+        <RTVBGRP_VERSION/>
+        <RTVBGRP_DATA_ORIGIN/>
+        <RTVBGRP_VPDI_CODE/>
+    </RTVBGRP>
 </RTVBGRP_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
