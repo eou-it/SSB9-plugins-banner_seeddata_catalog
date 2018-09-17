@@ -44,6 +44,20 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RTVCOMP_VERSION/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         <RTVCOMP_DATA_ORIGIN/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         <RTVCOMP_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    </RTVCOMP>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    </RTVCOMP>
+    <RTVCOMP>
+        <RTVCOMP_CODE>PCMP</RTVCOMP_CODE>
+        <RTVCOMP_DESC>campus</RTVCOMP_DESC>
+        <RTVCOMP_DEFAULT_IND>Y</RTVCOMP_DEFAULT_IND>
+        <RTVCOMP_ACTIVITY_DATE/>
+        <RTVCOMP_PRINT_SEQ_NO/>
+        <RTVCOMP_ALTERNATE_PELL_IND/>
+        <RTVCOMP_PELL_LT_HALF_IND/>
+        <RTVCOMP_USER_ID/>
+        <RTVCOMP_SURROGATE_ID/>
+        <RTVCOMP_VERSION/>
+        <RTVCOMP_DATA_ORIGIN/>
+        <RTVCOMP_VPDI_CODE/>
+    </RTVCOMP>
 </RTVCOMP_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
