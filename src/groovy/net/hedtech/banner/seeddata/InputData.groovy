@@ -776,7 +776,12 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbtpData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbgpData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbgpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrbcatData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbcpData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/GobqstnData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrapbcData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StvcollData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StvresdData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RormvalData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorprstData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass500002StudentReq.xml',
@@ -817,12 +822,7 @@ public class InputData {
             'jobsub'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/jobsub.xml'],
             'self-service-configuration'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml'],
             'reset-password':['/src/groovy/net/hedtech/banner/seeddata/Data/resetPasswordUserSetupData.xml',
-                              '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
-
-            //Pankaj Target
-            'student-data-target'       : [
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RormvalData.xml'
-                    ]
+                              '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml']
     ]
     /**
      *  Map of selenium targets
