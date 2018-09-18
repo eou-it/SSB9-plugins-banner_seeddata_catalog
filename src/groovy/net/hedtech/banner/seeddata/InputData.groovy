@@ -784,8 +784,19 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StvresdData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RormvalData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorprstData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvawstData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass500002StudentReq.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass500003StudentHoldsData.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass500003StudentHoldsData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StudentDataPaymntShdlAndPymntHst.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Student100000002Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50004StudentSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50007AwardScheduleSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50008AidYearMsgSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50009AwardActiveAidyearSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50010WebRequirementSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50011TermsAndConditionsSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50012StndSuppliedInfoSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml'],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRBREA_Data.xml',
@@ -823,14 +834,18 @@ public class InputData {
             'self-service-configuration'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml'],
             'reset-password':['/src/groovy/net/hedtech/banner/seeddata/Data/resetPasswordUserSetupData.xml',
                               '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
-            'StudentSeedData' :['/src/groovy/net/hedtech/banner/seeddata/Data/GobqstnData',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbgpData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbgpData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvpbtpData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbtpData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrbcatData.xml',
-                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RbrpbcpData.xml',
-                           '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StudentSeedData.xml']
+
+            'student-target' : [
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/StudentDataPaymntShdlAndPymntHst.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Student100000002Data.xml',
+                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50004StudentSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50007AwardScheduleSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50008AidYearMsgSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50009AwardActiveAidyearSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50010WebRequirementSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50011TermsAndConditionsSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50012StndSuppliedInfoSeedData.xml',
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml']
     ]
     /**
      *  Map of selenium targets
