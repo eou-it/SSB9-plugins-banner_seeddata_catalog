@@ -1,47 +1,52 @@
+/*********************************************************************************
+ Copyright 2009-2016 Ellucian Company L.P. and its affiliates.
+ ****************************************************************************** */
+
 package banner.seeddata.catalog
 
-import grails.plugins.*
+import grails.plugins.Plugin
+import grails.util.Holders as CH
+import org.apache.commons.dbcp.BasicDataSource
 
+
+/**
+ * A Grails Plugin providing cross cutting concerns such as security and database access
+ * for Banner web applications.
+ * */
 class BannerSeeddataCatalogGrailsPlugin extends Plugin {
-
-    // the version or versions of Grails the plugin is designed for
+	
+	String version = "1.0.52"
+    
+	// the version or versions of Grails the plugin is designed for
     def grailsVersion = "3.3.2 > *"
-    // resources that are excluded from plugin packaging
+    
+	// resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
-    def title = "Banner Seeddata Catalog" // Headline display name of the plugin
-    def author = "Your name"
-    def authorEmail = ""
-    def description = '''\
-Brief summary/description of the plugin.
-'''
+    def author = "SunGard Higher Education"
+    def authorEmail = "horizon-support@sungardhe.com"
+    def title = "BannerSeedData Plugin"
+    def description = '''This plugin is BannerSeedDataCatalog.'''//.stripMargin()  // TODO Enable this once we adopt Groovy 1.7.3
+
+    def documentation = "http://sungardhe.com/development/horizon/plugins/banner-seedata-catalog"
+	
     def profiles = ['web']
 
-    // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/banner-seeddata-catalog"
-
-    // Extra (optional) plugin metadata
-
-    // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
-
-    // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
-
-    // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
-
-    // Location of the plugin's issue tracker.
-//    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
-
-    // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
 
     Closure doWithSpring() { {->
-            // TODO Implement runtime spring config (optional)
+		
+			//initializing Datasource for runnin the grails target "seed-data"
+			dataSource(BasicDataSource) {
+				maxActive = 5
+				maxIdle = 2
+				defaultAutoCommit = "false"
+				driverClassName = "${CH.config.bannerDataSource.driver}"
+				url = "${CH.config.bannerDataSource.url}"
+				password = "${CH.config.bannerDataSource.password}"
+				username = "${CH.config.bannerDataSource.username}"
+			}
         }
     }
 
