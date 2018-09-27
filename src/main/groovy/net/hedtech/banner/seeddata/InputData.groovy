@@ -4,6 +4,7 @@
 package net.hedtech.banner.seeddata
 
 import grails.util.GrailsUtil
+import grails.util.Environment
 import groovy.sql.Sql
 
 /**
@@ -1080,8 +1081,14 @@ public class InputData {
             //url = CH?.config?.CH?.bannerDataSource.url
             //println "DB URL  ${url} "
             def configFile = locateConfigFile()
-            def slurper = new ConfigSlurper(GrailsUtil.environment)
-            def config = slurper.parse(configFile.toURI().toURL())
+            
+			//def slurper = new ConfigSlurper(GrailsUtil.environment)
+            
+			//Grails-3 modification
+            String currentEnv = Environment.getCurrent().getName()
+            def slurper = new ConfigSlurper( currentEnv )			
+            
+			def config = slurper.parse(configFile.toURI().toURL())
             url = config.get("bannerDataSource").url
         }
         url
@@ -1180,8 +1187,14 @@ public class InputData {
         def localurl = url
         if (!url) {
             def configFile = locateConfigFile()
-            def slurper = new ConfigSlurper(GrailsUtil.environment)
-            def config = slurper.parse(configFile.toURI().toURL())
+            
+			//def slurper = new ConfigSlurper(GrailsUtil.environment)
+			
+			//Grails-3 modification
+			String currentEnv = Environment.getCurrent().getName()
+			def slurper = new ConfigSlurper( currentEnv )			
+            
+			def config = slurper.parse(configFile.toURI().toURL())
             localurl = config.get("bannerDataSource").url
         }
         def db = Sql.newInstance(localurl,   //  db =  new Sql( connectInfo.url,
