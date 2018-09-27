@@ -50,6 +50,13 @@ dependencies {
     testCompile "org.grails:grails-gorm-testing-support"
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails:grails-web-testing-support"
+	
+	//Added for BannerXE commons dbcp specified as physical path
+	compile files("lib/commons-dbcp-1.4.jar")
+	
+	// Added for BannerXE - Oracle jars - specified as physical path
+    compile files("lib/ojdbc6.jar")
+    runtime files("lib/xdb6-11.2.0.4.jar")	
 }
 
 bootRun {
