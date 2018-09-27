@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<CATALOG>
+   <SV_SCRCLBD>
+       <SCRCLBD_TERM_CODE_EFF>202410</SCRCLBD_TERM_CODE_EFF>
+       <SCRCLBD_SUBJ_CODE>ARTS</SCRCLBD_SUBJ_CODE>
+       <SCRCLBD_CRSE_NUMB>200</SCRCLBD_CRSE_NUMB>
+       <DELETE>YES</DELETE>
+   </SV_SCRCLBD>
+</CATALOG>
