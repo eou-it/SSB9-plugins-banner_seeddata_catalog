@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SCHEDULED>
+    <SSBACRL>
+        <SSBACRL_TERM_CODE>202410</SSBACRL_TERM_CODE>
+        <SSBACRL_ACCL_CODE>S</SSBACRL_ACCL_CODE>
+        <DELETE>YES</DELETE>
+    </SSBACRL>
+    <SSBACRL>
+        <SSBACRL_TERM_CODE>202410</SSBACRL_TERM_CODE>
+        <SSBACRL_ACCL_CODE>Q</SSBACRL_ACCL_CODE>
+        <DELETE>YES</DELETE>
+    </SSBACRL>
+    <SSBACRL>
+        <SSBACRL_TERM_CODE>202410</SSBACRL_TERM_CODE>
+        <SSBACRL_ACCL_CODE>T</SSBACRL_ACCL_CODE>
+        <DELETE>YES</DELETE>
+    </SSBACRL>
+</SCHEDULED>
