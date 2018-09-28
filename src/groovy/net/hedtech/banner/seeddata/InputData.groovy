@@ -760,8 +760,8 @@ public class InputData {
             'self-service-configuration'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceConfiguration.xml'],
             'reset-password'                   :['/src/groovy/net/hedtech/banner/seeddata/Data/resetPasswordUserSetupData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
-            'ar-data'                          :['/src/groovy/net/hedtech/banner/seeddata/Data/ar/User_Data.xml',
-                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/ar/TransactionData.xml']
+            'ar-data'                          :['/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountReceivableStudentUsers.xml',
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail.xml']
     ]
     /**
      *  Map of selenium targets
