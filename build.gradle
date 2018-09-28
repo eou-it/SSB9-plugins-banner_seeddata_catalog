@@ -53,6 +53,7 @@ dependencies {
 	
 	//Added for BannerXE commons dbcp specified as physical path
 	compile files("lib/commons-dbcp-1.4.jar")
+	compile files("lib/commons-pool-1.5.4.jar")
 	
 	// Added for BannerXE - Oracle jars - specified as physical path
     compile files("lib/ojdbc6.jar")
