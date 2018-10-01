@@ -31,3 +31,4 @@ test/**/release_info.groovy.old
 plugin.xml
 *.ser
 messages_ar_SA.properties
+*.gradle
