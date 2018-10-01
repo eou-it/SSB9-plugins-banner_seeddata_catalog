@@ -796,7 +796,9 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50010WebRequirementSeedData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50011TermsAndConditionsSeedData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50012StndSuppliedInfoSeedData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass40001_Award_1718_Aid_Years.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass40001_Award_1819_Aid_Years.xml'],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRBREA_Data.xml',
@@ -852,9 +854,8 @@ public class InputData {
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50010WebRequirementSeedData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50011TermsAndConditionsSeedData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50012StndSuppliedInfoSeedData.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml'],
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml']
 
-            'award-target' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RobinstData.xml','/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass40001_Award_1718_Aid_Years.xml']
     ]
     /**
      *  Map of selenium targets
