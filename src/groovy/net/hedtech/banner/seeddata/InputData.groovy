@@ -715,7 +715,11 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantHeader.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/DirectCashReceiptHeader.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceGrantLedger.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityViewPendingDocumentsHistory.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceBudgetAvailabilityViewPendingDocumentsHistory.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceDiscount.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceTaxGroup.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceTaxRate.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceTaxGroupAndRate.xml'],
             'registration-student-attribute'   : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStudentRegistrationAttribute_Data.xml'],
 
             'finance-journals' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/journal/IncomeClass.xml',
