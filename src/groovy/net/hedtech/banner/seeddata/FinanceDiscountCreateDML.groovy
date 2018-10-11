@@ -36,7 +36,7 @@ class FinanceDiscountCreateDML {
         try {
             final String apiQuery =
                     "   BEGIN" +
-                            "  DELETE FROM FTVDISC WHERE FTVDISC_CODE = '" + discountData.FTVDISC_NUM.text() + "' ;" +
+                            "  DELETE FROM FTVDISC WHERE FTVDISC_CODE = '" + discountData.FTVDISC_CODE.text() + "' ;" +
                             "   INSERT INTO FTVDISC ( FTVDISC_CODE, FTVDISC_EFF_DATE, FTVDISC_ACTIVITY_DATE, FTVDISC_USER_ID, " +
                             "	FTVDISC_DESC, FTVDISC_DAYS, FTVDISC_NET_DAYS, FTVDISC_PCT, FTVDISC_END_OF_MONTH_IND, "+
                             "   FTVDISC_SURROGATE_ID, FTVDISC_VERSION) " +
