@@ -193,8 +193,7 @@ public class PersonIDDML {
         } else {
 
             if (this.spriden_alternate_id) {
-                if (this.spriden_alternate_id == spridenId && this.spriden_first_name == firstName &&
-                        this.spriden_last_name == lastName && this.spriden_mi == midName) {
+                if (isIdSame(spridenId, firstName, lastName, midName)) {
                     println "No SPRIDEN change detected. Update not performed"
                     println "Update SPRIDEN id ${this.spriden_id} to alternate id  ${this.spriden_alternate_id}"
                     println "Update SPRIDEN name ${firstName} ${midName} ${lastName} to ${this.spriden_first_name} ${this.spriden_mi} ${this.spriden_last_name}"
@@ -262,4 +261,11 @@ public class PersonIDDML {
             }
         }
     }
+    
+    def isIdSame(def spridenId, def firstName, def lastName, def midName) {
+        return (this.spriden_alternate_id == spridenId && this.spriden_last_name == lastName && 
+                (this.spriden_first_name == firstName || (this.spriden_first_name.length() == 0 && firstName == null)) &&
+                (this.spriden_mi == midName || (this.spriden_mi.length() == 0 && midName == null)))
+    }
+            
 }
