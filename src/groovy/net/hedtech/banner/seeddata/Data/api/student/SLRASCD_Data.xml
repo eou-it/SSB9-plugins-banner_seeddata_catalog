@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<SLRASCD_DATA>
+    <SLRASCD>
+        <SLRASCD_TERM_CODE>199510</SLRASCD_TERM_CODE>
+        <SLRASCD_ASCD_CODE>AC</SLRASCD_ASCD_CODE>
+        <SLRASCD_START_DATE>15-04-94</SLRASCD_START_DATE>
+        <SLRASCD_END_DATE>17-12-94</SLRASCD_END_DATE>
+        <SLRASCD_ACTIVITY_DATE>29-01-95</SLRASCD_ACTIVITY_DATE>
+        <SLRASCD_DATA_ORIGIN>GRAILS</SLRASCD_DATA_ORIGIN>
+    </SLRASCD>
+</SLRASCD_DATA>
