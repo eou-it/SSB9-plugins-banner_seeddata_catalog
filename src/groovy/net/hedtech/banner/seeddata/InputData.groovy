@@ -855,7 +855,6 @@ public class InputData {
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50011TermsAndConditionsSeedData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50012StndSuppliedInfoSeedData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml']
-
     ]
     /**
      *  Map of selenium targets
