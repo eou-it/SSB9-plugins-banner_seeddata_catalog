@@ -1304,6 +1304,48 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RFRBASE_DATA_ORIGIN/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         <RFRBASE_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         <RFRBASE_GUID>897974c9-0cd5-48cd-9e44-553a8123e307</RFRBASE_GUID>                                                                                                                                                                                                                                                                                                                                                                                                                                           
-    </RFRBASE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-</RFRBASE_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    </RFRBASE>
+    <RFRBASE>
+        <RFRBASE_FUND_CODE>PLON</RFRBASE_FUND_CODE>
+        <RFRBASE_FUND_TITLE>PK Loan</RFRBASE_FUND_TITLE>
+        <RFRBASE_FSRC_CODE>OTHR</RFRBASE_FSRC_CODE>
+        <RFRBASE_FTYP_CODE>LOAN</RFRBASE_FTYP_CODE>
+        <RFRBASE_ACTIVITY_DATE/>
+        <RFRBASE_DETAIL_CODE/>
+        <RFRBASE_FED_FUND_ID/>
+        <RFRBASE_PRINT_SEQ_NO/>
+        <RFRBASE_VR_MSG_NO/>
+        <RFRBASE_ACTIVE_IND>Y</RFRBASE_ACTIVE_IND>
+        <RFRBASE_XREF_VALUE/>
+        <RFRBASE_FUND_TITLE_LONG>PK Loan</RFRBASE_FUND_TITLE_LONG>
+        <RFRBASE_USER_ID/>
+        <RFRBASE_INFO_ACCESS_IND>Y</RFRBASE_INFO_ACCESS_IND>
+        <RFRBASE_SURROGATE_ID/>
+        <RFRBASE_VERSION/>
+        <RFRBASE_DATA_ORIGIN/>
+        <RFRBASE_VPDI_CODE/>
+        <RFRBASE_GUID>7fc4d0ce-5ce7-4881-b90f-9482sw3c6188</RFRBASE_GUID>
+    </RFRBASE>
+    <RFRBASE>
+        <RFRBASE_FUND_CODE>PFND</RFRBASE_FUND_CODE>
+        <RFRBASE_FUND_TITLE>PK fund</RFRBASE_FUND_TITLE>
+        <RFRBASE_FSRC_CODE>OTHR</RFRBASE_FSRC_CODE>
+        <RFRBASE_FTYP_CODE>SCHL</RFRBASE_FTYP_CODE>
+        <RFRBASE_ACTIVITY_DATE/>
+        <RFRBASE_DETAIL_CODE/>
+        <RFRBASE_FED_FUND_ID>ACG</RFRBASE_FED_FUND_ID>
+        <RFRBASE_PRINT_SEQ_NO/>
+        <RFRBASE_VR_MSG_NO/>
+        <RFRBASE_ACTIVE_IND>Y</RFRBASE_ACTIVE_IND>
+        <RFRBASE_XREF_VALUE/>
+        <RFRBASE_FUND_TITLE_LONG>PK fund</RFRBASE_FUND_TITLE_LONG>
+        <RFRBASE_USER_ID/>
+        <RFRBASE_INFO_ACCESS_IND>Y</RFRBASE_INFO_ACCESS_IND>
+        <RFRBASE_SURROGATE_ID/>
+        <RFRBASE_VERSION/>
+        <RFRBASE_DATA_ORIGIN/>
+        <RFRBASE_VPDI_CODE/>
+        <RFRBASE_GUID>6fa39dc7-808a-4842-91e7-a2789fdr87c4</RFRBASE_GUID>
+    </RFRBASE>
+</RFRBASE_DATA>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
