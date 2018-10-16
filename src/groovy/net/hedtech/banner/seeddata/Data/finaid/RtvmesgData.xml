@@ -106,6 +106,19 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RTVMESG_VERSION/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         <RTVMESG_DATA_ORIGIN/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         <RTVMESG_VPDI_CODE/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    </RTVMESG>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    </RTVMESG>
+    <RTVMESG>
+        <RTVMESG_CODE>PMSG</RTVMESG_CODE>
+        <RTVMESG_SEQNO>0</RTVMESG_SEQNO>
+        <RTVMESG_ACTIVITY_DATE/>
+        <RTVMESG_MESG_DESC>Complete the unsatisfied requirements ASAP</RTVMESG_MESG_DESC>
+        <RTVMESG_INFO_ACCESS_IND>Y</RTVMESG_INFO_ACCESS_IND>
+        <RTVMESG_STOP_AWRD_PROCESS>Y</RTVMESG_STOP_AWRD_PROCESS>
+        <RTVMESG_USER_ID/>
+        <RTVMESG_SURROGATE_ID/>
+        <RTVMESG_VERSION/>
+        <RTVMESG_DATA_ORIGIN/>
+        <RTVMESG_VPDI_CODE/>
+    </RTVMESG>
 </RTVMESG_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
