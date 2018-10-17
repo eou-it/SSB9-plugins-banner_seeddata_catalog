@@ -798,6 +798,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass40001_Award_1718_Aid_Years.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass40001_Award_1819_Aid_Years.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvwebqData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorwebqData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorwebqData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/WebqStudentData.xml',
