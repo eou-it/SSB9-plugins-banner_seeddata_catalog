@@ -765,6 +765,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRDGIH_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRDGDH_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SPRCMNT_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/RORSAPR_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/RORPRDS_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRASCD_Data.xml'],
             'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
             'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
