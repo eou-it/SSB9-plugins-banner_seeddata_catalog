@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -192,12 +192,12 @@ public class APIClasses {
             'GURCTLEP'              : 'net.hedtech.banner.seeddata.GurctleppDML',
             'GURAPPR'               : 'net.hedtech.banner.seeddata.GurapprDML',
             'PERJOBS_EXTRACT'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryExtractDML',
-            'PEREARN'               : 'net.hedtech.banner.seeddata.PerearnDML',
-            'PERHOUR'               : 'net.hedtech.banner.seeddata.PerhourDML',
-            'PERTITO'               : 'net.hedtech.banner.seeddata.PertitoDML',
-            'PERELBD'               : 'net.hedtech.banner.seeddata.PerelbdDML',
-            'PERLVTK'               : 'net.hedtech.banner.seeddata.PerlvtkDML',
-            'PERJOBS_MESSAGE'       : 'net.hedtech.banner.seeddata.EmployeeTimeEntryMessageDML',
+            'PERJOBS_SUBMIT'        : 'net.hedtech.banner.seeddata.EmployeeTimeEntrySubmitDML',
+            'PEREARN'               : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERHOUR'               : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERTITO'               : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERELBD'               : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERLVTK'               : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
             'NBRRJQE'               : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST'               : 'net.hedtech.banner.seeddata.NtrinstDML',
             'NTRECDQ'               : 'net.hedtech.banner.seeddata.NtrecdqDML',
@@ -211,7 +211,11 @@ public class APIClasses {
             'NTRQGRP'               : 'net.hedtech.banner.seeddata.NtrqgrpDML',
             'PTRCALN_LEAVEREQ'      : 'net.hedtech.banner.seeddata.PtrcalnLeaveReqDML',
 			'FPBPOHD'               : 'net.hedtech.banner.seeddata.FinancePurchaseOrderHeaderCreateDML',
-            'FABINVH'               : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityInvoiceCreateDML'
+            'FABINVH'               : 'net.hedtech.banner.seeddata.FinanceBudgetAvailabilityInvoiceCreateDML',
+            'FTVFUND_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
+            'FTVORGN_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
+            'FRBGRNT'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
+            'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -296,11 +300,11 @@ public class APIClasses {
             'GUROCFG' : 'net.hedtech.banner.seeddata.GurocfgDML',
             'GURCTLEP': 'net.hedtech.banner.seeddata.GurctleppDML',
             'GURAPPR' : 'net.hedtech.banner.seeddata.GurapprDML',
-            'PEREARN' : 'net.hedtech.banner.seeddata.PerearnDML',
-            'PERHOUR' : 'net.hedtech.banner.seeddata.PerhourDML',
-            'PERTITO' : 'net.hedtech.banner.seeddata.PertitoDML',
-            'PERELBD' : 'net.hedtech.banner.seeddata.PerelbdDML',
-            'PERLVTK' : 'net.hedtech.banner.seeddata.PerlvtkDML',
+            'PEREARN' : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERHOUR' : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERTITO' : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERELBD' : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
+            'PERLVTK' : 'net.hedtech.banner.seeddata.EmployeeTimeEntryDML',
             'NBRRJQE' : 'net.hedtech.banner.seeddata.NbrrjqeDML',
             'NTRINST' : 'net.hedtech.banner.seeddata.NtrinstDML',
             'NTRECDQ' : 'net.hedtech.banner.seeddata.NtrecdqDML',
@@ -308,7 +312,9 @@ public class APIClasses {
             'PCRBENE' : 'net.hedtech.banner.seeddata.EmployeeCobraBeneficiariesDML',
             'GJRJLIS' : 'net.hedtech.banner.seeddata.JobsubSavedOutputDml',
             'SHBCGPA' : 'net.hedtech.banner.seeddata.ShbcgpaDML',
-            'NTRQGRP' : 'net.hedtech.banner.seeddata.NtrqgrpDML'
+            'NTRQGRP' : 'net.hedtech.banner.seeddata.NtrqgrpDML',
+            'FRBGRNT' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
+            'FRRGRPI' : 'net.hedtech.banner.seeddata.FinanceGrantDML'
     ]
 
 

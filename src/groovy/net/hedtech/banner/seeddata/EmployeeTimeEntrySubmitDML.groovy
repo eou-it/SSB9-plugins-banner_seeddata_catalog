@@ -10,7 +10,7 @@ import java.sql.Connection
 /**
  * Submits timesheets with messages logged in the PHRERRL table for employees using a PL/SQL package call.
  */
-class EmployeeTimeEntryMessageDML {
+class EmployeeTimeEntrySubmitDML {
 
     def bannerid
     def bannerid_user
@@ -32,14 +32,14 @@ class EmployeeTimeEntryMessageDML {
     def xmlData
 
 
-    public EmployeeTimeEntryMessageDML(InputData connectInfo, Sql conn, Connection connectCall) {
+    public EmployeeTimeEntrySubmitDML(InputData connectInfo, Sql conn, Connection connectCall) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
     }
 
 
-    public EmployeeTimeEntryMessageDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
+    public EmployeeTimeEntrySubmitDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData) {
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -87,7 +87,7 @@ class EmployeeTimeEntryMessageDML {
         } catch (Exception e) {
             setupFailure = true
             if (connectInfo.showErrors) {
-                println "Could not select Pidm in EmployeeTimeEntryMessageDML for Banner ID ${this.bannerid} from SPRIDEN. $e.message"
+                println "Could not select Pidm in ${this.class.simpleName} for Banner ID ${this.bannerid} from SPRIDEN. $e.message"
             }
         }
 
@@ -99,7 +99,7 @@ class EmployeeTimeEntryMessageDML {
             } catch (Exception e) {
                 setupFailure = true
                 if (connectInfo.showErrors) {
-                    println "Could not select User Pidm in EmployeeTimeEntryMessageDML for Banner ID ${this.bannerid_user} from SPRIDEN. $e.message"
+                    println "Could not select User Pidm in ${this.class.simpleName} for Banner ID ${this.bannerid_user} from SPRIDEN. $e.message"
                 }
             }
         }
@@ -112,7 +112,7 @@ class EmployeeTimeEntryMessageDML {
             } catch (Exception e) {
                 setupFailure = true
                 if (connectInfo.showErrors) {
-                    println "Could not select Proxy Pidm in EmployeeTimeEntryMessageDML for Banner ID ${this.bannerid_proxy} from SPRIDEN. $e.message"
+                    println "Could not select Proxy Pidm in ${this.class.simpleName} for Banner ID ${this.bannerid_proxy} from SPRIDEN. $e.message"
                 }
             }
         }
@@ -137,7 +137,7 @@ class EmployeeTimeEntryMessageDML {
             } catch (Exception e) {
                 setupFailure = true
                 if (connectInfo.showErrors) {
-                    println "Could not select Job Sequence No in EmployeeTimeEntryMessageDML for Banner ID ${this.bannerid} from SPRIDEN. $e.message"
+                    println "Could not select Job Sequence No in ${this.class.simpleName} for Banner ID ${this.bannerid} from SPRIDEN. $e.message"
                 }
             }
         }
@@ -174,7 +174,7 @@ class EmployeeTimeEntryMessageDML {
                 }
             } catch (Exception e) {
                 if (connectInfo.showErrors) {
-                    println "Problem submitting time from EmployeeTimeEntryMessageDML.groovy: $e.message"
+                    println "Problem submitting time from ${this.class.simpleName}: $e.message"
                 }
             } finally {
                 this.conn.call("{call gb_common.p_set_context(?,?,?,?)}", ["TIMEENTRY", "XE_CALL_IND", 'N', 'N'])
@@ -190,7 +190,7 @@ class EmployeeTimeEntryMessageDML {
                     }
                 } catch (Exception e) {
                     if (connectInfo.showErrors) {
-                        println "Could not select Pidm in EmployeeTimeEntryExtractDML for Banner ID HOPTE0600 from SPRIDEN. $e.message"
+                        println "Could not select Pidm in ${this.class.simpleName} for Banner ID HOPTE0600 from SPRIDEN. $e.message"
                     }
                 }
 
@@ -224,7 +224,7 @@ class EmployeeTimeEntryMessageDML {
                     }
                 } catch (Exception e) {
                     if (connectInfo.showErrors) {
-                        println "Problem submitting time from v.groovy: $e.message"
+                        println "Problem submitting time from ${this.class.simpleName}: $e.message"
                     }
                 } finally {
                     this.conn.call("{call pektecm.p_delete_queue_member_context()}", [])
