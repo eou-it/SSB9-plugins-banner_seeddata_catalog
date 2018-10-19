@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<PTVSCET_DATA>
+    <PTVSCET>
+        <PTVSCET_CODE>01</PTVSCET_CODE>
+        <PTVSCET_DESC>Teaching position at a university or affiliated college</PTVSCET_DESC>
+        <PTVSCET_ACTIVITY_DATE>02092002</PTVSCET_ACTIVITY_DATE>
+        <PTVSCET_DATA_ORIGIN>GRAILS</PTVSCET_DATA_ORIGIN>
+    </PTVSCET>
+    <PTVSCET>
+        <PTVSCET_CODE>02</PTVSCET_CODE>
+        <PTVSCET_DESC>Non-teaching position at a university or affiliated college</PTVSCET_DESC>
+        <PTVSCET_ACTIVITY_DATE>02092002</PTVSCET_ACTIVITY_DATE>
+        <PTVSCET_DATA_ORIGIN>GRAILS</PTVSCET_DATA_ORIGIN>
+    </PTVSCET>
+    <PTVSCET>
+        <PTVSCET_CODE>03</PTVSCET_CODE>
+        <PTVSCET_DESC>Military, including both civil and military personnel</PTVSCET_DESC>
+        <PTVSCET_ACTIVITY_DATE>02092002</PTVSCET_ACTIVITY_DATE>
+        <PTVSCET_DATA_ORIGIN>GRAILS</PTVSCET_DATA_ORIGIN>
+    </PTVSCET>
+</PTVSCET_DATA>
