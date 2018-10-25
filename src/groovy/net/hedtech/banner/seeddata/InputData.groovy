@@ -802,7 +802,9 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorwebqData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RorwebqData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/WebqStudentData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RprinfoData.xml'
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RprinfoData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RpratrmData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/AwardHistorySeedData.xml'
                                                   ],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
