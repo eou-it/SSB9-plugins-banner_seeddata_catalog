@@ -819,7 +819,7 @@ public class InputData {
             'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml'],
             'schedule-registration-status'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleRegistrationStatusByTerm_201410.xml'],
             'scheduleTerm201410'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201410.xml'],
-            'scheduleData201410Crn20201'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml'],
+            'scheduleData201410Crn20201'       : ['/srt/hedtech/banner/seeddata/Data/scheduleData_201410Crn20201.xml'],
             'scheduleData201410Crn20202'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20202.xml'],
             'scheduleData201410Crn20210'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20210.xml'],
             'scheduleData201410Crn20211'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20211.xml'],
@@ -861,7 +861,9 @@ public class InputData {
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50010WebRequirementSeedData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50011TermsAndConditionsSeedData.xml',
                                 '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50012StndSuppliedInfoSeedData.xml',
-                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml']
+                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/Fass50013PkgGroupSeedData.xml'],
+            'AwardHistory-target' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RpratrmData.xml',
+            '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/AwardHistorySeedData.xml']
     ]
     /**
      *  Map of selenium targets
