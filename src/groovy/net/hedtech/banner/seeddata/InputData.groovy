@@ -967,6 +967,8 @@ public class InputData {
             'schedule-20122-reset'                                               : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleReset20122.xml'],
             'schedule-20122-approval'                                            : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleApproval20122.xml'],
             'registrationTerm201850-reset'                                       : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationTerm201850.xml'],
+            'registrationDataForBAs-reset'                                       : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationDataForBAs.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationDataCrnsForBAs.xml'],
             'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
             'structured-reg-functional-data'                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/CappProgramSRPGMGroup.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml'],
