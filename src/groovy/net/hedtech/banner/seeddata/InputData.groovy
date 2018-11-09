@@ -487,7 +487,7 @@ public class InputData {
             'generalstudentcappregbareg26'     : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationBareg26.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/StvsubjData.xml'],
             'generalstudentcappregbaregattr'   : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTerm201415.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201415.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201415.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationBaregAttr.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/StvsubjData.xml'],
             'studentcappstructuredreg'         : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentCappStructuredRegistration.xml'],
