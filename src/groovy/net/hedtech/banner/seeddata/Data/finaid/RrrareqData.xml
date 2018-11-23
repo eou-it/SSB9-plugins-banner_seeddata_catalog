@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************                                                                                                                                                                                                                                                                                                                                                                                                                                  
+Copyright 2017 Ellucian Company L.P. and its affiliates.                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ ********************************************************************************* -->
+<RRRAREQ_DATA>
+    <RRRAREQ>
+        <BANNERID>700000010</BANNERID>
+        <RRRAREQ_AIDY_CODE>1718</RRRAREQ_AIDY_CODE>
+        <RRRAREQ_PIDM/>
+        <RRRAREQ_TREQ_CODE>FAFSA</RRRAREQ_TREQ_CODE>
+        <RRRAREQ_ACTIVITY_DATE/>
+        <RRRAREQ_TREQ_DESC/>
+        <RRRAREQ_SAT_IND>Y</RRRAREQ_SAT_IND>
+        <RRRAREQ_STAT_DATE>06/01/2018</RRRAREQ_STAT_DATE>
+        <RRRAREQ_EST_DATE>06/01/2018</RRRAREQ_EST_DATE>
+        <RRRAREQ_TRST_CODE>S</RRRAREQ_TRST_CODE>
+        <RRRAREQ_PCKG_IND>Y</RRRAREQ_PCKG_IND>
+        <RRRAREQ_DISB_IND>Y</RRRAREQ_DISB_IND>
+        <RRRAREQ_FUND_CODE/>
+        <RRRAREQ_SYS_IND>B</RRRAREQ_SYS_IND>
+        <RRRAREQ_SBGI_CODE/>
+        <RRRAREQ_MEMO_IND>Y</RRRAREQ_MEMO_IND>
+        <RRRAREQ_USER_ID/>
+        <RRRAREQ_PERK_MPN_EXP_DATE/>
+        <RRRAREQ_SATISFIED_DATE/>
+        <RRRAREQ_MPN_FIRST_DISB_DATE/>
+        <RRRAREQ_MPN_SIGNED_DATE/>
+        <RRRAREQ_DATA_ORIGIN>SEED_DATA</RRRAREQ_DATA_ORIGIN>
+        <RRRAREQ_TRK_LTR_IND>N</RRRAREQ_TRK_LTR_IND>
+        <RRRAREQ_INFO_ACCESS_IND>Y</RRRAREQ_INFO_ACCESS_IND>
+        <RRRAREQ_PERIOD/>
+        <RRRAREQ_SBGI_TYPE_IND/>
+        <RRRAREQ_TERM_CODE/>
+        <RRRAREQ_SURROGATE_ID/>
+        <RRRAREQ_VERSION/>
+        <RRRAREQ_VPDI_CODE/>
+    </RRRAREQ>
+</RRRAREQ_DATA>
