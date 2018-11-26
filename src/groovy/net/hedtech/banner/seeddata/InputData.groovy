@@ -921,7 +921,8 @@ public class InputData {
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
             'ar-data'                          :['/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountReceivableStudentUsers.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail.xml',
-                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableTermControlData.xml']
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableTermControlData.xml',
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableMemoData.xml']
     ]
     /**
      *  Map of selenium targets
