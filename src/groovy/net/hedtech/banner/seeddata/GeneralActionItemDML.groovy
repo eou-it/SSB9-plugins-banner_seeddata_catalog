@@ -23,7 +23,7 @@ public class GeneralActionItemDML {
     def Batch batch
     def deleteNode
 
-    int folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId
+    Integer folderId, templateId, statusId, actionItemId, actionGroupId, blockId, populationId, queryId, responseId
 
 
     public GeneralActionItemDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns, List indexColumns, Batch batch,
@@ -103,6 +103,7 @@ public class GeneralActionItemDML {
             actionItemId = getActionItemId( apiData.ACTIONITEMNAME[0]?.text().toString() )
             statusId = getStatusId( apiData.ACTIONITEMSTATUS[0]?.text().toString() )
             actionGroupId = getActionGroupId( apiData.ACTIONGROUPNAME[0]?.text().toString() )
+            responseId = getResponseId(apiData.ACTIONITEMRESPONSETEXT[0]?.text().toString())
 
             if (actionItemId == 0) {
                 actionItemId = apiData.GCRAACT_GCBACTM_ID[0]?.text().toInteger()
@@ -113,10 +114,15 @@ public class GeneralActionItemDML {
             if (actionGroupId == 0) {
                 actionGroupId = apiData.GCRAACT_GCBAGRP_ID[0]?.text()?.toInteger()
             }
+            if(responseId == 0){
+                responseId = apiData.GCRAACT_GCRAISR_ID[0]?.text()?.toInteger()
+            }
             apiData.GCRAACT_PIDM[0].setValue( personPidm )
             apiData.GCRAACT_GCBACTM_ID[0].setValue( actionItemId.toString() )
             apiData.GCRAACT_GCVASTS_ID[0].setValue( statusId.toString() )
             apiData.GCRAACT_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
+            apiData.GCRAACT_GCRAISR_ID[0]?.setValue( responseId.toString() )
+
         }
 
         if (connectInfo.tableName == "GCRACNT") {
@@ -547,6 +553,24 @@ public class GeneralActionItemDML {
         }
         return sId
     }
+    def getResponseId( String responseText ) {
+            String ssql = """select * from GCRAISR where GCRAISR_LABEL_TEXT = ?"""
+            int sId
+            def sRow
+
+            try {
+                sRow = this.conn.firstRow( ssql, [responseText] )
+                if (sRow) {
+                    sId = sRow?.GCRAISR_SURROGATE_ID
+                } else sId = 0
+            }
+            catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    println "Could not select Response ID in GeneralActionItemDML, from GCRAISR for ${connectInfo.tableName}. $e.message"
+                }
+            }
+            return sId
+        }
 
 
     def updateUserId( userId ) {
