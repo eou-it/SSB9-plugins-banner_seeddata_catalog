@@ -920,11 +920,11 @@ public class InputData {
             'reset-password'                   :['/src/groovy/net/hedtech/banner/seeddata/Data/resetPasswordUserSetupData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
             'ar-data'                          :['/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountReceivableStudentUsers.xml',
-                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail_HOSARUSR1.xml',
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableTermControlData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableMemoData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableInstallmentPlanData.xml',
-                                                '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail_HOSARUSR2.xml']
+                                                '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/InstallmentPlanTransactions.xml']
     ]
     /**
      *  Map of selenium targets
