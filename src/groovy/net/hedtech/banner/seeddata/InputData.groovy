@@ -844,8 +844,7 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002_StudentReq_1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1718.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml'
-                                                  ],
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml'],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
