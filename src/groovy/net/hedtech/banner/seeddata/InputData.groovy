@@ -795,7 +795,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RarpagdData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RarpagsData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RbrabrcData_1718.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RbrapbcData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RbrbcatData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RbrpbcpData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RbrpbtpData_1718.xml',
@@ -820,7 +819,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml'],
 
             'finaid-aidy-1819'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobprdsData_1819.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrapbcData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrbcatData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrpbcpData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrpbgpData_1819.xml',
