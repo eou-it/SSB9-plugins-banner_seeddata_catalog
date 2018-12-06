@@ -750,7 +750,7 @@ public class InputData {
             'finaid-validation'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinAidValidationData.xml'],
             'finaid'                           : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/FinancialAidData.xml'],
 
-            /*'finaid-ss-validation'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/RoainstConfigData.xml',
+            'finaid-ss-validation'             : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/RoainstConfigData.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/BudgetConfig.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/SayCodeData.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/EnrollRuleData.xml',
@@ -839,9 +839,12 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtabData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RtvintlData_1819.xml'],
 
-            'finaid-ss-student'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002StudentReq.xml'
+            'finaid-ss-student'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/SorlcurData.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/SorlfosData.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002_StudentReq_1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml'
                                                   ],
-*/
+
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTVASRC_Data.xml',
