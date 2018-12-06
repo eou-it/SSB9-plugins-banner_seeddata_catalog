@@ -784,7 +784,7 @@ public class InputData {
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/GobqstnData.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/StvcollData.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/StvresdData.xml',
-                                               '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/RtvwebqData.xml'],
+                                               '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/RtvtgrpData.xml', '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/RtvwebqData.xml'],
 
             'finaid-aidy-1718'                 :  ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobprdsData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RoainstData_1718.xml',
@@ -819,7 +819,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsscsData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml'],
 
-            'finaid-aidy-1819'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobprdsData_1819.xml',
+            'finaid-aidy-1819'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobprdsData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrapbcData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrbcatData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrpbcpData_1819.xml',
@@ -832,17 +832,19 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorcodiData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RormvalData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RortprdData_1819.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwbqaData_1819.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwbqaData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwebqData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwsqlData_1819.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtxtData_1819.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtxtData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtabData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RtvintlData_1819.xml'],
 
             'finaid-ss-student'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/SorlcurData.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/SorlfosData.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002_StudentReq_1819.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml'
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1718.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml'
                                                   ],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
