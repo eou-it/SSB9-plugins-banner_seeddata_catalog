@@ -842,7 +842,11 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002_StudentReq_1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1718.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml'],
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40001_Award_Aid_Years_1718.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40002_Award_Aid_Years_1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50008_Aid_Year_Msg.xml'
+            ],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
@@ -912,8 +916,7 @@ public class InputData {
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GuestUserSetupData.xml'],
             'ar-data'                          :['/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountReceivableStudentUsers.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail.xml',
-                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableTermControlData.xml'],
-            'my-seedData' : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/RtvholdData.xml']
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableTermControlData.xml']
     ]
     /**
      *  Map of selenium targets
