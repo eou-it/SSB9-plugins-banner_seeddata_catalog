@@ -851,7 +851,10 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40001_Award_Aid_Years_1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40002_Award_Aid_Years_1819.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50008_Aid_Year_Msg.xml'],
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50008_Aid_Year_Msg.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50009_Award_Active_Aid_Years.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50010_WebRequirement_1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50011_TermsAndConditions_1819.xml'],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
