@@ -212,9 +212,6 @@ public class ProxyEltrDML {
             if(!tableRow) {
                 connectInfo.tableUpdate("GPBELTR", 0, 1, 0, 0, 0)
             }
-//            else {
-//                connectInfo.tableUpdate("GPBELTR", 0, 0, 1, 0, 0)
-//            }
         }
         catch (Exception e) {
             connectInfo.tableUpdate("GPBELTR", 0, 0, 0, 1, 0)
