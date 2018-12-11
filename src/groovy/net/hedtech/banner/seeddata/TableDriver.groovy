@@ -58,7 +58,7 @@ public class TableDriver {
                         value = fields.text().replaceAll(/"/, /'/)
                     }
                     else if (fields.name() in ["GORRSQL_WHERE_CLAUSE", "GORRSQL_PARSED_SQL"]){
-                        value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')
+                        value = fields.text().replaceAll(/&/, '')
                     }
                     else {
                         value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
@@ -80,6 +80,7 @@ public class TableDriver {
                     connectInfo.validateTable(conn)
                     //  find pidm value
                     def bannerIdNode = node.children().find {it.name() =~ "BANNERID" }
+                    def proxyIdNode = node.children().find {it.name() =~ "PROXY_ID" }
                     def programNode = node.children().find {it.name() =~ "PROGRAM" }
                     def deleteNode = node.children().find {it.name() =~ "DELETE" }
                     if (node.children().find {it.name() =~ "BANSECR" }) {
@@ -116,6 +117,20 @@ public class TableDriver {
                     }
                     else {
                         connectInfo.saveStudentPidm = null
+                    }
+
+                    if (proxyIdNode) {
+                        String findProxyIdm = """select gpbprxy_proxy_idm from gpbprxy where gpbprxy_email_address = ? """
+                        def gpbprxyRow = conn.firstRow(findProxyIdm, [proxyIdNode.text()])
+                        if (gpbprxyRow) {
+                            connectInfo.saveProxyIdm = gpbprxyRow.GPBPRXY_PROXY_IDM
+                        }
+                        else {
+                            connectInfo.saveProxyIdm = null
+                        }
+                    }
+                    else {
+                        connectInfo.saveProxyIdm = null
                     }
 
                    columnNames = []
