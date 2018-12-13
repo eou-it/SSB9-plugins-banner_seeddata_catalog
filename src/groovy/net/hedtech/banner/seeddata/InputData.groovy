@@ -794,7 +794,8 @@ public class InputData {
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/RtvlnstData.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/StvstypData.xml',
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/StvedlvData.xml',
-                                               '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/StvegolData.xml'],
+                                               '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/StvegolData.xml',
+                                               '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/WithdrawalTerms_ValidationData.xml'],
 
             'finaid-aidy-1718'                 :  ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobprdsData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RoainstData_1718.xml',
