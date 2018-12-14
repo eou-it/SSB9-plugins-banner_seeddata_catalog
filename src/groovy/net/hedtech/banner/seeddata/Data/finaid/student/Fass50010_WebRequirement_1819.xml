@@ -5,7 +5,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
 <STUDENT_REQ_FASS50010>
 	<SPRIDEN>
         <BANNERID>FASS50010</BANNERID>
-        <SPRIDEN_PIDM/>
         <SPRIDEN_ID>FASS50010</SPRIDEN_ID>
         <SPRIDEN_LAST_NAME>K. Sanches</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Eddie</SPRIDEN_FIRST_NAME>
@@ -27,7 +26,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SPRIDEN>
     <GOBANSR>
         <BANNERID>FASS50010</BANNERID>
-        <GOBANSR_PIDM/>
         <GOBANSR_NUM>1</GOBANSR_NUM>
         <GOBANSR_GOBQSTN_ID/>
         <GOBANSR_QSTN_DESC/>
@@ -36,12 +34,10 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </GOBANSR>
     <GOBSRID>
         <BANNERID>FASS50010</BANNERID>
-        <GOBSRID_PIDM/>
         <GOBSRID_SOURCED_ID>1504</GOBSRID_SOURCED_ID>
     </GOBSRID>
     <GOBTPAC_RECORD>
         <BANNERID>FASS50010</BANNERID>
-        <GOBTPAC_PIDM/>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
         <GOBTPAC_USER>BANPROXY</GOBTPAC_USER>
@@ -56,7 +52,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </GOBTPAC_RECORD>
     <GORPAUD>
         <BANNERID>FASS50010</BANNERID>
-        <GORPAUD_PIDM/>
         <GORPAUD_USER>FAISUSR</GORPAUD_USER>
         <GORPAUD_PIN>111111</GORPAUD_PIN>
         <GORPAUD_EXTERNAL_USER>jsevent1</GORPAUD_EXTERNAL_USER>
@@ -65,7 +60,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </GORPAUD>
     <GORPAUD>
         <BANNERID>FASS50010</BANNERID>
-        <GORPAUD_PIDM/>
         <GORPAUD_USER>WWW2_USER</GORPAUD_USER>
         <GORPAUD_PIN>111111</GORPAUD_PIN>
         <GORPAUD_EXTERNAL_USER>jsevent1</GORPAUD_EXTERNAL_USER>
@@ -74,7 +68,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </GORPAUD>
     <GORPAUD>
         <BANNERID>FASS50010</BANNERID>
-        <GORPAUD_PIDM/>
         <GORPAUD_USER>FAISUSR</GORPAUD_USER>
         <GORPAUD_PIN>111111</GORPAUD_PIN>
         <GORPAUD_EXTERNAL_USER/>
@@ -83,7 +76,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </GORPAUD>
     <GORPAUD>
         <BANNERID>FASS50010</BANNERID>
-        <GORPAUD_PIDM/>
         <GORPAUD_USER>FAISUSR</GORPAUD_USER>
         <GORPAUD_PIN/>
         <GORPAUD_EXTERNAL_USER>jsevent1</GORPAUD_EXTERNAL_USER>
@@ -92,7 +84,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </GORPAUD>
     <GORPAUD>
         <BANNERID>FASS50010</BANNERID>
-        <GORPAUD_PIDM/>
         <GORPAUD_USER>FAISUSR</GORPAUD_USER>
         <GORPAUD_PIN>111111</GORPAUD_PIN>
         <GORPAUD_EXTERNAL_USER>jsevent1</GORPAUD_EXTERNAL_USER>
@@ -164,7 +155,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <RRRAREQ>
         <BANNERID>FASS50010</BANNERID>
         <RRRAREQ_AIDY_CODE>1819</RRRAREQ_AIDY_CODE>
-        <RRRAREQ_PIDM/>
         <RRRAREQ_TREQ_CODE>PTREQ5</RRRAREQ_TREQ_CODE>
         <RRRAREQ_TREQ_DESC/>
         <RRRAREQ_SAT_IND>N</RRRAREQ_SAT_IND>
