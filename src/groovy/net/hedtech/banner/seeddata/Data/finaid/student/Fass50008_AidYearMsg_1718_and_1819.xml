@@ -2,7 +2,7 @@
 <!-- *****************************************************************************
 Copyright 2019 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
-<STUDENT_MES_FASS50008>
+<STUDENT_REQ_FASS50008>
     <SPRIDEN>
         <BANNERID>FASS50008</BANNERID>
         <SPRIDEN_ID>FASS50008</SPRIDEN_ID>
@@ -153,4 +153,4 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <RORMESG_SHORT_DESC>1819 receive your Fund</RORMESG_SHORT_DESC>
         <RORMESG_FULL_DESC>1819 receive your Fund</RORMESG_FULL_DESC>
     </RORMESG>
-</STUDENT_MES_FASS50008>
+</STUDENT_REQ_FASS50008>
