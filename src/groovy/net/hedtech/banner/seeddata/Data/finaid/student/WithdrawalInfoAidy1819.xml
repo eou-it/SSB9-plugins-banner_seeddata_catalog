@@ -39,7 +39,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GOBSRID_PIDM/>
         <GOBSRID_SOURCED_ID>1508</GOBSRID_SOURCED_ID>
     </GOBSRID>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>FASS30070</BANNERID>
         <GOBTPAC_PIDM/>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
@@ -53,7 +53,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_INSERT_SOURCE>SELF</GOBTPAC_INSERT_SOURCE>
         <GOBTPAC_LDAP_USER/>
         <GOBTPAC_SALT/>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
     <GORPAUD>
         <BANNERID>FASS30070</BANNERID>
         <GORPAUD_PIDM/>
