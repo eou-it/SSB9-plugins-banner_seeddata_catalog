@@ -2199,7 +2199,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates..
         <RPRATRM_AUTHORIZE_DATE/>
         <RPRATRM_MEMO_AMT/>
         <RPRATRM_MEMO_DATE/>
-        <RPRATRM_PAID_AMT/>
+        <RPRATRM_PAID_AMT>100</RPRATRM_PAID_AMT>
         <RPRATRM_PAID_DATE/>
         <RPRATRM_PCKG_LOAD_IND>4</RPRATRM_PCKG_LOAD_IND>
         <RPRATRM_NSLDS_OVRD_IND/>
@@ -2238,7 +2238,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates..
         <RPRATRM_AUTHORIZE_DATE/>
         <RPRATRM_MEMO_AMT/>
         <RPRATRM_MEMO_DATE/>
-        <RPRATRM_PAID_AMT/>
+        <RPRATRM_PAID_AMT>200</RPRATRM_PAID_AMT>
         <RPRATRM_PAID_DATE/>
         <RPRATRM_PCKG_LOAD_IND>4</RPRATRM_PCKG_LOAD_IND>
         <RPRATRM_NSLDS_OVRD_IND/>
@@ -2277,7 +2277,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates..
         <RPRATRM_AUTHORIZE_DATE/>
         <RPRATRM_MEMO_AMT/>
         <RPRATRM_MEMO_DATE/>
-        <RPRATRM_PAID_AMT/>
+        <RPRATRM_PAID_AMT>201</RPRATRM_PAID_AMT>
         <RPRATRM_PAID_DATE/>
         <RPRATRM_PCKG_LOAD_IND>4</RPRATRM_PCKG_LOAD_IND>
         <RPRATRM_NSLDS_OVRD_IND/>
@@ -2316,7 +2316,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates..
         <RPRATRM_AUTHORIZE_DATE/>
         <RPRATRM_MEMO_AMT/>
         <RPRATRM_MEMO_DATE/>
-        <RPRATRM_PAID_AMT/>
+        <RPRATRM_PAID_AMT>120</RPRATRM_PAID_AMT>
         <RPRATRM_PAID_DATE/>
         <RPRATRM_PCKG_LOAD_IND>4</RPRATRM_PCKG_LOAD_IND>
         <RPRATRM_NSLDS_OVRD_IND/>
