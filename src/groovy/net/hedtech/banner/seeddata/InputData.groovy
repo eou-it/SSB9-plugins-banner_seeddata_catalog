@@ -798,7 +798,6 @@ public class InputData {
                                                '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/validation/WithdrawalTerms_ValidationData.xml'],
 
             'finaid-aidy-1718'                 :  ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobprdsData_1718.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RoainstData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/BudgetConfig_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/PeriodTerm_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/EnrollRuleData_1718.xml',
