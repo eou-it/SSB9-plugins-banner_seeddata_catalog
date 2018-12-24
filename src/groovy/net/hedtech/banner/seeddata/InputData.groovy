@@ -864,7 +864,7 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50011_TermsAndConditions_1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50011_TermsAndConditions_1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50012_Student_Supplied_Info.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/FASS50003_Payment_Scheduled_History.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/FASS50123_Payment_Scheduled_History_1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50008_AidYearMsg_1718_and_1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/RormesgWithoutMsgData.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50013_PackageGroup_1819_Aid_Year.xml',
