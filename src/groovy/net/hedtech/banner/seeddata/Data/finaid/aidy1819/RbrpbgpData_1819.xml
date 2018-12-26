@@ -66,4 +66,11 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RBRPBGP_LONG_DESC>Period budget group</RBRPBGP_LONG_DESC>
         <RBRPBGP_COMMENT/>
     </RBRPBGP>
+    <RBRPBGP>
+        <RBRPBGP_AIDY_CODE>1819</RBRPBGP_AIDY_CODE>
+        <RBRPBGP_PBGP_CODE>PBI</RBRPBGP_PBGP_CODE>
+        <RBRPBGP_PRIORITY>1</RBRPBGP_PRIORITY>
+        <RBRPBGP_LONG_DESC>Period Budget-Inst Group</RBRPBGP_LONG_DESC>
+        <RBRPBGP_COMMENT/>
+    </RBRPBGP>
 </RBRPBGP_DATA>

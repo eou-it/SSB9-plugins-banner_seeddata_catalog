@@ -68,4 +68,9 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RTVPBGP_DESC>Default Period Budget grp</RTVPBGP_DESC>
         <RTVPBGP_ACTIVE_IND>Y</RTVPBGP_ACTIVE_IND>
     </RTVPBGP>
+    <RTVPBGP>
+        <RTVPBGP_CODE>PBI</RTVPBGP_CODE>
+        <RTVPBGP_DESC>Period Budget-Inst Group</RTVPBGP_DESC>
+        <RTVPBGP_ACTIVE_IND>Y</RTVPBGP_ACTIVE_IND>
+    </RTVPBGP>
 </RTVPBGP_DATA>
