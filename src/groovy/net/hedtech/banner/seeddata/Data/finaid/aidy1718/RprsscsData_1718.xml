@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RPRSSCS_DATA>
+    <RPRSSCS>
+        <RPRSSCS_AIDY_CODE>1718</RPRSSCS_AIDY_CODE>
+        <RPRSSCS_CAMP_CODE>1</RPRSSCS_CAMP_CODE>
+        <RPRSSCS_NAME/>
+        <RPRSSCS_SHORT_NAME/>
+        <RPRSSCS_ADDRESS_LINE_1/>
+        <RPRSSCS_ADDRESS_LINE_2/>
+        <RPRSSCS_ADDRESS_LINE_3/>
+        <RPRSSCS_CITY/>
+        <RPRSSCS_STAT_CODE/>
+        <RPRSSCS_ZIP/>
+        <RPRSSCS_PHONE/>
+        <RPRSSCS_EMAIL/>
+        <RPRSSCS_WEB_LOGO_URL/>
+        <RPRSSCS_BATCH_LOGO_FILE/>
+        <RPRSSCS_CUSTOM_INFO/>
+        <RPRSSCS_GRAD_RATE_6YR/>
+        <RPRSSCS_DEFAULT_RATE/>
+        <RPRSSCS_DEFAULT_RATE_COMP/>
+        <RPRSSCS_FED_MEDIAN_LOAN_AMT/>
+        <RPRSSCS_FED_MEDIAN_LOAN_YR/>
+        <RPRSSCS_FED_LOAN_PMT_AMT/>
+        <RPRSSCS_INSTITUTION_GROUP/>
+    </RPRSSCS>
+</RPRSSCS_DATA>

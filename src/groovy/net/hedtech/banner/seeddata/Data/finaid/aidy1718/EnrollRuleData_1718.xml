@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<EnrollRule_Data>
+    <RORENRR>
+        <RORENRR_AIDY_CODE>1718</RORENRR_AIDY_CODE>
+        <RORENRR_ENRR_CODE>REPEAT</RORENRR_ENRR_CODE>
+        <RORENRR_REP_COURSE_IND>Y</RORENRR_REP_COURSE_IND>
+        <RORENRR_COURSE_IN_PGRM_IND>N</RORENRR_COURSE_IN_PGRM_IND>
+        <RORENRR_REMEDIAL_COURSE_IND>N</RORENRR_REMEDIAL_COURSE_IND>
+        <RORENRR_ATTEND_VERIFY_IND>N</RORENRR_ATTEND_VERIFY_IND>
+        <RORENRR_SYSTEM_REQ_IND>N</RORENRR_SYSTEM_REQ_IND>
+        <RORENRR_COMMENT>Calculation of credit, billing, and adjusted hours usin
+g Repeat Coursework checking to exclude a course from counting towards enrollmen
+t load that exceeds one attempt of a previously passed course.</RORENRR_COMMENT>
+        <RORENRR_REP_COURSE_COUNT>2</RORENRR_REP_COURSE_COUNT>
+        <RORENRR_COUNT_WD_AS_REPEAT_IND>Y</RORENRR_COUNT_WD_AS_REPEAT_IND>
+        <RORENRR_ESL_COURSE_IND>N</RORENRR_ESL_COURSE_IND>
+        <RORENRR_REMEDIAL_LIMIT_IND>N</RORENRR_REMEDIAL_LIMIT_IND>
+    </RORENRR>
+    <RORENRR>
+        <RORENRR_AIDY_CODE>1718</RORENRR_AIDY_CODE>
+        <RORENRR_ENRR_CODE>STANDARD</RORENRR_ENRR_CODE>
+        <RORENRR_REP_COURSE_IND>N</RORENRR_REP_COURSE_IND>
+        <RORENRR_COURSE_IN_PGRM_IND>N</RORENRR_COURSE_IN_PGRM_IND>
+        <RORENRR_REMEDIAL_COURSE_IND>N</RORENRR_REMEDIAL_COURSE_IND>
+        <RORENRR_ATTEND_VERIFY_IND>N</RORENRR_ATTEND_VERIFY_IND>
+        <RORENRR_SYSTEM_REQ_IND>Y</RORENRR_SYSTEM_REQ_IND>
+        <RORENRR_COMMENT>Standard calculation of credit, billing, and adjusted h
+ours.  This Enrollment Rule is System Required and may not be updated or removed
+.</RORENRR_COMMENT>
+        <RORENRR_REP_COURSE_COUNT/>
+        <RORENRR_COUNT_WD_AS_REPEAT_IND>N</RORENRR_COUNT_WD_AS_REPEAT_IND>
+        <RORENRR_ESL_COURSE_IND>N</RORENRR_ESL_COURSE_IND>
+        <RORENRR_REMEDIAL_LIMIT_IND>N</RORENRR_REMEDIAL_LIMIT_IND>
+    </RORENRR>
+</EnrollRule_Data>

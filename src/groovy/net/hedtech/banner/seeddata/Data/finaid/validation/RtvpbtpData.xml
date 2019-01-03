@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RTVPBTP_DATA>
+    <RTVPBTP>
+        <RTVPBTP_CODE>TES</RTVPBTP_CODE>
+        <RTVPBTP_CODE>&amp;TES</RTVPBTP_CODE>
+        <RTVPBTP_DESC>Test Seed  data</RTVPBTP_DESC>
+        <RTVPBTP_CODE>&amp;TES</RTVPBTP_CODE>
+        <RTVPBTP_DESC>Test Seed  data</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+    <RTVPBTP>
+        <RTVPBTP_CODE>CAMP</RTVPBTP_CODE>
+        <RTVPBTP_DESC>Campus Budget</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+    <RTVPBTP>
+        <RTVPBTP_CODE>PELL</RTVPBTP_CODE>
+        <RTVPBTP_DESC>DevOps Pell Type</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+    <RTVPBTP>
+        <RTVPBTP_CODE>INST</RTVPBTP_CODE>
+        <RTVPBTP_DESC>DevOps Institutional Type</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+    <RTVPBTP>
+        <RTVPBTP_CODE>MYST</RTVPBTP_CODE>
+        <RTVPBTP_DESC>test period budget type</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+    <RTVPBTP>
+        <RTVPBTP_CODE>FED</RTVPBTP_CODE>
+        <RTVPBTP_DESC>DevOps Federal Type</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+    <RTVPBTP>
+        <RTVPBTP_CODE>PBGT</RTVPBTP_CODE>
+        <RTVPBTP_DESC>Period budget type</RTVPBTP_DESC>
+        <RTVPBTP_ACTIVE_IND>Y</RTVPBTP_ACTIVE_IND>
+    </RTVPBTP>
+</RTVPBTP_DATA>

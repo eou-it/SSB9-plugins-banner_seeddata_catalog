@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************                                                                                                                                                                                                                                                                                                                                                                                                                                  
+Copyright 2017 Ellucian Company L.P. and its affiliates.                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ ********************************************************************************* -->
+<SORLCUR_DATA>
+    <SORLCUR>
+        <BANNERID>FASS50001</BANNERID>
+        <SORLCUR_PIDM/>
+        <SORLCUR_SEQNO>1</SORLCUR_SEQNO>
+        <SORLCUR_LMOD_CODE>LEARNER</SORLCUR_LMOD_CODE>
+        <SORLCUR_TERM_CODE>555555</SORLCUR_TERM_CODE>
+        <SORLCUR_KEY_SEQNO>99</SORLCUR_KEY_SEQNO>
+        <SORLCUR_PRIORITY_NO>1</SORLCUR_PRIORITY_NO>
+        <SORLCUR_ROLL_IND>N</SORLCUR_ROLL_IND>
+        <SORLCUR_CACT_CODE>ACTIVE</SORLCUR_CACT_CODE>
+        <SORLCUR_USER_ID/>
+        <SORLCUR_DATA_ORIGIN>SEED_DATA</SORLCUR_DATA_ORIGIN>
+        <SORLCUR_ACTIVITY_DATE/>
+        <SORLCUR_LEVL_CODE>UG</SORLCUR_LEVL_CODE>
+        <SORLCUR_COLL_CODE>AS</SORLCUR_COLL_CODE>
+        <SORLCUR_DEGC_CODE>BA</SORLCUR_DEGC_CODE>
+        <SORLCUR_TERM_CODE_CTLG>555555</SORLCUR_TERM_CODE_CTLG>
+        <SORLCUR_TERM_CODE_END/>
+        <SORLCUR_TERM_CODE_MATRIC/>
+        <SORLCUR_TERM_CODE_ADMIT>555555</SORLCUR_TERM_CODE_ADMIT>
+        <SORLCUR_ADMT_CODE/>
+        <SORLCUR_CAMP_CODE>M</SORLCUR_CAMP_CODE>
+        <SORLCUR_PROGRAM/>
+        <SORLCUR_START_DATE/>
+        <SORLCUR_END_DATE/>
+        <SORLCUR_CURR_RULE>2</SORLCUR_CURR_RULE>
+        <SORLCUR_ROLLED_SEQNO/>
+        <SORLCUR_STYP_CODE>0</SORLCUR_STYP_CODE>
+        <SORLCUR_RATE_CODE/>
+        <SORLCUR_LEAV_CODE/>
+        <SORLCUR_LEAV_FROM_DATE/>
+        <SORLCUR_LEAV_TO_DATE/>
+        <SORLCUR_EXP_GRAD_DATE/>
+        <SORLCUR_TERM_CODE_GRAD/>
+        <SORLCUR_ACYR_CODE/>
+        <SORLCUR_SITE_CODE/>
+        <SORLCUR_APPL_SEQNO/>
+        <SORLCUR_APPL_KEY_SEQNO/>
+        <SORLCUR_USER_ID_UPDATE>GRAILS</SORLCUR_USER_ID_UPDATE>
+        <SORLCUR_ACTIVITY_DATE_UPDATE>08/27/2018</SORLCUR_ACTIVITY_DATE_UPDATE>
+        <SORLCUR_GAPP_SEQNO/>
+        <SORLCUR_CURRENT_CDE>Y</SORLCUR_CURRENT_CDE>
+        <SORLCUR_SURROGATE_ID/>
+        <SORLCUR_VERSION/>
+        <SORLCUR_VPDI_CODE/>
+        <SORLCUR_GUID>75ff9ed5-6449-4fba-a3d3-22e2260820bd</SORLCUR_GUID>
+    </SORLCUR>
+</SORLCUR_DATA>
