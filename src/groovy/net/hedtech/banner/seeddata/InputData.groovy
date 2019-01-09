@@ -855,9 +855,7 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RpboptsData_1314.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml'],
 
-            'finaid-ss-student'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/SorlcurData.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/SorlfosData.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002_StudentReq_1819.xml',
+            'finaid-ss-student'                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500002_StudentReq_1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml',
