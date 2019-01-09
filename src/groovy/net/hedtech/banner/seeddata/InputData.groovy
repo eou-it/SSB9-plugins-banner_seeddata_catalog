@@ -666,7 +666,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/HoldsByStudyPath_A00017118.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201841.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201842.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201830.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201830.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201841.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201842.xml',
