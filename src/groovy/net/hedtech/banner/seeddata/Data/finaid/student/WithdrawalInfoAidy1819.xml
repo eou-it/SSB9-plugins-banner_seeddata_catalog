@@ -17445,7 +17445,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <SORLCUR_PROGRAM/>
         <SORLCUR_START_DATE/>
         <SORLCUR_END_DATE/>
-        <SORLCUR_CURR_RULE/>
+        <SORLCUR_CURR_RULE>2</SORLCUR_CURR_RULE>
         <SORLCUR_ROLLED_SEQNO/>
         <SORLCUR_STYP_CODE/>
         <SORLCUR_RATE_CODE/>
@@ -17598,7 +17598,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <SORLFOS_TERM_CODE_END/>
         <SORLFOS_DEPT_CODE>0000</SORLFOS_DEPT_CODE>
         <SORLFOS_MAJR_CODE_ATTACH/>
-        <SORLFOS_LFOS_RULE/>
+        <SORLFOS_LFOS_RULE>10</SORLFOS_LFOS_RULE>
         <SORLFOS_CONC_ATTACH_RULE/>
         <SORLFOS_START_DATE/>
         <SORLFOS_END_DATE/>
