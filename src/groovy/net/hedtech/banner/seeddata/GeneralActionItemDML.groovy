@@ -202,10 +202,88 @@ public class GeneralActionItemDML {
             apiData.GCRAGRA_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
 
         }
-        if (connectInfo.tableName == "GCBPOPL") {
-            folderId = getFolderId( apiData.FOLDERNAME[0]?.text().toString() )
-            apiData.GCBPOPL_FOLDER_ID[0].setValue( folderId.toString() )
-        }
+      if (connectInfo.tableName == "GCBPOPL") {
+
+          def sql, poprec, folderrec, popsurrogateid, foldersurrogateid, valuearray
+
+          try {
+              sql = """select * from gcrfldr where lower(gcrfldr_name) = lower(?)"""
+              folderrec = this.conn.firstRow(sql, [apiData.FOLDERNAME.text()])
+              if (folderrec)
+                  foldersurrogateid = folderrec?.GCRFLDR_SURROGATE_ID
+              else {
+                  sql = """insert into gcrfldr (GCRFLDR_NAME, GCRFLDR_INTERNAL, GCRFLDR_USER_ID, GCRFLDR_ACTIVITY_DATE, GCRFLDR_DESCRIPTION) values (?,?,?,?,?)"""
+
+                  conn.executeInsert(sql, [apiData.FOLDERNAME.text(), 0, apiData.GCBPOPL_CREATOR_ID.text(), apiData.GCBPOPL_ACTIVITY_DATE.text(), apiData.FOLDERNAME.text()])
+                  connectInfo.tableUpdate('GCRFLDR', 0, 1, 0, 0, 0)
+                  conn.execute "{ call gb_common.p_commit() }"
+              }
+              sql = """ select * FROM GCBPOPL WHERE lower(GCBPOPL_NAME)=lower(?) and GCBPOPL_FOLDER_ID = ?"""
+              poprec = this.conn.firstRow(sql, [apiData.GCBPOPL_NAME.text(), foldersurrogateid])
+              if (poprec) {
+                  popsurrogateid = poprec?.GCBPOPL_SURROGATE_ID
+              } else popsurrogateid = 0
+
+              boolean isExist = popsurrogateid > 0
+              if (isExist) {
+                  sql = """update GCBPOPL set  GCBPOPL_CREATOR_ID =?,
+                                               GCBPOPL_CREATE_DATE = ?,
+                                               GCBPOPL_NAME = ?,
+                                               GCBPOPL_DESCRIPTION = ?,
+                                               GCBPOPL_FOLDER_ID = ?,
+                                               GCBPOPL_USER_ID = ?,
+                                               GCBPOPL_ACTIVITY_DATE = ?,
+                                               GCBPOPL_CHANGED_IND =?
+                                      where gcbpopl_surrogate_id = ?
+                        """
+                  valuearray = [apiData.GCBPOPL_CREATOR_ID.text(),
+                                stringToDate(apiData.GCBPOPL_CREATE_DATE.text()),
+                                apiData.GCBPOPL_NAME.text(),
+                                apiData.GCBPOPL_DESCRIPTION.text(),
+                                foldersurrogateid,
+                                apiData.GCBPOPL_USER_ID.text(),
+                                stringToDate(apiData.GCBPOPL_ACTIVITY_DATE.text()),
+                                apiData.GCBPOPL_CHANGED_IND.text(),
+                                popsurrogateid]
+                  this.conn.executeUpdate(sql, valuearray)
+                  connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 1, 0, 0)
+                  if (connectInfo.saveThis) {
+                      conn.execute "{ call gb_common.p_commit() }"
+                  };
+              } else {
+                  sql = """INSERT INTO GCBPOPL
+                                      (GCBPOPL_CREATOR_ID,
+                                       GCBPOPL_CREATE_DATE,
+                                       GCBPOPL_NAME,
+                                       GCBPOPL_DESCRIPTION,
+                                       GCBPOPL_FOLDER_ID,
+                                       GCBPOPL_USER_ID,
+                                       GCBPOPL_ACTIVITY_DATE,
+                                       GCBPOPL_CHANGED_IND)
+                                 values (?,?,?,?,?,?,?,? )
+                        """
+                  valuearray = [apiData.GCBPOPL_CREATOR_ID.text(),
+                                stringToDate(apiData.GCBPOPL_CREATE_DATE.text()),
+                                apiData.GCBPOPL_NAME.text(),
+                                apiData.GCBPOPL_DESCRIPTION.text(),
+                                foldersurrogateid,
+                                apiData.GCBPOPL_USER_ID.text(),
+                                stringToDate(apiData.GCBPOPL_ACTIVITY_DATE.text()),
+                                apiData.GCBPOPL_CHANGED_IND.text()]
+                  conn.executeInsert(sql, valuearray)
+                  connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
+                  if (connectInfo.saveThis) {
+                      conn.execute "{ call gb_common.p_commit() }"
+                  }
+              }
+          } catch (Exception e) {
+              if (connectInfo.showErrors) {
+                  println "Could not select and update population,  ${apiData.GCBPOPL_NAME.text()} for ${connectInfo.tableName}. $e.message"
+              }
+          }
+      }
+
+
 
         if (connectInfo.tableName == "GCRPOPV") {
             def populationId = getPopulationId( apiData.POPULATIONNAME[0]?.text().toString() )
@@ -260,17 +338,22 @@ public class GeneralActionItemDML {
         if (connectInfo.tableName == "MARKACTIONITEMGROUPPOSTED") {
             conn.executeUpdate( "UPDATE GCBAGRP SET GCBAGRP_POSTED_IND = 'Y' WHERE GCBAGRP_SURROGATE_ID  IN ( SELECT GCRAACT_GCBAGRP_ID FROM GCRAACT) AND GCBAGRP_POSTED_IND='N'" )
         }
-        // parse the xml  back into  gstring for the dynamic sql loader
-        def xmlRecNew = "<${apiData.name()}>\n"
-        apiData.children().each() {fields ->
-            def value = fields.text().replaceAll( /&/, '&amp;' ).replaceAll( /'/, '&apos;' ).replaceAll( />/, '&gt;' ).replaceAll( /</, '&lt;' ).replaceAll( /"/, '&quot;' )
-            xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
+
+        switch(connectInfo.tableName) {
+            case "GCBPOPL": break;   //inserts and updates manually executed
+            default:
+                // parse the xml  back into  gstring for the dynamic sql loader
+                def xmlRecNew = "<${apiData.name()}>\n"
+                apiData.children().each() { fields ->
+                    def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
+                    xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
+                }
+                xmlRecNew += "</${apiData.name()}>\n"
+
+                // parse the data using dynamic sql for inserts and updates
+                def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
+                break;
         }
-        xmlRecNew += "</${apiData.name()}>\n"
-
-        // parse the data using dynamic sql for inserts and updates
-        def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode )
-
     }
 
 
@@ -313,9 +396,21 @@ public class GeneralActionItemDML {
         return fId
     }*/
 
+    def stringToDate(datestring) {
+        //use this conversion for fields that have timestamp like template valid from and valid to
+        try {
+            if (datestring == null || datestring == "")
+                return ""
+            else
+                return Date.parse("dd-MMM-yy", datestring).toTimestamp()
+        }catch (Exception e) {
+            println "Error parsing date string ${datestring}, table name in GeneralActionItemDML, ${connectInfo.tableName}: ${e.getMessage()}"
+        }
+    }
+
 
     def getPopulationValueId( String queryName ) {
-        String fsql = """select * from GCRPOPV where GCRPOPV_POPL_ID= (select GCBPOPL_SURROGATE_ID FROM GCBPOPL WHERE GCBPOPL_NAME=?) """
+        String fsql = """select * from GCRPOPV where GCRPOPV_POPL_ID= (select GCBPOPL_SURROGATE_ID FROM GCBPOPL WHERE lower(GCBPOPL_NAME)=lower(?)) """
         int fId
         def fRow
 
@@ -397,7 +492,7 @@ public class GeneralActionItemDML {
 
 
     def getFolderId( String folderName ) {
-        String fsql = """select * from GCRFLDR where GCRFLDR_NAME= ? """
+        String fsql = """select * from GCRFLDR where lower(GCRFLDR_NAME)= lower(?) """
         int fId
         def fRow
 
@@ -438,7 +533,7 @@ public class GeneralActionItemDML {
 
 
     def getPopulationId( String populationName ) {
-        String fsql = """select * from GCBPOPL where GCBPOPL_NAME= ? """
+        String fsql = """select * from GCBPOPL where lower(GCBPOPL_NAME)= lower(?) """
         int fId
         def fRow
 
