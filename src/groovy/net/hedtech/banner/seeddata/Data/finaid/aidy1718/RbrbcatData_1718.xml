@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RBRBCAT_DATA>
+    <RBRBCAT>
+        <RBRBCAT_AIDY_CODE>1718</RBRBCAT_AIDY_CODE>
+        <RBRBCAT_BCAT_CODE>RMBD</RBRBCAT_BCAT_CODE>
+        <RBRBCAT_PRINT_SEQ_NO>1</RBRBCAT_PRINT_SEQ_NO>
+        <RBRBCAT_LONG_DESC>Room and Board</RBRBCAT_LONG_DESC>
+        <RBRBCAT_COMMENT/>
+    </RBRBCAT>
+    <RBRBCAT>
+        <RBRBCAT_AIDY_CODE>1718</RBRBCAT_AIDY_CODE>
+        <RBRBCAT_BCAT_CODE>CHLD</RBRBCAT_BCAT_CODE>
+        <RBRBCAT_PRINT_SEQ_NO>2</RBRBCAT_PRINT_SEQ_NO>
+        <RBRBCAT_LONG_DESC>Child Care Expenses</RBRBCAT_LONG_DESC>
+        <RBRBCAT_COMMENT/>
+    </RBRBCAT>
+    <RBRBCAT>
+        <RBRBCAT_AIDY_CODE>1718</RBRBCAT_AIDY_CODE>
+        <RBRBCAT_BCAT_CODE>TRAN</RBRBCAT_BCAT_CODE>
+        <RBRBCAT_PRINT_SEQ_NO>3</RBRBCAT_PRINT_SEQ_NO>
+        <RBRBCAT_LONG_DESC>Transportation</RBRBCAT_LONG_DESC>
+        <RBRBCAT_COMMENT/>
+    </RBRBCAT>
+    <RBRBCAT>
+        <RBRBCAT_AIDY_CODE>1718</RBRBCAT_AIDY_CODE>
+        <RBRBCAT_BCAT_CODE>RMBD</RBRBCAT_BCAT_CODE>
+        <RBRBCAT_PRINT_SEQ_NO>1</RBRBCAT_PRINT_SEQ_NO>
+        <RBRBCAT_LONG_DESC>Room and Board</RBRBCAT_LONG_DESC>
+        <RBRBCAT_COMMENT/>
+    </RBRBCAT>
+    <RBRBCAT>
+        <RBRBCAT_AIDY_CODE>1718</RBRBCAT_AIDY_CODE>
+        <RBRBCAT_BCAT_CODE>CHLD</RBRBCAT_BCAT_CODE>
+        <RBRBCAT_PRINT_SEQ_NO>2</RBRBCAT_PRINT_SEQ_NO>
+        <RBRBCAT_LONG_DESC>Child Care Expenses</RBRBCAT_LONG_DESC>
+        <RBRBCAT_COMMENT/>
+    </RBRBCAT>
+    <RBRBCAT>
+        <RBRBCAT_AIDY_CODE>1718</RBRBCAT_AIDY_CODE>
+        <RBRBCAT_BCAT_CODE>TRAN</RBRBCAT_BCAT_CODE>
+        <RBRBCAT_PRINT_SEQ_NO>3</RBRBCAT_PRINT_SEQ_NO>
+        <RBRBCAT_LONG_DESC>Transportation</RBRBCAT_LONG_DESC>
+        <RBRBCAT_COMMENT/>
+    </RBRBCAT>
+</RBRBCAT_DATA>

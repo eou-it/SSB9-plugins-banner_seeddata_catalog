@@ -9,8 +9,7 @@ import org.apache.commons.lang.StringUtils
 import java.sql.Connection
 
 /**
- * Gcrfldr tables
- * replace the curr rule in the xml
+ * Seed data for communication management
  */
 
 public class GcrfldrDML {
@@ -70,9 +69,8 @@ public class GcrfldrDML {
 
         def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
 
-
-        String ssql = """select * from gcrfldr  where GCRFLDR_NAME = ? """
-        // find if the FOLDER already exists in the database and use it's curr_rule for inserting into the db
+        String ssql = """select * from gcrfldr  where lower(GCRFLDR_NAME) = lower(?) """
+        // find if the FOLDER already exists in the database and use it for inserting into the db
         try {
             def folderSeqR = this.conn.firstRow(ssql, [apiData.FOLDER.text()])
             if ( folderSeqR) {
@@ -89,20 +87,104 @@ public class GcrfldrDML {
             println "Selected from GCRFLDR ${folderSeq} for folder  ${apiData.FOLDER.text()} for ${connectInfo.tableName}."
         }
 
-        // update the curr rule with the one that is selected
+
         if (connectInfo.tableName == "GCRFLDR") {
-            // delete data so we can re-add instead of update so all children data is refreshed
-            deleteData()
+
             apiData.GCRFLDR_SURROGATE_ID[0].setValue(folderSeq.toString())
+
+            def sql, valuearray
+            boolean isExist = folderSeq > 0
+            if (isExist) {
+                sql = """UPDATE gcrfldr SET gcrfldr_name = ?,
+                                            gcrfldr_user_id = ?,
+                                            gcrfldr_activity_date = ?,
+                                            gcrfldr_description = ?,
+                                            gcrfldr_data_origin = ?
+                                       WHERE gcrfldr_surrogate_id = ?
+                        """
+                valuearray = [
+                        apiData.GCRFLDR_NAME.text(),
+                        apiData.GCRFLDR_USER_ID.text(),
+                        apiData.GCRFLDR_ACTIVITY_DATE.text(),
+                        apiData.GCRFLDR_DESCRIPTION.text(),
+                        apiData.GCRFLDR_DATA_ORIGIN.text(),
+                        apiData.GCRFLDR_SURROGATE_ID.text().toInteger()]
+                doUpdate(sql, valuearray);
+            } else {
+                sql = """insert into gcrfldr
+                               (GCRFLDR_INTERNAL ,
+                                GCRFLDR_NAME,
+                                GCRFLDR_USER_ID ,
+                                GCRFLDR_ACTIVITY_DATE ,
+                                GCRFLDR_DESCRIPTION,
+                                GCRFLDR_DATA_ORIGIN )
+                                values (?,?,?,?,?,? )
+                        """
+                valuearray = [
+                        apiData.GCRFLDR_INTERNAL.text().toInteger(),
+                        apiData.GCRFLDR_NAME.text(),
+                        apiData.GCRFLDR_USER_ID.text(),
+                        apiData.GCRFLDR_ACTIVITY_DATE.text(),
+                        apiData.GCRFLDR_DESCRIPTION.text(),
+                        apiData.GCRFLDR_DATA_ORIGIN.text()]
+                doInsert(sql, valuearray)
+            }
+
         }
         // update the major rule and the curr rule
         else if (connectInfo.tableName == "GCBQURY") {
             if (apiData.GCBQURY_FOLDER_ID.text().toInteger() != folderSeq) {
                 apiData.GCBQURY_FOLDER_ID[0].setValue(folderSeq.toString())
             }
-            querySeq = getQuerySurrogateId(apiData.QUERY_NAME.text(), folderSeq)
+            querySeq = getQuerySurrogateId(apiData.GCBQURY_NAME.text(), folderSeq)
             if(querySeq != 0) {
                 apiData.GCBQURY_SURROGATE_ID[0].setValue(querySeq.toString())
+            }
+
+            def sql, valuearray
+            boolean isExist = querySeq > 0
+            if (isExist) {
+                sql = """update GCBQURY set     GCBQURY_NAME = ?,
+                                                GCBQURY_USER_ID = ?,
+                                                GCBQURY_ACTIVITY_DATE = ?,
+                                                GCBQURY_DESCRIPTION = ?,
+                                                GCBQURY_QUERY_STRING = ?,
+                                                GCBQURY_DATA_ORIGIN = ?
+                                      where gcbqury_surrogate_id = ?
+                        """
+                valuearray = [
+                        apiData.GCBQURY_NAME.text(),
+                        apiData.GCBQURY_USER_ID.text(),
+                        apiData.GCBQURY_ACTIVITY_DATE.text(),
+                        apiData.GCBQURY_DESCRIPTION.text(),
+                        apiData.GCBQURY_QUERY_STRING.text(),
+                        apiData.GCBQURY_DATA_ORIGIN.text(),
+                        querySeq]
+                doUpdate(sql, valuearray);
+            } else {
+                sql ="""INSERT INTO GCBQURY
+                                               (GCBQURY_NAME,
+                                                GCBQURY_FOLDER_ID,
+                                                GCBQURY_CREATOR_ID,
+                                                GCBQURY_CREATE_DATE,
+                                                GCBQURY_USER_ID,
+                                                GCBQURY_ACTIVITY_DATE,
+                                                GCBQURY_DESCRIPTION,
+                                                GCBQURY_QUERY_STRING,
+                                                GCBQURY_DATA_ORIGIN)
+                                        values (?,?,?,?,?,?,?,?,? )
+                        """
+                valuearray = [
+                        apiData.GCBQURY_NAME.text(),
+                        folderSeq,
+                        apiData.GCBQURY_CREATOR_ID.text(),
+                        apiData.GCBQURY_CREATE_DATE.text(),
+                        apiData.GCBQURY_USER_ID.text(),
+                        apiData.GCBQURY_ACTIVITY_DATE.text(),
+                        apiData.GCBQURY_DESCRIPTION.text(),
+                        apiData.GCBQURY_QUERY_STRING.text(),
+                        apiData.GCBQURY_DATA_ORIGIN.text()]
+                doInsert(sql, valuearray)
             }
         } else if (connectInfo.tableName == "GCBTMPL") {
             if (apiData.GCBTMPL_FOLDER_ID.text().toInteger() != folderSeq) {
@@ -112,6 +194,72 @@ public class GcrfldrDML {
             if (apiData.GCBTMPL_SURROGATE_ID.text().toInteger() != templateSeq) {
                 apiData.GCBTMPL_SURROGATE_ID[0].setValue(templateSeq.toString())
             }
+            def sql, valuearray
+            boolean isExist = templateSeq > 0
+            if (isExist) {
+                sql = """update GCBTMPL set    GCBTMPL_NAME = ?,
+                                               GCBTMPL_PERSONAL = ?,
+                                               GCBTMPL_FOLDER_ID = ?,
+                                               GCBTMPL_ONEOFF = ?,
+                                               GCBTMPL_PUBLISH = ?,
+                                               GCBTMPL_USER_ID = ?,
+                                               GCBTMPL_ACTIVITY_DATE = ?,
+                                               GCBTMPL_DESCRIPTION = ?,
+                                               GCBTMPL_VALID_FROM = ?,
+                                               GCBTMPL_VALID_TO = ?,
+                                               GCBTMPL_DATA_ORIGIN = ?
+                                      where gcbtmpl_surrogate_id = ?
+                        """
+                valuearray = [  apiData.GCBTMPL_NAME.text(),
+                                apiData.GCBTMPL_PERSONAL.text(),
+                                folderSeq,
+                                apiData.GCBTMPL_ONEOFF.text(),
+                                apiData.GCBTMPL_PUBLISH.text(),
+                                apiData.GCBTMPL_USER_ID.text(),
+                                apiData.GCBTMPL_ACTIVITY_DATE.text(),
+                                apiData.GCBTMPL_DESCRIPTION.text(),
+                                stringToDate(apiData.GCBTMPL_VALID_FROM.text()),
+                                stringToDate(apiData.GCBTMPL_VALID_TO.text()),
+                                apiData.GCBTMPL_DATA_ORIGIN.text(),
+                                templateSeq]
+                doUpdate(sql, valuearray);
+            } else {
+                sql ="""INSERT INTO GCBTMPL
+                                      (GCBTMPL_NAME,
+                                       GCBTMPL_PERSONAL,
+                                       GCBTMPL_FOLDER_ID,
+                                       GCBTMPL_ONEOFF,
+                                       GCBTMPL_PUBLISH,
+                                       GCBTMPL_USER_ID,
+                                       GCBTMPL_ACTIVITY_DATE,
+                                       GCBTMPL_DESCRIPTION,
+                                       GCBTMPL_VALID_FROM,
+                                       GCBTMPL_VALID_TO,
+                                       GCBTMPL_CREATOR_ID,
+                                       GCBTMPL_CREATE_DATE,
+                                       GCBTMPL_DATA_ORIGIN,
+                                       GCBTMPL_COMM_CHANNEL)
+
+                                        values (?,?,?,?,?,?,?,?,?,?,?,?,?,? )
+                        """
+                valuearray = [
+                        apiData.GCBTMPL_NAME.text(),
+                        apiData.GCBTMPL_PERSONAL.text(),
+                        folderSeq,
+                        apiData.GCBTMPL_ONEOFF.text(),
+                        apiData.GCBTMPL_PUBLISH.text(),
+                        apiData.GCBTMPL_USER_ID.text(),
+                        apiData.GCBTMPL_ACTIVITY_DATE.text(),
+                        apiData.GCBTMPL_DESCRIPTION.text(),
+                        stringToDate(apiData.GCBTMPL_VALID_FROM.text()),
+                        stringToDate(apiData.GCBTMPL_VALID_TO.text()),
+                        apiData.GCBTMPL_CREATOR_ID.text(),
+                        apiData.GCBTMPL_CREATE_DATE.text(),
+                        apiData.GCBTMPL_DATA_ORIGIN.text(),
+                        apiData.GCBTMPL_COMM_CHANNEL.text()]
+                doInsert(sql, valuearray)
+            }
+
         } else if (connectInfo.tableName == "GCRCFLD") {
             if (apiData.GCRCFLD_FOLDER_ID.text().toInteger() != folderSeq) {
                 apiData.GCRCFLD_FOLDER_ID[0].setValue(folderSeq.toString())
@@ -166,44 +314,11 @@ public class GcrfldrDML {
                 apiData.GCBEVMP_TEMPLATE_ID[0].setValue(templateSeq.toString())
             }
         } else if(connectInfo.tableName == "GCRORAN") {
-            if(apiData.GCRORAN_UPDATE_MODE) {
-                //Organization is in update mode to set the srevr properties and mailbox accounts
-                senderPropSeq = getServerPropertiesSurrogateId(apiData.SEND_EMAILPROP_NAME.text(), apiData.SEND_EMAILPROP_HOST.text(), apiData.SEND_EMAILPROP_PORT.text())
-                if (apiData.GCRORAN_SEND_EMAILPROP_ID.text().toInteger() != senderPropSeq) {
-                    apiData.GCRORAN_SEND_EMAILPROP_ID[0].setValue(senderPropSeq.toString())
-                }
-                senderMailBoxSeq = getMailBoxSurrogateId(apiData.SEND_MAILBOX_TYPE.text(), apiData.SEND_MAILBOX_USERNAME.text())
-                if (apiData.GCRORAN_SEND_MAILBOX_ID.text().toInteger() != senderMailBoxSeq) {
-                    apiData.GCRORAN_SEND_MAILBOX_ID[0].setValue(senderMailBoxSeq.toString())
-                }
-                replyMailBoxSeq = getMailBoxSurrogateId(apiData.REPLY_MAILBOX_TYPE.text(), apiData.REPLY_MAILBOX_USERNAME.text())
-                if (apiData.GCRORAN_REPLY_MAILBOX_ID.text().toInteger() != replyMailBoxSeq) {
-                    apiData.GCRORAN_REPLY_MAILBOX_ID[0].setValue(replyMailBoxSeq.toString())
-                }
-            } else {
-                processGcroran()
-            }
-            parentOrgSeq = getParentOrgId()
-            if(apiData.PARENT_NAME.text()) {
-                if (apiData.GCRORAN_PARENT_ID.text().toInteger() != parentOrgSeq) {
-                    apiData.GCRORAN_PARENT_ID[0].setValue(parentOrgSeq.toString())
-                }
-                //Check if child org already exist, if then update
-                childOrgSeq = getOrgSurrogateIdByName(apiData.GCRORAN_NAME.text())
-                if(childOrgSeq > 0) {
-                    if (apiData.GCRORAN_SURROGATE_ID.text().toInteger() != childOrgSeq) {
-                        apiData.GCRORAN_SURROGATE_ID[0].setValue(childOrgSeq.toString())
-                    }
-                }
-            } else {
-                //Data is of Parent org, just update
-                if (apiData.GCRORAN_SURROGATE_ID.text().toInteger() != parentOrgSeq) {
-                    apiData.GCRORAN_SURROGATE_ID[0].setValue(parentOrgSeq.toString())
-                }
-            }
+            processGcroran()
+
         }  else if (connectInfo.tableName == "GCBEMTL") {
             def templateSeq
-            def tsql = """select * from gcbtmpl where gcbtmpl_folder_id = ? and GCBTMPL_NAME = ?"""
+            def tsql = """select * from gcbtmpl where gcbtmpl_folder_id = ? and lower(GCBTMPL_NAME) = lower(?)"""
             try {
                 def templateSeqRows = this.conn.firstRow(tsql, [folderSeq, apiData.TEMPLATE.text()])
                 if ( templateSeqRows) {
@@ -365,13 +480,17 @@ public class GcrfldrDML {
                 }
             }
         }
-        // update the concentration  rule and the curr rule
+
 
         // parse the xml  back into  gstring for the dynamic sql loader
         switch(connectInfo.tableName) {
-            case "GCBLTPL" : break;
-            case "GCBEMTL" : break;
-            case "GCBMNTL" : break;
+            case "GCBLTPL" : break;   //inserts and updates manually executed
+            case "GCBEMTL" : break;   //inserts and updates manually executed
+            case "GCBMNTL" : break;   //inserts and updates manually executed
+            case "GCRFLDR" : break;   //inserts and updates manually executed
+            case "GCBQURY" : break;   //inserts and updates manually executed
+            case "GCBTMPL" : break;   //inserts and updates manually executed
+            case "GCRORAN" : break;   //inserts and updates manually executed
             default :   def xmlRecNew = "<${apiData.name()}>\n"
                     apiData.children().each() { fields ->
                         def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
@@ -387,6 +506,55 @@ public class GcrfldrDML {
         }
     }
 
+    def stringToDate(datestring) {
+        //use this conversion for fields that have timestamp like template valid from and valid to
+      try {
+          if (datestring == null || datestring == "")
+              return ""
+          else
+              return Date.parse("yyyy-MM-dd HH:mm:ss.SSSSSSSSS", datestring).toTimestamp()
+      }catch (Exception e) {
+          println "Error parsing date string ${datestring} table name ${connectInfo.tableName} in GcrfldrDML: ${e.getMessage()}"
+      }
+    }
+
+    def doInsert(sqlstring, valuearray) {
+
+        try {
+               this.conn.executeInsert(sqlstring, valuearray)
+               connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
+               if (connectInfo.saveThis) {
+                   conn.execute "{ call gb_common.p_commit() }"
+               }
+        } catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println sqlstring
+                println valuearray
+                println "Could not perform insert in GcrfldrDML, for ${connectInfo.tableName}. $e.message"
+            }
+            println sqlstring
+            println valuearray
+            println "Could not perform insert in GcrfldrDML, for ${connectInfo.tableName}. $e.message"
+        }
+    }
+
+    def doUpdate(sqlstring, valuearray) {
+        def sql
+        try {
+
+                this.conn.executeUpdate(sqlstring,valuearray)
+                connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 1, 0, 0)
+            if (connectInfo.saveThis) {
+                conn.execute "{ call gb_common.p_commit() }"
+            }
+        } catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println sqlstring
+                println valuearray
+                println "Could not perform update in GcrfldrDML, for ${connectInfo.tableName}. $e.message"
+            }
+        }
+    }
     def processGcroran() {
         //special xml characters are getting scrubbed from the xml for some reason. So doing this hack to re-introduce them into
         //the xml before it gets parsed by the xml parser
@@ -395,17 +563,113 @@ public class GcrfldrDML {
 
         def apiData = new XmlParser().parseText(StringUtils.replaceEach(xmlData, fromstring, tostring))
 
-
-        String ssql = """select * from gcroran  where gcroran_name = ? """
+        String ssql = """select * from gcroran  where lower(gcroran_name) = lower(?) """
         // find if the FOLDER already exists in the database and use it's curr_rule for inserting into the db
         try {
             def orgSeqR = this.conn.firstRow(ssql, [apiData.GCRORAN_NAME.text()])
-            if ( orgSeqR) {
+            if (orgSeqR) {
                 orgSeq = orgSeqR?.GCRORAN_SURROGATE_ID
+            } else orgSeq = 0
+
+
+            if (orgSeq > 0 && connectInfo.tableName == "GCRORAN" && !apiData.GCRORAN_UPDATE_MODE) {
+                // delete data so we can re-add instead of update so all children data is refreshed
+                deleteOrganizationRelatedData()
             }
-            else orgSeq = 0
-        }
-        catch (Exception e) {
+
+            if(apiData.GCRORAN_UPDATE_MODE) {
+                //Organization is in update mode to set the server properties and mailbox accounts
+                senderPropSeq = getServerPropertiesSurrogateId(apiData.SEND_EMAILPROP_NAME.text(), apiData.SEND_EMAILPROP_HOST.text(), apiData.SEND_EMAILPROP_PORT.text())
+                if (apiData.GCRORAN_SEND_EMAILPROP_ID.text().toInteger() != senderPropSeq) {
+                    apiData.GCRORAN_SEND_EMAILPROP_ID[0].setValue(senderPropSeq.toString())
+                }
+                senderMailBoxSeq = getMailBoxSurrogateId(apiData.SEND_MAILBOX_TYPE.text(), apiData.SEND_MAILBOX_USERNAME.text())
+                if (apiData.GCRORAN_SEND_MAILBOX_ID.text().toInteger() != senderMailBoxSeq) {
+                    apiData.GCRORAN_SEND_MAILBOX_ID[0].setValue(senderMailBoxSeq.toString())
+                }
+                replyMailBoxSeq = getMailBoxSurrogateId(apiData.REPLY_MAILBOX_TYPE.text(), apiData.REPLY_MAILBOX_USERNAME.text())
+                if (apiData.GCRORAN_REPLY_MAILBOX_ID.text().toInteger() != replyMailBoxSeq) {
+                    apiData.GCRORAN_REPLY_MAILBOX_ID[0].setValue(replyMailBoxSeq.toString())
+                }
+            }
+
+            parentOrgSeq = getParentOrgId()
+            if(apiData.PARENT_NAME.text()) {
+                if (apiData.GCRORAN_PARENT_ID.text().toInteger() != parentOrgSeq) {
+                    apiData.GCRORAN_PARENT_ID[0].setValue(parentOrgSeq.toString())
+                }
+                //Check if child org already exist, if then update
+                childOrgSeq = getOrgSurrogateIdByName(apiData.GCRORAN_NAME.text())
+                if(childOrgSeq > 0) {
+                    if (apiData.GCRORAN_SURROGATE_ID.text().toInteger() != childOrgSeq) {
+                        apiData.GCRORAN_SURROGATE_ID[0].setValue(childOrgSeq.toString())
+                    }
+                }
+            } else {
+                //Data is of Parent org, just update
+                if (apiData.GCRORAN_SURROGATE_ID.text().toInteger() != parentOrgSeq) {
+                    apiData.GCRORAN_SURROGATE_ID[0].setValue(parentOrgSeq.toString())
+                }
+            }
+
+            def sql, valuearray
+            boolean isExist = orgSeq > 0
+            if (isExist) {
+                sql = """UPDATE gCRORAN SET GCRORAN_NAME = ?,
+                                            GCRORAN_REPLY_MAILBOX_ID = ?,
+                                            GCRORAN_SEND_MAILBOX_ID = ?,
+                                            GCRORAN_SEND_EMAILPROP_ID = ?,
+                                            GCRORAN_PARENT_ID = ?
+                                       WHERE gCRORAN_surrogate_id = ?
+                        """
+                valuearray = [
+                        apiData.GCRORAN_NAME.text(),
+                        apiData.GCRORAN_REPLY_MAILBOX_ID.text(),
+                        apiData.GCRORAN_SEND_MAILBOX_ID.text(),
+                        apiData.GCRORAN_SEND_EMAILPROP_ID.text(),
+                        apiData.GCRORAN_PARENT_ID.text(),
+                        orgSeq]
+                doUpdate(sql, valuearray);
+            } else {
+                sql = """insert into gCRORAN (  GCRORAN_NAME,
+                                                GCRORAN_USER_ID,
+                                                GCRORAN_ACTIVITY_DATE,
+                                                GCRORAN_DESCRIPTION,
+                                                GCRORAN_PARENT_ID,
+                                                GCRORAN_DATE_FORMAT,
+                                                GCRORAN_DAYOFWEEK_FORMAT,
+                                                GCRORAN_TIMEOFDAY_FORMAT,
+                                                GCRORAN_NOTFN_ENDPOINT_URL,
+                                                GCRORAN_NOTFN_APPL_NAME,
+                                                GCRORAN_NOTFN_APPL_KEY,
+                                                GCRORAN_DATA_ORIGIN,
+                                                GCRORAN_AVAILABLE_IND,
+                                                GCRORAN_REPLY_MAILBOX_ID,
+                                                GCRORAN_SEND_MAILBOX_ID,
+                                                GCRORAN_SEND_EMAILPROP_ID)
+                                values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,? )
+                        """
+                valuearray = [
+                        apiData.GCRORAN_NAME.text(),
+                        apiData.GCRORAN_USER_ID.text(),
+                        apiData.GCRORAN_ACTIVITY_DATE.text(),
+                        apiData.GCRORAN_DESCRIPTION.text(),
+                        apiData.GCRORAN_PARENT_ID.text(),
+                        apiData.GCRORAN_DATE_FORMAT.text(),
+                        apiData.GCRORAN_DAYOFWEEK_FORMAT.text(),
+                        apiData.GCRORAN_TIMEOFDAY_FORMAT.text(),
+                        apiData.GCRORAN_NOTFN_ENDPOINT_URL.text(),
+                        apiData.GCRORAN_NOTFN_APPL_NAME.text(),
+                        apiData.GCRORAN_NOTFN_APPL_KEY.text(),
+                        apiData.GCRORAN_DATA_ORIGIN.text(),
+                        apiData.GCRORAN_AVAILABLE_IND.text(),
+                        apiData.GCRORAN_REPLY_MAILBOX_ID.text(),
+                        apiData.GCRORAN_SEND_MAILBOX_ID.text(),
+                        apiData.GCRORAN_SEND_EMAILPROP_ID.text()]
+                doInsert(sql, valuearray)
+            }
+
+        } catch (Exception e) {
             if (connectInfo.showErrors) {
                 println "Could not select Organization ID in GcrfldrDML,  ${apiData.GCRORAN_NAME.text()} from GCRORAN for ${connectInfo.tableName}. $e.message"
             }
@@ -414,11 +678,6 @@ public class GcrfldrDML {
             println "Selected from GCRORAN ${orgSeq} for organization  ${apiData.GCRORAN_NAME.text()} for ${connectInfo.tableName}."
         }
 
-        // update the curr rule with the one that is selected
-        if (connectInfo.tableName == "GCRORAN") {
-            // delete data so we can re-add instead of update so all children data is refreshed
-            deleteOrganizationRelatedData()
-        }
     }
 
     def deleteData() {
@@ -491,7 +750,7 @@ public class GcrfldrDML {
 
     def getQuerySurrogateId( String queryName, def folderSeq ) {
 
-        String qsql = """ select * FROM GCBQURY WHERE GCBQURY_NAME=? and GCBQURY_FOLDER_ID = ?"""
+        String qsql = """ select * FROM GCBQURY WHERE lower(GCBQURY_NAME)=lower(?) and GCBQURY_FOLDER_ID = ?"""
 
         try {
             def querySeqR = this.conn.firstRow(qsql, queryName, folderSeq)
@@ -533,8 +792,8 @@ public class GcrfldrDML {
 
         def templateSeq
         def folderId
-        String ssql = """select * from gcrfldr  where GCRFLDR_NAME = ? """
-        def tsql = """select * from gcbtmpl where GCBTMPL_NAME = ? and gcbtmpl_folder_id = ? """
+        String ssql = """select * from gcrfldr  where lower(GCRFLDR_NAME) = lower(?) """
+        def tsql = """select * from gcbtmpl where lower(GCBTMPL_NAME) = lower(?) and gcbtmpl_folder_id = ? """
 
         try {
             def folderSeqR = this.conn.firstRow(ssql, templateFolder)
@@ -561,7 +820,7 @@ public class GcrfldrDML {
     def getTemplateSurrogateId(String templateName, int folderSeq) {
 
         def templateSeq
-        def tsql = """select * from gcbtmpl where GCBTMPL_NAME = ? and gcbtmpl_folder_id = ? """
+        def tsql = """select * from gcbtmpl where lower(GCBTMPL_NAME) = lower(?) and gcbtmpl_folder_id = ? """
 
         try {
             def templateSeqRows = this.conn.firstRow(tsql, templateName, folderSeq)
@@ -637,8 +896,8 @@ public class GcrfldrDML {
 
         def fieldSeq
         def folderId
-        String ssql = """select * from gcrfldr  where GCRFLDR_NAME = ? """
-        def tsql = """select * from gcrcfld where gcrcfld_name = ? and gcrcfld_folder_id = ? """
+        String ssql = """select * from gcrfldr  where lower(GCRFLDR_NAME) = lower(?) """
+        def tsql = """select * from gcrcfld where lower(gcrcfld_name) = lower(?) and gcrcfld_folder_id = ? """
 
         try {
             def folderSeqR = this.conn.firstRow(ssql, fieldFolder)
@@ -686,7 +945,7 @@ public class GcrfldrDML {
     def getParameterSurrogateId(String parameterName) {
 
         def parameterSeq
-        def tsql = """select * from gcrparm where gcrparm_NAME = ? """
+        def tsql = """select * from gcrparm where lower(gcrparm_NAME) = lower(?) """
 
         try {
             def paramSeqRows = this.conn.firstRow(tsql, parameterName)
@@ -746,7 +1005,7 @@ public class GcrfldrDML {
 
     def getOrgSurrogateIdByName(String organizationName) {
         def seq
-        def tsql = """select * from gcroran where GCRORAN_NAME = ? """
+        def tsql = """select * from gcroran where lower(GCRORAN_NAME) = lower(?) """
 
         try {
             def rows = this.conn.firstRow(tsql, organizationName)
@@ -785,7 +1044,7 @@ public class GcrfldrDML {
     def getInteractionTypeSurrogateId(String interactionTypeName, int folderSeq) {
 
         def interactionTypeSeq
-        def tsql = """select * from gcritpe where gcritpe_name = ? and gcritpe_folder_id = ? """
+        def tsql = """select * from gcritpe where lower(gcritpe_name) = lower(?) and gcritpe_folder_id = ? """
 
         try {
             def interactionTypeSeqRows = this.conn.firstRow(tsql, interactionTypeName, folderSeq)

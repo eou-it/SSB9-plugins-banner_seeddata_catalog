@@ -168,6 +168,9 @@ class ProxyAccessCredentialInformationDML {
             }
 
         }
+        else {
+            println "Insert GPBPRXY,GENIDEN not performed. No GENIDEN_ID."
+        }
     }
 
 
