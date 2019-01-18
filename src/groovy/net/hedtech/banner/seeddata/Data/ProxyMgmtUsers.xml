@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PROXY_MGMT_USERS>
+    <TWGRROLE>
+        <BANNERID>GDP000002</BANNERID>
+        <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <TWGRROLE>
+        <BANNERID>HOSP0002</BANNERID>
+        <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <TWGRROLE>
+        <BANNERID>HOS00001</BANNERID>
+        <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+</PROXY_MGMT_USERS>

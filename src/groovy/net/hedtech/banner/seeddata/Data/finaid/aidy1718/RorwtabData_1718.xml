@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RORWTAB_DATA>
+    <RORWTAB>
+        <RORWTAB_AIDY_CODE>1718</RORWTAB_AIDY_CODE>
+        <RORWTAB_TAB>AH</RORWTAB_TAB>
+        <RORWTAB_WTXT_CODE>J_TXTRULE</RORWTAB_WTXT_CODE>
+        <RORWTAB_DISPLAY_SEQ_NO>1</RORWTAB_DISPLAY_SEQ_NO>
+    </RORWTAB>
+    <RORWTAB>
+        <RORWTAB_AIDY_CODE>1718</RORWTAB_AIDY_CODE>
+        <RORWTAB_TAB>TC</RORWTAB_TAB>
+        <RORWTAB_WTXT_CODE>J_TXTRULE</RORWTAB_WTXT_CODE>
+        <RORWTAB_DISPLAY_SEQ_NO>1</RORWTAB_DISPLAY_SEQ_NO>
+    </RORWTAB>
+    <RORWTAB>
+        <RORWTAB_AIDY_CODE>1718</RORWTAB_AIDY_CODE>
+        <RORWTAB_TAB>GI</RORWTAB_TAB>
+        <RORWTAB_WTXT_CODE>J_TXTRULE</RORWTAB_WTXT_CODE>
+        <RORWTAB_DISPLAY_SEQ_NO>1</RORWTAB_DISPLAY_SEQ_NO>
+    </RORWTAB>
+    <RORWTAB>
+        <RORWTAB_AIDY_CODE>1718</RORWTAB_AIDY_CODE>
+        <RORWTAB_TAB>SM</RORWTAB_TAB>
+        <RORWTAB_WTXT_CODE>J_TXTRULE</RORWTAB_WTXT_CODE>
+        <RORWTAB_DISPLAY_SEQ_NO>1</RORWTAB_DISPLAY_SEQ_NO>
+    </RORWTAB>
+</RORWTAB_DATA>
