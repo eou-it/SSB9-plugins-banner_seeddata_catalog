@@ -29,6 +29,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>FASS50025</BANNERID>
         <SGBSGID_PIDM/>
         <SGBSGID_GUID>111111</SGBSGID_GUID>
+        <DELETE>YES</DELETE>
     </SGBSGID>
     <SGBSTDN>
         <BANNERID>FASS50025</BANNERID>
