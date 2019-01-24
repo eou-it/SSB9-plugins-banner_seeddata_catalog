@@ -831,7 +831,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsscsData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml'],
 
-            'finaid-aidy-1819'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobprdsData_1819.xml',
+            'finaid-aidy-1819'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobaprdData_1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobprdsData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrbcatData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrpbcpData_1819.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RbrpbgpData_1819.xml',
@@ -887,7 +888,7 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass30003AwardInfo1718.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass30004AwardInfo1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50023_Enrollment_Status_1314.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500024_AwardInfo_1819.xml'],
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass500025_AwardInformation_1819.xml'],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
