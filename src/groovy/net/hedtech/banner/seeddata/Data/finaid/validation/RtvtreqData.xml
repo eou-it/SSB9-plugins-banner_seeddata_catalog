@@ -1405,8 +1405,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <RTVTREQ_LTR_EXCLUDE_IND>N</RTVTREQ_LTR_EXCLUDE_IND>
         <RTVTREQ_UPDATE_PRIOR_YEAR_IND>N</RTVTREQ_UPDATE_PRIOR_YEAR_IND>
         <RTVTREQ_ACTIVE_IND>Y</RTVTREQ_ACTIVE_IND>
-        <RTVTREQ_INSTRUCTIONS>Please read through the Terms &amp; Conditions and
-            Accept</RTVTREQ_INSTRUCTIONS>
+        <RTVTREQ_INSTRUCTIONS>Please read through the Terms &amp; Conditions and Accept</RTVTREQ_INSTRUCTIONS>
         <RTVTREQ_TERM_ELIGIBLE_IND>N</RTVTREQ_TERM_ELIGIBLE_IND>
         <RTVTREQ_USE_FED_FUND_ID_IND>N</RTVTREQ_USE_FED_FUND_ID_IND>
     </RTVTREQ>
