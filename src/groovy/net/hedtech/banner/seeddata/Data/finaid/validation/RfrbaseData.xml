@@ -2,7 +2,22 @@
 <!-- *****************************************************************************                                                                                                                                                                                                                                                                                                                                                                                                                                  
 Copyright 2017 Ellucian Company L.P. and its affiliates.                                                                                                                                                                                                                                                                                                                                                                                                                                                            
  ********************************************************************************* -->                                                                                                                                                                                                                                                                                                                                                                                                                              
-<RFRBASE_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+<RFRBASE_DATA>
+    <RFRBASE>
+        <RFRBASE_FUND_CODE>PFND</RFRBASE_FUND_CODE>
+        <RFRBASE_FUND_TITLE>PK fund</RFRBASE_FUND_TITLE>
+        <RFRBASE_FSRC_CODE>PINS</RFRBASE_FSRC_CODE>
+        <RFRBASE_FTYP_CODE>PSHL</RFRBASE_FTYP_CODE>
+        <RFRBASE_DETAIL_CODE/>
+        <RFRBASE_FED_FUND_ID>PELL</RFRBASE_FED_FUND_ID>
+        <RFRBASE_PRINT_SEQ_NO/>
+        <RFRBASE_VR_MSG_NO/>
+        <RFRBASE_ACTIVE_IND>Y</RFRBASE_ACTIVE_IND>
+        <RFRBASE_XREF_VALUE/>
+        <RFRBASE_FUND_TITLE_LONG>PK fund</RFRBASE_FUND_TITLE_LONG>
+        <RFRBASE_INFO_ACCESS_IND>Y</RFRBASE_INFO_ACCESS_IND>
+        <RFRBASE_GUID>6fa39dc7-808a-4842-91e7-a2789fdr87c4</RFRBASE_GUID>
+    </RFRBASE>
     <RFRBASE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         <RFRBASE_FUND_CODE>MYST</RFRBASE_FUND_CODE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         <RFRBASE_FUND_TITLE>Myst Test fund</RFRBASE_FUND_TITLE>                                                                                                                                                                                                                                                                                                                                                                                                                                                     
