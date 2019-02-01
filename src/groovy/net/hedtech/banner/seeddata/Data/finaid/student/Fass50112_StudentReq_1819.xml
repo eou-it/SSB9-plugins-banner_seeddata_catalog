@@ -2,7 +2,7 @@
 <!-- *****************************************************************************
 Copyright 2019 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
-<FASS500002_STUDENT_REQ>
+<FASS50112_STUDENT_REQ>
     <SPRIDEN>
         <BANNERID>FASS50112</BANNERID>
         <SPRIDEN_ID>FASS50112</SPRIDEN_ID>
@@ -7301,4 +7301,4 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <RRRAREQ_SBGI_TYPE_IND/>
         <RRRAREQ_TERM_CODE/>
     </RRRAREQ>
-</FASS500002_STUDENT_REQ>
+</FASS50112_STUDENT_REQ>
