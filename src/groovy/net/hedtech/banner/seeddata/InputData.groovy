@@ -967,7 +967,7 @@ public class InputData {
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/StudentAccountsAccountChargePaymentDetail.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableTermControlData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableMemoData.xml',
-                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/AccountsReceivableDetailCodeData.xml',
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableDetailCodeData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/AccountsReceivableInstallmentPlanData.xml',
                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/InstallmentPlanTransactions.xml',
             '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/financialAid/AccountsReceivaleFinancialAidData.xml'],
