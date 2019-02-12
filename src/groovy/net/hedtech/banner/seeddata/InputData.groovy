@@ -64,7 +64,7 @@ public class InputData {
     // map of run time targets to specify file names
     def targets = [
             'seed-cleanup'                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogSeedDelete.xml',
-                                                      '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleTermDelete.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ValidationDataCleanup.xml'],
             'api-extensibility'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilityConfiguration.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/extensibility/ApiExtensibilitySqlProcessRules.xml',
@@ -246,14 +246,14 @@ public class InputData {
             'sde'                              : ['/src/groovy/net/hedtech/banner/seeddata/Data/SdeData.xml'],
             'extensibility'                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderData1.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/PageBuilderData2.xml'],
-            //TODO Remove SMBPGEN seed for program BA-ECON once it gets added to vagrant
             'program-data'                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProgramData.xml'],
             'generalstudent'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ApplicantQuickEntryRule.xml'],
             'registration-rule'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationManagementControl.xml'],
-            'selfserviceuser'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceUserData.xml','/src/groovy/net/hedtech/banner/seeddata/Data/surveyflow.xml'],
+            'selfserviceuser'                  : ['/src/groovy/net/hedtech/banner/seeddata/Data/SelfServiceUserData.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/surveyflow.xml'],
             'schedule-selenium'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleSelenium.xml'],
             'courseDetail-selenium'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/CourseDetailSelenium.xml'],
             'courseRestriction-selenium'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/CatalogRestrictionSelenium.xml'],
@@ -339,9 +339,6 @@ public class InputData {
             'ssbgeneralstudent'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
-            //TODO Need to revisit; this is a duplicate call
-            'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'finance-validation'               : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvshipData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtvbuyrData.xml'],
             'finance-procurement'              : ['/src/groovy/net/hedtech/banner/seeddata/Data/finance/FtrcommData.xml',
@@ -945,7 +942,6 @@ public class InputData {
             'scheduleData201410Crn20222'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml'],
             'generalstudenthos00001'           : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHos00001.xml'],
             'ssbgeneralstudent2hosweb007'      : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew2Hosweb007.xml'],
-            //TODO Need to revisit; this is a duplicate call
             'ssbgeneralstudenthosweb001'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNew.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'ssbgeneralstudenthosweb006'       : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
@@ -970,7 +966,8 @@ public class InputData {
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableDetailCodeData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/AccountsReceivableInstallmentPlanData.xml',
                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/InstallmentPlanTransactions.xml',
-            '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/financialAid/AccountsReceivaleFinancialAidData.xml','/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxNotificationData.xml'],
+                                                '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/financialAid/AccountsReceivaleFinancialAidData.xml',
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxNotificationData.xml'],
             'proxy-roles'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
     ]
     /**
