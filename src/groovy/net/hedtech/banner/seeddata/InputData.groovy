@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -891,7 +891,9 @@ public class InputData {
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass30004AwardInfo1819.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50023_Enrollment_Status_1314.xml',
                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50024_AwardInformation_1819.xml',
-                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50025_AwardInformation_1819.xml'],
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50025_AwardInformation_1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40025_Award_Offer_1819.xml',
+                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40024_Award_Offer_1718.xml'],
 
             'api-payroll'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
@@ -915,7 +917,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTVENDS_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPRSKIL_Data.xml'],
             'api-general'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/general/APRCATG_Data.xml'],
-            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml',
+            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FABCHKS_FABINCK_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVVEND_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVVTYP_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVVENT_Data.xml',
@@ -966,7 +969,8 @@ public class InputData {
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/AccountsReceivableDetailCodeData.xml',
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/AccountsReceivableInstallmentPlanData.xml',
                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/InstallmentPlanTransactions.xml',
-                                                '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/financialAid/AccountsReceivaleFinancialAidData.xml'],
+                                                '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/financialAid/AccountsReceivaleFinancialAidData.xml',
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxNotificationData.xml'],
             'proxy-roles'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
     ]
     /**
