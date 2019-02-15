@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -917,7 +917,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTVENDS_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PPRSKIL_Data.xml'],
             'api-general'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/general/APRCATG_Data.xml'],
-            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml',
+            'api-finance'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FABCHKS_FABINCK_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVHRSN_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVVEND_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVVTYP_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/finance/FTVVENT_Data.xml',
