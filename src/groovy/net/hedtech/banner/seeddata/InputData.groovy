@@ -970,7 +970,7 @@ public class InputData {
                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/AccountsReceivableInstallmentPlanData.xml',
                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/installmentPlan/InstallmentPlanTransactions.xml',
                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/financialAid/AccountsReceivaleFinancialAidData.xml',
-                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxNotificationData.xml'],
+                                                 '/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxNotificationData.xml','/src/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxInformationData.xml'],
             'proxy-roles'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
     ]
     /**
