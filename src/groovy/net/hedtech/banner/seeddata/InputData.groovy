@@ -229,7 +229,6 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecrsData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PhrecdtData.xml',
                                                   // Time Entry
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrcalnLeaveRequestData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntryExtractData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerearnData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerhourData.xml',
@@ -237,8 +236,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerelbdData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PerlvtkData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/EmployeeTimeEntrySubmitData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PprhnawData.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrcalnLeaveRequestData.xml'
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/payroll/PprhnawData.xml'
             ],
             'functionaltest'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/functional_catsch_testdata.xml'],
             'curriculum-validation'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/CurriculumValidationData.xml'],

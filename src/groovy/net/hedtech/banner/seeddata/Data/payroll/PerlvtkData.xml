@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017-2019 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PERLVTK_DATA>
+
     <PERLVTK>
         <BANNERID>HOPTE0300</BANNERID>
-        <YEAR>2017</YEAR>
+        <YEAR>2018</YEAR>
         <PICT_CODE>SY</PICT_CODE>
         <PAYNO>2</PAYNO>
         <ACTION_IND>L</ACTION_IND>
@@ -17,16 +18,11 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <PERLVTK_EARN_CODE>VAC</PERLVTK_EARN_CODE>
         <PERLVTK_LEAV_CODE>VACA</PERLVTK_LEAV_CODE>
         <PERLVTK_HRS>8.00</PERLVTK_HRS>
-        <PERLVTK_ACTIVITY_DATE/>
-        <PERLVTK_SURROGATE_ID/>
-        <PERLVTK_VERSION/>
-        <PERLVTK_USER_ID/>
-        <PERLVTK_DATA_ORIGIN>SEED DATA</PERLVTK_DATA_ORIGIN>
-        <PERLVTK_VPDI_CODE/>
     </PERLVTK>
+
     <PERLVTK>
         <BANNERID>HOPTE0300</BANNERID>
-        <YEAR>2017</YEAR>
+        <YEAR>2018</YEAR>
         <PICT_CODE>SY</PICT_CODE>
         <PAYNO>2</PAYNO>
         <ACTION_IND>L</ACTION_IND>
@@ -38,11 +34,6 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <PERLVTK_EARN_CODE>PER</PERLVTK_EARN_CODE>
         <PERLVTK_LEAV_CODE>PERS</PERLVTK_LEAV_CODE>
         <PERLVTK_HRS>4.00</PERLVTK_HRS>
-        <PERLVTK_ACTIVITY_DATE/>
-        <PERLVTK_SURROGATE_ID/>
-        <PERLVTK_VERSION/>
-        <PERLVTK_USER_ID/>
-        <PERLVTK_DATA_ORIGIN>SEED DATA</PERLVTK_DATA_ORIGIN>
-        <PERLVTK_VPDI_CODE/>
     </PERLVTK>
+
 </PERLVTK_DATA>
