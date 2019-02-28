@@ -826,6 +826,7 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwebqData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwbqaData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwsqlData_1718.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtxtData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtabData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsscsData_1718.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml'],
