@@ -1,0 +1,20 @@
+<plugin name='bannerSeeddataCatalog' version='0.1' grailsVersion='3.3.2 &gt; *'>
+  <type>banner.seeddata.catalog.BannerSeeddataCatalogGrailsPlugin</type>
+  <grailsVersion>3.3.2 &gt; *</grailsVersion>
+  <authorEmail></authorEmail>
+  <pluginExcludes>[grails-app/views/error.gsp]</pluginExcludes>
+  <author>Your name</author>
+  <documentation>http://grails.org/plugin/banner-seeddata-catalog</documentation>
+  <profiles>[web]</profiles>
+  <name>banner-seeddata-catalog</name>
+  <description>Brief summary/description of the plugin.
+</description>
+  <title>Banner Seeddata Catalog</title>
+  <version />
+  <resources>
+    <resource>banner.seeddata.catalog.UrlMappings</resource>
+    <resource>UrlMappings</resource>
+    <resource>banner.seeddata.catalog.Application</resource>
+    <resource>banner.seeddata.catalog.BootStrap</resource>
+  </resources>
+</plugin>

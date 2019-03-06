@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SCHEDULED>
+    <SFRSTCR>
+        <BANNERID>HOS00001</BANNERID>
+        <SFRSTCR_TERM_CODE>202410</SFRSTCR_TERM_CODE>
+        <SFRSTCR_PIDM>37859</SFRSTCR_PIDM>
+        <SFRSTCR_CRN>20004</SFRSTCR_CRN>
+        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
+         <DELETE>YES</DELETE>
+    </SFRSTCR>
+    <SFRAREG>
+        <BANNERID>HOS00001</BANNERID>
+        <SFRAREG_PIDM>37859</SFRAREG_PIDM>
+        <SFRAREG_TERM_CODE>202410</SFRAREG_TERM_CODE>
+        <SFRAREG_CRN>20004</SFRAREG_CRN>
+        <DELETE>YES</DELETE>
+    </SFRAREG>
+</SCHEDULED>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ 
