@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<CATALOG>
+    <SV_SCRMEXC>
+        <SCRMEXC_SUBJ_CODE>LISK</SCRMEXC_SUBJ_CODE>
+        <SCRMEXC_CRSE_NUMB>112</SCRMEXC_CRSE_NUMB>
+        <DELETE>YES</DELETE>
+    </SV_SCRMEXC>
+    <SV_SCRMEXC>
+        <SCRMEXC_SUBJ_CODE_MEXC>ENGL</SCRMEXC_SUBJ_CODE_MEXC>
+        <SCRMEXC_CRSE_NUMB_MEXC>200</SCRMEXC_CRSE_NUMB_MEXC>
+        <DELETE>YES</DELETE>
+    </SV_SCRMEXC>
+</CATALOG>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SCHEDULED>
+   <SV_SSRCLBD>
+       <SSRCLBD_TERM_CODE>202410</SSRCLBD_TERM_CODE>
+       <SSRCLBD_CRN>20004</SSRCLBD_CRN>
+       <DELETE>YES</DELETE>
+   </SV_SSRCLBD>
+</SCHEDULED>
