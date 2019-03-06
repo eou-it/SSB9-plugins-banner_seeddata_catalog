@@ -1139,7 +1139,11 @@ public class InputData {
             'structured-reg-integration-data'                                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration17.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml']
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml'],
+            'structured-reg-mdg'                                                 : ['/src/groovy/net/hedtech/banner/seeddata/Data/CourseInformationDRAM.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/RuleInformation.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GroupInformation.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaInformation.xml']
     ]
 
     def calbTargets = [
