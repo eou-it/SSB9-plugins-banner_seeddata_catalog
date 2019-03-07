@@ -8,6 +8,9 @@
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
 
+set GRAILS_OPTS=-Xms1024m -Xmx6144m -XX:+UseParallelGC -Xverify:none -Dfile.encoding=UTF-8
+set JAVA_OPTS=-Xms1024m -Xmx6144m -d64 -XX:-UseGCOverheadLimit 
+
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
