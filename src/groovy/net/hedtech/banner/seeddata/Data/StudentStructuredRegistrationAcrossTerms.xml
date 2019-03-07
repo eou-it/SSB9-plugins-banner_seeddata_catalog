@@ -222,7 +222,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SORLFOS_ACTIVITY_DATE_UPDATE>26-FEB-19</SORLFOS_ACTIVITY_DATE_UPDATE>
         <SORLFOS_CURRENT_CDE>Y</SORLFOS_CURRENT_CDE>
     </SORLFOS>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA21</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -238,7 +238,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>TUUEZ1R4</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA22 Brian Structured-Registration: One occurrence of the required Subj code in AH (institutional) with a passing grade -->
     <SPRIDEN>
@@ -1679,7 +1679,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA22</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -1695,7 +1695,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>KGURPOHI</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA23 Caleb Structured-Registration: One occurrence of the required Subj code in AH (institutional) with a failing grade -->
     <SPRIDEN>
@@ -3136,7 +3136,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA23</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -3152,7 +3152,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>CQK59YJC</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA24 Darius Structured-Registration: One occurrence of the required Subj code in AH (transfer) with a passing grade -->
     <SPRIDEN>
@@ -3620,7 +3620,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA24</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -3636,7 +3636,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>KNBF3R4T</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA25 Eli Structured-Registration: One occurrence of the required Subj code in AH (transfer) with a failing grade -->
     <SPRIDEN>
@@ -4104,7 +4104,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA25</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -4120,7 +4120,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>3W5Q0WGZ</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA26 Felix Structured-Registration: One occurrence of the required Subj code in RE with a passing grade (not rolled) -->
     <SPRIDEN>
@@ -5092,7 +5092,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRGCOL_USER_ID>GRAILS</SHRGCOL_USER_ID>
         <SHRGCOL_DATA_ORIGIN>GRAILS</SHRGCOL_DATA_ORIGIN>
     </SHRGCOL>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA26</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -5108,7 +5108,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>CV6D8DE6</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA27 Geraldo Structured-Registration: One occurrence of the required Subj code in RE with a failing grade (not rolled) -->
     <SPRIDEN>
@@ -6080,7 +6080,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRGCOL_USER_ID>GRAILS</SHRGCOL_USER_ID>
         <SHRGCOL_DATA_ORIGIN>GRAILS</SHRGCOL_DATA_ORIGIN>
     </SHRGCOL>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA27</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -6096,7 +6096,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>GAQG7MWE</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA28 Henry Structured-Registration: One occurrence of the required Subj code in RE with no grade -->
     <SPRIDEN>
@@ -6960,7 +6960,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRTHST_USER_ID>GRAILS</SFRTHST_USER_ID>
         <SFRTHST_DATA_ORIGIN>GRAILS</SFRTHST_DATA_ORIGIN>
     </SFRTHST>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA28</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -6976,7 +6976,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>H6T2SVYO</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA29 Ivan Structured-Registration: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with a passing grade -->
     <SPRIDEN>
@@ -9067,7 +9067,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA29</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -9083,7 +9083,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>D0IPKYIP</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA30 Jared Structured-Registration: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with no grade -->
     <SPRIDEN>
@@ -11174,7 +11174,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA30</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -11190,7 +11190,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>LQJIBYJ1</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA31 Keith Structured-Registration: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with a failing grade -->
     <SPRIDEN>
@@ -13281,7 +13281,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA31</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -13297,7 +13297,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>X1WAE07K</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
 
     <!-- STRREGA32 Liam Structured-Registration: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with no grade -->
@@ -15389,7 +15389,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA32</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -15405,7 +15405,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>2YSSSFOQ</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA33 Maverick Structured-Registration: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with a passing grade -->
     <SPRIDEN>
@@ -16523,7 +16523,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA33</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -16539,7 +16539,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>VO3TBXV2</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA34 Nelson Structured-Registration: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with no grade -->
     <SPRIDEN>
@@ -17657,7 +17657,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA34</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -17673,7 +17673,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>09ZJLFFF</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA35 Omar Structured-Registration: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with a failing grade -->
     <SPRIDEN>
@@ -18791,7 +18791,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA35</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -18807,7 +18807,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>7PD7W69G</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA36 Pedro Structured-Registration: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with no grade -->
     <SPRIDEN>
@@ -19925,7 +19925,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA36</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -19941,7 +19941,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>ZAICD6FH</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA37 Quenton Structured-Registration: Two occurrences of the required Subj code in AH (institutional) each with a passing grade -->
     <SPRIDEN>
@@ -21967,7 +21967,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA37</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -21983,7 +21983,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>ENBMWF3Y</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA38 Ronald Structured-Registration: Two occurrences of the required Subj code in AH (institutional) - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
@@ -23999,7 +23999,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTGPA_USER_ID>GRAILS</SHRTGPA_USER_ID>
         <SHRTGPA_DATA_ORIGIN>GRAILS</SHRTGPA_DATA_ORIGIN>
     </SHRTGPA>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA38</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -24015,7 +24015,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>BVT0GN0A</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA39 Stuart Structured-Registration: Two occurrences of the required Subj code in AH (transfer) each with a passing grade -->
     <SPRIDEN>
@@ -24696,7 +24696,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA39</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -24712,7 +24712,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>O50OLX6U</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA40 Teddy Structured-Registration: Two occurrences of the required Subj code in AH (transfer) - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
@@ -25393,7 +25393,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
         <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
     </SHRTRCE>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA40</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -25409,7 +25409,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>YM6O4BJF</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA41 Umberto Structured-Registration: Two occurrences of the required Subj code in RE each with a passing grade (not rolled) -->
     <SPRIDEN>
@@ -26923,7 +26923,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRTHST_USER_ID>GRAILS</SFRTHST_USER_ID>
         <SFRTHST_DATA_ORIGIN>GRAILS</SFRTHST_DATA_ORIGIN>
     </SFRTHST>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA41</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -26939,7 +26939,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>XB5HUIDJ</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA42 Victor Structured-Registration: Two occurrences of the required Subj code in RE each with a failing grade (not rolled) -->
     <SPRIDEN>
@@ -28453,7 +28453,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRTHST_USER_ID>GRAILS</SFRTHST_USER_ID>
         <SFRTHST_DATA_ORIGIN>GRAILS</SFRTHST_DATA_ORIGIN>
     </SFRTHST>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA42</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -28469,7 +28469,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>L78CT9RN</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA43 Wesley Structured-Registration: Two occurrences of the required Subj code in RE - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
@@ -29983,7 +29983,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRTHST_USER_ID>GRAILS</SFRTHST_USER_ID>
         <SFRTHST_DATA_ORIGIN>GRAILS</SFRTHST_DATA_ORIGIN>
     </SFRTHST>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA43</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -29999,7 +29999,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>GJ1Y4MBD</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
     <!-- STRREGA44 Xavier Structured-Registration: Two occurrences of the required Subj code in RE with no grade -->
     <SPRIDEN>
@@ -31513,7 +31513,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRTHST_USER_ID>GRAILS</SFRTHST_USER_ID>
         <SFRTHST_DATA_ORIGIN>GRAILS</SFRTHST_DATA_ORIGIN>
     </SFRTHST>
-    <GOBTPAC>
+    <GOBTPAC_RECORD>
         <BANNERID>STRREGA44</BANNERID>
         <GOBTPAC_PIN_DISABLED_IND>N</GOBTPAC_PIN_DISABLED_IND>
         <GOBTPAC_USAGE_ACCEPT_IND>Y</GOBTPAC_USAGE_ACCEPT_IND>
@@ -31529,6 +31529,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_DATA_ORIGIN>GRAILS</GOBTPAC_DATA_ORIGIN>
         <GOBTPAC_SALT>9HB0QND8</GOBTPAC_SALT>
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
-    </GOBTPAC>
+    </GOBTPAC_RECORD>
 
 </STUDENTDATA>
