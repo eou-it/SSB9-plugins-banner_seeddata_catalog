@@ -5,6 +5,8 @@
 ##  Gradle start up script for UN*X
 ##
 ##############################################################################
+GRAILS_OPTS="-Xms1024m -Xmx6144m -XX:+UseParallelGC -Xverify:none -Dfile.encoding=UTF-8"
+JAVA_OPTS="-Xms1024m -Xmx6144m -d64 -XX:-UseGCOverheadLimit" 
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS=""

@@ -72,6 +72,8 @@ public class ColumnValue {
         if ((multiplePidmColumn && columnName == this.tableName + "_PIDM" && connectInfo.saveStudentPidm) ||
                 (!multiplePidmColumn && columnName =~ "_PIDM" && connectInfo.saveStudentPidm)) {
             valsql = connectInfo.saveStudentPidm
+        } else if (columnName =~ "PROXY_IDM" && connectInfo.saveProxyIdm) {
+            valsql = connectInfo.saveProxyIdm
         } else if (columnName =~ "ACTIVITY_DATE")
         // activity date will always be set to 1/1/2010
         {

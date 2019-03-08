@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018-2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RTVFTYP_DATA>
+    <RTVFTYP>
+        <RTVFTYP_CODE>PSHL</RTVFTYP_CODE>
+        <RTVFTYP_DESC>Scholarship</RTVFTYP_DESC>
+        <RTVFTYP_ATYP_IND>S</RTVFTYP_ATYP_IND>
+    </RTVFTYP>
+</RTVFTYP_DATA>

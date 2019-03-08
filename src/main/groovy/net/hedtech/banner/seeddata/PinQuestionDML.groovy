@@ -45,6 +45,7 @@ class PinQuestionDML {
 
     def parseXmlData() {
         def gobqstn = new XmlParser().parseText(xmlData)
+        this.questionId = gobqstn.GOBQSTN_ID.text()
         this.questionDescription = gobqstn.GOBQSTN_DESC.text()
         this.displayInd = gobqstn.GOBQSTN_DISPLAY_IND.text()
         this.userId = gobqstn.GOBQSTN_USER_ID.text()
@@ -61,6 +62,17 @@ class PinQuestionDML {
         else if (this.delete && this.delete == "YES") {
             deleteData('GOBQSTN', 'delete from GOBQSTN where GOBQSTN_DESC=?', this.questionDescription)
         } else {
+            String foundId
+            String gobqstnSql = """select gobqstn_id as gobqstnid from gobqstn  where GOBQSTN_DESC = ? and rownum<=1"""
+            this.conn.eachRow(gobqstnSql, [this.questionDescription]) { trow ->
+                foundId = trow.gobqstnid
+            }
+            if(foundId.equals(this.questionId)) {
+                // we already have that record so do nothing
+                println "GOBQSTN record found. Update not performed"
+                return
+            }
+
             def questionidSql = "SELECT NVL((max(To_NUMBER(GOBQSTN.GOBQSTN_ID))+1),1) as questionId from GOBQSTN"
             this.conn.eachRow(questionidSql) {trow ->
                 this.questionId = trow.questionId

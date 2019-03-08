@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<SHRDGDH_DATA>
+    <SHRDGDH>
+        <BANNERID>HOSJ00002</BANNERID>
+        <SHRDGDH_DGMR_SEQ_NO>1</SHRDGDH_DGMR_SEQ_NO>
+        <SHRDGDH_HOND_CODE>D</SHRDGDH_HOND_CODE>
+        <SHRDGDH_TRANSC_PRT_IND>Y</SHRDGDH_TRANSC_PRT_IND>
+        <SHRDGDH_DATA_ORIGIN>GRAILS</SHRDGDH_DATA_ORIGIN>
+        <SHRDGDH_ACTIVITY_DATE>02092002</SHRDGDH_ACTIVITY_DATE>
+    </SHRDGDH>
+
+    <SHRDGDH>
+        <BANNERID>HOSJ00003</BANNERID>
+        <SHRDGDH_DGMR_SEQ_NO>1</SHRDGDH_DGMR_SEQ_NO>
+        <SHRDGDH_HOND_CODE>E</SHRDGDH_HOND_CODE>
+        <SHRDGDH_TRANSC_PRT_IND>Y</SHRDGDH_TRANSC_PRT_IND>
+        <SHRDGDH_DATA_ORIGIN>GRAILS</SHRDGDH_DATA_ORIGIN>
+        <SHRDGDH_ACTIVITY_DATE>02092002</SHRDGDH_ACTIVITY_DATE>
+    </SHRDGDH>
+
+
+</SHRDGDH_DATA>

@@ -496,6 +496,8 @@ public class EmployeePersonIDDML {
         deleteData("NBRJFTE", "delete from nbrjfte where nbrjfte_pidm = ?")
         deleteData("NBRWKSH", "delete from nbrwksh where nbrwksh_pidm = ?")
         deleteData("NBBWKSH", "delete from nbbwksh where nbbwksh_pidm = ?")
+        deleteData("NBRRJQE", "delete from nbrrjqe where nbrrjqe_pidm = ?")
+        deleteData("NBRBJQE", "delete from nbrbjqe where nbrbjqe_pidm = ?")
         deleteData("NBRJLBD", "delete from nbrjlbd where nbrjlbd_pidm = ?")
         deleteData("NBREARN", "delete from nbrearn where nbrearn_pidm = ?")
         deleteData("NBRJOBS", "delete from nbrjobs where nbrjobs_pidm = ?")

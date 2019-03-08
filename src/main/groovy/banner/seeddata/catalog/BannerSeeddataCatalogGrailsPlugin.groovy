@@ -33,7 +33,7 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
     def title = "BannerSeedData Plugin"
     def description = '''This plugin is BannerSeedDataCatalog.'''//.stripMargin()  // TODO Enable this once we adopt Groovy 1.7.3
 
-    def documentation = "http://sungardhe.com/development/horizon/plugins/banner-seedata-catalog"
+    def documentation = "http://grails.org/plugin/banner-seeddata-catalog"
 	
     def profiles = ['web']
 
