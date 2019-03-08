@@ -16,11 +16,8 @@
 // Map [ environment variable or -D command line argument name : file path ]
 
 grails.config.locations = [
-        BANNER_APP_CONFIG:        			"banner_configuration.groovy",
-        BANNER_SEEDDATA_CATALOG_CONFIG: 	"BannerSeeddataCatalog_configuration.groovy",
-		customRepresentationConfig:     	"CustomRepresentationConfig.groovy",
-		releaseInfo:                    	"release_info.groovy"		
-]
+        BANNER_APP_CONFIG:        			"banner_configuration.groovy"
+ ]
 
 
 // environment specific settings for datasource

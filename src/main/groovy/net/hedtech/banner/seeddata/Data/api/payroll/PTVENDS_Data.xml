@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<PTVENDS_DATA>
+    <PTVENDS>
+        <PTVENDS_CODE>AM</PTVENDS_CODE>
+        <PTVENDS_DESC>American Medical Association</PTVENDS_DESC>
+        <PTVENDS_ACTIVITY_DATE>02092002</PTVENDS_ACTIVITY_DATE>
+        <PTVENDS_DATA_ORIGIN>GRAILS</PTVENDS_DATA_ORIGIN>
+    </PTVENDS>
+    <PTVENDS>
+        <PTVENDS_CODE>GA</PTVENDS_CODE>
+        <PTVENDS_DESC>General Accounting Board</PTVENDS_DESC>
+        <PTVENDS_ACTIVITY_DATE>02092002</PTVENDS_ACTIVITY_DATE>
+        <PTVENDS_DATA_ORIGIN>GRAILS</PTVENDS_DATA_ORIGIN>
+    </PTVENDS>
+    <PTVENDS>
+        <PTVENDS_CODE>RC</PTVENDS_CODE>
+        <PTVENDS_DESC>American Red Cross</PTVENDS_DESC>
+        <PTVENDS_ACTIVITY_DATE>02092002</PTVENDS_ACTIVITY_DATE>
+        <PTVENDS_DATA_ORIGIN>GRAILS</PTVENDS_DATA_ORIGIN>
+    </PTVENDS>
+    <PTVENDS>
+        <PTVENDS_CODE>PA</PTVENDS_CODE>
+        <PTVENDS_DESC>Pennsylvania Education Assoc</PTVENDS_DESC>
+        <PTVENDS_ACTIVITY_DATE>02092002</PTVENDS_ACTIVITY_DATE>
+        <PTVENDS_DATA_ORIGIN>GRAILS</PTVENDS_DATA_ORIGIN>
+    </PTVENDS>
+</PTVENDS_DATA>

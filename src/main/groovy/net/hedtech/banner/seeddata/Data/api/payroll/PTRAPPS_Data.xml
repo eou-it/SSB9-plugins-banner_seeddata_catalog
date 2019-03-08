@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<PTRAPPS_DATA>
+    <PTRAPPS>
+        <PTRAPPS_CODE>OA</PTRAPPS_CODE>
+        <PTRAPPS_DESC>Offer Accepted</PTRAPPS_DESC>
+        <PTRAPPS_DISPOSITION_IND>O</PTRAPPS_DISPOSITION_IND>
+        <PTRAPPS_ACTIVITY_DATE>02092002</PTRAPPS_ACTIVITY_DATE>
+        <PTRAPPS_DATA_ORIGIN>GRAILS</PTRAPPS_DATA_ORIGIN>
+    </PTRAPPS>
+    <PTRAPPS>
+        <PTRAPPS_CODE>OP</PTRAPPS_CODE>
+        <PTRAPPS_DESC>Offer Pending</PTRAPPS_DESC>
+        <PTRAPPS_DISPOSITION_IND>P</PTRAPPS_DISPOSITION_IND>
+        <PTRAPPS_ACTIVITY_DATE>02092002</PTRAPPS_ACTIVITY_DATE>
+        <PTRAPPS_DATA_ORIGIN>GRAILS</PTRAPPS_DATA_ORIGIN>
+    </PTRAPPS>
+    <PTRAPPS>
+        <PTRAPPS_CODE>QR</PTRAPPS_CODE>
+        <PTRAPPS_DESC>Qualified Referred</PTRAPPS_DESC>
+        <PTRAPPS_DISPOSITION_IND>Q</PTRAPPS_DISPOSITION_IND>
+        <PTRAPPS_ACTIVITY_DATE>02092002</PTRAPPS_ACTIVITY_DATE>
+        <PTRAPPS_DATA_ORIGIN>GRAILS</PTRAPPS_DATA_ORIGIN>
+    </PTRAPPS>
+</PTRAPPS_DATA>

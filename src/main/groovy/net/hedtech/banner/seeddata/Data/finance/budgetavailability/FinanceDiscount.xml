@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FTVDISC_DETAIL>
+    <FTVDISC>
+        <FTVDISC_CODE>01</FTVDISC_CODE>
+        <FTVDISC_EFF_DATE>01-OCT-88</FTVDISC_EFF_DATE>
+        <FTVDISC_ACTIVITY_DATE>24-OCT-89</FTVDISC_ACTIVITY_DATE>
+        <FTVDISC_DESC>10 Net 30</FTVDISC_DESC>
+        <FTVDISC_DAYS>10</FTVDISC_DAYS>
+        <FTVDISC_NET_DAYS>30</FTVDISC_NET_DAYS>
+        <FTVDISC_PCT>10</FTVDISC_PCT>
+        <FTVDISC_SURROGATE_ID>1</FTVDISC_SURROGATE_ID>
+    </FTVDISC>
+    <FTVDISC>
+        <FTVDISC_CODE>03</FTVDISC_CODE>
+        <FTVDISC_EFF_DATE>01-OCT-88</FTVDISC_EFF_DATE>
+        <FTVDISC_ACTIVITY_DATE>24-OCT-89</FTVDISC_ACTIVITY_DATE>
+        <FTVDISC_DESC>2% 10 Days, Net 30</FTVDISC_DESC>
+        <FTVDISC_DAYS>10</FTVDISC_DAYS>
+        <FTVDISC_NET_DAYS>30</FTVDISC_NET_DAYS>
+        <FTVDISC_PCT>2</FTVDISC_PCT>
+        <FTVDISC_SURROGATE_ID>3</FTVDISC_SURROGATE_ID>
+    </FTVDISC>
+</FTVDISC_DETAIL>

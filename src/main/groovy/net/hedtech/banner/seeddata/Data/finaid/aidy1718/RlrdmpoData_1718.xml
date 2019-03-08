@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RLRDMPO_DATA>
+    <RLRDMPO>
+        <RLRDMPO_AIDY_CODE>1718</RLRDMPO_AIDY_CODE>
+        <RLRDMPO_MPN_TYPE>G</RLRDMPO_MPN_TYPE>
+        <RLRDMPO_CREATE_REQ_OPTION>N</RLRDMPO_CREATE_REQ_OPTION>
+        <RLRDMPO_DISPLAY_PN_IND>Y</RLRDMPO_DISPLAY_PN_IND>
+    </RLRDMPO>
+    <RLRDMPO>
+        <RLRDMPO_AIDY_CODE>1718</RLRDMPO_AIDY_CODE>
+        <RLRDMPO_MPN_TYPE>P</RLRDMPO_MPN_TYPE>
+        <RLRDMPO_CREATE_REQ_OPTION>N</RLRDMPO_CREATE_REQ_OPTION>
+        <RLRDMPO_DISPLAY_PN_IND>Y</RLRDMPO_DISPLAY_PN_IND>
+    </RLRDMPO>
+    <RLRDMPO>
+        <RLRDMPO_AIDY_CODE>1718</RLRDMPO_AIDY_CODE>
+        <RLRDMPO_MPN_TYPE>S</RLRDMPO_MPN_TYPE>
+        <RLRDMPO_CREATE_REQ_OPTION>A</RLRDMPO_CREATE_REQ_OPTION>
+        <RLRDMPO_DISPLAY_PN_IND>Y</RLRDMPO_DISPLAY_PN_IND>
+    </RLRDMPO>
+</RLRDMPO_DATA>

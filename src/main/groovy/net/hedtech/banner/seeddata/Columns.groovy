@@ -48,6 +48,7 @@ public class Columns {
 
     def dataFoundInXml = { columnName ->
         if (connectInfo.saveStudentPidm && columnName =~ "PIDM") return true
+        if (connectInfo.saveStudentPidm && columnName =~ "PROXY_IDM") return true
         def dataFoundInValues = columnValues.find { it.column == columnName }
         if (!dataFoundInValues) {
             if (columnName =~ "ACTIVITY_DATE" ||
@@ -71,7 +72,7 @@ public class Columns {
         data.each { table ->
             table.children().each() { fields ->
                 def value
-                if ((this.tableName in ['GCBQURY','GCRQRYV','GCRCFLD','GCBTMPL']))
+                if ((this.tableName in ['GCBQURY','GCRQRYV','GCRCFLD','GCBTMPL', 'GORRSQL']))
                     value = fields.text()
                 else
                         value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '')

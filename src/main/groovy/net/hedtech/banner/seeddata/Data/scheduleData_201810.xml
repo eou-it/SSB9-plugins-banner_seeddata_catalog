@@ -631,6 +631,8 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
         <SSBSECT_REG_AUTH_ACTIVE_CDE>N</SSBSECT_REG_AUTH_ACTIVE_CDE>
     </SSBSECT>
     <!-- End section  1505 -->
+
+   <!--Also in ScheduleTerm201810.xml; must match -->
    <SOBTERM>
       <SOBTERM_TERM_CODE>201810</SOBTERM_TERM_CODE>
       <SOBTERM_CRN_ONEUP>1506</SOBTERM_CRN_ONEUP>

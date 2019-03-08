@@ -23,6 +23,8 @@ Copyright 2017 - 2018 Ellucian Company L.P. and its affiliates.
         <STVTERM_USER_ID>GRAILS</STVTERM_USER_ID>
         <STVTERM_DATA_ORIGIN>GRAILS</STVTERM_DATA_ORIGIN>
     </STVTERM>
+
+    <!--This SOBTERM 201410 record matches scheduleData_201410.xml, SelfServiceTermSeed.xml and AcademicHistoryScheduleData.xml -->
     <SOBTERM>
         <SOBTERM_TERM_CODE>201410</SOBTERM_TERM_CODE>
         <SOBTERM_CRN_ONEUP>20827</SOBTERM_CRN_ONEUP>
@@ -118,6 +120,7 @@ Copyright 2017 - 2018 Ellucian Company L.P. and its affiliates.
         <SOBTERM_ADMIN_DROP_CDE/>
         <SOBTERM_DROP_LAST_CLASS_CDE/>
     </SOBTERM>
+
     <SOBPTRM>
         <SOBPTRM_TERM_CODE>201410</SOBPTRM_TERM_CODE>
         <SOBPTRM_PTRM_CODE>0</SOBPTRM_PTRM_CODE>
