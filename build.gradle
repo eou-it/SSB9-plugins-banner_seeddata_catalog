@@ -56,6 +56,7 @@ dependencies {
 	compile files("lib/commons-pool-1.5.4.jar")
 	
 	// Added for BannerXE - Oracle jars - specified as physical path
+    // TODO - check version of ojdbc.jar
     compile files("lib/ojdbc6-11.2.0.1.0.jar")
     runtime files("lib/xdb6-11.2.0.4.jar")	
 }

@@ -17,7 +17,7 @@ target(seeddataJar: "The description of the script goes here!") {
     Ant.jar(destfile: "${basedir}/target/banner_seeddata_catalog.jar", basedir: "${basedir}/target/classes"){
         manifest {
             attribute( name: 'Main-Class', value: net.hedtech.banner.seeddata.SeedDataLoader )
-            attribute( name: 'Class-Path', value: 'lib/grails-core-2.5.0.jar lib/groovy-all-2.4.3.jar lib/ojdbc6.jar lib/commons-logging-1.0.4.jar lib/commons-lang-2.6.jar lib/grails-bootstrap-2.5.0.jar lib/xdb6-11.2.0.4.jar' )
+            attribute( name: 'Class-Path', value: 'lib/grails-core-2.5.0.jar lib/groovy-all-2.4.3.jar lib/ojdbc6-11.2.0.1.0.jar lib/commons-logging-1.0.4.jar lib/commons-lang-2.6.jar lib/grails-bootstrap-2.5.0.jar lib/xdb6-11.2.0.4.jar' )
         }
     }
     ant.copy( todir:"${basedir}/target/lib" ) {
