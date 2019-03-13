@@ -1147,8 +1147,8 @@ public class InputData {
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleXML201310.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleXML201320.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTerms.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTermsWithGroups.xml'
-            ]
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTermsWithGroups.xml'],
+            'structured-reg-across-terms-test'                                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTermsTestData.xml']
     ]
 
     def calbTargets = [
