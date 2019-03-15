@@ -86,6 +86,8 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20211.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20222.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201410Crn20441.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201310.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/scheduleData_201320.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleStructureData.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/ScrlevlData.xml'],
             'curriculumdefault'                : ['/src/groovy/net/hedtech/banner/seeddata/Data/SobctrlDefaultData.xml'],
@@ -412,7 +414,13 @@ public class InputData {
             'structured-reg'                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureHeader.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationStructureDetail.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationThree.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationThree.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationProgram21.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationProgram21Grp.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappProgram21AcrossTerms.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappProgram21GrpAcrossTerms.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappProgram21IntegrationAcrossTerms.xml'],
+                                                  //TODO KMH '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappProgram21GrpIntegrationAcrossTerms.xml'],
             'generalstudentcappreg'            : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/StvsubjData.xml'],
             'generalstudentcappreg01'          : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration01.xml',
@@ -1133,22 +1141,21 @@ public class InputData {
             'registrationDataBlockReg-reset'                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationDataBlockReg.xml'],
             'registration-history-reset'                                         : ['/src/groovy/net/hedtech/banner/seeddata/Data/RegistrationHistoryTestRefresh.xml'],
             'structured-reg-functional-data'                                     : ['/src/groovy/net/hedtech/banner/seeddata/Data/CappProgramSRPGMGroup.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml'],
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationTwo.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/CourseInformationDRAM.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationProgram21.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistrationProgram21Grp.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201310.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleData_201320.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappProgram21AcrossTerms.xml',
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappProgram21GrpAcrossTerms.xml'],
             //corrections made to integration data to keep it in sync with functional data are being added to a new target so that they can be run in Daily environment for review
             //as more corrections are made, those data files may be added to this target as needed
             'structured-reg-integration-data'                                    : ['/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration17.xml',
                                                                                     '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml'],
-            'structured-reg-across-terms'                                        : ['/src/groovy/net/hedtech/banner/seeddata/Data/CourseInformationDRAM.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ProgramAreaInformation.xml',
-                                                                                    //'/src/groovy/net/hedtech/banner/seeddata/Data/RuleInformation.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GroupInformation.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleXML201310.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/ScheduleXML201320.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTerms.xml',
-                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTermsWithGroups.xml'],
-            'structured-reg-across-terms-test'                                   : ['/src/groovy/net/hedtech/banner/seeddata/Data/StudentStructuredRegistrationAcrossTermsTestData.xml']
+                                                                                    '/src/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml']
+
     ]
 
     def calbTargets = [
