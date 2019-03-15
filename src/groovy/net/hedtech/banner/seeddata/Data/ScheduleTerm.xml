@@ -5824,6 +5824,7 @@ Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
         <SOBTERM_STRUCTURED_MODEL_IND>N</SOBTERM_STRUCTURED_MODEL_IND>
         <SOBTERM_PROJECTED_MODEL_IND>N</SOBTERM_PROJECTED_MODEL_IND>
     </SOBTERM>
+    <!--This SOBTERM record matches the one in ScheduleData_201310.xml which is also used by a selenium target which requires the SOBTERM data-->
     <SOBTERM>
         <SOBTERM_TERM_CODE>201310</SOBTERM_TERM_CODE>
         <SOBTERM_CRN_ONEUP>110</SOBTERM_CRN_ONEUP>
@@ -5919,6 +5920,7 @@ Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
         <SOBTERM_ADMIN_DROP_CDE/>
         <SOBTERM_DROP_LAST_CLASS_CDE/>
     </SOBTERM>
+    <!--This SOBTERM record matches the one in ScheduleData_201320.xml which is also used by a selenium target which requires the SOBTERM data-->
     <SOBTERM>
         <SOBTERM_TERM_CODE>201320</SOBTERM_TERM_CODE>
         <SOBTERM_CRN_ONEUP>510</SOBTERM_CRN_ONEUP>

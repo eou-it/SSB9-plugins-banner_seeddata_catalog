@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
 <!-- *****************************************************************************
-Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
+Copyright 2019 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
+<!-- Program information for Structured Registration validation across terms and academic history-->
 <PROGRAMAREADETAILS>
     <SMRPRLE>
         <SMRPRLE_PROGRAM>SRPGM21</SMRPRLE_PROGRAM>

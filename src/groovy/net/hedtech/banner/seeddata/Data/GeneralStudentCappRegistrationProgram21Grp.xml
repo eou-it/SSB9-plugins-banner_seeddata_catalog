@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <!-- *****************************************************************************
-Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
+Copyright 2019 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
+<!-- Program information for Structured Registration validation across terms and academic history of Areas set up with Groups -->
 <GROUPDETAILS>
-    <!-- Areas set up with Groups -->
     <SMRPRLE>
         <SMRPRLE_PROGRAM>SRPGM21-GRP</SMRPRLE_PROGRAM>
         <SMRPRLE_PROGRAM_DESC>Structured group reg pgm 25</SMRPRLE_PROGRAM_DESC>
