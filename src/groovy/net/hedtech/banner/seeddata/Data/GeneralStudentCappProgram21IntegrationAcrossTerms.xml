@@ -3015,6 +3015,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
+    <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    based on the pidm associated with the BANNERID.-->
+    <SHRTRCE>
+        <BANNERID>STRTSTA24</BANNERID>
+        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <DELETE>YES</DELETE>
+    </SHRTRCE>
     <SHRTRCE>
         <BANNERID>STRTSTA24</BANNERID>
         <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -3499,6 +3507,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
+    <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    based on the pidm associated with the BANNERID.-->
+    <SHRTRCE>
+        <BANNERID>STRTSTA25</BANNERID>
+        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <DELETE>YES</DELETE>
+    </SHRTRCE>
     <SHRTRCE>
         <BANNERID>STRTSTA25</BANNERID>
         <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -13688,6 +13704,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
+       <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       based on the pidm associated with the BANNERID.-->
+       <SHRTRCE>
+          <BANNERID>STRTSTA33</BANNERID>
+          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <DELETE>YES</DELETE>
+       </SHRTRCE>
        <SHRTRCE>
            <BANNERID>STRTSTA33</BANNERID>
            <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -14667,6 +14691,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
+       <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       based on the pidm associated with the BANNERID.-->
+       <SHRTRCE>
+           <BANNERID>STRTSTA34</BANNERID>
+          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <DELETE>YES</DELETE>
+       </SHRTRCE>
        <SHRTRCE>
            <BANNERID>STRTSTA34</BANNERID>
            <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -15646,6 +15678,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
+       <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       based on the pidm associated with the BANNERID.-->
+       <SHRTRCE>
+          <BANNERID>STRTSTA35</BANNERID>
+          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <DELETE>YES</DELETE>
+       </SHRTRCE>
        <SHRTRCE>
            <BANNERID>STRTSTA35</BANNERID>
            <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -16625,6 +16665,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
+       <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       based on the pidm associated with the BANNERID.-->
+       <SHRTRCE>
+          <BANNERID>STRTSTA36</BANNERID>
+          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <DELETE>YES</DELETE>
+       </SHRTRCE>
        <SHRTRCE>
            <BANNERID>STRTSTA36</BANNERID>
            <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -21379,6 +21427,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
+    <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    based on the pidm associated with the BANNERID.-->
+    <SHRTRCE>
+        <BANNERID>STRTSTA39</BANNERID>
+        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <DELETE>YES</DELETE>
+    </SHRTRCE>
     <SHRTRCE>
         <BANNERID>STRTSTA39</BANNERID>
         <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
@@ -22076,6 +22132,14 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_USER_ID>GRAILS</SHRTRCR_USER_ID>
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
+    <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
+    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    based on the pidm associated with the BANNERID.-->
+    <SHRTRCE>
+        <BANNERID>STRTSTA40</BANNERID>
+        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <DELETE>YES</DELETE>
+    </SHRTRCE>
     <SHRTRCE>
         <BANNERID>STRTSTA40</BANNERID>
         <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
