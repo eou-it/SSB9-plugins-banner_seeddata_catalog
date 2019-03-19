@@ -475,17 +475,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-<!--    <SFRAREG>
-        <BANNERID>STRTSTA22</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <DELETE>YES</DELETE>
-    </SFRAREG>
-    <SFRSTCR>
-        <BANNERID>STRTSTA22</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <DELETE>YES</DELETE>
-    </SFRSTCR>-->
     <SFRSTCR>
         <BANNERID>STRTSTA22</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -1703,17 +1692,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
- <!--   <SFRAREG>
-        <BANNERID>STRTSTA23</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <DELETE>YES</DELETE>
-    </SFRAREG>
-    <SFRSTCR>
-        <BANNERID>STRTSTA23</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <DELETE>YES</DELETE>
-    </SFRSTCR>-->
     <SFRSTCR>
         <BANNERID>STRTSTA23</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -3016,11 +2994,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
     <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
     based on the pidm associated with the BANNERID.-->
     <SHRTRCE>
         <BANNERID>STRTSTA24</BANNERID>
-        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
         <DELETE>YES</DELETE>
     </SHRTRCE>
     <SHRTRCE>
@@ -3098,48 +3076,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_CRSE_NUMB>161</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>Performance and Politics</SHRTRCE_CRSE_TITLE>
         <SHRTRCE_CREDIT_HOURS>2</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTA24</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTA24</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
         <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
         <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
         <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
@@ -3508,11 +3444,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
     <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
     based on the pidm associated with the BANNERID.-->
     <SHRTRCE>
         <BANNERID>STRTSTA25</BANNERID>
-        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
         <DELETE>YES</DELETE>
     </SHRTRCE>
     <SHRTRCE>
@@ -3590,48 +3526,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_CRSE_NUMB>161</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>Performance and Politics</SHRTRCE_CRSE_TITLE>
         <SHRTRCE_CREDIT_HOURS>2</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTA25</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTA25</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
         <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
         <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
         <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
@@ -3915,17 +3809,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA26</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA26</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA26</BANNERID>
            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -4738,17 +4621,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--  <SFRAREG>
-          <BANNERID>STRTSTA27</BANNERID>
-          <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA27</BANNERID>
-          <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>-->
       <SFRSTCR>
           <BANNERID>STRTSTA27</BANNERID>
           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -5325,7 +5197,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
           <GOBTPAC_SALT>GAQG7MWE</GOBTPAC_SALT>
           <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
       </GOBTPAC_RECORD>
-  
+
       <!-- STRTSTA28 Henry Structured-Reg-Int: One occurrence of the required Subj code in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA28</BANNERID>
@@ -5561,17 +5433,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--  <SFRAREG>
-          <BANNERID>STRTSTA28</BANNERID>
-          <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA28</BANNERID>
-          <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>-->
       <SFRSTCR>
           <BANNERID>STRTSTA28</BANNERID>
           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -6040,7 +5901,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
           <GOBTPAC_SALT>H6T2SVYO</GOBTPAC_SALT>
           <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
       </GOBTPAC_RECORD>
-  
+
       <!-- STRTSTA29 Ivan Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA29</BANNERID>
@@ -6299,27 +6160,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--  <SFRAREG>
-          <BANNERID>STRTSTA29</BANNERID>
-          <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA29</BANNERID>
-          <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>
-    <SFRAREG>
-        <BANNERID>STRTSTA29</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <DELETE>YES</DELETE>
-    </SFRAREG>
-    <SFRSTCR>
-        <BANNERID>STRTSTA29</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <DELETE>YES</DELETE>
-    </SFRSTCR>-->
     <SFRSTCR>
         <BANNERID>STRTSTA29</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -8011,27 +7851,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--  <SFRAREG>
-          <BANNERID>STRTSTA30</BANNERID>
-          <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA30</BANNERID>
-          <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>
-      <SFRAREG>
-          <BANNERID>STRTSTA30</BANNERID>
-          <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA30</BANNERID>
-          <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>-->
       <SFRSTCR>
           <BANNERID>STRTSTA30</BANNERID>
           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -9464,7 +9283,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
           <GOBTPAC_SALT>LQJIBYJ1</GOBTPAC_SALT>
           <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
       </GOBTPAC_RECORD>
-  
+
       <!-- STRTSTA31 Keith Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA31</BANNERID>
@@ -9723,27 +9542,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--    <SFRAREG>
-            <BANNERID>STRTSTA31</BANNERID>
-            <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRAREG>
-        <SFRSTCR>
-            <BANNERID>STRTSTA31</BANNERID>
-            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRSTCR>
-        <SFRAREG>
-            <BANNERID>STRTSTA31</BANNERID>
-            <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRAREG>
-        <SFRSTCR>
-            <BANNERID>STRTSTA31</BANNERID>
-            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRSTCR>-->
         <SFRSTCR>
             <BANNERID>STRTSTA31</BANNERID>
             <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -11176,8 +10974,8 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
             <GOBTPAC_SALT>X1WAE07K</GOBTPAC_SALT>
             <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
         </GOBTPAC_RECORD>
-    
-    
+
+
         <!-- STRTSTA32 Liam Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA32</BANNERID>
@@ -11436,27 +11234,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA32</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA32</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA32</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA32</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA32</BANNERID>
            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -12889,7 +12666,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>2YSSSFOQ</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA33 Maverick Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA33</BANNERID>
@@ -13125,27 +12902,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA33</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA33</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA33</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA33</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA33</BANNERID>
            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
@@ -13705,11 +13461,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
        <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
        based on the pidm associated with the BANNERID.-->
        <SHRTRCE>
           <BANNERID>STRTSTA33</BANNERID>
-          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
           <DELETE>YES</DELETE>
        </SHRTRCE>
        <SHRTRCE>
@@ -13804,48 +13560,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
            <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
            <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA33</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA33</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
            <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
            <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
            <SHRTRCE_CRSE_TITLE>Composition II</SHRTRCE_CRSE_TITLE>
@@ -13876,7 +13590,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>VO3TBXV2</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA34 Nelson Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA34</BANNERID>
@@ -14112,27 +13826,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA34</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA34</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA34</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA34</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA34</BANNERID>
            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
@@ -14692,11 +14385,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
        <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
        based on the pidm associated with the BANNERID.-->
        <SHRTRCE>
            <BANNERID>STRTSTA34</BANNERID>
-          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
           <DELETE>YES</DELETE>
        </SHRTRCE>
        <SHRTRCE>
@@ -14791,48 +14484,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
            <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
            <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA34</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA34</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
            <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
            <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
            <SHRTRCE_CRSE_TITLE>Composition II</SHRTRCE_CRSE_TITLE>
@@ -14863,7 +14514,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>09ZJLFFF</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA35 Omar Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA35</BANNERID>
@@ -15099,27 +14750,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA35</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA35</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA35</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA35</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA35</BANNERID>
            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
@@ -15679,11 +15309,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
        <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
        based on the pidm associated with the BANNERID.-->
        <SHRTRCE>
           <BANNERID>STRTSTA35</BANNERID>
-          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
           <DELETE>YES</DELETE>
        </SHRTRCE>
        <SHRTRCE>
@@ -15778,48 +15408,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
            <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
            <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA35</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA35</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
            <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
            <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
            <SHRTRCE_CRSE_TITLE>Composition II</SHRTRCE_CRSE_TITLE>
@@ -15850,7 +15438,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>7PD7W69G</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA36 Pedro Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA36</BANNERID>
@@ -16086,27 +15674,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA36</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA36</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA36</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA36</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA36</BANNERID>
            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
@@ -16666,11 +16233,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
        </SHRTRCR>
        <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-       Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+       The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
        based on the pidm associated with the BANNERID.-->
        <SHRTRCE>
           <BANNERID>STRTSTA36</BANNERID>
-          <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+          <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
           <DELETE>YES</DELETE>
        </SHRTRCE>
        <SHRTRCE>
@@ -16765,48 +16332,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
            <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
            <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA36</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-           <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-           <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-           <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-           <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-           <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-           <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-           <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-           <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-           <SHRTRCE_REPEAT_COURSE/>
-           <SHRTRCE_REPEAT_SYS/>
-           <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-           <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-       </SHRTRCE>
-       <SHRTRCE>
-           <BANNERID>STRTSTA36</BANNERID>
-           <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-           <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-           <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-           <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-           <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-           <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
            <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
            <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
            <SHRTRCE_CRSE_TITLE>Composition II</SHRTRCE_CRSE_TITLE>
@@ -16837,7 +16362,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>ZAICD6FH</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA37 Quenton Structured-Reg-Int: Two occurrences of the required Subj code in AH (institutional) each with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA37</BANNERID>
@@ -17073,27 +16598,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA37</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA37</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA37</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA37</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA37</BANNERID>
            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -18988,7 +18492,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>ENBMWF3Y</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA38 Ronald Structured-Reg-Int: Two occurrences of the required Subj code in AH (institutional) - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA38</BANNERID>
@@ -19224,27 +18728,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA38</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA38</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA38</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA38</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA38</BANNERID>
            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -21041,7 +20524,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
            <GOBTPAC_SALT>BVT0GN0A</GOBTPAC_SALT>
            <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
        </GOBTPAC_RECORD>
-   
+
        <!-- STRTSTA39 Stuart Structured-Reg-Int: Two occurrences of the required Subj code in AH (transfer) each with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA39</BANNERID>
@@ -21428,11 +20911,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
     <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
     based on the pidm associated with the BANNERID.-->
     <SHRTRCE>
         <BANNERID>STRTSTA39</BANNERID>
-        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
         <DELETE>YES</DELETE>
     </SHRTRCE>
     <SHRTRCE>
@@ -22133,11 +21616,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCR_DATA_ORIGIN>GRAILS</SHRTRCR_DATA_ORIGIN>
     </SHRTRCR>
     <!--Seed data will create duplicates of SHRTRCE, so we need to remove all records for student before inserting.
-    Although PIDM is being passed as 0, it is required so that the seed data loader will correctly remove records
+    The PIDM is being passed, because it is required so that the seed data loader will correctly remove records
     based on the pidm associated with the BANNERID.-->
     <SHRTRCE>
         <BANNERID>STRTSTA40</BANNERID>
-        <SHRTRCE_PIDM>0</SHRTRCE_PIDM>
+        <SHRTRCE_PIDM>31654</SHRTRCE_PIDM>
         <DELETE>YES</DELETE>
     </SHRTRCE>
     <SHRTRCE>
@@ -22710,27 +22193,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--    <SFRAREG>
-            <BANNERID>STRTSTA41</BANNERID>
-            <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRAREG>
-        <SFRSTCR>
-            <BANNERID>STRTSTA41</BANNERID>
-            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRSTCR>
-        <SFRAREG>
-            <BANNERID>STRTSTA41</BANNERID>
-            <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRAREG>
-        <SFRSTCR>
-            <BANNERID>STRTSTA41</BANNERID>
-            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRSTCR>-->
         <SFRSTCR>
             <BANNERID>STRTSTA41</BANNERID>
             <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -24090,7 +23552,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
             <GOBTPAC_SALT>XB5HUIDJ</GOBTPAC_SALT>
             <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
         </GOBTPAC_RECORD>
-    
+
         <!-- STRTSTA42 Victor Structured-Reg-Int: Two occurrences of the required Subj code in RE each with a failing grade (not rolled) -->
     <SPRIDEN>
         <BANNERID>STRTSTA42</BANNERID>
@@ -24349,27 +23811,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--  <SFRAREG>
-          <BANNERID>STRTSTA42</BANNERID>
-          <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA42</BANNERID>
-          <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>
-      <SFRAREG>
-          <BANNERID>STRTSTA42</BANNERID>
-          <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRAREG>
-      <SFRSTCR>
-          <BANNERID>STRTSTA42</BANNERID>
-          <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-          <DELETE>YES</DELETE>
-      </SFRSTCR>-->
       <SFRSTCR>
           <BANNERID>STRTSTA42</BANNERID>
           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -25729,7 +25170,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
           <GOBTPAC_SALT>L78CT9RN</GOBTPAC_SALT>
           <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
       </GOBTPAC_RECORD>
-  
+
       <!-- STRTSTA43 Wesley Structured-Reg-Int: Two occurrences of the required Subj code in RE - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA43</BANNERID>
@@ -25988,27 +25429,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--    <SFRAREG>
-            <BANNERID>STRTSTA43</BANNERID>
-            <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRAREG>
-        <SFRSTCR>
-            <BANNERID>STRTSTA43</BANNERID>
-            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRSTCR>
-        <SFRAREG>
-            <BANNERID>STRTSTA43</BANNERID>
-            <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRAREG>
-        <SFRSTCR>
-            <BANNERID>STRTSTA43</BANNERID>
-            <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-            <DELETE>YES</DELETE>
-        </SFRSTCR>-->
         <SFRSTCR>
             <BANNERID>STRTSTA43</BANNERID>
             <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
@@ -27368,7 +26788,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
             <GOBTPAC_SALT>GJ1Y4MBD</GOBTPAC_SALT>
             <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
         </GOBTPAC_RECORD>
-    
+
         <!-- STRTSTA44 Xavier Structured-Reg-Int: Two occurrences of the required Subj code in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTA44</BANNERID>
@@ -27627,27 +27047,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFBETRM_MAXH_SRCE_CDE>M</SFBETRM_MAXH_SRCE_CDE>
         <SFBETRM_USER_ID>GRAILS</SFBETRM_USER_ID>
     </SFBETRM>
-    <!--Remove registration data for term before creating seed records.-->
-    <!--   <SFRAREG>
-           <BANNERID>STRTSTA44</BANNERID>
-           <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA44</BANNERID>
-           <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>
-       <SFRAREG>
-           <BANNERID>STRTSTA44</BANNERID>
-           <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRAREG>
-       <SFRSTCR>
-           <BANNERID>STRTSTA44</BANNERID>
-           <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-           <DELETE>YES</DELETE>
-       </SFRSTCR>-->
        <SFRSTCR>
            <BANNERID>STRTSTA44</BANNERID>
            <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
