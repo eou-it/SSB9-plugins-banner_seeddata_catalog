@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 <!-- *****************************************************************************
-Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
+Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <TERM>
 <STVTERM>
@@ -792,7 +792,7 @@ Copyright 2010-2018 Ellucian Company L.P. and its affiliates.
  <!--This SOBTERM 201410 record matches ScheduleTerm201410.xml, scheduleData_201410.xml and and AcademicHistoryScheduleData.xml-->
 <SOBTERM>
   <SOBTERM_TERM_CODE>201410</SOBTERM_TERM_CODE>
-  <SOBTERM_CRN_ONEUP>20827</SOBTERM_CRN_ONEUP>
+  <SOBTERM_CRN_ONEUP>20828</SOBTERM_CRN_ONEUP>
   <SOBTERM_REG_ALLOWED>Y</SOBTERM_REG_ALLOWED>
   <SOBTERM_READM_REQ>201310</SOBTERM_READM_REQ>
   <SOBTERM_FEE_ASSESSMENT>Y</SOBTERM_FEE_ASSESSMENT>
