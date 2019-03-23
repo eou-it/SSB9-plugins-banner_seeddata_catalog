@@ -3,18 +3,18 @@
 Copyright 2019 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 
-<!-- Data file for students with to be used with Structured Registration Across Multiple Terms With Groups Integration Tests-->
+<!-- Data file for students with to be used with Structured Registration Across Multiple Terms With Groups for Integration Test -->
 
 <STUDENTDATA>
     <!--  ********************************************************************
       Students assigned to program SRPGM21-GRP which uses Areas with Groups
       ************************************************************************ -->
 
-    <!-- STRTSTG21 Alison SStructured-Reg-Int: No academic history nor registration -->
+    <!-- STRTSTG21 Alison Structured-Reg-Int: No academic history nor registration -->
     <SPRIDEN>
         <BANNERID>STRTSTG21</BANNERID>
         <SPRIDEN_ID>STRTSTG21</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Alison</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -240,11 +240,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG22 Brianna SStructured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade -->
+    <!-- STRTSTG22 Brianna Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG22</BANNERID>
         <SPRIDEN_ID>STRTSTG22</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Brianna</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -1395,11 +1395,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG23 Catherine SStructured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade -->
+    <!-- STRTSTG23 Catherine Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG23</BANNERID>
         <SPRIDEN_ID>STRTSTG23</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Catherine</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -2550,11 +2550,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG24 Debra SStructured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade -->
+    <!-- STRTSTG24 Debra Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG24</BANNERID>
         <SPRIDEN_ID>STRTSTG24</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Debra</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -3000,11 +3000,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG25 Ellen SStructured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade -->
+    <!-- STRTSTG25 Ellen Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG25</BANNERID>
         <SPRIDEN_ID>STRTSTG25</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Ellen</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -3450,11 +3450,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG26 Felicia SStructured-Reg-Int: One occurrence of the required Subj code in RE with a passing grade (not rolled) -->
+    <!-- STRTSTG26 Felicia Structured-Reg-Int: One occurrence of the required Subj code in RE with a passing grade (not rolled) -->
     <SPRIDEN>
         <BANNERID>STRTSTG26</BANNERID>
         <SPRIDEN_ID>STRTSTG26</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Felicia</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -3704,7 +3704,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -3769,7 +3769,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -3834,7 +3834,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -3899,7 +3899,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -3964,7 +3964,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -4262,11 +4262,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG27 Greta SStructured-Reg-Int: One occurrence of the required Subj code in RE with a failing grade (not rolled) -->
+    <!-- STRTSTG27 Greta Structured-Reg-Int: One occurrence of the required Subj code in RE with a failing grade (not rolled) -->
     <SPRIDEN>
         <BANNERID>STRTSTG27</BANNERID>
         <SPRIDEN_ID>STRTSTG27</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Greta</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -4516,7 +4516,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -4581,7 +4581,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -4646,7 +4646,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -4711,7 +4711,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -4776,7 +4776,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -5074,11 +5074,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG28 Hilda SStructured-Reg-Int: One occurrence of the required Subj code in RE with no grade -->
+    <!-- STRTSTG28 Hilda Structured-Reg-Int: One occurrence of the required Subj code in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG28</BANNERID>
         <SPRIDEN_ID>STRTSTG28</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Hilda</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -5328,7 +5328,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -5393,7 +5393,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -5458,7 +5458,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -5523,7 +5523,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -5588,7 +5588,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -5778,11 +5778,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG29 Irene SStructured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with a passing grade -->
+    <!-- STRTSTG29 Irene Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG29</BANNERID>
         <SPRIDEN_ID>STRTSTG29</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Irene</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -6380,7 +6380,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -6445,7 +6445,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -6510,7 +6510,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -6575,7 +6575,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -6640,7 +6640,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -7407,11 +7407,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG30 Jacqueline SStructured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with no grade -->
+    <!-- STRTSTG30 Jacqueline Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a failing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG30</BANNERID>
         <SPRIDEN_ID>STRTSTG30</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Jacqueline</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -8009,7 +8009,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -8074,7 +8074,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -8139,7 +8139,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -8204,7 +8204,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -8269,7 +8269,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -9036,11 +9036,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG31 Kathleen SStructured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with a failing grade -->
+    <!-- STRTSTG31 Kathleen Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG31</BANNERID>
         <SPRIDEN_ID>STRTSTG31</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Kathleen</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -9638,7 +9638,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -9703,7 +9703,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -9768,7 +9768,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -9833,7 +9833,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -9898,7 +9898,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -10665,11 +10665,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG32 Lauren SStructured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with no grade -->
+    <!-- STRTSTG32 Lauren Structured-Reg-Int: One occurrence of the required Subj code in AH (institutional) with a passing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG32</BANNERID>
         <SPRIDEN_ID>STRTSTG32</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Lauren</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -11267,7 +11267,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -11332,7 +11332,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -11397,7 +11397,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -11462,7 +11462,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -11527,7 +11527,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -12294,11 +12294,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG33 Melinda SStructured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with a passing grade -->
+    <!-- STRTSTG33 Melinda Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG33</BANNERID>
         <SPRIDEN_ID>STRTSTG33</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Melinda</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -12571,7 +12571,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -12636,7 +12636,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -12701,7 +12701,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -12766,7 +12766,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -12831,7 +12831,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -13274,11 +13274,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG34 Natalie SStructured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with no grade -->
+    <!-- STRTSTG34 Natalie Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a failing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG34</BANNERID>
         <SPRIDEN_ID>STRTSTG34</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Natalie</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -13528,7 +13528,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -13593,7 +13593,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -13658,7 +13658,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -13723,7 +13723,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -13788,7 +13788,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -14198,11 +14198,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG35 Olivia SStructured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with a failing grade -->
+    <!-- STRTSTG35 Olivia Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG35</BANNERID>
         <SPRIDEN_ID>STRTSTG35</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Olivia</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -14452,7 +14452,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -14517,7 +14517,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -14582,7 +14582,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -14647,7 +14647,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -14712,7 +14712,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -15122,11 +15122,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG36 Penny SStructured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with no grade -->
+    <!-- STRTSTG36 Penny Structured-Reg-Int: One occurrence of the required Subj code in AH (transfer) with a passing grade and one in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG36</BANNERID>
         <SPRIDEN_ID>STRTSTG36</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Penny</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -15376,7 +15376,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -15441,7 +15441,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -15506,7 +15506,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -15571,7 +15571,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -15636,7 +15636,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -16046,11 +16046,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG37 Quynne SStructured-Reg-Int: Two occurrences of the required Subj code in AH (institutional) each with a passing grade -->
+    <!-- STRTSTG37 Quynne Structured-Reg-Int: Two occurrences of the required Subj code in AH (institutional) each with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG37</BANNERID>
         <SPRIDEN_ID>STRTSTG37</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Quynne</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -16479,71 +16479,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG37</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>105</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>21</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>106</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>21</SFRSTCR_REG_SEQ>
@@ -16610,71 +16545,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG37</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>107</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>21</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>108</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>21</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
@@ -16808,29 +16678,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG37</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>105</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -16855,29 +16702,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG37</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>107</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>108</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -17147,7 +16971,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SHRTCKN>
         <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKN_TERM_CODE>201310</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>7</SHRTCKN_SEQ_NO>
+        <SHRTCKN_SEQ_NO>5</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>108</SHRTCKN_CRN>
         <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
         <SHRTCKN_CRSE_NUMB>102</SHRTCKN_CRSE_NUMB>
@@ -17274,38 +17098,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRTCKN>
     <SHRTCKN>
         <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKN_TERM_CODE>201310</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>4</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>105</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>DRAM</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>161</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>DRAM</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>Performance and Politics</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ>21</SHRTCKN_REG_SEQ>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-13</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-23</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS/>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
         <SHRTCKN_SEQ_NO>1</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>502</SHRTCKN_CRN>
@@ -17339,7 +17131,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SHRTCKN>
         <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKN_TERM_CODE>201310</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>5</SHRTCKN_SEQ_NO>
+        <SHRTCKN_SEQ_NO>4</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>106</SHRTCKN_CRN>
         <SHRTCKN_SUBJ_CODE>DRAM</SHRTCKN_SUBJ_CODE>
         <SHRTCKN_CRSE_NUMB>112</SHRTCKN_CRSE_NUMB>
@@ -17466,40 +17258,8 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRTCKN>
     <SHRTCKN>
         <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>5</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>506</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>DRAM</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>112</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>DRAM</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>History of American Theatre</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ/>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-10</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-24</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS>0</SHRTCKN_NUMBER_OF_EXTENSIONS>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKN_TERM_CODE>201310</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>6</SHRTCKN_SEQ_NO>
+        <SHRTCKN_SEQ_NO>4</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>107</SHRTCKN_CRN>
         <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
         <SHRTCKN_CRSE_NUMB>101</SHRTCKN_CRSE_NUMB>
@@ -17531,39 +17291,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SHRTCKN>
         <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>6</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>507</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>101</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>ENGL</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>Composition</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ/>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-10</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-24</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS>0</SHRTCKN_NUMBER_OF_EXTENSIONS>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>7</SHRTCKN_SEQ_NO>
+        <SHRTCKN_SEQ_NO>5</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>508</SHRTCKN_CRN>
         <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
         <SHRTCKN_CRSE_NUMB>102</SHRTCKN_CRSE_NUMB>
@@ -17699,48 +17427,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRTCKG>
     <SHRTCKG>
         <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKG_TERM_CODE>201310</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>6</SHRTCKG_TCKN_SEQ_NO>
-        <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
-        <SHRTCKG_FINAL_GRDE_SEQ_NO/>
-        <SHRTCKG_GRDE_CODE_FINAL>A</SHRTCKG_GRDE_CODE_FINAL>
-        <SHRTCKG_GMOD_CODE>S</SHRTCKG_GMOD_CODE>
-        <SHRTCKG_CREDIT_HOURS>3</SHRTCKG_CREDIT_HOURS>
-        <SHRTCKG_GCHG_CODE>OE</SHRTCKG_GCHG_CODE>
-        <SHRTCKG_INCOMPLETE_EXT_DATE/>
-        <SHRTCKG_FINAL_GRDE_CHG_DATE>26-FEB-19</SHRTCKG_FINAL_GRDE_CHG_DATE>
-        <SHRTCKG_FINAL_GRDE_CHG_USER>SAISUSR</SHRTCKG_FINAL_GRDE_CHG_USER>
-        <SHRTCKG_ACTIVITY_DATE>01-JAN-10</SHRTCKG_ACTIVITY_DATE>
-        <SHRTCKG_GCMT_CODE/>
-        <SHRTCKG_TERM_CODE_GRADE/>
-        <SHRTCKG_DATA_ORIGIN>GRAILS</SHRTCKG_DATA_ORIGIN>
-        <SHRTCKG_USER_ID>GRAILS</SHRTCKG_USER_ID>
-        <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
-        <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
-    </SHRTCKG>
-    <SHRTCKG>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKG_TERM_CODE>201310</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>7</SHRTCKG_TCKN_SEQ_NO>
-        <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
-        <SHRTCKG_FINAL_GRDE_SEQ_NO/>
-        <SHRTCKG_GRDE_CODE_FINAL>A</SHRTCKG_GRDE_CODE_FINAL>
-        <SHRTCKG_GMOD_CODE>S</SHRTCKG_GMOD_CODE>
-        <SHRTCKG_CREDIT_HOURS>3</SHRTCKG_CREDIT_HOURS>
-        <SHRTCKG_GCHG_CODE>OE</SHRTCKG_GCHG_CODE>
-        <SHRTCKG_INCOMPLETE_EXT_DATE/>
-        <SHRTCKG_FINAL_GRDE_CHG_DATE>26-FEB-19</SHRTCKG_FINAL_GRDE_CHG_DATE>
-        <SHRTCKG_FINAL_GRDE_CHG_USER>SAISUSR</SHRTCKG_FINAL_GRDE_CHG_USER>
-        <SHRTCKG_ACTIVITY_DATE>01-JAN-10</SHRTCKG_ACTIVITY_DATE>
-        <SHRTCKG_GCMT_CODE/>
-        <SHRTCKG_TERM_CODE_GRADE/>
-        <SHRTCKG_DATA_ORIGIN>GRAILS</SHRTCKG_DATA_ORIGIN>
-        <SHRTCKG_USER_ID>GRAILS</SHRTCKG_USER_ID>
-        <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
-        <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
-    </SHRTCKG>
-    <SHRTCKG>
-        <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKG_TERM_CODE>201320</SHRTCKG_TERM_CODE>
         <SHRTCKG_TCKN_SEQ_NO>1</SHRTCKG_TCKN_SEQ_NO>
         <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
@@ -17844,48 +17530,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
         <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
     </SHRTCKG>
-    <SHRTCKG>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKG_TERM_CODE>201320</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>6</SHRTCKG_TCKN_SEQ_NO>
-        <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
-        <SHRTCKG_FINAL_GRDE_SEQ_NO/>
-        <SHRTCKG_GRDE_CODE_FINAL>A</SHRTCKG_GRDE_CODE_FINAL>
-        <SHRTCKG_GMOD_CODE>S</SHRTCKG_GMOD_CODE>
-        <SHRTCKG_CREDIT_HOURS>3</SHRTCKG_CREDIT_HOURS>
-        <SHRTCKG_GCHG_CODE>OE</SHRTCKG_GCHG_CODE>
-        <SHRTCKG_INCOMPLETE_EXT_DATE/>
-        <SHRTCKG_FINAL_GRDE_CHG_DATE>27-FEB-19</SHRTCKG_FINAL_GRDE_CHG_DATE>
-        <SHRTCKG_FINAL_GRDE_CHG_USER>SAISUSR</SHRTCKG_FINAL_GRDE_CHG_USER>
-        <SHRTCKG_ACTIVITY_DATE>01-JAN-10</SHRTCKG_ACTIVITY_DATE>
-        <SHRTCKG_GCMT_CODE/>
-        <SHRTCKG_TERM_CODE_GRADE/>
-        <SHRTCKG_DATA_ORIGIN>GRAILS</SHRTCKG_DATA_ORIGIN>
-        <SHRTCKG_USER_ID>GRAILS</SHRTCKG_USER_ID>
-        <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
-        <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
-    </SHRTCKG>
-    <SHRTCKG>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKG_TERM_CODE>201320</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>7</SHRTCKG_TCKN_SEQ_NO>
-        <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
-        <SHRTCKG_FINAL_GRDE_SEQ_NO/>
-        <SHRTCKG_GRDE_CODE_FINAL>A</SHRTCKG_GRDE_CODE_FINAL>
-        <SHRTCKG_GMOD_CODE>S</SHRTCKG_GMOD_CODE>
-        <SHRTCKG_CREDIT_HOURS>3</SHRTCKG_CREDIT_HOURS>
-        <SHRTCKG_GCHG_CODE>OE</SHRTCKG_GCHG_CODE>
-        <SHRTCKG_INCOMPLETE_EXT_DATE/>
-        <SHRTCKG_FINAL_GRDE_CHG_DATE>27-FEB-19</SHRTCKG_FINAL_GRDE_CHG_DATE>
-        <SHRTCKG_FINAL_GRDE_CHG_USER>SAISUSR</SHRTCKG_FINAL_GRDE_CHG_USER>
-        <SHRTCKG_ACTIVITY_DATE>01-JAN-10</SHRTCKG_ACTIVITY_DATE>
-        <SHRTCKG_GCMT_CODE/>
-        <SHRTCKG_TERM_CODE_GRADE/>
-        <SHRTCKG_DATA_ORIGIN>GRAILS</SHRTCKG_DATA_ORIGIN>
-        <SHRTCKG_USER_ID>GRAILS</SHRTCKG_USER_ID>
-        <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
-        <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
-    </SHRTCKG>
     <SHRTCKL>
         <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKL_TERM_CODE>201310</SHRTCKL_TERM_CODE>
@@ -17938,26 +17582,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRTCKL>
     <SHRTCKL>
         <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKL_TERM_CODE>201310</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>6</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKL_TERM_CODE>201310</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>7</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
         <SHRTCKL_TCKN_SEQ_NO>1</SHRTCKL_TCKN_SEQ_NO>
         <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
@@ -18000,26 +17624,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG37</BANNERID>
         <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
         <SHRTCKL_TCKN_SEQ_NO>5</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>6</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG37</BANNERID>
-        <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>7</SHRTCKL_TCKN_SEQ_NO>
         <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
         <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
         <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
@@ -18078,11 +17682,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG38 Rebecca SStructured-Reg-Int: Two occurrences of the required Subj code in AH (institutional) - one with a passing grade and one with a failing grade -->
+    <!-- STRTSTG38 Rebecca Structured-Reg-Int: Two occurrences of the required Subj code in AH (institutional) - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG38</BANNERID>
         <SPRIDEN_ID>STRTSTG38</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Rebecca</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -18511,71 +18115,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG38</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>105</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>23</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>106</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>23</SFRSTCR_REG_SEQ>
@@ -18642,71 +18181,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG38</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>107</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>23</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>108</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>23</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
@@ -18840,29 +18314,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG38</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>105</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -18887,29 +18338,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG38</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>107</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>108</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -19178,38 +18606,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRLGPA>
     <SHRTCKN>
         <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKN_TERM_CODE>201310</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>7</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>108</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>102</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>ENGL</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>Composition II</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ>23</SHRTCKN_REG_SEQ>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-13</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-23</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS/>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
         <SHRTCKN_SEQ_NO>1</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>502</SHRTCKN_CRN>
@@ -19340,70 +18736,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
         <SHRTCKN_SEQ_NO>5</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>506</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>DRAM</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>112</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>DRAM</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>History of American Theatre</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ/>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-10</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-24</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS>0</SHRTCKN_NUMBER_OF_EXTENSIONS>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>6</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>507</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>101</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>ENGL</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>Composition</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ/>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-10</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-24</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS>0</SHRTCKN_NUMBER_OF_EXTENSIONS>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKN_TERM_CODE>201320</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>7</SHRTCKN_SEQ_NO>
         <SHRTCKN_CRN>508</SHRTCKN_CRN>
         <SHRTCKN_SUBJ_CODE>ENGL</SHRTCKN_SUBJ_CODE>
         <SHRTCKN_CRSE_NUMB>102</SHRTCKN_CRSE_NUMB>
@@ -19509,38 +18841,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTCKN_DIVS_CODE/>
         <SHRTCKN_SESS_CODE/>
         <SHRTCKN_CRSE_TITLE>Fundementals of Chemistry II</SHRTCKN_CRSE_TITLE>
-        <SHRTCKN_REG_SEQ>23</SHRTCKN_REG_SEQ>
-        <SHRTCKN_COURSE_COMMENT/>
-        <SHRTCKN_REPEAT_COURSE_IND/>
-        <SHRTCKN_ACTIVITY_DATE>01-JAN-10</SHRTCKN_ACTIVITY_DATE>
-        <SHRTCKN_PTRM_CODE>1</SHRTCKN_PTRM_CODE>
-        <SHRTCKN_SEQ_NUMB>0</SHRTCKN_SEQ_NUMB>
-        <SHRTCKN_PTRM_START_DATE>01-JAN-13</SHRTCKN_PTRM_START_DATE>
-        <SHRTCKN_PTRM_END_DATE>31-DEC-23</SHRTCKN_PTRM_END_DATE>
-        <SHRTCKN_CONT_HR/>
-        <SHRTCKN_SCHD_CODE>L</SHRTCKN_SCHD_CODE>
-        <SHRTCKN_REPEAT_SYS_IND/>
-        <SHRTCKN_REG_START_DATE/>
-        <SHRTCKN_REG_COMPLETION_DATE/>
-        <SHRTCKN_NUMBER_OF_EXTENSIONS/>
-        <SHRTCKN_LONG_COURSE_TITLE/>
-        <SHRTCKN_STSP_KEY_SEQUENCE/>
-        <SHRTCKN_USER_ID>GRAILS</SHRTCKN_USER_ID>
-        <SHRTCKN_DATA_ORIGIN>GRAILS</SHRTCKN_DATA_ORIGIN>
-    </SHRTCKN>
-    <SHRTCKN>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKN_TERM_CODE>201310</SHRTCKN_TERM_CODE>
-        <SHRTCKN_SEQ_NO>4</SHRTCKN_SEQ_NO>
-        <SHRTCKN_CRN>105</SHRTCKN_CRN>
-        <SHRTCKN_SUBJ_CODE>DRAM</SHRTCKN_SUBJ_CODE>
-        <SHRTCKN_CRSE_NUMB>161</SHRTCKN_CRSE_NUMB>
-        <SHRTCKN_COLL_CODE>AS</SHRTCKN_COLL_CODE>
-        <SHRTCKN_CAMP_CODE>M</SHRTCKN_CAMP_CODE>
-        <SHRTCKN_DEPT_CODE>DRAM</SHRTCKN_DEPT_CODE>
-        <SHRTCKN_DIVS_CODE/>
-        <SHRTCKN_SESS_CODE/>
-        <SHRTCKN_CRSE_TITLE>Performance and Politics</SHRTCKN_CRSE_TITLE>
         <SHRTCKN_REG_SEQ>23</SHRTCKN_REG_SEQ>
         <SHRTCKN_COURSE_COMMENT/>
         <SHRTCKN_REPEAT_COURSE_IND/>
@@ -19731,48 +19031,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRTCKG>
     <SHRTCKG>
         <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKG_TERM_CODE>201310</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>6</SHRTCKG_TCKN_SEQ_NO>
-        <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
-        <SHRTCKG_FINAL_GRDE_SEQ_NO/>
-        <SHRTCKG_GRDE_CODE_FINAL>A</SHRTCKG_GRDE_CODE_FINAL>
-        <SHRTCKG_GMOD_CODE>S</SHRTCKG_GMOD_CODE>
-        <SHRTCKG_CREDIT_HOURS>3</SHRTCKG_CREDIT_HOURS>
-        <SHRTCKG_GCHG_CODE>OE</SHRTCKG_GCHG_CODE>
-        <SHRTCKG_INCOMPLETE_EXT_DATE/>
-        <SHRTCKG_FINAL_GRDE_CHG_DATE>26-FEB-19</SHRTCKG_FINAL_GRDE_CHG_DATE>
-        <SHRTCKG_FINAL_GRDE_CHG_USER>SAISUSR</SHRTCKG_FINAL_GRDE_CHG_USER>
-        <SHRTCKG_ACTIVITY_DATE>01-JAN-10</SHRTCKG_ACTIVITY_DATE>
-        <SHRTCKG_GCMT_CODE/>
-        <SHRTCKG_TERM_CODE_GRADE/>
-        <SHRTCKG_DATA_ORIGIN>GRAILS</SHRTCKG_DATA_ORIGIN>
-        <SHRTCKG_USER_ID>GRAILS</SHRTCKG_USER_ID>
-        <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
-        <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
-    </SHRTCKG>
-    <SHRTCKG>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKG_TERM_CODE>201310</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>7</SHRTCKG_TCKN_SEQ_NO>
-        <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
-        <SHRTCKG_FINAL_GRDE_SEQ_NO/>
-        <SHRTCKG_GRDE_CODE_FINAL>A</SHRTCKG_GRDE_CODE_FINAL>
-        <SHRTCKG_GMOD_CODE>S</SHRTCKG_GMOD_CODE>
-        <SHRTCKG_CREDIT_HOURS>3</SHRTCKG_CREDIT_HOURS>
-        <SHRTCKG_GCHG_CODE>OE</SHRTCKG_GCHG_CODE>
-        <SHRTCKG_INCOMPLETE_EXT_DATE/>
-        <SHRTCKG_FINAL_GRDE_CHG_DATE>26-FEB-19</SHRTCKG_FINAL_GRDE_CHG_DATE>
-        <SHRTCKG_FINAL_GRDE_CHG_USER>SAISUSR</SHRTCKG_FINAL_GRDE_CHG_USER>
-        <SHRTCKG_ACTIVITY_DATE>01-JAN-10</SHRTCKG_ACTIVITY_DATE>
-        <SHRTCKG_GCMT_CODE/>
-        <SHRTCKG_TERM_CODE_GRADE/>
-        <SHRTCKG_DATA_ORIGIN>GRAILS</SHRTCKG_DATA_ORIGIN>
-        <SHRTCKG_USER_ID>GRAILS</SHRTCKG_USER_ID>
-        <SHRTCKG_HOURS_ATTEMPTED>3</SHRTCKG_HOURS_ATTEMPTED>
-        <SHRTCKG_GRDE_CODE_INCMP_FINAL/>
-    </SHRTCKG>
-    <SHRTCKG>
-        <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKG_TERM_CODE>201320</SHRTCKG_TERM_CODE>
         <SHRTCKG_TCKN_SEQ_NO>1</SHRTCKG_TCKN_SEQ_NO>
         <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
@@ -19879,7 +19137,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SHRTCKG>
         <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKG_TERM_CODE>201320</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>6</SHRTCKG_TCKN_SEQ_NO>
+        <SHRTCKG_TCKN_SEQ_NO>5</SHRTCKG_TCKN_SEQ_NO>
         <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
         <SHRTCKG_FINAL_GRDE_SEQ_NO/>
         <SHRTCKG_GRDE_CODE_FINAL>F</SHRTCKG_GRDE_CODE_FINAL>
@@ -19900,7 +19158,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SHRTCKG>
         <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKG_TERM_CODE>201320</SHRTCKG_TERM_CODE>
-        <SHRTCKG_TCKN_SEQ_NO>7</SHRTCKG_TCKN_SEQ_NO>
+        <SHRTCKG_TCKN_SEQ_NO>5</SHRTCKG_TCKN_SEQ_NO>
         <SHRTCKG_SEQ_NO>1</SHRTCKG_SEQ_NO>
         <SHRTCKG_FINAL_GRDE_SEQ_NO/>
         <SHRTCKG_GRDE_CODE_FINAL>F</SHRTCKG_GRDE_CODE_FINAL>
@@ -19970,26 +19228,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     </SHRTCKL>
     <SHRTCKL>
         <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKL_TERM_CODE>201310</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>6</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKL_TERM_CODE>201310</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>7</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
         <SHRTCKL_TCKN_SEQ_NO>1</SHRTCKL_TCKN_SEQ_NO>
         <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
@@ -20032,26 +19270,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG38</BANNERID>
         <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
         <SHRTCKL_TCKN_SEQ_NO>5</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>6</SHRTCKL_TCKN_SEQ_NO>
-        <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
-        <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
-        <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
-        <SHRTCKL_USER_ID>GRAILS</SHRTCKL_USER_ID>
-        <SHRTCKL_DATA_ORIGIN>GRAILS</SHRTCKL_DATA_ORIGIN>
-    </SHRTCKL>
-    <SHRTCKL>
-        <BANNERID>STRTSTG38</BANNERID>
-        <SHRTCKL_TERM_CODE>201320</SHRTCKL_TERM_CODE>
-        <SHRTCKL_TCKN_SEQ_NO>7</SHRTCKL_TCKN_SEQ_NO>
         <SHRTCKL_LEVL_CODE>UG</SHRTCKL_LEVL_CODE>
         <SHRTCKL_ACTIVITY_DATE>01-JAN-10</SHRTCKL_ACTIVITY_DATE>
         <SHRTCKL_PRIMARY_LEVL_IND>Y</SHRTCKL_PRIMARY_LEVL_IND>
@@ -20110,11 +19328,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG39 Samantha SStructured-Reg-Int: Two occurrences of the required Subj code in AH (transfer) each with a passing grade -->
+    <!-- STRTSTG39 Samantha Structured-Reg-Int: Two occurrences of the required Subj code in AH (transfer) each with a passing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG39</BANNERID>
         <SPRIDEN_ID>STRTSTG39</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Samantha</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -20575,27 +19793,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
         <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
         <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>161</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Performance and Politics</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>2</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG39</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
         <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
         <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
@@ -20619,27 +19816,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
         <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG39</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Composition II</SHRTRCE_CRSE_TITLE>
         <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
         <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
         <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
@@ -20742,48 +19918,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
         <SHRTRCE_TERM_CODE_EFF>201320</SHRTRCE_TERM_CODE_EFF>
         <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG39</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>2</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201320</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG39</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>2</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201320</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
         <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
         <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
@@ -20815,11 +19949,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG40 Tabitha SStructured-Reg-Int: Two occurrences of the required Subj code in AH (transfer) - one with a passing grade and one with a failing grade -->
+    <!-- STRTSTG40 Tabitha Structured-Reg-Int: Two occurrences of the required Subj code in AH (transfer) - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG40</BANNERID>
         <SPRIDEN_ID>STRTSTG40</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Tabitha</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -21280,27 +20414,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
         <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
         <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>161</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Performance and Politics</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>2</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG40</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
         <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
         <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
@@ -21324,27 +20437,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
         <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG40</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>1</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201310</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Composition II</SHRTRCE_CRSE_TITLE>
         <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
         <SHRTRCE_GRDE_CODE>A</SHRTRCE_GRDE_CODE>
         <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
@@ -21447,48 +20539,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
         <SHRTRCE_TERM_CODE_EFF>201320</SHRTRCE_TERM_CODE_EFF>
         <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>DRAM</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>112</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>History of American Theatre</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG40</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>2</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201320</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
-        <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
-        <SHRTRCE_CRSE_NUMB>101</SHRTRCE_CRSE_NUMB>
-        <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
-        <SHRTRCE_CREDIT_HOURS>3</SHRTRCE_CREDIT_HOURS>
-        <SHRTRCE_GRDE_CODE>F</SHRTRCE_GRDE_CODE>
-        <SHRTRCE_GMOD_CODE>S</SHRTRCE_GMOD_CODE>
-        <SHRTRCE_COUNT_IN_GPA_IND>Y</SHRTRCE_COUNT_IN_GPA_IND>
-        <SHRTRCE_ACTIVITY_DATE>01-JAN-10</SHRTRCE_ACTIVITY_DATE>
-        <SHRTRCE_REPEAT_COURSE/>
-        <SHRTRCE_REPEAT_SYS/>
-        <SHRTRCE_USER_ID>GRAILS</SHRTRCE_USER_ID>
-        <SHRTRCE_DATA_ORIGIN>GRAILS</SHRTRCE_DATA_ORIGIN>
-    </SHRTRCE>
-    <SHRTRCE>
-        <BANNERID>STRTSTG40</BANNERID>
-        <SHRTRCE_TRIT_SEQ_NO>1</SHRTRCE_TRIT_SEQ_NO>
-        <SHRTRCE_TRAM_SEQ_NO>2</SHRTRCE_TRAM_SEQ_NO>
-        <SHRTRCE_SEQ_NO>1</SHRTRCE_SEQ_NO>
-        <SHRTRCE_TRCR_SEQ_NO>1</SHRTRCE_TRCR_SEQ_NO>
-        <SHRTRCE_TERM_CODE_EFF>201320</SHRTRCE_TERM_CODE_EFF>
-        <SHRTRCE_LEVL_CODE>UG</SHRTRCE_LEVL_CODE>
         <SHRTRCE_SUBJ_CODE>ENGL</SHRTRCE_SUBJ_CODE>
         <SHRTRCE_CRSE_NUMB>102</SHRTRCE_CRSE_NUMB>
         <SHRTRCE_CRSE_TITLE>Composition</SHRTRCE_CRSE_TITLE>
@@ -21520,11 +20570,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG41 Ursula SStructured-Reg-Int: Two occurrences of the required Subj code in RE each with a passing grade (not rolled) -->
+    <!-- STRTSTG41 Ursula Structured-Reg-Int: Two occurrences of the required Subj code in RE each with a passing grade (not rolled) -->
     <SPRIDEN>
         <BANNERID>STRTSTG41</BANNERID>
         <SPRIDEN_ID>STRTSTG41</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Ursula</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -21976,71 +21026,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG41</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>105</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>25</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>106</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>25</SFRSTCR_REG_SEQ>
@@ -22107,71 +21092,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG41</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>107</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>25</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>108</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>25</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
@@ -22496,136 +21416,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG41</BANNERID>
         <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>506</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>18</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>507</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>18</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>508</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>18</SFRSTCR_REG_SEQ>
@@ -22760,29 +21550,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG41</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>105</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -22807,29 +21574,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG41</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>107</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>108</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -22944,52 +21688,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG41</BANNERID>
         <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>506</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-10</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-24</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>507</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-10</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-24</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG41</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>508</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -23050,11 +21748,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG42 Veronica SStructured-Reg-Int: Two occurrences of the required Subj code in RE each with a failing grade (not rolled) -->
+    <!-- STRTSTG42 Veronica Structured-Reg-Int: Two occurrences of the required Subj code in RE each with a failing grade (not rolled) -->
     <SPRIDEN>
         <BANNERID>STRTSTG42</BANNERID>
         <SPRIDEN_ID>STRTSTG42</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Veronica</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -23506,71 +22204,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG42</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>105</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>27</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>106</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>27</SFRSTCR_REG_SEQ>
@@ -23637,71 +22270,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG42</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>107</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>27</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>108</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>27</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
@@ -24026,136 +22594,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG42</BANNERID>
         <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>506</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>20</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>507</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>20</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>508</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>20</SFRSTCR_REG_SEQ>
@@ -24290,29 +22728,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG42</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>105</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -24337,29 +22752,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG42</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>107</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>108</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -24474,52 +22866,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG42</BANNERID>
         <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>506</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-10</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-24</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>507</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-10</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-24</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG42</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>508</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -24580,11 +22926,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG43 Wilma SStructured-Reg-Int: Two occurrences of the required Subj code in RE - one with a passing grade and one with a failing grade -->
+    <!-- STRTSTG43 Wilma Structured-Reg-Int: Two occurrences of the required Subj code in RE - one with a passing grade and one with a failing grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG43</BANNERID>
         <SPRIDEN_ID>STRTSTG43</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Wilma</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -25036,71 +23382,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG43</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>105</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>29</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>106</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>29</SFRSTCR_REG_SEQ>
@@ -25167,71 +23448,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG43</BANNERID>
         <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>107</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>29</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>A</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>108</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>29</SFRSTCR_REG_SEQ>
         <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
@@ -25556,136 +23772,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRSTCR>
         <BANNERID>STRTSTG43</BANNERID>
         <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>506</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>22</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>507</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>22</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE>F</SFRSTCR_GRDE_CODE>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
         <SFRSTCR_CRN>508</SFRSTCR_CRN>
         <SFRSTCR_CLASS_SORT_KEY/>
         <SFRSTCR_REG_SEQ>22</SFRSTCR_REG_SEQ>
@@ -25820,29 +23906,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG43</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>105</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -25867,29 +23930,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG43</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>107</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>108</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
@@ -26004,52 +24044,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG43</BANNERID>
         <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>506</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-10</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-24</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>507</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-10</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-24</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG43</BANNERID>
-        <SFRAREG_TERM_CODE>201320</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>508</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -26110,11 +24104,11 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <GOBTPAC_USER_ID>GRAILS</GOBTPAC_USER_ID>
     </GOBTPAC_RECORD>
 
-    <!-- STRTSTG44 Xena SStructured-Reg-Int: Two occurrences of the required Subj code in RE with no grade -->
+    <!-- STRTSTG44 Xena Structured-Reg-Int: Two occurrences of the required Subj code in RE with no grade -->
     <SPRIDEN>
         <BANNERID>STRTSTG44</BANNERID>
         <SPRIDEN_ID>STRTSTG44</SPRIDEN_ID>
-        <SPRIDEN_LAST_NAME>SStructured-Reg-Int</SPRIDEN_LAST_NAME>
+        <SPRIDEN_LAST_NAME>Structured-Reg-Int</SPRIDEN_LAST_NAME>
         <SPRIDEN_FIRST_NAME>Xena</SPRIDEN_FIRST_NAME>
         <SPRIDEN_MI/>
         <SPRIDEN_CHANGE_IND/>
@@ -26387,7 +24381,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26452,7 +24446,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26517,72 +24511,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG44</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>105</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>31</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE/>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26647,7 +24576,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26712,72 +24641,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG44</BANNERID>
-        <SFRSTCR_TERM_CODE>201310</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>108</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>31</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE/>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26842,7 +24706,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26907,7 +24771,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -26972,72 +24836,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG44</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>505</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>24</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>2</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>2</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>2</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>2</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>2</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE/>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -27102,7 +24901,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -27167,72 +24966,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
         <SFRSTCR_GRDE_CODE/>
         <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
-        <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
-        <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
-        <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
-        <SFRSTCR_PREQ_OVER>N</SFRSTCR_PREQ_OVER>
-        <SFRSTCR_TIME_OVER>N</SFRSTCR_TIME_OVER>
-        <SFRSTCR_CAPC_OVER>N</SFRSTCR_CAPC_OVER>
-        <SFRSTCR_LEVL_OVER>N</SFRSTCR_LEVL_OVER>
-        <SFRSTCR_COLL_OVER>N</SFRSTCR_COLL_OVER>
-        <SFRSTCR_MAJR_OVER>N</SFRSTCR_MAJR_OVER>
-        <SFRSTCR_CLAS_OVER>N</SFRSTCR_CLAS_OVER>
-        <SFRSTCR_APPR_OVER>N</SFRSTCR_APPR_OVER>
-        <SFRSTCR_APPR_RECEIVED_IND/>
-        <SFRSTCR_ADD_DATE>26-FEB-10</SFRSTCR_ADD_DATE>
-        <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
-        <SFRSTCR_LEVL_CODE>UG</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE>M</SFRSTCR_CAMP_CODE>
-        <SFRSTCR_RESERVED_KEY/>
-        <SFRSTCR_ATTEND_HR/>
-        <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
-        <SFRSTCR_RPTH_OVER>N</SFRSTCR_RPTH_OVER>
-        <SFRSTCR_TEST_OVER/>
-        <SFRSTCR_CAMP_OVER>N</SFRSTCR_CAMP_OVER>
-        <SFRSTCR_USER>SAISUSR</SFRSTCR_USER>
-        <SFRSTCR_DEGC_OVER>N</SFRSTCR_DEGC_OVER>
-        <SFRSTCR_PROG_OVER>N</SFRSTCR_PROG_OVER>
-        <SFRSTCR_LAST_ATTEND/>
-        <SFRSTCR_GCMT_CODE/>
-        <SFRSTCR_DATA_ORIGIN>GRAILS</SFRSTCR_DATA_ORIGIN>
-        <SFRSTCR_ASSESS_ACTIVITY_DATE>26-FEB-10</SFRSTCR_ASSESS_ACTIVITY_DATE>
-        <SFRSTCR_DEPT_OVER>N</SFRSTCR_DEPT_OVER>
-        <SFRSTCR_ATTS_OVER>N</SFRSTCR_ATTS_OVER>
-        <SFRSTCR_CHRT_OVER>N</SFRSTCR_CHRT_OVER>
-        <SFRSTCR_RMSG_CDE/>
-        <SFRSTCR_WL_PRIORITY/>
-        <SFRSTCR_WL_PRIORITY_ORIG/>
-        <SFRSTCR_GRDE_CODE_INCMP_FINAL/>
-        <SFRSTCR_INCOMPLETE_EXT_DATE/>
-        <SFRSTCR_MEXC_OVER>N</SFRSTCR_MEXC_OVER>
-        <SFRSTCR_STSP_KEY_SEQUENCE/>
-        <SFRSTCR_BRDH_SEQ_NUM/>
-        <SFRSTCR_BLCK_CODE/>
-        <SFRSTCR_STRH_SEQNO/>
-        <SFRSTCR_STRD_SEQNO/>
-        <SFRSTCR_USER_ID>GRAILS</SFRSTCR_USER_ID>
-    </SFRSTCR>
-    <SFRSTCR>
-        <BANNERID>STRTSTG44</BANNERID>
-        <SFRSTCR_TERM_CODE>201320</SFRSTCR_TERM_CODE>
-        <SFRSTCR_CRN>508</SFRSTCR_CRN>
-        <SFRSTCR_CLASS_SORT_KEY/>
-        <SFRSTCR_REG_SEQ>24</SFRSTCR_REG_SEQ>
-        <SFRSTCR_PTRM_CODE>1</SFRSTCR_PTRM_CODE>
-        <SFRSTCR_RSTS_CODE>RE</SFRSTCR_RSTS_CODE>
-        <SFRSTCR_RSTS_DATE>26-FEB-10</SFRSTCR_RSTS_DATE>
-        <SFRSTCR_ERROR_FLAG/>
-        <SFRSTCR_MESSAGE/>
-        <SFRSTCR_BILL_HR>3</SFRSTCR_BILL_HR>
-        <SFRSTCR_WAIV_HR>3</SFRSTCR_WAIV_HR>
-        <SFRSTCR_CREDIT_HR>3</SFRSTCR_CREDIT_HR>
-        <SFRSTCR_BILL_HR_HOLD>3</SFRSTCR_BILL_HR_HOLD>
-        <SFRSTCR_CREDIT_HR_HOLD>3</SFRSTCR_CREDIT_HR_HOLD>
-        <SFRSTCR_GMOD_CODE>S</SFRSTCR_GMOD_CODE>
-        <SFRSTCR_GRDE_CODE/>
-        <SFRSTCR_GRDE_CODE_MID/>
-        <SFRSTCR_GRDE_DATE>26-FEB-10</SFRSTCR_GRDE_DATE>
+        <SFRSTCR_GRDE_DATE/>
         <SFRSTCR_DUPL_OVER>N</SFRSTCR_DUPL_OVER>
         <SFRSTCR_LINK_OVER>N</SFRSTCR_LINK_OVER>
         <SFRSTCR_CORQ_OVER>N</SFRSTCR_CORQ_OVER>
@@ -27350,29 +25084,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
     <SFRAREG>
         <BANNERID>STRTSTG44</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>105</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG44</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>106</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
@@ -27397,29 +25108,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <BANNERID>STRTSTG44</BANNERID>
         <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
         <SFRAREG_CRN>107</SFRAREG_CRN>
-        <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
-        <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
-        <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
-        <SFRAREG_COMPLETION_DATE>31-DEC-23</SFRAREG_COMPLETION_DATE>
-        <SFRAREG_FEE_WAIVER_IND>N</SFRAREG_FEE_WAIVER_IND>
-        <SFRAREG_SAPR_OVERRIDE_IND>N</SFRAREG_SAPR_OVERRIDE_IND>
-        <SFRAREG_ACTIVITY_DATE>01-JAN-10</SFRAREG_ACTIVITY_DATE>
-        <SFRAREG_USER_ID>GRAILS</SFRAREG_USER_ID>
-        <SFRAREG_NUMBER_OF_UNITS/>
-        <SFRAREG_DUNT_CODE/>
-        <SFRAREG_DETL_CODE/>
-        <SFRAREG_AMOUNT/>
-        <SFRAREG_INSTRUCTOR_PIDM/>
-        <SFRAREG_TRAN_NUMBER/>
-        <SFRAREG_EFFECTIVE_DATE/>
-        <SFRAREG_COMMENTS/>
-        <SFRAREG_DATA_ORIGIN>GRAILS</SFRAREG_DATA_ORIGIN>
-        <SFRAREG_RSTS_DATE>26-FEB-10</SFRAREG_RSTS_DATE>
-    </SFRAREG>
-    <SFRAREG>
-        <BANNERID>STRTSTG44</BANNERID>
-        <SFRAREG_TERM_CODE>201310</SFRAREG_TERM_CODE>
-        <SFRAREG_CRN>108</SFRAREG_CRN>
         <SFRAREG_EXTENSION_NUMBER>0</SFRAREG_EXTENSION_NUMBER>
         <SFRAREG_RSTS_CODE>RE</SFRAREG_RSTS_CODE>
         <SFRAREG_START_DATE>01-JAN-13</SFRAREG_START_DATE>
