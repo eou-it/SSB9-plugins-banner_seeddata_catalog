@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2015-2018 Ellucian Company L.P. and its affiliates.
+Copyright 2015-2019 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 
 <CURRICRULE>
@@ -33,6 +33,9 @@ Copyright 2015-2018 Ellucian Company L.P. and its affiliates.
         <SOBSTRG_VERSION>0</SOBSTRG_VERSION>
         <SOBSTRG_USER_ID>GRAILS</SOBSTRG_USER_ID>
         <SOBSTRG_DATA_ORIGIN>GRAILS</SOBSTRG_DATA_ORIGIN>
+        <SOBSTRG_ACAD_HIST_CDE>N</SOBSTRG_ACAD_HIST_CDE>
+        <SOBSTRG_IN_PROG_IND>N</SOBSTRG_IN_PROG_IND>
+        <SOBSTRG_IN_PROG_GRDE_IND>N</SOBSTRG_IN_PROG_GRDE_IND>
     </SOBSTRG>
     <SOBSTRG>
         <SOBSTRG_TERM_CODE>201610</SOBSTRG_TERM_CODE>

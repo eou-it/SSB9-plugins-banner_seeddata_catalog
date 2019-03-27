@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright  2014 Ellucian Company L.P. and its affiliates.
+Copyright 2014 - 2019 Ellucian Company L.P. and its affiliates.
 ********************************************************************************* -->
 <CURRICRULE>
     <SOBSTRG>
@@ -19,6 +19,9 @@ Copyright  2014 Ellucian Company L.P. and its affiliates.
         <SOBSTRG_VERSION>0</SOBSTRG_VERSION>
         <SOBSTRG_USER_ID>MHOCKETT</SOBSTRG_USER_ID>
         <SOBSTRG_DATA_ORIGIN>Banner</SOBSTRG_DATA_ORIGIN>
+        <SOBSTRG_ACAD_HIST_CDE>N</SOBSTRG_ACAD_HIST_CDE>
+        <SOBSTRG_IN_PROG_IND>N</SOBSTRG_IN_PROG_IND>
+        <SOBSTRG_IN_PROG_GRDE_IND>N</SOBSTRG_IN_PROG_GRDE_IND>
     </SOBSTRG>
     <SOBSTRG>
         <SOBSTRG_TERM_CODE>201610</SOBSTRG_TERM_CODE>

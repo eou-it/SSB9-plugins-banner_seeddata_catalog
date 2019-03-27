@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
+Copyright 2016-2019 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <GTVICSNDATA>
 
@@ -331,6 +331,16 @@ Copyright 2016-2018 Ellucian Company L.P. and its affiliates.
     <GORICCR>
         <GORICCR_SQPR_CODE>HEDM</GORICCR_SQPR_CODE>
         <GORICCR_ICSN_CODE>INTGRTN.CE.STU.TYPE.DEFAULT</GORICCR_ICSN_CODE>
+        <DELETE>YES</DELETE>
+    </GORICCR>
+    <GORICCR>
+        <GORICCR_SQPR_CODE>HEDM</GORICCR_SQPR_CODE>
+        <GORICCR_ICSN_CODE>MARITALSTATUS.MARITALCATEGORY</GORICCR_ICSN_CODE>
+        <DELETE>YES</DELETE>
+    </GORICCR>
+    <GORICCR>
+        <GORICCR_SQPR_CODE>HEDM</GORICCR_SQPR_CODE>
+        <GORICCR_ICSN_CODE>PERSON.ADDRESSES.POSTAL.CODE</GORICCR_ICSN_CODE>
         <DELETE>YES</DELETE>
     </GORICCR>
 
