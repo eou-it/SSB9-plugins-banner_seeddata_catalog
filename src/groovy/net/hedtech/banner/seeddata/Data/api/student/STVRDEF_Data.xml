@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+
+<STVRDEF_DATA>
+    <STVRDEF>
+        <BANNERID>STUAFR302</BANNERID>
+        <STVRDEF_CODE>LAB</STVRDEF_CODE>
+        <STVRDEF_DESC>Laboratory</STVRDEF_DESC>
+        <STVRDEF_ACTIVITY_DATE>01-01-10</STVRDEF_ACTIVITY_DATE>
+        <STVRDEF_AUTO_SCHEDULER_IND>N</STVRDEF_AUTO_SCHEDULER_IND>
+        <STVRDEF_SURROGATE_ID>2</STVRDEF_SURROGATE_ID>
+        <STVRDEF_VERSION>2</STVRDEF_VERSION>
+        <STVRDEF_USER_ID>GRAILS</STVRDEF_USER_ID>
+        <STVRDEF_DATA_ORIGIN>GRAILS</STVRDEF_DATA_ORIGIN>
+    </STVRDEF>
+</STVRDEF_DATA>
