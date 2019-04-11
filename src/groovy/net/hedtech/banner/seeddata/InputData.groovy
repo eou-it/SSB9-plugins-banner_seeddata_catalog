@@ -1005,7 +1005,9 @@ public class InputData {
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/RPRAWRD_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/RORTPRD_Data.xml',
                                                   '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/RORSTAT_Data.xml',
-                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRTCKG_Data.xml'],
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRTCKG_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/STVRDEF_Data.xml',
+                                                  '/src/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRPREQ_Data.xml'],
             'proxy-roles'                      : ['/src/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
     ]
     /**
