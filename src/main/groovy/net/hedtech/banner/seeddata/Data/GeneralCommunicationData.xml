@@ -188,7 +188,7 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
         <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Female Population</GCBQURY_DESCRIPTION>
-        <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = ApostropheCHARApostropheCHARFApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+        <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = ApostropheCHARFApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>0</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -205,7 +205,7 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
         <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Male Population</GCBQURY_DESCRIPTION>
-        <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = ApostropheCHARApostropheCHARMApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+        <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden, spbpers WHERE spriden_change_ind IS NULL AND spriden_pidm = spbpers_pidm AND spbpers_sex = ApostropheCHARMApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>0</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -222,7 +222,7 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
         <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Population with first name Mikey</GCBQURY_DESCRIPTION>
-        <GCBQURY_QUERY_STRING>select spriden_pidm from spriden where spriden_first_name = ApostropheCHARApostropheCHARMickeyApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+        <GCBQURY_QUERY_STRING>select spriden_pidm from spriden where spriden_first_name = ApostropheCHARMickeyApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>0</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -240,8 +240,8 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_ACTIVITY_DATE>08-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Students assigned to a specific class</GCBQURY_DESCRIPTION>
         <GCBQURY_QUERY_STRING>select sfrstcr_pidm from sfrstcr
-            where sfrstcr_term_code = ApostropheCHARApostropheCHAR500001ApostropheCHARApostropheCHAR
-            and sfrstcr_crn = ApostropheCHARApostropheCHAR5001ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+            where sfrstcr_term_code = ApostropheCHAR500001ApostropheCHAR
+            and sfrstcr_crn = ApostropheCHAR5001ApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>6</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -259,8 +259,8 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_ACTIVITY_DATE>08-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Students assigned to CRN 10020</GCBQURY_DESCRIPTION>
         <GCBQURY_QUERY_STRING>select sfrstcr_pidm from sfrstcr
-            where sfrstcr_term_code = ApostropheCHARApostropheCHAR200910ApostropheCHARApostropheCHAR
-            and sfrstcr_crn = ApostropheCHARApostropheCHAR10020ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+            where sfrstcr_term_code = ApostropheCHAR200910ApostropheCHAR
+            and sfrstcr_crn = ApostropheCHAR10020ApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>0</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -278,8 +278,8 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_ACTIVITY_DATE>08-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Students assigned to CRN 10012</GCBQURY_DESCRIPTION>
         <GCBQURY_QUERY_STRING>select sfrstcr_pidm from sfrstcr
-            where sfrstcr_term_code = ApostropheCHARApostropheCHAR200899ApostropheCHARApostropheCHAR
-            and sfrstcr_crn = ApostropheCHARApostropheCHAR10012ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+            where sfrstcr_term_code = ApostropheCHAR200899ApostropheCHAR
+            and sfrstcr_crn = ApostropheCHAR10012ApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>1</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -292,11 +292,12 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_FOLDER_ID>61</GCBQURY_FOLDER_ID>
         <GCBQURY_CREATOR_ID>BCMADMIN</GCBQURY_CREATOR_ID>
         <GCBQURY_CREATE_DATE>05-DEC-14</GCBQURY_CREATE_DATE>
+        <GCBQURY_CHANGED_IND>Y</GCBQURY_CHANGED_IND>
         <GCBQURY_VALID_IND>Y</GCBQURY_VALID_IND>
         <GCBQURY_USER_ID>BCMADMIN</GCBQURY_USER_ID>
         <GCBQURY_ACTIVITY_DATE>05-DEC-14</GCBQURY_ACTIVITY_DATE>
         <GCBQURY_DESCRIPTION>Population with last name like Smi*</GCBQURY_DESCRIPTION>
-        <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden WHERE spriden_last_name LIKE ApostropheCHARApostropheCHARSmi%ApostropheCHARApostropheCHAR</GCBQURY_QUERY_STRING>
+        <GCBQURY_QUERY_STRING>SELECT spriden_pidm FROM spriden WHERE spriden_last_name LIKE ApostropheCHARSmi%ApostropheCHAR</GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>0</GCBQURY_VERSION>
         <GCBQURY_DATA_ORIGIN>Banner</GCBQURY_DATA_ORIGIN>
         <GCBQURY_VPDI_CODE/>
@@ -315,7 +316,7 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBQURY_DESCRIPTION>Test Automation Sample Query</GCBQURY_DESCRIPTION>
         <GCBQURY_QUERY_STRING>Select spriden_pidm from spriden
             where spriden_change_ind is null
-            and spriden_id like ApostropheCHARApostropheCHARA%0000%ApostropheCHARApostropheCHAR
+            and spriden_id like ApostropheCHARA%0000%ApostropheCHAR
             and rownum LesserThanCHAR 11
         </GCBQURY_QUERY_STRING>
         <GCBQURY_VERSION>01</GCBQURY_VERSION>
