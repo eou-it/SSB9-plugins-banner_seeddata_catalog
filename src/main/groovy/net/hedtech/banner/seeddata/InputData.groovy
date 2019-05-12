@@ -1184,6 +1184,9 @@ public class InputData {
     def calbTargets = [
             'student': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calb/student/CalbstuMisProgramData.xml']]
 
+    def bcmTargets = [
+            'bcm' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
+    ]
 
     def validateTable(Sql conn) {
         String ownerSql = """select owner from all_tables where table_name = ?"""

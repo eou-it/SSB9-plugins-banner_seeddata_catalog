@@ -28,8 +28,7 @@ class SeedDataCommand implements GrailsApplicationCommand {
 
         return true
     }
-	
-	
+
 	def executeSeedDataLoader() {
 	
 		//Get the base directory and plugin directory path
@@ -59,13 +58,25 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		if (seedDataTargets.size() > 0)
 			inputData.targets << seedDataTargets
 
-		
+		def argsList = ["ALL","BCM"]
+
 		
 		/*** handle according to the arguments passed ***/	
 		if (args) {
-			if (args[0].toUpperCase() == "ALL") {
-				println "Execute ALL Seeddata"
-				inputData.targets.each {
+			def arg = args[0].toUpperCase()
+			def target
+
+			if (argsList.contains(arg)) {
+				println "Execute ${arg} Seeddata"
+				switch (arg) {
+					case "BCM":
+						target = inputData.bcmTargets
+						break;
+					default: //ALL
+						target = inputData.targets
+						break;
+				}
+				target.each {
 					def xmlFiles = it.value
 					xmlFiles.each {
 						//def xmlInputData = new net.hedtech.banner.seeddata.InputData([dataSource: dataSource])
