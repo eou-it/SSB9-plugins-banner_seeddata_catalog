@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!--***************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<PHRECFD_DATA>
+ <PHRECFD>
+  <PHRECFD_PHRECRT_ID>B-MN0216-HOPER0001</PHRECFD_PHRECRT_ID>
+  <PHRECFD_SURROGATE_ID/>
+  <PHRECFD_ID/>
+  <PHRECFD_FUND_CODE>EC2110</PHRECFD_FUND_CODE>
+  <PHRECFD_ORGN_CODE>ECO001</PHRECFD_ORGN_CODE>
+  <PHRECFD_GRNT_CODE>EC00001</PHRECFD_GRNT_CODE>
+ </PHRECFD>
+</PHRECFD_DATA>

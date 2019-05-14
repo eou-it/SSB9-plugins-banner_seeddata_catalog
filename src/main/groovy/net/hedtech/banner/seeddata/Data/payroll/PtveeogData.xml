@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PTVEEOG_DATA>
+    <PTVEEOG>
+        <PTVEEOG_EMPR_IND>H</PTVEEOG_EMPR_IND>
+        <PTVEEOG_CODE>1</PTVEEOG_CODE>
+        <PTVEEOG_DESC>9-10 Month Full Time Faculty</PTVEEOG_DESC>
+        <PTVEEOG_DATA_ORIGIN>SEED_DATA</PTVEEOG_DATA_ORIGIN>
+    </PTVEEOG>
+    <PTVEEOG>
+        <PTVEEOG_EMPR_IND>H</PTVEEOG_EMPR_IND>
+        <PTVEEOG_CODE>2</PTVEEOG_CODE>
+        <PTVEEOG_DESC>11-12 Month Full Time Faculty</PTVEEOG_DESC>
+        <PTVEEOG_DATA_ORIGIN>SEED_DATA</PTVEEOG_DATA_ORIGIN>
+    </PTVEEOG>
+    <PTVEEOG>
+        <PTVEEOG_EMPR_IND>H</PTVEEOG_EMPR_IND>
+        <PTVEEOG_CODE>3</PTVEEOG_CODE>
+        <PTVEEOG_DESC>Other Full Time Employees</PTVEEOG_DESC>
+        <PTVEEOG_DATA_ORIGIN>SEED_DATA</PTVEEOG_DATA_ORIGIN>
+    </PTVEEOG>
+    <PTVEEOG>
+        <PTVEEOG_EMPR_IND>H</PTVEEOG_EMPR_IND>
+        <PTVEEOG_CODE>4</PTVEEOG_CODE>
+        <PTVEEOG_DESC>Part Time Employees</PTVEEOG_DESC>
+        <PTVEEOG_DATA_ORIGIN>SEED_DATA</PTVEEOG_DATA_ORIGIN>
+    </PTVEEOG>
+    <PTVEEOG>
+        <PTVEEOG_EMPR_IND>H</PTVEEOG_EMPR_IND>
+        <PTVEEOG_CODE>5</PTVEEOG_CODE>
+        <PTVEEOG_DESC>9 Month Full Time Faculty</PTVEEOG_DESC>
+        <PTVEEOG_DATA_ORIGIN>SEED_DATA</PTVEEOG_DATA_ORIGIN>
+    </PTVEEOG>
+    <PTVEEOG>
+        <PTVEEOG_EMPR_IND>H</PTVEEOG_EMPR_IND>
+        <PTVEEOG_CODE>6</PTVEEOG_CODE>
+        <PTVEEOG_DESC>Unreported</PTVEEOG_DESC>
+        <PTVEEOG_DATA_ORIGIN>SEED_DATA</PTVEEOG_DATA_ORIGIN>
+    </PTVEEOG>
+</PTVEEOG_DATA>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<STVCOMFDATA>
+    <STVCOMF>
+        <STVCOMF_CODE>01</STVCOMF_CODE>
+        <STVCOMF_DESC>president</STVCOMF_DESC>
+        <STVCOMF_ACTIVITY_DATE>20-OCT-2014</STVCOMF_ACTIVITY_DATE>
+        <STVSUBJ_SURROGATE_ID/>
+        <STVSUBJ_VERSION/>
+        <STVSUBJ_USER_ID>GRAILS</STVSUBJ_USER_ID>
+        <STVSUBJ_DATA_ORIGIN>GRAILS</STVSUBJ_DATA_ORIGIN>
+        <STVSUBJ_VPDI_CODE/>
+    </STVCOMF>
+    <STVCOMF>
+        <STVCOMF_CODE>02</STVCOMF_CODE>
+        <STVCOMF_DESC>seceratary</STVCOMF_DESC>
+        <STVCOMF_ACTIVITY_DATE>10-NOV-2015</STVCOMF_ACTIVITY_DATE>
+        <STVSUBJ_SURROGATE_ID/>
+        <STVSUBJ_VERSION/>
+        <STVSUBJ_USER_ID>GRAILS</STVSUBJ_USER_ID>
+        <STVSUBJ_DATA_ORIGIN>GRAILS</STVSUBJ_DATA_ORIGIN>
+        <STVSUBJ_VPDI_CODE/>
+    </STVCOMF>
+    <STVCOMF>
+        <STVCOMF_CODE>03</STVCOMF_CODE>
+        <STVCOMF_DESC>participant</STVCOMF_DESC>
+        <STVCOMF_ACTIVITY_DATE>30-DEC-2016</STVCOMF_ACTIVITY_DATE>
+        <STVSUBJ_SURROGATE_ID/>
+        <STVSUBJ_VERSION/>
+        <STVSUBJ_USER_ID>GRAILS</STVSUBJ_USER_ID>
+        <STVSUBJ_DATA_ORIGIN>GRAILS</STVSUBJ_DATA_ORIGIN>
+        <STVSUBJ_VPDI_CODE/>
+    </STVCOMF>
+</STVCOMFDATA>

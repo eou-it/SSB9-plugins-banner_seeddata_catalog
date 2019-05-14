@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<NTVWKSH_DATA>
+    <NTVWKSH>
+        <NTVWKSH_CODE>MNT</NTVWKSH_CODE>
+        <NTVWKSH_DESC>2nd Shift Maintenance Schedule</NTVWKSH_DESC>
+        <NTVWKSH_DATA_ORIGIN>SEED_DATA</NTVWKSH_DATA_ORIGIN>
+    </NTVWKSH>
+    <NTVWKSH>
+        <NTVWKSH_CODE>SECR</NTVWKSH_CODE>
+        <NTVWKSH_DESC>Full-Time Security Schedule</NTVWKSH_DESC>
+        <NTVWKSH_DATA_ORIGIN>SEED_DATA</NTVWKSH_DATA_ORIGIN>
+    </NTVWKSH>
+    <NTVWKSH>
+        <NTVWKSH_CODE>STD</NTVWKSH_CODE>
+        <NTVWKSH_DESC>Standard Work Week</NTVWKSH_DESC>
+        <NTVWKSH_DATA_ORIGIN>SEED_DATA</NTVWKSH_DATA_ORIGIN>
+    </NTVWKSH>
+</NTVWKSH_DATA>
+

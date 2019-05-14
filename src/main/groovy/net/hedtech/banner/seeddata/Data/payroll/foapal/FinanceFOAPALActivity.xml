@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FINANCE_ACTV>
+    <FTVACTV>
+        <FTVACTV_COAS_CODE>B</FTVACTV_COAS_CODE>
+        <FTVACTV_ACTV_CODE>ECAC01</FTVACTV_ACTV_CODE>
+        <FTVACTV_EFF_DATE>07012006</FTVACTV_EFF_DATE>
+        <FTVACTV_NCHG_DATE>12312099</FTVACTV_NCHG_DATE>
+        <FTVACTV_TITLE>EC Testing Activity 1</FTVACTV_TITLE>
+        <FTVACTV_STATUS_IND>A</FTVACTV_STATUS_IND>
+    </FTVACTV>
+</FINANCE_ACTV>

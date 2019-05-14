@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SQL_VALIDATION>
+    <PERFORMANCE_SQL>
+        <!-- copy where clause to parsed sql for all HEDM_EXTENSIONS that have not been validated -->
+        <SQL_CODE><![CDATA[DECLARE
+  lv_err        VARCHAR2(500);
+  CURSOR gorrsql_c(p_sqpr_code VARCHAR2) IS
+    SELECT gorrsql_sqpr_code AS sqpr_code,
+           gorrsql_sqru_code AS sqru_code,
+           gorrsql_seq_no AS seq_no,
+           REPLACE(gorrsql_where_clause, CHR(34), CHR(39)) AS where_clause
+      FROM gorrsql
+     WHERE gorrsql_sqpr_code = p_sqpr_code
+       AND gorrsql_validated_ind = 'N';
+BEGIN
+  INSERT INTO bansecr.guruobj (guruobj_object, guruobj_role, guruobj_userid, guruobj_activity_date, guruobj_user_id)
+    SELECT 'ENABLE_GORRSQL_DML', 'BAN_DEFAULT_M', USER, SYSDATE, USER
+      FROM DUAL
+     WHERE NOT EXISTS (SELECT 1
+                         FROM bansecr.guruobj
+                        WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
+                          AND guruobj_userid = USER);
+  FOR results IN gorrsql_c('HEDM_EXTENSIONS') LOOP
+    IF gokrsql.f_validate_sql_rule(results.sqpr_code, results.where_clause, lv_err) THEN
+      UPDATE gorrsql
+         SET gorrsql_validated_ind = 'Y',
+             gorrsql_where_clause = results.where_clause,
+             gorrsql_parsed_sql = results.where_clause,
+             gorrsql_activity_date = sysdate
+       WHERE gorrsql_sqpr_code = results.sqpr_code
+         AND gorrsql_sqru_code = results.sqru_code
+         AND gorrsql_seq_no = results.seq_no;
+    ELSE
+      raise_application_error(-20001,'Invalid SQL for '||results.sqpr_code||'/'||results.sqru_code||'/'||results.seq_no||': '||lv_err);
+    END IF;
+  END LOOP;
+  DELETE
+    FROM bansecr.guruobj
+   WHERE guruobj_object = 'ENABLE_GORRSQL_DML'
+     AND guruobj_userid = USER;
+  COMMIT;
+END;]]></SQL_CODE>
+    </PERFORMANCE_SQL>
+</SQL_VALIDATION>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<BUDGET_AVAILABILITY_VENDOR>
+    <BA_VENDORS>
+        <ORACLE_ID>FTV</ORACLE_ID>
+        <SPRIDEN_ID>FTV</SPRIDEN_ID>
+        <VENODR_NAME_PATTERN>Vendor</VENODR_NAME_PATTERN>
+        <TOTAL_VENDORS>100</TOTAL_VENDORS>
+    </BA_VENDORS>
+</BUDGET_AVAILABILITY_VENDOR>
+

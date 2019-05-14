@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<NTRQGRP_DATA>
+    <NTRQGRP>
+        <NTRQGRP_ID>1</NTRQGRP_ID>
+        <NTRQGRP_NTRQPRT_ID>B-TIMELEAV</NTRQGRP_NTRQPRT_ID>
+        <NTRQGRP_MEMBER_USER_ID>BTE001</NTRQGRP_MEMBER_USER_ID>
+        <NTRQGRP_DATA_ORIGIN>SEED_DATA</NTRQGRP_DATA_ORIGIN>
+    </NTRQGRP>
+    <NTRQGRP>
+        <NTRQGRP_ID>2</NTRQGRP_ID>
+        <NTRQGRP_NTRQPRT_ID>B-TIMELEAV</NTRQGRP_NTRQPRT_ID>
+        <NTRQGRP_MEMBER_USER_ID>BTE002</NTRQGRP_MEMBER_USER_ID>
+        <NTRQGRP_DATA_ORIGIN>SEED_DATA</NTRQGRP_DATA_ORIGIN>
+    </NTRQGRP>
+    <NTRQGRP>
+        <NTRQGRP_ID>3</NTRQGRP_ID>
+        <NTRQGRP_NTRQPRT_ID>B-TIMELEAV</NTRQGRP_NTRQPRT_ID>
+        <NTRQGRP_MEMBER_USER_ID>BTE003</NTRQGRP_MEMBER_USER_ID>
+        <NTRQGRP_DATA_ORIGIN>SEED_DATA</NTRQGRP_DATA_ORIGIN>
+    </NTRQGRP>
+</NTRQGRP_DATA>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PTVRQST_DATA>
+    <PTVRQST>
+        <PTVRQST_CODE>ACC</PTVRQST_CODE>
+        <PTVRQST_DESC>Request Accepted</PTVRQST_DESC>
+        <PTVRQST_DATA_ORIGIN>SEED_DATA</PTVRQST_DATA_ORIGIN>
+    </PTVRQST>
+    <PTVRQST>
+        <PTVRQST_CODE>PROC</PTVRQST_CODE>
+        <PTVRQST_DESC>Request in Process</PTVRQST_DESC>
+        <PTVRQST_DATA_ORIGIN>SEED_DATA</PTVRQST_DATA_ORIGIN>
+    </PTVRQST>
+</PTVRQST_DATA>
+

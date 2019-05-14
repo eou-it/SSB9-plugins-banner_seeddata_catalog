@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RBRPBTP_DATA>
+    <RBRPBTP>
+        <RBRPBTP_AIDY_CODE>1819</RBRPBTP_AIDY_CODE>
+        <RBRPBTP_PBTP_CODE>PELL</RBRPBTP_PBTP_CODE>
+        <RBRPBTP_PELL_IND>Y</RBRPBTP_PELL_IND>
+        <RBRPBTP_EFC_IND>N</RBRPBTP_EFC_IND>
+        <RBRPBTP_LONG_DESC>Pell Budget</RBRPBTP_LONG_DESC>
+        <RBRPBTP_COMMENT/>
+    </RBRPBTP>
+    <RBRPBTP>
+        <RBRPBTP_AIDY_CODE>1819</RBRPBTP_AIDY_CODE>
+        <RBRPBTP_PBTP_CODE>INST</RBRPBTP_PBTP_CODE>
+        <RBRPBTP_PELL_IND>N</RBRPBTP_PELL_IND>
+        <RBRPBTP_EFC_IND>I</RBRPBTP_EFC_IND>
+        <RBRPBTP_LONG_DESC>Institutional</RBRPBTP_LONG_DESC>
+        <RBRPBTP_COMMENT/>
+    </RBRPBTP>
+    <RBRPBTP>
+        <RBRPBTP_AIDY_CODE>1819</RBRPBTP_AIDY_CODE>
+        <RBRPBTP_PBTP_CODE>MYST</RBRPBTP_PBTP_CODE>
+        <RBRPBTP_PELL_IND>N</RBRPBTP_PELL_IND>
+        <RBRPBTP_EFC_IND>F</RBRPBTP_EFC_IND>
+        <RBRPBTP_LONG_DESC>test period budget type</RBRPBTP_LONG_DESC>
+        <RBRPBTP_COMMENT/>
+    </RBRPBTP>
+    <RBRPBTP>
+        <RBRPBTP_AIDY_CODE>1819</RBRPBTP_AIDY_CODE>
+        <RBRPBTP_PBTP_CODE>CAMP</RBRPBTP_PBTP_CODE>
+        <RBRPBTP_PELL_IND>N</RBRPBTP_PELL_IND>
+        <RBRPBTP_EFC_IND>F</RBRPBTP_EFC_IND>
+        <RBRPBTP_LONG_DESC>Campus Budget</RBRPBTP_LONG_DESC>
+        <RBRPBTP_COMMENT/>
+    </RBRPBTP>
+</RBRPBTP_DATA>

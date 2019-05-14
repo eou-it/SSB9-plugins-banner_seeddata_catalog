@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SOAWSCR>
+     <SORWSCR>
+        <SORWSCR_WSPG_CODE>SEP</SORWSCR_WSPG_CODE>
+        <SORWSCR_WSFD_CODE>SEF1</SORWSCR_WSFD_CODE>
+        <SORWSCR_TERM_CODE_EFF>000000</SORWSCR_TERM_CODE_EFF>
+        <SORWSCR_PERSONA_CDE>FACULTY</SORWSCR_PERSONA_CDE>
+        <DELETE>YES</DELETE>
+    </SORWSCR>
+    <SORWSCR>
+        <SORWSCR_WSPG_CODE>SEP</SORWSCR_WSPG_CODE>
+        <SORWSCR_WSFD_CODE>SEF2</SORWSCR_WSFD_CODE>
+        <SORWSCR_TERM_CODE_EFF>000000</SORWSCR_TERM_CODE_EFF>
+        <SORWSCR_PERSONA_CDE>FACULTY</SORWSCR_PERSONA_CDE>
+        <DELETE>YES</DELETE>
+    </SORWSCR>
+     <STVWSPG>
+        <STVWSPG_CODE>SEP</STVWSPG_CODE>
+        <DELETE>YES</DELETE>
+    </STVWSPG>
+    <STVWSFD>
+        <STVWSFD_CODE>SEF1</STVWSFD_CODE>
+        <DELETE>YES</DELETE>
+    </STVWSFD>
+    <STVWSFD>
+        <STVWSFD_CODE>SEF2</STVWSFD_CODE>
+        <DELETE>YES</DELETE>
+    </STVWSFD>
+
+</SOAWSCR>

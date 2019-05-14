@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<EVENT>
+    <GERFGST>
+        <DELETE>YES</DELETE>
+        <GERFGST_EVNT_CRN>TRK01</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EBRK</GERFGST_FUNC_CODE>
+    </GERFGST>
+    <GERFGST>
+        <DELETE>YES</DELETE>
+        <GERFGST_EVNT_CRN>TRK01</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EDNR</GERFGST_FUNC_CODE>
+    </GERFGST>
+    <GERFGST>
+        <DELETE>YES</DELETE>
+        <GERFGST_EVNT_CRN>TRK01</GERFGST_EVNT_CRN>
+        <GERFGST_FUNC_CODE>EMEET</GERFGST_FUNC_CODE>
+    </GERFGST>
+    <GERATTD>
+        <DELETE>YES</DELETE>
+        <GERATTD_EVNT_CRN>TRK01</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EBRK</GERATTD_FUNC_CODE>
+    </GERATTD>
+    <GERATTD>
+        <DELETE>YES</DELETE>
+        <GERATTD_EVNT_CRN>TRK01</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EDNR</GERATTD_FUNC_CODE>
+    </GERATTD>
+    <GERATTD>
+        <DELETE>YES</DELETE>
+        <GERATTD_EVNT_CRN>TRK01</GERATTD_EVNT_CRN>
+        <GERATTD_FUNC_CODE>EMEET</GERATTD_FUNC_CODE>
+    </GERATTD>
+    <SSRMEET>
+        <DELETE>YES</DELETE>
+        <SSRMEET_TERM_CODE>EVENT</SSRMEET_TERM_CODE>
+        <SSRMEET_CRN>TRK01</SSRMEET_CRN>
+    </SSRMEET>
+    <GEBFUNC>
+        <DELETE>YES</DELETE>
+        <GEBFUNC_EVNT_CRN>TRK01</GEBFUNC_EVNT_CRN>
+    </GEBFUNC>
+    <SLBEVNT>
+        <DELETE>YES</DELETE>
+        <SLBEVNT_CRN>TRK01</SLBEVNT_CRN>
+    </SLBEVNT>
+
+    <SLBEVNT>
+        <DELETE>YES</DELETE>
+        <SLBEVNT_CRN>TRK02</SLBEVNT_CRN>
+    </SLBEVNT>
+</EVENT>

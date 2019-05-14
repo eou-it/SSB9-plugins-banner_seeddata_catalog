@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2015 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<REQUISITION_BUYER_VERIFICATION>
+    <FTVBUYR><!-- Requisition Buyer Verification!-->
+        <FTVBUYR_NAME>S. Samuelson</FTVBUYR_NAME>
+        <FTVBUYR_USER_ID>FORSED21</FTVBUYR_USER_ID>
+        <FTVBUYR_EFF_DATE>17-AUG-15</FTVBUYR_EFF_DATE>
+        <FTVBUYR_CODE>DMM</FTVBUYR_CODE>
+        <FTVBUYR_VERSION>0</FTVBUYR_VERSION>
+    </FTVBUYR>
+</REQUISITION_BUYER_VERIFICATION>
+

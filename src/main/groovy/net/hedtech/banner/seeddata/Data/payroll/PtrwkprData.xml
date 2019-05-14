@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PTRWKPR_DATA>
+    <PTRWKPR>
+        <PTRWKPR_CODE>SECR</PTRWKPR_CODE>
+        <PTRWKPR_DESC>Full time Security Work Sched.</PTRWKPR_DESC>
+        <PTRWKPR_PERIOD_BEGIN_DATE_TIME>03-JAN-93</PTRWKPR_PERIOD_BEGIN_DATE_TIME>
+        <PTRWKPR_NUMBER_OF_DAYS>28</PTRWKPR_NUMBER_OF_DAYS>
+        <PTRWKPR_PERIOD_MAX_NON_OT_HRS>80</PTRWKPR_PERIOD_MAX_NON_OT_HRS>
+        <PTRWKPR_DAILY_MAX_NON_OT_HRS>10</PTRWKPR_DAILY_MAX_NON_OT_HRS>
+    </PTRWKPR>
+    <PTRWKPR>
+        <PTRWKPR_CODE>STD</PTRWKPR_CODE>
+        <PTRWKPR_DESC>Standard Work Period</PTRWKPR_DESC>
+        <PTRWKPR_PERIOD_BEGIN_DATE_TIME>03-JAN-93</PTRWKPR_PERIOD_BEGIN_DATE_TIME>
+        <PTRWKPR_NUMBER_OF_DAYS>7</PTRWKPR_NUMBER_OF_DAYS>
+        <PTRWKPR_PERIOD_MAX_NON_OT_HRS>80</PTRWKPR_PERIOD_MAX_NON_OT_HRS>
+        <PTRWKPR_DAILY_MAX_NON_OT_HRS>8</PTRWKPR_DAILY_MAX_NON_OT_HRS>
+    </PTRWKPR>
+</PTRWKPR_DATA>
+

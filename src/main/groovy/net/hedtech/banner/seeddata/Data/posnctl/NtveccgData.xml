@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<NTVECCG_DATA>
+    <NTVECCG>
+        <NTVECCG_CODE>CSINSTR</NTVECCG_CODE>
+        <NTVECCG_DESC>Cost Share Instruction</NTVECCG_DESC>
+        <NTVECCG_DATA_ORIGIN>SEED_DATA</NTVECCG_DATA_ORIGIN>
+        <NTVECCG_ALLOCATION_IND>Y</NTVECCG_ALLOCATION_IND>
+    </NTVECCG>
+    <NTVECCG>
+        <NTVECCG_CODE>CSORGRCH</NTVECCG_CODE>
+        <NTVECCG_DESC>Cost Share Organized Research</NTVECCG_DESC>
+        <NTVECCG_DATA_ORIGIN>SEED_DATA</NTVECCG_DATA_ORIGIN>
+        <NTVECCG_ALLOCATION_IND>N</NTVECCG_ALLOCATION_IND>
+    </NTVECCG>
+    <NTVECCG>
+        <NTVECCG_CODE>CSOTHER</NTVECCG_CODE>
+        <NTVECCG_DESC>Cost Share Other</NTVECCG_DESC>
+        <NTVECCG_DATA_ORIGIN>SEED_DATA</NTVECCG_DATA_ORIGIN>
+        <NTVECCG_ALLOCATION_IND>Y</NTVECCG_ALLOCATION_IND>
+    </NTVECCG>
+    <NTVECCG>
+        <NTVECCG_CODE>CSPUBLIC</NTVECCG_CODE>
+        <NTVECCG_DESC>Cost Share Public Service</NTVECCG_DESC>
+        <NTVECCG_DATA_ORIGIN>SEED_DATA</NTVECCG_DATA_ORIGIN>
+        <NTVECCG_ALLOCATION_IND>N</NTVECCG_ALLOCATION_IND>
+    </NTVECCG>
+</NTVECCG_DATA>
+

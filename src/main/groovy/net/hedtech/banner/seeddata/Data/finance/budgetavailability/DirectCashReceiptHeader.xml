@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FGBCSHH_ROWSET>
+    <FGBCSHH>
+        <FGBCSHH_DOC_NUM>SEEDH001</FGBCSHH_DOC_NUM>
+        <FGBCSHH_TRANS_DATE>16-JAN-17</FGBCSHH_TRANS_DATE>
+        <FGBCSHH_DOC_AMT>50</FGBCSHH_DOC_AMT>
+        <FGBCSHH_STATUS_IND>C</FGBCSHH_STATUS_IND>
+        <FGBCSHH_APPROVAL_IND>Y</FGBCSHH_APPROVAL_IND>
+        <FGBCSHH_NSF_ON_OFF_IND>Y</FGBCSHH_NSF_ON_OFF_IND>
+        <FGBCSHH_VEND_PIDM>502</FGBCSHH_VEND_PIDM>
+        <FGBCSHH_COLLECT_TAX>N</FGBCSHH_COLLECT_TAX>
+    </FGBCSHH>
+</FGBCSHH_ROWSET>

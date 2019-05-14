@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<TERMBASE>
+    <SHBGCTL>
+        <SHBGCTL_TERM_CODE>500302</SHBGCTL_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SHBGCTL>
+    <SV_SORFTRM>
+        <SORFTRM_TERM_CODE>500302</SORFTRM_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SV_SORFTRM>
+    <SORRTRM>
+        <SORRTRM_TERM_CODE>500302</SORRTRM_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SORRTRM>
+    <SOBPTRM>
+        <SOBPTRM_TERM_CODE>500302</SOBPTRM_TERM_CODE>
+        <SOBPTRM_PTRM_CODE>CE2</SOBPTRM_PTRM_CODE>
+        <DELETE>YES</DELETE>
+    </SOBPTRM>
+    <SOBPTRM>
+        <SOBPTRM_TERM_CODE>500302</SOBPTRM_TERM_CODE>
+        <SOBPTRM_PTRM_CODE>CE1</SOBPTRM_PTRM_CODE>
+        <DELETE>YES</DELETE>
+    </SOBPTRM>
+    <SOBPTRM>
+        <SOBPTRM_TERM_CODE>500302</SOBPTRM_TERM_CODE>
+        <SOBPTRM_PTRM_CODE>1</SOBPTRM_PTRM_CODE>
+        <DELETE>YES</DELETE>
+    </SOBPTRM>
+    <SV_SOBTERM>
+        <SOBTERM_TERM_CODE>500302</SOBTERM_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SV_SOBTERM>
+</TERMBASE>
