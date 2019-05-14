@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<STVTRMT_DATA>
+    <STVTRMT>
+        <STVTRMT_CODE>1</STVTRMT_CODE>
+        <STVTRMT_DESC>Full Year</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>2</STVTRMT_CODE>
+        <STVTRMT_DESC>Semester</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>3</STVTRMT_CODE>
+        <STVTRMT_DESC>Trimester</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>4</STVTRMT_CODE>
+        <STVTRMT_DESC>Quarter</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>5</STVTRMT_CODE>
+        <STVTRMT_DESC>Quinmester</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>6</STVTRMT_CODE>
+        <STVTRMT_DESC>Mini-term</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>7</STVTRMT_CODE>
+        <STVTRMT_DESC>Summer Session</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>8</STVTRMT_CODE>
+        <STVTRMT_DESC>Intercession</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>9</STVTRMT_CODE>
+        <STVTRMT_DESC>Long Session</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>F</STVTRMT_CODE>
+        <STVTRMT_DESC>Finaid Semester</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>M</STVTRMT_CODE>
+        <STVTRMT_DESC>Summer Semester</STVTRMT_DESC>
+    </STVTRMT>
+    <STVTRMT>
+        <STVTRMT_CODE>S</STVTRMT_CODE>
+        <STVTRMT_DESC>Standard Semester</STVTRMT_DESC>
+    </STVTRMT>
+</STVTRMT_DATA>

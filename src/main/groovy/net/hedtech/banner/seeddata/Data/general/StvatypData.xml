@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+<STVATYP_DATA>
+  <STVATYP>
+   <STVATYP_CODE>W2</STVATYP_CODE>
+   <STVATYP_DESC>W2 Address</STVATYP_DESC>
+   <STVATYP_ACTIVITY_DATE>5/21/2014</STVATYP_ACTIVITY_DATE>
+   <STVATYP_SYSTEM_REQ_IND>N</STVATYP_SYSTEM_REQ_IND>
+   <STVATYP_TELE_CODE>HOME</STVATYP_TELE_CODE>
+   <STVATYP_UPDATE_WEB_IND></STVATYP_UPDATE_WEB_IND>
+   <STVATYP_SURROGATE_ID/>
+   <STVATYP_VERSION/>
+   <STVATYP_USER_ID/>
+   <STVATYP_DATA_ORIGIN>SEED_DATA</STVATYP_DATA_ORIGIN>
+   <STVATYP_VPDI_CODE/>
+  </STVATYP>
+</STVATYP_DATA>

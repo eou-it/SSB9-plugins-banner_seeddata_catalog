@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016-2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SFRATTR_DATA>
+    <SFRATTR>
+        <BANNERID>HOSWEB001</BANNERID>
+        <SFRATTR_TERM_CODE>199510</SFRATTR_TERM_CODE>
+        <SFRATTR_PIDM>30058</SFRATTR_PIDM>
+        <SFRATTR_CRN>10031</SFRATTR_CRN>
+        <SFRATTR_ATTR_CODE>GELE</SFRATTR_ATTR_CODE>
+        <SFRATTR_RSTS_CODE>RW</SFRATTR_RSTS_CODE>
+        <SFRATTR_RSTS_DATE>02-NOV-16</SFRATTR_RSTS_DATE>
+        <SFRATTR_USER_ID>GRAILS</SFRATTR_USER_ID>
+    </SFRATTR>
+</SFRATTR_DATA>

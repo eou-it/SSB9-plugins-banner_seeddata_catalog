@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<ATTENDANCETRACKING>
+    <SORATRK>
+        <SORATRK_TERM_CODE>201410</SORATRK_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SORATRK>
+    <SORATRK>
+        <SORATRK_TERM_CODE>201110</SORATRK_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SORATRK>
+</ATTENDANCETRACKING>

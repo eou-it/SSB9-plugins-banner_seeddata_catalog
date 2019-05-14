@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<NTVECGR_DATA>
+    <NTVECGR>
+        <NTVECGR_CODE>INSTRUCT</NTVECGR_CODE>
+        <NTVECGR_DESC>Instruction</NTVECGR_DESC>
+        <NTVECGR_DATA_ORIGIN>SEED_DATA</NTVECGR_DATA_ORIGIN>
+        <NTVECGR_ALLOCATION_IND>N</NTVECGR_ALLOCATION_IND>
+    </NTVECGR>
+    <NTVECGR>
+        <NTVECGR_CODE>ORGRSCH</NTVECGR_CODE>
+        <NTVECGR_DESC>Organized Research</NTVECGR_DESC>
+        <NTVECGR_DATA_ORIGIN>SEED_DATA</NTVECGR_DATA_ORIGIN>
+        <NTVECGR_ALLOCATION_IND>Y</NTVECGR_ALLOCATION_IND>
+    </NTVECGR>
+    <NTVECGR>
+        <NTVECGR_CODE>PUBLICSV</NTVECGR_CODE>
+        <NTVECGR_DESC>Public Service</NTVECGR_DESC>
+        <NTVECGR_DATA_ORIGIN>SEED_DATA</NTVECGR_DATA_ORIGIN>
+        <NTVECGR_ALLOCATION_IND>N</NTVECGR_ALLOCATION_IND>
+    </NTVECGR>
+</NTVECGR_DATA>
+

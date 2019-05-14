@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SCHEDULED>
+    <SSBWLSC>
+        <SSBWLSC_TERM_CODE>202410</SSBWLSC_TERM_CODE>
+        <SSBWLSC_CRN>20001</SSBWLSC_CRN>
+        <SSBWLSC_AUTO_NOTIFY_IND>N</SSBWLSC_AUTO_NOTIFY_IND>
+        <SSBWLSC_WL_REG_CHECK_IND>Y</SSBWLSC_WL_REG_CHECK_IND>
+        <SSBWLSC_WL_POS_WEBC_DISP_IND>Y</SSBWLSC_WL_POS_WEBC_DISP_IND>
+        <SSBWLSC_ACTIVITY_DATE>10-DEC-10</SSBWLSC_ACTIVITY_DATE>
+        <SSBWLSC_USER_ID>GRAILS</SSBWLSC_USER_ID>
+        <SSBWLSC_DEADLINE_NOTIFY>4</SSBWLSC_DEADLINE_NOTIFY>
+        <SSBWLSC_MAX_RESEND_HRS>4</SSBWLSC_MAX_RESEND_HRS>
+        <SSBWLSC_DATA_ORIGIN>GRAILS</SSBWLSC_DATA_ORIGIN>
+        <SSBWLSC_SURROGATE_ID>1201</SSBWLSC_SURROGATE_ID>
+        <SSBWLSC_VERSION>0</SSBWLSC_VERSION>
+        <SSBWLSC_VPDI_CODE>INST</SSBWLSC_VPDI_CODE>
+    </SSBWLSC>
+</SCHEDULED>

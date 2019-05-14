@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<BA_FOAPAL_LOCATIONS>
+    <FOAPAL_LOCATION><!-- -->
+        <LOCATION_CODE_PATTERN>LS</LOCATION_CODE_PATTERN>
+        <LOCATION_CODE_TITLE>Perf Testing Locn</LOCATION_CODE_TITLE>
+        <LOCATION_CODE_PRED>01</LOCATION_CODE_PRED>
+        <LOCATION_ADD_LINE1>1234 College Blvd</LOCATION_ADD_LINE1>
+        <LOCATION_CITY>Shawnee Mission</LOCATION_CITY>
+        <LOCATION_STATE>KS</LOCATION_STATE>
+        <LOCATION_ZIP>67208</LOCATION_ZIP>
+        <LOCATION_COUNTRY_CODE>001</LOCATION_COUNTRY_CODE>
+        <LOCATION_NATION_CODE>157</LOCATION_NATION_CODE>
+        <LOCATION_PHONE_AREA>913</LOCATION_PHONE_AREA>
+        <LOCATION_PHONE_NUMBER>5556582</LOCATION_PHONE_NUMBER>
+        <LOCATION_SQUARE_FOOTAGE>28800</LOCATION_SQUARE_FOOTAGE>
+        <LOCATION_SQUARE_FOOTAGE_RATE>47</LOCATION_SQUARE_FOOTAGE_RATE>
+        <LOCATION_COA_CODE>B</LOCATION_COA_CODE>
+        <START_COUNT>1</START_COUNT>
+        <TOTAL_COUNT>100</TOTAL_COUNT>
+    </FOAPAL_LOCATION>
+</BA_FOAPAL_LOCATIONS>
+

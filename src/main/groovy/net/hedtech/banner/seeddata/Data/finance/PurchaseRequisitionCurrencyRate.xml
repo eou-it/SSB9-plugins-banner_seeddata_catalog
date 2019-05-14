@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2015 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<GURCURR_DATA>
+
+	<GURCURR>
+		<GURCURR_CURR_CODE>CAD</GURCURR_CURR_CODE>
+		<GURCURR_CONV_RATE>1.27</GURCURR_CONV_RATE>
+		<GURCURR_RATE_EFF_DATE>25-APR-91</GURCURR_RATE_EFF_DATE>
+		<GURCURR_RATE_NCHG_DATE>31-DEC-2099</GURCURR_RATE_NCHG_DATE>
+		<GURCURR_ACTIVITY_DATE>25-APR-91</GURCURR_ACTIVITY_DATE>
+		<GURCURR_USER_ID>GRAILS</GURCURR_USER_ID>
+		<GURCURR_SURROGATE_ID/>
+		<GURCURR_VERSION/>
+		<GURCURR_DATA_ORIGIN/>
+		<GURCURR_VPDI_CODE/>
+	</GURCURR>
+
+</GURCURR_DATA>

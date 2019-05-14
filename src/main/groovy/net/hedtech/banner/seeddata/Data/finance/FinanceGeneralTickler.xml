@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2015 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<GURTKLR_DATA>
+    <GURTKLR><!-- General Tickler Table -->
+        <GURTKLR_USER_ID>GRAILS</GURTKLR_USER_ID>
+        <GURTKLR_TODO_DATE>27-MAY-15</GURTKLR_TODO_DATE>
+        <GURTKLR_CREATOR>MSWANSON</GURTKLR_CREATOR>
+        <GURTKLR_SEQNO>1</GURTKLR_SEQNO>
+        <GURTKLR_STATUS>C</GURTKLR_STATUS>
+        <GURTKLR_SYSTEM_IND>F</GURTKLR_SYSTEM_IND>
+        <GURTKLR_COMMENT>DOCUMENT IS DISAPPROVED by Grails User.</GURTKLR_COMMENT>
+        <GURTKLR_TODO_TIME>1553</GURTKLR_TODO_TIME>
+        <GURTKLR_SOURCE>FOAUAPP</GURTKLR_SOURCE>
+        <GURTKLR_ITEM_REFNO>RSED0006</GURTKLR_ITEM_REFNO>
+    </GURTKLR>
+    <GURTKLR><!-- General Tickler Table -->
+        <GURTKLR_USER_ID>GRAILS</GURTKLR_USER_ID>
+        <GURTKLR_TODO_DATE>20-JAN-17</GURTKLR_TODO_DATE>
+        <GURTKLR_CREATOR>FORSED21</GURTKLR_CREATOR>
+        <GURTKLR_SEQNO>2</GURTKLR_SEQNO>
+        <GURTKLR_STATUS>C</GURTKLR_STATUS>
+        <GURTKLR_SYSTEM_IND>F</GURTKLR_SYSTEM_IND>
+        <GURTKLR_COMMENT>(JV app)DOCUMENT IS DISAPPROVED by Grails User.</GURTKLR_COMMENT>
+        <GURTKLR_TODO_TIME>1553</GURTKLR_TODO_TIME>
+        <GURTKLR_SOURCE>JVAPP</GURTKLR_SOURCE>
+        <GURTKLR_ITEM_REFNO>JVTEST05</GURTKLR_ITEM_REFNO>
+    </GURTKLR>
+</GURTKLR_DATA>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PTVJCTY_DATA>
+    <PTVJCTY>
+        <PTVJCTY_CODE>IN</PTVJCTY_CODE>
+        <PTVJCTY_DESC>Pay Increase</PTVJCTY_DESC>
+        <PTVJCTY_DATA_ORIGIN>SEED_DATA</PTVJCTY_DATA_ORIGIN>
+    </PTVJCTY>
+    <PTVJCTY>
+        <PTVJCTY_CODE>NH</PTVJCTY_CODE>
+        <PTVJCTY_DESC>New Hire</PTVJCTY_DESC>
+        <PTVJCTY_DATA_ORIGIN>SEED_DATA</PTVJCTY_DATA_ORIGIN>
+    </PTVJCTY>
+    <PTVJCTY>
+        <PTVJCTY_CODE>PR</PTVJCTY_CODE>
+        <PTVJCTY_DESC>Promotion</PTVJCTY_DESC>
+        <PTVJCTY_DATA_ORIGIN>SEED_DATA</PTVJCTY_DATA_ORIGIN>
+    </PTVJCTY>
+    <PTVJCTY>
+        <PTVJCTY_CODE>TT</PTVJCTY_CODE>
+        <PTVJCTY_DESC>Termination no rehire</PTVJCTY_DESC>
+        <PTVJCTY_DATA_ORIGIN>SEED_DATA</PTVJCTY_DATA_ORIGIN>
+    </PTVJCTY>
+    <PTVJCTY>
+        <PTVJCTY_CODE>VT</PTVJCTY_CODE>
+        <PTVJCTY_DESC>Termination rehire eligbile</PTVJCTY_DESC>
+        <PTVJCTY_DATA_ORIGIN>SEED_DATA</PTVJCTY_DATA_ORIGIN>
+    </PTVJCTY>
+</PTVJCTY_DATA>
+

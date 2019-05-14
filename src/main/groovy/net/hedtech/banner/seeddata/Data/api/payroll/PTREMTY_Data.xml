@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<!--***************************************************************************
+Copyright 2017 Ellucian Company L.P. and its affiliates.
+****************************************************************************-->
+
+<PTREMTY_DATA>
+    <PTREMTY>
+        <PTREMTY_CODE>TR</PTREMTY_CODE>
+        <PTREMTY_DESC>Transportation</PTREMTY_DESC>
+        <PTREMTY_STATSCAN_CODE>01</PTREMTY_STATSCAN_CODE>
+        <PTVSCET_ACTIVITY_DATE>02092002</PTVSCET_ACTIVITY_DATE>
+        <PTVSCET_DATA_ORIGIN>GRAILS</PTVSCET_DATA_ORIGIN>
+    </PTREMTY>
+    <PTREMTY>
+        <PTREMTY_CODE>WH</PTREMTY_CODE>
+        <PTREMTY_DESC>Wholesale</PTREMTY_DESC>
+        <PTREMTY_STATSCAN_CODE>02</PTREMTY_STATSCAN_CODE>
+        <PTVSCET_ACTIVITY_DATE>02092002</PTVSCET_ACTIVITY_DATE>
+        <PTVSCET_DATA_ORIGIN>GRAILS</PTVSCET_DATA_ORIGIN>
+    </PTREMTY>
+    <PTREMTY>
+        <PTREMTY_CODE>UT</PTREMTY_CODE>
+        <PTREMTY_DESC>Utilities</PTREMTY_DESC>
+        <PTREMTY_STATSCAN_CODE>03</PTREMTY_STATSCAN_CODE>
+        <PTVSCET_ACTIVITY_DATE>02092002</PTVSCET_ACTIVITY_DATE>
+        <PTVSCET_DATA_ORIGIN>GRAILS</PTVSCET_DATA_ORIGIN>
+    </PTREMTY>
+</PTREMTY_DATA>

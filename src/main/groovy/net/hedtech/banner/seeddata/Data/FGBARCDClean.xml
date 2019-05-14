@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2016 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FGBARCDCLEAN>
+    <FGBARCD>
+        <FGBARCD_COAS_CODE>C</FGBARCD_COAS_CODE>
+        <FGBARCD_DOC_CODE>DCITTST</FGBARCD_DOC_CODE>
+        <FGBARCD_DOC_SEQ_CODE>20</FGBARCD_DOC_SEQ_CODE>
+        <FGBARCD_FSYR_CODE>01</FGBARCD_FSYR_CODE>
+        <FGBARCD_SUBMISSION_NUMBER>1</FGBARCD_SUBMISSION_NUMBER>
+        <FGBARCD_DATA_ORIGIN>GRAILS</FGBARCD_DATA_ORIGIN>
+        <DELETE>YES</DELETE>
+    </FGBARCD>
+</FGBARCDCLEAN>
