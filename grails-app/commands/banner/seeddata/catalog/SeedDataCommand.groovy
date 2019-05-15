@@ -14,6 +14,8 @@ import groovy.time.TimeDuration
 
 class SeedDataCommand implements GrailsApplicationCommand {
 
+	private static final String BAN83 = "BAN83"
+
     boolean handle() {
 
         println "==== System property user.dir " + System.properties['user.dir']
@@ -23,8 +25,12 @@ class SeedDataCommand implements GrailsApplicationCommand {
         println "Base Directory Path ====> " + baseDirPath		
 
 		println "Base Directory: ${basedir} target ${args} Base Directory Path ${baseDirPath}"
-		
-		executeSeedDataLoader()
+		String connectedDB = Holders.config.bannerDataSource.url
+		if(!connectedDB.contains(BAN83)){
+			println "Please connect to Local DB to run the seed data!"
+		}else{
+			executeSeedDataLoader()
+		}
 
         return true
     }
