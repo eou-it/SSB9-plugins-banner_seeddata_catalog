@@ -39,3 +39,5 @@ environments {
         }
     }
 }
+
+seedDataTargetDB='ban83'
