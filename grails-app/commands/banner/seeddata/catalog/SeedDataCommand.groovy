@@ -28,6 +28,7 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		String connectedDB = Holders.config.bannerDataSource.url
 		if(!connectedDB.contains(BAN83)){
 			println "Please connect to Local DB to run the seed data!"
+			System.exit(-1)
 		}else{
 			executeSeedDataLoader()
 		}
