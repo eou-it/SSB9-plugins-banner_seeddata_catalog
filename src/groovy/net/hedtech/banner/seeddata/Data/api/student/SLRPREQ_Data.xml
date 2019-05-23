@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+
+<SLRPREQ_DATA>
+    <SLRPREQ>
+        <BANNERID>STUAFR302</BANNERID>
+        <SLRPREQ_TERM_CODE>199510</SLRPREQ_TERM_CODE>
+        <SLRPREQ_RDEF_CODE>LAB</SLRPREQ_RDEF_CODE>
+        <SLRPREQ_MUST_MATCH>Y</SLRPREQ_MUST_MATCH>
+        <SLRPREQ_ACTIVITY_DATE>29-01-95</SLRPREQ_ACTIVITY_DATE>
+    </SLRPREQ>
+</SLRPREQ_DATA>
