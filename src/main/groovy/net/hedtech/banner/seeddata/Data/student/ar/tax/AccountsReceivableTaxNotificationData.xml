@@ -179,8 +179,7 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
         <TTBTAXN_SSN_CERT_IND>N</TTBTAXN_SSN_CERT_IND>
         <TTBTAXN_AMOUNT_6>0</TTBTAXN_AMOUNT_6>
     </TTBTAXN>
-       <!--HOSARUSR1 End-->
-
+    <!--HOSARUSR1 End-->
     <!--HOSARDEMO STart-->
     <TTBTAXN>
         <BANNERID>HOSARDEMO</BANNERID>

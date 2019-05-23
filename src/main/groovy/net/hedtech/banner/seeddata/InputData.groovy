@@ -672,6 +672,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/HoldsByStudyPath_A00017118.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201841.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201842.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201830.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201830.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201841.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201842.xml',
@@ -694,6 +695,22 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML205006_blockReg.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML205006_blockReg.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00072282_blockReg.xml'],
+            'attributes-by-studypath'          : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201801.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201801.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/RegistrarXMLA00010045.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/FacultyXMLA00010055.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00010176.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00010179.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00010178.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10174.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10187.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10222.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10267.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10177.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10189.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10190.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10160.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10027.xml'],
             'registration-planning-region'     : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationPlanningByRegionData.xml'],
             'GrailsReadOnly'                   : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GrailsSAMLUser.xml'],
@@ -838,7 +855,8 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtxtData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtabData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsscsData_1718.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml'],
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/EfcData_1718.xml'],
 
             'finaid-aidy-1819'                  : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobaprdData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobprdsData_1819.xml',
@@ -969,6 +987,9 @@ public class InputData {
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableTaxInformationData.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableSupplementalInformationData.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/hold/AccountReceivableHoldInformation.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositData.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
             '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/statement/AccountReceivableStatementData.xml'],
             'api-student'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLBTERM_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRLMFE_Data.xml',
@@ -989,7 +1010,9 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RPRAWRD_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RORTPRD_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RORSTAT_Data.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRTCKG_Data.xml'],
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRTCKG_Data.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVRDEF_Data.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRPREQ_Data.xml'],
             'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
     ]
     /**
@@ -1165,6 +1188,9 @@ public class InputData {
     def calbTargets = [
             'student': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calb/student/CalbstuMisProgramData.xml']]
 
+    def bcmTargets = [
+            'bcm' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
+    ]
 
     def validateTable(Sql conn) {
         String ownerSql = """select owner from all_tables where table_name = ?"""

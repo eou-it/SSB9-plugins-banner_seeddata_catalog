@@ -171,8 +171,9 @@ public class GcrfldrDML {
                                                 GCBQURY_ACTIVITY_DATE,
                                                 GCBQURY_DESCRIPTION,
                                                 GCBQURY_QUERY_STRING,
+                                                GCBQURY_CHANGED_IND,
                                                 GCBQURY_DATA_ORIGIN)
-                                        values (?,?,?,?,?,?,?,?,? )
+                                        values (?,?,?,?,?,?,?,?,?,? )
                         """
                 valuearray = [
                         apiData.GCBQURY_NAME.text(),
@@ -183,6 +184,7 @@ public class GcrfldrDML {
                         apiData.GCBQURY_ACTIVITY_DATE.text(),
                         apiData.GCBQURY_DESCRIPTION.text(),
                         apiData.GCBQURY_QUERY_STRING.text(),
+                        apiData.GCBQURY_CHANGED_IND.text(),
                         apiData.GCBQURY_DATA_ORIGIN.text()]
                 doInsert(sql, valuearray)
             }

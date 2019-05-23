@@ -41,10 +41,24 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
     if (seedDataTargets.size() > 0)
         inputData.targets << seedDataTargets
 
+    //to add new targets, add target to argsList and the switch statement below
+    def argsList = ["ALL","BCM"]
+
     if (args) {
-        if (args.toUpperCase() == "ALL") {
-            println "Execute ALL Seeddata"
-            inputData.targets.each {
+        def arg = args.toUpperCase()
+        def target
+        if (argsList.contains(arg)) {
+            println "Execute ${arg} Seeddata"
+            switch (arg) {
+                case "BCM" :
+                    target = inputData.bcmTargets
+                    break;
+                default : //ALL
+                    target = inputData.targets
+                    break;
+            }
+
+            targets.each {
                 def xmlFiles = it.value
                 xmlFiles.each {
                     //def xmlInputData = new net.hedtech.banner.seeddata.InputData([dataSource: dataSource])
