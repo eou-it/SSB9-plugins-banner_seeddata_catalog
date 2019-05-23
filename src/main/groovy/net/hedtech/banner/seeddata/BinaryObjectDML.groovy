@@ -8,6 +8,9 @@ import groovy.sql.Sql
 import java.sql.Connection
 import java.sql.SQLException
 
+/**
+ * DML to update GORBLOB with BLOB.
+ */
 class BinaryObjectDML {
 
     def InputData connectInfo
@@ -24,7 +27,6 @@ class BinaryObjectDML {
     public BinaryObjectDML( InputData connectInfo, Sql conn, Connection connectCall, xmlData, List columns,
                             List indexColumns, Batch batch,
                             def deleteNode ) {
-        println( "BinaryObjectDML called" )
         this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = connectCall
@@ -33,7 +35,6 @@ class BinaryObjectDML {
         this.indexColumns = indexColumns
         this.deleteNode = deleteNode
         processGorblob()
-        println( "BinaryObjectDML end" )
 
     }
 
