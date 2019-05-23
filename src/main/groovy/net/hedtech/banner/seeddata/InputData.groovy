@@ -990,7 +990,7 @@ public class InputData {
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/hold/AccountReceivableHoldInformation.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositData.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
-            '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/statement/AccountReceivableStatementData.xml'],
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/statement/AccountReceivableStatementData.xml'],
             'api-student'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLBTERM_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRLMFE_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVARTP_Data.xml',

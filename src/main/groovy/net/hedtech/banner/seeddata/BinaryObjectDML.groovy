@@ -1,3 +1,6 @@
+/*********************************************************************************
+ Copyright 2019 Ellucian Company L.P. and its affiliates.
+ *********************************************************************************/
 package net.hedtech.banner.seeddata
 
 import groovy.sql.Sql
@@ -47,9 +50,9 @@ class BinaryObjectDML {
         def valTable = new DynamicSQLTableXMLRecord( connectInfo, conn, connectCall, xmlData, columns, indexColumns, batch, deleteNode )
         def xmlFileParent = new File( connectInfo.xmlFilePath ).getParent().toString()
         def reportFile = "$xmlFileParent" + File.separator + "${apiData.GORBLOB_MEDIA_ID.text()}.txt"
-//        if (connectInfo.debugThis) {
-        println "processGorblob: upload file for report: ${apiData.GORBLOB_MEDIA_ID.text()} sample file: ${reportFile} "
-//        }
+        if (connectInfo.debugThis) {
+            println "processGorblob: upload file for report: ${apiData.GORBLOB_MEDIA_ID.text()} sample file: ${reportFile} "
+        }
         FileInputStream stream
         File repFile
         try {
@@ -57,7 +60,6 @@ class BinaryObjectDML {
             stream = new FileInputStream( repFile )
             byte[] fileBytes = new byte[(int) repFile.length()]
             stream.read( fileBytes )
-//            stream.close()
 
             def jobRecord = "select gorblob_surrogate_id gblob from gorblob where GORBLOB_MEDIA_ID = ? "
             def jobrec = conn.firstRow( jobRecord, [apiData.GORBLOB_MEDIA_ID.text()] )
@@ -69,9 +71,9 @@ class BinaryObjectDML {
                 connectInfo.tableUpdate( "GORBLOB", 0, 0, 1, 0, 0 )
             }
             catch (SQLException ae) {
-//                if (connectInfo.showErrors) {
-                println "Problem executing update of jobsub file ${apiData.GORBLOB_MEDIA_ID.text()}  from BinaryObjectDML.groovy for ${connectInfo.tableName}: $ae.message"
-//                }
+                if (connectInfo.showErrors) {
+                    println "Problem executing update of jobsub file ${apiData.GORBLOB_MEDIA_ID.text()}  from BinaryObjectDML.groovy for ${connectInfo.tableName}: $ae.message"
+                }
                 connectInfo.tableUpdate( "GORBLOB", 0, 0, 0, 1, 0 )
 
             }
@@ -83,15 +85,15 @@ class BinaryObjectDML {
             }
         }
         catch (IOException io) {
-//            if (connectInfo.showErrors) {
-            println "IOException executing getting file stream ${apiData.GORBLOB_MEDIA_ID.text()} from BinaryObjectDML.groovy for ${connectInfo.tableName}: $io.message"
-//            }
+            if (connectInfo.showErrors) {
+                println "IOException executing getting file stream ${apiData.GORBLOB_MEDIA_ID.text()} from BinaryObjectDML.groovy for ${connectInfo.tableName}: $io.message"
+            }
             io.printStackTrace()
         }
         catch (Exception ee) {
-//            if (connectInfo.showErrors) {
-            println "Exception executing getting file stream ${apiData.GORBLOB_MEDIA_ID.text()} from BinaryObjectDML.groovy for ${connectInfo.tableName}: $ee.message"
-//            }
+            if (connectInfo.showErrors) {
+                println "Exception executing getting file stream ${apiData.GORBLOB_MEDIA_ID.text()} from BinaryObjectDML.groovy for ${connectInfo.tableName}: $ee.message"
+            }
             ee.printStackTrace()
         }
         finally {
