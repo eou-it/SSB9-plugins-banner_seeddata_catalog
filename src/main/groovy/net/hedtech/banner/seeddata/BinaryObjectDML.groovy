@@ -62,13 +62,13 @@ class BinaryObjectDML {
             byte[] fileBytes = new byte[(int) repFile.length()]
             stream.read( fileBytes )
 
-            def jobRecord = "select gorblob_surrogate_id gblob from gorblob where GORBLOB_MEDIA_ID = ? "
-            def jobrec = conn.firstRow( jobRecord, [apiData.GORBLOB_MEDIA_ID.text()] )
+            def surrogateIdQuery = "select gorblob_surrogate_id gblob from gorblob where GORBLOB_MEDIA_ID = ? "
+            def surrogateId = conn.firstRow( surrogateIdQuery, [apiData.GORBLOB_MEDIA_ID.text()] )
 
             def updateSql
             try {
-                String updateRec = "update gorblob set GORBLOB_BLOB = ? where gorblob_surrogate_id = ?"
-                conn.executeUpdate( updateRec, [fileBytes, jobrec.gblob] )
+                String updateQuery = "update gorblob set GORBLOB_BLOB = ? where gorblob_surrogate_id = ?"
+                conn.executeUpdate( updateQuery, [fileBytes, surrogateId.gblob] )
                 connectInfo.tableUpdate( "GORBLOB", 0, 0, 1, 0, 0 )
             }
             catch (SQLException ae) {
