@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+
+<FEEDATA>
+    <!--HOSARUSR1 Start-->
+    <TBBSTMT>
+        <BANNERID>HOSARUSR1</BANNERID>
+        <TBBSTMT_BILL_RUN>1</TBBSTMT_BILL_RUN>
+        <TBBSTMT_BILL_DATE>08-MAR-19</TBBSTMT_BILL_DATE>
+        <TBBSTMT_STMT_NUMBER>2</TBBSTMT_STMT_NUMBER>
+        <TBBSTMT_BALANCE>100</TBBSTMT_BALANCE>
+        <TBBSTMT_AMOUNT_DUE>100</TBBSTMT_AMOUNT_DUE>
+        <TBBSTMT_MEDIA_ID>123</TBBSTMT_MEDIA_ID>
+        <TBBSTMT_TERM_CODE>201540</TBBSTMT_TERM_CODE>
+    </TBBSTMT>
+    <TBBSTMT>
+        <BANNERID>HOSARUSR1</BANNERID>
+        <TBBSTMT_BILL_RUN>1</TBBSTMT_BILL_RUN>
+        <TBBSTMT_BILL_DATE>08-MAR-18</TBBSTMT_BILL_DATE>
+        <TBBSTMT_STMT_NUMBER>1</TBBSTMT_STMT_NUMBER>
+        <TBBSTMT_BALANCE>200</TBBSTMT_BALANCE>
+        <TBBSTMT_AMOUNT_DUE>100</TBBSTMT_AMOUNT_DUE>
+        <TBBSTMT_MEDIA_ID>234</TBBSTMT_MEDIA_ID>
+        <TBBSTMT_TERM_CODE>201540</TBBSTMT_TERM_CODE>
+    </TBBSTMT>
+
+    <GORBLOB>
+        <GORBLOB_BLOT_CODE>TXT</GORBLOB_BLOT_CODE>
+        <GORBLOB_MEDIA_ID>123</GORBLOB_MEDIA_ID>
+    </GORBLOB>
+    <GORBLOB>
+        <GORBLOB_BLOT_CODE>TXT</GORBLOB_BLOT_CODE>
+        <GORBLOB_MEDIA_ID>234</GORBLOB_MEDIA_ID>
+    </GORBLOB>
+    <!--HOSARUSR1 End-->
+</FEEDATA>
+
