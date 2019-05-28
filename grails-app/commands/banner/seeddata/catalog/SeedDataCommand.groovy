@@ -23,8 +23,8 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		variable.each{k,v ->
 				println("key: $k, value: $v")
 		}
-		BasicDataSource dataSource = getApplicationContext().getBean("dataSource")
-		println dataSource.getConnection()
+		//BasicDataSource dataSource = getApplicationContext().getBean("dataSource")
+		//println dataSource.getConnection()
 		//grails -Duser.timezone=UTC run-app
 
         println "==== == ================="
