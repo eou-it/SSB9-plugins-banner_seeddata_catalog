@@ -55,6 +55,10 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
 				url = "${CH.config.bannerDataSource.url}"
 				username = "${CH.config.bannerDataSource.username}"
 				password = "${CH.config.bannerDataSource.password}"
+                properties {
+                    timezone='America/New_York'
+                    initialSize = 5
+                }
 			}
         }
     }
