@@ -11,12 +11,23 @@ import org.grails.build.parsing.CommandLine;
 import grails.util.Holders;
 import groovy.time.TimeCategory
 import groovy.time.TimeDuration
+import org.apache.commons.dbcp.*
 
 class SeedDataCommand implements GrailsApplicationCommand {
 
     boolean handle() {
 
         println "==== System property user.dir " + System.properties['user.dir']
+        println "==== == =================="
+		def variable = System.getenv()
+		variable.each{k,v ->
+				println("key: $k, value: $v")
+		}
+		BasicDataSource dataSource = getApplicationContext().getBean("dataSource")
+		println dataSource.getConnection()
+		//grails -Duser.timezone=UTC run-app
+
+        println "==== == ================="
 
         File basedir = BuildSettings.BASE_DIR;
         String baseDirPath = basedir != null ? basedir.getCanonicalPath() : null;
