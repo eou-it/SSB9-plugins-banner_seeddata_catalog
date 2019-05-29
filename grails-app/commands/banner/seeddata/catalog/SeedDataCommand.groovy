@@ -1,5 +1,5 @@
 /** *****************************************************************************************
- * Copyright 2010-2015 Ellucian Company L.P. and its affiliates.                         *
+ * Copyright 2010-2019 Ellucian Company L.P. and its affiliates.                         *
  *****************************************************************************************/
 
 package banner.seeddata.catalog
@@ -7,45 +7,25 @@ package banner.seeddata.catalog
 
 import grails.dev.commands.*
 import grails.util.BuildSettings
-import org.grails.build.parsing.CommandLine;
+import org.grails.build.parsing.CommandLine
 import grails.util.Holders;
 import groovy.time.TimeCategory
 import groovy.time.TimeDuration
-import org.apache.commons.dbcp.*
 
 class SeedDataCommand implements GrailsApplicationCommand {
 
     boolean handle() {
-
-        println "==== System property user.dir " + System.properties['user.dir']
-        println "==== == =================="
-		def variable = System.getenv()
-		variable.each{k,v ->
-				println("key: $k, value: $v")
-		}
-		//BasicDataSource dataSource = getApplicationContext().getBean("dataSource")
-		//println dataSource.getConnection()
-		//grails -Duser.timezone=UTC run-app
-
-        println "==== == ================="
-
-        File basedir = BuildSettings.BASE_DIR;
+        File basedir = BuildSettings.BASE_DIR
         String baseDirPath = basedir != null ? basedir.getCanonicalPath() : null;
-        println "Base Directory Path ====> " + baseDirPath		
-
 		println "Base Directory: ${basedir} target ${args} Base Directory Path ${baseDirPath}"
-		
 		executeSeedDataLoader()
-
         return true
     }
 
 	def executeSeedDataLoader() {
-	
 		//Get the base directory and plugin directory path
-        File basedir = BuildSettings.BASE_DIR;
-        String baseDirPath = basedir != null ? basedir.getCanonicalPath() : null;		
-	
+        File basedir = BuildSettings.BASE_DIR
+
 		//Get the dataSource bean from Application Context
 		def appContext = getApplicationContext()
 		def dataSource = appContext.getBean("dataSource")
@@ -55,24 +35,17 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		def clazzSeedDataLoader = classLoader.loadClass("net.hedtech.banner.seeddata.SeedDataLoader")
 		def inputData = clazzInputData.newInstance([dataSource: dataSource])
 
-		//def inputData = new net.hedtech.banner.seeddata.InputData([dataSource: dataSource])
 		def seedDataTargets = Holders.getConfig().seedDataTarget
 
-		
 		def pluginDirPath = getPluginDirectoryPathString()
 
 		def reportErrors = 0
 		def startDate = new Date()
 		println "Seed data loader execution of all targets starting at ${new Date()}"
-		
-
 		if (seedDataTargets.size() > 0)
 			inputData.targets << seedDataTargets
-
 		def argsList = ["ALL","BCM"]
-
-		
-		/*** handle according to the arguments passed ***/	
+		/*** handle according to the arguments passed ***/
 		if (args) {
 			def arg = args[0].toUpperCase()
 			def target
@@ -185,20 +158,11 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		println "Total errors reported: ${reportErrors}"
 		println "Seed data loader execution started ${startDate} of all targets ended ${endDate}"
 		println "Total execution time: ${elapsedHours} hours, ${elapsedMinutes} minutes, ${elapsedSeconds} secs"
-
-			
-	
 	}
 
 	def getPluginDirectoryPathString() {
-		/*
-		def pInfo = pluginSettings.getPluginInfos().find { it.name.equals( "banner-seeddata-catalog" ) }
-		pInfo.pluginDir.path.toString()
-		*/
-		
-		//TODO pluginDirPath is Current directory as run from plugin level
-		File basedir = BuildSettings.BASE_DIR;
-        String baseDirPath = basedir != null ? basedir.getCanonicalPath() : null;
+		File basedir = BuildSettings.BASE_DIR
+        String baseDirPath = basedir != null ? basedir.getCanonicalPath() : null
 		baseDirPath
 	}	
 

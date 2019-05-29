@@ -1,5 +1,5 @@
 /*********************************************************************************
-  Copyright 2010-2014 Ellucian Company L.P. and its affiliates.
+  Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 
 // ******************************************************************************
@@ -17,9 +17,6 @@
 
 grails.config.locations = [
         BANNER_APP_CONFIG:        			"banner_configuration.groovy",
-        BANNER_SEEDDATA_CATALOG_CONFIG:     "BannerSeeddataCatalog_configuration.groovy",
-        customRepresentationConfig:         "CustomRepresentationConfig.groovy",
-        releaseInfo:                        "release_info.groovy"       
  ]
 
 
