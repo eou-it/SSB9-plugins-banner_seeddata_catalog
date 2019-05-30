@@ -27,6 +27,7 @@ public class GcrfldrDML {
     def parentOrgSeq
     def childOrgSeq
     def interactionTypeSeq
+    def populationSeq
     def folder = null
     def organization = null
 
@@ -315,6 +316,136 @@ public class GcrfldrDML {
             if (apiData.GCBEVMP_TEMPLATE_ID.text().toInteger() != templateSeq) {
                 apiData.GCBEVMP_TEMPLATE_ID[0].setValue(templateSeq.toString())
             }
+        } else if (connectInfo.tableName == "GCBPOPL") {
+
+            if (apiData.GCBPOPL_FOLDER_ID.text().toInteger() != folderSeq) {
+                apiData.GCBPOPL_FOLDER_ID[0].setValue(folderSeq.toString())
+            }
+            populationSeq = getPopulationSurrogateId(apiData.GCBPOPL_NAME.text(), folderSeq)
+            println "Population Sequence : " + populationSeq
+
+            if(populationSeq != 0) {
+                apiData.GCBPOPL_SURROGATE_ID[0].setValue(populationSeq.toString())
+            }
+
+            def selectionListSeq = getSelectionListSurrogateId()
+
+            def sql
+            //Insert GCRSLIS record
+            sql = """INSERT into GCRSLIS 
+                        (GCRSLIS_SURROGATE_ID,
+                        GCRSLIS_USER_ID,
+                        GCRSLIS_ACTIVITY_DATE,
+                        GCRSLIS_VERSION,
+                        GCRSLIS_DATA_ORIGIN,
+                        GCRSLIS_VPDI_CODE) values (?,?,?,?,?,?)"""
+
+            this.conn.executeInsert(sql, [
+                    selectionListSeq.toString(),
+                    apiData.GCBPOPL_USER_ID.text(),
+                    apiData.GCBPOPL_ACTIVITY_DATE.text(),
+                    apiData.GCBPOPL_VERSION.text(),
+                    apiData.GCBPOPL_DATA_ORIGIN.text(),
+                    apiData.GCBPOPL_VPDI_CODE.text()])
+            connectInfo.tableUpdate("GCRSLIS", 0, 1, 0, 0, 0)
+
+            //Insert GCRLENT record
+            sql = """INSERT into GCRLENT 
+                        (GCRLENT_SURROGATE_ID,
+                        GCRLENT_SLIS_ID,
+                        GCRLENT_PIDM,
+                        GCRLENT_USER_ID,
+                        GCRLENT_ACTIVITY_DATE,
+                        GCRLENT_VERSION,
+                        GCRLENT_DATA_ORIGIN,
+                        GCRLENT_VPDI_CODE) values (?,?,?,?,?,?,?,?)"""
+
+            this.conn.executeInsert(sql, [
+                    getSelectionEntrySurrogateId().toString(),
+                    selectionListSeq.toString(),
+                    getPIDMForBCMADMINUser(),
+                    apiData.GCBPOPL_USER_ID.text(),
+                    apiData.GCBPOPL_ACTIVITY_DATE.text(),
+                    apiData.GCBPOPL_VERSION.text(),
+                    apiData.GCBPOPL_DATA_ORIGIN.text(),
+                    apiData.GCBPOPL_VPDI_CODE.text()])
+            connectInfo.tableUpdate("GCRLENT", 0, 1, 0, 0, 0)
+
+            try {
+                boolean isExist = populationSeq != 0
+                if (isExist) {
+                    sql = """update GCBPOPL set GCBPOPL_CREATOR_ID = ?,
+                                            GCBPOPL_CREATE_DATE = ?,
+                                            GCBPOPL_NAME = ?,
+                                            GCBPOPL_DESCRIPTION = ?,
+                                            GCBPOPL_FOLDER_ID = ?,
+                                            GCBPOPL_USER_ID = ?,
+                                            GCBPOPL_ACTIVITY_DATE = ?,
+                                            GCBPOPL_VERSION = ?,
+                                            GCBPOPL_DATA_ORIGIN = ?,
+                                            GCBPOPL_VPDI_CODE = ?,
+                                            GCBPOPL_INCLUDE_LIST_ID = ?,
+                                            GCBPOPL_CHANGED_IND = ?,
+                                            GCBPOPL_SYSTEM_REQ_IND = ?
+                                      where GCBPOPL_SURROGATE_ID = ?
+                        """
+                    this.conn.executeUpdate(sql, [
+                            apiData.GCBPOPL_CREATOR_ID.text(),
+                            apiData.GCBPOPL_CREATE_DATE.text(),
+                            apiData.GCBPOPL_NAME.text(),
+                            apiData.GCBPOPL_DESCRIPTION.text(),
+                            folderSeq.toString(),
+                            apiData.GCBPOPL_USER_ID.text(),
+                            apiData.GCBPOPL_ACTIVITY_DATE.text(),
+                            apiData.GCBPOPL_VERSION.text(),
+                            apiData.GCBPOPL_DATA_ORIGIN.text(),
+                            apiData.GCBPOPL_VPDI_CODE.text(),
+                            selectionListSeq,
+                            'N',
+                            'N',
+                            populationSeq.toString()])
+                    connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 1, 0, 0)
+
+                } else {
+                    sql ="""Insert into GCBPOPL 
+                            (GCBPOPL_CREATOR_ID,
+                            GCBPOPL_CREATE_DATE,
+                            GCBPOPL_NAME,
+                            GCBPOPL_DESCRIPTION,
+                            GCBPOPL_FOLDER_ID,
+                            GCBPOPL_USER_ID,
+                            GCBPOPL_ACTIVITY_DATE,
+                            GCBPOPL_VERSION,
+                            GCBPOPL_DATA_ORIGIN,
+                            GCBPOPL_VPDI_CODE,
+                            GCBPOPL_INCLUDE_LIST_ID,
+                            GCBPOPL_CHANGED_IND,
+                            GCBPOPL_SYSTEM_REQ_IND) values (?,?,?,?,?,?,?,?,?,?,?,?,?)
+                        """
+                    this.conn.executeInsert(sql, [
+                            apiData.GCBPOPL_CREATOR_ID.text(),
+                            apiData.GCBPOPL_CREATE_DATE.text(),
+                            apiData.GCBPOPL_NAME.text(),
+                            apiData.GCBPOPL_DESCRIPTION.text(),
+                            folderSeq.toString(),
+                            apiData.GCBPOPL_USER_ID.text(),
+                            apiData.GCBPOPL_ACTIVITY_DATE.text(),
+                            apiData.GCBPOPL_VERSION.text(),
+                            apiData.GCBPOPL_DATA_ORIGIN.text(),
+                            apiData.GCBPOPL_VPDI_CODE.text(),
+                            selectionListSeq.toString(),
+                            'N',
+                            'N'])
+                    connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
+                }
+            } catch (Exception e) {
+                if (connectInfo.showErrors) {
+                    connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 0, 1, 0)
+                    println sql
+                    println apiData
+                    println "Could not insert into GCBPOPL  in GcrfldrDML, ${apiData.FOLDER.text()} ${apiData.GCBPOPL_NAME.text()} for ${connectInfo.tableName}. $e.message"
+                }
+            }
         } else if(connectInfo.tableName == "GCRORAN") {
             processGcroran()
 
@@ -493,6 +624,7 @@ public class GcrfldrDML {
             case "GCBQURY" : break;   //inserts and updates manually executed
             case "GCBTMPL" : break;   //inserts and updates manually executed
             case "GCRORAN" : break;   //inserts and updates manually executed
+            case "GCBPOPL" : break;   //inserts and updates manually executed
             default :   def xmlRecNew = "<${apiData.name()}>\n"
                     apiData.children().each() { fields ->
                         def value = fields.text().replaceAll(/&/, '&amp;').replaceAll(/'/, '&apos;').replaceAll(/>/, '&gt;').replaceAll(/</, '&lt;').replaceAll(/"/, '&quot;')
@@ -1062,5 +1194,89 @@ public class GcrfldrDML {
         }
 
         return interactionTypeSeq
+    }
+
+    def getPopulationSurrogateId(String populationName, int folderSeq) {
+
+        def populationSeq
+        def tsql = """select * from gcbpopl where lower(gcbpopl_name) = lower(?) and gcbpopl_folder_id = ? """
+
+        try {
+            def populationSeqRows = this.conn.firstRow(tsql, populationName, folderSeq)
+            if ( populationSeqRows) {
+                populationSeq = populationSeqRows?.GCBPOPL_SURROGATE_ID
+            }
+            else populationSeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcbpopl for gcbpopl in GcrfldrDML,  ${populationName} ${folderSeq} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return populationSeq
+    }
+
+    def getSelectionListSurrogateId() {
+
+        def selectionListSeq
+        def tsql = """select gcrslis_surrogate_id_sequence.nextval as GCRSLIS_SURROGATE_ID from dual"""
+
+        try {
+            def selectionListSeqRows = this.conn.firstRow(tsql)
+            if ( selectionListSeqRows) {
+                selectionListSeq = selectionListSeqRows?.GCRSLIS_SURROGATE_ID
+            }
+            else selectionListSeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcrslis for gcbpopl in GcrfldrDML,  ${folderSeq} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return selectionListSeq
+    }
+
+    def getSelectionEntrySurrogateId() {
+
+        def selectionEntrySeq
+        def tsql = """select gcrlent_surrogate_id_sequence.nextval as GCRLENT_SURROGATE_ID from dual"""
+
+        try {
+            def selectionEntrySeqRows = this.conn.firstRow(tsql)
+            if ( selectionEntrySeqRows) {
+                selectionEntrySeq = selectionEntrySeqRows?.GCRLENT_SURROGATE_ID
+            }
+            else selectionEntrySeq = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcrlent for gcbpopl in GcrfldrDML,  ${folderSeq} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return selectionEntrySeq
+    }
+
+    def getPIDMForBCMADMINUser() {
+
+        def pidm
+        def tsql = """select * from spriden where upper(spriden_id) = ? and spriden_change_ind is null"""
+
+        try {
+            def userRow = this.conn.firstRow(tsql, "BCMADMIN")
+            if ( userRow) {
+                pidm = userRow?.SPRIDEN_PIDM
+            }
+            else pidm = 0
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Could not select surrogate ID from gcbpopl for gcbpopl in GcrfldrDML,  ${populationName} ${folderSeq} for ${connectInfo.tableName}. $e.message"
+            }
+        }
+
+        return pidm
     }
 }
