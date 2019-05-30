@@ -72,7 +72,7 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
         def locations = config.grails.config.locations
         String filePathName
         locations.each { propertyName,  fileName ->
-            String propertyValue = System.getenv(propertyName)?: System.getProperty(propertyName)
+            String propertyValue = System.getProperty(propertyName) ?: System.getenv(propertyName)
             filePathName = getFilePath(propertyValue)
             if (Environment.getCurrent() != Environment.PRODUCTION) {
                 if (!filePathName) {
