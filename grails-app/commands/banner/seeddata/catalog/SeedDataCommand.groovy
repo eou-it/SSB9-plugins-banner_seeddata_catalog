@@ -18,7 +18,20 @@ class SeedDataCommand implements GrailsApplicationCommand {
         File basedir = BuildSettings.BASE_DIR
         String baseDirPath = basedir != null ? basedir.getCanonicalPath() : null;
 		println "Base Directory: ${basedir} target ${args} Base Directory Path ${baseDirPath}"
-		executeSeedDataLoader()
+
+		String databaseURL = (Holders.config.bannerDataSource.url)?.toLowerCase()
+		String seedDataTargetDB = Holders.config.seedDataTargetDB.toString()?.toLowerCase()
+		if(!databaseURL.contains(seedDataTargetDB)) {
+			println "**********************************************************************************************"
+			println "*                                                                                            *"
+			println "*  You can't run the seed data on ${databaseURL}                                             *"
+			println "*  Want to still run on this DB? try changing configuration for  property 'seedDataTargetDB' *"
+			println "**********************************************************************************************"
+			System.exit(0)
+		}else{
+			executeSeedDataLoader()
+		}
+
         return true
     }
 
