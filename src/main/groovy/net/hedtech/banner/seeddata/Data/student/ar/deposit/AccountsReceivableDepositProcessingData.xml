@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<DATA>
+    <!--HOSARUSR1 START-->
+    <TTVPTYP>
+        <TTVPTYP_CODE>ATT</TTVPTYP_CODE>
+        <TTVPTYP_DESC>Test Type ATTS</TTVPTYP_DESC>
+        <TTVPTYP_PAY_TRAN_IND>P</TTVPTYP_PAY_TRAN_IND>
+    </TTVPTYP>
+    <TTVPTYP>
+        <TTVPTYP_CODE>BTT</TTVPTYP_CODE>
+        <TTVPTYP_DESC>Test Type ATTS</TTVPTYP_DESC>
+        <TTVPTYP_PAY_TRAN_IND>P</TTVPTYP_PAY_TRAN_IND>
+    </TTVPTYP>
+    <TBBWPYH>
+        <TBBWPYH_ENR_IND>Y</TBBWPYH_ENR_IND>
+        <TBBWPYH_ADM_IND>Y</TBBWPYH_ADM_IND>
+        <TBBWPYH_ACTIVE_IND>Y</TBBWPYH_ACTIVE_IND>
+        <TBBWPYH_PTYP_PMNT_CODE>ATT</TBBWPYH_PTYP_PMNT_CODE>
+        <TBBWPYH_SEQNO>1</TBBWPYH_SEQNO>
+        <TBBWPYH_URL_TEXT>test_payment_text</TBBWPYH_URL_TEXT>
+        <TBBWPYH_TERM_CODE>201540</TBBWPYH_TERM_CODE>
+    </TBBWPYH>
+    <TBBWPYH>
+        <TBBWPYH_ENR_IND>Y</TBBWPYH_ENR_IND>
+        <TBBWPYH_ADM_IND>Y</TBBWPYH_ADM_IND>
+        <TBBWPYH_ACTIVE_IND>Y</TBBWPYH_ACTIVE_IND>
+        <TBBWPYH_PTYP_PMNT_CODE>BTT</TBBWPYH_PTYP_PMNT_CODE>
+        <TBBWPYH_SEQNO>2</TBBWPYH_SEQNO>
+        <TBBWPYH_URL_TEXT>test_payment_text_2</TBBWPYH_URL_TEXT>
+        <TBBWPYH_TERM_CODE>201540</TBBWPYH_TERM_CODE>
+    </TBBWPYH>
+
+
+    <!--HOSARUSR1 END-->
+</DATA>
+
