@@ -42,7 +42,7 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
         inputData.targets << seedDataTargets
 
     //to add new targets, add target to argsList and the switch statement below
-    def argsList = ["ALL","BCM"]
+    def argsList = ["ALL","BCM","AIP"]
 
     if (args) {
         def arg = args.toUpperCase()
@@ -52,6 +52,9 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
             switch (arg) {
                 case "BCM" :
                     target = inputData.bcmTargets
+                    break;
+                case "AIP" :
+                    target = inputData.aipTargets
                     break;
                 default : //ALL
                     target = inputData.targets
