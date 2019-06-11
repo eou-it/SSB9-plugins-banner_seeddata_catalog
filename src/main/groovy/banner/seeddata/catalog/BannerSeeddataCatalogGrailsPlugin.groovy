@@ -29,8 +29,16 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
     def profiles = ['web']
 
     Closure doWithSpring() { {->
-			//load external config
-			setupExternalConfig()
+	    Properties p = System.properties
+        String st = System.getenv('CMD_LINE_ARGS')
+        String[] stringList = st.split('-D')
+        stringList.each{it ->
+            String[] strings = it.split("=");
+            if (strings.length == 2)
+                p.put(strings[0], strings[1])
+        }
+        System.setProperties(p)
+		setupExternalConfig()
 			//initializing Datasource for running the grails target "seed-data"
 			dataSource(BasicDataSource) {
 				maxActive = 5
@@ -45,11 +53,11 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
     }
 
     void doWithDynamicMethods() {
-        // TODO Implement registering dynamic methods to classes (optional)
+
     }
 
     void doWithApplicationContext() {
-        // TODO Implement post initialization spring config (optional)
+
     }
 
     void onChange(Map<String, Object> event) {
