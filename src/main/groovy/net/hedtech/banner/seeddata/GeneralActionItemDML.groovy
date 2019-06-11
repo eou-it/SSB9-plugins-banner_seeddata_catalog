@@ -202,7 +202,7 @@ public class GeneralActionItemDML {
             apiData.GCRAGRA_GCBAGRP_ID[0].setValue( actionGroupId.toString() )
 
         }
-      if (connectInfo.tableName == "GCBPOPL") {
+      if (connectInfo.tableName == "GCBPOPLAIP") {
 
           def sql, poprec, folderrec, popsurrogateid, foldersurrogateid, valuearray
 
@@ -340,7 +340,7 @@ public class GeneralActionItemDML {
         }
 
         switch(connectInfo.tableName) {
-            case "GCBPOPL": break;   //inserts and updates manually executed
+            case "GCBPOPLAIP": break;   //inserts and updates manually executed
             default:
                 // parse the xml  back into  gstring for the dynamic sql loader
                 def xmlRecNew = "<${apiData.name()}>\n"
@@ -438,14 +438,14 @@ public class GeneralActionItemDML {
 
 
     def deleteData() {
-        deleteData( "GCRPQID", "delete from GCRPQID where 0 <> ? " )
-        deleteData( "GCRPVID", "delete from GCRPVID where 0 <> ? " )
-        deleteData( "GCRPOPC", "delete from GCRPOPC where 0 <> ? " )
-        deleteData( "GCRPOPV", "delete from GCRPOPV where 0 <> ? " )
-        deleteData( "GCBPOPL", "delete from GCBPOPL where 0 <> ? " )
+        deleteData( "GCRPQID", "delete from GCRPQID where 0 <> ? and gcrpqid_user_id like 'AIP%'" )
+        deleteData( "GCRPVID", "delete from GCRPVID where 0 <> ? and gcrpvid_user_id like 'AIP%'" )
+        deleteData( "GCRPOPC", "delete from GCRPOPC where 0 <> ? and gcrpopc_creator_id LIKE 'AIP%'" )
+        deleteData( "GCRPOPV", "delete from GCRPOPV where 0 <> ? and gcrpopv_creator_id LIKE 'AIP%' " )
+        deleteData( "GCBPOPL", "delete from GCBPOPL where 0 <> ? and gcbpopl_creator_id like 'AIP%'" )
 //        deleteData( "GCRQRYV", "delete from GCRQRYV where 0 <> ? " )
         // deleteData( "GCBQURY", "delete from GCBQURY where 0 <> ? " )
-        deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? " )
+        deleteData( "GCRSLIS", "delete from GCRSLIS where 0 <> ? and gcrslis_user_id like 'AIP%'" )
         deleteData( "GCRAACT", "delete from GCRAACT where 0 <> ? " )
         deleteData( "GCRAGRA", "delete from GCRAGRA where 0 <> ? " )
         deleteData( "GCRAISR", "delete from GCRAISR where 0 <> ? " )

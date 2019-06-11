@@ -1195,6 +1195,16 @@ public class InputData {
             'bcm' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
     ]
 
+    def aipTargets = [
+            'aip' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity3.xml']
+    ]
+
     def validateTable(Sql conn) {
         String ownerSql = """select owner from all_tables where table_name = ?"""
 
