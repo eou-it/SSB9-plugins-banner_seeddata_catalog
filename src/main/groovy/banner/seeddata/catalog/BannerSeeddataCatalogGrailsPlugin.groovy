@@ -32,7 +32,14 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
 	    Properties p = System.properties
         println " ====================================="
         println " properties = " + p
-        println " ======================================"
+        println " ======================================\n\n"
+
+        println "********************************************"
+        def variable = System.getenv()
+        variable.each{k,v ->
+            println("key: $k, value: $v")
+        }
+        println "********************************************"
 
         String st = System.getenv('CMD_LINE_ARGS')
         println " st = " + st
