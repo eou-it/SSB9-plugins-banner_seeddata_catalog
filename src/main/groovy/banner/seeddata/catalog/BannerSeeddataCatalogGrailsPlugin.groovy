@@ -30,6 +30,10 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
 
     Closure doWithSpring() { {->
 	    Properties p = System.properties
+        println " ====================================="
+        println " properties = " + p
+        println " ======================================"
+
         String st = System.getenv('CMD_LINE_ARGS')
         println " st = " + st
         String[] stringList = st?.split('-D')
