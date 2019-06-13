@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2009-2016 Ellucian Company L.P. and its affiliates.
+ Copyright 2009-2019 Ellucian Company L.P. and its affiliates.
  ****************************************************************************** */
 
 package banner.seeddata.catalog
@@ -30,19 +30,7 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
 
     Closure doWithSpring() { {->
 	    Properties p = System.properties
-        println " ====================================="
-        println " properties = " + p
-        println " ======================================\n\n"
-
-        println "********************************************"
-        def variable = System.getenv()
-        variable.each{k,v ->
-            println("key: $k, value: $v")
-        }
-        println "********************************************"
-
         String st = System.getenv('CMD_LINE_ARGS')
-        println " st = " + st
         String[] stringList = st?.split('-D')
         stringList.each{it ->
             String[] strings = it.split("=");
