@@ -57,7 +57,7 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		println "Seed data loader execution of all targets starting at ${new Date()}"
 		if (seedDataTargets.size() > 0)
 			inputData.targets << seedDataTargets
-		def argsList = ["ALL","BCM"]
+		def argsList = ["ALL","BCM","AIP"]
 		/*** handle according to the arguments passed ***/
 		if (args) {
 			def arg = args[0].toUpperCase()
@@ -68,6 +68,9 @@ class SeedDataCommand implements GrailsApplicationCommand {
 				switch (arg) {
 					case "BCM":
 						target = inputData.bcmTargets
+						break;
+					case "AIP":
+						target = inputData.aipTargets
 						break;
 					default: //ALL
 						target = inputData.targets

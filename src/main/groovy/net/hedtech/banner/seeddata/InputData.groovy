@@ -878,12 +878,14 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtxtData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtabData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RtvintlData_1819.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobsayrData_1819.xml'],
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobsayrData_1819.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/Rfrmesg1819Data.xml'],
 
             'finaid-aidy-1314'                  : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobinstData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobprdsData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RpboptsData_1314.xml',
-                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml'],
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml',
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/Rorwebr1314Data.xml'],
 
             'finaid-ss-student'                 : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50112_StudentReq_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
@@ -988,7 +990,10 @@ public class InputData {
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableSupplementalInformationData.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/hold/AccountReceivableHoldInformation.xml',
-                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositData.xml'],
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositData.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/statement/AccountReceivableStatementData.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositProcessingData.xml'],
             'api-student'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLBTERM_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRLMFE_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVARTP_Data.xml',
@@ -1190,6 +1195,16 @@ public class InputData {
             'bcm' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
     ]
 
+    def aipTargets = [
+            'aip' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity3.xml']
+    ]
+
     def validateTable(Sql conn) {
         String ownerSql = """select owner from all_tables where table_name = ?"""
 
@@ -1337,7 +1352,7 @@ public class InputData {
             //def slurper = new ConfigSlurper(GrailsUtil.environment)
             //Grails-3 modification
             String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )     
+            def slurper = new ConfigSlurper( currentEnv )
             def config = slurper.parse(configFile.toURI().toURL())
             url = config.get("bannerDataSource").url
         }
@@ -1440,7 +1455,7 @@ public class InputData {
             //def slurper = new ConfigSlurper(GrailsUtil.environment)
             //Grails-3 modification
             String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )     
+            def slurper = new ConfigSlurper( currentEnv )
             def config = slurper.parse(configFile.toURI().toURL())
             localurl = config.get("bannerDataSource").url
         }
