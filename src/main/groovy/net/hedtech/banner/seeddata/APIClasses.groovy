@@ -103,6 +103,7 @@ public class APIClasses {
             'GCRMBAC'               : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBSPRP'               : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCRORAN'               : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBPOPL'               : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR'               : 'net.hedtech.banner.seeddata.GlbextrDML',
             'GCBACTM'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCVASTS'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
@@ -113,7 +114,7 @@ public class APIClasses {
             'GCRAISR'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAGRA'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCBPOPL'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCBPOPLAIP'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPOPV'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             //'GCBQURY'               : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRQRYV'               : 'net.hedtech.banner.seeddata.GcrfldrDML',
@@ -216,7 +217,8 @@ public class APIClasses {
             'FTVFUND_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
             'FTVORGN_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
             'FRBGRNT'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML'
+            'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
+            'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -255,6 +257,7 @@ public class APIClasses {
             'GCRMBAC' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCBSPRP' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GCRORAN' : 'net.hedtech.banner.seeddata.GcrfldrDML',
+            'GCBPOPL' : 'net.hedtech.banner.seeddata.GcrfldrDML',
             'GLBEXTR' : 'net.hedtech.banner.seeddata.GlbextrDML',
             'GCBACTM' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCVASTS' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
@@ -265,7 +268,7 @@ public class APIClasses {
             'GCRAISR' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRABLK' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRAGRA' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
-            'GCBPOPL' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
+            'GCBPOPLAIP' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRPOPV' : 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             //'GCBQURY': 'net.hedtech.banner.seeddata.GeneralActionItemDML',
             'GCRQRYV' : 'net.hedtech.banner.seeddata.GcrfldrDML',
@@ -315,7 +318,8 @@ public class APIClasses {
             'SHBCGPA' : 'net.hedtech.banner.seeddata.ShbcgpaDML',
             'NTRQGRP' : 'net.hedtech.banner.seeddata.NtrqgrpDML',
             'FRBGRNT' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'FRRGRPI' : 'net.hedtech.banner.seeddata.FinanceGrantDML'
+            'FRRGRPI' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
+            'GORBLOB' : 'net.hedtech.banner.seeddata.BinaryObjectDML'
     ]
 
 
