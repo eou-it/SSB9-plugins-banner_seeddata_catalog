@@ -81,6 +81,8 @@ public class SeedDataLoader {
         def groovySql
         Connection connection
         try {
+            java.util.TimeZone defaultTimeZone = TimeZone.getTimeZone("America/New_York")
+            java.util.TimeZone.setDefault(defaultTimeZone)
             connectionFactory = new ConnectDB(inputData)
             groovySql = connectionFactory.getSqlConnection()
             connection = connectionFactory.getSessionConnection()
