@@ -3,8 +3,7 @@
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
-import grails.util.GrailsUtil
-import grails.util.Environment
+import grails.util.Holders as CH
 import groovy.sql.Sql
 
 /**
@@ -1346,14 +1345,8 @@ public class InputData {
     public String getUrl() {
         // println "Get url: ${url}"
         if (!url) {
-            //url = CH?.config?.CH?.bannerDataSource.url
-            //println "DB URL  ${url} "
-            def configFile = locateConfigFile()
-            //def slurper = new ConfigSlurper(GrailsUtil.environment)
-            //Grails-3 modification
-            String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )
-            def config = slurper.parse(configFile.toURI().toURL())
+            locateConfigFile()
+            def config = CH.config
             url = config.get("bannerDataSource").url
         }
         url
@@ -1451,18 +1444,14 @@ public class InputData {
     public syncSsbSectOracleTextIndex() {
         def localurl = url
         if (!url) {
-            def configFile = locateConfigFile()
-            //def slurper = new ConfigSlurper(GrailsUtil.environment)
-            //Grails-3 modification
-            String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )
-            def config = slurper.parse(configFile.toURI().toURL())
+            locateConfigFile()
+            def config = CH.config
             localurl = config.get("bannerDataSource").url
         }
-        def db = Sql.newInstance(localurl,   //  db =  new Sql( connectInfo.url,
+        def db = Sql.newInstance(localurl,
                 "saturn",
                 "u_pick_it",
-                'oracle.jdbc.driver.OracleDriver')
+                CH.config.bannerDataSource.driver)
 
         def rows = db.rows("""SELECT Pnd_Index_Name name, count(*) cnt,
                                      max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
@@ -1497,7 +1486,8 @@ public class InputData {
     private locateConfigFile() {
         def propertyName = "BANNER_APP_CONFIG"
         def fileName = "banner_configuration.groovy"
-        def filePathName = getFilePath(System.getProperty(propertyName))
+        String propertyValue = System.getProperty(propertyName) ?: System.getenv(propertyName)
+        String filePathName = getFilePath(propertyValue)
         if (!filePathName) {
             filePathName = getFilePath("${System.getProperty('user.home')}/.grails/${fileName}")
         }
@@ -1505,10 +1495,7 @@ public class InputData {
             filePathName = getFilePath("${fileName}")
         }
         if (!filePathName) {
-            filePathName = getFilePath("grails-app/conf/${fileName}")
-        }
-        if (!filePathName) {
-            filePathName = getFilePath(System.getenv(propertyName))
+            filePathName = getFilePath("grails-app/conf/$fileName")
         }
         if (!filePathName) {
             throw new RuntimeException("Unable to locate ${fileName}")
