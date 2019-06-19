@@ -401,7 +401,7 @@ public class GcrfldrDML {
                             apiData.GCBPOPL_DATA_ORIGIN.text(),
                             apiData.GCBPOPL_VPDI_CODE.text(),
                             selectionListSeq,
-                            'N',
+                            apiData.GCBPOPL_CHANGED_IND.text(),
                             'N',
                             populationSeq.toString()])
                     connectInfo.tableUpdate(connectInfo.tableName, 0, 0, 1, 0, 0)
@@ -434,7 +434,7 @@ public class GcrfldrDML {
                             apiData.GCBPOPL_DATA_ORIGIN.text(),
                             apiData.GCBPOPL_VPDI_CODE.text(),
                             selectionListSeq.toString(),
-                            'N',
+                            apiData.GCBPOPL_CHANGED_IND.text(),
                             'N'])
                     connectInfo.tableUpdate(connectInfo.tableName, 0, 1, 0, 0, 0)
                 }
