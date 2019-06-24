@@ -732,7 +732,7 @@ public class InputData {
 												  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040174.xml',
 												  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040175.xml',
 												  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040176.xml',
-												  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040177.xml',],
+												  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040177.xml'],
             'GrailsReadOnly'                   : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GrailsSAMLUser.xml'],
             'finance-budget-availability-data' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccountIndex.xml',
