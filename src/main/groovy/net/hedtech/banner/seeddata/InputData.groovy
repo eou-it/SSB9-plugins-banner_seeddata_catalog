@@ -591,6 +591,8 @@ public class InputData {
             'general-auto'                     : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/MDUUSecurityData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsers1.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsers2.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsersBANGENUSR.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsersBANADMIN.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoNewPages.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoSDEData.xml'],
             'gender-pronoun'                   : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GtvgndrData.xml',
