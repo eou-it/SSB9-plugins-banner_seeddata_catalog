@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<dataroot>
+    <GENERALAUTOUSER>
+        <BANSECR>YES</BANSECR>
+        <CREATE_USER>BANGENUSR</CREATE_USER>
+        <READONLY>NO</READONLY>
+    </GENERALAUTOUSER>
+    <GENERALAUTOUSER>
+        <BANSECR>YES</BANSECR>
+        <ORACLEID>BANGENUSR</ORACLEID>
+        <GENERAL_CLASS>BAN_GENERAL_C</GENERAL_CLASS>
+    </GENERALAUTOUSER>
+    <GENERALAUTOUSER>
+        <BANSECR>YES</BANSECR>
+        <ORACLEID>BANGENUSR</ORACLEID>
+        <OBJECT_NAME>GURJOBS</OBJECT_NAME>
+        <OBJECT_ROLE>BAN_DEFAULT_M</OBJECT_ROLE>
+    </GENERALAUTOUSER>
+    <GURUOBJ>
+        <BANSECR>YES</BANSECR>
+        <GURUOBJ_OBJECT>GURJOBS</GURUOBJ_OBJECT>
+        <GURUOBJ_ROLE>BAN_DEFAULT_M</GURUOBJ_ROLE>
+        <GURUOBJ_USERID>BANGENUSR</GURUOBJ_USERID>
+        <GURUOBJ_ACTIVITY_DATE>01-JAN-17</GURUOBJ_ACTIVITY_DATE>
+        <GURUOBJ_USER_ID>BANSECR</GURUOBJ_USER_ID>
+        <GURUOBJ_COMMENTS>TEST</GURUOBJ_COMMENTS>
+        <GURUOBJ_DATA_ORIGIN>GRAILS</GURUOBJ_DATA_ORIGIN>
+    </GURUOBJ>
+</dataroot>
