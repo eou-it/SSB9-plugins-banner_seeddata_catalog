@@ -5067,6 +5067,10 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCRITPE_VPDI_CODE/>
     </GCRITPE>
 
+    <!-- ************************************ Interaction Type - End ************************** -->
+
+    <!-- ************************************ Event Mapping - Start ************************** -->
+
     <GCBEVMP>
         <GCBEVMP_SURROGATE_ID>1</GCBEVMP_SURROGATE_ID>
         <GCBEVMP_EVENT_NAME>HR Time Entry Approve Leave Report Reminder</GCBEVMP_EVENT_NAME>
@@ -5219,6 +5223,32 @@ Copyright 2014-2018 Ellucian Company L.P. and its affiliates.
         <GCBEVMP_DATA_ORIGIN>Banner</GCBEVMP_DATA_ORIGIN>
         <GCBEVMP_VPDI_CODE/>
     </GCBEVMP>
+
+    <!-- ************************************ Event Mapping - End ************************** -->
+
+    <!-- ************************************ Manual Population - Start ************************** -->
+
+    <GCBPOPL>
+        <FOLDER>General</FOLDER>
+        <INCLUDE_LIST>100</INCLUDE_LIST>
+        <GCBPOPL_SURROGATE_ID>100</GCBPOPL_SURROGATE_ID>
+        <GCBPOPL_FOLDER_ID>51</GCBPOPL_FOLDER_ID>
+        <GCBPOPL_CREATOR_ID>BCMADMIN</GCBPOPL_CREATOR_ID>
+        <GCBPOPL_CREATE_DATE>22-MAY-19</GCBPOPL_CREATE_DATE>
+        <GCBPOPL_NAME>Manual one constituent testing population</GCBPOPL_NAME>
+        <GCBPOPL_DESCRIPTION>Manual population with one constituent BCMADMIN for testing purposes</GCBPOPL_DESCRIPTION>
+        <GCBPOPL_USER_ID>BCMADMIN</GCBPOPL_USER_ID>
+        <GCBPOPL_ACTIVITY_DATE>22-MAY-19</GCBPOPL_ACTIVITY_DATE>
+        <GCBPOPL_VERSION>2</GCBPOPL_VERSION>
+        <GCBPOPL_DATA_ORIGIN>Banner</GCBPOPL_DATA_ORIGIN>
+        <GCBPOPL_VPDI_CODE></GCBPOPL_VPDI_CODE>
+        <GCBPOPL_INCLUDE_LIST_ID>100</GCBPOPL_INCLUDE_LIST_ID>
+        <GCBPOPL_EXCLUDE_LIST_ID></GCBPOPL_EXCLUDE_LIST_ID>
+        <GCBPOPL_CHANGED_IND>Y</GCBPOPL_CHANGED_IND>
+        <GCBPOPL_SYSTEM_REQ_IND>N</GCBPOPL_SYSTEM_REQ_IND>
+        <GCBPOPL_SCHEDULED_DATE></GCBPOPL_SCHEDULED_DATE>
+        <GCBPOPL_STATUS></GCBPOPL_STATUS>
+    </GCBPOPL>
 
     <!-- ************************************ Interaction Type - End ************************** -->
 
