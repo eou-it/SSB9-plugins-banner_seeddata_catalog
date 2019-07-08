@@ -12,8 +12,6 @@ import java.text.SimpleDateFormat
 /**
  * General Faculty Feedback Session Control DML.
  */
-
-
 public class FacultyFeedbackSessionControlDML {
     def sfbffsc_surrogate_id
     def sfbffsc_term_code
@@ -70,7 +68,6 @@ public class FacultyFeedbackSessionControlDML {
         this.sfbffsc_user_id = fbSession.SFBFFSC_USER_ID.text()
         this.sfbffsc_activity_date = fbSession.SFBFFSC_ACTIVITY_DATE.text()
         this.sfbffsc_vpdi_code = fbSession.SFBFFSC_VPDI_CODE.text()
-
 
     }
 
