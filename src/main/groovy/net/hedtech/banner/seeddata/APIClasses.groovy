@@ -217,7 +217,8 @@ public class APIClasses {
             'FTVORGN_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
             'FRBGRNT'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
             'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'SFBFFSC'               : 'net.hedtech.banner.seeddata.FacultyFeedbackSessionControlDML'
+            'SFBFFSC'               : 'net.hedtech.banner.seeddata.FacultyFeedbackSessionControlDML',
+            'STVFFVA'               : 'net.hedtech.banner.seeddata.FacultyIssuesAndRecommendationsDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -316,8 +317,7 @@ public class APIClasses {
             'SHBCGPA' : 'net.hedtech.banner.seeddata.ShbcgpaDML',
             'NTRQGRP' : 'net.hedtech.banner.seeddata.NtrqgrpDML',
             'FRBGRNT' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'FRRGRPI' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'SFBFFSC' : 'net.hedtech.banner.seeddata.FacultyFeedbackSessionControlDML'
+            'FRRGRPI' : 'net.hedtech.banner.seeddata.FinanceGrantDML'
     ]
 
 
