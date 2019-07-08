@@ -3,8 +3,7 @@
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
-import grails.util.GrailsUtil
-import grails.util.Environment
+import grails.util.Holders as CH
 import groovy.sql.Sql
 
 /**
@@ -855,7 +854,8 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtxtData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorwtabData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsscsData_1718.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml'],
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RprsspbData_1718.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/EfcData_1718.xml'],
 
             'finaid-aidy-1819'                  : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobaprdData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobprdsData_1819.xml',
@@ -877,12 +877,14 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtxtData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwtabData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RtvintlData_1819.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobsayrData_1819.xml'],
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobsayrData_1819.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/Rfrmesg1819Data.xml'],
 
             'finaid-aidy-1314'                  : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobinstData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobprdsData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RpboptsData_1314.xml',
-                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml'],
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml',
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/Rorwebr1314Data.xml'],
 
             'finaid-ss-student'                 : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50112_StudentReq_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
@@ -918,7 +920,8 @@ public class InputData {
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50024_AwardInformation_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50025_AwardInformation_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40025_Award_Offer_1819.xml',
-                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40024_Award_Offer_1718.xml'],
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40024_Award_Offer_1718.xml',
+                                                   /*'/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass_70001_ContractsAndExemptions.xml'*/],
 
             'api-payroll'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
@@ -987,7 +990,10 @@ public class InputData {
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/tax/AccountsReceivableSupplementalInformationData.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/hold/AccountReceivableHoldInformation.xml',
-                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositData.xml'],
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositData.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/accountSummary/AccountReceivableEnrollmentPeriod.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/statement/AccountReceivableStatementData.xml',
+                                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositProcessingData.xml'],
             'api-student'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLBTERM_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRLMFE_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVARTP_Data.xml',
@@ -1191,6 +1197,16 @@ public class InputData {
             'bcm' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
     ]
 
+    def aipTargets = [
+            'aip' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPTerm.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsers.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPCurriculum.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPData.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity1.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity2.xml',
+                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAIPUsersSecurity3.xml']
+    ]
+
     def validateTable(Sql conn) {
         String ownerSql = """select owner from all_tables where table_name = ?"""
 
@@ -1332,14 +1348,8 @@ public class InputData {
     public String getUrl() {
         // println "Get url: ${url}"
         if (!url) {
-            //url = CH?.config?.CH?.bannerDataSource.url
-            //println "DB URL  ${url} "
-            def configFile = locateConfigFile()
-            //def slurper = new ConfigSlurper(GrailsUtil.environment)
-            //Grails-3 modification
-            String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )
-            def config = slurper.parse(configFile.toURI().toURL())
+            locateConfigFile()
+            def config = CH.config
             url = config.get("bannerDataSource").url
         }
         url
@@ -1437,18 +1447,14 @@ public class InputData {
     public syncSsbSectOracleTextIndex() {
         def localurl = url
         if (!url) {
-            def configFile = locateConfigFile()
-            //def slurper = new ConfigSlurper(GrailsUtil.environment)
-            //Grails-3 modification
-            String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )
-            def config = slurper.parse(configFile.toURI().toURL())
+            locateConfigFile()
+            def config = CH.config
             localurl = config.get("bannerDataSource").url
         }
-        def db = Sql.newInstance(localurl,   //  db =  new Sql( connectInfo.url,
+        def db = Sql.newInstance(localurl,
                 "saturn",
                 "u_pick_it",
-                'oracle.jdbc.driver.OracleDriver')
+                CH.config.bannerDataSource.driver)
 
         def rows = db.rows("""SELECT Pnd_Index_Name name, count(*) cnt,
                                      max(To_Char(Pnd_Timestamp, 'dd-mon-yyyyhh24:mi:ss')) Timestamp
@@ -1483,7 +1489,8 @@ public class InputData {
     private locateConfigFile() {
         def propertyName = "BANNER_APP_CONFIG"
         def fileName = "banner_configuration.groovy"
-        def filePathName = getFilePath(System.getProperty(propertyName))
+        String propertyValue = System.getProperty(propertyName) ?: System.getenv(propertyName)
+        String filePathName = getFilePath(propertyValue)
         if (!filePathName) {
             filePathName = getFilePath("${System.getProperty('user.home')}/.grails/${fileName}")
         }
@@ -1491,10 +1498,7 @@ public class InputData {
             filePathName = getFilePath("${fileName}")
         }
         if (!filePathName) {
-            filePathName = getFilePath("grails-app/conf/${fileName}")
-        }
-        if (!filePathName) {
-            filePathName = getFilePath(System.getenv(propertyName))
+            filePathName = getFilePath("grails-app/conf/$fileName")
         }
         if (!filePathName) {
             throw new RuntimeException("Unable to locate ${fileName}")

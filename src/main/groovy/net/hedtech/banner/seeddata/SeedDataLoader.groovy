@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2010-2017 Ellucian Company L.P. and its affiliates.
+ Copyright 2010-2019 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -81,6 +81,8 @@ public class SeedDataLoader {
         def groovySql
         Connection connection
         try {
+            java.util.TimeZone defaultTimeZone = TimeZone.getTimeZone("America/New_York")
+            java.util.TimeZone.setDefault(defaultTimeZone)
             connectionFactory = new ConnectDB(inputData)
             groovySql = connectionFactory.getSqlConnection()
             connection = connectionFactory.getSessionConnection()
