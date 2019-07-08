@@ -1010,7 +1010,8 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRTCKG_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVRDEF_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRPREQ_Data.xml'],
-            'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
+            'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml'],
+            'selfService-faculty-acceleration' :  ['/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/TermXML201913.xml']
     ]
     /**
      *  Map of selenium targets
@@ -1336,7 +1337,7 @@ public class InputData {
             //def slurper = new ConfigSlurper(GrailsUtil.environment)
             //Grails-3 modification
             String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )     
+            def slurper = new ConfigSlurper( currentEnv )
             def config = slurper.parse(configFile.toURI().toURL())
             url = config.get("bannerDataSource").url
         }
@@ -1439,7 +1440,7 @@ public class InputData {
             //def slurper = new ConfigSlurper(GrailsUtil.environment)
             //Grails-3 modification
             String currentEnv = Environment.getCurrent().getName()
-            def slurper = new ConfigSlurper( currentEnv )     
+            def slurper = new ConfigSlurper( currentEnv )
             def config = slurper.parse(configFile.toURI().toURL())
             localurl = config.get("bannerDataSource").url
         }
