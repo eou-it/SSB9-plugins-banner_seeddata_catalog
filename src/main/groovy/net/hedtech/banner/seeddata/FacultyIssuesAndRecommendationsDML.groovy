@@ -118,7 +118,7 @@ public class FacultyIssuesAndRecommendationsDML {
     private def createSTVFFVA() {
         String API = "{call  sb_feedback_codes.p_create(?,?,?,?,?,?,?)}"
         CallableStatement insertCall = this.connectCall.prepareCall( API )
-        insertCall.registerOutParameter( 1, java.sql.Types.ROWID )
+        insertCall.registerOutParameter( 1, java.sql.Types.INTEGER )
 
         // parm 2 STVFFVA_CODE	VARCHAR2(30 CHAR)
         insertCall.setString( 2, this.stvffva_code )
