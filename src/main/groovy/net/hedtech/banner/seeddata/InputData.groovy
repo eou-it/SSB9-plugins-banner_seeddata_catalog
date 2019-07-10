@@ -1020,6 +1020,7 @@ public class InputData {
             'selfService-faculty-acceleration' :  [
 			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyIssuesAndRecommendationData.xml',
 			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/TermXML201913.xml',
+			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/StudentXMLA00040170.xml',
 			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/StudentXMLA00040167.xml',
 			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/ScheduleXML201913.xml',
 			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyIssuesAssignmentData_A00040170.xml'
