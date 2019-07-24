@@ -25,12 +25,6 @@ Copyright 2018-2019 Ellucian Company L.P. and its affiliates.
         <SPRIDEN_CREATE_FDMN_CODE/>
         <SPRIDEN_SURNAME_PREFIX/>
     </SPRIDEN>
-    <SGBSGID>
-        <BANNERID>FASS50024</BANNERID>
-        <SGBSGID_PIDM/>
-        <SGBSGID_GUID>111111</SGBSGID_GUID>
-        <DELETE>YES</DELETE>
-    </SGBSGID>
     <SGBSTDN>
         <BANNERID>FASS50024</BANNERID>
         <SGBSTDN_PIDM/>
