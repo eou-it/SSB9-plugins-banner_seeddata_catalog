@@ -1021,7 +1021,6 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRASCD_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/ROBPRDS_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RPRADSB_Data.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/TBRACCD_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RPRAWRD_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RORTPRD_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/RORSTAT_Data.xml',
