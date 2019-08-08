@@ -103,6 +103,28 @@ target(main: "Refreshes seed data, using file from arguements or after prompting
             }
         }
 
+        else if (args.toUpperCase() == "CALBHR") {
+            println "Execute CALBHR Seeddata"
+            inputData.calbHrTargets.each {
+                def xmlFiles = it.value
+                xmlFiles.each {
+                    //def xmlInputData = new net.hedtech.banner.seeddata.InputData([dataSource: dataSource])
+                    def xmlInputData = clazzInputData.newInstance([dataSource: dataSource])
+
+                    xmlInputData.xmlFile = "$pluginDirPath/$it.value"
+                    def inputFile = new File(xmlInputData.xmlFile)
+                    if (!inputFile.exists())
+                        xmlInputData.xmlFile = "${basedir}${it.value}"
+
+                    xmlInputData.replaceData = true
+                    println xmlInputData.xmlFile
+                    def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
+                    //def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
+                    seedDataLoader.execute()
+                }
+            }
+        }
+
         else {
             def xmlfiles = inputData.targets.find { it.key == args}?.value
             if (!xmlfiles) xmlFiles = inputData.seleniumTargets.find { it.key == args}?.value
