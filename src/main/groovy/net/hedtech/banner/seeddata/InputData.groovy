@@ -1202,6 +1202,13 @@ public class InputData {
     def calbTargets = [
             'student': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calb/student/CalbstuMisProgramData.xml']]
 
+    def calbHrTargets = [
+            'payroll': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrValidationData.xml',
+                        '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrRulesData.xml',
+                        '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPtremprData.xml'
+            ]
+    ]
+
     def bcmTargets = [
             'bcm' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralCommunicationData.xml']
     ]
