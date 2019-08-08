@@ -113,7 +113,7 @@ public class FacultyIssuesAndRecommendationsDML {
      * @return
      */
     private def createSTVFFVA() {
-        String API = "{call  sb_feedback_codes.p_create(?,?,?,?,?,?,?)}"
+        String API = "{call sb_feedback_codes.p_create(?,?,?,?,?,?,?)}"
         CallableStatement insertCall = this.connectCall.prepareCall( API )
         insertCall.registerOutParameter( 1, java.sql.Types.INTEGER )
 

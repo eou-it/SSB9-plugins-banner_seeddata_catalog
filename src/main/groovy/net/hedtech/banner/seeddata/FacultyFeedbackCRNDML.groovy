@@ -72,7 +72,7 @@ public class FacultyFeedbackCRNDML {
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() {fields ->
-            def value = fields.text().replaceAll( /&/, '' ).replaceAll( /'/, '' ).replaceAll( />/, '' ).replaceAll( /</, '' )
+            def value = fields.text().replaceAll(/&|'|>|</, '')
             xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
         }
         xmlRecNew += "</${apiData.name()}>\n"
