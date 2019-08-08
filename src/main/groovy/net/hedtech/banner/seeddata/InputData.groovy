@@ -1028,16 +1028,16 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVRDEF_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRPREQ_Data.xml'],
             'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml'],
-            'selfService-faculty-acceleration' :  [
-			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyIssuesAndRecommendationData.xml',
-			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/TermXML201913.xml',
-			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/StudentXMLA00040170.xml',
-			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/StudentXMLA00040167.xml',
-			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/ScheduleXML201913.xml',
-			'/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyIssuesAssignmentData_A00040170.xml',
-            '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyStudentFeedbackCommentA00040170.xml',
-            '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyFeedbackCRNData.xml'
-                                                   ]
+            'selfService-faculty-acceleration' : [
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyIssuesAndRecommendationData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/TermXML201913.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/StudentXMLA00040170.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/StudentXMLA00040167.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/ScheduleXML201913.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyIssuesAssignmentData_A00040170.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyStudentFeedbackCommentA00040170.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/FacultyFeedbackCRNData.xml'
+                                                 ]
     ]
     /**
      *  Map of selenium targets
