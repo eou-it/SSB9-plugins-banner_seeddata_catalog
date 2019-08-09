@@ -78,7 +78,7 @@ assemble.doLast {
     basedir =basedir.replace("\\","/")
     int lastIndex=basedir.lastIndexOf("/");
     String pluginRootDir = basedir.substring(0, lastIndex+1);
-    String destPath = pluginRootDir +"banner_bobdole_common.git/lib/"
+    String destPath = pluginRootDir +"banner_student_common.git/lib/"
 
     String srcPath = pluginRootDir+"banner_seeddata_catalog.git/build/libs"
 
