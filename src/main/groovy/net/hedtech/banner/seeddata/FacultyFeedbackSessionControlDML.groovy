@@ -50,7 +50,10 @@ public class FacultyFeedbackSessionControlDML {
         insertSFBFFSC()
     }
 
-
+    /**
+     * Parse XML
+     * @return
+     */
     def parseXmlData() {
         def fbSession = new XmlParser().parseText( xmlData )
 
@@ -69,7 +72,6 @@ public class FacultyFeedbackSessionControlDML {
         this.sfbffsc_vpdi_code = fbSession.SFBFFSC_VPDI_CODE.text()
 
     }
-
 
     /**
      * Insert using sb_feedback_session.p_create
@@ -91,7 +93,6 @@ public class FacultyFeedbackSessionControlDML {
 
     }
 
-
     /**
      * Delete if exists.
      * @return
@@ -112,7 +113,6 @@ public class FacultyFeedbackSessionControlDML {
             }
         }
     }
-
 
     /**
      * Create sb_feedback_session.p_create
