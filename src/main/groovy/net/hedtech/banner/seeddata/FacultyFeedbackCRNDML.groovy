@@ -40,20 +40,19 @@ public class FacultyFeedbackCRNDML {
      * Process the SFRFFST records.
      *
      */
-
     def processSFRFFBK() {
         def apiData = new XmlParser().parseText( xmlData )
 
         def studentId = apiData.STUDENTBANNERID?.text()
         def facultyId = apiData.BANNERID?.text()
         if (studentId && facultyId) {
-            String findId = """select SFRFFST_SURROGATE_ID from SFRFFST ,sfbffsc
-                                where sfrffst.sfrffst_sfbffsc_id = sfbffsc.sfbffsc_surrogate_id
-                                AND SFRFFST.SFRFFST_FACULTY_PIDM = (SELECT max(SPRIDEN_PIDM) FROM SPRIDEN WHERE SPRIDEN_ID=?)
-                                AND SFRFFST.SFRFFST_STUDENT_PIDM = (SELECT max(SPRIDEN_PIDM) FROM SPRIDEN WHERE SPRIDEN_ID=?)
-                                AND SFBFFSC_TERM_CODE = ?
-                                AND SFBFFSC_DESCRIPTION = ?
-                                ANd SFRFFST.SFRFFST_CRN = ? """
+            String findId = """SELECT SFRFFST_SURROGATE_ID FROM SFRFFST ,SFBFFSC
+                               WHERE SFRFFST.SFRFFST_SFBFFSC_ID = SFBFFSC.SFBFFSC_SURROGATE_ID
+                               AND SFRFFST.SFRFFST_FACULTY_PIDM = (SELECT MAX(SPRIDEN_PIDM) FROM SPRIDEN WHERE SPRIDEN_ID=?)
+                               AND SFRFFST.SFRFFST_STUDENT_PIDM = (SELECT MAX(SPRIDEN_PIDM) FROM SPRIDEN WHERE SPRIDEN_ID=?)
+                               AND SFBFFSC_TERM_CODE = ?
+                               AND SFBFFSC_DESCRIPTION = ?
+                               AND SFRFFST.SFRFFST_CRN = ? """
             def spridenRow1 = conn.firstRow( findId, [facultyId, studentId, apiData.SFBFFSC_TERM_CODE?.text(),apiData.SFBFFSC_DESCRIPTION?.text(),apiData.SFRFFST_CRN?.text()] )
             if (spridenRow1) {
                 apiData.SFRFFBK_SFRFFST_ID[0].setValue( spridenRow1.SFRFFST_SURROGATE_ID.toString() )
@@ -63,7 +62,7 @@ public class FacultyFeedbackCRNDML {
 
         def code = apiData.STVFFVA_CODE.text()
         if (code) {
-            String findId = """select STVFFVA_SURROGATE_ID from STVFFVA where STVFFVA_CODE = ? """
+            String findId = """SELECT STVFFVA_SURROGATE_ID FROM STVFFVA WHERE STVFFVA_CODE = ? """
             def spridenRow2 = conn.firstRow( findId, [code] )
             if (spridenRow2) {
                 apiData.SFRFFBK_STVFFVA_ID[0].setValue( spridenRow2.STVFFVA_SURROGATE_ID.toString() )
@@ -73,7 +72,7 @@ public class FacultyFeedbackCRNDML {
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() {fields ->
-            def value = fields.text().replaceAll( /&/, '' ).replaceAll( /'/, '' ).replaceAll( />/, '' ).replaceAll( /</, '' )
+            def value = fields.text().replaceAll(/&|'|>|</, '')
             xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
         }
         xmlRecNew += "</${apiData.name()}>\n"
