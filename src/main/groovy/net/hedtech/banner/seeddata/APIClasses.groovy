@@ -153,6 +153,7 @@ public class APIClasses {
             'FTVTRAT'               : 'net.hedtech.banner.seeddata.FinanceTaxRateCreateDML',
             'FTRTGTR'               : 'net.hedtech.banner.seeddata.FinanceTaxGroupAndRateCreateDML',
             'TBBCSTU'               : 'net.hedtech.banner.seeddata.TbbcstuDML',
+            'CALBHR_PEBEMPL'        : 'net.hedtech.banner.seeddata.EmployeeCalbhrPersonIDDML',
             'PEBEMPL'               : 'net.hedtech.banner.seeddata.EmployeePersonIDDML',
             'PEBEMPLEAVEBYJOB'      : 'net.hedtech.banner.seeddata.EmployeeLeaveByJobPersonIDDML',
             'PDRBDED'               : 'net.hedtech.banner.seeddata.EmployeeBenefitsIDDML',
