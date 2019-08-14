@@ -1235,9 +1235,14 @@ public class InputData {
             'student': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calb/student/CalbstuMisProgramData.xml']]
 
     def calbHrTargets = [
-            'payroll': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrValidationData.xml',
-                        '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrRulesData.xml',
-                        '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPtremprData.xml'
+            'calbhr-employee': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrValidationData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrRulesData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPtremprData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrEclsData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPclsData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPayCalendarData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionHistoryData.xml'
             ]
     ]
 
