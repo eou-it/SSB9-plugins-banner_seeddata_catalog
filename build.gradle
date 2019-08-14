@@ -72,3 +72,31 @@ bootRepackage.enabled = false
 assets {
     packagePlugin = true
 }
+
+assemble.doLast {
+    String basedir = System.getProperty('user.dir')
+    basedir =basedir.replace("\\","/")
+    int lastIndex=basedir.lastIndexOf("/");
+    String pluginRootDir = basedir.substring(0, lastIndex+1);
+    String destPath = pluginRootDir +"banner_student_common.git/lib/"
+
+    String srcPath = pluginRootDir+"banner_seeddata_catalog.git/build/libs"
+
+    // make sure that seed-data jar is deleted so that latest jar is copied.
+    //before test case execution
+    if(new File(destPath).exists()){
+        ant.delete(){fileset dir: "${destPath}", includes:"*.jar" }
+    }
+
+    if(new File(destPath).exists()){
+        ant.copy (todir: destPath){
+            println" >>>>>>>>>> copying seed-data jar from  :: "+srcPath +"  :: to :: "+destPath
+            fileset( dir:"${srcPath}", includes:"*.jar" )
+
+        }
+    }
+}
+
+jar {
+    baseName 'banner_seeddata_catalog'
+}

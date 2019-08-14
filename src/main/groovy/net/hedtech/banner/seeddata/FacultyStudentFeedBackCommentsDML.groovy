@@ -47,7 +47,7 @@ public class FacultyStudentFeedBackCommentsDML {
         def studentId = apiData.STUDENTBANNERID?.text()
         def spridenRow1
         if (studentId) {
-            String findPidm = """select spriden_pidm from spriden where spriden_id = ? """
+            String findPidm = """SELECT SPRIDEN_PIDM FROM SPRIDEN WHERE SPRIDEN_ID = ? """
             spridenRow1 = conn.firstRow( findPidm, [studentId] )
             if (spridenRow1) {
                 apiData.SFRFFST_STUDENT_PIDM[0].setValue( spridenRow1.SPRIDEN_PIDM.toString() )
@@ -57,7 +57,7 @@ public class FacultyStudentFeedBackCommentsDML {
         def thirdPartyId = apiData.BANNERID?.text()
         def spridenRow2
         if (thirdPartyId) {
-            String findPidm = """select spriden_pidm from spriden where spriden_id = ? """
+            String findPidm = """SELECT SPRIDEN_PIDM FROM SPRIDEN WHERE SPRIDEN_ID = ? """
             spridenRow2 = conn.firstRow( findPidm, [thirdPartyId] )
             if (spridenRow2) {
                 apiData.SFRFFST_FACULTY_PIDM[0].setValue( spridenRow2.SPRIDEN_PIDM.toString() )
@@ -68,7 +68,7 @@ public class FacultyStudentFeedBackCommentsDML {
         def startDate = apiData.SFBFFSC_START_DATE?.text()
         def endDate = apiData.SFBFFSC_END_DATE?.text()
         def scId
-        String findId = """select SFBFFSC_SURROGATE_ID from SFBFFSC where SFBFFSC_TERM_CODE = ? AND SFBFFSC_START_DATE= ? AND  SFBFFSC_END_DATE = ?"""
+        String findId = """SELECT SFBFFSC_SURROGATE_ID FROM SFBFFSC WHERE SFBFFSC_TERM_CODE = ? AND SFBFFSC_START_DATE= ? AND  SFBFFSC_END_DATE = ?"""
         scId = conn.firstRow( findId, [termCode,startDate,endDate] )
         if (scId) {
             apiData.SFRFFST_SFBFFSC_ID[0].setValue( scId.SFBFFSC_SURROGATE_ID.toString() )
@@ -78,7 +78,7 @@ public class FacultyStudentFeedBackCommentsDML {
         // parse the xml  back into  gstring for the dynamic sql loader
         def xmlRecNew = "<${apiData.name()}>\n"
         apiData.children().each() {fields ->
-            def value = fields.text().replaceAll( /&/, '' ).replaceAll( /'/, '' ).replaceAll( />/, '' ).replaceAll( /</, '' )
+            def value = fields.text().replaceAll(/&|'|>|</, '')
             xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
         }
         xmlRecNew += "</${apiData.name()}>\n"
