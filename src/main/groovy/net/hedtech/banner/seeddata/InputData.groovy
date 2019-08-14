@@ -1243,7 +1243,8 @@ public class InputData {
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPclsData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPayCalendarData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionData.xml',
-                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionHistoryData.xml'
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionHistoryData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrEmployeeBasicData.xml'
             ]
     ]
 
