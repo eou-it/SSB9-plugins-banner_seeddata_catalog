@@ -96,3 +96,7 @@ assemble.doLast {
         }
     }
 }
+
+jar {
+    baseName 'banner_seeddata_catalog'
+}
