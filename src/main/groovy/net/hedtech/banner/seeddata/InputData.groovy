@@ -1054,6 +1054,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/terms/TermXML201913.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/terms/TermXML201914.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/terms/TermXML201919.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/users/A00040171.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/users/A00040170.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/users/A00040165.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/faculty/users/A00040178.xml',
