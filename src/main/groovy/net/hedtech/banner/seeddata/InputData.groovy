@@ -1243,12 +1243,17 @@ public class InputData {
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrRulesData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPtremprData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrEclsData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrBdcaData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPtrbcdnData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPclsData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrPayCalendarData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrPositionHistoryData.xml',
                                 '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrEmployeeBasicData.xml',
-                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrEmployeeJobData.xml'
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrEmployeeJobData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/posnctl/CalbhrEmployeeJobHistoryData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrEmployeeDeductionData.xml',
+                                '/src/main/groovy/net/hedtech/banner/seeddata/Data/calbhr/payroll/CalbhrEmployeeDeductionHistoryData.xml'
             ]
     ]
 
