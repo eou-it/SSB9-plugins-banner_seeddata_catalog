@@ -47,6 +47,7 @@ public class FacultyIssuesAndRecommendationsDML {
         insertSTVFFVA()
     }
 
+
     /**
      * Parse data.
      * @return
@@ -66,6 +67,7 @@ public class FacultyIssuesAndRecommendationsDML {
         this.stvffva_vpdi_code = xmlValues.STVFFVA_VPDI_CODE.text()
 
     }
+
 
     /**
      * Insert using sb_feedback_codes.p_create
@@ -91,8 +93,8 @@ public class FacultyIssuesAndRecommendationsDML {
      * @return
      */
     private def deleteSTVFFVA() {
-        String rowSQL = """DELETE FROM STVFFVA 
-                           WHERE STVFFVA_CODE = ?
+        String rowSQL = """delete from STVFFVA 
+                           where STVFFVA_CODE = ?
                            AND STVFFVA_DESC = ?
                            AND STVFFVA_TYPE = ?"""
         try {
@@ -108,12 +110,13 @@ public class FacultyIssuesAndRecommendationsDML {
         }
     }
 
+
     /**
      * Create STVFFVA
      * @return
      */
     private def createSTVFFVA() {
-        String API = "{call sb_feedback_codes.p_create(?,?,?,?,?,?,?)}"
+        String API = "{call  sb_feedback_codes.p_create(?,?,?,?,?,?,?)}"
         CallableStatement insertCall = this.connectCall.prepareCall( API )
         insertCall.registerOutParameter( 1, java.sql.Types.INTEGER )
 
