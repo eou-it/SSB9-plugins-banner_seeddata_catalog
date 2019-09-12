@@ -920,10 +920,10 @@ public class InputData {
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/Rorwebr1314Data.xml'],
 
-            'finaid-ss-student'                 : [/*'/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50112_StudentReq_1819.xml',
+            'finaid-ss-student'                 : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50112_StudentReq_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50001_StudentReq_1718.xml',
-                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1718.xml',*/
-                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml'/*,
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1718.xml',
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/WithdrawalInfoAidy1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40001_Award_Aid_Years_1718.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40002_Award_Aid_Years_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50008_Aid_Year_Msg.xml',
@@ -955,7 +955,7 @@ public class InputData {
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass50025_AwardInformation_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40025_Award_Offer_1819.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass40024_Award_Offer_1718.xml',
-                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass_70001_ContractsAndExemptions.xml'*/],
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/student/Fass_70001_ContractsAndExemptions.xml'],
 
             'api-payroll'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRLREA_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/payroll/PTRAPPS_Data.xml',
