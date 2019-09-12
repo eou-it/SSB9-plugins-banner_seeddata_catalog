@@ -224,7 +224,7 @@ public class APIClasses {
             'SFBFFSC'               : 'net.hedtech.banner.seeddata.FacultyFeedbackSessionControlDML',
             'STVFFVA'               : 'net.hedtech.banner.seeddata.FacultyIssuesAndRecommendationsDML',
             'SFRFFST'               : 'net.hedtech.banner.seeddata.FacultyStudentFeedBackCommentsDML',
-            'SFRFFBK'               : 'net.hedtech.banner.seeddata.FacultyFeedbackCRNDML'
+            'SFRFFBK' : 'net.hedtech.banner.seeddata.FacultyFeedbackCRNDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
