@@ -220,11 +220,7 @@ public class APIClasses {
             'FTVORGN_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
             'FRBGRNT'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
             'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML',
-            'SFBFFSC'               : 'net.hedtech.banner.seeddata.FacultyFeedbackSessionControlDML',
-            'STVFFVA'               : 'net.hedtech.banner.seeddata.FacultyIssuesAndRecommendationsDML',
-            'SFRFFST'               : 'net.hedtech.banner.seeddata.FacultyStudentFeedBackCommentsDML',
-            'SFRFFBK' : 'net.hedtech.banner.seeddata.FacultyFeedbackCRNDML'
+            'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -325,9 +321,7 @@ public class APIClasses {
             'NTRQGRP' : 'net.hedtech.banner.seeddata.NtrqgrpDML',
             'FRBGRNT' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
             'FRRGRPI' : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'GORBLOB' : 'net.hedtech.banner.seeddata.BinaryObjectDML',
-            'SFRFFST' : 'net.hedtech.banner.seeddata.FacultyStudentFeedBackCommentsDML',
-            'SFRFFBK' : 'net.hedtech.banner.seeddata.FacultyFeedbackCRNDML'
+            'GORBLOB' : 'net.hedtech.banner.seeddata.BinaryObjectDML'
     ]
 
 
