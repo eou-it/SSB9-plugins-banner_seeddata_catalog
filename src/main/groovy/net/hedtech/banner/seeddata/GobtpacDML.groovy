@@ -10,7 +10,7 @@ import java.sql.Connection
 /**
  * GOBTPAC tables
  * add pin and update the pin value to 111111
- */
+*/
 
 public class GobtpacDML {
 
