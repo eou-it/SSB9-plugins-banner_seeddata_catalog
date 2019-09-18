@@ -190,6 +190,13 @@ public class BoletoHeaderDML {
             if (newPage.TVBBHDR_PAY_DATE?.text()) {
                 this.tvbbhdrPayDate = newPage.TVBBHDR_PAY_DATE.text()
             }
+            def count = fetchBoletoCount()
+            if (count > 0) {
+                def boletoId = fetchBoletoId()
+                deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_BOLETO_NUMBER = ? ", boletoId)
+                deleteData("TVRTACD", "DELETE FROM TVRTACD WHERE TVRTACD_BOLETO_NUMBER = ?", boletoId)
+                deleteData("TVBBHDR", "DELETE FROM TVBBHDR WHERE TVBBHDR_BOLETO_NUMBER = ?", boletoId)
+            }
             createTVBBHDRObject()
         }
     }
@@ -197,7 +204,7 @@ public class BoletoHeaderDML {
     private def createTVBBHDRObject() {
         def sql = """insert into TVBBHDR (TVBBHDR_BOLETO_NUMBER, TVBBHDR_BOLETO_VERSION, TVBBHDR_PIDM, TVBBHDR_ACTIVE_IND, TVBBHDR_GENERATED_DATE, TVBBHDR_PFTP_CODE, TVBBHDR_BANK_CODE, TVBBHDR_TSTA_CODE, TVBBHDR_STATUS_DATE, TVBBHDR_DLOC_CODE,TVBBHDR_LOCATION_DATE, TVBBHDR_REGISTER_BOLETO_IND, TVBBHDR_USER_ID, TVBBHDR_ACTIVITY_DATE, TVBBHDR_TERM_CODE, TVBBHDR_01_DUE_DATE, TVBBHDR_01_AMOUNT, TVBBHDR_02_AMOUNT, TVBBHDR_03_AMOUNT,TVBBHDR_DISCOUNT_AMT, TVBBHDR_OTHER_DED_AMT, TVBBHDR_FINES_AMT, TVBBHDR_OTHER_CHG_AMT, TVBBHDR_NET_AMOUNT, TVBBHDR_DATA_ORIGIN,TVBBHDR_DUE_DATE, TVBBHDR_FIN_RESP_PIDM, TVBBHDR_COMMENT,TVBBHDR_BOLETO_NUMBER_BANK,TVBBHDR_FILE_SEQ_NO,TVBBHDR_PABF_FILE_ID) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,? )"""
         try {
-            conn.executeInsert(sql, [tvbbhdrBoletoNumber, tvbbhdrBoletoversion, tvbbhdrPIDM, tvbbhdrActive.toString(), tvbbhdrGenerateddate.toString(), tvbbhdrPFTPCode.toString(),tvbbhdrBankCode.toString(), tvbbhdrtStatusCode.toString(), tvbbhdrSatusDate.toString(), tvbbhdrdLocCode.toString(), tvbbhdrLocationDate.toString(),tvbbhdrRegisterBoleto.toString(), tvbbhdrUserId.toString(), tvbbhdrActivityDate.toString(), tvbbhdrTermCode.toString(), tvbbhdrDueDate01.toString(), tvbbhdrAmount01, tvbbhdrAmount02, tvbbhdrAmount03, tvbbhdrDiscountAmt, tvbbhdrOtherDedAmt, tvbbhdrFinesAmt, tvbbhdrOtherChgAmt, tvbbhdrNetAmount, tvbbhdrDataOrigin.toString(), tvbbhdrDueDate.toString(), tvbbhdrFinRespPIDM, tvbbhdrComment.toString(), tvbbhdrBoletoNumberBank, tvbbhdrfileseqno, tvbbhdrpabffileIid])
+            conn.executeInsert(sql, [tvbbhdrBoletoNumber, tvbbhdrBoletoversion, tvbbhdrPIDM, tvbbhdrActive.toString(), tvbbhdrGenerateddate.toString(), tvbbhdrPFTPCode.toString(), tvbbhdrBankCode.toString(), tvbbhdrtStatusCode.toString(), tvbbhdrSatusDate.toString(), tvbbhdrdLocCode.toString(), tvbbhdrLocationDate.toString(), tvbbhdrRegisterBoleto.toString(), tvbbhdrUserId.toString(), tvbbhdrActivityDate.toString(), tvbbhdrTermCode.toString(), tvbbhdrDueDate01.toString(), tvbbhdrAmount01, tvbbhdrAmount02, tvbbhdrAmount03, tvbbhdrDiscountAmt, tvbbhdrOtherDedAmt, tvbbhdrFinesAmt, tvbbhdrOtherChgAmt, tvbbhdrNetAmount, tvbbhdrDataOrigin.toString(), tvbbhdrDueDate.toString(), tvbbhdrFinRespPIDM, tvbbhdrComment.toString(), tvbbhdrBoletoNumberBank, tvbbhdrfileseqno, tvbbhdrpabffileIid])
             connectInfo.tableUpdate('TVBBHDR', 0, 1, 0, 0, 0)
         }
         catch (Exception e) {
@@ -224,5 +231,47 @@ public class BoletoHeaderDML {
         return crn
     }
 
+    private def fetchBoletoCount() {
+        def cnt
+        try {
+            String sql = "select count(TVBBHDR_BOLETO_NUMBER) cnt from TVBBHDR where TVBBHDR_COMMENT=?"
+            conn.eachRow(sql, [this.tvbbhdrComment]) {
+                cnt = it.cnt
+            }
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) println("Could not last inserted boleto number val from TVBBHDR in BoletoHeaderDML for ${connectInfo.tableName}. $e.message")
+        }
+        if (connectInfo.debugThis) println("Could not last inserted boleto number val from TVBBHDR ${connectInfo.tableName}.")
+        return cnt
+    }
+
+    private def fetchBoletoId() {
+        def bln
+        try {
+            String sql = "select max(TVBBHDR_BOLETO_NUMBER) bln from TVBBHDR where TVBBHDR_COMMENT=?"
+            conn.eachRow(sql, [this.tvbbhdrComment]) {
+                bln = it.bln
+            }
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) println("Could not last inserted boleto number val from TVBBHDR in BoletoHeaderDML for ${connectInfo.tableName}. $e.message")
+        }
+        if (connectInfo.debugThis) println("Could not last inserted boleto number val from TVBBHDR ${connectInfo.tableName}.")
+        return bln
+    }
+
+    private def deleteData(tableName, sql, boletoId) {
+        try {
+            int delRows = conn.executeUpdate(sql, [boletoId])
+            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) {
+                println "Problem executing delete for ${tableName} ${boletoId} from ProxyAccessCredentialInformationDML.groovy: $e.message"
+                println "${sql}"
+            }
+        }
+    }
 
 }
