@@ -222,7 +222,8 @@ public class APIClasses {
             'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
             'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML',
             'TVBBHDR'               : 'net.hedtech.banner.seeddata.BoletoHeaderDML',
-            'TVRBDTL'               : 'net.hedtech.banner.seeddata.BoletoDetailDML'
+            'TVRBDTL'               : 'net.hedtech.banner.seeddata.BoletoDetailDML',
+            'TVRTACD'               : 'net.hedtech.banner.seeddata.AccountDetailSimulationDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
