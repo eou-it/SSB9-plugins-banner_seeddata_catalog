@@ -52,7 +52,7 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
 
     <TWGBWMNU>
         <TWGBWMNU_NAME>/ssb/proxy/courseScheduleDetail</TWGBWMNU_NAME>
-        <TWGBWMNU_DESC>Course Schedula Detail</TWGBWMNU_DESC>
+        <TWGBWMNU_DESC>Course Schedule Detail</TWGBWMNU_DESC>
         <TWGBWMNU_PAGE_TITLE></TWGBWMNU_PAGE_TITLE>
         <TWGBWMNU_HEADER></TWGBWMNU_HEADER>
         <TWGBWMNU_BACK_MENU_IND>N</TWGBWMNU_BACK_MENU_IND>
@@ -67,7 +67,7 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
     <TWGRMENU>
         <TWGRMENU_NAME>PROXY_ACCESS_PARENT</TWGRMENU_NAME>
         <TWGRMENU_SEQUENCE>55</TWGRMENU_SEQUENCE>
-        <TWGRMENU_URL_TEXT>Course Schedula Detail</TWGRMENU_URL_TEXT>
+        <TWGRMENU_URL_TEXT>Course Schedule Detail</TWGRMENU_URL_TEXT>
         <TWGRMENU_URL>/ssb/proxy/courseScheduleDetail</TWGRMENU_URL>
         <TWGRMENU_ENABLED>Y</TWGRMENU_ENABLED>
         <TWGRMENU_DB_LINK_IND>N</TWGRMENU_DB_LINK_IND>
