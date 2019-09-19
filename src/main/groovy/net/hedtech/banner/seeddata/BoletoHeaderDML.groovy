@@ -54,8 +54,8 @@ public class BoletoHeaderDML {
     def tvbbhdrFinRespPIDM
     def tvbbhdrComment
     def tvbbhdrBoletoNumberBank
-    def tvbbhdrfileseqno
-    def tvbbhdrpabffileIid
+    def tvbbhdrFileSeqNo
+    def tvbbhdrPabfFileId
 
     public BoletoHeaderDML(InputData connectInfo, Sql conn, Connection connectCall) {
         this.conn = conn
@@ -95,10 +95,10 @@ public class BoletoHeaderDML {
                 this.tvbbhdrGenerateddate = newPage.TVBBHDR_GENERATED_DATE.text()
             }
             if (newPage.TVBBHDR_PABF_FILE_ID?.text()) {
-                this.tvbbhdrpabffileIid = newPage.TVBBHDR_PABF_FILE_ID.text()
+                this.tvbbhdrPabfFileId = newPage.TVBBHDR_PABF_FILE_ID.text()
             }
             if (newPage.TVBBHDR_FILE_SEQ_NO?.text()) {
-                this.tvbbhdrfileseqno = newPage.TVBBHDR_FILE_SEQ_NO.text()
+                this.tvbbhdrFileSeqNo = newPage.TVBBHDR_FILE_SEQ_NO.text()
             }
             if (newPage.TVBBHDR_BOLETO_NUMBER_BANK?.text()) {
                 this.tvbbhdrBoletoNumberBank = newPage.TVBBHDR_BOLETO_NUMBER_BANK.text()
@@ -204,7 +204,7 @@ public class BoletoHeaderDML {
     private def createTVBBHDRObject() {
         def sql = """insert into TVBBHDR (TVBBHDR_BOLETO_NUMBER, TVBBHDR_BOLETO_VERSION, TVBBHDR_PIDM, TVBBHDR_ACTIVE_IND, TVBBHDR_GENERATED_DATE, TVBBHDR_PFTP_CODE, TVBBHDR_BANK_CODE, TVBBHDR_TSTA_CODE, TVBBHDR_STATUS_DATE, TVBBHDR_DLOC_CODE,TVBBHDR_LOCATION_DATE, TVBBHDR_REGISTER_BOLETO_IND, TVBBHDR_USER_ID, TVBBHDR_ACTIVITY_DATE, TVBBHDR_TERM_CODE, TVBBHDR_01_DUE_DATE, TVBBHDR_01_AMOUNT, TVBBHDR_02_AMOUNT, TVBBHDR_03_AMOUNT,TVBBHDR_DISCOUNT_AMT, TVBBHDR_OTHER_DED_AMT, TVBBHDR_FINES_AMT, TVBBHDR_OTHER_CHG_AMT, TVBBHDR_NET_AMOUNT, TVBBHDR_DATA_ORIGIN,TVBBHDR_DUE_DATE, TVBBHDR_FIN_RESP_PIDM, TVBBHDR_COMMENT,TVBBHDR_BOLETO_NUMBER_BANK,TVBBHDR_FILE_SEQ_NO,TVBBHDR_PABF_FILE_ID) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,? )"""
         try {
-            conn.executeInsert(sql, [tvbbhdrBoletoNumber, tvbbhdrBoletoversion, tvbbhdrPIDM, tvbbhdrActive.toString(), tvbbhdrGenerateddate.toString(), tvbbhdrPFTPCode.toString(), tvbbhdrBankCode.toString(), tvbbhdrtStatusCode.toString(), tvbbhdrSatusDate.toString(), tvbbhdrdLocCode.toString(), tvbbhdrLocationDate.toString(), tvbbhdrRegisterBoleto.toString(), tvbbhdrUserId.toString(), tvbbhdrActivityDate.toString(), tvbbhdrTermCode.toString(), tvbbhdrDueDate01.toString(), tvbbhdrAmount01, tvbbhdrAmount02, tvbbhdrAmount03, tvbbhdrDiscountAmt, tvbbhdrOtherDedAmt, tvbbhdrFinesAmt, tvbbhdrOtherChgAmt, tvbbhdrNetAmount, tvbbhdrDataOrigin.toString(), tvbbhdrDueDate.toString(), tvbbhdrFinRespPIDM, tvbbhdrComment.toString(), tvbbhdrBoletoNumberBank, tvbbhdrfileseqno, tvbbhdrpabffileIid])
+            conn.executeInsert(sql, [tvbbhdrBoletoNumber, tvbbhdrBoletoversion, tvbbhdrPIDM, tvbbhdrActive.toString(), tvbbhdrGenerateddate.toString(), tvbbhdrPFTPCode.toString(), tvbbhdrBankCode.toString(), tvbbhdrtStatusCode.toString(), tvbbhdrSatusDate.toString(), tvbbhdrdLocCode.toString(), tvbbhdrLocationDate.toString(), tvbbhdrRegisterBoleto.toString(), tvbbhdrUserId.toString(), tvbbhdrActivityDate.toString(), tvbbhdrTermCode.toString(), tvbbhdrDueDate01.toString(), tvbbhdrAmount01, tvbbhdrAmount02, tvbbhdrAmount03, tvbbhdrDiscountAmt, tvbbhdrOtherDedAmt, tvbbhdrFinesAmt, tvbbhdrOtherChgAmt, tvbbhdrNetAmount, tvbbhdrDataOrigin.toString(), tvbbhdrDueDate.toString(), tvbbhdrFinRespPIDM, tvbbhdrComment.toString(), tvbbhdrBoletoNumberBank, tvbbhdrFileSeqNo, tvbbhdrPabfFileId])
             connectInfo.tableUpdate('TVBBHDR', 0, 1, 0, 0, 0)
         }
         catch (Exception e) {
