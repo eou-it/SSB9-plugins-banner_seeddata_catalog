@@ -142,10 +142,12 @@ public class CatalogDeleteDML {
                                and scrrtrm_data_origin != 'GRAILS'
                                 AND  SCRRTRM_CRSE_NUMB = ? """
         deleteData(deleteTab, this.scbcrse_subj_code, this.scbcrse_crse_numb, deleteCat)
+
         deleteTab = "SCRRCMP"
         deleteCat = """DELETE FROM SCRRCMP
-                               WHERE  SCRRCMP_SUBJ_CODE = ?
-                                AND  SCRRCMP_CRSE_NUMB = ? """
+                       WHERE  SCRRCMP_SUBJ_CODE = ?
+                       and    scrrcmp_data_origin != 'GRAILS'
+                       AND    SCRRCMP_CRSE_NUMB = ? """
         deleteData(deleteTab, this.scbcrse_subj_code, this.scbcrse_crse_numb, deleteCat)
 
         deleteTab = "SCRRCOL"
@@ -280,9 +282,9 @@ public class CatalogDeleteDML {
 
         deleteTab = "SCRLEVL"
         deleteCat = """DELETE FROM SCRLEVL
-                                                  WHERE  SCRLEVL_SUBJ_CODE = ?
-                                                  and scrlevl_data_origin != 'GRAILS'
-                                                   AND  SCRLEVL_CRSE_NUMB = ?  """
+                       WHERE  SCRLEVL_SUBJ_CODE = ?
+                       and    scrlevl_data_origin != 'GRAILS'
+                       AND    SCRLEVL_CRSE_NUMB = ?  """
         deleteData(deleteTab, this.scbcrse_subj_code, this.scbcrse_crse_numb, deleteCat)
 
         deleteTab = "SCRGMOD"
