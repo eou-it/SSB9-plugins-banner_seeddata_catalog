@@ -599,7 +599,7 @@ public class CatalogDML {
                     deleteTab = "SCRRCOL"
                     deleteCat = """DELETE FROM SCRRCOL
                                WHERE  SCRRCOL_SUBJ_CODE = ?
-                                AND  SCRRCOL_CRSE_NUMB = ?"""
+                                AND  SCRRCOL_CRSE_NUMB = ? """
                     delRows = conn.executeUpdate(deleteCat, [this.scbcrse_subj_code, this.scbcrse_crse_numb])
                     connectInfo.tableUpdate(deleteTab, 0, 0, 0, 0, delRows)
 
@@ -613,7 +613,7 @@ public class CatalogDML {
                     deleteTab = "SCRRDEP"
                     deleteCat = """DELETE FROM SCRRDEP
                               WHERE  SCRRDEP_SUBJ_CODE = ?
-                               AND  SCRRDEP_CRSE_NUMB = ?"""
+                               AND  SCRRDEP_CRSE_NUMB = ? """
                     delRows = conn.executeUpdate(deleteCat, [this.scbcrse_subj_code, this.scbcrse_crse_numb])
                     connectInfo.tableUpdate(deleteTab, 0, 0, 0, 0, delRows)
 
@@ -662,7 +662,7 @@ public class CatalogDML {
                     deleteTab = "SCRRDEG"
                     deleteCat = """DELETE FROM SCRRDEG
                                WHERE  SCRRDEG_SUBJ_CODE = ?
-                                AND  SCRRDEG_CRSE_NUMB = ?"""
+                                AND  SCRRDEG_CRSE_NUMB = ? """
                     delRows = conn.executeUpdate(deleteCat, [this.scbcrse_subj_code, this.scbcrse_crse_numb])
                     connectInfo.tableUpdate(deleteTab, 0, 0, 0, 0, delRows)
 
@@ -725,7 +725,7 @@ public class CatalogDML {
                     deleteTab = "SCBDESC"
                     deleteCat = """DELETE FROM SCBDESC
                                WHERE  SCBDESC_SUBJ_CODE = ?
-                                AND  SCBDESC_CRSE_NUMB = ?"""
+                                AND  SCBDESC_CRSE_NUMB = ? """
                     delRows = conn.executeUpdate(deleteCat, [this.scbcrse_subj_code, this.scbcrse_crse_numb])
                     connectInfo.tableUpdate(deleteTab, 0, 0, 0, 0, delRows)
                     if (!sectionExists) {
