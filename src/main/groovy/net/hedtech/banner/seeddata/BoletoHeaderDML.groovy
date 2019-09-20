@@ -6,6 +6,7 @@ package net.hedtech.banner.seeddata
 import groovy.sql.Sql
 
 import java.sql.Connection
+import java.lang.String
 
 /**
  * TVBBHDR DML tables
@@ -191,13 +192,32 @@ public class BoletoHeaderDML {
                 this.tvbbhdrPayDate = newPage.TVBBHDR_PAY_DATE.text()
             }
             def count = fetchBoletoCount()
+            def boletoId
             if (count > 0) {
-                def boletoId = fetchBoletoId()
+
+                boletoId = fetchBoletoId()
                 deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_BOLETO_NUMBER = ? ", boletoId)
                 deleteData("TVRTACD", "DELETE FROM TVRTACD WHERE TVRTACD_BOLETO_NUMBER = ?", boletoId)
+                deleteData("TBRACCD", "DELETE FROM TBRACCD WHERE TBRACCD_INVOICE_NUMBER = ?", boletoId)
                 deleteData("TVBBHDR", "DELETE FROM TVBBHDR WHERE TVBBHDR_BOLETO_NUMBER = ?", boletoId)
             }
             createTVBBHDRObject()
+            if(boletoId){
+                int length = String.valueOf(boletoId).length()
+                int lpadZero = 11-length
+                String lpad = "%0"+lpadZero+"d"
+                String padded = String.format(lpad , boletoId.toInteger());
+                String updateSql = "UPDATE TBRACCD SET TBRACCD_DATA_ORIGIN=?, TBRACCD_INVOICE_NUMBER=? WHERE TBRACCD_DATA_ORIGIN=? "
+                try {
+                    conn.executeInsert(updateSql, ["GREAILS", padded, tvbbhdrComment])
+                    connectInfo.tableUpdate('TBRACCD', 0, 0, 1, 0, 0)
+                }
+                catch (Exception e) {
+                    if (connectInfo.showErrors) {
+                        println "Could not update object,  $e.message"
+                    }
+                }
+            }
         }
     }
 

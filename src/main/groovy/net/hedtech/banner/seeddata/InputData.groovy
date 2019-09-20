@@ -1015,11 +1015,12 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvvpftpData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvvdlocData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvvtstaData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbraccdData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvbbhdrData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvrbdtlData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvrcispData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvrsimuData.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvrtacdData.xml'
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvrsimuData.xml'
             ],
             'api-student'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLBTERM_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRLMFE_Data.xml',
