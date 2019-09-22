@@ -43,8 +43,8 @@ public class BoletoDetailDML {
     def tvrbdtlCshrEndDate
     def tvrbdtlCrn
     def tvrbdtlCrossrefsrceCode
-    def tvrbdtlLocmDt
-    def tvrbdtlLocmDtSeq
+    def tvrbdtlLocMDt
+    def tvrbdtlLocMDtSeq
     def tvrbdtlRate
     def tvrbdtlDocumentNumber
     def tvrbdtlTransDate
@@ -175,10 +175,10 @@ public class BoletoDetailDML {
                 this.tvrbdtlCrossrefsrceCode = newPage.TVRBDTL_CROSSREF_SRCE_CODE.text()
             }
             if (newPage.TVRBDTL_LOC_MDT?.text()) {
-                this.tvrbdtlLocmDt = newPage.TVRBDTL_LOC_MDT.text()
+                this.tvrbdtlLocMDt = newPage.TVRBDTL_LOC_MDT.text()
             }
             if (newPage.TVRBDTL_LOC_MDT_SEQ?.text()) {
-                this.tvrbdtlLocmDtSeq = newPage.TVRBDTL_LOC_MDT_SEQ.text()
+                this.tvrbdtlLocMDtSeq = newPage.TVRBDTL_LOC_MDT_SEQ.text()
             }
             if (newPage.TVRBDTL_RATE?.text()) {
                 this.tvrbdtlRate = newPage.TVRBDTL_RATE.text()
@@ -281,7 +281,7 @@ public class BoletoDetailDML {
     private def createTVRBDTLObject() {
         def sql = """insert into TVRBDTL (TVRBDTL_BOLETO_NUMBER,TVRBDTL_BOLETO_VERSION,TVRBDTL_SEQUENCE_NUMBER,TVRBDTL_PIDM,TVRBDTL_TRAN_NUMBER,TVRBDTL_TERM_CODE,TVRBDTL_DETAIL_CODE,TVRBDTL_USER_ID ,TVRBDTL_ENTRY_DATE,TVRBDTL_AMOUNT,TVRBDTL_BALANCE,TVRBDTL_EFFECTIVE_DATE,TVRBDTL_SRCE_CODE,TVRBDTL_BILL_DATE,TVRBDTL_RECEIPT_NUMBER,TVRBDTL_TRAN_NUMBER_PAID,TVRBDTL_CROSSREF_PIDM,TVRBDTL_CROSSREF_NUMBER,TVRBDTL_CROSSREF_DETAIL_CODE,TVRBDTL_CSHR_END_DATE,TVRBDTL_CRN,TVRBDTL_CROSSREF_SRCE_CODE,TVRBDTL_LOC_MDT,TVRBDTL_LOC_MDT_SEQ,TVRBDTL_RATE,TVRBDTL_DOCUMENT_NUMBER,TVRBDTL_TRANS_DATE,TVRBDTL_PAYMENT_ID,TVRBDTL_INVOICE_NUMBER,TVRBDTL_SESSION_NUMBER,TVRBDTL_ACTIVITY_DATE,TVRBDTL_DUE_DATE,TVRBDTL_DESC,TVRBDTL_UNITS,TVRBDTL_ACCT_FEED_IND,TVRBDTL_STATEMENT_DATE,TVRBDTL_INV_NUMBER_PAID,TVRBDTL_CURR_CODE,TVRBDTL_EXCHANGE_DIFF,TVRBDTL_FOREIGN_AMOUNT,TVRBDTL_LATE_DCAT_CODE,TVRBDTL_FEED_DATE,TVRBDTL_FEED_DOC_CODE,TVRBDTL_ATYP_CODE,TVRBDTL_ATYP_SEQNO,TVRBDTL_CARD_TYPE_VR,TVRBDTL_CARD_EXP_DATE_VR,TVRBDTL_CARD_AUTH_NUMBER_VR,TVRBDTL_CROSSREF_DCAT_CODE,TVRBDTL_ORIG_CHG_IND,TVRBDTL_CCRD_CODE,TVRBDTL_MERCHANT_ID,TVRBDTL_TAX_REPT_YEAR,TVRBDTL_TAX_REPT_BOX,TVRBDTL_TAX_AMOUNT,TVRBDTL_TAX_FUTURE_IND,TVRBDTL_DATA_ORIGIN,TVRBDTL_CREATE_SOURCE ) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
         try {
-            conn.executeInsert(sql, [tvrbdtlBoletoNumber, tvrbdtlBoletoVersion, tvrbdtlSequenceNumber, tvrbdtlPidm, tvrbdtlTranNumber, tvrbdtlTermCode, tvrbdtlDetailCode, tvrbdtlUserId, tvrbdtlEntryDate, tvrbdtlAmount, tvrbdtlBalance, tvrbdtlEffectiveDate, tvrbdtlSrceCode, tvrbdtlBillDate, tvrbdtlReceiptNumber, tvrbdtlTranNumberPaid, tvrbdtlCrossrefpidm, tvrbdtlCrossrefNumber, tvrbdtlCrossrefDetailCode, tvrbdtlCshrEndDate, tvrbdtlCrn, tvrbdtlCrossrefsrceCode, tvrbdtlLocmDt, tvrbdtlLocmDtSeq, tvrbdtlRate, tvrbdtlDocumentNumber, tvrbdtlTransDate, tvrbdtlPaymentId, tvrbdtlInvoiceNumber, tvrbdtlSessionNumber, tvrbdtlActivityDate, tvrbdtlDueDate, tvrbdtlDesc, tvrbdtlUnits, tvrbdtlAcctFeedInd, tvrbdtlStatementDate, tvrbdtlInvNumberPaid, tvrbdtlCurrCode, tvrbdtlExchangeDiff, tvrbdtlForeignAmount, tvrbdtlLateDcatCode, tvrbdtlFeedDate, tvrbdtlFeedDocCode, tvrbdtlAtypCode, tvrbdtlAtypSeqno, tvrbdtlCardTypeVR, tvrbdtlCardExpDateVR, tvrbdtlCardAuthNumberVR, tvrbdtlCrossrefDcatCode, tvrbdtlOrigChgInd, tvrbdtlCcrdCode, tvrbdtlMerchantId, tvrbdtlTaxReptYear, tvrbdtlTaxReptBox, tvrbdtlTaxAmount, tvrbdtlTaxFutureInd, tvrbdtlDataOrigin, tvrbdtlCreateSource])
+            conn.executeInsert(sql, [tvrbdtlBoletoNumber, tvrbdtlBoletoVersion, tvrbdtlSequenceNumber, tvrbdtlPidm, tvrbdtlTranNumber, tvrbdtlTermCode, tvrbdtlDetailCode, tvrbdtlUserId, tvrbdtlEntryDate, tvrbdtlAmount, tvrbdtlBalance, tvrbdtlEffectiveDate, tvrbdtlSrceCode, tvrbdtlBillDate, tvrbdtlReceiptNumber, tvrbdtlTranNumberPaid, tvrbdtlCrossrefpidm, tvrbdtlCrossrefNumber, tvrbdtlCrossrefDetailCode, tvrbdtlCshrEndDate, tvrbdtlCrn, tvrbdtlCrossrefsrceCode, tvrbdtlLocMDt, tvrbdtlLocMDtSeq, tvrbdtlRate, tvrbdtlDocumentNumber, tvrbdtlTransDate, tvrbdtlPaymentId, tvrbdtlInvoiceNumber, tvrbdtlSessionNumber, tvrbdtlActivityDate, tvrbdtlDueDate, tvrbdtlDesc, tvrbdtlUnits, tvrbdtlAcctFeedInd, tvrbdtlStatementDate, tvrbdtlInvNumberPaid, tvrbdtlCurrCode, tvrbdtlExchangeDiff, tvrbdtlForeignAmount, tvrbdtlLateDcatCode, tvrbdtlFeedDate, tvrbdtlFeedDocCode, tvrbdtlAtypCode, tvrbdtlAtypSeqno, tvrbdtlCardTypeVR, tvrbdtlCardExpDateVR, tvrbdtlCardAuthNumberVR, tvrbdtlCrossrefDcatCode, tvrbdtlOrigChgInd, tvrbdtlCcrdCode, tvrbdtlMerchantId, tvrbdtlTaxReptYear, tvrbdtlTaxReptBox, tvrbdtlTaxAmount, tvrbdtlTaxFutureInd, tvrbdtlDataOrigin, tvrbdtlCreateSource])
             connectInfo.tableUpdate('TVRBDTL', 0, 1, 0, 0, 0)
         }
         catch (Exception e) {
