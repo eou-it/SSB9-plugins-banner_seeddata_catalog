@@ -209,7 +209,7 @@ public class BoletoHeaderDML {
                 String padded = String.format(lpad , boletoId.toInteger());
                 String updateSql = "UPDATE TBRACCD SET TBRACCD_DATA_ORIGIN=?, TBRACCD_INVOICE_NUMBER=? WHERE TBRACCD_DATA_ORIGIN=? "
                 try {
-                    conn.executeInsert(updateSql, ["GREAILS", padded, tvbbhdrComment])
+                    conn.executeInsert(updateSql, ["GRAILS", padded, tvbbhdrComment])
                     connectInfo.tableUpdate('TBRACCD', 0, 0, 1, 0, 0)
                 }
                 catch (Exception e) {
