@@ -205,12 +205,11 @@ public class BoletoHeaderDML {
             if(boletoId){
                 int length = String.valueOf(boletoId).length()
                 int lpadZero = 11-length
-                String lpad = "%0"+lpadZero+"d"
-                String padded = String.format(lpad , boletoId.toInteger());
+                String padded = boletoId.toString().padLeft(lpadZero,'0')
                 String updateSql = "UPDATE TBRACCD SET TBRACCD_DATA_ORIGIN=?, TBRACCD_INVOICE_NUMBER=? WHERE TBRACCD_DATA_ORIGIN=? "
                 try {
-                    conn.executeInsert(updateSql, ["GRAILS", padded, tvbbhdrComment])
-                    connectInfo.tableUpdate('TBRACCD', 0, 0, 1, 0, 0)
+                    def cntUpdt =  conn.executeUpdate(updateSql, ["GRAILS", padded, tvbbhdrComment])
+                    connectInfo.tableUpdate('TBRACCD', 0, 0, 0, 0, cntUpdt)
                 }
                 catch (Exception e) {
                     if (connectInfo.showErrors) {
@@ -236,7 +235,6 @@ public class BoletoHeaderDML {
     }
 
     private def fetchNextValFromSequenceGenerator() {
-
         def crn
         try {
             String crnsql = "SELECT max(to_number(TVBBHDR_BOLETO_NUMBER)) crn from TVBBHDR"
