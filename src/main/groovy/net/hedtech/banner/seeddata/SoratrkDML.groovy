@@ -45,32 +45,38 @@ public class SoratrkDML {
 
     def processSoratrk() {
         def apiData = new XmlParser().parseText(xmlData)
+        if (apiData?.DELETE[0] && apiData?.SORATRK_TERM_CODE[0]) {
+            this.conn.execute("""delete from soratrk where SORATRK_TERM_CODE = ?""", [apiData?.SORATRK_TERM_CODE[0]])
+        } else {
 
-        def alreadyExists = isExistingSoratrk([
-            apiData.SORATRK_TERM_CODE[0].value()[0],
-            apiData.SORATRK_PTRM_CODE[0].value() ? apiData.SORATRK_PTRM_CODE[0].value()[0] : 'NULL',
-            apiData.SORATRK_SUBJ_CODE[0].value() ? apiData.SORATRK_SUBJ_CODE[0].value()[0] : 'NULL',
-            apiData.SORATRK_CRSE_NUMB[0].value() ? apiData.SORATRK_CRSE_NUMB[0].value()[0] : 'NULL',
-            apiData.SORATRK_CRN[0].value() ? apiData.SORATRK_CRN[0].value()[0] : 'NULL'])
+            def alreadyExists = isExistingSoratrk([
+                    apiData.SORATRK_TERM_CODE[0].value()[0],
+                    apiData.SORATRK_PTRM_CODE[0].value() ? apiData.SORATRK_PTRM_CODE[0].value()[0] : 'NULL',
+                    apiData.SORATRK_SUBJ_CODE[0].value() ? apiData.SORATRK_SUBJ_CODE[0].value()[0] : 'NULL',
+                    apiData.SORATRK_CRSE_NUMB[0].value() ? apiData.SORATRK_CRSE_NUMB[0].value()[0] : 'NULL',
+                    apiData.SORATRK_CRN[0].value() ? apiData.SORATRK_CRN[0].value()[0] : 'NULL'])
 
-        if (! alreadyExists) { // not currently supporting update. if it exists, skip it
-            def nextSeq = this.conn.firstRow( """SELECT SORATRK_SEQUENCE.NEXTVAL AS ID FROM DUAL""" )?.ID
-            if (nextSeq) {
-                apiData.SORATRK_SEQ_NO[0].setValue(nextSeq)
-            }        
+            if (!alreadyExists) { // not currently supporting update. if it exists, skip it
+                def nextSeq = this.conn.firstRow("""SELECT SORATRK_SEQUENCE.NEXTVAL AS ID FROM DUAL""")?.ID
+                if (nextSeq) {
+                    apiData.SORATRK_SEQ_NO[0].setValue(nextSeq)
+                }
 
-            // parse the xml  back into gstring for the dynamic sql loader
-            def xmlRecNew = "<${apiData.name()}>\n"
-            apiData.children().each() { fields ->
-                def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
-                xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
+                // parse the xml  back into gstring for the dynamic sql loader
+                def xmlRecNew = "<${apiData.name()}>\n"
+                apiData.children().each() { fields ->
+                    def value = fields.text().replaceAll(/&/, '').replaceAll(/'/, '').replaceAll(/>/, '').replaceAll(/</, '')
+                    xmlRecNew += "<${fields.name()}>${value}</${fields.name()}>\n"
+                }
+                xmlRecNew += "</${apiData.name()}>\n"
+
+                // parse the data using dynamic sql for inserts and updates
+                def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
             }
-            xmlRecNew += "</${apiData.name()}>\n"
 
-            // parse the data using dynamic sql for inserts and updates
-            def valTable = new DynamicSQLTableXMLRecord(connectInfo, conn, connectCall, xmlRecNew, columns, indexColumns, batch, deleteNode)
-        } 
+        }
     }
+
     private def isExistingSoratrk( List myData ) {
         def exists
 
