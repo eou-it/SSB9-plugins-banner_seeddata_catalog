@@ -53,11 +53,17 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		def pluginDirPath = getPluginDirectoryPathString()
 
 		def reportErrors = 0
+		def reportRead = 0
+		def reportTables = 0
+		def reportInsert = 0
+		def reportUpdate = 0
+		def reportDelete = 0
+		def reportFiles = 0
 		def startDate = new Date()
 		println "Seed data loader execution of all targets starting at ${new Date()}"
 		if (seedDataTargets.size() > 0)
 			inputData.targets << seedDataTargets
-		def argsList = ["ALL","BCM","AIP"]
+		def argsList = ["ALL","BCM","AIP","SELENIUM"]
 		/*** handle according to the arguments passed ***/
 		if (args) {
 			def arg = args[0].toUpperCase()
@@ -71,6 +77,9 @@ class SeedDataCommand implements GrailsApplicationCommand {
 						break;
 					case "AIP":
 						target = inputData.aipTargets
+						break;
+					case "SELENIUM" :
+						target = inputData.seleniumTargets
 						break;
 					default: //ALL
 						target = inputData.targets
@@ -93,6 +102,13 @@ class SeedDataCommand implements GrailsApplicationCommand {
 						//def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
 						seedDataLoader.execute()
 						reportErrors += xmlInputData.totalErrors
+						reportRead  += xmlInputData.totalFilesRead
+						reportTables  += xmlInputData.totalTables
+						reportInsert += xmlInputData.totalInsert
+						reportUpdate += xmlInputData.totalUpdate
+						reportDelete += xmlInputData.totalDelete
+						reportFiles += 1
+
 					}
 				}
 
@@ -117,6 +133,12 @@ class SeedDataCommand implements GrailsApplicationCommand {
 						//def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
 						seedDataLoader.execute()
 						reportErrors += xmlInputData.totalErrors
+						reportRead  += xmlInputData.totalFilesRead
+						reportTables  += xmlInputData.totalTables
+						reportInsert += xmlInputData.totalInsert
+						reportUpdate += xmlInputData.totalUpdate
+						reportDelete += xmlInputData.totalDelete
+						reportFiles += 1
 					}
 				}
 			}
@@ -140,6 +162,12 @@ class SeedDataCommand implements GrailsApplicationCommand {
 						//def seedDataLoader = new net.hedtech.banner.seeddata.SeedDataLoader(xmlInputData)
 						seedDataLoader.execute()
 						reportErrors += xmlInputData.totalErrors
+						reportRead  += xmlInputData.totalFilesRead
+						reportTables  += xmlInputData.totalTables
+						reportInsert += xmlInputData.totalInsert
+						reportUpdate += xmlInputData.totalUpdate
+						reportDelete += xmlInputData.totalDelete
+						reportFiles += 1
 					}
 				}
 			}
@@ -164,6 +192,12 @@ class SeedDataCommand implements GrailsApplicationCommand {
 						def seedDataLoader = clazzSeedDataLoader.newInstance(xmlInputData)
 						seedDataLoader.execute()
 						reportErrors += xmlInputData.totalErrors
+						reportRead  += xmlInputData.totalFilesRead
+						reportTables  += xmlInputData.totalTables
+						reportInsert += xmlInputData.totalInsert
+						reportUpdate += xmlInputData.totalUpdate
+						reportDelete += xmlInputData.totalDelete
+						reportFiles += 1
 					}
 				}
 			}
@@ -175,7 +209,13 @@ class SeedDataCommand implements GrailsApplicationCommand {
 
 			def seedDataLoader = clazzSeedDataLoader.newInstance(inputData)
 			seedDataLoader.execute()
-			reportErrors += inputData.totalErrors
+			reportErrors += xmlInputData.totalErrors
+			reportRead  += xmlInputData.totalFilesRead
+			reportTables  += xmlInputData.totalTables
+			reportInsert += xmlInputData.totalInsert
+			reportUpdate += xmlInputData.totalUpdate
+			reportDelete += xmlInputData.totalDelete
+			reportFiles += 1
 
 		}
 
@@ -195,7 +235,14 @@ class SeedDataCommand implements GrailsApplicationCommand {
 		diff = diff % minuteInMillis;
 		long elapsedSeconds = diff / secondInMillis;
 
-		println "Total errors reported: ${reportErrors}"
+		println "Total errors reported: ${reportErrors} search for 'Errors are present in file' to find errors"
+		println "\nRun Totals, Files  ${reportFiles.toString().padLeft(4, ' ')} " +
+				"\tTables: ${reportTables.toString().padLeft(4, ' ')} " +
+				" \tRead: ${reportRead.toString().padLeft(4, ' ')} " +
+				" \tInsert: ${reportInsert.toString().padLeft(4, ' ')} " +
+				" \tUpdate: ${reportUpdate.toString().padLeft(4, ' ')} " +
+				" \tDeletes: ${reportDelete.toString().padLeft(4, ' ')} " +
+				" \tErrors: ${reportErrors.toString().padLeft(4, ' ')} "
 		println "Seed data loader execution started ${startDate} of all targets ended ${endDate}"
 		println "Total execution time: ${elapsedHours} hours, ${elapsedMinutes} minutes, ${elapsedSeconds} secs"
 	}

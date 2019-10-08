@@ -46,6 +46,11 @@ public class InputData {
     def tableCnts = []
     def tableSize = 0
     def totalErrors = 0
+    def totalFilesRead = 0
+    def totalInsert = 0
+    def totalUpdate = 0
+    def totalDelete = 0
+    def totalTables = 0
 
     List prompts
     // save the PIDM value for the general person view processing
@@ -1465,6 +1470,11 @@ public class InputData {
                 " \tDeletes: ${deleteTot.toString().padLeft(4, ' ')} " +
                 " \tErrors: ${errorTot.toString().padLeft(4, ' ')} "
         totalErrors = errorTot
+        totalTables = tableCnt
+        totalFilesRead = readTot
+        totalInsert = insertTot
+        totalUpdate = updateTot
+        totalDelete = deleteTot
         if (errorTot > 0){
             println "\n Errors are present in file ${xmlFile}"
         }
