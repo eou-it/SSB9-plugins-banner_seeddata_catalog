@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2018 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 - 2019 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -12,6 +12,16 @@ import java.text.SimpleDateFormat
 /**
  * Created by apoliski on 6/6/2016.
  */
+/* AUDIT TRAIL: 8.16.1                                    PK  10/11/2019
+ 1. CR-000168874
+    Requirement: 2020 regulatory changes for W-4 enhancement. 
+    Functional Impact: 
+         New columns(PDRDEDN_AMOUNT5,PDRDEDN_AMOUNT6,PDRDEDN_AMOUNT7,PDRDEDN_AMOUNT8)
+         added to PDRDEDN and PERDHIS tables for W-4 enhancement.
+    Technical Fix:   
+         Added new fields PDRDEDN_AMOUNT5,PDRDEDN_AMOUNT6,PDRDEDN_AMOUNT7,PDRDEDN_AMOUNT8.
+*/         
+
 class EmployeeBenefitsDetailDML {
     def bannerid
     def w4_signed_bannerid
@@ -24,6 +34,10 @@ class EmployeeBenefitsDetailDML {
     def pdrdedn_amount2
     def pdrdedn_amount3
     def pdrdedn_amount4
+    def pdrdedn_amount5
+    def pdrdedn_amount6
+    def pdrdedn_amount7
+    def pdrdedn_amount8
     def pdrdedn_opt_code1
     def pdrdedn_opt_code2
     def pdrdedn_opt_code3
@@ -87,6 +101,10 @@ class EmployeeBenefitsDetailDML {
         this.pdrdedn_amount2 = pdrdedn.PDRDEDN_AMOUNT2.text()
         this.pdrdedn_amount3 = pdrdedn.PDRDEDN_AMOUNT3.text()
         this.pdrdedn_amount4 = pdrdedn.PDRDEDN_AMOUNT4.text()
+        this.pdrdedn_amount5 = pdrdedn.PDRDEDN_AMOUNT5.text()
+        this.pdrdedn_amount6 = pdrdedn.PDRDEDN_AMOUNT6.text()
+        this.pdrdedn_amount7 = pdrdedn.PDRDEDN_AMOUNT7.text()
+        this.pdrdedn_amount8 = pdrdedn.PDRDEDN_AMOUNT8.text()
         this.pdrdedn_opt_code1 = pdrdedn.PDRDEDN_OPT_CODE1.text()
         this.pdrdedn_opt_code2 = pdrdedn.PDRDEDN_OPT_CODE2.text()
         this.pdrdedn_opt_code3 = pdrdedn.PDRDEDN_OPT_CODE3.text()
@@ -168,7 +186,7 @@ class EmployeeBenefitsDetailDML {
             }
             if (!findY) {
                 try {
-                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
+                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                     CallableStatement insertCall = this.connectCall.prepareCall(API)
 
                     insertCall.setInt(1, this.PIDM.toInteger())
@@ -212,99 +230,113 @@ class EmployeeBenefitsDetailDML {
                     } else {
                         insertCall.setDouble(9, this.pdrdedn_amount4.toDouble())
                     }
+                    
+                    if ((this.pdrdedn_amount5 == "") || (this.pdrdedn_amount5 == null) ||
+                            (!this.pdrdedn_amount5)) {
+                        insertCall.setNull(10, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(10, this.pdrdedn_amount5.toDouble())
+                    }
+                    
+                    if ((this.pdrdedn_amount6 == "") || (this.pdrdedn_amount6 == null) ||
+                            (!this.pdrdedn_amount6)) {
+                        insertCall.setNull(11, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(11, this.pdrdedn_amount6.toDouble())
+                    }
 
-                    insertCall.setString(10, this.pdrdedn_opt_code1)
-                    insertCall.setString(11, this.pdrdedn_opt_code2)
-                    insertCall.setString(12, this.pdrdedn_opt_code3)
-                    insertCall.setString(13, this.pdrdedn_opt_code4)
-                    insertCall.setString(14, this.pdrdedn_opt_code5)
+                    insertCall.setString(12, this.pdrdedn_opt_code1)
+                    insertCall.setString(13, this.pdrdedn_opt_code2)
+                    insertCall.setString(14, this.pdrdedn_opt_code3)
+                    insertCall.setString(15, this.pdrdedn_opt_code4)
+                    insertCall.setString(16, this.pdrdedn_opt_code5)
 
                     if ((this.pdrdedn_coverage_date == "") || (this.pdrdedn_coverage_date == null) ||
                             (!this.pdrdedn_coverage_date)) {
-                        insertCall.setNull(15, java.sql.Types.DATE)
+                        insertCall.setNull(17, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_coverage_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(15, sqlDate)
+                        insertCall.setDate(17, sqlDate)
                     }
 
-                    insertCall.setString(16, this.pdrdedn_bdcl_code)
+                    insertCall.setString(18, this.pdrdedn_bdcl_code)
 
                     // W-4 info
-                    insertCall.setString(17, this.pdrdedn_w4_name_change_ind)
+                    insertCall.setString(19, this.pdrdedn_w4_name_change_ind)
                     if ((this.W4_SIGNED_PIDM == "") || (this.W4_SIGNED_PIDM == null) ||
                             (!this.W4_SIGNED_PIDM)) {
-                        insertCall.setNull(18, java.sql.Types.INTEGER)
+                        insertCall.setNull(20, java.sql.Types.INTEGER)
                     } else {
-                        insertCall.setInt(18, this.W4_SIGNED_PIDM.toInteger())
+                        insertCall.setInt(20, this.W4_SIGNED_PIDM.toInteger())
                     }
 
                     if ((this.pdrdedn_w4_signed_date == "") || (this.pdrdedn_w4_signed_date == null) ||
                             (!this.pdrdedn_w4_signed_date)) {
-                        insertCall.setNull(19, java.sql.Types.DATE)
+                        insertCall.setNull(21, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_w4_signed_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(19, sqlDate)
+                        insertCall.setDate(21, sqlDate)
                     }
                     // lockin letter info
-                    insertCall.setString(20, this.pdrdedn_lockin_letter_status)
+                    insertCall.setString(22, this.pdrdedn_lockin_letter_status)
 
                     if ((this.pdrdedn_lockin_letter_date == "") || (this.pdrdedn_lockin_letter_date == null) ||
                             (!this.pdrdedn_lockin_letter_date)) {
-                        insertCall.setNull(21, java.sql.Types.DATE)
+                        insertCall.setNull(23, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_lockin_letter_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(21, sqlDate)
+                        insertCall.setDate(23, sqlDate)
                     }
 
-                    insertCall.setString(22, this.pdrdedn_lockin_fsta_fil_st)
+                    insertCall.setString(24, this.pdrdedn_lockin_fsta_fil_st)
 
                     if ((this.pdrdedn_lockin_withhold_allow == "") || (this.pdrdedn_lockin_withhold_allow == null) ||
                             (!this.pdrdedn_lockin_withhold_allow)) {
-                        insertCall.setNull(23, java.sql.Types.INTEGER)
+                        insertCall.setNull(25, java.sql.Types.INTEGER)
                     } else {
-                        insertCall.setInt(23, this.pdrdedn_lockin_withhold_allow.toInteger())
+                        insertCall.setInt(25, this.pdrdedn_lockin_withhold_allow.toInteger())
                     }
 
-                    insertCall.setString(24, this.pdrdedn_comment)
+                    insertCall.setString(26, this.pdrdedn_comment)
                     if ((this.pdrdedn_comment_date == "") || (this.pdrdedn_comment_date == null) ||
                             (!this.pdrdedn_comment_date)) {
-                        insertCall.setNull(25, java.sql.Types.DATE)
+                        insertCall.setNull(27, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_comment_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(25, sqlDate)
+                        insertCall.setDate(27, sqlDate)
                     }
 
-                    insertCall.setString(26, this.pdrdedn_comment_user_id)
-                    insertCall.setString(27, this.pdrdedn_user_id)
-                    insertCall.setString(28, this.pdrdedn_data_origin)
-                    insertCall.setString(29, this.pdrdedn_brea_code)
+                    insertCall.setString(28, this.pdrdedn_comment_user_id)
+                    insertCall.setString(29, this.pdrdedn_user_id)
+                    insertCall.setString(30, this.pdrdedn_data_origin)
+                    insertCall.setString(31, this.pdrdedn_brea_code)
 
                     if ((this.pdrdedn_event_date == "") || (this.pdrdedn_event_date == null) ||
                             (!this.pdrdedn_event_date)) {
-                        insertCall.setNull(30, java.sql.Types.DATE)
+                        insertCall.setNull(32, java.sql.Types.DATE)
                     } else {
                         ddate = new ColumnDateValue(this.pdrdedn_event_date)
                         unfDate = ddate.formatJavaDate()
                         formatter = new SimpleDateFormat("yyyy-MM-dd");
                         sqlDate = new java.sql.Date(formatter.parse(unfDate).getTime());
-                        insertCall.setDate(30, sqlDate)
+                        insertCall.setDate(32, sqlDate)
                     }
 
-                    insertCall.setString(31, pdrdedn_1042s_limit_ben_cde)
+                    insertCall.setString(33, pdrdedn_1042s_limit_ben_cde)
 
-                    insertCall.registerOutParameter(32, java.sql.Types.ROWID)
+                    insertCall.registerOutParameter(34, java.sql.Types.ROWID)
                     try {
                         insertCall.executeUpdate()
                         connectInfo.tableUpdate("PDRDEDN", 0, 1, 0, 0, 0)
