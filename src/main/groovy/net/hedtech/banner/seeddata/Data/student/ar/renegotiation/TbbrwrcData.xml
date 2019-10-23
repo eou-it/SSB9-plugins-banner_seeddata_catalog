@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<TBBRWRCDATA>
+<TBBRWRC>
+  <TBBRWRC_TERM_CODE>201410</TBBRWRC_TERM_CODE>
+  <TBBRWRC_FUTURE_BOLETO_IND>N</TBBRWRC_FUTURE_BOLETO_IND>
+  <TBBRWRC_STUDY_PATH_IND>N</TBBRWRC_STUDY_PATH_IND>
+  <TBBRWRC_ACTIVITY_DATE>01-JAN-10</TBBRWRC_ACTIVITY_DATE>
+  <TBBRWRC_USER_ID>GRAILS</TBBRWRC_USER_ID>
+  <TBBRWRC_DATA_ORIGIN>GRAILS</TBBRWRC_DATA_ORIGIN>
+</TBBRWRC>
+</TBBRWRCDATA>
