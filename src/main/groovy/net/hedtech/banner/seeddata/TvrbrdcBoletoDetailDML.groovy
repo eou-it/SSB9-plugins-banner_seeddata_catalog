@@ -92,6 +92,7 @@ public class TvrbrdcBoletoDetailDML {
 TVRBRDC_RULE_NUMBER,TVRBRDC_BILR_SEQ_NO,TVRBRDC_RNGE_CODE,TVRBRDC_DETAIL_CODE,TVRBRDC_AMOUNT,TVRBRDC_USER_ID,
 TVRBRDC_ACTIVITY_DATE,TVRBRDC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,?,?)"""
         try {
+
             conn.executeInsert(sql, [ tvrbrdcBoletoNumber, tvrbrdcBoletoVersion, tvrbrdcTermCode, tvrbrdcRuleNumber,
                       tvrbrdcBilrSeqNo, tvrbrdcRangeCode, tvrbrdcDetailCode, tvrbrdcAmount, tvrbrdcUserId,
                       tvrbrdcActivityDate, tvrbrdcDataOrigin ])
@@ -107,7 +108,7 @@ TVRBRDC_ACTIVITY_DATE,TVRBRDC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,?,?)"""
     private def fetchBoletoNumber() {
         def tbn
         try {
-            String crnsql = "SELECT TVBBHDR_BOLETO_NUMBER tbn FROM TVBBHDR WHERE TVBBHDR_COMMENT = ?"
+            String crnsql = "SELECT max(TVBBHDR_BOLETO_NUMBER) tbn FROM TVBBHDR WHERE TVBBHDR_COMMENT = ?"
             conn.eachRow(crnsql, [ this.tvrbrdcBoletoNumber.toString() ]) {
                 tbn = it.tbn
             }
