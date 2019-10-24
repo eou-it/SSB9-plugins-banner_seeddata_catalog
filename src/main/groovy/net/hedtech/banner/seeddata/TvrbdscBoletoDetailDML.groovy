@@ -126,7 +126,7 @@ TVRBDSC_ACTIVITY_DATE,TVRBDSC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,
     private def fetchBoletoNumber() {
         def tbn
         try {
-            String crnsql = "SELECT TVBBHDR_BOLETO_NUMBER tbn FROM TVBBHDR WHERE TVBBHDR_COMMENT = ?"
+            String crnsql = "SELECT MAX(TVBBHDR_BOLETO_NUMBER) tbn FROM TVBBHDR WHERE TVBBHDR_COMMENT = ?"
             conn.eachRow(crnsql, [this.tvrbdscBoletoNumber.toString()]) {
                 tbn = it.tbn
             }

@@ -196,9 +196,11 @@ public class BoletoHeaderDML {
             if (count > 0) {
 
                 boletoId = fetchBoletoId()
-                deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_BOLETO_NUMBER = ? ", boletoId)
+                deleteData("TVRBRDC", "DELETE FROM TVRBRDC WHERE TVRBRDC_BOLETO_NUMBER = ?", boletoId)
                 deleteData("TVRTACD", "DELETE FROM TVRTACD WHERE TVRTACD_BOLETO_NUMBER = ?", boletoId)
                 deleteData("TBRACCD", "DELETE FROM TBRACCD WHERE TBRACCD_INVOICE_NUMBER = ?", boletoId)
+                deleteData("TVRBDSC", "DELETE FROM TVRBDSC WHERE TVRBDSC_BOLETO_NUMBER = ?", boletoId)
+                deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_BOLETO_NUMBER = ? ", boletoId)
                 deleteData("TVBBHDR", "DELETE FROM TVBBHDR WHERE TVBBHDR_BOLETO_NUMBER = ?", boletoId)
             }
             createTVBBHDRObject()
