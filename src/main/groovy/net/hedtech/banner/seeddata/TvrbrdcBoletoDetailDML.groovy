@@ -82,7 +82,6 @@ public class TvrbrdcBoletoDetailDML {
             if (newPage.TVRBRDC_DATA_ORIGIN?.text()) {
                 this.tvrbrdcDataOrigin = newPage.TVRBRDC_DATA_ORIGIN.text()
             }
-
             createTVRBRDCObject()
         }
     }
@@ -90,12 +89,12 @@ public class TvrbrdcBoletoDetailDML {
     private def createTVRBRDCObject() {
         def sql = """insert into TVRBRDC(TVRBRDC_BOLETO_NUMBER,TVRBRDC_BOLETO_VERSION,TVRBRDC_TERM_CODE,
 TVRBRDC_RULE_NUMBER,TVRBRDC_BILR_SEQ_NO,TVRBRDC_RNGE_CODE,TVRBRDC_DETAIL_CODE,TVRBRDC_AMOUNT,TVRBRDC_USER_ID,
-TVRBRDC_ACTIVITY_DATE,TVRBRDC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,?,?)"""
+TVRBRDC_ACTIVITY_DATE,TVRBRDC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,sysdate,?)"""
         try {
 
             conn.executeInsert(sql, [ tvrbrdcBoletoNumber, tvrbrdcBoletoVersion, tvrbrdcTermCode, tvrbrdcRuleNumber,
                       tvrbrdcBilrSeqNo, tvrbrdcRangeCode, tvrbrdcDetailCode, tvrbrdcAmount, tvrbrdcUserId,
-                      tvrbrdcActivityDate, tvrbrdcDataOrigin ])
+                      tvrbrdcDataOrigin ])
             connectInfo.tableUpdate('TVRBRDC', 0, 1, 0, 0, 0)
         }
         catch (Exception e) {

@@ -102,7 +102,6 @@ public class TvrbdscBoletoDetailDML {
             if (newPage.tvrbdsc_DATA_ORIGIN?.text()) {
                 this.tvrbdscDataOrigin = newPage.tvrbdsc_DATA_ORIGIN.text()
             }
-
             createTvrbdscObject()
         }
     }
@@ -111,9 +110,9 @@ public class TvrbdscBoletoDetailDML {
         def sql = """insert into TVRBDSC(TVRBDSC_BOLETO_NUMBER,TVRBDSC_BOLETO_VERSION,TVRBDSC_TERM_CODE,
 TVRBDSC_RULE_NUMBER,TVRBDSC_BILR_SEQ_NO,TVRBDSC_RNGE_CODE,TVRBDSC_DISC_BEGIN_DATE,TVRBDSC_DISC_END_DATE,
 TVRBDSC_PERCENTAGE,TVRBDSC_DETAIL_CODE,TVRBDSC_AMOUNT,TVRBDSC_APPLY_IND,TVRBDSC_TRAN_NUMBER,TVRBDSC_USER_ID,
-TVRBDSC_ACTIVITY_DATE,TVRBDSC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+TVRBDSC_ACTIVITY_DATE,TVRBDSC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,?)"""
         try {
-            conn.executeInsert(sql, [tvrbdscBoletoNumber,tvrbdscBoletoVersion,tvrbdscTermCode,tvrbdscRuleNumber,tvrbdscBilrSeqNo,tvrbdscRangeCode,tvrbdscDiscBeginDate,tvrbdscDiscEndDate,tvrbdscPercentage,tvrbdscDetailCode,tvrbdscAmount,tvrbdscApplyInd,tvrbdscTranNumber,tvrbdscUserId,tvrbdscActivityDate,tvrbdscDataOrigin])
+            conn.executeInsert(sql, [tvrbdscBoletoNumber,tvrbdscBoletoVersion,tvrbdscTermCode,tvrbdscRuleNumber,tvrbdscBilrSeqNo,tvrbdscRangeCode,tvrbdscDiscBeginDate,tvrbdscDiscEndDate,tvrbdscPercentage,tvrbdscDetailCode,tvrbdscAmount,tvrbdscApplyInd,tvrbdscTranNumber,tvrbdscUserId,tvrbdscDataOrigin])
             connectInfo.tableUpdate('TVRBDSC', 0, 1, 0, 0, 0)
         }
         catch (Exception e) {
