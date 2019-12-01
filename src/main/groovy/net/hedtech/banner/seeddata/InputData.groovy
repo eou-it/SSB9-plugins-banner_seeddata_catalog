@@ -1013,6 +1013,8 @@ public class InputData {
             'arbra-data'                       : [
 //                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/RenegotiationTermData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/RenegotiationStudentData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/GtvsdaxData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbbdetcData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvvpftpData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvvdlocData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvvtstaData.xml',
