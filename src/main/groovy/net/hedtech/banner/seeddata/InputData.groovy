@@ -1033,6 +1033,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TvrbrdcData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbbistcData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbrrwrhData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbrrwreData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbrrwrsData.xml'],
             'api-student'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLBTERM_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRLMFE_Data.xml',
