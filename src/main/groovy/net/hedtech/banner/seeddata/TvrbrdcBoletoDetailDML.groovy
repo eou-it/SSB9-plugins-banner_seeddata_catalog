@@ -91,7 +91,6 @@ public class TvrbrdcBoletoDetailDML {
 TVRBRDC_RULE_NUMBER,TVRBRDC_BILR_SEQ_NO,TVRBRDC_RNGE_CODE,TVRBRDC_DETAIL_CODE,TVRBRDC_AMOUNT,TVRBRDC_USER_ID,
 TVRBRDC_ACTIVITY_DATE,TVRBRDC_DATA_ORIGIN ) values (?,?,?,?,?,?,?,?,?,sysdate,?)"""
         try {
-
             conn.executeInsert(sql, [ tvrbrdcBoletoNumber, tvrbrdcBoletoVersion, tvrbrdcTermCode, tvrbrdcRuleNumber,
                       tvrbrdcBilrSeqNo, tvrbrdcRangeCode, tvrbrdcDetailCode, tvrbrdcAmount, tvrbrdcUserId,
                       tvrbrdcDataOrigin ])

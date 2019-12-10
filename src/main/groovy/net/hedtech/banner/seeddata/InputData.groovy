@@ -1011,7 +1011,6 @@ public class InputData {
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/statement/AccountReceivableStatementData.xml',
                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/deposit/AccountsReceivableDepositProcessingData.xml'],
             'arbra-data'                       : [
-//                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/RenegotiationTermData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/RenegotiationStudentData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/GtvsdaxData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ar/renegotiation/TbbdetcData.xml',

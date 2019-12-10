@@ -108,9 +108,7 @@ public class BoletoDetailDML {
             if (newPage.TVRBDTL_TRAN_NUMBER?.text()) {
                 this.tvrbdtlTranNumber = newPage.TVRBDTL_TRAN_NUMBER.text()
             }
-            if (newPage.TVRBDTL_PIDM?.text()) {
-                this.tvrbdtlPidm = newPage.TVRBDTL_PIDM.text()
-            }
+            this.tvrbdtlPidm =fetchUserPidm(newPage.BANNERID.text())
             if (newPage.TVRBDTL_TERM_CODE?.text()) {
                 this.tvrbdtlTermCode = newPage.TVRBDTL_TERM_CODE.text()
             }
@@ -273,7 +271,7 @@ public class BoletoDetailDML {
             if (newPage.TVRBDTL_DUE_DATE?.text()) {
                 this.tvrbdtlDueDate = newPage.TVRBDTL_DUE_DATE.text()
             }
-
+            println('bannerid>>>>>>>>'+newPage.BANNERID.text())
             createTVRBDTLObject()
         }
     }
@@ -306,5 +304,20 @@ public class BoletoDetailDML {
         return tbn
     }
 
+    private String fetchUserPidm(String bannerId) {
+
+        String userPidm
+        try {
+            String crnsql = "SELECT GB_COMMON.F_GET_PIDM(?) pidm FROM DUAL"
+            conn.eachRow(crnsql, [bannerId]) {
+                userPidm = it.pidm
+            }
+        }
+        catch (Exception e) {
+            if (connectInfo.showErrors) println("Could not find pidm from TVBBHDR in BoletoHeaderDML for ${connectInfo.tableName}. $e.message")
+        }
+        if (connectInfo.debugThis) println("Could not find pidm from TVBBHDR  ${connectInfo.tableName}.")
+        return userPidm
+    }
 
 }
