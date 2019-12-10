@@ -57,6 +57,7 @@ public class BoletoHeaderDML {
     def tvbbhdrBoletoNumberBank
     def tvbbhdrFileSeqNo
     def tvbbhdrPabfFileId
+    def bannerId
 
     public BoletoHeaderDML(InputData connectInfo, Sql conn, Connection connectCall) {
         this.conn = conn
@@ -77,18 +78,17 @@ public class BoletoHeaderDML {
         def newPage = new XmlParser().parseText(xmlData)
         if (newPage) {
             def boletoNumber = fetchNextValFromSequenceGenerator()
-
-            if (boletoNumber) {
+            if (newPage.TVBBHDR_BOLETO_VERSION?.text()) {
+                            this.tvbbhdrBoletoversion = newPage.TVBBHDR_BOLETO_VERSION.text()
+                        }
+            if( boletoNumber && tvbbhdrBoletoversion == "1") {
                 this.tvbbhdrBoletoNumber = boletoNumber + 1
             } else {
-                this.tvbbhdrBoletoNumber = newPage.TVBBHDR_BOLETO_NUMBER.text()
+                this.tvbbhdrBoletoNumber = boletoNumber
             }
-            if (newPage.TVBBHDR_BOLETO_VERSION?.text()) {
-                this.tvbbhdrBoletoversion = newPage.TVBBHDR_BOLETO_VERSION.text()
-            }
-            if (newPage.TVBBHDR_PIDM?.text()) {
-                this.tvbbhdrPIDM = newPage.TVBBHDR_PIDM.text()
-            }
+
+            this.tvbbhdrPIDM =fetchUserPidm(newPage.BANNERID.text())
+
             if (newPage.TVBBHDR_ACTIVE_IND?.text()) {
                 this.tvbbhdrActive = newPage.TVBBHDR_ACTIVE_IND.text()
             }
@@ -192,16 +192,16 @@ public class BoletoHeaderDML {
                 this.tvbbhdrPayDate = newPage.TVBBHDR_PAY_DATE.text()
             }
             def count = fetchBoletoCount()
-            def boletoId
-            if (count > 0) {
+            def boletoId = fetchBoletoId()
 
+            if (this.tvbbhdrBoletoversion == '1' && count > 0 ) {
                 boletoId = fetchBoletoId()
-                deleteData("TVRBRDC", "DELETE FROM TVRBRDC WHERE TVRBRDC_BOLETO_NUMBER = ?", boletoId)
-                deleteData("TVRTACD", "DELETE FROM TVRTACD WHERE TVRTACD_BOLETO_NUMBER = ?", boletoId)
-                deleteData("TBRACCD", "DELETE FROM TBRACCD WHERE TBRACCD_INVOICE_NUMBER = ?", boletoId)
-                deleteData("TVRBDSC", "DELETE FROM TVRBDSC WHERE TVRBDSC_BOLETO_NUMBER = ?", boletoId)
-                deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_BOLETO_NUMBER = ? ", boletoId)
-                deleteData("TVBBHDR", "DELETE FROM TVBBHDR WHERE TVBBHDR_BOLETO_NUMBER = ?", boletoId)
+                deleteData("TVRBRDC", "DELETE FROM TVRBRDC WHERE TVRBRDC_BOLETO_NUMBER in (SELECT tvbbhdr_boleto_number FROM TVBBHDR WHERE TVBBHDR_PIDM = ?)", tvbbhdrPIDM)
+                deleteData("TVRBDSC", "DELETE FROM TVRBDSC WHERE TVRBDSC_BOLETO_NUMBER in (SELECT tvbbhdr_boleto_number FROM TVBBHDR WHERE TVBBHDR_PIDM = ?)", tvbbhdrPIDM)
+                deleteData("TVRTACD", "DELETE FROM TVRTACD WHERE TVRTACD_PIDM = ?", tvbbhdrPIDM)
+                deleteData("TBRACCD", "DELETE FROM TBRACCD WHERE TBRACCD_PIDM = ?", tvbbhdrPIDM)
+                deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_PIDM = ? ", tvbbhdrPIDM)
+                deleteData("TVBBHDR", "DELETE FROM TVBBHDR WHERE TVBBHDR_PIDM = ?", tvbbhdrPIDM)
             }
             createTVBBHDRObject()
             if(boletoId){
@@ -293,5 +293,20 @@ public class BoletoHeaderDML {
             }
         }
     }
+
+    private String fetchUserPidm(String bannerId) {
+           String userPidm
+           try {
+               String crnsql = "SELECT GB_COMMON.F_GET_PIDM(?) pidm FROM DUAL"
+               conn.eachRow(crnsql, [bannerId]) {
+                   userPidm = it.pidm
+               }
+           }
+           catch (Exception e) {
+               if (connectInfo.showErrors) println("Could not find pidm from TVBBHDR in BoletoHeaderDML for ${connectInfo.tableName}. $e.message")
+           }
+           if (connectInfo.debugThis) println("Could not find pidm from TVBBHDR  ${connectInfo.tableName}.")
+           return userPidm
+       }
 
 }
