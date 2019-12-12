@@ -271,7 +271,6 @@ public class BoletoDetailDML {
             if (newPage.TVRBDTL_DUE_DATE?.text()) {
                 this.tvrbdtlDueDate = newPage.TVRBDTL_DUE_DATE.text()
             }
-            println('bannerid>>>>>>>>'+newPage.BANNERID.text())
             createTVRBDTLObject()
         }
     }

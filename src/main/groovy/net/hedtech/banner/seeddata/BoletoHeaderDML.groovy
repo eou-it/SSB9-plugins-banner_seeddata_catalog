@@ -191,18 +191,7 @@ public class BoletoHeaderDML {
             if (newPage.TVBBHDR_PAY_DATE?.text()) {
                 this.tvbbhdrPayDate = newPage.TVBBHDR_PAY_DATE.text()
             }
-            def count = fetchBoletoCount()
             def boletoId = fetchBoletoId()
-
-            if (this.tvbbhdrBoletoversion == '1' && count > 0 ) {
-                boletoId = fetchBoletoId()
-                deleteData("TVRBRDC", "DELETE FROM TVRBRDC WHERE TVRBRDC_BOLETO_NUMBER in (SELECT tvbbhdr_boleto_number FROM TVBBHDR WHERE TVBBHDR_PIDM = ?)", tvbbhdrPIDM)
-                deleteData("TVRBDSC", "DELETE FROM TVRBDSC WHERE TVRBDSC_BOLETO_NUMBER in (SELECT tvbbhdr_boleto_number FROM TVBBHDR WHERE TVBBHDR_PIDM = ?)", tvbbhdrPIDM)
-                deleteData("TVRTACD", "DELETE FROM TVRTACD WHERE TVRTACD_PIDM = ?", tvbbhdrPIDM)
-                deleteData("TBRACCD", "DELETE FROM TBRACCD WHERE TBRACCD_PIDM = ?", tvbbhdrPIDM)
-                deleteData("TVRBDTL", "DELETE FROM TVRBDTL WHERE TVRBDTL_PIDM = ? ", tvbbhdrPIDM)
-                deleteData("TVBBHDR", "DELETE FROM TVBBHDR WHERE TVBBHDR_PIDM = ?", tvbbhdrPIDM)
-            }
             createTVBBHDRObject()
             if(boletoId){
                 int length = String.valueOf(boletoId).length()
@@ -251,21 +240,6 @@ public class BoletoHeaderDML {
         return crn
     }
 
-    private def fetchBoletoCount() {
-        def cnt
-        try {
-            String sql = "select count(TVBBHDR_BOLETO_NUMBER) cnt from TVBBHDR where TVBBHDR_COMMENT=?"
-            conn.eachRow(sql, [this.tvbbhdrComment]) {
-                cnt = it.cnt
-            }
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) println("Could not last inserted boleto number val from TVBBHDR in BoletoHeaderDML for ${connectInfo.tableName}. $e.message")
-        }
-        if (connectInfo.debugThis) println("Could not last inserted boleto number val from TVBBHDR ${connectInfo.tableName}.")
-        return cnt
-    }
-
     private def fetchBoletoId() {
         def bln
         try {
@@ -279,19 +253,6 @@ public class BoletoHeaderDML {
         }
         if (connectInfo.debugThis) println("Could not last inserted boleto number val from TVBBHDR ${connectInfo.tableName}.")
         return bln
-    }
-
-    private def deleteData(tableName, sql, boletoId) {
-        try {
-            int delRows = conn.executeUpdate(sql, [boletoId])
-            connectInfo.tableUpdate(tableName, 0, 0, 0, 0, delRows)
-        }
-        catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Problem executing delete for ${tableName} ${boletoId} from ProxyAccessCredentialInformationDML.groovy: $e.message"
-                println "${sql}"
-            }
-        }
     }
 
     private String fetchUserPidm(String bannerId) {
