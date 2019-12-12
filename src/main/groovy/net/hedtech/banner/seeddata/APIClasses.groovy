@@ -224,6 +224,9 @@ public class APIClasses {
             'TVBBHDR'               : 'net.hedtech.banner.seeddata.BoletoHeaderDML',
             'TVRBDTL'               : 'net.hedtech.banner.seeddata.BoletoDetailDML',
             'TVRTACD'               : 'net.hedtech.banner.seeddata.TvrtacdAccountDetailDML',
+            'TVRCISP'               : 'net.hedtech.banner.seeddata.TvrcispInstallmentPlanDML',
+            'TVRSIMU'               : 'net.hedtech.banner.seeddata.TvrsimuSimulationInformationDML',
+            'TBRACCD'               : 'net.hedtech.banner.seeddata.TbraccdAccountDetailDML',
             'TVRBDSC'               : 'net.hedtech.banner.seeddata.TvrbdscBoletoDetailDML',
             'TVRBRDC'               : 'net.hedtech.banner.seeddata.TvrbrdcBoletoDetailDML'
     ]
