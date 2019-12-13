@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<SCHEDULED>
+    <SSRRMAJ>
+        <SSRRMAJ_TERM_CODE>202410</SSRRMAJ_TERM_CODE>
+         <DELETE>YES</DELETE>
+    </SSRRMAJ>
+    <SSRRDEG>
+        <SSRRDEG_TERM_CODE>202410</SSRRDEG_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSRRDEG>
+    <SSRRCMP>
+        <SSRRCMP_TERM_CODE>202410</SSRRCMP_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSRRCMP>
+    <SSRRCLS>
+        <SSRRCLS_TERM_CODE>202410</SSRRCLS_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSRRCLS>
+    <SV_SSRRCHR>
+        <SSRRCHR_TERM_CODE>202410</SSRRCHR_TERM_CODE>
+        <SSRRCHR_REC_TYPE>2</SSRRCHR_REC_TYPE>
+        <DELETE>YES</DELETE>
+    </SV_SSRRCHR>
+     <SV_SSRRCHR>
+        <SSRRCHR_TERM_CODE>202410</SSRRCHR_TERM_CODE>
+        <SSRRCHR_REC_TYPE>1</SSRRCHR_REC_TYPE>
+        <DELETE>YES</DELETE>
+    </SV_SSRRCHR>
+    <SSRRCOL>
+        <SSRRCOL_TERM_CODE>202410</SSRRCOL_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSRRCOL>
+    <SV_SSRRDEP>
+        <SSRRDEP_TERM_CODE>202410</SSRRDEP_TERM_CODE>
+        <SSRRDEP_REC_TYPE>2</SSRRDEP_REC_TYPE>
+        <DELETE>YES</DELETE>
+    </SV_SSRRDEP>
+    <SV_SSRRDEP>
+        <SSRRDEP_TERM_CODE>202410</SSRRDEP_TERM_CODE>
+        <SSRRDEP_REC_TYPE>1</SSRRDEP_REC_TYPE>
+        <DELETE>YES</DELETE>
+    </SV_SSRRDEP>
+    <SSRRLVL>
+        <SSRRLVL_TERM_CODE>202410</SSRRLVL_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSRRLVL>
+    <SSRRPRG>
+        <SSRRPRG_TERM_CODE>202410</SSRRPRG_TERM_CODE>
+        <DELETE>YES</DELETE>
+    </SSRRPRG>
+    <SV_SSRRATT>
+        <SSRRATT_TERM_CODE>202410</SSRRATT_TERM_CODE>
+        <SSRRATT_REC_TYPE>2</SSRRATT_REC_TYPE>
+        <DELETE>YES</DELETE>
+    </SV_SSRRATT>
+    <SV_SSRRATT>
+        <SSRRATT_TERM_CODE>202410</SSRRATT_TERM_CODE>
+        <SSRRATT_REC_TYPE>1</SSRRATT_REC_TYPE>
+        <DELETE>YES</DELETE>
+    </SV_SSRRATT>
+</SCHEDULED>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ 

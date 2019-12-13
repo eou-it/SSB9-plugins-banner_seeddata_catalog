@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2010-2013 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<DEGREEWORKS>
+    <!--Remove the Degree Works record for 199510 so CAPP will be in effect for 202410-->
+    <GTVSDAX>
+        <GTVSDAX_EXTERNAL_CODE>199510</GTVSDAX_EXTERNAL_CODE>
+        <GTVSDAX_INTERNAL_CODE>PREREQCHK</GTVSDAX_INTERNAL_CODE>
+        <GTVSDAX_INTERNAL_CODE_SEQNO>2</GTVSDAX_INTERNAL_CODE_SEQNO>
+        <GTVSDAX_INTERNAL_CODE_GROUP>DEGREEWORKS</GTVSDAX_INTERNAL_CODE_GROUP>
+        <DELETE>YES</DELETE>
+    </GTVSDAX>
+</DEGREEWORKS>
