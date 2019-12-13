@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RORMVAL_DATA>
+    <RORMVAL>
+        <RORMVAL_COLUMN>PK_CHANGE_FLAG</RORMVAL_COLUMN>
+        <RORMVAL_KEY_1>1819</RORMVAL_KEY_1>
+        <RORMVAL_KEY_2/>
+        <RORMVAL_CODE>P</RORMVAL_CODE>
+        <RORMVAL_DESC>One or more changes</RORMVAL_DESC>
+        <RORMVAL_TRANS_CODE/>
+        <RORMVAL_TRANS_COMMENT/>
+        <RORMVAL_SYSTEM_REQ_IND>Y</RORMVAL_SYSTEM_REQ_IND>
+    </RORMVAL>
+    <RORMVAL>
+        <RORMVAL_COLUMN>PK_TEACHER_CHANGE_FLAG</RORMVAL_COLUMN>
+        <RORMVAL_KEY_1>1819</RORMVAL_KEY_1>
+        <RORMVAL_KEY_2/>
+        <RORMVAL_CODE>T</RORMVAL_CODE>
+        <RORMVAL_DESC>Teacher changes</RORMVAL_DESC>
+        <RORMVAL_TRANS_CODE/>
+        <RORMVAL_TRANS_COMMENT/>
+        <RORMVAL_SYSTEM_REQ_IND>Y</RORMVAL_SYSTEM_REQ_IND>
+    </RORMVAL>
+</RORMVAL_DATA>

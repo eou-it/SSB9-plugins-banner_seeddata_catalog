@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2019 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+
+<RORTPRD_DATA>
+    <RORTPRD>
+        <RORTPRD_AIDY_CODE>1920</RORTPRD_AIDY_CODE>
+        <RORTPRD_APRD_CODE>FA/SPR</RORTPRD_APRD_CODE>
+        <RORTPRD_PERIOD>199610</RORTPRD_PERIOD>
+        <RORTPRD_TERM_CODE>199610</RORTPRD_TERM_CODE>
+        <RORTPRD_START_DATE>09/15/1995</RORTPRD_START_DATE>
+        <RORTPRD_END_DATE>12/26/1995</RORTPRD_END_DATE>
+    </RORTPRD>
+</RORTPRD_DATA>
