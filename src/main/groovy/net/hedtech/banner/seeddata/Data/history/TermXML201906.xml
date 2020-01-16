@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2019 Ellucian Company L.P. and its affiliates.
+Copyright 2019-2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <TERMDATA>
-  <STVACYR>
-    <STVACYR_CODE>2020</STVACYR_CODE>
-    <STVACYR_DESC>2019-2020(Testing)</STVACYR_DESC>
-    <STVACYR_ACTIVITY_DATE>01-JAN-10</STVACYR_ACTIVITY_DATE>
-    <STVACYR_SYSREQ_IND/>
-    <STVACYR_SURROGATE_ID/>
-    <STVACYR_VERSION/>
-    <STVACYR_USER_ID>GRAILS</STVACYR_USER_ID>
-    <STVACYR_DATA_ORIGIN>GRAILS</STVACYR_DATA_ORIGIN>
-    <STVACYR_VPDI_CODE/>
-    <STVACYR_START_DATE/>
-    <STVACYR_END_DATE/>
-  </STVACYR>
   <STVTERM>
     <STVTERM_CODE>201906</STVTERM_CODE>
     <STVTERM_DESC>For testing purpose 2019</STVTERM_DESC>

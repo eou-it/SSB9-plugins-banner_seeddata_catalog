@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2019 Ellucian Company L.P. and its affiliates.
+Copyright 2019-2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <SCHEDULED>
   <STVSUBJ>
@@ -15,18 +15,6 @@ Copyright 2019 Ellucian Company L.P. and its affiliates.
 	<STVSUBJ_DATA_ORIGIN/>
 	<STVSUBJ_VPDI_CODE/>
   </STVSUBJ>
-    <STVSUBJ>
-        <STVSUBJ_CODE>ACCT</STVSUBJ_CODE>
-        <STVSUBJ_DESC>ACCT</STVSUBJ_DESC>
-        <STVSUBJ_ACTIVITY_DATE>01-JAN-2010</STVSUBJ_ACTIVITY_DATE>
-        <STVSUBJ_VR_MSG_NO>1200</STVSUBJ_VR_MSG_NO>
-        <STVSUBJ_DISP_WEB_IND>Y</STVSUBJ_DISP_WEB_IND>
-        <STVSUBJ_SURROGATE_ID/>
-        <STVSUBJ_VERSION/>
-        <STVSUBJ_USER_ID>GRAILS</STVSUBJ_USER_ID>
-        <STVSUBJ_DATA_ORIGIN>GRAILS</STVSUBJ_DATA_ORIGIN>
-        <STVSUBJ_VPDI_CODE/>
-    </STVSUBJ>
   <STVCAMP>
 	<STVCAMP_CODE>0</STVCAMP_CODE>
 	<STVCAMP_DESC>Campus 0</STVCAMP_DESC>
