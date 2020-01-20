@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" ?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+<!-- *****************************************************************************                                                                                                                                                                                                                                                                                                                                                                                                                                  
+Copyright 2020 Ellucian Company L.P. and its affiliates.                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ ********************************************************************************* -->                                                                                                                                                                                                                                                                                                                                                                                                                              
+<ROBDFPS_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    <ROBDFPS>
+        <ROBDFPS_AIDY_CODE>1718</ROBDFPS_AIDY_CODE>
+        <ROBINST_NAME>Banner University</ROBINST_NAME>
+        <ROBINST_SHORT_NAME>BU</ROBINST_SHORT_NAME>
+        <ROBINST_ADDRESS_LINE_1>3 Country View Road</ROBINST_ADDRESS_LINE_1>
+        <ROBINST_ADDRESS_LINE_2>Apartment 404</ROBINST_ADDRESS_LINE_2>
+        <ROBINST_ADDRESS_LINE_3>Floor 5</ROBINST_ADDRESS_LINE_3>
+        <ROBINST_CITY>Malvern</ROBINST_CITY>
+        <ROBINST_STAT_CODE>PA</ROBINST_STAT_CODE>
+        <ROBINST_ZIP>19355</ROBINST_ZIP>
+        <ROBINST_PHONE>(610)555-1212</ROBINST_PHONE>
+        <ROBINST_EMAIL>FINANCIAL.AID.OFFICE@dugu.edu</ROBINST_EMAIL>
+        <ROBINST_WEB_LOGO_URL/>
+        <ROBINST_BATCH_LOGO_FILE>/s01/banner/s14s80/data/findaid/UGU-Logo-DefaultCampus.png</ROBINST_BATCH_LOGO_FILE>
+        <ROBINST_CUSTOM_INFO>Congratulations on your acceptance at Banner University. The data provided in this letter will give you the opportunity to compare various Financial Aid award offers from other institutions in a standard form at. The information contatined in this letter was based on the information you and your family supplied on the CSS</ROBINST_CUSTOM_INFO>
+        <ROBINST_GRAD_RATE_6YR>90</ROBINST_GRAD_RATE_6YR>
+        <ROBINST_DEFAULT_RATE>5.5</ROBINST_DEFAULT_RATE>
+        <ROBINST_DEFAULT_RATE_COMP>13.4</ROBINST_DEFAULT_RATE_COMP>
+        <ROBINST_FED_MEDIAN_LOAN_AMT>15000</ROBINST_FED_MEDIAN_LOAN_AMT>
+        <ROBINST_FED_MEDIAN_LOAN_YR/>
+        <ROBINST_FED_LOAN_PMT_AMT>252.25</ROBINST_FED_LOAN_PMT_AMT>
+        <ROBINST_INSTITUTION_GROUP>1</ROBINST_INSTITUTION_GROUP>
+    </ROBDFPS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+</ROBDFPS_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

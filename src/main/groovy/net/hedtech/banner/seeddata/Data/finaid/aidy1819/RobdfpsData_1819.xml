@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" ?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+<!-- *****************************************************************************                                                                                                                                                                                                                                                                                                                                                                                                                                  
+Copyright 2020 Ellucian Company L.P. and its affiliates.                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ ********************************************************************************* -->                                                                                                                                                                                                                                                                                                                                                                                                                              
+<ROBDFPS_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    <ROBDFPS>
+        <ROBDFPS_AIDY_CODE>1819</ROBDFPS_AIDY_CODE>
+        <ROBINST_SS_NAME/>
+        <ROBINST_SS_SHORT_NAME/>
+        <ROBINST_SS_ADDRESS_LINE_1/>
+        <ROBINST_SS_ADDRESS_LINE_2/>
+        <ROBINST_SS_ADDRESS_LINE_3/>
+        <ROBINST_SS_CITY/>
+        <ROBINST_SS_STAT_CODE/>
+        <ROBINST_SS_ZIP/>
+        <ROBINST_SS_PHONE/>
+        <ROBINST_SS_EMAIL/>
+        <ROBINST_SS_WEB_LOGO_URL/>
+        <ROBINST_SS_BATCH_LOGO_FILE/>
+        <ROBINST_SS_CUSTOM_INFO/>
+        <ROBINST_SS_GRAD_RATE_6YR/>
+        <ROBINST_SS_DEFAULT_RATE/>
+        <ROBINST_SS_DEFAULT_RATE_COMP/>
+        <ROBINST_SS_FED_MEDIAN_LOAN_AMT/>
+        <ROBINST_SS_FED_MEDIAN_LOAN_YR/>
+        <ROBINST_SS_FED_LOAN_PMT_AMT/>
+        <ROBINST_SS_INSTITUTION_GROUP/>
+    </ROBDFPS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+</ROBDFPS_DATA>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

@@ -867,6 +867,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RlrdmpoData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RlrdmpsData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobinstData_1718.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobdfpsData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RobsayrData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RoralgoData_1718.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1718/RorclveData_1718.xml',
@@ -893,6 +894,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RfrdefaData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorwebaData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobinstData_1819.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RobdfpsData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/Rorwebr1819AidyData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RorcodiData_1819.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/RormvalData_1819.xml',
@@ -907,6 +909,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1819/Rfrmesg1819Data.xml'],
 
             'finaid-aidy-1314'                  : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobinstData_1314.xml',
+                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobdfpsData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RobprdsData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RpboptsData_1314.xml',
                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finaid/aidy1314/RormvalData_1314.xml',
