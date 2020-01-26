@@ -1049,6 +1049,7 @@ public class InputData {
             'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml'],
             'selfService-acceleration-faculty' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201913.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201913.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/FacultyXML201913.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201914.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201914.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040167.xml',
