@@ -1063,7 +1063,8 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040254.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040255.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040256.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040257.xml']
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040257.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_GTVSDAX.xml']
     ]
     /**
      *  Map of selenium targets
