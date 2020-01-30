@@ -220,7 +220,9 @@ public class APIClasses {
             'FTVORGN_MANAGER'       : 'net.hedtech.banner.seeddata.FinanceFoapalManagerUpdateDML',
             'FRBGRNT'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
             'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
-            'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML'
+            'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML',
+            'SFBFFSC'               : 'net.hedtech.banner.seeddata.FeedbackSessionControlDML',
+            'STVFFVA'               : 'net.hedtech.banner.seeddata.FeedbackIssuesRecommendationsDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
