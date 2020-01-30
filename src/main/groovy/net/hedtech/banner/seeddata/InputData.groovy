@@ -728,7 +728,8 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201906.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201905.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201906.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10103.xml'],
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10103.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLHOSH10402.xml'],
             'GrailsReadOnly'                   : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GrailsUserReadOnly.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/GrailsSAMLUser.xml'],
             'finance-budget-availability-data' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/budgetavailability/FinanceFoapalAccountIndex.xml',
@@ -1045,6 +1046,25 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SHRTCKG_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/STVRDEF_Data.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/api/student/SLRPREQ_Data.xml'],
+            'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml'],
+            'selfService-acceleration-faculty' : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201913.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201913.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/FacultyXML201913.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/TermXML201914.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/ScheduleXML201914.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040167.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040170.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040178.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040201.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040244.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040250.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040251.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040252.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040254.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040255.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040256.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040257.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_GTVSDAX.xml']
             'mutualExclusions'                 : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsTermData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsCatalogData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsScheduleData.xml',
@@ -1058,8 +1078,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX008.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX009.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX010.xml'
-                                                  ],
-            'proxy-roles'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/ProxyMgmtUsers.xml']
+                                                  ]
     ]
     /**
      *  Map of selenium targets
