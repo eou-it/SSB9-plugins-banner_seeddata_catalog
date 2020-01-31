@@ -1064,7 +1064,7 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040255.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040256.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040257.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_GTVSDAX.xml']
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_GTVSDAX.xml'],
             'mutualExclusions'                 : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsTermData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsCatalogData.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsScheduleData.xml',
