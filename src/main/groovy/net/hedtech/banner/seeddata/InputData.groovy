@@ -1064,7 +1064,21 @@ public class InputData {
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040255.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040256.xml',
                                                   '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/StudentXMLA00040257.xml',
-                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_GTVSDAX.xml']
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/history/SeedData_GTVSDAX.xml'],
+            'mutualExclusions'                 : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsTermData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsCatalogData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsScheduleData.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX001.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX002.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX003.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX004.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX005.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX006.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX007.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX008.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX009.xml',
+                                                  '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX010.xml'
+                                                  ]
     ]
     /**
      *  Map of selenium targets
@@ -1240,7 +1254,22 @@ public class InputData {
                                                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration37.xml',
                                                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentCappRegistration38.xml'],
             'calculated-drop-status-201410'                                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatus.xml'],
-            'calculated-drop-status-201810'                                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatus201810.xml']
+            'calculated-drop-status-201810'                                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationCourseRegistrationDropStatus201810.xml'],
+            'mutualExclusions'                                                   : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsTermData.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsCatalogData.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsScheduleData.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX001.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX002.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX003.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX004.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX005.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX006.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX007.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX008.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX009.xml',
+                                                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX010.xml'
+                                                                                     ]
+
     ]
 
     def calbTargets = [
