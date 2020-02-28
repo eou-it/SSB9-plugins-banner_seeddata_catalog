@@ -222,7 +222,7 @@ public class APIClasses {
             'FRRGRPI'               : 'net.hedtech.banner.seeddata.FinanceGrantDML',
             'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML',
             'SFBFFSC'               : 'net.hedtech.banner.seeddata.FeedbackSessionControlDML',
-            'STVFFVA'               : 'net.hedtech.banner.seeddata.FeedbackIssuesRecommendationsDML'
+            'STVFFVA'               : 'net.hedtech.banner.seeddata.FeedbackIssuesRecommendationsDML',
             'TVBBHDR'               : 'net.hedtech.banner.seeddata.BoletoHeaderDML',
             'TVRBDTL'               : 'net.hedtech.banner.seeddata.BoletoDetailDML',
             'TVRTACD'               : 'net.hedtech.banner.seeddata.TvrtacdAccountDetailDML',
