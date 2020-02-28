@@ -223,6 +223,14 @@ public class APIClasses {
             'GORBLOB'               : 'net.hedtech.banner.seeddata.BinaryObjectDML',
             'SFBFFSC'               : 'net.hedtech.banner.seeddata.FeedbackSessionControlDML',
             'STVFFVA'               : 'net.hedtech.banner.seeddata.FeedbackIssuesRecommendationsDML'
+            'TVBBHDR'               : 'net.hedtech.banner.seeddata.BoletoHeaderDML',
+            'TVRBDTL'               : 'net.hedtech.banner.seeddata.BoletoDetailDML',
+            'TVRTACD'               : 'net.hedtech.banner.seeddata.TvrtacdAccountDetailDML',
+            'TVRCISP'               : 'net.hedtech.banner.seeddata.TvrcispInstallmentPlanDML',
+            'TVRSIMU'               : 'net.hedtech.banner.seeddata.TvrsimuSimulationInformationDML',
+            'TBRACCD'               : 'net.hedtech.banner.seeddata.TbraccdAccountDetailDML',
+            'TVRBDSC'               : 'net.hedtech.banner.seeddata.TvrbdscBoletoDetailDML',
+            'TVRBRDC'               : 'net.hedtech.banner.seeddata.TvrbrdcBoletoDetailDML'
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
