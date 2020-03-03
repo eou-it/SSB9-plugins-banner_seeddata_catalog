@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2020 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<PTRECLC_DATA>
+    <PTRECLC>
+        <PTRECLC_CODE>W5</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>A1</PTRECLC_LCAT_CODE>
+        <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
+    </PTRECLC>
+    <PTRECLC>
+        <PTRECLC_CODE>W5</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>F1</PTRECLC_LCAT_CODE>
+        <PTRECLC_DATA_ORIGIN>SEED_DATA</PTRECLC_DATA_ORIGIN>
+    </PTRECLC>
+    <PTRECLC>
+        <PTRECLC_CODE>XC</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>C1</PTRECLC_LCAT_CODE>
+    </PTRECLC>
+    <PTRECLC>
+        <PTRECLC_CODE>XJ</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>IN</PTRECLC_LCAT_CODE>
+    </PTRECLC>
+    <PTRECLC>
+        <PTRECLC_CODE>XA</PTRECLC_CODE>
+        <PTRECLC_LCAT_CODE>P1</PTRECLC_LCAT_CODE>
+    </PTRECLC>
+
+</PTRECLC_DATA>
