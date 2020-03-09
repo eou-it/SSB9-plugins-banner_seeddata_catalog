@@ -233,7 +233,9 @@ public class APIClasses {
             'TVRBRDC'                  : 'net.hedtech.banner.seeddata.TvrbrdcBoletoDetailDML',
             'NOBTRAN'                  : 'net.hedtech.banner.seeddata.NobtranDML',
             'NORTRAN'                  : 'net.hedtech.banner.seeddata.NortranDML',
-            'NORROUT'                  : 'net.hedtech.banner.seeddata.NorroutDML'
+            'NORROUT'                  : 'net.hedtech.banner.seeddata.NorroutDML',
+            'NORTERN'                  : 'net.hedtech.banner.seeddata.NorternDML',
+            'NORCMNT'                  : 'net.hedtech.banner.seeddata.NorcmntDML',
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
@@ -337,8 +339,9 @@ public class APIClasses {
             'GORBLOB'   : 'net.hedtech.banner.seeddata.BinaryObjectDML',
             'NOBTRAN'   : 'net.hedtech.banner.seeddata.NobtranDML',
             'NORTRAN'   : 'net.hedtech.banner.seeddata.NortranDML',
-            'NORROUT'   : 'net.hedtech.banner.seeddata.NorroutDML'
-
+            'NORROUT'   : 'net.hedtech.banner.seeddata.NorroutDML',
+            'NORTERN'   : 'net.hedtech.banner.seeddata.NorternDML',
+            'NORCMNT'   : 'net.hedtech.banner.seeddata.NorcmntDML',
     ]
 
 
