@@ -235,6 +235,7 @@ public class APIClasses {
             'NORTRAN'                  : 'net.hedtech.banner.seeddata.NortranDML',
             'NORROUT'                  : 'net.hedtech.banner.seeddata.NorroutDML',
             'NORTERN'                  : 'net.hedtech.banner.seeddata.NorternDML',
+            'NORTLBD'                  : 'net.hedtech.banner.seeddata.NortlbdDML',
             'NORCMNT'                  : 'net.hedtech.banner.seeddata.NorcmntDML',
     ]
 
@@ -341,6 +342,7 @@ public class APIClasses {
             'NORTRAN'   : 'net.hedtech.banner.seeddata.NortranDML',
             'NORROUT'   : 'net.hedtech.banner.seeddata.NorroutDML',
             'NORTERN'   : 'net.hedtech.banner.seeddata.NorternDML',
+            'NORTLBD'   : 'net.hedtech.banner.seeddata.NortlbdDML',
             'NORCMNT'   : 'net.hedtech.banner.seeddata.NorcmntDML',
     ]
 
