@@ -252,7 +252,7 @@ public class InputData {
             'epaf'                               : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclsDataEPAF.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreernDataEPAF.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/payroll/PtrecbcDataEPAF.xml',
-                                                    'src/main/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclcDataEPAF.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/payroll/PtreclcDataEPAF.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/payroll/foapal/FinanceFOAPALOrganizationEPAF.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtrpclsDataEPAF.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/posnctl/NtvacatDataEPAF.xml',
