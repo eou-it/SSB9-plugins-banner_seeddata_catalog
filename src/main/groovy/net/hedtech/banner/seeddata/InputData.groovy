@@ -1129,7 +1129,11 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX009.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX010.xml'
             ],
-            'selfService-acceleration-studentAid': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesBsa.xml']
+            'selfService-acceleration-studentAid': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidTerm202092.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidUsers.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesBsa.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidNonIDTables.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml']
     ]
     /**
      *  Map of selenium targets
