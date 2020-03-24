@@ -1132,6 +1132,7 @@ public class InputData {
             'selfService-acceleration-studentAid': ['/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidTerm202092.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidUsers.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesBsa.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesNonBSA.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidNonIDTables.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml']
     ]
