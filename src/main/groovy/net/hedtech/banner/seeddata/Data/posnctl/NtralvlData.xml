@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2018 Ellucian Company L.P. and its affiliates.
+Copyright 2018-2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <NTRALVL_DATA>
     <NTRALVL>
@@ -13,7 +13,7 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
     <NTRALVL>
         <NTRALVL_CODE>DATA</NTRALVL_CODE>
         <NTRALVL_DESC>Data Applier</NTRALVL_DESC>
-        <NTRALVL_LEVEL>99</NTRALVL_LEVEL>
+        <NTRALVL_LEVEL>90</NTRALVL_LEVEL>
         <NTRALVL_SUPERUSER_IND>Y</NTRALVL_SUPERUSER_IND>
         <NTRALVL_DATA_ORIGIN>SEED_DATA</NTRALVL_DATA_ORIGIN>
     </NTRALVL>
