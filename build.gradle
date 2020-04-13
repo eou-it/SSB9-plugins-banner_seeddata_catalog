@@ -62,6 +62,10 @@ dependencies {
     runtime files("lib/xdb6-11.2.0.4.jar")	
 }
 
+configurations {
+    runtime.exclude group: "org.springframework.boot", module: "spring-boot-starter-actuator"
+}
+
 bootRun {
     jvmArgs('-Dspring.output.ansi.enabled=always')
     addResources = true
