@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2018 Ellucian Company L.P. and its affiliates.
+Copyright 2018-2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PTREARN_DATA>
     <PTREARN>
@@ -697,11 +697,15 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
         <PTREARN_EXCEPTION_IND>N</PTREARN_EXCEPTION_IND>
         <PTREARN_EXPENDED_BUD_IND>Y</PTREARN_EXPENDED_BUD_IND>
         <PTREARN_UNIT_IND>H</PTREARN_UNIT_IND>
+        <PTREARN_LONGEVITY_IND>N</PTREARN_LONGEVITY_IND>
         <PTREARN_FLSA_HRS_IND>A</PTREARN_FLSA_HRS_IND>
         <PTREARN_FLSA_AMT_IND>A</PTREARN_FLSA_AMT_IND>
+        <PTREARN_PENSIONABLE_HRS_IND>N</PTREARN_PENSIONABLE_HRS_IND>
         <PTREARN_1099_CODE>1</PTREARN_1099_CODE>
         <PTREARN_FRINGE_IND>Y</PTREARN_FRINGE_IND>
         <PTREARN_STIPEND_IND>N</PTREARN_STIPEND_IND>
+        <PTREARN_ERGR_CODE>RG</PTREARN_ERGR_CODE>
+        <PTREARN_SPECIAL_COMP_IND>N</PTREARN_SPECIAL_COMP_IND>
         <PTREARN_WEB_DISP_IND>Y</PTREARN_WEB_DISP_IND>
         <PTREARN_NOT_DETERMINED_IND>Y</PTREARN_NOT_DETERMINED_IND>
         <PTREARN_OSHA_HRS_IND>Y</PTREARN_OSHA_HRS_IND>
