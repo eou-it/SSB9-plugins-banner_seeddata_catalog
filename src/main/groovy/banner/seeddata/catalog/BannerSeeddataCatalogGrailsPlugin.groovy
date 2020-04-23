@@ -21,7 +21,7 @@ class BannerSeeddataCatalogGrailsPlugin extends Plugin {
 	String version = "1.0.0"
     
 	// the version or versions of Grails the plugin is designed for
-    def grailsVersion = "3.3.2 > *"
+    def grailsVersion = "3.3.11 > *"
     
     String title = "BannerSeedData Plugin"
     String description = '''This plugin is BannerSeedDataCatalog.'''//.stripMargin()
