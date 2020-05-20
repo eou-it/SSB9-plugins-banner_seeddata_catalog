@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2020 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<NAMEDISPLAY>
+    <GURNHIR>
+        <GURNHIR_PRODUCT>Student</GURNHIR_PRODUCT>
+        <GURNHIR_APPLICATION>StudentRegistrationSsb</GURNHIR_APPLICATION>
+        <GURNHIR_PAGE/>
+        <GURNHIR_SECTION/>
+        <GURNHIR_USAGE>LF</GURNHIR_USAGE>
+        <GURNHIR_ACTIVE_IND>Y</GURNHIR_ACTIVE_IND>
+        <GURNHIR_MAX_LENGTH>2000</GURNHIR_MAX_LENGTH>
+        <GURNHIR_ACTIVITY_DATE>01-JAN-2010</GURNHIR_ACTIVITY_DATE>
+        <GURNHIR_USER_ID>GRAILS</GURNHIR_USER_ID>
+        <GURNHIR_DATA_ORIGIN>GRAILS</GURNHIR_DATA_ORIGIN>
+    </GURNHIR>
+</NAMEDISPLAY>
