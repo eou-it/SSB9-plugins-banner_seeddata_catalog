@@ -1134,9 +1134,7 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesBsa.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesNonBSA.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidNonIDTables.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml'],
-            'selfService-registration-nameDisplay':['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplay.xml'],
-            'selfService-registration-nameDisplay-reset':['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplayReset.xml']
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml']
     ]
     /**
      *  Map of selenium targets
