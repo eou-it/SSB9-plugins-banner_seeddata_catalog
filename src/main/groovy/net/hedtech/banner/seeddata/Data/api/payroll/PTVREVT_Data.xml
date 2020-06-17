@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 
 <!--***************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017-2020 Ellucian Company L.P. and its affiliates.
 ****************************************************************************-->
 
 <PTVREVT_DATA>
@@ -22,5 +22,17 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <PTVREVT_DESC>Probation Period Review</PTVREVT_DESC>
         <PTVREVT_ACTIVITY_DATE>02092002</PTVREVT_ACTIVITY_DATE>
         <PTVREVT_DATA_ORIGIN>GRAILS</PTVREVT_DATA_ORIGIN>
+    </PTVREVT>
+    <PTVREVT>
+        <PTVREVT_CODE>PR</PTVREVT_CODE>
+        <PTVREVT_DESC>Probationary</PTVREVT_DESC>
+    </PTVREVT>
+    <PTVREVT>
+        <PTVREVT_CODE>AN</PTVREVT_CODE>
+        <PTVREVT_DESC>Annual</PTVREVT_DESC>
+    </PTVREVT>
+    <PTVREVT>
+        <PTVREVT_CODE>TR</PTVREVT_CODE>
+        <PTVREVT_DESC>Tenure Review</PTVREVT_DESC>
     </PTVREVT>
 </PTVREVT_DATA>

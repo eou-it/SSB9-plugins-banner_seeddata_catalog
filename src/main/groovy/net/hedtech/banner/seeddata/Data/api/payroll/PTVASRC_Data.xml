@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 
 <!--***************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017-2020 Ellucian Company L.P. and its affiliates.
 ****************************************************************************-->
 
 <PTVASRC_DATA>
@@ -22,5 +22,13 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
         <PTVASRC_DESC>Internal Job Posting</PTVASRC_DESC>
         <PTVASRC_ACTIVITY_DATE>02092002</PTVASRC_ACTIVITY_DATE>
         <PTVASRC_DATA_ORIGIN>GRAILS</PTVASRC_DATA_ORIGIN>
+    </PTVASRC>
+    <PTVASRC>
+        <PTVASRC_CODE>WB</PTVASRC_CODE>
+        <PTVASRC_DESC>Campus Web Site</PTVASRC_DESC>
+    </PTVASRC>
+    <PTVASRC>
+        <PTVASRC_CODE>CH</PTVASRC_CODE>
+        <PTVASRC_DESC>Chronicle of Higher Education</PTVASRC_DESC>
     </PTVASRC>
 </PTVASRC_DATA>
