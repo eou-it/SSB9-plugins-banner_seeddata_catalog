@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <!-- *****************************************************************************
-Copyright 2017 Ellucian Company L.P. and its affiliates.
+Copyright 2017 - 2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <STUDENTDATA>
   <STUDENT_SPRIDEN>
@@ -1448,7 +1448,7 @@ Copyright 2017 Ellucian Company L.P. and its affiliates.
   <GOBTPAC_ACTIVITY_DATE>01/01/2010</GOBTPAC_ACTIVITY_DATE>
   <GOBTPAC_USER>GRAILS</GOBTPAC_USER>
   <GOBTPAC_PIN>111111</GOBTPAC_PIN>                                                  
-  <GOBTPAC_PIN_EXP_DATE>21-JAN-20</GOBTPAC_PIN_EXP_DATE>
+  <GOBTPAC_PIN_EXP_DATE>21-JAN-2099</GOBTPAC_PIN_EXP_DATE>
   <GOBTPAC_EXTERNAL_USER>joates</GOBTPAC_EXTERNAL_USER>
   <GOBTPAC_QUESTION/>
   <GOBTPAC_RESPONSE/>

@@ -1,8 +1,19 @@
 <?xml version="1.0"?>
 <!-- *****************************************************************************
-Copyright 2018 Ellucian Company L.P. and its affiliates.
+Copyright 2018-2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <FINANCE_ACCT>
+    <FTVATYP>
+        <FTVATYP_COAS_CODE>B</FTVATYP_COAS_CODE>
+        <FTVATYP_ATYP_CODE>61</FTVATYP_ATYP_CODE>
+        <FTVATYP_EFF_DATE>01-OCT-88</FTVATYP_EFF_DATE>
+        <FTVATYP_NCHG_DATE>31-DEC-2099</FTVATYP_NCHG_DATE>
+        <FTVATYP_TITLE>Salaries and Wages</FTVATYP_TITLE>
+        <FTVATYP_STATUS_IND>A</FTVATYP_STATUS_IND>
+        <FTVATYP_INTERNAL_ATYP_CODE>60</FTVATYP_INTERNAL_ATYP_CODE>
+        <FTVATYP_ATYP_CODE_PRED>60</FTVATYP_ATYP_CODE_PRED>
+        <FTVATYP_NORMAL_BAL>D</FTVATYP_NORMAL_BAL>
+    </FTVATYP>
     <FTVACCT>
         <FTVACCT_COAS_CODE>B</FTVACCT_COAS_CODE>
         <FTVACCT_ACCT_CODE>ECA02</FTVACCT_ACCT_CODE>
