@@ -1134,7 +1134,15 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesBsa.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesNonBSA.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidNonIDTables.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml']
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml'],
+            'multicurrencyConfiguration'          : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/CreateCurrencyCode.xml',
+                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/AllFor209999Term.xml',
+                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/FeeAssesmentDetailsRules.xml'],
+            'multicurrencyStudent000'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES000.xml'],
+            'multicurrencyStudent001'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES001.xml'],
+            'multicurrencyStudent002'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES002.xml'],
+            'multicurrencyStudent003'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES003.xml']
+
     ]
     /**
      *  Map of selenium targets
