@@ -1138,10 +1138,10 @@ public class InputData {
             'multicurrencyConfiguration'          : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/CreateCurrencyCode.xml',
                                                      '/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/AllFor209999Term.xml',
                                                      '/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/FeeAssesmentDetailsRules.xml'],
-            'multicurrencyStudent000'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES000.xml'],
-            'multicurrencyStudent001'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES001.xml'],
-            'multicurrencyStudent002'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES002.xml'],
-            'multicurrencyStudent003'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserSTUTES003.xml']
+            'multicurrencyStudent000'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0000.xml'],
+            'multicurrencyStudent001'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0001.xml'],
+            'multicurrencyStudent002'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0002.xml'],
+            'multicurrencyStudent003'             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0003.xml']
 
     ]
     /**
