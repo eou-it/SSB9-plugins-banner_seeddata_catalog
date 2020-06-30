@@ -3,9 +3,6 @@
 Copyright 2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <FEEDATA>
-    <UPDATETBBCTRL>
-        <TBBCTRL_MCTX_IND>Y</TBBCTRL_MCTX_IND>
-    </UPDATETBBCTRL>
     <STUDENT_SPRIDEN>
         <BANNERID>HOSMC0000</BANNERID>
         <SPRIDEN_ID>HOSMC0000</SPRIDEN_ID>
