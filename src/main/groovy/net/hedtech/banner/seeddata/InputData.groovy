@@ -1020,6 +1020,7 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb001.xml'],
             'ssbgeneralstudenthosweb006'         : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataNewHosweb006.xml'],
             'ssbgeneralstudenthosweb020'         : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHosweb020.xml'],
+            'ssbgeneralstudenthosweb021'         : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentDataHosweb021.xml'],
             'catalogGradeModeWriting103'         : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/CatalogDataGradeModeWriting103.xml'],
             'addauth'                            : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralStudentAddAuthData.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/AddAuthTermSetupData.xml',
