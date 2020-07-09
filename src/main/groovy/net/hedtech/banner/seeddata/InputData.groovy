@@ -1135,7 +1135,11 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesBsa.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/ValidationTablesNonBSA.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidNonIDTables.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml']
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/studentAid/StudentAidIDTables.xml'],
+            'multicurrencyConfiguration'         : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/AllFor209999Term.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0001.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0004.xml']
+
     ]
     /**
      *  Map of selenium targets
@@ -1326,7 +1330,11 @@ public class InputData {
                                                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX009.xml',
                                                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX010.xml'],
             'selfService-registration-nameDisplay'                                :['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplay.xml'],
-            'selfService-registration-nameDisplay-reset'                          :['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplayReset.xml']
+            'selfService-registration-nameDisplay-reset'                          :['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplayReset.xml'],
+            'multicurrencyStudent001'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0001.xml'],
+            'multicurrencyStudent002'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0002.xml'],
+            'multicurrencyStudent003'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0003.xml'],
+            'multicurrencyStudent004'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0004.xml'],
     ]
 
     def calbTargets = [
