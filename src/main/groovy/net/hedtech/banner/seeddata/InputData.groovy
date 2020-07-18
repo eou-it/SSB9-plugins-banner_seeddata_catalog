@@ -1331,6 +1331,7 @@ public class InputData {
                                                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegistrationMutualExclusionsHOSMEX010.xml'],
             'selfService-registration-nameDisplay'                                :['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplay.xml'],
             'selfService-registration-nameDisplay-reset'                          :['/src/main/groovy/net/hedtech/banner/seeddata/Data/SelfServiceRegistrationNameDisplayReset.xml'],
+            'multicurrencyStudent000'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0000.xml'],
             'multicurrencyStudent001'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0001.xml'],
             'multicurrencyStudent002'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0002.xml'],
             'multicurrencyStudent003'                                             : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/multicurrency/UserHOSMC0003.xml'],
