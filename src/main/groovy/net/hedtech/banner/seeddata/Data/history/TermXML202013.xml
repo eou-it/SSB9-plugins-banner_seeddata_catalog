@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><SCHEDULED>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- *****************************************************************************
+Copyright 2018 Ellucian Company L.P. and its affiliates.
+********************************************************************************* -->
+<SCHEDULED>
   <STVTERM>
     <STVTERM_CODE>202013</STVTERM_CODE>
     <STVTERM_DESC>AAATerm 202013</STVTERM_DESC>
