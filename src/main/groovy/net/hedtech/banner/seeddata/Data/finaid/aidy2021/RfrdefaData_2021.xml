@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2020 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RFRDEFA_DATA>
+    <RFRDEFA>
+        <RFRDEFA_AIDY_CODE>2021</RFRDEFA_AIDY_CODE>
+        <RFRDEFA_APRD_CODE>FA/SPR</RFRDEFA_APRD_CODE>
+        <RFRDEFA_PERIOD>202110</RFRDEFA_PERIOD>
+        <RFRDEFA_AWARD_PCT>50</RFRDEFA_AWARD_PCT>
+        <RFRDEFA_MEMO_EXP_DATE/>
+        <RFRDEFA_PELL_AWARD_PCT>50</RFRDEFA_PELL_AWARD_PCT>
+        <RFRDEFA_TERM_CODE>202110</RFRDEFA_TERM_CODE>
+    </RFRDEFA>
+    <RFRDEFA>
+        <RFRDEFA_AIDY_CODE>2021</RFRDEFA_AIDY_CODE>
+        <RFRDEFA_APRD_CODE>FA/SPR</RFRDEFA_APRD_CODE>
+        <RFRDEFA_PERIOD>202120</RFRDEFA_PERIOD>
+        <RFRDEFA_AWARD_PCT>50</RFRDEFA_AWARD_PCT>
+        <RFRDEFA_MEMO_EXP_DATE/>
+        <RFRDEFA_PELL_AWARD_PCT>50</RFRDEFA_PELL_AWARD_PCT>
+        <RFRDEFA_TERM_CODE>202120</RFRDEFA_TERM_CODE>
+    </RFRDEFA>
+</RFRDEFA_DATA>

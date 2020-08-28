@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2020 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RORWBQA_DATA>
+    <RORWBQA>
+        <RORWBQA_AIDY_CODE>2021</RORWBQA_AIDY_CODE>
+        <RORWBQA_QUESTION_CODE>QNE</RORWBQA_QUESTION_CODE>
+        <RORWBQA_STOP_PROCESSING>N</RORWBQA_STOP_PROCESSING>
+        <RORWBQA_ANSWER_VALUE/>
+        <RORWBQA_MESSAGE_CODE/>
+    </RORWBQA>
+    <RORWBQA>
+        <RORWBQA_AIDY_CODE>2021</RORWBQA_AIDY_CODE>
+        <RORWBQA_QUESTION_CODE>QNU</RORWBQA_QUESTION_CODE>
+        <RORWBQA_STOP_PROCESSING>Z</RORWBQA_STOP_PROCESSING>
+        <RORWBQA_ANSWER_VALUE/>
+        <RORWBQA_MESSAGE_CODE/>
+    </RORWBQA>
+    <RORWBQA>
+        <RORWBQA_AIDY_CODE>2021</RORWBQA_AIDY_CODE>
+        <RORWBQA_QUESTION_CODE>QNO</RORWBQA_QUESTION_CODE>
+        <RORWBQA_STOP_PROCESSING>N</RORWBQA_STOP_PROCESSING>
+        <RORWBQA_ANSWER_VALUE/>
+        <RORWBQA_MESSAGE_CODE/>
+    </RORWBQA>
+</RORWBQA_DATA>
