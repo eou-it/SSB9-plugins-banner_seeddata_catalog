@@ -1179,7 +1179,11 @@ public class InputData {
 													'/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ecaf/StudentXMLA00037741.xml',
 													'/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ecaf/StudentXMLA00037745.xml',
 													'/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ecaf/StudentXMLA00037746.xml',
-													'/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ecaf/StudentXMLA00037752.xml']
+													'/src/main/groovy/net/hedtech/banner/seeddata/Data/student/ecaf/StudentXMLA00037752.xml'],
+            'reg-repeats'                        : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatTerm202010.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202010.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatTerm202020.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202020.xml']
 
     ]
     /**
