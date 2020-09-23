@@ -151,6 +151,7 @@ public class APIClasses {
             'FTVDISC'                  : 'net.hedtech.banner.seeddata.FinanceDiscountCreateDML',
             'FTVTGRP'                  : 'net.hedtech.banner.seeddata.FinanceTaxGroupCreateDML',
             'FTVTRAT'                  : 'net.hedtech.banner.seeddata.FinanceTaxRateCreateDML',
+            'FTVUOMS'                  : 'net.hedtech.banner.seeddata.FinanceUomCreateDML',
             'FTRTGTR'                  : 'net.hedtech.banner.seeddata.FinanceTaxGroupAndRateCreateDML',
             'TBBCSTU'                  : 'net.hedtech.banner.seeddata.TbbcstuDML',
             'CALBHR_PEBEMPL'           : 'net.hedtech.banner.seeddata.EmployeeCalbhrPersonIDDML',
