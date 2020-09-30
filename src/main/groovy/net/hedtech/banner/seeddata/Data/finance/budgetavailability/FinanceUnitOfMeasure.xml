@@ -12,6 +12,16 @@ Copyright 2020 Ellucian Company L.P. and its affiliates.
         <FTVUOMS_SCOD_CODE_X12></FTVUOMS_SCOD_CODE_X12>
         <FTVUOMS_SCOD_CODE_EDIFACT></FTVUOMS_SCOD_CODE_EDIFACT>
         <FTVUOMS_SURROGATE_ID>4</FTVUOMS_SURROGATE_ID>
-    </FTVUOMS>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    </FTVUOMS>
+    <FTVUOMS>
+        <FTVUOMS_CODE>BOX</FTVUOMS_CODE>
+        <FTVUOMS_EFF_DATE>01-JAN-88</FTVUOMS_EFF_DATE>
+        <FTVUOMS_ACTIVITY_DATE>01-JAN-88</FTVUOMS_ACTIVITY_DATE>
+        <FTVUOMS_TERM_DATE></FTVUOMS_TERM_DATE>
+        <FTVUOMS_DESC>BOX</FTVUOMS_DESC>
+        <FTVUOMS_SCOD_CODE_X12></FTVUOMS_SCOD_CODE_X12>
+        <FTVUOMS_SCOD_CODE_EDIFACT></FTVUOMS_SCOD_CODE_EDIFACT>
+        <FTVUOMS_SURROGATE_ID>1</FTVUOMS_SURROGATE_ID>
+    </FTVUOMS>
 </FTVUOMS_DETAIL>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
