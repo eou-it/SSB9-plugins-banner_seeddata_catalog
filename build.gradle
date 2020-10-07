@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
-version "3.3.0"
+
 group "banner.seeddata.catalog"
 
 apply plugin:"eclipse"
@@ -59,6 +59,7 @@ dependencies {
 	// Added for BannerXE - Oracle jars - specified as physical path
     // TODO - check version of ojdbc.jar
     compile files("lib/ojdbc6-11.2.0.1.0.jar")
+    compile files("lib/postgresql-42.2.5.jar")
     runtime files("lib/xdb6-11.2.0.4.jar")	
 }
 
@@ -99,6 +100,70 @@ assemble.doLast {
 
         }
     }
+}
+
+
+jar.doFirst {
+    String basedir = System.getProperty('user.dir')
+    basedir =basedir.replace("\\","/")
+    int lastIndex=basedir.lastIndexOf("/");
+    String pluginRootDir = basedir.substring(0, lastIndex+1);
+    println " pluginRootDir >>>>"+pluginRootDir
+    String seedDataJarPath = basedir +"/banner_seeddata_catalog-3.0.0.jar"
+    println "  >>>>>>>>>>seedDataJarPath ::" +seedDataJarPath
+    if(new File(seedDataJarPath).exists()){
+        ant.delete(file: seedDataJarPath)
+    }
+    String seedDataUtilityZipPath = basedir +"/SeedDataUtility.zip"
+
+    println "  >>>>>>>>>>>>seedDataUtilityZipPath ::" +seedDataUtilityZipPath
+    if(new File(seedDataUtilityZipPath).exists()){
+       ant.delete(file: seedDataUtilityZipPath)
+    }
+
+}
+jar {
+    manifest {
+        attributes 'Main-Class': 'net.hedtech.banner.seeddata.SeedDataLoader'
+        attributes 'Class-Path': 'lib/grails-core-3.3.2.jar lib/groovy-all-2.4.12.jar ib/ojdbc6-11.2.0.1.0.jar lib/postgresql-42.2.5.jar lib/commons-logging-1.0.4.jar lib/commons-lang-2.6.jar lib/grails-bootstrap-3.3.2.jar lib/xdb6-11.2.0.4.jar'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+sourceSets.main.groovy.srcDirs = ['src/main/groovy']
+
+jar.doLast{
+    def zipName ="SeedDataUtility.zip"
+    String basedir = System.getProperty('user.dir')
+    println "basedir is ::"+basedir;
+    basedir =basedir.replace("\\","/")
+    int lastIndex=basedir.lastIndexOf("/");
+    String pluginRootDir = basedir.substring(0, lastIndex+1);
+    println "Plugin Root folder is ::"+pluginRootDir
+
+    String baseFolder = basedir+"/lib/"
+    basedir =basedir.replace("\\","/")
+    String jarDir = basedir+"/build/libs"
+
+    println " jarDir is ::"+jarDir
+    ant.copy (todir: basedir){
+        println" >>>>>>>>>> copying seed-data jar from  :: "+jarDir +"  :: to :: "+basedir
+        fileset( dir:"${jarDir}", includes:"*.jar" )
+
+    }
+    from { "${basedir}/build/classes/main" }
+
+    println "jarDir ::"+jarDir
+    ant.zip(destfile: basedir+"/"+zipName, encoding: "UTF-8"){
+        zipfileset( dir: "${basedir}" ) {
+            include( name:"lib/*.jar" )
+            include( name:"*.bat" )
+            include( name:"*.sh" )
+            include( name:"banner_seeddata_catalog.jar" )
+
+        }
+    }
+
 }
 
 jar {

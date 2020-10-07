@@ -1,5 +1,5 @@
 /*********************************************************************************
- Copyright 2018 - 2019 Ellucian Company L.P. and its affiliates.
+ Copyright 2018 - 2020 Ellucian Company L.P. and its affiliates.
  **********************************************************************************/
 package net.hedtech.banner.seeddata
 
@@ -20,6 +20,17 @@ import java.text.SimpleDateFormat
          added to PDRDEDN and PERDHIS tables for W-4 enhancement.
     Technical Fix:   
          Added new fields PDRDEDN_AMOUNT5,PDRDEDN_AMOUNT6,PDRDEDN_AMOUNT7,PDRDEDN_AMOUNT8.
+         
+   AUDIT TRAIL: 8.18.2
+ 1. CR-000172406                                          PK   10/06/2020
+    Requirement: Redesign of Lock in Letters for 2020 W-4. 
+    Functional Impact: 
+         New columns added to PDRDEDN and PERDHIS tables for Redesign of  
+         Lock in Letters for 2020 W-4.
+    Technical Fix:   
+         Added new fields PDRDEDN_LOCKIN_STEP2C_IND,PDRDEDN_LOCKIN_ADDWITHHOLD_AMT,
+         PDRDEDN_LOCKIN_DEPENDENT_AMT,PDRDEDN_LOCKIN_OTHERINCOME_AMT and 
+         PDRDEDN_LOCKIN_DEDUCTIONS_AMT.         
 */         
 
 class EmployeeBenefitsDetailDML {
@@ -64,6 +75,11 @@ class EmployeeBenefitsDetailDML {
     def pdrdedn_version
     def pdrdedn_vpdi_code
     def pdrdedn_1042s_limit_ben_cde
+    def pdrdedn_lockin_step2c_ind
+    def pdrdedn_lockin_addwithhold_amt
+    def pdrdedn_lockin_dependent_amt
+    def pdrdedn_lockin_otherincome_amt
+    def pdrdedn_lockin_deductions_amt
 
     def InputData connectInfo
     Sql conn
@@ -131,6 +147,11 @@ class EmployeeBenefitsDetailDML {
         this.pdrdedn_version = pdrdedn.PDRDEDN_VERSION.text()
         this.pdrdedn_vpdi_code = pdrdedn.PDRDEDN_VPDI_CODE.text()
         this.pdrdedn_1042s_limit_ben_cde = pdrdedn.PDRDEDN_1042S_LIMIT_BEN_CDE.text()
+        this.pdrdedn_lockin_step2c_ind = pdrdedn.PDRDEDN_LOCKIN_STEP2C_IND.text()
+        this.pdrdedn_lockin_addwithhold_amt = pdrdedn.PDRDEDN_LOCKIN_ADDWITHHOLD_AMT.text()
+        this.pdrdedn_lockin_dependent_amt = pdrdedn.PDRDEDN_LOCKIN_DEPENDENT_AMT.text()
+        this.pdrdedn_lockin_otherincome_amt = pdrdedn.PDRDEDN_LOCKIN_OTHERINCOME_AMT.text()
+        this.pdrdedn_lockin_deductions_amt = pdrdedn.PDRDEDN_LOCKIN_DEDUCTIONS_AMT.text()
     }
 
     def processEmployeeBenefitsDetail() {
@@ -186,7 +207,7 @@ class EmployeeBenefitsDetailDML {
             }
             if (!findY) {
                 try {
-                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
+                    String API = "{call pb_deduction_detail.p_create(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}"
                     CallableStatement insertCall = this.connectCall.prepareCall(API)
 
                     insertCall.setInt(1, this.PIDM.toInteger())
@@ -337,6 +358,38 @@ class EmployeeBenefitsDetailDML {
                     insertCall.setString(33, pdrdedn_1042s_limit_ben_cde)
 
                     insertCall.registerOutParameter(34, java.sql.Types.ROWID)
+                    
+                    insertCall.setString(35, pdrdedn_lockin_step2c_ind)
+                    
+                    if ((this.pdrdedn_lockin_addwithhold_amt == "") || (this.pdrdedn_lockin_addwithhold_amt == null) ||
+                            (!this.pdrdedn_lockin_addwithhold_amt)) {
+                        insertCall.setNull(36, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(36, this.pdrdedn_lockin_addwithhold_amt.toDouble())
+                    }
+                    
+                    if ((this.pdrdedn_lockin_dependent_amt == "") || (this.pdrdedn_lockin_dependent_amt == null) ||
+                            (!this.pdrdedn_lockin_dependent_amt)) {
+                        insertCall.setNull(37, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(37, this.pdrdedn_lockin_dependent_amt.toDouble())
+                    }
+                    
+                    if ((this.pdrdedn_lockin_otherincome_amt == "") || (this.pdrdedn_lockin_otherincome_amt == null) ||
+                            (!this.pdrdedn_lockin_otherincome_amt)) {
+                        insertCall.setNull(38, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(38, this.pdrdedn_lockin_otherincome_amt.toDouble())
+                    }
+                    
+                    if ((this.pdrdedn_lockin_deductions_amt == "") || (this.pdrdedn_lockin_deductions_amt == null) ||
+                            (!this.pdrdedn_lockin_deductions_amt)) {
+                        insertCall.setNull(39, java.sql.Types.DOUBLE)
+                    } else {
+                        insertCall.setDouble(39, this.pdrdedn_lockin_deductions_amt.toDouble())
+                    }
+                    
+                    
                     try {
                         insertCall.executeUpdate()
                         connectInfo.tableUpdate("PDRDEDN", 0, 1, 0, 0, 0)
