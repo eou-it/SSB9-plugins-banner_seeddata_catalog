@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- *****************************************************************************
+Copyright 2020-2020 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<FINANCE_DATA>
+    <FTVATYP>
+        <FTVATYP_COAS_CODE>B</FTVATYP_COAS_CODE>
+        <FTVATYP_ATYP_CODE>11</FTVATYP_ATYP_CODE>
+        <FTVATYP_EFF_DATE>01-JUN-1950</FTVATYP_EFF_DATE>
+        <FTVATYP_ACTIVITY_DATE>01-OCT-2020</FTVATYP_ACTIVITY_DATE>
+        <FTVATYP_USER_ID>GRAILS</FTVATYP_USER_ID>
+        <FTVATYP_NCHG_DATE>31-DEC-2099</FTVATYP_NCHG_DATE>
+        <FTVATYP_TITLE>Cash and Cash Equivalent</FTVATYP_TITLE>
+        <FTVATYP_STATUS_IND>A</FTVATYP_STATUS_IND>
+        <FTVATYP_INTERNAL_ATYP_CODE>10</FTVATYP_INTERNAL_ATYP_CODE>
+        <FTVATYP_ATYP_CODE_PRED>10</FTVATYP_ATYP_CODE_PRED>
+        <FTVATYP_NORMAL_BAL>D</FTVATYP_NORMAL_BAL>
+        <FTVATYP_VERSION>1</FTVATYP_VERSION>
+        <FTVATYP_DATA_ORIGIN>GRAILS</FTVATYP_DATA_ORIGIN>
+    </FTVATYP>
+</FINANCE_DATA>
