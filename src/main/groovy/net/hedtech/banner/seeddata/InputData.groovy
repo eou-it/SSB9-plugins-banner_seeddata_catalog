@@ -1186,7 +1186,9 @@ public class InputData {
             'reg-repeats'                        : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatTerm202010.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202010.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatTerm202020.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202020.xml']
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202020.xml'],
+            'USI-Student'                        : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00037851.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00036439.xml']
 
     ]
     /**
