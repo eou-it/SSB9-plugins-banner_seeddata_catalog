@@ -62,6 +62,8 @@ public class APIClasses {
             'GOBTPAC_RECORD'           : 'net.hedtech.banner.seeddata.ThirdPartyAccessPinDML',
             'GENIDEN'                  : 'net.hedtech.banner.seeddata.ProxyAccessCredentialInformationDML',
             'GPRXREF'                  : 'net.hedtech.banner.seeddata.ProxyCrossReferenceDML',
+            'GTVRETP'                  : 'net.hedtech.banner.seeddata.ProxyAccessRelationshipTypeValidationDML',
+            'GEBSRTP'                  : 'net.hedtech.banner.seeddata.ProxyAccessDataOptionRulesDML',
             'PROXY_ELTR'               : 'net.hedtech.banner.seeddata.ProxyEltrDML',
             'GERATTD'                  : 'net.hedtech.banner.seeddata.EventRegistrantDML',
             'GERFGST'                  : 'net.hedtech.banner.seeddata.EventGuestDML',

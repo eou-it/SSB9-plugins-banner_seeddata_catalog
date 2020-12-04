@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2018 Ellucian Company L.P. and its affiliates.
+Copyright 2018-2020 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PROXY_MGMT_USERS>
     <TWGRROLE>
@@ -17,6 +17,31 @@ Copyright 2018 Ellucian Company L.P. and its affiliates.
 
     <TWGRROLE>
         <BANNERID>HOS00001</BANNERID>
+        <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <!--Changes for Global Proxy Access seed data-->
+    <TWGRROLE>
+        <BANNERID>HOS00001</BANNERID>
+        <TWGRROLE_ROLE>PROXYGLOBALACCESS</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <TWGRROLE>
+        <BANNERID>FASS20070</BANNERID>
+        <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <TWGRROLE>
+        <BANNERID>FASS40001</BANNERID>
+        <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <TWGRROLE>
+        <BANNERID>HOSR24796</BANNERID>
         <TWGRROLE_ROLE>WTAILORPROXYMGMT</TWGRROLE_ROLE>
         <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
     </TWGRROLE>
