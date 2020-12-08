@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2018-2020 Ellucian Company L.P. and its affiliates.
+Copyright 2018-2021 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <PROXY_MGMT_USERS>
     <TWGRROLE>
@@ -24,6 +24,12 @@ Copyright 2018-2020 Ellucian Company L.P. and its affiliates.
     <!--Changes for Global Proxy Access seed data-->
     <TWGRROLE>
         <BANNERID>HOS00001</BANNERID>
+        <TWGRROLE_ROLE>PROXYGLOBALACCESS</TWGRROLE_ROLE>
+        <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
+    </TWGRROLE>
+
+    <TWGRROLE>
+        <BANNERID>HOP510002</BANNERID>
         <TWGRROLE_ROLE>PROXYGLOBALACCESS</TWGRROLE_ROLE>
         <TWGRROLE_ACTIVITY_DATE>01-JAN-10</TWGRROLE_ACTIVITY_DATE>
     </TWGRROLE>
