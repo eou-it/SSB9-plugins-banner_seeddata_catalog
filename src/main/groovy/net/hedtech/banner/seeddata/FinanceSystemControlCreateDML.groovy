@@ -19,7 +19,7 @@ public class FinanceSystemControlCreateDML {
     Connection connectCall
     def xmlData
     RowId tableRow = null
-    def headerData
+    def systemData
 
 
     public FinanceSystemControlCreateDML(InputData connectInfo, Sql conn, Connection connectCall ) {
@@ -35,38 +35,19 @@ public class FinanceSystemControlCreateDML {
         this.connectCall = conn.getConnection()
         this.xmlData = xmlData
         parseXmlData()
-        if(checkRecords) {
-            createFinanceSystemControlRecords()
-        }
+        createFinanceSystemControlRecords();
     }
 
 
     def parseXmlData() {
-        headerData = new XmlParser().parseText( xmlData )
-    }
-
-    private checkRecords() {
-        def record =true;
-        def findRecord = """select * from FOBSYSC """
-
-        try {
-            def accountRows = conn.firstRow(findRecord)
-            if (accountRows) {
-                record = false;
-            }
-        } catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Problem in finding the records for FOBSYSC table"
-            }
-        }
-
-        return record
+        systemData = new XmlParser().parseText( xmlData )
     }
 
     def createFinanceSystemControlRecords() {
         try {
             final String apiQuery =
                     "   BEGIN" +
+                            " DELETE FROM FOBSYSC where FOBSYSC_USER_ID='GRAILS' AND FOBSYSC_EFF_DATE='"+systemData.FOBSYSC_EFF_DATE.text() +"' AND FOBSYSC_NCHG_DATE='"+ systemData.FOBSYSC_NCHG_DATE.text()+"';"  +
                             "   INSERT INTO FOBSYSC ( "+
                                 "FOBSYSC_EFF_DATE               ," +
                                 "FOBSYSC_ACTIVITY_DATE          ," +
@@ -113,13 +94,13 @@ public class FinanceSystemControlCreateDML {
                                 "FOBSYSC_DOC_LVL_MATCH_IND      ," +
                                 "FOBSYSC_WBUD_IND               ," +
                                 "FOBSYSC_WBUD_TRACK_IND         ," +
-                                "FOBSYSC_DFR_GRNT_HIST_IND      " +
+                                "FOBSYSC_DFR_GRNT_HIST_IND      )" +
                                 "   VALUES (" +
                                 "   ?, sysdate, 'GRAILS', ?, ?, ?, ?, ?, ?, ?,  " +
                                 "   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?," +
                                 "   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?," +
                                 "   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?," +
-                                "   ?, ?, ?, ?, ?, ?" +
+                                "   ?, ?, ?, ?, ?, ? );" +
                             "   commit;" +
                     "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )

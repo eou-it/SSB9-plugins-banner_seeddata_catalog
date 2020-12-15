@@ -24,46 +24,30 @@ class FinanceControlAccountCreateDML {
     }
 
     public FinanceControlAccountCreateDML(InputData connectInfo, Sql conn, Connection connectCall, xmlData ) {
+        this.conn = conn
         this.connectInfo = connectInfo
         this.connectCall = conn.getConnection()
         this.xmlData = xmlData
         parseXmlData()
-        if(checkRecords()) {
-            createFinanceControlAccount()
-        }
+        createFinanceControlAccount();
     }
 
     def parseXmlData() {
         accountData = new XmlParser().parseText( xmlData )
     }
 
-    private checkRecords() {
-        def record =true;
-        def findRecord = """select * from FTVACTL where FTVACTL_ATYP_CODE in ('50', '60', '70', '80')"""
 
-        try {
-            def accountRows = conn.firstRow(findRecord)
-            if (accountRows) {
-                record = false;
-            }
-        } catch (Exception e) {
-            if (connectInfo.showErrors) {
-                println "Problem finding the records for FTVACTL table"
-            }
-        }
-
-        return record
-    }
 
     def createFinanceControlAccount() {
         try {
             final String apiQuery =
                     "   BEGIN" +
+                            " DELETE from FTVACTL where FTVACTL_COAS_CODE='"+accountData.FTVACTL_COAS_CODE.text() + "' AND FTVACTL_ATYP_CODE='"+accountData.FTVACTL_ATYP_CODE.text() +"' AND FTVACTL_SEQ_NUM='"+ accountData.FTVACTL_SEQ_NUM.text()+"';"  +
                             "   INSERT INTO FTVACTL (FTVACTL_COAS_CODE, FTVACTL_ACTIVITY_DATE, FTVACTL_ATYP_CODE ,FTVACTL_SEQ_NUM, FTVACTL_EFF_DATE, FTVACTL_STATUS_IND, " +
                             "	FTVACTL_ACCT_CODE_CONTROL, FTVACTL_ACCT_CODE_OFFSET, FTVACTL_ACCT_CODE_CONTROL_PY, FTVACTL_ACCT_CODE_OFFSET_PY, FTVACTL_USER_ID) "+
                             "   VALUES (" +
                             "   ?, sysdate, ?, ?, ?, " +
-                            "   ?, ?, ?, ?, ?,'GRAILS' " +
+                            "   ?, ?, ?, ?, ?,'GRAILS'); " +
                             "   commit;" +
                     "   END;"
             CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
