@@ -47,7 +47,7 @@ public class FinanceSystemControlCreateDML {
         try {
             final String apiQuery =
                     "   BEGIN" +
-                            " DELETE FROM FOBSYSC where FOBSYSC_USER_ID='GRAILS' AND FOBSYSC_EFF_DATE='"+systemData.FOBSYSC_EFF_DATE.text() +"' AND FOBSYSC_NCHG_DATE='"+ systemData.FOBSYSC_NCHG_DATE.text()+"';"  +
+                            " DELETE FROM FOBSYSC ;"  +
                             "   INSERT INTO FOBSYSC ( "+
                                 "FOBSYSC_EFF_DATE               ," +
                                 "FOBSYSC_ACTIVITY_DATE          ," +
