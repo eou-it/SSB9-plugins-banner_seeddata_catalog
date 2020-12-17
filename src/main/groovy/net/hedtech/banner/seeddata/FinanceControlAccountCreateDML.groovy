@@ -39,46 +39,18 @@ class FinanceControlAccountCreateDML {
 
 
     def createFinanceControlAccount() {
+        final String sql = """ INSERT INTO FTVACTL (FTVACTL_COAS_CODE, FTVACTL_ACTIVITY_DATE, FTVACTL_ATYP_CODE ,FTVACTL_SEQ_NUM, FTVACTL_EFF_DATE, FTVACTL_STATUS_IND, FTVACTL_ACCT_CODE_CONTROL, FTVACTL_ACCT_CODE_OFFSET, FTVACTL_ACCT_CODE_CONTROL_PY, FTVACTL_ACCT_CODE_OFFSET_PY, FTVACTL_USER_ID) VALUES ( ?, sysdate, ?, ?, ?, ?, ?, ?, ?, ?,'GRAILS') """;
         try {
-            final String apiQuery =
-                    "   BEGIN" +
-                            " DELETE from FTVACTL where FTVACTL_COAS_CODE='"+accountData.FTVACTL_COAS_CODE.text() + "' AND FTVACTL_ATYP_CODE='"+accountData.FTVACTL_ATYP_CODE.text() +"' AND FTVACTL_SEQ_NUM='"+ accountData.FTVACTL_SEQ_NUM.text()+"';"  +
-                            "   INSERT INTO FTVACTL (FTVACTL_COAS_CODE, FTVACTL_ACTIVITY_DATE, FTVACTL_ATYP_CODE ,FTVACTL_SEQ_NUM, FTVACTL_EFF_DATE, FTVACTL_STATUS_IND, " +
-                            "	FTVACTL_ACCT_CODE_CONTROL, FTVACTL_ACCT_CODE_OFFSET, FTVACTL_ACCT_CODE_CONTROL_PY, FTVACTL_ACCT_CODE_OFFSET_PY, FTVACTL_USER_ID) "+
-                            "   VALUES (" +
-                            "   ?, sysdate, ?, ?, ?, " +
-                            "   ?, ?, ?, ?, ?,'GRAILS'); " +
-                            "   commit;" +
-                    "   END;"
-            CallableStatement insertCall = this.connectCall.prepareCall( apiQuery )
-            try {
-                insertCall.setString( 1, accountData.FTVACTL_COAS_CODE.text() )
-                insertCall.setString( 2, accountData.FTVACTL_ATYP_CODE.text() )
-                insertCall.setString( 3, accountData.FTVACTL_SEQ_NUM.text() )
-                insertCall.setString( 4, accountData.FTVACTL_EFF_DATE.text() )
-                insertCall.setString( 5, accountData.FTVACTL_STATUS_IND.text() )
-                insertCall.setString( 6, accountData.FTVACTL_ACCT_CODE_CONTROL.text() )
-                insertCall.setString( 7, accountData.FTVACTL_ACCT_CODE_OFFSET.text() )
-                insertCall.setString( 8, accountData.FTVACTL_ACCT_CODE_CONTROL_PY.text() )
-                insertCall.setString( 9, accountData.FTVACTL_ACCT_CODE_OFFSET_PY.text() )
-                insertCall.execute()
-
-                connectInfo.tableUpdate( "FTVACTL", 0, 1, 0, 0, 0 )
+                conn.execute(""" DELETE from FTVACTL where FTVACTL_COAS_CODE=? AND FTVACTL_ATYP_CODE=? AND FTVACTL_SEQ_NUM=? """, [accountData.FTVACTL_COAS_CODE.text(), accountData.FTVACTL_ATYP_CODE.text(), accountData.FTVACTL_SEQ_NUM.text()])
+                conn.executeInsert(sql, [accountData.FTVACTL_COAS_CODE.text(), accountData.FTVACTL_ATYP_CODE.text(), accountData.FTVACTL_SEQ_NUM.text(), accountData.FTVACTL_EFF_DATE.text(), accountData.FTVACTL_STATUS_IND.text(), accountData.FTVACTL_ACCT_CODE_CONTROL.text(), accountData.FTVACTL_ACCT_CODE_OFFSET.text(), accountData.FTVACTL_ACCT_CODE_CONTROL_PY.text(), accountData.FTVACTL_ACCT_CODE_OFFSET_PY.text()]);
+                connectInfo.tableUpdate('FTVACTL', 0, 1, 0, 0, 0)
             } catch (Exception e) {
                 connectInfo.tableUpdate( "FTVACTL", 0, 0, 0, 1, 0 )
                 if (connectInfo.showErrors) {
                     println "Executing script to insert record for Finance Control account with ..."
                     println "Problem executing insert record for Finance Control account: $e.message"
                 }
-            } finally {
-                insertCall.close()
             }
         }
-        catch (Exception e) {
-            connectInfo.tableUpdate( "FTVACTL", 0, 0, 0, 1, 0 )
-            if (connectInfo.showErrors) {
-                println "Problem executing Update for table FTVACTL from FinanceControlAccountCreateDML.groovy: $e.message"
-            }
-        }
-    }
+
 }
