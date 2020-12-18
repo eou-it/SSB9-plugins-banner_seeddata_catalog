@@ -5,7 +5,7 @@ Copyright 2020 Ellucian Company L.P. and its affiliates.
 <FOBSYSC-DATA>
     <FOBSYSC>
     	<FOBSYSC_EFF_DATE>01-OCT-1988</FOBSYSC_EFF_DATE>
-        <FOBSYSC_ACTIVITY_DATE/>
+        <FOBSYSC_ACTIVITY_DATE>01-JAN-10</FOBSYSC_ACTIVITY_DATE>
         <FOBSYSC_USER_ID>GRAILS</FOBSYSC_USER_ID>
         <FOBSYSC_STATUS_IND>A</FOBSYSC_STATUS_IND>
         <FOBSYSC_DEFAULT_TIMING_IND>N</FOBSYSC_DEFAULT_TIMING_IND>
@@ -53,7 +53,7 @@ Copyright 2020 Ellucian Company L.P. and its affiliates.
     </FOBSYSC>
     <FOBSYSC>
         <FOBSYSC_EFF_DATE>20-NOV-2017</FOBSYSC_EFF_DATE>
-        <FOBSYSC_ACTIVITY_DATE/>
+        <FOBSYSC_ACTIVITY_DATE>01-JAN-10</FOBSYSC_ACTIVITY_DATE>
         <FOBSYSC_USER_ID>GRAILS</FOBSYSC_USER_ID>
         <FOBSYSC_STATUS_IND>A</FOBSYSC_STATUS_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         <FOBSYSC_DEFAULT_TIMING_IND>N</FOBSYSC_DEFAULT_TIMING_IND>                                                                                                                                                                                                                                                                                                                                                                                                                                                  

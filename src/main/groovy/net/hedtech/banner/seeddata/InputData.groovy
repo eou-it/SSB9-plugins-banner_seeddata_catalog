@@ -610,6 +610,8 @@ public class InputData {
             'fiscal-period-year-clean'           : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/FiscalPeriodAndYearClean.xml'],
             'fgbtrni'                            : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/FGBTRNI.xml'],
             'fgbtrni-clean'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/FGBTRNIClean.xml'],
+            'finance-system-control'              :['/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceSystemControl.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceControlAccount.xml'],
             'fgbjvch'                            : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/FGBJVCH.xml'],
             'fgbjvch-clean'                      : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/FGBJVCHClean.xml'],
             'fgbtrnh'                            : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/FGBTRNH.xml'],
@@ -1203,11 +1205,7 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatTerm202020.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202020.xml'],
             'USI-Student'                        : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00037851.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00036439.xml'],
-            'finance-system-control'              :['/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceSystemControl.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceControlAccount.xml']
-
-
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00036439.xml']
     ]
     /**
      *  Map of selenium targets
