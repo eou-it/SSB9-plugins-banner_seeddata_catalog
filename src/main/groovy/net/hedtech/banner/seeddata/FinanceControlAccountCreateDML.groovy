@@ -39,10 +39,11 @@ class FinanceControlAccountCreateDML {
 
 
     def createFinanceControlAccount() {
-        final String sql = """ INSERT INTO FTVACTL (FTVACTL_COAS_CODE, FTVACTL_ACTIVITY_DATE, FTVACTL_ATYP_CODE ,FTVACTL_SEQ_NUM, FTVACTL_EFF_DATE, FTVACTL_STATUS_IND, FTVACTL_ACCT_CODE_CONTROL, FTVACTL_ACCT_CODE_OFFSET, FTVACTL_ACCT_CODE_CONTROL_PY, FTVACTL_ACCT_CODE_OFFSET_PY, FTVACTL_USER_ID) VALUES ( ?, sysdate, ?, ?, ?, ?, ?, ?, ?, ?,'GRAILS') """;
+        def systemDate=new java.sql.Date(System.currentTimeMillis());
+        final String sql = """ INSERT INTO FTVACTL (FTVACTL_COAS_CODE, FTVACTL_ACTIVITY_DATE, FTVACTL_ATYP_CODE ,FTVACTL_SEQ_NUM, FTVACTL_EFF_DATE, FTVACTL_STATUS_IND, FTVACTL_ACCT_CODE_CONTROL, FTVACTL_ACCT_CODE_OFFSET, FTVACTL_ACCT_CODE_CONTROL_PY, FTVACTL_ACCT_CODE_OFFSET_PY, FTVACTL_USER_ID) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'GRAILS') """;
         try {
                 conn.execute(""" DELETE from FTVACTL where FTVACTL_COAS_CODE=? AND FTVACTL_ATYP_CODE=? AND FTVACTL_SEQ_NUM=? """, [accountData.FTVACTL_COAS_CODE.text(), accountData.FTVACTL_ATYP_CODE.text(), accountData.FTVACTL_SEQ_NUM.text()])
-                conn.executeInsert(sql, [accountData.FTVACTL_COAS_CODE.text(), accountData.FTVACTL_ATYP_CODE.text(), accountData.FTVACTL_SEQ_NUM.text(), accountData.FTVACTL_EFF_DATE.text(), accountData.FTVACTL_STATUS_IND.text(), accountData.FTVACTL_ACCT_CODE_CONTROL.text(), accountData.FTVACTL_ACCT_CODE_OFFSET.text(), accountData.FTVACTL_ACCT_CODE_CONTROL_PY.text(), accountData.FTVACTL_ACCT_CODE_OFFSET_PY.text()]);
+                conn.executeInsert(sql, [accountData.FTVACTL_COAS_CODE.text(), systemDate, accountData.FTVACTL_ATYP_CODE.text(), accountData.FTVACTL_SEQ_NUM.text(), accountData.FTVACTL_EFF_DATE.text(), accountData.FTVACTL_STATUS_IND.text(), accountData.FTVACTL_ACCT_CODE_CONTROL.text(), accountData.FTVACTL_ACCT_CODE_OFFSET.text(), accountData.FTVACTL_ACCT_CODE_CONTROL_PY.text(), accountData.FTVACTL_ACCT_CODE_OFFSET_PY.text()]);
                 connectInfo.tableUpdate('FTVACTL', 0, 1, 0, 0, 0)
             } catch (Exception e) {
                 connectInfo.tableUpdate( "FTVACTL", 0, 0, 0, 1, 0 )
