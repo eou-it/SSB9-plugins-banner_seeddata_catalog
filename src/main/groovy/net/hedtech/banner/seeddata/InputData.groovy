@@ -1203,7 +1203,10 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatTerm202020.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/RegRepeatStudent202020.xml'],
             'USI-Student'                        : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00037851.xml',
-                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00036439.xml']
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/student/usi/StudentXMLA00036439.xml'],
+            'finance-system-control'              :['/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceSystemControl.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/finance/FinanceControlAccount.xml']
+
 
     ]
     /**

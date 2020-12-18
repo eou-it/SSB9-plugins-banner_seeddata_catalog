@@ -240,6 +240,8 @@ public class APIClasses {
             'NORTERN'                  : 'net.hedtech.banner.seeddata.NorternDML',
             'NORTLBD'                  : 'net.hedtech.banner.seeddata.NortlbdDML',
             'NORCMNT'                  : 'net.hedtech.banner.seeddata.NorcmntDML',
+            'FOBSYSC'                  : 'net.hedtech.banner.seeddata.FinanceSystemControlCreateDML',
+            'FTVACTL'                  : 'net.hedtech.banner.seeddata.FinanceControlAccountCreateDML',
     ]
 
     // map of tables that require both an api class but also will update / insert via the dynamic sql table process
