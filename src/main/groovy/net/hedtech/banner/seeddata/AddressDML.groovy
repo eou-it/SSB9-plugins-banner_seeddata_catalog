@@ -116,9 +116,10 @@ public class AddressDML {
         tableRow = null
         String rowSQL = """select rowid table_row from SPRADDR
           where spraddr_pidm = ?
-          and spraddr_atyp_code = ? """
+          and spraddr_atyp_code = ? 
+          and spraddr_seqno = ?"""
         try {
-            conn.eachRow(rowSQL, [this.spraddr_pidm.toInteger(), this.spraddr_atyp_code]) {row ->
+            conn.eachRow(rowSQL, [this.spraddr_pidm.toInteger(), this.spraddr_atyp_code, this.spraddr_seqno]) {row ->
                 tableRow = row.table_row
             }
         }
