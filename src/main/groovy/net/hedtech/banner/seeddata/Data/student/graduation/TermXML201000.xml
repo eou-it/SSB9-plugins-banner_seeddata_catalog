@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- *****************************************************************************
-Copyright 2020 Ellucian Company L.P. and its affiliates.
+Copyright 2020-2021 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <TERMDATA>
   <SMRPRLE>
@@ -343,7 +343,7 @@ Copyright 2020 Ellucian Company L.P. and its affiliates.
     <SKBGCRM_GRDS_WEB_START>25-SEP-20</SKBGCRM_GRDS_WEB_START>
     <SKBGCRM_GRDS_WEB_END>26-SEP-20</SKBGCRM_GRDS_WEB_END>
     <SKBGCRM_ARRG_WEB_START>25-SEP-20</SKBGCRM_ARRG_WEB_START>
-    <SKBGCRM_ARRG_WEB_END>31-DEC-20</SKBGCRM_ARRG_WEB_END>
+    <SKBGCRM_ARRG_WEB_END>31-DEC-25</SKBGCRM_ARRG_WEB_END>
     <SKBGCRM_ADNL_TICKET_DATE>25-SEP-20</SKBGCRM_ADNL_TICKET_DATE>
     <SKBGCRM_PRINT_DATE>25-SEP-20</SKBGCRM_PRINT_DATE>
     <SKBGCRM_DATA_ORIGIN>GRAILS</SKBGCRM_DATA_ORIGIN>

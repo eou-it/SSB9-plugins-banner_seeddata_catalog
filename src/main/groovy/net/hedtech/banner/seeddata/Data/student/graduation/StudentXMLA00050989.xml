@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- *****************************************************************************
-Copyright 2020 Ellucian Company L.P. and its affiliates.
+Copyright 2020-2021 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <STUDENTDATA>
     <SPRIDEN>
@@ -24,7 +24,7 @@ Copyright 2020 Ellucian Company L.P. and its affiliates.
         <SPRIDEN_CREATE_DATE>23-SEP-20</SPRIDEN_CREATE_DATE>
         <SPRIDEN_DATA_ORIGIN>GRAILS</SPRIDEN_DATA_ORIGIN>
         <SPRIDEN_CREATE_FDMN_CODE/>
-        <SPRIDEN_SURNAME_PREFIX>De</SPRIDEN_SURNAME_PREFIX>
+        <SPRIDEN_SURNAME_PREFIX/>
         <SPRIDEN_SURROGATE_ID/>
         <SPRIDEN_VERSION/>
         <SPRIDEN_USER_ID>GRAILS</SPRIDEN_USER_ID>
