@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2021 Ellucian Company L.P. and its affiliates.
+ ********************************************************************************* -->
+<RORWEBA_DATA>
+    <RORWEBA>
+        <RORWEBA_AIDY_CODE>2122</RORWEBA_AIDY_CODE>
+        <RORWEBA_TREQ_CODE>PTREQ5</RORWEBA_TREQ_CODE>
+        <RORWEBA_TRST_CODE>S</RORWEBA_TRST_CODE>
+        <RORWEBA_TYPE_CODE>T</RORWEBA_TYPE_CODE>
+    </RORWEBA>
+    <RORWEBA>
+        <RORWEBA_AIDY_CODE>2122</RORWEBA_AIDY_CODE>
+        <RORWEBA_TREQ_CODE>T&amp;C</RORWEBA_TREQ_CODE>
+        <RORWEBA_TRST_CODE>S</RORWEBA_TRST_CODE>
+        <RORWEBA_TYPE_CODE>T</RORWEBA_TYPE_CODE>
+    </RORWEBA>
+</RORWEBA_DATA>

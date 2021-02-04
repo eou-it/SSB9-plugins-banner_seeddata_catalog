@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- *****************************************************************************
+Copyright 2021 Ellucian Company L.P. and its affiliates.                                                
+ ********************************************************************************* -->
+<ROBDFPS_DATA>
+    <ROBDFPS>
+        <ROBDFPS_AIDY_CODE>2122</ROBDFPS_AIDY_CODE>
+        <ROBDFPS_NAME/>
+        <ROBDFPS_SHORT_NAME/>
+        <ROBDFPS_ADDRESS_LINE_1/>
+        <ROBDFPS_ADDRESS_LINE_2/>
+        <ROBDFPS_ADDRESS_LINE_3/>
+        <ROBDFPS_CITY/>
+        <ROBDFPS_STAT_CODE/>
+        <ROBDFPS_ZIP/>
+        <ROBDFPS_PHONE/>
+        <ROBDFPS_EMAIL/>
+        <ROBDFPS_WEB_LOGO_URL/>
+        <ROBDFPS_BATCH_LOGO_FILE/>
+        <ROBDFPS_CUSTOM_INFO/>
+        <ROBDFPS_GRAD_RATE_6YR/>
+        <ROBDFPS_DEFAULT_RATE/>
+        <ROBDFPS_DEFAULT_RATE_COMP/>
+        <ROBDFPS_FED_MEDIAN_LOAN_AMT/>
+        <ROBDFPS_FED_MEDIAN_LOAN_YR/>
+        <ROBDFPS_FED_LOAN_PMT_AMT/>
+        <ROBDFPS_INSTITUTION_GROUP>4</ROBDFPS_INSTITUTION_GROUP>
+    </ROBDFPS>
+</ROBDFPS_DATA>
