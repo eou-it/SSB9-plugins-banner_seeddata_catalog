@@ -626,6 +626,7 @@ public class InputData {
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/general/NonPersonData.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/general/GoradrlData.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/general/GtvzipcData.xml',
+                                                    '/src/main/groovy/net/hedtech/banner/seeddata/Data/general/AnswerSurveyUsers.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/general/AnswerSurveyData.xml'],
             'general-auto'                       : ['/src/main/groovy/net/hedtech/banner/seeddata/Data/MDUUSecurityData.xml',
                                                     '/src/main/groovy/net/hedtech/banner/seeddata/Data/GeneralAutoUsers1.xml',
