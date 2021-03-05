@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- *****************************************************************************
-Copyright 2019-2020 Ellucian Company L.P. and its affiliates.
+Copyright 2019-2021 Ellucian Company L.P. and its affiliates.
  ********************************************************************************* -->
 <STUDENTDATA>
     <SPRIDEN>
@@ -2449,7 +2449,7 @@ Copyright 2019-2020 Ellucian Company L.P. and its affiliates.
         <SFRSTCR_ADD_DATE>18-JUN-19</SFRSTCR_ADD_DATE>
         <SFRSTCR_ACTIVITY_DATE>01-JAN-10</SFRSTCR_ACTIVITY_DATE>
         <SFRSTCR_LEVL_CODE>P1</SFRSTCR_LEVL_CODE>
-        <SFRSTCR_CAMP_CODE> JO</SFRSTCR_CAMP_CODE>
+        <SFRSTCR_CAMP_CODE>JO</SFRSTCR_CAMP_CODE>
         <SFRSTCR_RESERVED_KEY/>
         <SFRSTCR_ATTEND_HR/>
         <SFRSTCR_REPT_OVER>N</SFRSTCR_REPT_OVER>
