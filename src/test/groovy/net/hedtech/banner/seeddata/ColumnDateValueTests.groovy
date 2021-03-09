@@ -3,10 +3,11 @@
  ****************************************************************************** */
 package net.hedtech.banner.seeddata
 
-import grails.test.GrailsUnitTestCase
+//import grails.test.GrailsUnitTestCase
+import org.grails.testing.GrailsUnitTest
 
 
-class ColumnDateValueTests extends GrailsUnitTestCase {
+class ColumnDateValueTests extends GrailsUnitTest {
 
     void testDateFormatOnlyDateSlash() {
         def dateToTest = "2/28/2015"
